@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+ander	Heb je een ander idee?	другой	У тебя есть другая идея?	link::thema2::taak1::A1
+de appel	Ik eet elke dag een appel.	яблоко	Я каждый день ем яблоко.	link::thema2::taak1::A1
+de banaan	De banaan is geel.	банан	Банан жёлтый.	link::thema2::taak1::A1
+bijna	We hebben bijna alles.	почти	У нас почти всё есть.	link::thema2::taak1::A1
+de boodschappen	Ik doe de boodschappen op zaterdag.	покупки, продукты	Я делаю покупки в субботу.	link::thema2::taak1::A1
+doen	Wat doe je vandaag?	делать	Что ты делаешь сегодня?	link::thema2::taak1::A1
+dus	We hebben geen melk, dus ik ga naar de winkel.	итак, значит, поэтому	У нас нет молока, поэтому я иду в магазин.	link::thema2::taak1::A1
+het eten	Het eten is klaar.	еда	Еда готова.	link::thema2::taak1::A1
+het fruit	Fruit is gezond.	фрукты	Фрукты полезны.	link::thema2::taak1::A1
+de groente	Ik koop groente op de markt.	овощи	Я покупаю овощи на рынке.	link::thema2::taak1::A1
+de kip	We eten vanavond kip.	курица	Мы сегодня вечером едим курицу.	link::thema2::taak1::A1
+kopen	Ik wil brood kopen.	покупать	Я хочу купить хлеб.	link::thema2::taak1::A1
+de lijst	Ik maak een boodschappenlijst.	список	Я составляю список покупок.	link::thema2::taak1::A1
+maken	Ik maak een lijst.	делать, составлять	Я составляю список.	link::thema2::taak1::A1
+de markt	Op zaterdag ga ik naar de markt.	рынок	В субботу я иду на рынок.	link::thema2::taak1::A1
+meer	Wil je meer rijst?	больше, ещё	Хочешь ещё риса?	link::thema2::taak1::A1
+of	Wil je kip of vis?	или	Хочешь курицу или рыбу?	link::thema2::taak1::A1
+praten	We praten over het eten.	разговаривать	Мы разговариваем о еде.	link::thema2::taak1::A1
+de rijst	Ik kook rijst.	рис	Я варю рис.	link::thema2::taak1::A1
+de supermarkt	De supermarkt is dichtbij.	супермаркет	Супермаркет рядом.	link::thema2::taak1::A1
+thuis	Ik eet thuis.	дома	Я ем дома.	link::thema2::taak1::A1
+de tomaat	De tomaat is rood.	помидор	Помидор красный.	link::thema2::taak1::A1
+de vis	Vis is gezond.	рыба	Рыба полезна.	link::thema2::taak1::A1
+het vlees	Ik eet geen vlees.	мясо	Я не ем мясо.	link::thema2::taak1::A1
+we	We gaan naar de supermarkt.	мы	Мы идём в супермаркет.	link::thema2::taak1::A1
+de wortel	Ik koop wortels voor de soep.	морковь	Я покупаю морковь для супа.	link::thema2::taak1::A1

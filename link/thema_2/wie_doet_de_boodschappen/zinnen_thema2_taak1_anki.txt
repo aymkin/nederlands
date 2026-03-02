@@ -1,0 +1,28 @@
+#separator:tab
+#html:false
+#tags column:3
+We hebben bijna geen eten meer.	У нас почти не осталось еды.	link::thema2::taak1::zinnen
+Wie doet de boodschappen?	Кто идёт за покупками?	link::thema2::taak1::zinnen
+Ga jij? Of ik?	Ты пойдёшь? Или я?	link::thema2::taak1::zinnen
+Ik ga wel.	Я схожу.	link::thema2::taak1::zinnen
+Wat wil je?	Что ты хочешь?	link::thema2::taak1::zinnen
+Ik wil appels en twee bananen.	Я хочу яблоки и два банана.	link::thema2::taak1::zinnen
+Koop je het fruit op de markt?	Ты купишь фрукты на рынке?	link::thema2::taak1::zinnen
+Ik ga naar de markt.	Я иду на рынок.	link::thema2::taak1::zinnen
+Wil je ook groente?	Ты тоже хочешь овощи?	link::thema2::taak1::zinnen
+Doe maar tomaten en wortels.	Давай помидоры и морковь.	link::thema2::taak1::zinnen
+Wil je vis of vlees?	Хочешь рыбу или мясо?	link::thema2::taak1::zinnen
+Ik wil wel kip.	Я бы хотела курицу.	link::thema2::taak1::zinnen
+Wil je nog andere boodschappen?	Тебе нужно ещё что-нибудь?	link::thema2::taak1::zinnen
+De rijst is op.	Рис закончился.	link::thema2::taak1::zinnen
+We hebben geen rijst meer.	У нас больше нет риса.	link::thema2::taak1::zinnen
+Koop je de rijst in de supermarkt?	Ты купишь рис в супермаркете?	link::thema2::taak1::zinnen
+Ik maak wel een lijstje.	Я составлю список.	link::thema2::taak1::zinnen
+Dank je wel.	Спасибо.	link::thema2::taak1::zinnen
+Ze zijn thuis.	Они дома.	link::thema2::taak1::zinnen
+Ze praten over boodschappen doen.	Они разговаривают о покупках.	link::thema2::taak1::zinnen
+Ik ga naar de supermarkt.	Я иду в супермаркет.	link::thema2::taak1::zinnen
+Wat eten we vanavond?	Что мы едим сегодня вечером?	link::thema2::taak1::zinnen
+Ik koop groente en fruit.	Я покупаю овощи и фрукты.	link::thema2::taak1::zinnen
+Heb je de boodschappenlijst?	У тебя есть список покупок?	link::thema2::taak1::zinnen
+We moeten nog vlees kopen.	Нам ещё нужно купить мясо.	link::thema2::taak1::zinnen
