@@ -1,5 +1,5 @@
 #separator:tab
-#html:false
+#html:true
 #tags column:3
 Igor en Julia hebben les.	Игорь и Юлия на занятии.	link::thema1::taak2::luisteren
 Ze leren Nederlands.	Они учат нидерландский.	link::thema1::taak2::luisteren

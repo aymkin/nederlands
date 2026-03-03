@@ -1,5 +1,5 @@
 #separator:tab
-#html:false
+#html:true
 #tags column:3
 We hebben bijna geen eten meer.	У нас почти не осталось еды.	link::thema2::taak1::zinnen
 Wie doet de boodschappen?	Кто идёт за покупками?	link::thema2::taak1::zinnen

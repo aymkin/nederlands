@@ -102,6 +102,42 @@ Files ending in `_anki.txt` use tab-separated format with header directives:
 - Constructions: `constructies::{category}::{level}` (categories: mening,
   vragen, oorzaak, tijd, contrast, dagelijks, fillers)
 
+### Link Course Anki Formats (`link/`)
+
+**Words & phrases** (woordenlijst, uitdrukkingen) — 5 columns:
+
+```
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+```
+
+| Column           | Description                           |
+| ---------------- | ------------------------------------- |
+| Word             | Dutch word/phrase with article if noun |
+| Example          | Dutch example sentence                |
+| Translation      | Russian translation                   |
+| TranslationExample | Russian translation of example sentence |
+| Tags             | `link::thema{N}::taak{N}::A1`        |
+
+**Dialog sentences** (zinnen) — 3 columns:
+
+```
+#separator:tab
+#html:true
+#tags column:3
+```
+
+| Column | Description                        |
+| ------ | ---------------------------------- |
+| Dutch  | Dutch sentence from the dialog     |
+| Russian | Russian translation               |
+| Tags   | `link::thema{N}::taak{N}::zinnen` |
+
+Uitdrukkingen (vaste uitdrukkingen) use the 5-column word format with tag
+suffix `::uitdrukkingen` instead of `::A1`.
+
 ### Card Templates
 
 Front: `{{Front}} {{Audio}}` — Back: `{{FrontSide}}<hr id="answer">{{Back}}`

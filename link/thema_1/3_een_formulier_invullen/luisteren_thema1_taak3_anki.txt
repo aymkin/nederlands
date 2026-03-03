@@ -1,5 +1,5 @@
 #separator:tab
-#html:false
+#html:true
 #tags column:3
 Peter Lindhout is in het gemeentehuis.	Петер Линдхаут в здании муниципалитета.	link::thema1::taak3::luisteren
 Hij is nieuw in de gemeente Huizen.	Он новый в муниципалитете Хёйзен.	link::thema1::taak3::luisteren

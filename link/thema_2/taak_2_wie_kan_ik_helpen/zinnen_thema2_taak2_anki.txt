@@ -1,5 +1,5 @@
 #separator:tab
-#html:false
+#html:true
 #tags column:3
 Wie kan ik helpen?	Кому я могу помочь? / Чем могу помочь?	link::thema2::taak2::zinnen
 Ja, zeg het maar.	Да, слушаю вас.	link::thema2::taak2::zinnen

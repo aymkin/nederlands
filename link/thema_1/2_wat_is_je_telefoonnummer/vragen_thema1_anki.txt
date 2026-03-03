@@ -1,5 +1,5 @@
 #separator:tab
-#html:false
+#html:true
 #tags column:3
 Hoe heet je?	Как тебя зовут?	link::thema1::vragen::kennismaken
 Ik heet Julia.	Меня зовут Юлия.	link::thema1::vragen::kennismaken
