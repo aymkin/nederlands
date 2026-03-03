@@ -1,0 +1,23 @@
+#separator:tab
+#html:false
+#tags column:3
+Wie kan ik helpen?	Кому я могу помочь? / Чем могу помочь?	link::thema2::taak2::zinnen
+Ja, zeg het maar.	Да, слушаю вас.	link::thema2::taak2::zinnen
+Ik wil graag een kilo aardappels.	Я хотела бы килограмм картошки.	link::thema2::taak2::zinnen
+Kijk eens, een kilo aardappels voor u.	Вот, пожалуйста, килограмм картошки для вас.	link::thema2::taak2::zinnen
+Anders nog iets?	Что-нибудь ещё?	link::thema2::taak2::zinnen
+Nog vijf bananen alstublieft.	Ещё пять бананов, пожалуйста.	link::thema2::taak2::zinnen
+Wat jammer.	Как жаль.	link::thema2::taak2::zinnen
+Ik heb nog maar vier bananen.	У меня осталось только четыре банана.	link::thema2::taak2::zinnen
+Ze zijn bijna op.	Они почти закончились.	link::thema2::taak2::zinnen
+Dan neem ik vier bananen.	Тогда я возьму четыре банана.	link::thema2::taak2::zinnen
+Dat is ook goed.	Это тоже хорошо. / Тоже подойдёт.	link::thema2::taak2::zinnen
+Nee, dank u wel.	Нет, спасибо.	link::thema2::taak2::zinnen
+Dat is dan 4,35 alstublieft.	С вас 4,35, пожалуйста.	link::thema2::taak2::zinnen
+Fijne dag nog!	Хорошего дня!	link::thema2::taak2::zinnen
+Mag ik 500 gram kaas alsjeblieft?	Можно мне 500 грамм сыра, пожалуйста?	link::thema2::taak2::zinnen
+Hoeveel eieren wil je?	Сколько яиц ты хочешь?	link::thema2::taak2::zinnen
+Kijk eens, zes eieren.	Вот, пожалуйста, шесть яиц.	link::thema2::taak2::zinnen
+Kan ik pinnen?	Можно картой?	link::thema2::taak2::zinnen
+Dat kan.	Можно. / Да, конечно.	link::thema2::taak2::zinnen
+Ja, dank je wel. Tot ziens.	Да, спасибо. До свидания.	link::thema2::taak2::zinnen

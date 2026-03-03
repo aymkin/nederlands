@@ -1,0 +1,46 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+dat is dan...	Dat is dan 7,65 alstublieft.	итого... / с вас...	С вас 7,65, пожалуйста.	link::thema2::taak2::uitdrukkingen
+dat is dan...	Dat is dan drie euro vijftig voor de kaas.	итого... / с вас...	Итого три евро пятьдесят за сыр.	link::thema2::taak2::uitdrukkingen
+nog maar	Ik heb nog maar vier bananen.	всего лишь, только (осталось)	У меня осталось только четыре банана.	link::thema2::taak2::uitdrukkingen
+nog maar	We hebben nog maar twee broodjes.	всего лишь, только (осталось)	У нас осталось всего два бутерброда.	link::thema2::taak2::uitdrukkingen
+dat kan	Kan ik pinnen? — Dat kan.	можно / конечно	Можно картой? — Конечно.	link::thema2::taak2::uitdrukkingen
+dat kan	Kan ik hier zitten? — Dat kan.	можно / конечно	Можно тут сесть? — Можно.	link::thema2::taak2::uitdrukkingen
+kijk eens	Kijk eens, verse tomaten!	вот, посмотрите	Вот, посмотрите, свежие помидоры!	link::thema2::taak2::uitdrukkingen
+kijk eens	Kijk eens, uw koffie.	вот, пожалуйста	Вот, пожалуйста, ваш кофе.	link::thema2::taak2::uitdrukkingen
+zeg het maar	Zeg het maar, wat wil je drinken?	говорите / слушаю вас	Говорите, что будете пить?	link::thema2::taak2::uitdrukkingen
+zeg het maar	Zeg het maar, ik luister.	говорите / слушаю вас	Говорите, я слушаю.	link::thema2::taak2::uitdrukkingen
+doe maar	Doe maar een koffie.	давайте... / мне...	Мне кофе.	link::thema2::taak2::uitdrukkingen
+doe maar	Doe maar een broodje kaas.	давайте... / мне...	Мне бутерброд с сыром.	link::thema2::taak2::uitdrukkingen
+heeft u een tasje?	Heeft u een tasje? — Dat is 25 cent.	у вас есть пакет?	У вас есть пакет? — Это 25 центов.	link::thema2::taak2::uitdrukkingen
+heeft u een tasje?	Wilt u een tasje bij de boodschappen?	у вас есть пакет? / хотите пакет?	Хотите пакет к покупкам?	link::thema2::taak2::uitdrukkingen
+het hoeft niet	Wilt u de bon? — Nee, het hoeft niet.	не нужно	Хотите чек? — Нет, не нужно.	link::thema2::taak2::uitdrukkingen
+het hoeft niet	Zal ik helpen? — Het hoeft niet, dank je.	не нужно	Помочь? — Не нужно, спасибо.	link::thema2::taak2::uitdrukkingen
+dat was het	Anders nog iets? — Nee, dat was het.	это всё	Что-нибудь ещё? — Нет, это всё.	link::thema2::taak2::uitdrukkingen
+dat was het	Dat was het, dank u wel.	это всё	Это всё, спасибо.	link::thema2::taak2::uitdrukkingen
+wilt u de rekening?	Wilt u de rekening? — Ja, graag.	вам счёт?	Вам счёт? — Да, пожалуйста.	link::thema2::taak2::uitdrukkingen
+wilt u de rekening?	Mag ik de rekening alstublieft?	можно счёт?	Можно мне счёт, пожалуйста?	link::thema2::taak2::uitdrukkingen
+apart of samen?	Willen jullie apart of samen betalen?	раздельно или вместе?	Хотите платить раздельно или вместе?	link::thema2::taak2::uitdrukkingen
+apart of samen?	Apart of samen? — Apart graag.	раздельно или вместе?	Раздельно или вместе? — Раздельно.	link::thema2::taak2::uitdrukkingen
+eet smakelijk!	Hier is uw eten. Eet smakelijk!	приятного аппетита!	Вот ваша еда. Приятного аппетита!	link::thema2::taak2::uitdrukkingen
+eet smakelijk!	Eet smakelijk! — Dank je wel!	приятного аппетита!	Приятного аппетита! — Спасибо!	link::thema2::taak2::uitdrukkingen
+hoe gaat het?	Hoi! Hoe gaat het?	как дела?	Привет! Как дела?	link::thema2::taak2::uitdrukkingen
+hoe gaat het?	Hoe gaat het met je? — Goed, en met jou?	как дела?	Как у тебя дела? — Хорошо, а у тебя?	link::thema2::taak2::uitdrukkingen
+het gaat wel	Hoe gaat het? — Het gaat wel.	нормально / так себе	Как дела? — Нормально.	link::thema2::taak2::uitdrukkingen
+het gaat wel	Gaat het? — Ja, het gaat.	нормально / так себе	Всё в порядке? — Да, нормально.	link::thema2::taak2::uitdrukkingen
+geeft niet	Sorry, ik ben te laat. — Geeft niet.	ничего страшного	Извини, я опоздал. — Ничего страшного.	link::thema2::taak2::uitdrukkingen
+geeft niet	O, ze hebben geen appels meer. — Geeft niet.	ничего страшного	Ой, яблок больше нет. — Ничего страшного.	link::thema2::taak2::uitdrukkingen
+maakt niet uit	Wil je koffie of thee? — Maakt niet uit.	всё равно / не важно	Хочешь кофе или чай? — Всё равно.	link::thema2::taak2::uitdrukkingen
+maakt niet uit	Ik heb geen kaas meer. — Maakt niet uit.	не страшно / не важно	У меня больше нет сыра. — Не страшно.	link::thema2::taak2::uitdrukkingen
+tot zo!	Ik ga even naar de winkel. Tot zo!	до скорого!	Я схожу в магазин. До скорого!	link::thema2::taak2::uitdrukkingen
+tot zo!	Tot zo! Ik ben over vijf minuten terug.	до скорого!	До скорого! Я вернусь через пять минут.	link::thema2::taak2::uitdrukkingen
+nou ja	Nou ja, dan neem ik iets anders.	ну ладно / ну что ж	Ну ладно, тогда я возьму что-нибудь другое.	link::thema2::taak2::uitdrukkingen
+nou ja	Nou ja, het is niet erg.	ну ладно / ну что ж	Ну что ж, ничего страшного.	link::thema2::taak2::uitdrukkingen
+graag gedaan	Dank je wel voor je hulp! — Graag gedaan.	пожалуйста (в ответ на спасибо)	Спасибо за помощь! — Пожалуйста.	link::thema2::taak2::uitdrukkingen
+graag gedaan	Bedankt! — Graag gedaan, hoor.	не за что	Спасибо! — Не за что.	link::thema2::taak2::uitdrukkingen
+dat klopt	Is dit drie euro? — Ja, dat klopt.	верно / правильно	Это три евро? — Да, верно.	link::thema2::taak2::uitdrukkingen
+dat klopt	Je woont in Amsterdam, toch? — Dat klopt.	верно / правильно	Ты живёшь в Амстердаме, да? — Верно.	link::thema2::taak2::uitdrukkingen
+geen probleem	Sorry voor het wachten. — Geen probleem.	без проблем	Извините за ожидание. — Без проблем.	link::thema2::taak2::uitdrukkingen
+geen probleem	Kan ik morgen betalen? — Geen probleem.	без проблем	Можно заплатить завтра? — Без проблем.	link::thema2::taak2::uitdrukkingen

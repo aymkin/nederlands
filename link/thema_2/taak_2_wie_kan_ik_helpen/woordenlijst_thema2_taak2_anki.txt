@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+de aardappel	Ik wil graag een kilo aardappels.	картофель	Я хочу килограмм картошки.	link::thema2::taak2::A1
+alsjeblieft	Zes eieren alsjeblieft.	пожалуйста (неформ.)	Шесть яиц, пожалуйста.	link::thema2::taak2::A1
+alstublieft	Dat is dan 4,35 alstublieft.	пожалуйста (форм.)	С вас 4,35, пожалуйста.	link::thema2::taak2::A1
+anders	Anders nog iets?	ещё (что-нибудь)	Что-нибудь ещё?	link::thema2::taak2::A1
+dag	Dag! Tot ziens!	пока, до свидания	Пока! До свидания!	link::thema2::taak2::A1
+dan	Dan neem ik vier bananen.	тогда	Тогда я возьму четыре банана.	link::thema2::taak2::A1
+het ei	Hoeveel eieren wil je?	яйцо	Сколько яиц ты хочешь?	link::thema2::taak2::A1
+fijn	Fijne dag nog!	приятный, хороший	Хорошего дня!	link::thema2::taak2::A1
+goed	Dat is ook goed.	хорошо	Это тоже хорошо.	link::thema2::taak2::A1
+de gram	Mag ik 500 gram kaas?	грамм	Можно мне 500 грамм сыра?	link::thema2::taak2::A1
+hoeveel	Hoeveel eieren wil je?	сколько	Сколько яиц ты хочешь?	link::thema2::taak2::A1
+iets	Wilt u nog iets anders?	что-нибудь	Вы хотите что-нибудь ещё?	link::thema2::taak2::A1
+jammer	Wat jammer, ik heb geen bananen meer.	жаль	Как жаль, у меня больше нет бананов.	link::thema2::taak2::A1
+de kaas	Mag ik 500 gram kaas?	сыр	Можно мне 500 грамм сыра?	link::thema2::taak2::A1
+kijken	Kijk eens, zes eieren.	смотреть	Вот, пожалуйста, шесть яиц.	link::thema2::taak2::A1
+de kilo	Een kilo aardappels voor u.	килограмм	Килограмм картошки для вас.	link::thema2::taak2::A1
+mevrouw	Wie kan ik helpen? Mevrouw?	госпожа, мадам	Кому я могу помочь? Мадам?	link::thema2::taak2::A1
+mogen	Mag ik 500 gram kaas?	мочь (разрешение)	Можно мне 500 грамм сыра?	link::thema2::taak2::A1
+nee	Nee, dank u wel.	нет	Нет, спасибо.	link::thema2::taak2::A1
+nemen	Ik neem vier bananen.	брать	Я возьму четыре банана.	link::thema2::taak2::A1
+pinnen	Kan ik pinnen?	платить картой	Можно картой?	link::thema2::taak2::A1
+de verkoper	De verkoper op de markt is aardig.	продавец	Продавец на рынке приветливый.	link::thema2::taak2::A1
+voor	Een kilo aardappels voor u.	для, за	Килограмм картошки для вас.	link::thema2::taak2::A1
+zeggen	Zeg het maar.	говорить, сказать	Говорите. / Слушаю вас.	link::thema2::taak2::A1
