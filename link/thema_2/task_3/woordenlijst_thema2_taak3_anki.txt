@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+altijd	Groente en fruit haal ik altijd op de markt.	всегда	Овощи и фрукты я всегда покупаю на рынке.	link::thema2::taak3::A1
+de bakker	Vers brood koop ik bij de bakker.	пекарь, пекарня	Свежий хлеб я покупаю в пекарне.	link::thema2::taak3::A1
+bij	Ik koop brood bij de bakker.	у, около, в (при)	Я покупаю хлеб в пекарне.	link::thema2::taak3::A1
+het brood	Vers brood koop ik bij de bakker.	хлеб	Свежий хлеб я покупаю в пекарне.	link::thema2::taak3::A1
+de buurt	Ik ben nieuw in de buurt.	район, окрестности	Я новенькая в этом районе.	link::thema2::taak3::A1
+dinsdag	De markt is op dinsdagmiddag.	вторник	Рынок работает во вторник днём.	link::thema2::taak3::A1
+duur	Albert Heijn is wel duur.	дорогой	Albert Heijn, правда, дорогой.	link::thema2::taak3::A1
+goedkoop	De Lidl is goedkoop.	дешёвый	Lidl — дешёвый.	link::thema2::taak3::A1
+halen	Groente haal ik op de markt.	покупать, приносить	Овощи я покупаю на рынке.	link::thema2::taak3::A1
+hier	We hebben hier veel winkels.	здесь, тут	У нас тут много магазинов.	link::thema2::taak3::A1
+hoor	Zeg maar 'je' hoor.	(частица для смягчения)	Можно на «ты».	link::thema2::taak3::A1
+kennen	Ik ken de buurt nog niet goed.	знать (быть знакомым)	Я ещё плохо знаю район.	link::thema2::taak3::A1
+meestal	Ik ga meestal naar Albert Heijn.	обычно, чаще всего	Я обычно хожу в Albert Heijn.	link::thema2::taak3::A1
+de middag	De markt is op dinsdagmiddag.	полдень, день	Рынок работает во вторник днём.	link::thema2::taak3::A1
+natuurlijk	Natuurlijk, vraag maar.	конечно, разумеется	Конечно, спрашивай.	link::thema2::taak3::A1
+de ochtend	De markt is op zaterdagochtend.	утро	Рынок работает в субботу утром.	link::thema2::taak3::A1
+soms	Ik ga soms naar de Lidl.	иногда	Иногда я хожу в Lidl.	link::thema2::taak3::A1
+de straat	Welkom in de straat.	улица	Добро пожаловать на нашу улицу.	link::thema2::taak3::A1
+veel	We hebben hier veel winkels.	много	У нас тут много магазинов.	link::thema2::taak3::A1
+ver	De Lidl is ook niet ver.	далеко	Lidl тоже недалеко.	link::thema2::taak3::A1
+vers	Dat is vers.	свежий	Это свежее.	link::thema2::taak3::A1
+vragen	Mag ik je iets vragen?	спрашивать	Можно тебя кое-что спросить?	link::thema2::taak3::A1
+wanneer	Wanneer is de markt?	когда	Когда работает рынок?	link::thema2::taak3::A1
+wel	We hebben wel een markt.	зато, всё-таки, ведь	Зато у нас есть рынок.	link::thema2::taak3::A1
+welk	Welke winkels zijn goed?	какой, который	Какие магазины хорошие?	link::thema2::taak3::A1
+zaterdag	De markt is op zaterdagochtend.	суббота	Рынок работает в субботу утром.	link::thema2::taak3::A1
+zien	Lula ziet de buurvrouw op straat.	видеть	Лула видит соседку на улице.	link::thema2::taak3::A1

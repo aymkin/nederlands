@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#tags column:3
+Hallo, u bent mijn buurvrouw hè?	Здравствуйте, вы ведь моя соседка?	link::thema2::taak3::zinnen
+Ik ben nieuw in de buurt.	Я новенькая в этом районе.	link::thema2::taak3::zinnen
+Welkom in de straat.	Добро пожаловать на нашу улицу.	link::thema2::taak3::zinnen
+Zeg maar 'je' hoor.	Можно на «ты».	link::thema2::taak3::zinnen
+Mag ik je iets vragen?	Можно тебя кое-что спросить?	link::thema2::taak3::zinnen
+Waar doe je boodschappen?	Где ты делаешь покупки?	link::thema2::taak3::zinnen
+Welke winkels zijn goed?	Какие магазины хорошие?	link::thema2::taak3::zinnen
+Ik ken de buurt nog niet goed.	Я ещё плохо знаю район.	link::thema2::taak3::zinnen
+Dit is een fijne buurt.	Это хороший район.	link::thema2::taak3::zinnen
+Ik ga meestal naar Albert Heijn.	Я обычно хожу в Albert Heijn.	link::thema2::taak3::zinnen
+Albert Heijn is wel duur.	Albert Heijn, правда, дорогой.	link::thema2::taak3::zinnen
+Ik ga soms naar de Lidl.	Иногда я хожу в Lidl.	link::thema2::taak3::zinnen
+Dat is ook niet ver.	Это тоже недалеко.	link::thema2::taak3::zinnen
+De Lidl is goedkoop.	Lidl — дешёвый.	link::thema2::taak3::zinnen
+Is de Aldi ook in de buurt?	Aldi тоже рядом?	link::thema2::taak3::zinnen
+We hebben hier geen Aldi.	У нас тут нет Aldi.	link::thema2::taak3::zinnen
+We hebben wel een markt.	Зато у нас есть рынок.	link::thema2::taak3::zinnen
+Groente en fruit haal ik altijd op de markt.	Овощи и фрукты я всегда покупаю на рынке.	link::thema2::taak3::zinnen
+Wanneer is de markt?	Когда работает рынок?	link::thema2::taak3::zinnen
+Op zaterdagochtend en op dinsdagmiddag.	В субботу утром и во вторник днём.	link::thema2::taak3::zinnen
+Ik hou van de markt.	Я люблю рынок.	link::thema2::taak3::zinnen
+Ik koop vis en vlees altijd op de markt.	Рыбу и мясо я всегда покупаю на рынке.	link::thema2::taak3::zinnen
+Dat is vers.	Это свежее.	link::thema2::taak3::zinnen
+Vers brood koop ik bij de bakker.	Свежий хлеб я покупаю в пекарне.	link::thema2::taak3::zinnen
+De bakker in de straat is goed.	Пекарня на нашей улице хорошая.	link::thema2::taak3::zinnen
+Wat een leuke straat is dit.	Какая приятная улица!	link::thema2::taak3::zinnen
