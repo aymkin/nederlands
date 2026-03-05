@@ -1,0 +1,89 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+positief	Probeer positief te blijven.	позитивный, положительный	Постарайся оставаться позитивным.	opmaat::thema8::pagina24::A2
+het postuur	Hij heeft een stevig postuur.	телосложение	У него крепкое телосложение.	opmaat::thema8::pagina24::A2
+redden	De brandweer heeft het kind gered.	спасать	Пожарные спасли ребёнка.	opmaat::thema8::pagina24::A2
+redelijk	Het weer is redelijk goed vandaag.	довольно, разумный	Погода сегодня довольно хорошая.	opmaat::thema8::pagina24::A2
+regenen	Het regent vaak in Nederland.	идти (о дожде)	В Нидерландах часто идёт дождь.	opmaat::thema8::pagina24::A2
+de relatie	Ze hebben een goede relatie.	отношения	У них хорошие отношения.	opmaat::thema8::pagina24::A2
+relaxen	In het weekend wil ik relaxen.	расслабляться, отдыхать	В выходные я хочу расслабиться.	opmaat::thema8::pagina24::A2
+de rij	Er staat een lange rij voor de kassa.	очередь, ряд	Перед кассой стоит длинная очередь.	opmaat::thema8::pagina24::A2
+het rijbewijs	Ik heb mijn rijbewijs vorig jaar gehaald.	водительские права	Я получил водительские права в прошлом году.	opmaat::thema8::pagina24::A2
+rijp	De appels zijn nog niet rijp.	зрелый, спелый	Яблоки ещё не спелые.	opmaat::thema8::pagina24::A2
+het risico	Er is een groot risico op overstroming.	риск	Есть большой риск наводнения.	opmaat::thema8::pagina24::A2
+romantisch	Hij heeft een romantisch diner georganiseerd.	романтичный	Он организовал романтический ужин.	opmaat::thema8::pagina24::A2
+rood	Ze heeft rood haar en blauwe ogen.	красный, рыжий	У неё рыжие волосы и голубые глаза.	opmaat::thema8::pagina24::A2
+rustig	Het is heel rustig in dit dorp.	спокойный, тихий	В этой деревне очень тихо.	opmaat::thema8::pagina24::A2
+saai	De film was heel saai.	скучный	Фильм был очень скучным.	opmaat::thema8::pagina24::A2
+schamen (zich)	Ik schaam me voor mijn fout.	стыдиться	Мне стыдно за свою ошибку.	opmaat::thema8::pagina24::A2
+de schat	Jij bent een schat!	сокровище, дорогой (обращение)	Ты сокровище!	opmaat::thema8::pagina24::A2
+de scheiding	De scheiding was moeilijk voor de kinderen.	развод, разделение	Развод был трудным для детей.	opmaat::thema8::pagina24::A2
+scheren (zich)	Hij scheert zich elke ochtend.	бриться	Он бреется каждое утро.	opmaat::thema8::pagina24::A2
+serieus	Ze is heel serieus over haar studie.	серьёзный	Она очень серьёзно относится к учёбе.	opmaat::thema8::pagina24::A2
+simpel	De oplossing is heel simpel.	простой	Решение очень простое.	opmaat::thema8::pagina24::A2
+slank	Ze is slank en sportief.	стройный	Она стройная и спортивная.	opmaat::thema8::pagina24::A2
+slordig	Zijn handschrift is heel slordig.	неряшливый, небрежный	Его почерк очень неряшливый.	opmaat::thema8::pagina24::A2
+sluiten	De winkel sluit om zes uur.	закрывать	Магазин закрывается в шесть часов.	opmaat::thema8::pagina24::A2
+smal	De straat is heel smal.	узкий	Улица очень узкая.	opmaat::thema8::pagina24::A2
+snappen	Snap je wat ik bedoel?	понимать (разг.)	Ты понимаешь, что я имею в виду?	opmaat::thema8::pagina24::A2
+sociaal	Hij is heel sociaal en heeft veel vrienden.	социальный, общительный	Он очень общительный и у него много друзей.	opmaat::thema8::pagina24::A2
+soepel	Ze beweegt heel soepel.	гибкий, плавный	Она двигается очень плавно.	opmaat::thema8::pagina24::A2
+spannend	De film was heel spannend.	захватывающий, увлекательный	Фильм был очень захватывающим.	opmaat::thema8::pagina24::A2
+spontaan	Ze is heel spontaan en doet graag onverwachte dingen.	спонтанный	Она очень спонтанная и любит делать неожиданные вещи.	opmaat::thema8::pagina24::A2
+de staart	De hond kwispelt met zijn staart.	хвост	Собака виляет хвостом.	opmaat::thema8::pagina24::A2
+stabiel	Hij heeft een stabiel karakter.	стабильный, устойчивый	У него стабильный характер.	opmaat::thema8::pagina24::A2
+steil	Ze heeft lang, steil haar.	прямой (о волосах), крутой	У неё длинные прямые волосы.	opmaat::thema8::pagina24::A2
+stelen	Iemand heeft mijn fiets gestolen.	красть	Кто-то украл мой велосипед.	opmaat::thema8::pagina24::A2
+stevig	Hij heeft een stevig postuur.	крепкий, плотный	У него крепкое телосложение.	opmaat::thema8::pagina24::A2
+het strand	We gaan zondag naar het strand.	пляж	В воскресенье мы идём на пляж.	opmaat::thema8::pagina24::A2
+het studentenhuis	Ik woon in een studentenhuis met vijf anderen.	студенческий дом	Я живу в студенческом доме с пятью другими.	opmaat::thema8::pagina24::A2
+tegenkomen	Ik kwam mijn buurman tegen in de winkel.	встретить (случайно)	Я случайно встретил соседа в магазине.	opmaat::thema8::pagina24::A2
+timide	Ze is een beetje timide in groepen.	робкий, застенчивый	Она немного робкая в группах.	opmaat::thema8::pagina24::A2
+de tip	Heb je een tip voor een goed restaurant?	совет, подсказка	У тебя есть совет по хорошему ресторану?	opmaat::thema8::pagina24::A2
+toch	Je komt toch naar het feest?	всё-таки, ведь	Ты ведь придёшь на праздник?	opmaat::thema8::pagina24::A2
+toen	Toen ik klein was, woonde ik in Rusland.	тогда, когда	Когда я был маленьким, я жил в России.	opmaat::thema8::pagina24::A2
+toepassen	Je moet de grammaticaregels toepassen.	применять	Тебе нужно применять грамматические правила.	opmaat::thema8::pagina24::A2
+trouwens	Trouwens, heb je het al gehoord?	кстати	Кстати, ты уже слышал?	opmaat::thema8::pagina24::A2
+de twijfel	Ik heb twijfels over deze beslissing.	сомнение	У меня есть сомнения по поводу этого решения.	opmaat::thema8::pagina24::A2
+typisch	Dat is typisch Nederlands.	типичный	Это типично нидерландское.	opmaat::thema8::pagina24::A2
+de uitdaging	Het is een grote uitdaging.	вызов, испытание	Это большое испытание.	opmaat::thema8::pagina24::A2
+het uiterlijk	Het uiterlijk is niet het belangrijkste.	внешность	Внешность — это не самое главное.	opmaat::thema8::pagina24::A2
+uitrusten	Na het werk wil ik uitrusten.	отдыхать	После работы я хочу отдохнуть.	opmaat::thema8::pagina24::A2
+het uitstapje	We maken een uitstapje naar de zee.	поездка, прогулка	Мы совершаем поездку к морю.	opmaat::thema8::pagina24::A2
+uitwisselen	We wisselen ervaringen uit.	обмениваться	Мы обмениваемся опытом.	opmaat::thema8::pagina24::A2
+de uitzending	Ik heb de uitzending op tv gezien.	передача, трансляция	Я видел передачу по телевизору.	opmaat::thema8::pagina24::A2
+vaag	Zijn antwoord was heel vaag.	расплывчатый, неясный	Его ответ был очень расплывчатым.	opmaat::thema8::pagina24::A2
+verrassend	Het resultaat was verrassend goed.	удивительный	Результат был удивительно хорошим.	opmaat::thema8::pagina24::A2
+verbazen (zich)	Ik verbaas me over zijn gedrag.	удивляться	Я удивляюсь его поведению.	opmaat::thema8::pagina24::A2
+vergissen (zich)	Sorry, ik heb me vergist.	ошибаться	Простите, я ошибся.	opmaat::thema8::pagina24::A2
+het verhaal	Hij vertelt een grappig verhaal.	рассказ, история	Он рассказывает смешную историю.	opmaat::thema8::pagina24::A2
+verheugen (zich)	Ik verheug me op de vakantie.	радоваться (в предвкушении)	Я радуюсь предстоящим каникулам.	opmaat::thema8::pagina24::A2
+het verkeer	Het verkeer in Amsterdam is heel druk.	движение, транспорт	Движение в Амстердаме очень оживлённое.	opmaat::thema8::pagina24::A2
+verlegen	Ze is te verlegen om te spreken.	застенчивый, стеснительный	Она слишком стеснительная, чтобы говорить.	opmaat::thema8::pagina24::A2
+verliefd	Hij is verliefd op zijn buurmeisje.	влюблённый	Он влюблён в соседку.	opmaat::thema8::pagina24::A2
+verschrikkelijk	Het was een verschrikkelijke storm.	ужасный	Это был ужасный шторм.	opmaat::thema8::pagina24::A2
+verslapen (zich)	Ik heb me verslapen en was te laat.	проспать	Я проспал и опоздал.	opmaat::thema8::pagina24::A2
+vies	De keuken is heel vies.	грязный	Кухня очень грязная.	opmaat::thema8::pagina24::A2
+voelen (zich)	Ik voel me vandaag niet lekker.	чувствовать себя	Я сегодня плохо себя чувствую.	opmaat::thema8::pagina24::A2
+voorbij	De zomer is voorbij.	прошедший, мимо	Лето прошло.	opmaat::thema8::pagina24::A2
+het voorhoofd	Hij heeft een breed voorhoofd.	лоб	У него широкий лоб.	opmaat::thema8::pagina24::A2
+voorlopig	Voorlopig blijf ik in Nederland.	пока что, временно	Пока что я остаюсь в Нидерландах.	opmaat::thema8::pagina24::A2
+vreselijk	Het weer is vreselijk vandaag.	ужасный	Погода сегодня ужасная.	opmaat::thema8::pagina24::A2
+vriendelijk	De mensen hier zijn heel vriendelijk.	дружелюбный, приветливый	Люди здесь очень дружелюбные.	opmaat::thema8::pagina24::A2
+de vrijheid	Vrijheid is heel belangrijk.	свобода	Свобода очень важна.	opmaat::thema8::pagina24::A2
+vroeger	Vroeger woonde ik in een dorp.	раньше	Раньше я жил в деревне.	opmaat::thema8::pagina24::A2
+vrolijk	Ze is altijd heel vrolijk.	весёлый, радостный	Она всегда очень весёлая.	opmaat::thema8::pagina24::A2
+warm	Het is vandaag lekker warm.	тёплый	Сегодня приятно тепло.	opmaat::thema8::pagina24::A2
+wassen (zich)	Ik was me elke ochtend.	мыться, умываться	Я моюсь каждое утро.	opmaat::thema8::pagina24::A2
+werkloos	Hij is al een jaar werkloos.	безработный	Он уже год безработный.	opmaat::thema8::pagina24::A2
+willen	Ik wil graag Nederlands leren.	хотеть	Я хочу учить нидерландский.	opmaat::thema8::pagina24::A2
+de zee	De zee is vandaag heel rustig.	море	Море сегодня очень спокойное.	opmaat::thema8::pagina24::A2
+zelfverzekerd	Ze is heel zelfverzekerd.	уверенный в себе	Она очень уверена в себе.	opmaat::thema8::pagina24::A2
+de zin	Ik heb geen zin om te koken.	предложение; желание	Мне не хочется готовить.	opmaat::thema8::pagina24::A2
+de zomervakantie	In de zomervakantie ga ik naar Spanje.	летние каникулы	На летних каникулах я еду в Испанию.	opmaat::thema8::pagina24::A2
+de zon	De zon schijnt vandaag.	солнце	Сегодня светит солнце.	opmaat::thema8::pagina24::A2
+zorgen maken (zich)	Maak je geen zorgen, het komt goed.	беспокоиться, переживать	Не переживай, всё будет хорошо.	opmaat::thema8::pagina24::A2
+zorgzaam	Mijn moeder is heel zorgzaam.	заботливый	Моя мама очень заботливая.	opmaat::thema8::pagina24::A2
+zwart	Ze draagt altijd zwarte kleding.	чёрный	Она всегда носит чёрную одежду.	opmaat::thema8::pagina24::A2

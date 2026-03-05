@@ -1,0 +1,80 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+aanmelden (zich)	Ik heb me aangemeld voor de cursus.	записаться, зарегистрироваться	Я записался на курс.	opmaat::thema8::pagina22::A2
+aanpassen (zich)	Je moet je aanpassen aan de nieuwe situatie.	приспосабливаться	Тебе нужно приспособиться к новой ситуации.	opmaat::thema8::pagina22::A2
+de activiteit	Er zijn veel activiteiten in het weekend.	занятие, мероприятие	В выходные много мероприятий.	opmaat::thema8::pagina22::A2
+de advertentie	Ik heb een advertentie in de krant gezien.	объявление, реклама	Я увидел объявление в газете.	opmaat::thema8::pagina22::A2
+afwachtend	Hij is altijd een beetje afwachtend.	выжидающий, осторожный	Он всегда немного выжидающий.	opmaat::thema8::pagina22::A2
+alledaags	Het is een alledaags probleem.	повседневный, обыденный	Это повседневная проблема.	opmaat::thema8::pagina22::A2
+alleen	Ik woon alleen in een flat.	один, только	Я живу один в квартире.	opmaat::thema8::pagina22::A2
+allemaal	We gaan allemaal naar het feest.	все (вместе)	Мы все идём на праздник.	opmaat::thema8::pagina22::A2
+allerlei	Er zijn allerlei soorten mensen.	всевозможный, разный	Есть всевозможные типы людей.	opmaat::thema8::pagina22::A2
+ambitieus	Zij is heel ambitieus op haar werk.	амбициозный	Она очень амбициозна на работе.	opmaat::thema8::pagina22::A2
+anders	Jij bent anders dan je broer.	другой, иначе	Ты другой, чем твой брат.	opmaat::thema8::pagina22::A2
+arrogant	Sommige mensen vinden hem arrogant.	высокомерный	Некоторые люди считают его высокомерным.	opmaat::thema8::pagina22::A2
+avontuurlijk	Ze is heel avontuurlijk en reist veel.	авантюрный, любящий приключения	Она очень авантюрная и много путешествует.	opmaat::thema8::pagina22::A2
+belachelijk	Dat is een belachelijk idee!	смешной, нелепый	Это нелепая идея!	opmaat::thema8::pagina22::A2
+beloven	Ik beloof dat ik op tijd kom.	обещать	Я обещаю, что приду вовремя.	opmaat::thema8::pagina22::A2
+bescheiden	Hij is een bescheiden man.	скромный	Он скромный мужчина.	opmaat::thema8::pagina22::A2
+beschrijven	Kun je jezelf beschrijven?	описывать	Можешь описать себя?	opmaat::thema8::pagina22::A2
+betrouwbaar	Mijn vriend is heel betrouwbaar.	надёжный	Мой друг очень надёжный.	opmaat::thema8::pagina22::A2
+bezet	Sorry, deze plek is bezet.	занятый	Извините, это место занято.	opmaat::thema8::pagina22::A2
+het bezwaar	Heeft u bezwaar tegen dit plan?	возражение	У вас есть возражения против этого плана?	opmaat::thema8::pagina22::A2
+bijvoorbeeld	Ik hou van fruit, bijvoorbeeld appels.	например	Я люблю фрукты, например яблоки.	opmaat::thema8::pagina22::A2
+de bikini	Ze draagt een nieuwe bikini op het strand.	бикини	Она носит новое бикини на пляже.	opmaat::thema8::pagina22::A2
+blauw	Haar ogen zijn blauw.	голубой, синий	Её глаза голубые.	opmaat::thema8::pagina22::A2
+blij	Ik ben blij dat je er bent!	радостный, довольный	Я рад, что ты здесь!	opmaat::thema8::pagina22::A2
+blond	Ze heeft lang blond haar.	светловолосый, блондин	У неё длинные светлые волосы.	opmaat::thema8::pagina22::A2
+boos	Mijn moeder is boos op mij.	злой, сердитый	Моя мама сердится на меня.	opmaat::thema8::pagina22::A2
+de boottocht	We maken een boottocht over de grachten.	прогулка на лодке	Мы совершаем прогулку на лодке по каналам.	opmaat::thema8::pagina22::A2
+bot	Hij kan soms bot reageren.	грубый, резкий	Он иногда может реагировать грубо.	opmaat::thema8::pagina22::A2
+bovendien	Het is goedkoop en bovendien lekker.	кроме того, к тому же	Это дёшево и к тому же вкусно.	opmaat::thema8::pagina22::A2
+breed	De rivier is heel breed.	широкий	Река очень широкая.	opmaat::thema8::pagina22::A2
+de bril	Ik draag een bril omdat ik slecht zie.	очки	Я ношу очки, потому что плохо вижу.	opmaat::thema8::pagina22::A2
+de bruid	De bruid draagt een witte jurk.	невеста	Невеста носит белое платье.	opmaat::thema8::pagina22::A2
+de bruidegom	De bruidegom wacht bij het altaar.	жених	Жених ждёт у алтаря.	opmaat::thema8::pagina22::A2
+bruin	Hij heeft bruine ogen.	коричневый, карий	У него карие глаза.	opmaat::thema8::pagina22::A2
+de catastrofe	De overstroming was een catastrofe.	катастрофа	Наводнение было катастрофой.	opmaat::thema8::pagina22::A2
+chagrijnig	Waarom kijk je zo chagrijnig?	угрюмый, ворчливый	Почему ты выглядишь таким угрюмым?	opmaat::thema8::pagina22::A2
+chaotisch	Zijn kamer is heel chaotisch.	хаотичный, беспорядочный	Его комната очень хаотичная.	opmaat::thema8::pagina22::A2
+combineren	Ik combineer werk en studie.	сочетать, комбинировать	Я сочетаю работу и учёбу.	opmaat::thema8::pagina22::A2
+conservatief	Mijn opa is vrij conservatief.	консервативный	Мой дедушка довольно консервативный.	opmaat::thema8::pagina22::A2
+creatief	Ze is een heel creatief persoon.	творческий, креативный	Она очень творческий человек.	opmaat::thema8::pagina22::A2
+cultureel	Amsterdam heeft veel culturele activiteiten.	культурный	В Амстердаме много культурных мероприятий.	opmaat::thema8::pagina22::A2
+dagelijks	Ik sport dagelijks een half uur.	ежедневный, каждый день	Я занимаюсь спортом каждый день полчаса.	opmaat::thema8::pagina22::A2
+denken	Ik denk dat hij gelijk heeft.	думать	Я думаю, что он прав.	opmaat::thema8::pagina22::A2
+dezelfde	Wij dragen dezelfde kleren.	тот же самый	Мы носим одинаковую одежду.	opmaat::thema8::pagina22::A2
+diepzinnig	Hij houdt van diepzinnige gesprekken.	глубокомысленный	Он любит глубокомысленные разговоры.	opmaat::thema8::pagina22::A2
+dik	Het boek is heel dik.	толстый	Книга очень толстая.	opmaat::thema8::pagina22::A2
+direct	Ze zegt altijd direct wat ze denkt.	прямой, непосредственный	Она всегда прямо говорит, что думает.	opmaat::thema8::pagina22::A2
+dom	Dat was een domme fout.	глупый	Это была глупая ошибка.	opmaat::thema8::pagina22::A2
+donkerblond	Ze heeft donkerblond haar.	тёмно-русый	У неё тёмно-русые волосы.	opmaat::thema8::pagina22::A2
+dronken	Hij was gisteravond dronken.	пьяный	Он был вчера вечером пьяный.	opmaat::thema8::pagina22::A2
+druk	Het is heel druk in de stad.	оживлённый, занятой	В городе очень оживлённо.	opmaat::thema8::pagina22::A2
+dun	Ze is heel dun en lang.	тонкий, худой	Она очень худая и высокая.	opmaat::thema8::pagina22::A2
+eerlijk	Wees eerlijk tegen me.	честный	Будь честен со мной.	opmaat::thema8::pagina22::A2
+de eeuw	In de twintigste eeuw is er veel veranderd.	век, столетие	В двадцатом веке многое изменилось.	opmaat::thema8::pagina22::A2
+egoïstisch	Denk niet alleen aan jezelf, dat is egoïstisch.	эгоистичный	Не думай только о себе, это эгоистично.	opmaat::thema8::pagina22::A2
+de eigenschap	Eerlijkheid is een goede eigenschap.	свойство, качество (характера)	Честность — это хорошее качество.	opmaat::thema8::pagina22::A2
+eigenwijs	Mijn zoon is soms een beetje eigenwijs.	своенравный, упрямый	Мой сын иногда немного своенравный.	opmaat::thema8::pagina22::A2
+het eiland	Texel is een mooi eiland in Nederland.	остров	Тексел — красивый остров в Нидерландах.	opmaat::thema8::pagina22::A2
+elektrisch	We hebben een elektrische auto.	электрический	У нас электрическая машина.	opmaat::thema8::pagina22::A2
+de emotie	Hij toont niet vaak zijn emoties.	эмоция	Он нечасто показывает свои эмоции.	opmaat::thema8::pagina22::A2
+emotioneel	Ze wordt snel emotioneel bij een film.	эмоциональный	Она быстро становится эмоциональной при просмотре фильма.	opmaat::thema8::pagina22::A2
+ergens	Ik heb mijn sleutels ergens laten liggen.	где-то	Я где-то оставил свои ключи.	opmaat::thema8::pagina22::A2
+ergeren (zich)	Ik erger me aan het lawaai.	раздражаться	Меня раздражает шум.	opmaat::thema8::pagina22::A2
+de ervaring	Ze heeft veel ervaring met kinderen.	опыт	У неё много опыта с детьми.	opmaat::thema8::pagina22::A2
+de etalagepop	De etalagepop draagt een mooie jurk.	манекен (в витрине)	Манекен в витрине носит красивое платье.	opmaat::thema8::pagina22::A2
+evenwichtig	Hij is een evenwichtig persoon.	уравновешенный	Он уравновешенный человек.	opmaat::thema8::pagina22::A2
+extravert	Mijn zus is heel extravert en praat veel.	экстравертный	Моя сестра очень экстравертная и много говорит.	opmaat::thema8::pagina22::A2
+flexibel	Je moet flexibel zijn op het werk.	гибкий	Ты должен быть гибким на работе.	opmaat::thema8::pagina22::A2
+gastvrij	Nederlanders zijn heel gastvrij.	гостеприимный	Голландцы очень гостеприимные.	opmaat::thema8::pagina22::A2
+geduldig	De leraar is heel geduldig met de studenten.	терпеливый	Учитель очень терпелив со студентами.	opmaat::thema8::pagina22::A2
+geleden	Ik ben twee jaar geleden naar Nederland gekomen.	назад (о времени)	Я приехал в Нидерланды два года назад.	opmaat::thema8::pagina22::A2
+gemeenschappelijk	We hebben gemeenschappelijke interesses.	общий, совместный	У нас общие интересы.	opmaat::thema8::pagina22::A2
+genieten van	Ik geniet van het mooie weer.	наслаждаться	Я наслаждаюсь хорошей погодой.	opmaat::thema8::pagina22::A2
+gescheiden	Mijn ouders zijn gescheiden.	разведённый	Мои родители разведены.	opmaat::thema8::pagina22::A2
+gesloten	Hij is een gesloten persoon.	замкнутый, закрытый	Он замкнутый человек.	opmaat::thema8::pagina22::A2
+gevaarlijk	Zwemmen in de zee kan gevaarlijk zijn.	опасный	Плавание в море может быть опасным.	opmaat::thema8::pagina22::A2

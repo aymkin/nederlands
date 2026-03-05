@@ -1,0 +1,100 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+gevoelig	Ze is heel gevoelig voor kritiek.	чувствительный	Она очень чувствительна к критике.	opmaat::thema8::pagina23::A2
+geweldig	Het feest was geweldig!	потрясающий, замечательный	Праздник был потрясающим!	opmaat::thema8::pagina23::A2
+gewoon	Het is gewoon een normale dag.	обычный, просто	Это просто обычный день.	opmaat::thema8::pagina23::A2
+het gezicht	Ze heeft een mooi gezicht.	лицо	У неё красивое лицо.	opmaat::thema8::pagina23::A2
+grappig	Hij vertelt altijd grappige verhalen.	смешной, забавный	Он всегда рассказывает смешные истории.	opmaat::thema8::pagina23::A2
+grijs	Mijn oma heeft grijs haar.	серый, седой	У моей бабушки седые волосы.	opmaat::thema8::pagina23::A2
+groen	Haar ogen zijn groen.	зелёный	Её глаза зелёные.	opmaat::thema8::pagina23::A2
+groot	Hij is heel groot, bijna twee meter.	большой, высокий (о росте)	Он очень высокий, почти два метра.	opmaat::thema8::pagina23::A2
+het haar	Ze heeft lang, krullend haar.	волосы	У неё длинные, кудрявые волосы.	opmaat::thema8::pagina23::A2
+de haarband	Ze draagt een rode haarband.	ободок для волос	Она носит красный ободок для волос.	opmaat::thema8::pagina23::A2
+halen	Kun je melk halen bij de supermarkt?	приносить, доставать	Можешь принести молоко из супермаркета?	opmaat::thema8::pagina23::A2
+halflang	Ze heeft halflang haar.	средней длины	У неё волосы средней длины.	opmaat::thema8::pagina23::A2
+haten	Ik haat het als het regent.	ненавидеть	Я ненавижу, когда идёт дождь.	opmaat::thema8::pagina23::A2
+de hectiek	De hectiek van de stad is vermoeiend.	суета, суматоха	Суета города утомляет.	opmaat::thema8::pagina23::A2
+heet	Het is vandaag erg heet buiten.	жаркий, горячий	Сегодня на улице очень жарко.	opmaat::thema8::pagina23::A2
+het hek	Er staat een hek om de tuin.	забор, ограда	Вокруг сада стоит забор.	opmaat::thema8::pagina23::A2
+helemaal	Ik ben het helemaal met je eens.	совсем, полностью	Я полностью с тобой согласен.	opmaat::thema8::pagina23::A2
+herinneren (zich)	Ik herinner me die dag nog goed.	вспоминать, помнить	Я хорошо помню тот день.	opmaat::thema8::pagina23::A2
+hetzelfde	We denken hetzelfde over dit onderwerp.	то же самое	Мы думаем одинаково об этой теме.	opmaat::thema8::pagina23::A2
+hoezo	Hoezo ben je niet gekomen?	почему, в каком смысле	Почему ты не пришёл?	opmaat::thema8::pagina23::A2
+de hoofddoek	Sommige vrouwen dragen een hoofddoek.	головной платок	Некоторые женщины носят головной платок.	opmaat::thema8::pagina23::A2
+humoristisch	Ze is heel humoristisch en lacht veel.	юмористичный, с чувством юмора	Она очень юмористичная и много смеётся.	opmaat::thema8::pagina23::A2
+het huwelijk	Ze vieren hun huwelijk met een groot feest.	брак, свадьба	Они отмечают свадьбу большим праздником.	opmaat::thema8::pagina23::A2
+impulsief	Ze koopt impulsief dure dingen.	импульсивный	Она импульсивно покупает дорогие вещи.	opmaat::thema8::pagina23::A2
+initiatiefrijk	Hij is heel initiatiefrijk op zijn werk.	инициативный	Он очень инициативный на работе.	opmaat::thema8::pagina23::A2
+het innerlijk	Het innerlijk is belangrijker dan het uiterlijk.	внутренний мир	Внутренний мир важнее внешности.	opmaat::thema8::pagina23::A2
+inschrijven (zich)	Ik heb me ingeschreven voor de marathon.	записаться, зарегистрироваться	Я записался на марафон.	opmaat::thema8::pagina23::A2
+in eerste instantie	In eerste instantie wilde ik niet gaan.	в первую очередь, сначала	Сначала я не хотел идти.	opmaat::thema8::pagina23::A2
+intensief	De cursus is heel intensief.	интенсивный	Курс очень интенсивный.	opmaat::thema8::pagina23::A2
+interesseren (zich)	Ik interesseer me voor kunst.	интересоваться	Я интересуюсь искусством.	opmaat::thema8::pagina23::A2
+introvert	Mijn broer is heel introvert.	интровертный	Мой брат очень интровертный.	opmaat::thema8::pagina23::A2
+het jaar	Ik woon hier al drie jaar.	год	Я живу здесь уже три года.	opmaat::thema8::pagina23::A2
+kaal	Mijn oom is helemaal kaal.	лысый	Мой дядя совсем лысый.	opmaat::thema8::pagina23::A2
+het kabaal	De buren maken veel kabaal.	шум, грохот	Соседи шумят.	opmaat::thema8::pagina23::A2
+het karakter	Ze heeft een sterk karakter.	характер	У неё сильный характер.	opmaat::thema8::pagina23::A2
+de karaktereigenschap	Geduld is een belangrijke karaktereigenschap.	черта характера	Терпение — важная черта характера.	opmaat::thema8::pagina23::A2
+klein	Het kind is nog heel klein.	маленький, невысокий	Ребёнок ещё очень маленький.	opmaat::thema8::pagina23::A2
+klikken	Het klikte meteen tussen ons.	щёлкнуть; поладить	Мы сразу поладили.	opmaat::thema8::pagina23::A2
+het klimaat	Het klimaat in Nederland is mild.	климат	Климат в Нидерландах мягкий.	opmaat::thema8::pagina23::A2
+knap	Ze is een heel knappe vrouw.	красивый, привлекательный	Она очень красивая женщина.	opmaat::thema8::pagina23::A2
+het knotje	Ze draagt haar haar in een knotje.	пучок (причёска)	Она носит волосы в пучке.	opmaat::thema8::pagina23::A2
+koppig	Hij is heel koppig en verandert nooit van mening.	упрямый	Он очень упрямый и никогда не меняет мнение.	opmaat::thema8::pagina23::A2
+kort	Ze heeft kort haar.	короткий	У неё короткие волосы.	opmaat::thema8::pagina23::A2
+krullend	Hij heeft krullend haar.	кудрявый	У него кудрявые волосы.	opmaat::thema8::pagina23::A2
+kwaad	Ze is kwaad op haar collega.	злой, рассерженный	Она злится на коллегу.	opmaat::thema8::pagina23::A2
+lang	Hij is lang en heeft blond haar.	длинный, высокий	Он высокий и у него светлые волосы.	opmaat::thema8::pagina23::A2
+lastig	Dit is een lastige vraag.	трудный, неудобный	Это трудный вопрос.	opmaat::thema8::pagina23::A2
+leeg	De fles is leeg.	пустой	Бутылка пустая.	opmaat::thema8::pagina23::A2
+lichtblond	Het meisje heeft lichtblond haar.	светло-русый	У девочки светло-русые волосы.	opmaat::thema8::pagina23::A2
+lief	Wat een lief kind!	милый, добрый	Какой милый ребёнок!	opmaat::thema8::pagina23::A2
+de liefde	De liefde is het mooiste gevoel.	любовь	Любовь — самое прекрасное чувство.	opmaat::thema8::pagina23::A2
+het liefje	Kom hier, mijn liefje.	милый, любимый (ласкательное)	Иди сюда, мой милый.	opmaat::thema8::pagina23::A2
+lijken op	Je lijkt op je moeder.	быть похожим на	Ты похожа на маму.	opmaat::thema8::pagina23::A2
+lui	Hij is te lui om te sporten.	ленивый	Он слишком ленивый, чтобы заниматься спортом.	opmaat::thema8::pagina23::A2
+mager	De kat is heel mager.	худой, тощий	Кот очень худой.	opmaat::thema8::pagina23::A2
+meegaan	Wil je meegaan naar de bioscoop?	пойти с кем-то, присоединиться	Хочешь пойти со мной в кино?	opmaat::thema8::pagina23::A2
+meevallen	Het examen viel mee.	оказаться лучше ожидаемого	Экзамен оказался легче, чем я думал.	opmaat::thema8::pagina23::A2
+melden (zich)	Je moet je melden bij de receptie.	явиться, обратиться	Тебе нужно обратиться на ресепшн.	opmaat::thema8::pagina23::A2
+de mens	Alle mensen zijn verschillend.	человек	Все люди разные.	opmaat::thema8::pagina23::A2
+de mentaliteit	De mentaliteit verschilt per land.	менталитет	Менталитет различается в разных странах.	opmaat::thema8::pagina23::A2
+mijden	Hij mijdt drukke plekken.	избегать	Он избегает людных мест.	opmaat::thema8::pagina23::A2
+misgaan	Er kan altijd iets misgaan.	пойти не так	Всегда что-то может пойти не так.	opmaat::thema8::pagina23::A2
+modern	Ze draagt altijd moderne kleding.	современный	Она всегда носит современную одежду.	opmaat::thema8::pagina23::A2
+mollig	De baby is lekker mollig.	пухлый, полненький	Малыш приятно пухленький.	opmaat::thema8::pagina23::A2
+namelijk	Ik kan niet komen, ik ben namelijk ziek.	а именно, дело в том что	Я не могу прийти, дело в том, что я болен.	opmaat::thema8::pagina23::A2
+de natuur	De natuur in Nederland is heel groen.	природа	Природа в Нидерландах очень зелёная.	opmaat::thema8::pagina23::A2
+natuurlijk	Natuurlijk help ik je!	конечно, естественно	Конечно, я тебе помогу!	opmaat::thema8::pagina23::A2
+negatief	Probeer niet zo negatief te denken.	негативный, отрицательный	Постарайся не думать так негативно.	opmaat::thema8::pagina23::A2
+net / netjes	Hij ziet er altijd netjes uit.	аккуратный, опрятный	Он всегда выглядит аккуратно.	opmaat::thema8::pagina23::A2
+niemand	Er is niemand thuis.	никто	Дома никого нет.	opmaat::thema8::pagina23::A2
+nieuwsgierig	Kinderen zijn heel nieuwsgierig.	любопытный	Дети очень любопытные.	opmaat::thema8::pagina23::A2
+nonchalant	Hij loopt nonchalant door de straat.	небрежный, беспечный	Он небрежно идёт по улице.	opmaat::thema8::pagina23::A2
+nuchter	Nederlanders staan bekend als nuchter.	трезвомыслящий, рассудительный	Голландцы известны как рассудительные.	opmaat::thema8::pagina23::A2
+ondernemend	Ze is heel ondernemend en start een bedrijf.	предприимчивый	Она очень предприимчивая и открывает бизнес.	opmaat::thema8::pagina23::A2
+ongeduldig	Wees niet zo ongeduldig, wacht even.	нетерпеливый	Не будь таким нетерпеливым, подожди.	opmaat::thema8::pagina23::A2
+de ontmoeting	De ontmoeting was heel leuk.	встреча	Встреча была очень приятной.	opmaat::thema8::pagina23::A2
+ontspannend	Yoga is heel ontspannend.	расслабляющий	Йога очень расслабляет.	opmaat::thema8::pagina23::A2
+ontvangen	We ontvangen gasten dit weekend.	принимать (гостей), получать	Мы принимаем гостей в эти выходные.	opmaat::thema8::pagina23::A2
+onvoorspelbaar	Het weer in Nederland is onvoorspelbaar.	непредсказуемый	Погода в Нидерландах непредсказуема.	opmaat::thema8::pagina23::A2
+onzeker	Ze voelt zich onzeker over haar uiterlijk.	неуверенный	Она чувствует себя неуверенно из-за своей внешности.	opmaat::thema8::pagina23::A2
+de oorlog	Na de oorlog was alles anders.	война	После войны всё было по-другому.	opmaat::thema8::pagina23::A2
+de oorzaak	Wat is de oorzaak van het probleem?	причина	Какова причина проблемы?	opmaat::thema8::pagina23::A2
+open	Ze is een heel open persoon.	открытый	Она очень открытый человек.	opmaat::thema8::pagina23::A2
+opmaken (zich)	Ze maakt zich elke ochtend op.	краситься, наносить макияж	Она каждое утро красится.	opmaat::thema8::pagina23::A2
+optimistisch	Ik ben optimistisch over de toekomst.	оптимистичный	Я оптимистично смотрю в будущее.	opmaat::thema8::pagina23::A2
+de opvoeding	De opvoeding van kinderen is belangrijk.	воспитание	Воспитание детей — это важно.	opmaat::thema8::pagina23::A2
+opzeggen	Ik wil mijn abonnement opzeggen.	расторгнуть, отменить	Я хочу расторгнуть подписку.	opmaat::thema8::pagina23::A2
+organiseren	Zij organiseert een feest voor haar verjaardag.	организовывать	Она организует вечеринку на свой день рождения.	opmaat::thema8::pagina23::A2
+ouderwets	Die kleding is een beetje ouderwets.	старомодный	Эта одежда немного старомодная.	opmaat::thema8::pagina23::A2
+de overeenkomst	Er zijn veel overeenkomsten tussen de twee zussen.	сходство, соглашение	Между двумя сёстрами много общего.	opmaat::thema8::pagina23::A2
+de paardenstaart	Ze draagt haar haar in een paardenstaart.	хвост (причёска)	Она носит волосы в хвосте.	opmaat::thema8::pagina23::A2
+de partner	Mijn partner werkt in een ziekenhuis.	партнёр	Мой партнёр работает в больнице.	opmaat::thema8::pagina23::A2
+pas	Ik ben pas in Nederland aangekomen.	только что, недавно	Я только что приехал в Нидерланды.	opmaat::thema8::pagina23::A2
+passief	Hij is te passief in de les.	пассивный	Он слишком пассивный на уроке.	opmaat::thema8::pagina23::A2
+pessimistisch	Wees niet zo pessimistisch!	пессимистичный	Не будь таким пессимистичным!	opmaat::thema8::pagina23::A2
+plaatselijk	Er is plaatselijk regen verwacht.	местный, местами	Местами ожидается дождь.	opmaat::thema8::pagina23::A2
