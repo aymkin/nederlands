@@ -1,0 +1,25 @@
+#separator:tab
+#html:true
+#tags column:3
+Ik heb zin in chips.	Мне хочется чипсов.	link::thema2::taak4::zinnen
+Ik heb zin in vis.	Мне хочется рыбы.	link::thema2::taak4::zinnen
+Hebben we nog chips?	У нас ещё есть чипсы?	link::thema2::taak4::zinnen
+Kijk even in de keuken.	Посмотри быстро на кухне.	link::thema2::taak4::zinnen
+Ik zie alleen appels.	Я вижу только яблоки.	link::thema2::taak4::zinnen
+Hier ligt een zak chips, maar die is leeg.	Здесь лежит пакетик чипсов, но он пустой.	link::thema2::taak4::zinnen
+Ga dan even naar de supermarkt.	Тогда сходи быстро в супермаркет.	link::thema2::taak4::zinnen
+Is de supermarkt nog open?	Супермаркет ещё открыт?	link::thema2::taak4::zinnen
+Ja, ik denk het wel.	Да, думаю, да.	link::thema2::taak4::zinnen
+Hoe laat is het?	Который сейчас час?	link::thema2::taak4::zinnen
+Het is half negen.	Половина девятого.	link::thema2::taak4::zinnen
+Ik kijk even op internet.	Я быстро посмотрю в интернете.	link::thema2::taak4::zinnen
+De Jumbo is open van 8.00 tot 22.00 uur.	Jumbo работает с 8.00 до 22.00.	link::thema2::taak4::zinnen
+Die is maar tot 20.00 uur open.	Он работает только до 20.00.	link::thema2::taak4::zinnen
+De Jumbo is wel ver.	Jumbo, правда, далеко.	link::thema2::taak4::zinnen
+Nee, Albert Heijn is dicht.	Нет, Albert Heijn закрыт.	link::thema2::taak4::zinnen
+Dan fiets ik even snel naar de Jumbo.	Тогда я быстро съезжу на велосипеде в Jumbo.	link::thema2::taak4::zinnen
+Even kijken.	Сейчас посмотрю.	link::thema2::taak4::zinnen
+Tot zo!	До скорого!	link::thema2::taak4::zinnen
+De winkel gaat bijna dicht.	Магазин вот-вот закроется.	link::thema2::taak4::zinnen
+Ik werk van 13.00 tot 19.00 uur.	Я работаю с 13.00 до 19.00.	link::thema2::taak4::zinnen
+De winkel is niet open, denk ik.	Магазин, по-моему, не открыт.	link::thema2::taak4::zinnen

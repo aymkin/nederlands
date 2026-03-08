@@ -1,0 +1,27 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+de chips	Ik wil een zak chips kopen.	чипсы	Я хочу купить пакетик чипсов.	link::thema2::taak4::A2
+denken	Ik denk dat de Jumbo open is.	думать	Я думаю, что Jumbo открыт.	link::thema2::taak4::A2
+dicht	De supermarkt is dicht.	закрытый	Магазин закрыт.	link::thema2::taak4::A2
+fietsen	Ik fiets snel naar de supermarkt.	ехать на велосипеде	Я быстро еду на велосипеде в супермаркет.	link::thema2::taak4::A2
+half	De winkel sluit om half negen.	половина (в обозначении времени)	Магазин закрывается в половине девятого.	link::thema2::taak4::A2
+het internet	Ik kijk op het internet wat de openingstijden zijn.	интернет	Я смотрю в интернете часы работы.	link::thema2::taak4::A2
+de keuken	In de keuken zijn geen chips meer.	кухня	На кухне больше нет чипсов.	link::thema2::taak4::A2
+laat	Is het al zo laat?	поздно	Уже так поздно?	link::thema2::taak4::A2
+leeg	De zak chips is leeg.	пустой	Пакетик чипсов пуст.	link::thema2::taak4::A2
+liggen	De chips liggen in de supermarkt.	лежать, находиться	Чипсы лежат в супермаркете.	link::thema2::taak4::A2
+maandag	Op maandag is de winkel open tot acht uur.	понедельник	В понедельник магазин работает до восьми.	link::thema2::taak4::A2
+open	Is de Jumbo nog open?	открытый	Jumbo ещё открыт?	link::thema2::taak4::A2
+de openingstijden	Wat zijn de openingstijden van de Jumbo?	часы работы	Каковы часы работы Jumbo?	link::thema2::taak4::A2
+'s avonds	's Avonds ga ik naar de supermarkt.	вечером	Вечером я иду в супермаркет.	link::thema2::taak4::A2
+'s middags	's Middags zijn er veel mensen in de winkel.	днём	Днём в магазине много людей.	link::thema2::taak4::A2
+'s morgens	's Morgens ga ik boodschappen doen.	утром	Утром я иду за покупками.	link::thema2::taak4::A2
+'s nachts	's Nachts is de winkel dicht.	ночью	Ночью магазин закрыт.	link::thema2::taak4::A2
+'s ochtends	's Ochtends is de winkel rustig.	утром (ранним)	Ранним утром магазин спокойный.	link::thema2::taak4::A2
+snel	Ga snel naar de winkel!	быстро	Быстро иди в магазин!	link::thema2::taak4::A2
+tot	De Jumbo is open tot tien uur.	до	Jumbo работает до десяти часов.	link::thema2::taak4::A2
+uur	Hoe laat is het? Het is zes uur.	час	Который час? Шесть часов.	link::thema2::taak4::A2
+weten	Weet jij wanneer de Jumbo sluit?	знать	Ты знаешь, когда закрывается Jumbo?	link::thema2::taak4::A2
+de zak	Ik koop een zak chips.	пакет, мешок	Я покупаю пакетик чипсов.	link::thema2::taak4::A2
