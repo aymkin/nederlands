@@ -6,19 +6,19 @@
 
 Vijf jaar geleden was ik met mijn man een week in Spanje. Dat was een leuke vakantie.
 
-1. Vroeger sportte ik een paar dagen per week. Op maandag ging ik naar voetbal-training. Op woensdag, ____ en in het weekend ___ .
+1. Vroeger sportte ik een paar dagen per week. Op maandag ging ik naar voetbal-training. Op woensdag **zwom** ik in het zwembad en in het weekend **speelde** ik tennis met mijn vrienden.
 
-2. Toen ik 15 jaar was, ___ .
+2. Toen ik 15 jaar was, **woonde** ik nog bij mijn ouders en **ging** ik elke dag naar school. Ik **had** veel vrienden en we **speelden** vaak samen buiten.
 
-3. Afgelopen zaterdag ___ . Dat was leuk!
+3. Afgelopen zaterdag **ging** ik met vrienden naar een restaurant in het centrum. We **aten** lekker en **praatten** de hele avond. Dat was leuk!
 
-4. Ik kon gisteren niet werken omdat ___ .
-5. Mijn broer woont in Kopenhagen. Een maand geleden heb ik hem bezocht. Ik was een week bij hem. De eerste dagen ___ , de tweede helft van de week ___ .
+4. Ik kon gisteren niet werken omdat ik ziek **was**. Ik **had** hoge koorts en **moest** de hele dag in bed blijven.
+5. Mijn broer woont in Kopenhagen. Een maand geleden heb ik hem bezocht. Ik was een week bij hem. De eerste dagen **wandelden** we door de stad en **bezochten** we musea, de tweede helft van de week **bleven** we thuis en **kookten** we samen Deense gerechten.
 
-6. Vorige week had Karel griep. De eerste dag voelde hij zich nog redelijk, maar toen hij hoge koorts kreeg, ___ .
+6. Vorige week had Karel griep. De eerste dag voelde hij zich nog redelijk, maar toen hij hoge koorts kreeg, **moest** hij naar de dokter. De dokter **zei** dat hij een week thuis **moest** blijven.
 
-7. Gisteren ging ik met de bus naar mijn werk omdat mijn fiets ___ .
-8. Wij wonen nu in een dorp, vroeger woonden we in een grote stad. Daar ___ .
+7. Gisteren ging ik met de bus naar mijn werk omdat mijn fiets kapot **was**. De band **was** lek en ik **had** geen tijd om het te repareren.
+8. Wij wonen nu in een dorp, vroeger woonden we in een grote stad. Daar **gingen** we vaak naar de bioscoop en **aten** we elke week in een ander restaurant. Het **was** altijd druk, maar we **vonden** het leuk.
 
 ---
 
