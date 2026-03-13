@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+alweer	De zon schijnt alweer! Lekker weer!	опять, снова	Солнце опять светит! Хорошая погода!	link::thema3::taak2::A2
+het bezoek	Mijn vriendin komt morgen op bezoek.	визит, гости (op bezoek komen = прийти в гости)	Моя подруга завтра придёт в гости.	link::thema3::taak2::A2
+binnenkomen	Kom binnen! Ga zitten!	входить, заходить	Заходи! Садись!	link::thema3::taak2::A2
+drinken	Ik drink 's morgens altijd koffie met melk.	пить	Я по утрам всегда пью кофе с молоком.	link::thema3::taak2::A2
+eruitzien	Je ziet er moe uit. Slaap je goed?	выглядеть (разделяемый: er...uitzien)	Ты выглядишь уставшей. Ты хорошо спишь?	link::thema3::taak2::A2
+geven	Mijn moeder geeft mij altijd thee als ik ziek ben.	давать	Мама всегда даёт мне чай, когда я болею.	link::thema3::taak2::A2
+heel	Het is heel warm vandaag. Lekker weer!	очень	Сегодня очень тепло. Приятная погода!	link::thema3::taak2::A2
+horen	Ik hoor de jongen huilen. Wat is er?	слышать	Я слышу, как мальчик плачет. Что случилось?	link::thema3::taak2::A2
+huilen	De jongen huilt. Hij is moe en wil slapen.	плакать	Мальчик плачет. Он устал и хочет спать.	link::thema3::taak2::A2
+de jas	Het is niet warm vandaag. Neem je jas mee!	куртка, пальто	Сегодня не тепло. Возьми куртку с собой!	link::thema3::taak2::A2
+de jongen	De jongen is twee jaar oud. Hij is heel lief.	мальчик	Мальчику два года. Он очень милый.	link::thema3::taak2::A2
+klein	We wonen in een klein huis in een klein dorp.	маленький	Мы живём в маленьком доме в маленькой деревне.	link::thema3::taak2::A2
+de koffie	Wil je koffie? Met melk en suiker?	кофе	Хочешь кофе? С молоком и сахаром?	link::thema3::taak2::A2
+lachen	Mijn vriendin lacht altijd. Ze is heel leuk.	смеяться	Моя подруга всегда смеётся. Она очень приятная.	link::thema3::taak2::A2
+lief	Mijn buurvrouw is heel lief. Ze helpt mij altijd.	милый, добрый	Моя соседка очень милая. Она всегда мне помогает.	link::thema3::taak2::A2
+de melk	Ik koop altijd melk in de supermarkt.	молоко	Я всегда покупаю молоко в супермаркете.	link::thema3::taak2::A2
+moe	Ik ben moe. Ik ga lekker slapen.	уставший	Я устала. Пойду сладко посплю.	link::thema3::taak2::A2
+slapen	Ik slaap niet goed als het warm is.	спать	Я плохо сплю, когда жарко.	link::thema3::taak2::A2
+de suiker	Wil je suiker in je thee? — Nee, zonder suiker.	сахар	Хочешь сахар в чай? — Нет, без сахара.	link::thema3::taak2::A2
+de thee	Ik drink graag thee zonder suiker.	чай	Я люблю пить чай без сахара.	link::thema3::taak2::A2
+zelf	Mijn zus kookt zelf. Ze gaat niet naar het restaurant.	сам, сама	Моя сестра готовит сама. Она не ходит в ресторан.	link::thema3::taak2::A2
+zitten	Kom binnen en ga zitten! Wil je koffie?	сидеть (ga zitten = садись)	Заходи и садись! Хочешь кофе?	link::thema3::taak2::A2
+zonder	Ik ga zonder jas naar de winkel. Het is warm!	без	Я иду в магазин без куртки. Тепло!	link::thema3::taak2::A2
+zwart	Wil je koffie? — Ja, zwart, zonder suiker.	чёрный	Хочешь кофе? — Да, чёрный, без сахара.	link::thema3::taak2::A2

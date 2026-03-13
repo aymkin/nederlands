@@ -1,0 +1,32 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+alles	Alles goed met je? — Ja, prima!	всё	Всё хорошо у тебя? — Да, отлично!	link::thema3::taak1::A2
+beterschap	Je bent ziek? Beterschap!	выздоравливай, скорейшего выздоровления	Ты болеешь? Выздоравливай!	link::thema3::taak1::A2
+bezig	Sorry, ik ben nu bezig met boodschappen doen.	занятый, занят	Извини, я сейчас занята — делаю покупки.	link::thema3::taak1::A2
+de broer	Mijn broer werkt in een restaurant in de stad.	брат	Мой брат работает в ресторане в городе.	link::thema3::taak1::A2
+daar	Zie je de bakker daar? Het brood is altijd vers!	там	Видишь пекарню там? Хлеб там всегда свежий!	link::thema3::taak1::A2
+druk	Op zaterdag is het altijd druk op de markt.	людный; занятой (het is druk / ik heb het druk)	В субботу на рынке всегда многолюдно.	link::thema3::taak1::A2
+een beetje	Ik ben een beetje ziek, maar het gaat wel.	немного, чуть-чуть	Я немного болею, но нормально.	link::thema3::taak1::A2
+eindelijk	We hebben eindelijk lekker weer!	наконец	У нас наконец хорошая погода!	link::thema3::taak1::A2
+de groet	Ik zeg altijd een groet als ik mijn buren ontmoet.	приветствие	Я всегда здороваюсь, когда встречаю соседей.	link::thema3::taak1::A2
+lekker	Lekker weer, hè? Ik ga naar de markt!	приятный, хороший (о погоде, еде, самочувствии)	Хорошая погода, правда? Я иду на рынок!	link::thema3::taak1::A2
+lopen	Ik loop elke dag naar de winkel. Het is niet ver.	ходить, идти (пешком)	Я каждый день хожу пешком в магазин. Это недалеко.	link::thema3::taak1::A2
+de moeder	Mijn moeder kookt graag. Ze maakt altijd lekker eten.	мать, мама	Моя мама любит готовить. Она всегда делает вкусную еду.	link::thema3::taak1::A2
+morgen	Morgen ga ik boodschappen doen met mijn vriend.	завтра	Завтра я иду за покупками с другом.	link::thema3::taak1::A2
+de paracetamol	Ik ben ziek. Heb je een paracetamol voor mij?	парацетамол	Я болею. У тебя есть парацетамол для меня?	link::thema3::taak1::A2
+prima	Hoe gaat het? — Prima! En jij?	отлично, прекрасно	Как дела? — Отлично! А ты?	link::thema3::taak1::A2
+steeds	Het weer wordt steeds warmer.	всё (+ сравн. степень); постоянно	Погода становится всё теплее.	link::thema3::taak1::A2
+vervelend	Wat vervelend! De winkel is al dicht.	неприятный, досадный	Как досадно! Магазин уже закрыт.	link::thema3::taak1::A2
+de vriend	Ik ontmoet mijn vriend op straat. We praten over het weer.	друг	Я встречаю друга на улице. Мы разговариваем о погоде.	link::thema3::taak1::A2
+de vriendin	Mijn vriendin en ik sporten graag in het weekend.	подруга	Моя подруга и я любим заниматься спортом в выходные.	link::thema3::taak1::A2
+waarom	Waarom koop je brood niet bij de bakker? Daar is het vers!	почему	Почему ты не покупаешь хлеб в пекарне? Там он свежий!	link::thema3::taak1::A2
+warm	Het is zo warm! Ik ga niet naar de winkel, ik ga morgen.	тёплый, жаркий	Так жарко! Я не пойду в магазин, пойду завтра.	link::thema3::taak1::A2
+het weer	Hoe is het weer vandaag? — Warm en lekker!	погода	Какая сегодня погода? — Тёплая и приятная!	link::thema3::taak1::A2
+worden	Mijn zus wordt morgen 18 jaar.	становиться; (+ возраст) исполняться	Моей сестре завтра исполнится 18 лет.	link::thema3::taak1::A2
+ziek	Mijn broer is ziek. Hij kan niet naar school gaan.	больной	Мой брат болеет. Он не может ходить в школу.	link::thema3::taak1::A2
+zo	Het is zo druk op de markt op zaterdag!	так, настолько	На рынке в субботу так людно!	link::thema3::taak1::A2
+de zon	De zon schijnt en het is warm. Ik loop naar de supermarkt.	солнце	Солнце светит и тепло. Я иду пешком в супермаркет.	link::thema3::taak1::A2
+de zus	Mijn zus en ik koken graag in het weekend.	сестра	Моя сестра и я любим готовить в выходные.	link::thema3::taak1::A2

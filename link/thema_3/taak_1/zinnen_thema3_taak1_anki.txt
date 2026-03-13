@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#tags column:3
+
+Hé hallo, Jafar.	Эй, привет, Джафар.	link::thema3::taak1::zinnen
+Alles goed?	Всё хорошо?	link::thema3::taak1::zinnen
+Ja, prima, joh. En jij?	Да, отлично. А ты?	link::thema3::taak1::zinnen
+Nou, niet zo goed. Ik ben ziek.	Ну, не очень. Я болею.	link::thema3::taak1::zinnen
+Ik zie het. Wat vervelend!	Понимаю. Как досадно!	link::thema3::taak1::zinnen
+Maar waarom loop je dan op straat?	Но почему ты тогда ходишь по улице?	link::thema3::taak1::zinnen
+Ik heb geen paracetamol meer.	У меня больше нет парацетамола.	link::thema3::taak1::zinnen
+Ik ga even naar de Etos.	Я быстренько схожу в Etos.	link::thema3::taak1::zinnen
+Oké. Beterschap!	Окей. Выздоравливай!	link::thema3::taak1::zinnen
+Dank je. Tot ziens!	Спасибо. До свидания!	link::thema3::taak1::zinnen
+Hé, hallo! Lekker weer, hè?	Эй, привет! Хорошая погода, правда?	link::thema3::taak1::zinnen
+Ja, eindelijk! Het is zo warm vandaag!	Да, наконец! Сегодня так тепло!	link::thema3::taak1::zinnen
+Ga je ook naar de markt?	Ты тоже идёшь на рынок?	link::thema3::taak1::zinnen
+Nee, ik ga naar mijn moeder.	Нет, я иду к маме.	link::thema3::taak1::zinnen
+Ze is een beetje ziek.	Она немного болеет.	link::thema3::taak1::zinnen
+Oh, wat vervelend! Beterschap voor haar!	Ой, как жаль! Передай ей: выздоравливай!	link::thema3::taak1::zinnen
+Dank je. Ze wordt steeds beter.	Спасибо. Ей становится всё лучше.	link::thema3::taak1::zinnen
+Fijn! Tot zo!	Здорово! До скорого!	link::thema3::taak1::zinnen
+Hé, alles goed?	Привет, всё хорошо?	link::thema3::taak1::zinnen
+Ja, maar ik heb het druk.	Да, но я очень занят.	link::thema3::taak1::zinnen
+Waarom? Wat doe je?	Почему? Что ты делаешь?	link::thema3::taak1::zinnen
+Ik ga boodschappen doen voor mijn moeder.	Я иду за покупками для мамы.	link::thema3::taak1::zinnen
+Ze is ziek en ze kan niet lopen.	Она болеет и не может ходить.	link::thema3::taak1::zinnen
+Dat is vervelend. Beterschap voor haar!	Как неприятно. Передай ей: выздоравливай!	link::thema3::taak1::zinnen
+Dank je. Tot morgen!	Спасибо. До завтра!	link::thema3::taak1::zinnen

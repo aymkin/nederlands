@@ -1,0 +1,36 @@
+#separator:tab
+#html:true
+#tags column:3
+
+Ha Miriam, leuk je te zien!	Привет, Мириам, рада тебя видеть!	link::thema3::taak2::zinnen
+Ja, fijn! Je ziet er goed uit.	Да, здорово! Ты хорошо выглядишь.	link::thema3::taak2::zinnen
+Dank je. Kom binnen.	Спасибо. Заходи.	link::thema3::taak2::zinnen
+Geef je jas maar hier.	Давай сюда куртку.	link::thema3::taak2::zinnen
+Hoe is het?	Как дела?	link::thema3::taak2::zinnen
+Prima hoor.	Отлично.	link::thema3::taak2::zinnen
+Wat een leuk huis heb je toch.	Какой у тебя всё-таки милый дом.	link::thema3::taak2::zinnen
+Maar ik zie geen baby. Waar is de kleine man?	Но я не вижу малыша. Где маленький мужичок?	link::thema3::taak2::zinnen
+Hij slaapt nog.	Он ещё спит.	link::thema3::taak2::zinnen
+Hij slaapt veel, hij drinkt goed.	Он много спит, хорошо кушает.	link::thema3::taak2::zinnen
+Hij is heel lief!	Он очень милый!	link::thema3::taak2::zinnen
+Nou, dat is fijn.	Ну, это хорошо.	link::thema3::taak2::zinnen
+De baby van mijn zus huilt veel en slaapt niet goed.	Малыш моей сестры много плачет и плохо спит.	link::thema3::taak2::zinnen
+Mijn zus is heel moe.	Моя сестра очень устала.	link::thema3::taak2::zinnen
+O, dat is vervelend. Ik ben niet moe.	Ох, это неприятно. А я не устала.	link::thema3::taak2::zinnen
+Hoe oud is hij nu? Twee maanden?	Сколько ему сейчас? Два месяца?	link::thema3::taak2::zinnen
+Nee joh, drie maanden.	Да нет, три месяца.	link::thema3::taak2::zinnen
+Drie maanden alweer? Dat gaat snel!	Уже три месяца? Как быстро!	link::thema3::taak2::zinnen
+Ja, joh, hij lacht al veel. Lief, hè?	Да, он уже много смеётся. Милый, правда?	link::thema3::taak2::zinnen
+Kom, ga zitten. Wil je iets drinken?	Давай, садись. Хочешь что-нибудь выпить?	link::thema3::taak2::zinnen
+Ja, graag.	Да, с удовольствием.	link::thema3::taak2::zinnen
+Wat wil je? Koffie, thee?	Что хочешь? Кофе, чай?	link::thema3::taak2::zinnen
+Het maakt me niet uit. Wat drink je zelf?	Мне всё равно. Что ты сама пьёшь?	link::thema3::taak2::zinnen
+Ik heb wel zin in koffie.	А мне хочется кофе.	link::thema3::taak2::zinnen
+Nou, dan neem ik ook koffie.	Ну, тогда я тоже возьму кофе.	link::thema3::taak2::zinnen
+Zwart of met melk?	Чёрный или с молоком?	link::thema3::taak2::zinnen
+Zwart graag, zonder suiker.	Чёрный, пожалуйста, без сахара.	link::thema3::taak2::zinnen
+En wil je ook iets lekkers?	А хочешь что-нибудь вкусненькое?	link::thema3::taak2::zinnen
+Nee, dank je. Doe maar niet.	Нет, спасибо. Не надо.	link::thema3::taak2::zinnen
+Oké, ik ga even koffie maken.	Окей, я пойду сделаю кофе.	link::thema3::taak2::zinnen
+Hé, ik hoor iets!	Эй, я что-то слышу!	link::thema3::taak2::zinnen
+Ja, ik ook! Kom!	Да, я тоже! Пойдём!	link::thema3::taak2::zinnen
