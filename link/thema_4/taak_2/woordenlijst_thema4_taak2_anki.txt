@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+het avondeten	Bij ons thuis is het avondeten altijd warm. We koken elke avond.	ужин	У нас дома ужин всегда горячий. Мы готовим каждый вечер.	link::thema4::taak2::A2
+de boterham	Ik eet 's middags meestal twee boterhammen met kaas.	бутерброд (хлеб с начинкой)	Я обычно ем на обед два бутерброда с сыром.	link::thema4::taak2::A2
+het broodje	Ik neem vaak een broodje kaas mee naar het werk.	булочка, сэндвич	Я часто беру с собой сэндвич с сыром на работу.	link::thema4::taak2::A2
+het ding	Ik eet 's ochtends alleen zoete dingen, geen zoute dingen.	вещь, штука	Я утром ем только сладкое, не солёное.	link::thema4::taak2::A2
+doordeweeks	Doordeweeks eet ik meestal thuis. In het weekend gaan we soms naar een restaurant.	в будни (по рабочим дням)	В будни я обычно ем дома. В выходные мы иногда ходим в ресторан.	link::thema4::taak2::A2
+gek	Mijn buurvrouw eet 's ochtends rijst met ei. Dat vind ik zo gek!	странный; gek op = без ума от	Моя соседка утром ест рис с яйцом. Мне это кажется таким странным!	link::thema4::taak2::A2
+de havermout	Ik maak elke ochtend havermout met een banaan. Snel en lekker.	овсянка (овсяные хлопья)	Я каждое утро делаю овсянку с бананом. Быстро и вкусно.	link::thema4::taak2::A2
+de jam	Mijn kinderen eten graag brood met jam in het weekend.	джем, варенье	Мои дети любят есть хлеб с джемом в выходные.	link::thema4::taak2::A2
+koud	Wil je warme soep of een koude salade bij de lunch?	холодный	Хочешь горячий суп или холодный салат на обед?	link::thema4::taak2::A2
+lijken	Zullen we vrijdag samen eten? — Ja, dat lijkt me gezellig!	казаться (lijken op = быть похожим на)	Может, поужинаем в пятницу? — Да, было бы здорово!	link::thema4::taak2::A2
+lunchen	Ik lunch 's middags meestal met een vriendin in de buurt.	обедать (в обеденное время)	Я обычно обедаю днём с подругой в нашем районе.	link::thema4::taak2::A2
+de Nederlander	Veel Nederlanders fietsen elke dag naar het werk.	нидерландец	Многие нидерландцы каждый день ездят на велосипеде на работу.	link::thema4::taak2::A2
+de noedels	Ik eet 's avonds meestal noedels met groente en kip.	лапша	Я обычно ем на ужин лапшу с овощами и курицей.	link::thema4::taak2::A2
+nooit	Ik eet 's ochtends nooit warm. Alleen brood of yoghurt.	никогда	Я никогда не ем тёплое утром. Только хлеб или йогурт.	link::thema4::taak2::A2
+het ontbijt	Ik eet bij het ontbijt altijd brood met kaas en een kop thee.	завтрак	На завтрак я всегда ем хлеб с сыром и чашку чая.	link::thema4::taak2::A2
+de pasta	Ik ben gek op pasta. Ik maak het bijna elke week.	паста, макароны	Я без ума от пасты. Готовлю её почти каждую неделю.	link::thema4::taak2::A2
+de salade	Mijn vriendin maakt altijd een lekkere salade met tomaat en ei.	салат	Моя подруга всегда делает вкусный салат с помидорами и яйцом.	link::thema4::taak2::A2
+het sinaasappelsap	Ik drink 's ochtends altijd sinaasappelsap. Lekker en gezond!	апельсиновый сок	Я утром всегда пью апельсиновый сок. Вкусно и полезно!	link::thema4::taak2::A2
+de trein	Ik ga elke dag met de trein naar het werk. Het is niet ver.	поезд	Я каждый день езжу на поезде на работу. Это недалеко.	link::thema4::taak2::A2
+tussen	Ik eet tussen de middag altijd iets warms, geen brood.	между (tussen de middag = в обеденное время)	Я в обед всегда ем что-нибудь горячее, не хлеб.	link::thema4::taak2::A2
+vaak	We koken in het weekend vaak voor de buren. Heel gezellig.	часто	В выходные мы часто готовим для соседей. Очень уютно.	link::thema4::taak2::A2
+vanmiddag	We gaan vanmiddag boodschappen doen. De koelkast is leeg.	сегодня днём	Мы сегодня днём идём за покупками. Холодильник пустой.	link::thema4::taak2::A2
+de vegetariër	Mijn buurvrouw is vegetariër. Ze kookt altijd zonder vlees.	вегетарианец	Моя соседка — вегетарианка. Она всегда готовит без мяса.	link::thema4::taak2::A2
+zoet	Mijn kinderen eten graag zoete dingen. Ze houden van fruit en jam.	сладкий	Мои дети любят сладкое. Они обожают фрукты и джем.	link::thema4::taak2::A2
+zout	Mijn vriend eet 's avonds altijd zoute chips bij het bier.	солёный (прил.; ≠ het zout — соль)	Мой друг вечером всегда ест солёные чипсы с пивом.	link::thema4::taak2::A2

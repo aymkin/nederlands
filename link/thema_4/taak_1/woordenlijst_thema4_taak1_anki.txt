@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+allerlei	Op de markt kun je allerlei groente en fruit kopen.	всякий, разнообразный	На рынке можно купить всякие овощи и фрукты.	link::thema4::taak1::A2
+de boter	Doe je boter op je brood? — Ja, altijd.	масло (сливочное)	Ты кладёшь масло на хлеб? — Да, всегда.	link::thema4::taak1::A2
+de fles	Ik haal een fles melk bij de supermarkt.	бутылка	Я куплю бутылку молока в супермаркете.	link::thema4::taak1::A2
+gezond	Mijn moeder eet altijd gezond: veel fruit, groente en vis.	здоровый	Моя мама всегда ест здорово: много фруктов, овощей и рыбы.	link::thema4::taak1::A2
+groot	Mijn buurvrouw heeft een grote keuken. Ze kookt heel graag.	большой	У моей соседки большая кухня. Она очень любит готовить.	link::thema4::taak1::A2
+klaar	Ik ben bijna klaar met koken. Kom je eten?	готовый	Я почти закончил готовить. Идёшь есть?	link::thema4::taak1::A2
+de koelkast	Er liggen nog eieren en kaas in de koelkast.	холодильник	В холодильнике ещё лежат яйца и сыр.	link::thema4::taak1::A2
+langs	Ik ga na het werk even langs de bakker. Wil je iets?	мимо; зайти (langsgaan = заскочить)	Я после работы заскочу к пекарю. Хочешь что-нибудь?	link::thema4::taak1::A2
+meenemen	Ik ga naar een vriendin. Zal ik een fles wijn meenemen?	взять с собой	Я иду к подруге. Мне взять бутылку вина?	link::thema4::taak1::A2
+moeten	Je moet meer groente eten, dat is gezond!	быть должным	Тебе нужно больше есть овощей, это полезно!	link::thema4::taak1::A2
+niks	Heb je iets nodig van de winkel? — Nee, niks, we hebben alles.	ничего (разг.; = niets)	Тебе что-нибудь нужно из магазина? — Нет, ничего, у нас всё есть.	link::thema4::taak1::A2
+nodig	Ik heb nog drie eieren nodig voor het eten vanavond.	нужный (nodig hebben = нуждаться)	Мне ещё нужны три яйца для ужина сегодня вечером.	link::thema4::taak1::A2
+over	Ik ben over een half uur thuis. Tot straks!	через (о времени)	Я буду дома через полчаса. До скорого!	link::thema4::taak1::A2
+het pak	Ik koop een pak melk en een pak yoghurt. Staat dat op de lijst?	пачка, упаковка	Я куплю пачку молока и пачку йогурта. Это есть в списке?	link::thema4::taak1::A2
+de soep	Ik maak soep met kip en groente. Snel klaar en heel lekker.	суп	Я готовлю суп с курицей и овощами. Быстро и очень вкусно.	link::thema4::taak1::A2
+staan	Ik sta bij de kassa in de supermarkt. Het is heel druk hier.	стоять	Я стою на кассе в супермаркете. Тут очень людно.	link::thema4::taak1::A2
+straks	Ik ga nu boodschappen doen. Tot straks!	скоро, потом (tot straks = до скорого)	Я сейчас иду за покупками. До скорого!	link::thema4::taak1::A2
+het toetje	Na het eten nemen we altijd een toetje. Meestal yoghurt of fruit.	десерт	После еды мы всегда берём десерт. Обычно йогурт или фрукты.	link::thema4::taak1::A2
+de ui	Ik doe uien en wortels in de soep. Heel lekker!	луковица	Я кладу лук и морковь в суп. Очень вкусно!	link::thema4::taak1::A2
+vinden	Ik vind vis heel lekker, maar mijn vriend houdt niet van vis.	считать, находить	Я считаю рыбу очень вкусной, но мой друг не любит рыбу.	link::thema4::taak1::A2
+het water	Ik drink altijd water bij het eten, geen koffie of thee.	вода	Я всегда пью воду за едой, не кофе и не чай.	link::thema4::taak1::A2
+de wijn	Op het feestje drinken we wijn en bier. Heel gezellig!	вино	На вечеринке мы пьём вино и пиво. Очень уютно!	link::thema4::taak1::A2
+de yoghurt	Ik eet 's ochtends altijd yoghurt met fruit. Lekker en gezond!	йогурт	Я утром всегда ем йогурт с фруктами. Вкусно и полезно!	link::thema4::taak1::A2
+het zout	Wil je zout op je ei? — Ja, een beetje.	соль	Хочешь соль на яйцо? — Да, чуть-чуть.	link::thema4::taak1::A2

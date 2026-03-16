@@ -1,0 +1,34 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+Hé, waar ben je?	Katinka belt Igor. Igor is thuis.	Эй, ты где?	Катинка звонит Игорю. Игорь дома.	link::thema4::taak1::zinnen
+Ik ben in de stad. Ik ga wel even langs de supermarkt.	Hé, waar ben je?	Я в городе. Заскочу в супермаркет.	Эй, ты где?	link::thema4::taak1::zinnen
+Dan doe ik boodschappen voor vanavond.	Ik ga wel even langs de supermarkt.	Тогда я куплю продукты на вечер.	Заскочу в супермаркет.	link::thema4::taak1::zinnen
+O ja, wat fijn.	Dan doe ik boodschappen voor vanavond.	О, как хорошо.	Тогда я куплю продукты на вечер.	link::thema4::taak1::zinnen
+Wat eten we vanavond? Wat wil jij? Rijst?	O ja, wat fijn.	Что мы едим сегодня вечером? Что ты хочешь? Рис?	О, как хорошо.	link::thema4::taak1::zinnen
+Ik weet het niet. Misschien soep?	Wat wil jij? Rijst?	Не знаю. Может суп?	Что ты хочешь? Рис?	link::thema4::taak1::zinnen
+Ik heb zin in soep. Dat is snel klaar.	Misschien soep?	Я хочу суп. Он быстро готовится.	Может суп?	link::thema4::taak1::zinnen
+Ik ben over een half uur thuis.	Ik heb zin in soep. Dat is snel klaar.	Я буду дома через полчаса.	Я хочу суп. Он быстро готовится.	link::thema4::taak1::zinnen
+Oké, tot zo.	Ik ben over een half uur thuis.	Окей, до скорого.	Я буду дома через полчаса.	link::thema4::taak1::zinnen
+Tot straks.	Oké, tot zo.	До скорого.	Окей, до скорого.	link::thema4::taak1::zinnen
+Hé, ben je al in de supermarkt?	Katinka belt Igor.	Эй, ты уже в супермаркете?	Катинка звонит Игорю.	link::thema4::taak1::zinnen
+Ja, ik sta nu bij de groenten. Wat hebben we nodig?	Hé, ben je al in de supermarkt?	Да, я сейчас у овощей. Что нам нужно?	Эй, ты уже в супермаркете?	link::thema4::taak1::zinnen
+We hebben nog allerlei groenten in huis.	Wat hebben we nodig?	У нас ещё разные овощи дома.	Что нам нужно?	link::thema4::taak1::zinnen
+Ja? Wat dan?	We hebben nog allerlei groenten in huis.	Да? Какие?	У нас ещё разные овощи дома.	link::thema4::taak1::zinnen
+Ik kijk even in de koelkast.	Ja? Wat dan?	Я посмотрю в холодильник.	Да? Какие?	link::thema4::taak1::zinnen
+We hebben nog drie wortels en zes tomaten.	Ik kijk even in de koelkast.	У нас ещё три морковки и шесть помидоров.	Я посмотрю в холодильник.	link::thema4::taak1::zinnen
+Dat is wel genoeg, ja. We hebben dus niks nodig?	We hebben nog drie wortels en zes tomaten.	Да, этого достаточно. Значит, нам ничего не нужно?	У нас ещё три морковки и шесть помидоров.	link::thema4::taak1::zinnen
+De uien zijn op. En de boter. Dat moet je even kopen.	We hebben dus niks nodig?	Лук закончился. И масло. Тебе нужно это купить.	Значит, нам ничего не нужно?	link::thema4::taak1::zinnen
+O, en zout. We hebben ook geen zout meer.	Dat moet je even kopen.	О, и соль. У нас тоже нет больше соли.	Тебе нужно это купить.	link::thema4::taak1::zinnen
+Dus uien, boter en zout. En vlees? Wil je vlees in de soep?	We hebben ook geen zout meer.	Значит, лук, масло и соль. А мясо? Хочешь мясо в суп?	У нас тоже нет больше соли.	link::thema4::taak1::zinnen
+Nee, hoor. Ik vind alleen groente wel genoeg.	Wil je vlees in de soep?	Нет, что ты. Мне одних овощей достаточно.	Хочешь мясо в суп?	link::thema4::taak1::zinnen
+Eten we brood bij de soep?	Ik vind alleen groente wel genoeg.	Будем есть хлеб к супу?	Мне одних овощей достаточно.	link::thema4::taak1::zinnen
+Ze hebben hier lekker brood. Zal ik dat meenemen?	Eten we brood bij de soep?	Тут есть вкусный хлеб. Мне его взять?	Будем есть хлеб к супу?	link::thema4::taak1::zinnen
+Ja, lekker. En misschien nog een toetje?	Zal ik dat meenemen?	Да, вкусно. И может ещё десерт?	Мне его взять?	link::thema4::taak1::zinnen
+Ik koop wel een pak yoghurt. Vind je dat goed?	En misschien nog een toetje?	Я куплю пачку йогурта. Тебе нормально?	И может ещё десерт?	link::thema4::taak1::zinnen
+Ja, oké. En koop je ook een grote fles water?	Ik koop wel een pak yoghurt.	Да, окей. И купишь ещё большую бутылку воды?	Я куплю пачку йогурта.	link::thema4::taak1::zinnen
+Water? Geen wijn?	Koop je ook een grote fles water?	Воду? Не вино?	Купишь ещё большую бутылку воды?	link::thema4::taak1::zinnen
+Nee, doe maar water. We eten gezond vanavond.	Water? Geen wijn?	Нет, давай воду. Мы сегодня ужинаем по-здоровому.	Воду? Не вино?	link::thema4::taak1::zinnen
+Heel gezond, geen vlees, geen wijn... Oké, ik zie je zo.	We eten gezond vanavond.	Очень здорово, без мяса, без вина... Окей, увидимся скоро.	Мы сегодня ужинаем по-здоровому.	link::thema4::taak1::zinnen
