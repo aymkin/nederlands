@@ -1,0 +1,24 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+Nederlanders gaan graag uit eten, bijvoorbeeld in een pizzeria.	Alle smaken.	Нидерландцы любят ходить в рестораны, например в пиццерию.	Все вкусы.	link::thema4::taak4::zinnen
+Je eet in een restaurant meestal geen typisch Nederlands eten, zoals stamppot of haring.	Nederlanders gaan graag uit eten.	В ресторане обычно не едят типичную нидерландскую еду — стамппот или селёдку.	Нидерландцы любят ходить в рестораны.	link::thema4::taak4::zinnen
+Nederlanders houden ook van eten uit andere landen.	Geen typisch Nederlands eten in het restaurant.	Нидерландцы также любят еду из других стран.	Типичную нидерландскую еду в ресторане не едят.	link::thema4::taak4::zinnen
+Ze eten bijvoorbeeld ook graag sushi, pizza, roti, curry of kebab.	Nederlanders houden van eten uit andere landen.	Они, например, тоже с удовольствием едят суши, пиццу, роти, карри или кебаб.	Нидерландцы любят еду из других стран.	link::thema4::taak4::zinnen
+Veel mensen vinden dat lekker.	Ze eten graag sushi, pizza, curry of kebab.	Многим людям это нравится.	Они с удовольствием едят суши, пиццу, карри или кебаб.	link::thema4::taak4::zinnen
+Je ziet overal internationale restaurants, in de steden en in de dorpen.	Veel mensen vinden dat lekker.	Повсюду видишь международные рестораны — и в городах, и в деревнях.	Многим людям это нравится.	link::thema4::taak4::zinnen
+In Nederland kun je alles proeven.	Overal internationale restaurants.	В Нидерландах можно всё попробовать.	Повсюду международные рестораны.	link::thema4::taak4::zinnen
+Nederlanders gaan op allerlei verschillende manieren uit eten.	Uit eten of thuis eten.	Нидерландцы ходят в рестораны самыми разными способами.	Есть в ресторане или дома.	link::thema4::taak4::zinnen
+Ze gaan soms naar dure restaurants of gewoon naar de snackbar.	Op allerlei verschillende manieren.	Иногда они ходят в дорогие рестораны, а иногда просто в снэкбар.	Самыми разными способами.	link::thema4::taak4::zinnen
+Ze eten binnen in het restaurant of buiten op het terras.	Dure restaurants of de snackbar.	Они едят внутри ресторана или снаружи на террасе.	Дорогие рестораны или снэкбар.	link::thema4::taak4::zinnen
+Je kunt vaak ook eten afhalen of online bestellen met een app.	Binnen of buiten op het terras.	Часто можно также забрать еду навынос или заказать онлайн через приложение.	Внутри или на террасе.	link::thema4::taak4::zinnen
+Het restaurant of de snackbar bezorgt het eten dan thuis.	Eten afhalen of online bestellen.	Ресторан или снэкбар тогда доставляет еду домой.	Забрать навынос или заказать онлайн.	link::thema4::taak4::zinnen
+Nederlanders eten meestal tussen 18.00 en 22.00 uur in een restaurant.	Vroeg.	Нидерландцы обычно едят в ресторане между 18 и 22 часами.	Рано.	link::thema4::taak4::zinnen
+Dat is niet zo laat.	Tussen 18.00 en 22.00 uur.	Это не так поздно.	Между 18 и 22 часами.	link::thema4::taak4::zinnen
+Veel restaurants gaan vroeg dicht, meestal om 22.00 uur.	Dat is niet zo laat.	Многие рестораны рано закрываются, обычно в 22 часа.	Это не так поздно.	link::thema4::taak4::zinnen
+De snackbar is meestal tot laat open.	Veel restaurants gaan vroeg dicht.	Снэкбар обычно работает допоздна.	Многие рестораны рано закрываются.	link::thema4::taak4::zinnen
+Veel mensen willen in het weekend uit eten. Het is dan druk in een restaurant.	Druk.	Многие хотят в выходные поесть в ресторане. Тогда там людно.	Людно.	link::thema4::taak4::zinnen
+Je moet daarom vaak een tafel reserveren.	Het is druk in een restaurant.	Поэтому часто нужно бронировать столик.	В ресторане людно.	link::thema4::taak4::zinnen
+Doordeweeks is er meestal genoeg plaats.	Je moet een tafel reserveren.	В будни обычно достаточно мест.	Нужно бронировать столик.	link::thema4::taak4::zinnen

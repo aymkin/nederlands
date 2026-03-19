@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+het advies	Mijn moeder geeft altijd goed advies: eet gezond en beweeg genoeg!	совет	Моя мама всегда даёт хорошие советы: питайся здорово и двигайся достаточно!	link::thema4::taak3::A2
+afvallen	Mijn broer wil vijf kilo afvallen. Hij eet nu meer groente en minder vlees.	похудеть, сбросить вес	Мой брат хочет сбросить пять кило. Теперь он ест больше овощей и меньше мяса.	link::thema4::taak3::A2
+de bank	Na het avondeten zit ik altijd op de bank en kijk ik tv.	диван (≠ de bank = банк)	После ужина я всегда сижу на диване и смотрю телевизор.	link::thema4::taak3::A2
+bewegen	De dokter zegt dat ik meer moet bewegen. Ik ga nu elke dag lopen.	двигаться	Доктор говорит, что мне надо больше двигаться. Теперь я каждый день хожу пешком.	link::thema4::taak3::A2
+de buik	Na de lunch heb ik altijd een volle buik. Ik eet te veel!	живот	После обеда у меня всегда полный живот. Я ем слишком много!	link::thema4::taak3::A2
+de cola	Nee, geen cola voor mij. Heb je water of thee?	кола	Нет, мне колу не надо. Есть вода или чай?	link::thema4::taak3::A2
+dik	Ik word dik van al die chips en patat! Ik moet stoppen.	толстый	Я толстею от всех этих чипсов и картошки фри! Надо остановиться.	link::thema4::taak3::A2
+de frisdrank	Wil je frisdrank of water? — Heb je sinaasappelsap?	безалкогольный напиток, газировка	Хочешь газировку или воду? — А апельсиновый сок есть?	link::thema4::taak3::A2
+gelijk hebben	Mijn vriendin zegt dat ik te veel suiker eet. En ze heeft gelijk!	быть правым (gelijk hebben)	Моя подруга говорит, что я ем слишком много сахара. И она права!	link::thema4::taak3::A2
+de hamburger	Mijn broer eet ieder weekend hamburgers bij de snackbar. Zo ongezond!	гамбургер	Мой брат каждые выходные ест гамбургеры в снэкбаре. Как нездорово!	link::thema4::taak3::A2
+ieder	Ik eet iedere ochtend yoghurt met fruit. Lekker en gezond!	каждый (= elk)	Каждое утро я ем йогурт с фруктами. Вкусно и полезно!	link::thema4::taak3::A2
+leven	Ik wil lang en gezond leven. Daarom sport ik en eet ik goed.	жить	Я хочу жить долго и здорово. Поэтому занимаюсь спортом и хорошо ем.	link::thema4::taak3::A2
+meer	Ik moet meer water drinken. Twee glazen per dag is niet genoeg.	больше	Мне нужно пить больше воды. Два стакана в день — недостаточно.	link::thema4::taak3::A2
+minder	Ik probeer minder koffie te drinken. Twee kopjes per dag is genoeg.	меньше	Я стараюсь пить меньше кофе. Двух чашек в день достаточно.	link::thema4::taak3::A2
+ongezond	Chips, patat, cola... Ik leef echt ongezond! Dat moet anders.	нездоровый	Чипсы, картошка фри, кола... Я живу очень нездорово! Надо что-то менять.	link::thema4::taak3::A2
+pakken	Ik pak even een glas water uit de koelkast. Wil jij ook iets?	взять, достать (разг.)	Я достану стакан воды из холодильника. Тебе тоже что-нибудь?	link::thema4::taak3::A2
+de patat	Op vrijdag kopen we vaak patat voor de kinderen. Ze vinden het lekker!	картошка фри (= friet)	По пятницам мы часто покупаем детям картошку фри. Им нравится!	link::thema4::taak3::A2
+het probleem	Het probleem is dat ik geen tijd heb om te koken. Dus eet ik altijd broodjes.	проблема	Проблема в том, что у меня нет времени готовить. Поэтому я всё время ем сэндвичи.	link::thema4::taak3::A2
+snappen	Snap je dat? — Ja, ik snap het. Ik moet gezonder eten.	понимать (разг.; = begrijpen)	Ты понимаешь? — Да, понимаю. Мне надо питаться здоровее.	link::thema4::taak3::A2
+sporten	Mijn vriendin sport drie keer per week. Ze gaat altijd naar de sportschool.	заниматься спортом	Моя подруга занимается спортом три раза в неделю. Она всегда ходит в спортзал.	link::thema4::taak3::A2
+toch	Je houdt toch van groente? Waarom eet je het dan niet?	ведь, же, всё-таки	Ты ведь любишь овощи? Почему тогда не ешь?	link::thema4::taak3::A2
+tussendoor	Ik eet tussendoor altijd een appel of een banaan, geen koekjes.	между (основными) приёмами пищи	Между приёмами пищи я всегда ем яблоко или банан, а не печенье.	link::thema4::taak3::A2
+vet	Patat is lekker, maar heel vet. Ik eet het niet zo vaak.	жирный	Картошка фри вкусная, но очень жирная. Я ем её нечасто.	link::thema4::taak3::A2
+wegen	Hoeveel weeg je? — Bijna tachtig kilo. Dat is te veel!	весить	Сколько ты весишь? — Почти восемьдесят кило. Это слишком много!	link::thema4::taak3::A2
+weinig	Mijn broer drinkt weinig water. Hij drinkt alleen maar koffie en cola.	мало	Мой брат пьёт мало воды. Он пьёт только кофе и колу.	link::thema4::taak3::A2

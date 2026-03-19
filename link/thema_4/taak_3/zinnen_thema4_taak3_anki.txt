@@ -1,0 +1,33 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+Wil je nog chips?	Peter en Michael kijken samen tv.	Хочешь ещё чипсов?	Петер и Михаэль вместе смотрят телевизор.	link::thema4::taak3::zinnen
+Hm.. nee, dank je.	Wil je nog chips?	Хм.. нет, спасибо.	Хочешь ещё чипсов?	link::thema4::taak3::zinnen
+Echt niet? Iets anders dan?	Nee, dank je.	Правда нет? Тогда что-нибудь другое?	Нет, спасибо.	link::thema4::taak3::zinnen
+Nee, echt niet, hoor.	Iets anders dan?	Нет, правда нет.	Что-нибудь другое?	link::thema4::taak3::zinnen
+Hé man, wat is je probleem? Doe even gezellig.	Nee, echt niet, hoor.	Эй, в чём проблема? Да ладно тебе, расслабься.	Нет, правда нет.	link::thema4::taak3::zinnen
+Ik ben te dik. Ik moet afvallen.	Wat is je probleem?	Я слишком толстый. Мне нужно похудеть.	В чём твоя проблема?	link::thema4::taak3::zinnen
+Van wie moet dat? Van je vriendin zeker?	Ik moet afvallen.	Кто тебя заставляет? Подружка, наверное?	Мне нужно похудеть.	link::thema4::taak3::zinnen
+Ja, en ze heeft gelijk.	Van je vriendin zeker?	Да, и она права.	Подружка, наверное?	link::thema4::taak3::zinnen
+Ik weeg bijna honderd kilo. Ik heb een dikke buik.	Ze heeft gelijk.	Я вешу почти сто кило. У меня большой живот.	Она права.	link::thema4::taak3::zinnen
+Waarom ga je dan niet sporten?	Ik heb een dikke buik.	Почему тогда не займёшься спортом?	У меня большой живот.	link::thema4::taak3::zinnen
+Ik hou niet van sporten. Dat weet je toch?	Waarom ga je dan niet sporten?	Я не люблю спорт. Ты ведь знаешь.	Почему тогда не займёшься спортом?	link::thema4::taak3::zinnen
+Ik moet gewoon gezond eten.	Ik hou niet van sporten.	Мне просто нужно правильно питаться.	Я не люблю спорт.	link::thema4::taak3::zinnen
+Minder suiker en minder vet, meer groente en fruit.	Ik moet gewoon gezond eten.	Меньше сахара и жира, больше овощей и фруктов.	Мне просто нужно правильно питаться.	link::thema4::taak3::zinnen
+Dus geen chips meer. Geen patat meer van de snackbar.	Minder suiker en minder vet.	Значит, больше никаких чипсов. Никакой картошки фри из снэкбара.	Меньше сахара и жира.	link::thema4::taak3::zinnen
+Ik leef echt ongezond nu.	Geen chips meer. Geen patat meer.	Я сейчас живу очень нездорово.	Больше никаких чипсов и картошки фри.	link::thema4::taak3::zinnen
+Ik eet tussendoor ook te veel.	Ik leef echt ongezond nu.	И между делом я тоже ем слишком много.	Я сейчас живу очень нездорово.	link::thema4::taak3::zinnen
+Dat snap ik, maar gezond eten is niet genoeg.	Ik eet tussendoor ook te veel.	Это я понимаю, но здорового питания недостаточно.	Я тоже ем слишком много между делом.	link::thema4::taak3::zinnen
+Luister naar mijn advies. Je moet ook meer bewegen.	Gezond eten is niet genoeg.	Послушай мой совет. Тебе нужно ещё и больше двигаться.	Здорового питания недостаточно.	link::thema4::taak3::zinnen
+Je sport te weinig. Kijk naar mij.	Je moet ook meer bewegen.	Ты слишком мало занимаешься спортом. Посмотри на меня.	Тебе нужно больше двигаться.	link::thema4::taak3::zinnen
+Ik ga drie keer per week naar de sportschool.	Kijk naar mij.	Я хожу в спортзал три раза в неделю.	Посмотри на меня.	link::thema4::taak3::zinnen
+Jij zit alleen maar op de bank.	Ik ga drie keer per week naar de sportschool.	А ты только сидишь на диване.	Я хожу в спортзал три раза в неделю.	link::thema4::taak3::zinnen
+Ik ben niet dik. En ik eet ieder weekend hamburgers, chips, pizza...	Jij zit alleen maar op de bank.	Я не толстый. И я каждые выходные ем гамбургеры, чипсы, пиццу...	А ты только сидишь на диване.	link::thema4::taak3::zinnen
+Zeg, hebben we nog cola?	Ik eet ieder weekend hamburgers, chips, pizza...	Слушай, у нас ещё есть кола?	Я каждые выходные ем гамбургеры, чипсы, пиццу...	link::thema4::taak3::zinnen
+Jij wilt toch afvallen?	Hebben we nog cola?	Ты ведь хочешь похудеть?	У нас ещё есть кола?	link::thema4::taak3::zinnen
+Dan moet je ook geen frisdrank meer drinken, of bier.	Jij wilt toch afvallen?	Тогда газировку тоже нельзя, и пиво тоже.	Ты ведь хочешь похудеть?	link::thema4::taak3::zinnen
+Water. Of thee, zonder suiker, natuurlijk.	Wat dan?	Воду. Или чай, без сахара, конечно.	А что тогда?	link::thema4::taak3::zinnen
+Hebben we ook cola light?	Water. Of thee, zonder suiker.	А у нас есть кола лайт?	Воду. Или чай, без сахара.	link::thema4::taak3::zinnen
+Ja, dat hebben we. Ik pak het even.	Hebben we ook cola light?	Да, есть. Сейчас достану.	А у нас есть кола лайт?	link::thema4::taak3::zinnen

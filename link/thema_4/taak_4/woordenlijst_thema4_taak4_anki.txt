@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+afhalen	We halen vanavond eten af bij het restaurant. Lekker makkelijk!	забирать (навынос)	Сегодня вечером мы заберём еду навынос из ресторана. Очень удобно!	link::thema4::taak4::A2
+alle	Alle restaurants in de stad zijn op zaterdagavond vol. Reserveer op tijd!	все	Все рестораны в городе в субботу вечером заняты. Бронируй заранее!	link::thema4::taak4::A2
+bestellen	Zullen we pizza bestellen? Ik heb geen zin om te koken vanavond.	заказывать	Закажем пиццу? Мне не хочется готовить сегодня вечером.	link::thema4::taak4::A2
+bezorgen	Het restaurant bezorgt het eten bij je thuis. Je hoeft niet naar buiten!	доставлять	Ресторан доставляет еду к тебе домой. Не нужно выходить!	link::thema4::taak4::A2
+bijvoorbeeld	Ik hou van internationaal eten, bijvoorbeeld sushi of curry.	например	Я люблю международную кухню, например суши или карри.	link::thema4::taak4::A2
+buiten	Het is lekker weer vandaag. Zullen we buiten op het terras eten?	снаружи, на улице (≠ binnen)	Сегодня хорошая погода. Поедим на улице на террасе?	link::thema4::taak4::A2
+daarom	Ik wil afvallen. Daarom eet ik nu minder vet en meer groente.	поэтому	Я хочу похудеть. Поэтому теперь ем меньше жирного и больше овощей.	link::thema4::taak4::A2
+de haring	Op de markt kun je verse haring kopen. Veel Nederlanders eten het met ui.	селёдка	На рынке можно купить свежую селёдку. Многие нидерландцы едят её с луком.	link::thema4::taak4::A2
+internationaal	In Amsterdam vind je heel veel internationale restaurants: van sushi tot kebab.	международный	В Амстердаме найдёшь очень много международных ресторанов: от суши до кебаба.	link::thema4::taak4::A2
+laat	Veel restaurants gaan niet zo laat dicht, meestal om tien uur 's avonds.	поздно	Многие рестораны закрываются не так поздно, обычно в десять вечера.	link::thema4::taak4::A2
+het land	Nederlanders houden van eten uit andere landen, zoals Italië en Japan.	страна	Нидерландцы любят еду из других стран, таких как Италия и Япония.	link::thema4::taak4::A2
+de manier	Er zijn allerlei manieren om te eten: thuis koken, afhalen of uit eten gaan.	способ	Есть разные способы поесть: готовить дома, взять навынос или пойти в ресторан.	link::thema4::taak4::A2
+de mayonaise	Nederlanders eten hun patat graag met mayonaise. Ik vind het ook lekker!	майонез	Нидерландцы любят есть картошку фри с майонезом. Мне тоже нравится!	link::thema4::taak4::A2
+de mens	Veel mensen gaan in het weekend uit eten. Het is dan overal druk.	человек (мн. mensen = люди)	Многие люди ходят в выходные в ресторан. Тогда везде людно.	link::thema4::taak4::A2
+overal	Je vindt overal een snackbar in Nederland, in de stad en in het dorp.	везде, повсюду	Снэкбар в Нидерландах найдёшь повсюду — и в городе, и в деревне.	link::thema4::taak4::A2
+de plaats	Doordeweeks is er genoeg plaats in het restaurant. In het weekend is het druk.	место	В будни в ресторане достаточно мест. В выходные людно.	link::thema4::taak4::A2
+proeven	Wil je mijn soep even proeven? Ik maak het met kip en groente.	пробовать (на вкус)	Хочешь попробовать мой суп? Я готовлю его с курицей и овощами.	link::thema4::taak4::A2
+reserveren	Zullen we een tafel reserveren voor zaterdagavond? Het is altijd druk dan.	бронировать	Забронируем столик на субботний вечер? Тогда всегда людно.	link::thema4::taak4::A2
+smaken	Smaakt het? — Ja, heel lekker! De soep is echt goed hier.	быть вкусным (Smaakt het? = Вкусно?)	Вкусно? — Да, очень! Суп тут правда хороший.	link::thema4::taak4::A2
+de stamppot	In de winter eten veel Nederlanders stamppot. Warm en lekker!	стамппот (пюре с овощами — нидерландское блюдо)	Зимой многие нидерландцы едят стамппот. Тёплое и вкусное!	link::thema4::taak4::A2
+de tafel	Er is nog één tafel vrij in het restaurant. Gelukkig! Het is heel druk vanavond.	стол	В ресторане есть ещё один свободный столик. К счастью! Сегодня вечером очень людно.	link::thema4::taak4::A2
+het terras	Als het mooi weer is, zitten we altijd op het terras. Heel gezellig!	терраса (у ресторана/кафе)	Когда хорошая погода, мы всегда сидим на террасе. Очень уютно!	link::thema4::taak4::A2
+typisch	Stamppot is typisch Nederlands. Je vindt het niet in andere landen.	типичный	Стамппот — типично нидерландское блюдо. В других странах не найдёшь.	link::thema4::taak4::A2
+verschillend	Er zijn heel veel verschillende restaurants in de stad: Italiaans, Japans, Turks...	различный, разный	В городе очень много разных ресторанов: итальянских, японских, турецких...	link::thema4::taak4::A2
+vroeg	Nederlanders eten vroeg, meestal om zes uur. In mijn land eten we later.	рано	Нидерландцы едят рано, обычно в шесть. В моей стране мы едим позже.	link::thema4::taak4::A2
+zoals	Ik drink 's ochtends altijd iets warms, zoals koffie of thee.	такой как, например (вводит примеры)	Утром я всегда пью что-нибудь горячее, например кофе или чай.	link::thema4::taak4::A2
