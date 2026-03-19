@@ -25,8 +25,8 @@ npm run format:check  # Check formatting without changes
 ## Directory Structure
 
 ```
-de_opmaat/          # De Opmaat course (A2) — thema_1/ through thema_7/ + transcriptions/
-link/               # Link course (B1) — thema_1/ and onwards
+de_opmaat/          # De Opmaat course (A2) — thema_1/ through thema_9/ + transcriptions/
+link/               # Link course (B1) — thema_1/ through thema_4/
 daily/              # Daily practice and study planning
   templates/        #   Generic reusable templates (les, week review, monthly)
   maart_2026/       #   Monthly study plan with weekly/daily structure
@@ -34,9 +34,11 @@ daily/              # Daily practice and study planning
       DD_MM/les.md  #       Daily lesson files with pre-filled resources
       week_review.md#       Weekly review template
     controle/       #     Baseline and monthly progress measurements
+  archive/          #   Old daily practice files (pre-maart_2026)
+  dutch_stories/    #   Dutch story subtitles and transcripts
 other/              # Learning methodology notes and analysis
   language_learning_methods/  # Evgeniy 6-step, Alisher immersion, comparisons
-scripts/            # Automation utilities (audio_to_anki.py, etc.)
+scripts/            # Automation utilities (audio_to_anki.py, text_to_speech.py, etc.)
 ```
 
 ## Study Plan System (daily/maart_2026/)
@@ -152,15 +154,19 @@ audio_to_anki.py output)
 
 ## File Naming Conventions
 
-| Pattern                            | Purpose                   |
-| ---------------------------------- | ------------------------- |
-| `{N}_opdracht.md`                  | Numbered exercises        |
-| `woordenlijst_pagina_{N}_anki.txt` | Vocabulary by page        |
-| `grammatica_{topic}.md`            | Grammar explanations      |
-| `taalhulp_{topic}_anki.txt`        | Topic-specific flashcards |
-| `sententiae_{theme}_anki.txt`      | Sentence cards with audio |
-| `constructies_{topic}_anki.txt`    | Construction cards        |
-| `verhaal_{NN}_{title}.md`          | Story exercises           |
+| Pattern                            | Purpose                              |
+| ---------------------------------- | ------------------------------------ |
+| `opdracht_{N}.md`                  | Numbered exercises (thema 5, 8-9)    |
+| `{N}_opdracht.md`                  | Numbered exercises (thema 6-7)       |
+| `woordenlijst_pagina_{N}_anki.txt` | Vocabulary by page                   |
+| `grammatica_{topic}.md`            | Grammar explanations                 |
+| `taalhulp_{topic}.md`              | Grammar/phrase reference (non-Anki)  |
+| `taalhulp_{topic}_anki.txt`        | Topic-specific flashcards            |
+| `sententiae_{theme}_anki.txt`      | Sentence cards with audio            |
+| `constructies_{topic}_anki.txt`    | Construction cards                   |
+| `verhaal_{NN}_{title}.md`          | Story exercises                      |
+| `dialog.md` / `dialog_{N}.md`     | Link course dialog transcripts       |
+| `zinnen.md`                        | Link course sentence lists           |
 
 ## Content Conventions
 
