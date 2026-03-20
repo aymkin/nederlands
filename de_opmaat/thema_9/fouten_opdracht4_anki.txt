@@ -1,0 +1,14 @@
+#separator:tab
+#html:false
+#tags column:3
+Ik kom ___ niet. (сегодня — не "vandag")	vandaag — dubbele a: van·daag	fouten::thema9::spelling
+Ik ben ___ ziek. (а именно — не "naamelijk")	namelijk — één a: na·me·lijk	fouten::thema9::spelling
+Mijn taalniveau: hoe schrijf je "n___"? (не "niweau")	niveau — Frans woord met v: ni·veau	fouten::thema9::spelling
+Je collega is ziek. Je wenst: "___!" (не "beeterschap")	Beterschap — één e: be·ter·schap	fouten::thema9::spelling
+Kun je ___ wachten? (чуть-чуть — не "eenbetje")	een beetje — twee woorden, ee in beetje	fouten::thema9::spelling
+___, ik kan vandaag niet komen. (к сожалению — не "helas")	Helaas — dubbele a: he·laas	fouten::thema9::spelling
+___ ik je helpen? (1e persoon van "kunnen")	Kan — ik kan / kan ik. "Kun" is alleen voor jij: kun je / jij kunt	fouten::thema9::grammatica
+Kun je iets later ___? (приходить — куда ставим инфинитив?)	komen — infinitief na modaal werkwoord → EINDE van de zin	fouten::thema9::woordvolgorde
+Ik ga de boodschap aan Tom ___. (передать)	doorgeven — gaan + infinitief → EINDE van de zin	fouten::thema9::woordvolgorde
+De receptionist ___ de boodschap ___ aan de docent. (передаёт)	geeft ... door — doorgeven = передать; aannemen = принять	fouten::thema9::woordenschat
+Ik ben ziek. ___ kan ik niet komen. (поэтому + инверсия)	Dus — без запятой + инверсия (V+S). С запятой: "Dus, ik kan niet komen" — прямой порядок	fouten::thema9::woordvolgorde
