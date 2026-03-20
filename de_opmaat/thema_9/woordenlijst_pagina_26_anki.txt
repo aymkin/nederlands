@@ -1,0 +1,99 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+Engels	Mijn collega spreekt vloeiend Engels en geeft soms presentaties voor het team.	английский (язык)	Мой коллега свободно говорит по-английски и иногда делает презентации для команды.	opmaat::thema9::woordenlijst::A2
+enthousiast	Ze is heel enthousiast over haar nieuwe bijbaan bij het theater.	восторженный, увлечённый	Она очень увлечена своей новой подработкой в театре.	opmaat::thema9::woordenlijst::A2
+eventueel	Ik kan eventueel morgen na mijn werkdag langskomen.	возможно, при необходимости	Я, возможно, могу зайти завтра после рабочего дня.	opmaat::thema9::woordenlijst::A2
+de faculteit	Op welke faculteit van de universiteit studeer je?	факультет	На каком факультете университета ты учишься?	opmaat::thema9::woordenlijst::A2
+de fietsenmaker	De fietsenmaker in onze buurt repareert mijn fiets altijd snel.	велосипедный мастер	Велосипедный мастер в нашем районе всегда быстро чинит мой велосипед.	opmaat::thema9::woordenlijst::A2
+flexibel	Een goede manager moet flexibel zijn en zich snel aanpassen.	гибкий	Хороший менеджер должен быть гибким и быстро адаптироваться.	opmaat::thema9::woordenlijst::A2
+het fotomodel	Het fotomodel werkt regelmatig voor internationale tijdschriften.	фотомодель	Фотомодель регулярно работает для международных журналов.	opmaat::thema9::woordenlijst::A2
+Frans	Op de middelbare school had ik Frans en Duits als vreemde talen.	французский (язык)	В средней школе у меня были французский и немецкий как иностранные языки.	opmaat::thema9::woordenlijst::A2
+fulltime	Ze werkt fulltime bij een groot bedrijf en verdient goed.	на полную ставку	Она работает на полной ставке в большой компании и хорошо зарабатывает.	opmaat::thema9::woordenlijst::A2
+de fysiotherapeut	De fysiotherapeut helpt sporters na een blessure weer fit te worden.	физиотерапевт	Физиотерапевт помогает спортсменам восстановиться после травмы.	opmaat::thema9::woordenlijst::A2
+geheim	Mijn collega vertelde me iets geheims over de nieuwe afdeling.	тайный, секретный	Мой коллега рассказал мне кое-что секретное о новом отделе.	opmaat::thema9::woordenlijst::A2
+geïnteresseerd	Ik ben geïnteresseerd in een opleiding tot ICT-specialist.	заинтересованный	Я заинтересован в обучении на IT-специалиста.	opmaat::thema9::woordenlijst::A2
+gemakkelijk	Het is niet gemakkelijk om een rustige woning te vinden in Amsterdam.	лёгкий, простой	Нелегко найти тихое жильё в Амстердаме.	opmaat::thema9::woordenlijst::A2
+de gemeente	De gemeente organiseert elk jaar een concert in het park.	муниципалитет, община	Муниципалитет каждый год организует концерт в парке.	opmaat::thema9::woordenlijst::A2
+de geschiedenis	Ze studeert geschiedenis en wil later journalist worden.	история	Она изучает историю и хочет потом стать журналистом.	opmaat::thema9::woordenlijst::A2
+geschikt	Deze kandidaat is heel geschikt voor de baan, hij is betrouwbaar en creatief.	подходящий	Этот кандидат очень подходит для работы, он надёжный и креативный.	opmaat::thema9::woordenlijst::A2
+Grieks	In het restaurant om de hoek serveren ze heerlijk Grieks eten.	греческий	В ресторане на углу подают прекрасную греческую еду.	opmaat::thema9::woordenlijst::A2
+gym	Na mijn werkdag ga ik vaak naar de gym om te sporten.	спортзал (разг.)	После рабочего дня я часто хожу в спортзал заниматься спортом.	opmaat::thema9::woordenlijst::A2
+de gymnastiek	Mijn dochter heeft drie keer per week gymnastiek op school.	гимнастика	У моей дочери три раза в неделю гимнастика в школе.	opmaat::thema9::woordenlijst::A2
+de handvaardigheid	Bij handvaardigheid leren kinderen werken met hout en papier.	ручной труд (школьный предмет)	На уроках ручного труда дети учатся работать с деревом и бумагой.	opmaat::thema9::woordenlijst::A2
+de herinnering	Ik heb mooie herinneringen aan mijn eerste concert in Nederland.	воспоминание	У меня красивые воспоминания о моём первом концерте в Нидерландах.	opmaat::thema9::woordenlijst::A2
+hetzelfde	Mijn buurman en ik werken bij hetzelfde bedrijf op dezelfde afdeling.	то же самое	Мой сосед и я работаем в одной и той же компании в одном отделе.	opmaat::thema9::woordenlijst::A2
+hout	De kleermaker heeft een mooie tafel van hout in zijn atelier.	дерево (материал)	У портного красивый деревянный стол в мастерской.	opmaat::thema9::woordenlijst::A2
+huidig	Mijn huidige baas is eerlijk en altijd bereid om te helpen.	нынешний, текущий	Мой нынешний начальник честный и всегда готов помочь.	opmaat::thema9::woordenlijst::A2
+de hulp	Zonder de hulp van mijn collega's had ik het project niet afgerond.	помощь	Без помощи коллег я бы не завершил проект.	opmaat::thema9::woordenlijst::A2
+de ICT-specialist	De ICT-specialist installeert nieuwe software op alle computers van het kantoor.	IT-специалист	IT-специалист устанавливает новое программное обеспечение на все компьютеры офиса.	opmaat::thema9::woordenlijst::A2
+het idee	Ik heb een goed idee voor de organisatie van het teamuitje.	идея	У меня хорошая идея для организации командного выезда.	opmaat::thema9::woordenlijst::A2
+de informatie	Alle informatie over de opleiding staat op de website van de school.	информация	Вся информация об обучении есть на сайте школы.	opmaat::thema9::woordenlijst::A2
+de ingang	De ingang van het gebouw is aan de rustige kant van de straat.	вход	Вход в здание находится с тихой стороны улицы.	opmaat::thema9::woordenlijst::A2
+de ingenieur	De ingenieur heeft veel ervaring met het bouwen van bruggen.	инженер	У инженера большой опыт строительства мостов.	opmaat::thema9::woordenlijst::A2
+zich inschrijven	Je moet je snel inschrijven, want de cursus is bijna vol.	записаться, зарегистрироваться	Тебе нужно быстро записаться, потому что курс почти заполнен.	opmaat::thema9::woordenlijst::A2
+inspreken	Als ik niet opneem, spreek dan een boodschap in na de piep.	наговорить (на автоответчик)	Если я не отвечу, оставьте сообщение после сигнала.	opmaat::thema9::woordenlijst::A2
+de installateur	De installateur komt morgen de magnetron in de keuken aansluiten.	установщик, монтажник	Монтажник придёт завтра подключить микроволновку на кухне.	opmaat::thema9::woordenlijst::A2
+installeren	De monteur komt vandaag de nieuwe verwarming installeren.	устанавливать	Мастер придёт сегодня установить новое отопление.	opmaat::thema9::woordenlijst::A2
+instellen	Kun je de magnetron op vijf minuten instellen?	настраивать, устанавливать	Можешь настроить микроволновку на пять минут?	opmaat::thema9::woordenlijst::A2
+de intake	Bij de intake bespreken we je niveau en je leerdoelen.	приёмное собеседование	На приёмном собеседовании мы обсудим твой уровень и учебные цели.	opmaat::thema9::woordenlijst::A2
+het intakegesprek	Tijdens het intakegesprek vroegen ze naar mijn diploma en ervaring.	приёмное собеседование (разговор)	Во время приёмного собеседования спрашивали о моём дипломе и опыте.	opmaat::thema9::woordenlijst::A2
+intensief	De cursus Nederlands is heel intensief, vijf dagen per week.	интенсивный	Курс нидерландского очень интенсивный, пять дней в неделю.	opmaat::thema9::woordenlijst::A2
+interesseren	Sport interesseert mij niet zo, ik ga liever naar de bioscoop.	интересовать	Спорт меня не так интересует, я лучше схожу в кино.	opmaat::thema9::woordenlijst::A2
+internationaal	Ons bedrijf werkt met internationale klanten uit heel Europa.	международный	Наша компания работает с международными клиентами со всей Европы.	opmaat::thema9::woordenlijst::A2
+jazeker	Jazeker, ik kan u meteen doorverbinden met de manager.	да, конечно	Да, конечно, я могу вас сразу переключить на менеджера.	opmaat::thema9::woordenlijst::A2
+de journalist	De journalist schrijft artikelen over het nieuws in onze wijk.	журналист	Журналист пишет статьи о новостях в нашем районе.	opmaat::thema9::woordenlijst::A2
+juist	Het is juist belangrijk om geduldig te zijn tijdens een sollicitatie.	правильный; именно	Именно важно быть терпеливым во время собеседования.	opmaat::thema9::woordenlijst::A2
+de kapper	Mijn kapper zit vlak bij de garage om de hoek.	парикмахер	Мой парикмахер находится рядом с гаражом за углом.	opmaat::thema9::woordenlijst::A2
+de kassière	De kassière bij de supermarkt is altijd vrolijk en sociaal.	кассирша	Кассирша в супермаркете всегда весёлая и общительная.	opmaat::thema9::woordenlijst::A2
+het kenmerk	Een belangrijk kenmerk van een goede leraar is geduld.	признак, характеристика	Важный признак хорошего учителя — терпение.	opmaat::thema9::woordenlijst::A2
+de kiespijn	Ik heb al twee dagen kiespijn, ik moet snel naar de tandarts.	зубная боль	У меня уже два дня зубная боль, мне нужно скорее к зубному.	opmaat::thema9::woordenlijst::A2
+kiezen	Je moet een hobby kiezen: muziek, sport of theater.	выбирать	Тебе нужно выбрать хобби: музыку, спорт или театр.	opmaat::thema9::woordenlijst::A2
+de kleermaker	De kleermaker in onze buurt maakt prachtige pakken voor een goede prijs.	портной	Портной в нашем районе шьёт прекрасные костюмы за хорошую цену.	opmaat::thema9::woordenlijst::A2
+de kok	De kok van dit restaurant is ambitieus en heel creatief met kruiden.	повар	Повар в этом ресторане амбициозный и очень креативный с приправами.	opmaat::thema9::woordenlijst::A2
+de kwaliteit	De kwaliteit van het onderwijs op deze school is hoog.	качество	Качество образования в этой школе высокое.	opmaat::thema9::woordenlijst::A2
+Latijn	Op de middelbare school vond ik Latijn moeilijk maar boeiend.	латинский (язык)	В средней школе я считал латынь сложной, но увлекательной.	opmaat::thema9::woordenlijst::A2
+de leerkracht	De leerkracht organiseert elke week een sportactiviteit voor de klas.	учитель (формальн.)	Учитель каждую неделю организует спортивное мероприятие для класса.	opmaat::thema9::woordenlijst::A2
+de leerling	Alle leerlingen van de basisschool spelen in de pauze buiten.	ученик	Все ученики начальной школы играют на перемене на улице.	opmaat::thema9::woordenlijst::A2
+de leerplicht	In Nederland geldt de leerplicht tot je achttiende jaar.	обязательное образование	В Нидерландах обязательное образование действует до восемнадцати лет.	opmaat::thema9::woordenlijst::A2
+de leidinggevende	De leidinggevende bespreekt de resultaten met het hele team.	руководитель	Руководитель обсуждает результаты со всей командой.	opmaat::thema9::woordenlijst::A2
+de leraar	Onze leraar Nederlands is serieus maar ook heel vrolijk.	учитель	Наш учитель нидерландского серьёзный, но при этом очень весёлый.	opmaat::thema9::woordenlijst::A2
+de lichamelijke opvoeding	Bij lichamelijke opvoeding doen we vaak gymnastiek en spelen we in een team.	физкультура	На физкультуре мы часто занимаемся гимнастикой и играем в команде.	opmaat::thema9::woordenlijst::A2
+de logopedist	De logopedist helpt kinderen die moeite hebben met spreken.	логопед	Логопед помогает детям, у которых трудности с речью.	opmaat::thema9::woordenlijst::A2
+de loodgieter	De loodgieter repareert de kraan in de keuken van onze flat.	сантехник	Сантехник чинит кран на кухне нашей квартиры.	opmaat::thema9::woordenlijst::A2
+het loon	Het loon bij deze bijbaan is niet hoog, maar de ervaring is waardevol.	зарплата	Зарплата на этой подработке невысокая, но опыт ценный.	opmaat::thema9::woordenlijst::A2
+lukken	Het lukt me niet om de makelaar telefonisch te bereiken.	удаваться, получаться	Мне не удаётся дозвониться до маклера.	opmaat::thema9::woordenlijst::A2
+de maatschappelijk werker	De maatschappelijk werker helpt gezinnen in een moeilijke relatie.	социальный работник	Социальный работник помогает семьям в сложных отношениях.	opmaat::thema9::woordenlijst::A2
+de maatschappijleer	Bij maatschappijleer leer je hoe de gemeente en de politiek werken.	обществоведение	На обществоведении изучаешь, как работают муниципалитет и политика.	opmaat::thema9::woordenlijst::A2
+de machinist	De machinist rijdt elke werkdag met de trein van Utrecht naar Amsterdam.	машинист	Машинист каждый рабочий день ведёт поезд из Утрехта в Амстердам.	opmaat::thema9::woordenlijst::A2
+de magnetron	Ik verwarm mijn lunch soms in de magnetron op kantoor.	микроволновка	Я иногда разогреваю обед в микроволновке в офисе.	opmaat::thema9::woordenlijst::A2
+makkelijk	Die software is makkelijk te installeren, zelfs mijn oma kan het.	легко, просто (разг.)	Эту программу легко установить, даже моя бабушка сможет.	opmaat::thema9::woordenlijst::A2
+de manager	De manager van onze afdeling is sociaal en heel flexibel.	менеджер	Менеджер нашего отдела общительный и очень гибкий.	opmaat::thema9::woordenlijst::A2
+de medewerkster	De medewerkster bij de balie geeft je alle informatie over de cursus.	сотрудница	Сотрудница на стойке даст тебе всю информацию о курсе.	opmaat::thema9::woordenlijst::A2
+zich melden	Je moet je eerst melden bij de balie op de begane grond.	явиться, отметиться	Тебе нужно сначала отметиться на стойке на первом этаже.	opmaat::thema9::woordenlijst::A2
+meteen	De baas wil je meteen spreken, het gaat over de bestelling.	сразу, тотчас	Начальник хочет поговорить с тобой сразу, речь о заказе.	opmaat::thema9::woordenlijst::A2
+de middelbare school	Na de basisschool ga je in Nederland naar de middelbare school.	средняя школа	После начальной школы в Нидерландах идёшь в среднюю школу.	opmaat::thema9::woordenlijst::A2
+de minister	De minister bespreekt het nieuws over het onderwijs met journalisten.	министр	Министр обсуждает новости об образовании с журналистами.	opmaat::thema9::woordenlijst::A2
+moeilijk	Het is soms moeilijk om een geschikte woning te huren in de stad.	трудный, сложный	Иногда сложно снять подходящее жильё в городе.	opmaat::thema9::woordenlijst::A2
+mogelijk	Is het mogelijk om de vergadering naar vrijdag te verplaatsen?	возможный	Можно ли перенести собрание на пятницу?	opmaat::thema9::woordenlijst::A2
+het moment	Op dit moment ben ik bezig met een bestelling voor een klant.	момент	В данный момент я занят заказом для клиента.	opmaat::thema9::woordenlijst::A2
+de monteur	De monteur repareert de verwarming in onze woning op de tweede etage.	мастер, техник	Мастер чинит отопление в нашей квартире на втором этаже.	opmaat::thema9::woordenlijst::A2
+de musicus	De musicus speelt elke vrijdag viool bij een concert in de stad.	музыкант	Музыкант каждую пятницу играет на скрипке на концерте в городе.	opmaat::thema9::woordenlijst::A2
+de muziek	Mijn hobby is muziek, ik speel regelmatig gitaar met vrienden.	музыка	Моё хобби — музыка, я регулярно играю на гитаре с друзьями.	opmaat::thema9::woordenlijst::A2
+het nadeel	Het nadeel van deze woning is dat de huur erg duur is.	недостаток, минус	Недостаток этой квартиры в том, что аренда очень дорогая.	opmaat::thema9::woordenlijst::A2
+de natuurkunde	Natuurkunde was altijd moeilijk voor mij op de middelbare school.	физика	Физика всегда была сложной для меня в средней школе.	opmaat::thema9::woordenlijst::A2
+de natuurkundige	De natuurkundige doet onderzoek bij een internationaal bedrijf.	физик	Физик проводит исследования в международной компании.	opmaat::thema9::woordenlijst::A2
+Nederlands	Ze volgt een intensieve cursus Nederlands om het B1-niveau te bereiken.	нидерландский (язык)	Она проходит интенсивный курс нидерландского, чтобы достичь уровня B1.	opmaat::thema9::woordenlijst::A2
+de netwerkbeheerder	De netwerkbeheerder zorgt dat alle computers op kantoor goed werken.	сетевой администратор	Сетевой администратор следит, чтобы все компьютеры в офисе хорошо работали.	opmaat::thema9::woordenlijst::A2
+het nieuws	Heb je het nieuws over de verhuizing van het bedrijf al gehoord?	новость, новости	Ты уже слышал новость о переезде компании?	opmaat::thema9::woordenlijst::A2
+het niveau	Het niveau van deze opleiding is hoog, maar het diploma is het waard.	уровень	Уровень этого обучения высокий, но диплом того стоит.	opmaat::thema9::woordenlijst::A2
+de notaris	De notaris regelt alle documenten voor de koop van onze nieuwe woning.	нотариус	Нотариус оформляет все документы для покупки нашего нового жилья.	opmaat::thema9::woordenlijst::A2
+noteren	De baliemedewerker noteert je naam en telefoonnummer in het systeem.	записывать, отмечать	Сотрудник на стойке записывает твоё имя и номер телефона в систему.	opmaat::thema9::woordenlijst::A2
+het ogenblik	Een ogenblik alstublieft, ik verbind u door met de juiste afdeling.	мгновение, момент	Одну минуту, пожалуйста, я переключу вас на нужный отдел.	opmaat::thema9::woordenlijst::A2
+de onderzoeker	De onderzoeker publiceert regelmatig artikelen in internationale tijdschriften.	исследователь	Исследователь регулярно публикует статьи в международных журналах.	opmaat::thema9::woordenlijst::A2
+onduidelijk	De boodschap van de baas was onduidelijk, niemand begreep het.	неясный, непонятный	Сообщение начальника было неясным, никто не понял.	opmaat::thema9::woordenlijst::A2
+de onkostenvergoeding	Naast het loon krijg je bij dit bedrijf ook een onkostenvergoeding.	компенсация расходов	Помимо зарплаты в этой компании ты получаешь и компенсацию расходов.	opmaat::thema9::woordenlijst::A2
+de ontwikkeling	De ontwikkeling van nieuwe software kost veel tijd en ervaring.	развитие, разработка	Разработка нового программного обеспечения требует много времени и опыта.	opmaat::thema9::woordenlijst::A2
+ophalen	Ik moet mijn bestelling vandaag nog bij de winkel ophalen.	забирать, подбирать	Мне нужно сегодня забрать заказ в магазине.	opmaat::thema9::woordenlijst::A2
+de opleiding	Na de middelbare school wil ik een opleiding tot ingenieur volgen.	образование, обучение	После средней школы я хочу пойти учиться на инженера.	opmaat::thema9::woordenlijst::A2

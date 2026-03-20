@@ -1,0 +1,10 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+de winkelier	De winkelier in onze buurt kent al zijn klanten persoonlijk.	владелец магазина	Владелец магазина в нашем районе знает всех покупателей лично.	opmaat::thema9::woordenlijst::A2
+de wiskunde	Wiskunde was het moeilijkste schoolvak op de middelbare school.	математика	Математика была самым сложным предметом в средней школе.	opmaat::thema9::woordenlijst::A2
+de zanger	De zanger van die band verdient goed met concerten.	певец	Певец этой группы хорошо зарабатывает на концертах.	opmaat::thema9::woordenlijst::A2
+zelfstandig	Na mijn opleiding wil ik zelfstandig werken.	самостоятельный	После обучения я хочу работать самостоятельно.	opmaat::thema9::woordenlijst::A2
+de zelfstandige	Een zelfstandige regelt alles voor zijn bedrijf zelf.	самозанятый, ИП	Самозанятый сам всё организует для своего дела.	opmaat::thema9::woordenlijst::A2
+de zzp-er	Als zzp-er ben je flexibel, maar je moet ook je eigen salaris regelen.	фрилансер (самозанятый без персонала)	Как фрилансер ты гибкий, но должен сам заботиться о своём доходе.	opmaat::thema9::woordenlijst::A2

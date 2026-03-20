@@ -1,0 +1,80 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+aan	Ik ben de hele dag aan het werk geweest.	предлог: на, к (указывает на действие/направление)	Я весь день работал.	opmaat::thema9::woordenlijst::A2
+aanleggen	De gemeente gaat een nieuw fietspad aanleggen.	прокладывать, устраивать	Муниципалитет собирается проложить новую велодорожку.	opmaat::thema9::woordenlijst::A2
+aanwezig	Niet alle studenten waren aanwezig bij het college.	присутствующий	Не все студенты присутствовали на лекции.	opmaat::thema9::woordenlijst::A2
+de aardrijkskunde	Op de basisschool had ik aardrijkskunde en biologie.	география	В начальной школе у меня были география и биология.	opmaat::thema9::woordenlijst::A2
+de accountant	Onze accountant regelt de belastingaangifte voor het bedrijf.	бухгалтер	Наш бухгалтер оформляет налоговую декларацию для компании.	opmaat::thema9::woordenlijst::A2
+de administratie	De administratie van de school is op de begane grond.	администрация	Администрация школы на первом этаже.	opmaat::thema9::woordenlijst::A2
+administratief	Ze zoekt een administratieve baan op kantoor.	административный	Она ищет административную работу в офисе.	opmaat::thema9::woordenlijst::A2
+de advertentie	Ik heb een interessante advertentie voor een bijbaan gezien.	объявление, реклама	Я увидел интересное объявление о подработке.	opmaat::thema9::woordenlijst::A2
+het advies	De makelaar gaf ons een goed advies over de woning.	совет	Маклер дал нам хороший совет по поводу жилья.	opmaat::thema9::woordenlijst::A2
+de advocaat	De advocaat bespreekt de zaak met zijn collega.	адвокат	Адвокат обсуждает дело со своим коллегой.	opmaat::thema9::woordenlijst::A2
+de afdeling	Op welke afdeling van het ziekenhuis werk je?	отдел, отделение	В каком отделении больницы ты работаешь?	opmaat::thema9::woordenlijst::A2
+de affiniteit	Zij heeft veel affiniteit met creatief werk.	склонность, близость	У неё большая склонность к творческой работе.	opmaat::thema9::woordenlijst::A2
+afsluiten	We moeten het project voor vrijdag afsluiten.	завершить, закрыть	Мы должны завершить проект к пятнице.	opmaat::thema9::woordenlijst::A2
+de agent	De agent staat op de hoek van de straat in onze wijk.	полицейский	Полицейский стоит на углу улицы в нашем районе.	opmaat::thema9::woordenlijst::A2
+de ambtenaar	Mijn buurman werkt als ambtenaar bij de gemeente.	чиновник, госслужащий	Мой сосед работает чиновником в муниципалитете.	opmaat::thema9::woordenlijst::A2
+de architect	De architect heeft een mooi ontwerp gemaakt voor ons huis.	архитектор	Архитектор сделал красивый проект нашего дома.	opmaat::thema9::woordenlijst::A2
+de arts	De arts zegt dat ik regelmatig moet sporten.	врач	Врач говорит, что мне нужно регулярно заниматься спортом.	opmaat::thema9::woordenlijst::A2
+de assistent in opleiding	Als assistent in opleiding leer je veel op de werkvloer.	стажёр	Как стажёр ты многому учишься на рабочем месте.	opmaat::thema9::woordenlijst::A2
+de avondgroep	De avondgroep begint om zeven uur na mijn werkdag.	вечерняя группа	Вечерняя группа начинается в семь часов после моего рабочего дня.	opmaat::thema9::woordenlijst::A2
+de baas	Mijn baas is heel tevreden over het project.	начальник, босс	Мой начальник очень доволен проектом.	opmaat::thema9::woordenlijst::A2
+de bakker	De bakker op de hoek bakt het lekkerste brood van de buurt.	пекарь	Пекарь на углу печёт самый вкусный хлеб в районе.	opmaat::thema9::woordenlijst::A2
+de balie	Je kunt je aanmelden bij de balie op de begane grond.	стойка, ресепшен	Ты можешь зарегистрироваться на стойке на первом этаже.	opmaat::thema9::woordenlijst::A2
+de baliemedewerker	De baliemedewerker verbindt je door met de juiste afdeling.	сотрудник на стойке	Сотрудник на стойке переведёт тебя на нужный отдел.	opmaat::thema9::woordenlijst::A2
+de barman	De barman in die kroeg maakt de beste cocktails.	бармен	Бармен в том баре делает лучшие коктейли.	opmaat::thema9::woordenlijst::A2
+de basisschool	Mijn kinderen zitten op een basisschool in de buurt.	начальная школа	Мои дети ходят в начальную школу поблизости.	opmaat::thema9::woordenlijst::A2
+de bediening	De bediening in dit restaurant is altijd vriendelijk.	обслуживание	Обслуживание в этом ресторане всегда приветливое.	opmaat::thema9::woordenlijst::A2
+het bedrijf	Hij werkt bij een groot IT-bedrijf in Amsterdam.	компания, предприятие	Он работает в большой IT-компании в Амстердаме.	opmaat::thema9::woordenlijst::A2
+beide	Beide collega's hebben veel ervaring in dit vak.	оба	Оба коллеги имеют большой опыт в этой области.	opmaat::thema9::woordenlijst::A2
+de bejaardenverzorger	Een bejaardenverzorger helpt ouderen in het dagelijks leven.	работник по уходу за пожилыми	Работник по уходу за пожилыми помогает им в повседневной жизни.	opmaat::thema9::woordenlijst::A2
+bekend	Deze professor is bekend om zijn onderzoek.	известный, знакомый	Этот профессор известен своими исследованиями.	opmaat::thema9::woordenlijst::A2
+de belofte	Ze heeft de belofte gedaan om serieuzer te studeren.	обещание	Она дала обещание учиться серьёзнее.	opmaat::thema9::woordenlijst::A2
+bepalen	De baas bepaalt wie er op vakantie mag in juli.	определять, решать	Начальник решает, кто может пойти в отпуск в июле.	opmaat::thema9::woordenlijst::A2
+bereikbaar	Ik ben altijd telefonisch bereikbaar tijdens mijn werkdag.	доступный (по связи)	Я всегда доступен по телефону в рабочий день.	opmaat::thema9::woordenlijst::A2
+bereiken	Ik wil dit jaar het B1-niveau bereiken.	достигать	Я хочу достичь уровня B1 в этом году.	opmaat::thema9::woordenlijst::A2
+het bericht	Heb je het bericht van je collega al ontvangen?	сообщение	Ты уже получил сообщение от коллеги?	opmaat::thema9::woordenlijst::A2
+de beroepsmilitair	Een beroepsmilitair traint elke dag en is heel sportief.	профессиональный военный	Профессиональный военный тренируется каждый день и очень спортивный.	opmaat::thema9::woordenlijst::A2
+de beroepssporter	Een beroepssporter verdient geld met sport.	профессиональный спортсмен	Профессиональный спортсмен зарабатывает деньги спортом.	opmaat::thema9::woordenlijst::A2
+bespreken	Laten we het plan morgen op kantoor bespreken.	обсуждать	Давай обсудим план завтра в офисе.	opmaat::thema9::woordenlijst::A2
+de bestelling	Uw bestelling is klaar, u kunt het bij de balie ophalen.	заказ	Ваш заказ готов, вы можете забрать его на стойке.	opmaat::thema9::woordenlijst::A2
+bewijzen	Kun je bewijzen dat je ervaring hebt met dit werk?	доказывать	Ты можешь доказать, что у тебя есть опыт в этой работе?	opmaat::thema9::woordenlijst::A2
+bezig	Sorry, ik ben nu bezig met een belangrijk project.	занятый	Извини, я сейчас занят важным проектом.	opmaat::thema9::woordenlijst::A2
+bij	Ze werkt al drie jaar bij hetzelfde bedrijf.	у, при, в (о месте работы)	Она уже три года работает в той же компании.	opmaat::thema9::woordenlijst::A2
+de bijbaan	Naast mijn studie heb ik een bijbaan in een kroeg.	подработка	Помимо учёбы у меня подработка в баре.	opmaat::thema9::woordenlijst::A2
+bijna	Het diploma is bijna klaar, nog één examen.	почти	Диплом почти готов, ещё один экзамен.	opmaat::thema9::woordenlijst::A2
+de biologie	Biologie was mijn lievelingsvak op de middelbare school.	биология	Биология была моим любимым предметом в средней школе.	opmaat::thema9::woordenlijst::A2
+de bloemist	De bloemist op de hoek maakt prachtige boeketten.	флорист	Флорист на углу делает прекрасные букеты.	opmaat::thema9::woordenlijst::A2
+boeiend	Ik vind mijn nieuwe baan heel boeiend en dynamisch.	увлекательный, захватывающий	Я нахожу свою новую работу очень увлекательной и динамичной.	opmaat::thema9::woordenlijst::A2
+de boer	De boer verkoopt verse groenten op de markt in de buurt.	фермер	Фермер продаёт свежие овощи на рынке поблизости.	opmaat::thema9::woordenlijst::A2
+de boodschap	Ik zal de boodschap aan je baas doorgeven.	сообщение; поручение	Я передам сообщение твоему начальнику.	opmaat::thema9::woordenlijst::A2
+de bouwvakker	De bouwvakker bouwt nieuwe woningen in onze wijk.	строитель	Строитель строит новые дома в нашем районе.	opmaat::thema9::woordenlijst::A2
+de brandweerman	De brandweerman redt mensen en blust branden.	пожарный	Пожарный спасает людей и тушит пожары.	opmaat::thema9::woordenlijst::A2
+het buitenland	Ze heeft twee jaar in het buitenland gewerkt en veel ervaring opgedaan.	заграница	Она два года работала за границей и приобрела большой опыт.	opmaat::thema9::woordenlijst::A2
+de burgemeester	De burgemeester opent het nieuwe ziekenhuis in de stad.	мэр, бургомистр	Мэр открывает новую больницу в городе.	opmaat::thema9::woordenlijst::A2
+de buschauffeur	De buschauffeur rijdt elke werkdag dezelfde route.	водитель автобуса	Водитель автобуса каждый рабочий день ездит по одному маршруту.	opmaat::thema9::woordenlijst::A2
+de chemicus	De chemicus doet onderzoek in het laboratorium van de universiteit.	химик	Химик проводит исследования в лаборатории университета.	opmaat::thema9::woordenlijst::A2
+de chirurg	De chirurg in het ziekenhuis heeft de operatie succesvol uitgevoerd.	хирург	Хирург в больнице успешно провёл операцию.	opmaat::thema9::woordenlijst::A2
+de collega	Mijn collega is heel betrouwbaar en altijd bereid om te helpen.	коллега	Мой коллега очень надёжный и всегда готов помочь.	opmaat::thema9::woordenlijst::A2
+communiceren	Het is belangrijk om duidelijk te communiceren met je team.	общаться, коммуницировать	Важно ясно общаться с командой.	opmaat::thema9::woordenlijst::A2
+het cursusaanbod	Het cursusaanbod van dit taalinstituut is heel breed.	предложение курсов	Выбор курсов в этом языковом институте очень широкий.	opmaat::thema9::woordenlijst::A2
+de cursusplanning	Kijk even naar de cursusplanning op de website.	расписание курсов	Посмотри расписание курсов на сайте.	opmaat::thema9::woordenlijst::A2
+de daggroep	De daggroep heeft les van negen tot twaalf uur.	дневная группа	Дневная группа занимается с девяти до двенадцати часов.	opmaat::thema9::woordenlijst::A2
+de danser	Ze is danser bij het Nationale Ballet en traint elke dag.	танцор	Она танцовщица в Национальном балете и тренируется каждый день.	opmaat::thema9::woordenlijst::A2
+het dieet	De dokter heeft een gezond dieet voor mij samengesteld.	диета	Врач составил для меня здоровую диету.	opmaat::thema9::woordenlijst::A2
+de dierenarts	De dierenarts onderzoekt onze kat regelmatig.	ветеринар	Ветеринар регулярно осматривает нашу кошку.	opmaat::thema9::woordenlijst::A2
+digitaal	Bijna alle sollicitaties gaan tegenwoordig digitaal.	цифровой	Почти все заявления на работу сейчас подаются в цифровом виде.	opmaat::thema9::woordenlijst::A2
+het diploma	Na het examen krijg je een officieel diploma.	диплом	После экзамена ты получишь официальный диплом.	opmaat::thema9::woordenlijst::A2
+de doek	Pak een schone doek om het aanrecht schoon te maken.	тряпка, полотно	Возьми чистую тряпку, чтобы вытереть столешницу.	opmaat::thema9::woordenlijst::A2
+de dominee	De dominee spreekt elke zondag voor de gemeente.	пастор (протестантский)	Пастор выступает каждое воскресенье перед общиной.	opmaat::thema9::woordenlijst::A2
+doorgaan	De vergadering gaat door, ook al zijn niet alle collega's aanwezig.	продолжаться, состояться	Собрание состоится, даже если не все коллеги присутствуют.	opmaat::thema9::woordenlijst::A2
+doorgeven	Kun je deze boodschap aan de docent doorgeven?	передавать	Можешь передать это сообщение преподавателю?	opmaat::thema9::woordenlijst::A2
+doorverbinden	Moment, ik verbind u door met de juiste afdeling.	переключить (по телефону)	Подождите, я переключу вас на нужный отдел.	opmaat::thema9::woordenlijst::A2
+duidelijk	Is de opdracht duidelijk of heb je nog vragen?	ясный, понятный	Задание понятно или у тебя ещё есть вопросы?	opmaat::thema9::woordenlijst::A2
+Duits	Zij spreekt vloeiend Duits en Nederlands.	немецкий	Она свободно говорит по-немецки и по-нидерландски.	opmaat::thema9::woordenlijst::A2
+het dutje	Na de lunch doe ik soms een kort dutje op kantoor.	дремота, короткий сон	После обеда я иногда ненадолго дремлю в офисе.	opmaat::thema9::woordenlijst::A2
+dynamisch	We zoeken een dynamisch persoon voor ons team.	динамичный, энергичный	Мы ищем энергичного человека для нашей команды.	opmaat::thema9::woordenlijst::A2
+de econoom	De econoom adviseert het bedrijf over de financiën.	экономист	Экономист консультирует компанию по финансам.	opmaat::thema9::woordenlijst::A2

@@ -1,0 +1,100 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+opnemen (contact opnemen met)	Ik moet contact opnemen met de makelaar over de huur.	связаться (contact opnemen met — связаться с)	Мне нужно связаться с маклером по поводу аренды.	opmaat::thema9::woordenlijst::A2
+de opticien	De opticien in onze buurt maakt ook sportbrillen.	оптик	Оптик в нашем районе делает и спортивные очки.	opmaat::thema9::woordenlijst::A2
+de organisatie	De organisatie van het concert was heel professioneel.	организация	Организация концерта была очень профессиональной.	opmaat::thema9::woordenlijst::A2
+overtuigend	Haar ervaring en diploma waren heel overtuigend tijdens het gesprek.	убедительный	Её опыт и диплом были очень убедительными на собеседовании.	opmaat::thema9::woordenlijst::A2
+pakken (erbij pakken)	Wacht, ik pak er even mijn agenda bij om te reserveren.	взять, достать (erbij pakken — достать, посмотреть)	Подожди, я достану свой ежедневник, чтобы забронировать.	opmaat::thema9::woordenlijst::A2
+het pakket	Er ligt een groot pakket voor je bij de balie.	пакет, посылка	На стойке лежит большая посылка для тебя.	opmaat::thema9::woordenlijst::A2
+parttime	Ze werkt parttime bij een bedrijf en studeert 's avonds.	неполный рабочий день	Она работает неполный рабочий день в компании и учится по вечерам.	opmaat::thema9::woordenlijst::A2
+de pastoor	De pastoor kent bijna alle buren in de wijk persoonlijk.	пастор (католический)	Пастор лично знает почти всех соседей в районе.	opmaat::thema9::woordenlijst::A2
+persoonlijk	Ik bespreek liever persoonlijk dan via de voicemail.	личный, лично	Я предпочитаю обсуждать лично, а не через голосовую почту.	opmaat::thema9::woordenlijst::A2
+de piloot	De piloot heeft veel ervaring en vliegt al twintig jaar.	пилот	У пилота большой опыт, он летает уже двадцать лет.	opmaat::thema9::woordenlijst::A2
+de politicus	De politicus belooft meer woningen te bouwen in onze wijk.	политик	Политик обещает построить больше жилья в нашем районе.	opmaat::thema9::woordenlijst::A2
+de politieagent	De politieagent staat elke werkdag bij de school op de hoek.	полицейский	Полицейский каждый рабочий день стоит у школы на углу.	opmaat::thema9::woordenlijst::A2
+de portier	De portier bij ons kantoor is altijd vrolijk en sociaal.	портье, вахтёр	Портье в нашем офисе всегда весёлый и общительный.	opmaat::thema9::woordenlijst::A2
+de postbode	De postbode brengt elke dag een pakket naar onze buurt.	почтальон	Почтальон каждый день приносит посылку в наш район.	opmaat::thema9::woordenlijst::A2
+praktisch	Mijn collega is heel praktisch en organiseert alles snel.	практичный	Мой коллега очень практичный и быстро всё организует.	opmaat::thema9::woordenlijst::A2
+de prognose	De manager bespreekt de prognose voor het bedrijf met het team.	прогноз	Менеджер обсуждает прогноз для компании с командой.	opmaat::thema9::woordenlijst::A2
+de programmeur	De programmeur werkt flexibel en soms vanuit de tuin.	программист	Программист работает по гибкому графику и иногда из сада.	opmaat::thema9::woordenlijst::A2
+de psychiater	De psychiater op onze afdeling is heel geduldig met patiënten.	психиатр	Психиатр в нашем отделении очень терпелив с пациентами.	opmaat::thema9::woordenlijst::A2
+de psycholoog	De psycholoog is betrouwbaar en luistert altijd serieus.	психолог	Психолог надёжный и всегда слушает серьёзно.	opmaat::thema9::woordenlijst::A2
+raden	Ik raad je aan om contact op te nemen met de afdeling.	советовать; угадывать	Я советую тебе связаться с отделом.	opmaat::thema9::woordenlijst::A2
+de receptie	Meld je bij de receptie op de begane grond aan.	ресепшен, приёмная	Зарегистрируйся на ресепшене на первом этаже.	opmaat::thema9::woordenlijst::A2
+de receptionist	De receptionist verbindt je door met de juiste collega.	администратор, ресепшионист	Администратор переключит тебя на нужного коллегу.	opmaat::thema9::woordenlijst::A2
+de rechter	De rechter is eerlijk en neemt zijn werk heel serieus.	судья	Судья честный и очень серьёзно относится к своей работе.	opmaat::thema9::woordenlijst::A2
+rekenen	Op de basisschool leer je rekenen en taal.	считать	В начальной школе учатся считать и изучают язык.	opmaat::thema9::woordenlijst::A2
+reserveren	Ik wil een tafel reserveren voor na het theater vanavond.	бронировать, резервировать	Я хочу забронировать столик на вечер после театра.	opmaat::thema9::woordenlijst::A2
+het resultaat	Het resultaat van de opleiding was beter dan de prognose.	результат	Результат обучения оказался лучше прогноза.	opmaat::thema9::woordenlijst::A2
+roepen	De baas roept het hele team voor een vergadering.	звать, кричать	Начальник зовёт всю команду на собрание.	opmaat::thema9::woordenlijst::A2
+saai	Mijn bijbaan is saai, ik wil iets creatievers doen.	скучный	Моя подработка скучная, я хочу заниматься чем-то более творческим.	opmaat::thema9::woordenlijst::A2
+het salaris	Het salaris bij dit bedrijf is hoger dan het gemiddelde loon.	зарплата	Зарплата в этой компании выше среднего заработка.	opmaat::thema9::woordenlijst::A2
+de scheikunde	Scheikunde was mijn moeilijkste schoolvak op de middelbare school.	химия	Химия была моим самым сложным предметом в средней школе.	opmaat::thema9::woordenlijst::A2
+de schilder	De schilder maakt het kantoor mooi met rustige kleuren.	маляр; художник	Маляр делает офис красивым спокойными цветами.	opmaat::thema9::woordenlijst::A2
+de schipper	De schipper vaart met zijn boot regelmatig naar Amsterdam.	шкипер, капитан (судна)	Шкипер регулярно плавает на своей лодке в Амстердам.	opmaat::thema9::woordenlijst::A2
+de schoenmaker	De schoenmaker in de buurt repareert ook sporttassen.	сапожник	Сапожник в нашем районе ремонтирует и спортивные сумки.	opmaat::thema9::woordenlijst::A2
+de school	Onze school ligt naast het theater in een rustige wijk.	школа	Наша школа находится рядом с театром в тихом районе.	opmaat::thema9::woordenlijst::A2
+het schoolvak	Welk schoolvak vond je het leukst op de basisschool?	школьный предмет	Какой школьный предмет тебе больше всего нравился в начальной школе?	opmaat::thema9::woordenlijst::A2
+de schoonheidsspecialiste	De schoonheidsspecialiste heeft haar eigen bedrijf gestart.	косметолог	Косметолог открыла своё собственное дело.	opmaat::thema9::woordenlijst::A2
+schoonmaken	De schoonmaker maakt elke werkdag alle etages schoon.	убирать, чистить	Уборщик каждый рабочий день убирает все этажи.	opmaat::thema9::woordenlijst::A2
+de schoonmaker	Onze schoonmaker op kantoor is altijd betrouwbaar en vrolijk.	уборщик	Наш уборщик в офисе всегда надёжный и весёлый.	opmaat::thema9::woordenlijst::A2
+de schrijver	De schrijver is ambitieus en wil elk jaar een nieuw boek publiceren.	писатель	Писатель амбициозен и хочет каждый год публиковать новую книгу.	opmaat::thema9::woordenlijst::A2
+de schroevendraaier	Geef me de schroevendraaier even, ik repareer de keukenla.	отвёртка	Дай мне отвёртку, я починю кухонный ящик.	opmaat::thema9::woordenlijst::A2
+de secretaresse	De secretaresse beheert de administratie van de hele afdeling.	секретарь (ж.)	Секретарь ведёт администрирование всего отдела.	opmaat::thema9::woordenlijst::A2
+simpel	De uitleg van de manager was simpel en duidelijk.	простой	Объяснение менеджера было простым и понятным.	opmaat::thema9::woordenlijst::A2
+Spaans	Mijn collega spreekt Spaans en geeft soms taalles als hobby.	испанский	Мой коллега говорит по-испански и иногда даёт уроки языка как хобби.	opmaat::thema9::woordenlijst::A2
+de specialist	De specialist heeft haar diploma in het buitenland behaald.	специалист	Специалист получила диплом за границей.	opmaat::thema9::woordenlijst::A2
+starten	Ze wil een eigen bedrijf starten na haar opleiding.	начинать, запускать	Она хочет открыть своё дело после обучения.	opmaat::thema9::woordenlijst::A2
+de stewardess	De stewardess reist regelmatig naar het buitenland voor haar werk.	стюардесса	Стюардесса регулярно ездит за границу по работе.	opmaat::thema9::woordenlijst::A2
+straks	Ik bel je straks terug, ik ben nu in een vergadering.	позже, скоро	Я перезвоню тебе позже, я сейчас на собрании.	opmaat::thema9::woordenlijst::A2
+taal	Ze studeert taal en wil tolk worden in de toekomst.	язык	Она изучает язык и хочет стать переводчиком в будущем.	opmaat::thema9::woordenlijst::A2
+de taxichauffeur	De taxichauffeur kent alle routes door de stad.	таксист	Таксист знает все маршруты по городу.	opmaat::thema9::woordenlijst::A2
+het team	Ons team speelt elke zaterdag een wedstrijd in het park.	команда	Наша команда играет каждую субботу матч в парке.	opmaat::thema9::woordenlijst::A2
+tegenwoordig	Tegenwoordig werken veel collega's parttime vanuit huis.	в наше время, сейчас	В наше время многие коллеги работают неполный день из дома.	opmaat::thema9::woordenlijst::A2
+tekenen	Als kind tekende ik altijd en nu werk ik als creatief ontwerper.	рисовать	В детстве я всегда рисовал, а теперь работаю креативным дизайнером.	opmaat::thema9::woordenlijst::A2
+het telefoongesprek	Het telefoongesprek met de makelaar duurde langer dan verwacht.	телефонный разговор	Телефонный разговор с маклером длился дольше, чем ожидалось.	opmaat::thema9::woordenlijst::A2
+terugbellen	Kunt u mij morgen terugbellen? Ik ben nu bij een collega.	перезвонить	Вы можете перезвонить мне завтра? Я сейчас у коллеги.	opmaat::thema9::woordenlijst::A2
+tevreden	De baas is tevreden over de kwaliteit van ons werk.	довольный	Начальник доволен качеством нашей работы.	opmaat::thema9::woordenlijst::A2
+theoretisch	Het examen heeft zowel een theoretisch als een praktisch deel.	теоретический	Экзамен имеет как теоретическую, так и практическую часть.	opmaat::thema9::woordenlijst::A2
+de therapeut	De therapeut is geduldig en luistert naar elke patiënt.	терапевт	Терапевт терпелив и выслушивает каждого пациента.	opmaat::thema9::woordenlijst::A2
+de timmerman	De timmerman repareert de garage en bouwt een nieuwe kast.	плотник	Плотник ремонтирует гараж и строит новый шкаф.	opmaat::thema9::woordenlijst::A2
+de toegang	Werknemers krijgen met een pasje toegang tot het kantoor.	доступ, вход	Сотрудники получают доступ в офис по пропуску.	opmaat::thema9::woordenlijst::A2
+de toekomst	In de toekomst wil ik een opleiding als ingenieur volgen.	будущее	В будущем я хочу пройти обучение на инженера.	opmaat::thema9::woordenlijst::A2
+toen	Toen ik op de basisschool zat, wilde ik piloot worden.	тогда, когда (в прошлом)	Когда я учился в начальной школе, я хотел стать пилотом.	opmaat::thema9::woordenlijst::A2
+de tolk	De tolk spreekt vier talen en werkt bij een internationale organisatie.	переводчик (устный)	Переводчик говорит на четырёх языках и работает в международной организации.	opmaat::thema9::woordenlijst::A2
+de tuinman	De tuinman komt regelmatig om de tuin te onderhouden.	садовник	Садовник регулярно приходит ухаживать за садом.	opmaat::thema9::woordenlijst::A2
+twijfelen	Ik twijfel of ik bij dit bedrijf moet solliciteren of niet.	сомневаться	Я сомневаюсь, стоит ли мне подавать заявку в эту компанию или нет.	opmaat::thema9::woordenlijst::A2
+de uitleg	De uitleg van de docent over de grammatica was heel duidelijk.	объяснение	Объяснение преподавателя по грамматике было очень понятным.	opmaat::thema9::woordenlijst::A2
+de uitstraling	Ze heeft een professionele uitstraling en is altijd sociaal.	внешний вид, харизма	У неё профессиональный вид, и она всегда общительная.	opmaat::thema9::woordenlijst::A2
+uitvoeren	Het team voert het project creatief en efficiënt uit.	выполнять, осуществлять	Команда выполняет проект творчески и эффективно.	opmaat::thema9::woordenlijst::A2
+de vakkenvuller	Als vakkenvuller bij de supermarkt verdien je niet veel.	работник зала (расставляющий товар)	Как работник зала в супермаркете зарабатываешь немного.	opmaat::thema9::woordenlijst::A2
+verantwoordelijk	De manager is verantwoordelijk voor de hele afdeling.	ответственный	Менеджер отвечает за весь отдел.	opmaat::thema9::woordenlijst::A2
+verbeteren	Ze wil haar niveau verbeteren en volgt een avondcursus.	улучшать	Она хочет улучшить свой уровень и ходит на вечерние курсы.	opmaat::thema9::woordenlijst::A2
+de verkoper	De verkoper in die winkel is altijd vrolijk en helpt graag.	продавец	Продавец в том магазине всегда весёлый и с удовольствием помогает.	opmaat::thema9::woordenlijst::A2
+veroorzaken	Het slechte weer veroorzaakt vertraging bij de bestelling.	вызывать, причинять	Плохая погода вызывает задержку с доставкой заказа.	opmaat::thema9::woordenlijst::A2
+de verpleegkundige	De verpleegkundige op onze afdeling werkt altijd in een team.	медбрат / медсестра	Медсестра в нашем отделении всегда работает в команде.	opmaat::thema9::woordenlijst::A2
+verplicht	Een diploma is verplicht voor deze opleiding.	обязательный	Диплом обязателен для этого обучения.	opmaat::thema9::woordenlijst::A2
+verschillend	Collega's op ons kantoor komen uit verschillende landen.	различный, разный	Коллеги в нашем офисе приехали из разных стран.	opmaat::thema9::woordenlijst::A2
+de villa	De makelaar laat een dure villa zien met een grote tuin.	вилла	Маклер показывает дорогую виллу с большим садом.	opmaat::thema9::woordenlijst::A2
+de voicemail	Ik heb een boodschap op je voicemail ingesproken, bel me terug.	голосовая почта	Я оставил сообщение на твоей голосовой почте, перезвони мне.	opmaat::thema9::woordenlijst::A2
+vol	De bioscoop was helemaal vol, we konden geen plek reserveren.	полный	Кинотеатр был полностью заполнен, мы не смогли забронировать место.	opmaat::thema9::woordenlijst::A2
+het voordeel	Het voordeel van parttime werken is meer flexibele werktijd.	преимущество	Преимущество работы на неполный день — более гибкий рабочий график.	opmaat::thema9::woordenlijst::A2
+voordelig	De huur in deze buurt is voordelig voor zo'n grote flat.	выгодный	Аренда в этом районе выгодная для такой большой квартиры.	opmaat::thema9::woordenlijst::A2
+de voorlichting	De organisatie geeft voorlichting over opleidingen en werk.	информирование, разъяснительная работа	Организация проводит информирование об обучении и работе.	opmaat::thema9::woordenlijst::A2
+het voorstel	De collega heeft een goed voorstel gedaan tijdens de vergadering.	предложение	Коллега сделал хорошее предложение на собрании.	opmaat::thema9::woordenlijst::A2
+de vrachtwagenchauffeur	De vrachtwagenchauffeur levert bestellingen door het hele land.	водитель грузовика	Водитель грузовика доставляет заказы по всей стране.	opmaat::thema9::woordenlijst::A2
+de vrijwilliger	De vrijwilliger helpt elke zaterdag bij het theater met kaartjes.	волонтёр, доброволец	Волонтёр каждую субботу помогает с билетами в театре.	opmaat::thema9::woordenlijst::A2
+het vrijwilligerswerk	Ze doet vrijwilligerswerk in de buurt en organiseert sport voor kinderen.	волонтёрская работа	Она занимается волонтёрством в районе и организует спорт для детей.	opmaat::thema9::woordenlijst::A2
+vroeger	Vroeger wilde ik schilder worden, maar nu werk ik op kantoor.	раньше	Раньше я хотел стать художником, но теперь работаю в офисе.	opmaat::thema9::woordenlijst::A2
+vrolijk	Onze receptionist is altijd vrolijk en begroet iedereen bij de balie.	весёлый	Наш администратор всегда весёлый и приветствует всех на ресепшене.	opmaat::thema9::woordenlijst::A2
+de website	Op de website van het bedrijf kun je alle vacatures vinden.	веб-сайт	На сайте компании можно найти все вакансии.	opmaat::thema9::woordenlijst::A2
+de wens	Mijn grootste wens is om een goede opleiding af te ronden.	желание, пожелание	Моё самое большое желание — закончить хорошее обучение.	opmaat::thema9::woordenlijst::A2
+wereldoriëntatie	Bij wereldoriëntatie leer je over aardrijkskunde en geschiedenis.	мироведение (предмет в нач. школе)	На мироведении изучают географию и историю.	opmaat::thema9::woordenlijst::A2
+het werk	Na het werk ga ik soms naar de bioscoop met collega's.	работа	После работы я иногда хожу в кино с коллегами.	opmaat::thema9::woordenlijst::A2
+de werknemer	Elke werknemer krijgt een persoonlijk pasje voor de toegang.	работник, сотрудник	Каждый сотрудник получает личный пропуск для доступа.	opmaat::thema9::woordenlijst::A2
+de werktijd	Mijn werktijd is flexibel, ik begin soms om acht, soms om tien uur.	рабочее время	Моё рабочее время гибкое, я начинаю иногда в восемь, иногда в десять.	opmaat::thema9::woordenlijst::A2
+de werkzaamheden	De werkzaamheden van de timmerman duren nog twee dagen.	работы, деятельность	Работы плотника продлятся ещё два дня.	opmaat::thema9::woordenlijst::A2
+de wetenschapper	De wetenschapper doet onderzoek en publiceert de resultaten.	учёный	Учёный проводит исследования и публикует результаты.	opmaat::thema9::woordenlijst::A2
+de wethouder	De wethouder is verantwoordelijk voor de woningen in onze gemeente.	заместитель мэра, олдермен	Заместитель мэра отвечает за жильё в нашем муниципалитете.	opmaat::thema9::woordenlijst::A2
