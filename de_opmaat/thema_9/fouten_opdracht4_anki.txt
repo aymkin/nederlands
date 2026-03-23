@@ -12,3 +12,19 @@ Kun je iets later ___? (приходить — куда ставим инфин�
 Ik ga de boodschap aan Tom ___. (передать)	doorgeven — gaan + infinitief → EINDE van de zin	fouten::thema9::woordvolgorde
 De receptionist ___ de boodschap ___ aan de docent. (передаёт)	geeft ... door — doorgeven = передать; aannemen = принять	fouten::thema9::woordenschat
 Ik ben ziek. ___ kan ik niet komen. (поэтому + инверсия)	Dus — без запятой + инверсия (V+S). С запятой: "Dus, ik kan niet komen" — прямой порядок	fouten::thema9::woordvolgorde
+___ heet je? (как — не "how"!)	Hoe — НЕ how! Hoe heet je? Hoe gaat het? Hoe kan ik je helpen?	fouten::thema9::anglicismen
+Twee broodjes met kaas ___ een croissant. (и — не "and")	en — НЕ and! Служебные слова-ловушки: en, zo, maar, of	fouten::thema9::anglicismen
+Ik heb vreselijke ___. (боль — не "pain")	pijn — НЕ pain! Kiespijn, hoofdpijn, buikpijn	fouten::thema9::anglicismen
+Ze komt ___. (естественно — не "natuurlik")	natuurlijk — suffix -lijk (niet -lik): eerlijk, moeilijk, natuurlijk	fouten::thema9::spelling
+Ik neem de ___. (сообщение — не "boodscap")	boodschap — sch, niet sc of shc: bood·schap	fouten::thema9::spelling
+Vier ___ met kaas. (булочки — не "brodjes")	broodjes — lange oo in gesloten lettergreep: brood → brood·jes	fouten::thema9::spelling
+Twee ___. (берлинеры, пончики — не "berlinbolen")	berlinerbollen — korte o: bol → bollen (dubbele l houdt o kort)	fouten::thema9::spelling
+Ben je ___? (уверен — не "zeeker")	zeker — open lettergreep ze·ker: één e is genoeg voor lange klank	fouten::thema9::spelling
+Ik wil broodjes ___. (заказать — met of zonder "te"?)	bestellen — willen + inf ZONDER te. Wél met te: proberen te bestellen	fouten::thema9::grammatica
+Je wilt koffie. → ___ je koffie? (inversie)	Wil — inversie met je: -t valt weg. Werkt je → werk je, wilt je → wil je	fouten::thema9::grammatica
+Ik ___ hulp nodig. (мне нужна помощь — не vergeet het werkwoord!)	heb — Ik HEB hulp nodig. Zonder "heb" is de zin onvolledig	fouten::thema9::grammatica
+___ gisterenavond heb ik pijn. (с — время, не "van")	Sinds — tijd = sinds (не van). Van = herkomst: Ik kom van het station	fouten::thema9::woordenschat
+Ik kom ___ 30 minuten. (через — toekomst, не "in")	over — toekomst: over een uur, over drie dagen (niet "in")	fouten::thema9::woordenschat
+De pijn is erg. ___ pijn is al twee dagen. (эта — de-woord)	Die — pijn = de-woord → die pijn. het probleem → dat probleem	fouten::thema9::grammatica
+___, wacht niet langer! (формальное обращение: приходите)	Komt u — formeel imperatief met u: komt u, gaat u zitten, neemt u plaats	fouten::thema9::grammatica
+We zijn bij ___. (нас — не "onz")	ons — z → s aan het einde: ons, huis (niet onz, huiz)	fouten::thema9::spelling
