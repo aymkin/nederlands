@@ -17,7 +17,7 @@ Ik ga naar de cursus Nederlands om beter Nederlands te leren.
 Ik ga naar het strand om te zwemmen en van de zon te genieten.
 
 3 Waarom ga je naar de bank?
-Ik ga naar de bank om een afspraak te maken.
+Ik ga naar de bank om geld op te nemen.
 
 4 Waarom ga je naar een museum?
 Ik ga naar een museum om mooie dingen te zien.
@@ -46,7 +46,7 @@ Ik ga naar Japan om Japans eten te leren kennen.
 Ik bel de dokter om een afspraak te maken.
 
 12 Waarom doe je aan sport?
-Ik doe aan sport om gezond te blijven.
+Ik doe aan sport om af te vallen.
 
 13 Waarom volg je deze cursus?
 Ik volg deze cursus om een baan in Nederland te vinden.
@@ -62,3 +62,12 @@ Ik vind het gezellig om met vrienden koffie te drinken.
 
 17 Wat vind je moeilijk?
 Ik vind het moeilijk om Nederlands goed te leren.
+
+18 Wat vind je interessant?
+Ik vind het interessant om schoenen te maken.
+
+19 Wat vind je vervelend?
+Ik vind het vervelend om in de rij te staan.
+
+20 Wat vind je fantastisch?
+Ik vind het fantastisch om op reis met mijn vriendin te gaan.
