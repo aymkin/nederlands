@@ -18,15 +18,25 @@ Russian.
 ## Commands
 
 ```bash
-npm run format        # Format all markdown files with Prettier
-npm run format:check  # Check formatting without changes
+pnpm run format        # Format all markdown files with Prettier
+pnpm run format:check  # Check formatting without changes
 ```
+
+**Prettier config:** `proseWrap: always`, `printWidth: 80`, tabs off. When
+writing markdown, keep lines wrapped at 80 characters. Prettier ignores
+`_anki.txt`, `*.pdf`, `*.mp3`, `*.docx` files (see `.prettierignore`).
+
+## Deployment
+
+Pushes to `main` auto-deploy the entire repo to GitHub Pages via
+`.github/workflows/pages.yml`. All content becomes publicly accessible.
 
 ## Directory Structure
 
 ```
 de_opmaat/          # De Opmaat course (A2) — thema_1/ through thema_9/ + transcriptions/
-link/               # Link course (B1) — thema_1/ through thema_4/
+link/               # Link course (B1) — thema_1/ through thema_4/, each with taak subdirs
+  thema_N/          #   {N}_{task_name}/ subdirs (e.g., 1_ik_ben_iwan/, 2_wat_is_je_telefoonnummer/)
 daily/              # Daily practice and study planning
   templates/        #   Generic reusable templates (les, week review, monthly)
   maart_2026/       #   Monthly study plan with weekly/daily structure
@@ -62,6 +72,16 @@ Roadmap overview: `daily/roadmap_maart_2026.md`
 
 > **Detailed docs:** `scripts/README.md`
 
+Four scripts share `anki_utils.py` (Anki profile detection + media copying):
+
+```
+audio_to_anki.py ──┐
+                   ├─→ anki_utils.py (find profiles, validate, copy to media)
+text_to_speech.py ─┘
+
+story_reader.py ─→ standalone (uses edge-tts CLI)
+```
+
 ### audio_to_anki.py — Audio to Anki Sentence Cards
 
 Splits audio dialogues into sentences and generates Anki cards with original
@@ -86,6 +106,27 @@ python3 scripts/audio_to_anki.py de_opmaat/thema_7/2/h07_oefening_02.mp3 \
 Two modes: **Forced Alignment** (with `--transcript`, recommended — exact
 boundaries + clean text) and **Whisper-only** (without transcript — quick
 start).
+
+### text_to_speech.py — TTS Audio Generation
+
+Generates Dutch TTS audio (edge-tts, Microsoft Azure voices: colette, fenna,
+maarten). Auto-detects three input formats: transcript (`Speaker: text`), plain
+markdown, or existing Anki TSV (updates cards with audio). Dependency:
+`pip install edge-tts`
+
+```bash
+python3 scripts/text_to_speech.py input.md --voice colette --copy-to-anki
+```
+
+### story_reader.py — Interactive HTML Reader
+
+Creates self-contained HTML pages with synchronized sentence highlighting and
+embedded audio (base64). Supports playback speed 0.7x-1.5x. No server needed —
+opens in browser. Dependency: `pip install edge-tts`
+
+```bash
+python3 scripts/story_reader.py de_opmaat/thema_8/verhaal_studentenhuis/verhaal_studentenhuis_deel1.md
+```
 
 ## Anki Integration
 
@@ -120,13 +161,13 @@ Files ending in `_anki.txt` use tab-separated format with header directives:
 #tags column:5
 ```
 
-| Column           | Description                           |
-| ---------------- | ------------------------------------- |
-| Word             | Dutch word/phrase with article if noun |
-| Example          | Dutch example sentence                |
-| Translation      | Russian translation                   |
+| Column             | Description                             |
+| ------------------ | --------------------------------------- |
+| Word               | Dutch word/phrase with article if noun  |
+| Example            | Dutch example sentence                  |
+| Translation        | Russian translation                     |
 | TranslationExample | Russian translation of example sentence |
-| Tags             | `link::thema{N}::taak{N}::A1`        |
+| Tags               | `link::thema{N}::taak{N}::A1`           |
 
 **Dialog sentences** (zinnen) — 3 columns:
 
@@ -136,14 +177,14 @@ Files ending in `_anki.txt` use tab-separated format with header directives:
 #tags column:3
 ```
 
-| Column | Description                        |
-| ------ | ---------------------------------- |
-| Dutch  | Dutch sentence from the dialog     |
+| Column  | Description                       |
+| ------- | --------------------------------- |
+| Dutch   | Dutch sentence from the dialog    |
 | Russian | Russian translation               |
-| Tags   | `link::thema{N}::taak{N}::zinnen` |
+| Tags    | `link::thema{N}::taak{N}::zinnen` |
 
-Uitdrukkingen (vaste uitdrukkingen) use the 5-column word format with tag
-suffix `::uitdrukkingen` instead of `::A1`.
+Uitdrukkingen (vaste uitdrukkingen) use the 5-column word format with tag suffix
+`::uitdrukkingen` instead of `::A1`.
 
 ### Card Templates
 
@@ -154,19 +195,22 @@ audio_to_anki.py output)
 
 ## File Naming Conventions
 
-| Pattern                            | Purpose                              |
-| ---------------------------------- | ------------------------------------ |
-| `opdracht_{N}.md`                  | Numbered exercises (thema 5, 8-9)    |
-| `{N}_opdracht.md`                  | Numbered exercises (thema 6-7)       |
-| `woordenlijst_pagina_{N}_anki.txt` | Vocabulary by page                   |
-| `grammatica_{topic}.md`            | Grammar explanations                 |
-| `taalhulp_{topic}.md`              | Grammar/phrase reference (non-Anki)  |
-| `taalhulp_{topic}_anki.txt`        | Topic-specific flashcards            |
-| `sententiae_{theme}_anki.txt`      | Sentence cards with audio            |
-| `constructies_{topic}_anki.txt`    | Construction cards                   |
-| `verhaal_{NN}_{title}.md`          | Story exercises                      |
-| `dialog.md` / `dialog_{N}.md`     | Link course dialog transcripts       |
-| `zinnen.md`                        | Link course sentence lists           |
+| Pattern                               | Purpose                                          |
+| ------------------------------------- | ------------------------------------------------ |
+| `opdracht_{N}.md`                     | Numbered exercises (thema 5, 8-9)                |
+| `{N}_opdracht.md`                     | Numbered exercises (thema 6-7)                   |
+| `woordenlijst_pagina_{N}_anki.txt`    | Vocabulary by page                               |
+| `grammatica_{topic}.md`               | Grammar explanations                             |
+| `taalhulp_{topic}.md`                 | Grammar/phrase reference (non-Anki)              |
+| `taalhulp_{topic}_anki.txt`           | Topic-specific flashcards                        |
+| `sententiae_{theme}_anki.txt`         | Sentence cards with audio                        |
+| `constructies_{topic}_anki.txt`       | Construction cards                               |
+| `verhaal_{NN}_{title}.md`             | Story exercises                                  |
+| `dialog.md` / `dialog_{N}.md`         | Link course dialog transcripts                   |
+| `zinnen.md`                           | Link course sentence lists                       |
+| `luisteren_thema{N}_taak{N}_anki.txt` | Link listening exercise cards                    |
+| `lezen_thema{N}_taak{N}_anki.txt`     | Link reading exercise cards                      |
+| `*_telegram.md`                       | Telegram-formatted story versions (Link, mobile) |
 
 ## Content Conventions
 
@@ -216,7 +260,8 @@ conversational practice), follow these rules:
 1. **Суть** — объясни значение через контекст, не просто перевод
 2. **Нюансы** — формальность (formeel / informeel / slang), культурные
    особенности, типичные ошибки
-3. **Грамматика** — род, число, управление, место в предложении — если релевантно
+3. **Грамматика** — род, число, управление, место в предложении — если
+   релевантно
 4. **3 примера** — из реальных ситуаций (формальная, бытовая, профессиональная),
    на нидерландском с переводом на русский
 5. **Проверка** — спроси, всё ли понятно или нужны дополнения
