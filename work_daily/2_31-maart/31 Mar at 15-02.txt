@@ -1,0 +1,231 @@
+Ja, het is nu gewoon uitzonderlijk ik. Ik wou het voorbereiden. Ik wou dat ik er echt voorbereiden. Alleen ik ben er gewoon niet naartoe gekomen. Ehm. Nu ben ik nog steeds, want.
+
+Zeker was ook de reden waarom ik zit ja, maar we kunnen wisselen. Heb je ook een heupprothese? Nee, ik heb zeer nodig, dat is toch maar we geef maar gewoon aan. Ehm de switch component door het Engels of in het Nederlands Nederlands Nederlands Ja laten we proberen niet zeker eh maar laten we proberen Nederlands gesprek een beetje.
+
+Ehm we hebben een switch component deze heel mooi. Oh ja ehm. Volgens mij hebben we een reisbans. Hebben we hem hebben die ook een reis gemaakt? Eh ja denk ik eh eh om eh in instellingen pagina. Oh de de scherm juist ja premis scherm ehm ja het idee is eigenlijk om die uiteindelijk dan eh tweaken die toggle switch ja oké.
+
+Zitten denken moeten daar een label bij of niet. Of zou dat dan weer te groot zijn? Hm hm want stel je wilt alleen een switch hebben Ja switch laten zien Ah I will I would say that should be different component We take button and the switch as combinate component of ehm.
+
+Het zijn twee losse componenten, maar je zou de tokkel een higher order component kunnen maken waarbij je zegt Hey als die een label heeft rendert hij het label erbij. Ja ja toch als je higher components een ding vindt. Ehm. Want je kan het. Het kan zijn dat je een een toggle los hebt, maar meestal staat er wel iets bij.
+
+Ja, ik zit ook te denken van alle dit alle plekken waar ik ben tokkel kan bedenken. Zit er zo'n label bij? Met label zal alle switches zijn met een label die die ik kan bedenken. Ja, eh, bij default is with label right. Ja, maar staat hij altijd er links?
+
+Naast dat is dan nog even de vraag. Wij heb waarschijnlijk wel, maar ja, Heb je al een label component? Ja, eh, eh in de controller? Dit is natuurlijk gewoon eh tekst component denk ik oké en daar beginnen wij. Het was eigenlijk de eerstvolgende team of system. Ja, ik heb weinig inzicht op jullie hele designs, maar ik kan me voorstellen dat je wil kunnen zeggen.
+
+Ik wil er een label bij en dat dat meteen automatisch goed is. Want wanneer ga je hem zonder gebruiken? Ja, maar het kan wel optioneel zijn. Ja, dat is toch dat je het optioneel maakt? HM, HM en reisverors hebben eh. Actually in Rward that component looks like switch. Componentically diffent is checkbox.
+
+Deze refine verloopt iets anders. Dat is niet voorbereid, maar dat heeft te maken met dat er een hele waslijst aan componenten naar de component library moet EHM en dat is allemaal niet voorbereid. Ook mede vanwege dat bal er nu niet is. Ehm moeten we even schipperen en dan is het nu gewoon.
+
+We doen wat we kunnen deze sessie. Dit hadden ze net aan mij uitgelegd dus ik denk dat ik het gelijk door uitleggen Ja dat je niet denkt. De vorige keer was het zo goed warm. Is het nu ja, wat is dit nou? Vorige keer was het ook niet goed.
+
+Nee, ik krijg wel eens wat te horen. Ehm nee nee nee nee hier is mijn niet ja maar ik markeer ook niet echt iets maar ik heb gewoon last van mijn rug. Na een tijd staan hier ga alsjeblieft vertellen. Het is goed echt makkelijk, maakt niet uit. Dat was heel logisch, want je slik ik natuurlijk Nee, maar dat het dan aannemen dat er niks is Ja, maar goed, dat kan.
+
+Laat me deze nou ja nee of ik mag je helaas niet terugslaan. Zo hier. Niemand kijkt niet. Glazenok ehm. Is dit genoeg informatie om te traden? Ik ja, denk ik nog steeds component die de tickets aan de Switch Component in deel voor app, dus dan heb je al drie dingen dus vers components toegevoegd, dus ik gewoon even ondersteuning voor op professionele Ehm.
+
+Ja, in principe zou je nog moeten zeggen dat kopieer je hem uit één van de andere projecten wordord. We hebben eigenlijk gezegd van we kijken naar beide implementaties en maken het eigenlijk zo simplistisch en goed mogelijk, dus er moet nog er mogelijk nog wel iets aan gebeuren, ook al kopieer je hem van één van de projecten.
+
+Dat is misschien wel handig om er even bij te vernoemen. Misschien in tech. Misschien is het geen criteria Hm hm ehm dat je dat je zegt van Joh, We pakken not about replacing. More about Ehm to mention it. The ticket that we take either one from rewards or reis balans.
+
+What we do have to do some modifications because it might not be in either platform in the best way. Build it's build in away. So if we need to figure out the best way. There is some extra work involved and that's not relevant for the criteria. But for developers like it's not just copy pasted.
+
+It's think about whether thing is like we want to to project first and the second that should be is enough to be component and with the design tokens and all things if that's not already the case. So ja ja. Oké. Komt wel heel erg even nadenken over jullie. Oké, ik zal er ik begin een paar keer naast zitten.
+
+Niet gelijk douchen, jawel, dat is veilig. 3 2 1 Ja goed is in drie zijn. Oh lekker, dit. You're lost mentioned that work with design tokens Eh.
+
+You're not using design tokens. Oké, and we need make sure that the same Exra do we are separated by a lot like there is a two and there is a five sounds like a midway. Is it acceptable that is a three or do you really feel like because we don't know it need.
+
+Toit of Trees Good enough I have no clue so that's why was denken tussen t en drie. Ja, so you agree with the Yeah heeft geen keus. Technically it should not change with the design tokens and I otherwise it should my be minor Work. I Think I Think I Don't Know.
+
+Te zijn. Icon button Yes.
+
+Eh. Zo heb je een design al die SM of the Library Right Package No. Eigenlijk kunnen ze different oké eh dit is de comp and. Second oké is. Die groene No is. Deze pil button button.
+
+That was no this is button I can button circle. In our project possible is possible in reactive probably the the don't have a button like this small round button. Already this do Eh. Ehm.
+
+Yes! Eh ja, dus als we bij very well witen eh wil een goede button een deelplatform dus we vroegen toe. Met ja, zo. Voor contact. Erik Eh Wij willen nu de button toevoegen zoals die dan geldt voor de deelvervoer app. Ja en de eisen daaraan Ja en wanneer je hem eigenlijk downstream merge en andere projecten bereiden hem uit met wat we daarvoor nodig hebben.
+
+Make Sens Ehm en dat is meer dat we de doorflow door kunnen gaan en het is version wat super nice is. Dus eh als je nieuwe versie toevoegen. Ik zie alleen die types primary secondary ter Cherry Warning, Ghost Warning and in line. Dit zijn typisch uit te zijn Oh grappig.
+
+Bij ons heet ze dan anders. Ja, according to design. We have like 12 different types of battan implement All of the same times. They are different right. It's okay, but their name differently in in Web. So that's why I'm confused because they probably to the same thing. But it's ok!
+
+Sanders ergens zegt H die types hebben de make sense that you just make new button and make sure it gets all the necessary st f.
+
+Gebleven. Zitten nog een keer. Oh.
+
+Rijke berichten van jullie eh aanad die meeting gaan naar die intakegesprek eh voor nieuwe EH Dutch cursus EH gisteren heb ik gedaan een examen voor Dutch en eh ik gekrijgd. Ik heb eh 76% gekruid Eh of my examtest dat is 70% is eh for a to so 3%, not enough to get 8 to level zo zo.
+
+I'm going for a new 6077 Ja oh oké, hij zei 76. Ja, 3% minder dan genoeg.
+
+Daarom helpt het af en toe denk ik in het Nederlandse spreken voor ons of niet. Oh H Wat. Eh. Koop deze.
+
+Ik kan er alvast niet helemaal bij zijn, maar dat is oké. Het gaat de hele sessie zoals dit zijn, dus nou ik denk dat het gewoon oké is dat jullie dan zelf. Soms is dat zo hè? Ehm. Lekker kwijt. Ben.
+
+Zo man hier.
+
+Is natuurlijk goed. We hebben hiermee genoeg informatie. Ja, Ja, ik denk het wel omdat het heel veel copy paste is. Ja ehm, het is niet zo spannend. Ja, relatiele houten relatief simpel. Dus acht punten eh 13 ja,
+
+Ja, had ik net twee en daarna moest het ineens drie gewoon hetzelfde proces hè? Snap jij dit Wil je? Wil je meedoen die eh evaluation nee oh waarom niet? Om. Wil je dat het goed ingeschat wordt? Ja ja, dat doe ik niet mee. Jij mag proberen nee, doe maar twee joh.
+
+Ja. Ik dacht ik doe gewoon net met wat jullie deden, maar hoe is dit anders? Waarom is dit simpeler? Waarom is dit minder binnen binnen je goed. Met de twee ja sure maar waarom? Waarom is het nu twee en die drie? Dit is een kleine component. Ja H Ik vind het best meevallen heel veel kleiner componen.
+
+De ene is zo de andere. Deze is zo. Prixels is meer. Hij is goed Nee, dan weet ik een beetje hoe jullie estimate het verklaart. Een hoop dit goed dat ik hier een keer bij ben. Ja ja dus een splash screen is zeg maar heel veel werk. Ja is heel groot.
+
+30 13 * 2 Nee. Ja, dit is echt een goeie eh! Ik vond dat wel. Dit vond ik een mooie bij eh ja precies, Ik wou zeggen hier er staat icoon optioneel maar dan heb je dus leading Icon en Trading Icon kun je hebben. Dit vond ik een heel mooi eh mooi van ons ging altijd ja zeker.
+
+Van deze hebben. Ik had in onze vorige button had ik een icon en dan een icon position dus maar dan kon je dus altijd maar één icon en of before of after. Maar met deze heb je ook twee properties en kun je hem er altijd of voor of erachter zetten.
+
+Dus je verliest je hebt niet extra properties, maar je kan wel kiezen. Ik heb er één voor en één achter of één achter. H is wel chill zo leading I can in trailing icon is nice Insad of having icon and then I can position Ja, ik doe remember is like before enoughter.
+
+Do also have it in eh button. Ik zou willen criteria icoon optioneel even weghalen en dan leading icon en trailing icon op maken. One of the process of button component ver beter gewoon criteria net noemen sneller rijst, maar dat maakt niet uit. Nee, ik wil ik wil commentaar leveren.
+
+Ik ben hier voor reden. Oké, dit zal wel weer heel veel werk zijn. Grote kanten. Toegevoegd. Toegevoeg.
+
+Waarom is jouw nagel lang van die? I know Ik ben zo langzaam eraf aan ja en en die gitar spullen h is pianist ja ah pianist. Er zijn dingen voor hè. Scharen. Ja, weet ik. No judgment. Hier. Over handicaps en dergelijke handicaps die ja ja. Zo volgens mij. Wat wil je zeggen?
+
+Nou ja, volgens mij is helemaal niet aan daadwerkelijk een goede implementatie van de pil button, dus het kan zijn dat hij gewoon van scratch gebouwd moet worden, maar zijn dat er gewoon bij Bro misschien Frans? Ja. Ik bedoel, het is in feite een simpel component hè. Het is een button met een icon, de eventueel voor of achter é precies spannend.
+
+Oh, het is niet handig als jij als eerste bent wat ik heb niks gedaan. Oh wacht, dat is Alex. Oh Alex is zijn scherm van de volk, maar hij is de schermafde. Honger. Ik ben in de war. Daar stond ook eh voor.
+
+Is wel grappig, want dit de component is wel groter dan de vorige. Zeker zo groot op zijn minst vijf.
+
+Heb ik nou wat puntjes. Dus dat zie je wel.
+
+Staatslegel ook een mooie ja, waarom zou kunnen vertellen? Oké ei in die browser of nee een beetje. Ehm. Oranje rood groen. Volgens mij kan die ook grijs zijn en blauw paars. Wij kunnen heel veel verschillende kleuren ga niet. Ik ga die weghalen kan verschillende kleuren hebben. Dat is zeker waar eh in de rij, Terwijl hebben we het ook in reisreworst staatsleven.
+
+Johnny wat show me theone. Hier staat in dat lange ding. Yes Ja, Yes Oké Cool Wat is het Well Build That Is The Question. Sorry hoor, heb je het goed gebouwd? Eh, denk ik, eh het is eh perfect gebouwd, perfect perfect gebouwd door jou. Perfect, nou dan ga ik mijn nesten met daarop aanpassen en dat woordje dat heeft hij wel.
+
+Bedank perfect, dat kent hij wel. Ik eh ik ik ga mij worden eh terug opnemen eh dat dat is niet eh perfect hè Ga in gebouw eh Ben best geen eh eh goed eh goed genoeg. Net als je examen. Nee, dat was net niet goed genoeg. Ja hey de mensen voor de bus gooien Kom op You GNA Have a lot of a lot of reasons laughing out loud of my Nederlands titels toevoegen.
+
+Ik weet dat dit in de reis was. Ehm bepaalde. De pen is. Hier heeft volgens mij met iets anders van met types en dat soort dingen. Oh je bedoelt ehm inums enums enzo dus die moeten. Wat wij hebben gedaan. Bij web is dat Wij hebben een uns dom statuslabel component dus hij kan blauw zijn.
+
+Oranje zijn rood al die dingen. En als we dan iets hebben waarvan we de status label hebben voor een speciale type ja, dan maken wij daar een rapper omheen die dan alle logica bevat van bijvoorbeeld personal means of registration. Ik weet nog niet helemaal wat ik daarvan vind. Dat moest toen van Sven eh niet Deze nieuwe Sven Oude Sven Ehm ergens snap ik het ergens vind ik het ook vervelend dus, maar het het standaard componentje gewoon leeg zonder enige ja.
+
+Logica is gewoon gewoon dat het een color of een wat dan ook of een tijdtype en dan gewoon een warning weet ik het. Ja, Marcus houdt er geen. Er is geen mapping van type Warning of info naar kleur. Wij hebben hem gebouwd op basis van kleur. Gewoon kleur Ja, gewoon yellow.
+
+Volgens Marcus hangt hier geen betekenis. Achter. Oké, eh inhoudelijk dus hou dat in gedachte kleur Why why specifying color better than specify and good type W. I would say specifying a type would be better, but if our designer of doesn't do that he feels like it's not, it's not that red always means error Hm hm, it can also mean ended so and that's a monic case.
+
+We build it on color and not on having a semantic meaning because it doesn't have is Dark Light Mode Right No. I Don't Think These Change On Based of dark mode might I'm not sure.
+
+Het gewoon in zo maken dat het ook goed werkt voor de deelvervoer app. HM, HM en daarna moet het bij de downstream maar kijken hoe we dat gaan rechttrekken. Fixen oplossen. Is al gelegd. Jongens.
+
+Wordtieren alstublieft. Drie. Dit is een miniil button met een paar kleurtjes. Ja. Ja Nee Oké Let's not even impressible Ik heb geen idee hè It's not even pressible. I want to hey, het is nog steeds aan jullie hè dus voor voel je niet, ik zit ik zat te denken van ik ben gewoon kritisch.
+
+Ik zeg natuurlijk net we bouwen het zo simpel mogelijk dat het in ieder geval werkt voor de deelvervoer heb en hoe we daarna downstreamen naar de rest. Dat kijk, dat is een probleem voor later precies. Eh zeker twee is dan beter dan ja ik weet dat Paul misschien wat stiller is maar wat je niet to go battery Ja my watch is.
+
+Was nexticer daar een eh een een design van waar zit ik naar te kijken? Van wat een Dateime picker component. H Ik heb allemaal beelden. Toch heel benieuwd, want als ideeën denk ik maar in één ding hier. Dit is waar eh even een dingetje. Dit bestaat sowieso al in de Reisplans.
+
+App als twee losse velden ook hè? Ja, alleen het is. Best een complex component ja in eh in de in de in de Reismans app dus die moet zeker. Berichten Complex best é kom comp die mag zeker ik heb veel gezeten vandaag in Amsterdam soms sta. Hallo als kampioen.
+
+Wat je dan moet doen, maar dat moet je me niet delen. Slapen. Een dutje doen. Eh.
+
+Niks. Hiervan is eh testible voor Qaim omdat het allemaal naar de componen luier gaat. Ja, ik zeg gewoon zaken zou kunnen doen is hey, je ziet het in de componij weer er goed uit Ja of nee, maar zelfs dan is het nog niet, maar daar kunnen zij niet bij nog, want het wordt nergens gedeploid nee en zelfs dan is het nog niet eens bewijs, want wij bouwen eigenlijk naar web om het te previewen.
+
+Ja, precies, oké, dus dan is de oké wacht Het werkt, maar het kan ook zijn dat het niet lekker ja helder hebben gezet. Maar de implementatie van dit component in reisbalans is goed naar jouw idee. Nee is wel overmatig. Complex heeft eh Thomas gemaakt zeker. Ik weet niet wat ik don't blame him ja ja do.
+
+Ehm. Heb je een idee van wat je eraan zou willen veranderen? Is dat uit te leggen want anders is het heel lastig inschatten natuurlijk ik. Ik weet niet hoe dat ding eruit ziet. Ehm, op het moment heeft de Daytime Picker Eh in plaats van die heeft ook allemaal logica om bijvoorbeeld ranges te kunnen doen en HM, HM, single en multiple en dat soort dingen.
+
+Ja ehm en dat zorgt dat er heel veel logica zit en dan heb je ook nog dat je de input component hebt of naar de input, zeg maar de de de de hè, waar jouw dat goed is. Dit One Compon date in time eh dus dat je hier zegt Hey ik klik hier op dan komt deze nou die klik ik op dit is allemaal in één maar component een beetje dat moet dit hier nou dan moet ik een keer 10 Ah en wat is h.
+
+Dat is de vraag. Dat is maar eh tijd Ik heb, maar heb je al die logica van een range dan niet meer nodig in dit component. Dat weet ik dus niet. Ah, oké en ook moet het wel in een component zitten of moet die logica buiten het component liggen dat, want je hebt nu je hebt een bottom sheet en die en die triggert weer een bottom sheet of is dat geen bottom?
+
+Sheet ja, die die selecteer einddatum zeg maar? Is dat een bottom sheet? Ja, zegt. Eh wat, wat. Kijk de logica van B gaat niet in een Capone zitten dat sowieso niet. Wat misschien misschien wat ik nu zit. Te denken is dat je een soort van. Eigenlijk is dit. Deze triggert die die trigger die en deze triggert.
+
+De time Picker die we nu ook wel hebben en dat is gewoon een native time. Picker. Negatief. Wat je ook kan doen, want wat ik hier hoor is nog heel veel complexiteit en onduidelijkheid. Misschien moet je die even iets opschuiven. H Eh moet niet hè, het is een suggestie.
+
+Nee ja nee. Want als je heel realistisch naar deze hele lijst kijkt hè. Want je hebt al deze dingen nodig voor deelplatform. Ja ja, er zijn de shared Ja ja, ook een andere precies oké, dus je hebt nog meer nodig Ja, maar dat zijn custom dingen voor in deel platform.
+
+Ja, deze hele lijst. Alex gaat hier waarschijnlijk aan werken. Volgende Sprint verwacht jij dat hij die hele lijst kan afwerken niet per se nee, dan zou ik de meest complexe even later voor wat ze zijn Ja en daar gewoon rustig naar kijken als als er wat meer tijd is, anders zit je nu te haasten, dan kun je beter hebben dat die 10 componenten meer heeft opgeleverd dan dat er één complexe tussen zit.
+
+Ja, maar verandert de complexiteit dan met de tijd? Nee, maar dan heb je wel iets meer tijd om erover na te denken. Als je nu moet gaan in deze refine sessie Zo'n component moet gaan uitwerken, daar moet je niet willen, Daar kun je beter even een dag rustig voor gaan zitten.
+
+Ja, ik zeg een dag maar gewoon een moment. Niet een hele dag. EHVEL dat nee, niet een hele dag nee, driekwart van dag kan eigenlijk twee weken, dan zit een sprint twee. Nou, daar zit ook liggen met een cocktail. Nee, maar ik heb ik heb dan liever dat één def iets langer nadenkt en een ticket even uitwerkt.
+
+Oké, punt en dat hij dan goed invite kan worden. Nee, niks punt. Jij moet je 60 zinnen ja en moet je eens met vredek inderdaad. En zijn moeder is nog erger. Schijnt echt daar heeft hij zelf verteld, dus vandaar dat ik het ook. Ik ken ze niet herinneren. Ja, kom maar oh, is dit jouw lifesaver om uit deze meeting te komen?
+
+Dit is hoe dat werkt. Wil jij wil je hem over een half uurtje eruit halen de hele tijd te appen. Ik denk al waarom? Zie ik Ninken de naam daar staan? Ja nee duidelijk.
+
+Altijd leuk dat er een aanpassing worden gedaan, terwijl eh als het goed is eh goed te doen. Ja, want ehm dit tekstje zat er dus niet. Die eh beschrijving was eerst gewoon. Jij hebt nog geen reserveringen. Maak reservering Oh die dit oogt bij ons als een empty state component de de hebben jullie die?
+
+Wij hebben niet per se een empty state component, maar we hebben wel een icon tijd of het message omdat generieker te maken. Oké ja eh ver af dus dan heb je eigenlijk icon of je plaatje dat is dit en dan een titel en een eh message of enders misschien nog een but in dit geval ehm die zit al in prijsbalans.
+
+Als het goed is ook een reisgewords. Ja, wat is different looks different? Eh, er is er is comp. Heel makkelijk te zeggen dat er een reis was. Ehm. Just made comp cont of oké, oké. And is already exist in de reis. App ja.
+
+En wat. Wat mist er dan nog wat er in reisbalans zit? Wat rewards?
+
+Ik dacht dat de titel of de beschrijving miste, maar als ik de componaam zo lees hè icoon met tijd op en message zit dat er gewoon in en de button ook en de button ook oké. Nou dan is niet zo of die verplicht. No that's weird right be at least something right one of the properties is.
+
+Canot think of a situation not I don't I can'tuse. Eh. Not.
+
+Oh neergelegd. Ik heb al neergelegd. Ja, klinkt zo makkelijk. Alex 3URE. Eh I guess I click that eh before weound the background is not part of it No is Yes Dit is not does that change it to oké. It was ja.
+
+Is.
+
+Checkbox with label. Durf je pas eh do pas. Is niet echt een jackbox meer hè? Nee.
+
+Diezer. Is deze nou eruit gehaald?
+
+Dit is report issues.
+
+Switches. Nou, dat scheelt, want die heb je al schildering komt in é keer. Treft Area Component.
+
+Is not related to comp.
+
+En rijst rewards. Yes, oké, Ja, Actu Not Texta Actually is. The diff fl is is keeping it very simple. It make duplication about it keeps it similar in the long. If you need to make a change you know it's only going to affect this thing and not maybe also other.
+
+Ja eh from what I remember is that in app voor reisbalans. There is a lot of abstractions which makes it really hard to make a change and know the full impact so that's why it's a bit h it feel sometimes like a bit duplicate but it makes it simpler.
+
+Simpler is better makes the hey just text area, but this input app is also change because met guidelines or guidelines. Let some criteria that changes it or something ja I agree with this keeping it simple. I like simple.
+
+Ah you don't me difficult. Hm het is wel handig.
+
+Weg zijn.
+
+Beter. Beter dan er eh. Is er alle goede implementatie ergens? Nee, oké, dus het is of we een implementatie uitkleden of zeg je opnieuw bouwen? Ja, ik denk dat je hem opnieuw bouwt, maar dat je wel moch je hè, Hoe wordt dat gedaan, dan kan je wel afkijken hoe de input.
+
+Die 1000 dingen kan. Ik denk ook dat het goed is om te kijken naar andere formulierachtige velden dat je de API's enigzins in lijn houdt met elkaar Eh oké. Dus dit ding heeft een placeholder. Tekst zag ik in het design volgens mij. Ja, also. Is dat requirement dat je het maximaal aantal regels wil.
+
+Nou, ik denk dat ja precies. Je hebt gewoon een een een soort van looks like five lines. Oké, start with the minimal requirements and we need to have more requirements. We ision we and ke. This is not of not for the implementation. Eh de concern of this ticket is just hey I want this placeholder and oké and the border radio shadow eh.
+
+Alright EAS mogelijk. Jawel toch. Eh, wat heb ik nou? Hadden we het nog over. Second of Talkingic is exact not writing HD writing in views and whatever you guys dif was. Hey containerics dam it eh.
+
+Zo. Hier heb je veel val.
+
+Ja, oké.
+
+You wanted to change it to to three. Oké not to to three to three to to to to to 3 because I have for me whatever you want, but if you why why do you wanted to switch to a three eh because of the place No. Ah yes, ik was eh Unchang always brings eh alit more complex.
+
+I don't know if that's any different in in youritional you know. Uit ja, bijna bijna klaar! Eh ja, is even kijken hoor, moet even goed kijken. Want welke dingen hebben we al? Wat had ik toaster? Ga even deze kijken.
+
+Weet je wat handig is de volgende keer? Als je dit soort tickets aanmaakt, Gooi nog even snel een screenshotje in zodat je weet waar het over gaat. Ja nou ik weet ongeveer waar het over gaat maar. Dan is deze. Ik wil even zeker weten. Oh, die deze, dat is een banner!
+
+Omdat het ook in lijn kunnen gebruiken, maar je kan ook een banner in lijn gebruiken en een line banner. Nee, wat je wil ik. Ik probeer eh wel redelijk rekening te houden met de naamgeving van markers, zodat we namelijk met design dezelfde taal spreken. Ehm kan helpen. Ja, dit is the problem die for this banner.
+
+Oh Banner is, Je kan namelijk een één banner component hebben en die kan bijvoorbeeld global zijn of inline of eh als de banner appears should be move contact down content down or that eh just eh down down that cover the content on top right no it content goes down content goes down thatans rapper also should be changed.
+
+Oké, eh, that's that's to screen. Weapon is nothing to do.
+
+Ga maar niet tijd voor dit. Dit is de laatste en dan ga ik naar EH Suus toe. Die hoop ik nog even te kunnen spreken en dan zijn we ook praktisch een uur bezig. Ik ben moe dat sowieso jij ook. Ja, we zijn ook al een beetje oud. Eh ik, ik heb een beetje honger.
+
+Ik eh, heb een beetje dorst. Ik heb een beetje eh plassen willen ik heb. Ja, ik heb een beetje willen plassen. En ik ben een beetje nerveus eh omdat eh ga ik naar de intakegesprek. Ja Ja.
+
+Even gren ja en dan ga ik rennen Eh. Dit was. Die banner hebben we al zoiets. Ja, oké, ze zijn wel een klein beetje aangepast worden zodat hij overeenkomt met. Bijvoorbeeld. Die had hier midden uitgelijnd en eh wijze reis staat hierboven uitgeleid. Deze deze heeft geen order in je sessie in Oké.
+
+Klinkt eh easy the peasy. Ja, Easy Peasy. Ik heb mijn kaartje al liggen jongen. Ja, wacht, wacht, wacht, wacht, wacht, eh, wacht niet weer snel switchen hè? Ja ja.
+
+Dead High. Nice ik eh ik ga even door ja maar hier kunnen jullie in ieder geval ja dank je jij ook was leuk een leuke sessie. Ja en ik zat toch nog een beetje in de buurt? Ja dus eh, maar ik denk wel dat het goed is dat dat je die daypicker even opschrijft?
+
+Ja, dan heb je iets meer tijd.
+
+En dat ging aanpassen en dan gaan we natuurlijk alles alles. Ja.
+
+Maar uit, maar zelfs met index. Nee, eh, dat is opmerkelijk eh dat daar kunnen en dat is gewoon een limitatie. Eh bent, dat is ja oké ja oplossing Nee nee het eh geloof je helemaal dat het eh dat het zo is ik ben er overtuigdimaliseren alleen. Nee snap ik nee D is niet eh oké dan eh maar eh het moet zeker Oh ja dat is niet meer echt nodig als.
+
+Oké, dit was. Quest of verliesbrandje. En de Create Fix Yourself and not. That's why. Eh first probably not good to create fixes Direc. We don't have station is. En de that's also that'sic patches and is is explanation why why exist and also I want to implementation exactly the same and the diffent diff.
+
+So then you can ignore request just cl all I. Ja ja just double check if you consuse and that's definitely not my strong Part on the Myself and he is this for me but I'm not sure that for you. Eh Welitty Eh. Do later perfect open. Let's merch thisuse.
+
+Check het dan. Dat was eh.
+
+Yes, thank available!
+
+Bestaan oké.

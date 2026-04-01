@@ -1,0 +1,93 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+component	Dit <b>component</b> werkt al goed op het instellingenscherm van de app.	компонент (de component)	Этот компонент уже хорошо работает на экране настроек приложения.	werk::refinement::A2
+componenten	Er is een hele waslijst aan <b>componenten</b> die naar de bibliotheek moet.	компоненты (мн.ч.)	Есть целый список компонентов, которые должны попасть в библиотеку.	werk::refinement::A2
+kan	Ik <b>kan</b> geen situatie bedenken zonder een label erbij.	могу (1е л. ед.ч., наст. вр.)	Я не могу представить ситуацию без надписи рядом.	werk::refinement::A2
+kunnen	We <b>kunnen</b> heel veel verschillende kleuren hebben.	можем (1е л. мн.ч., наст. вр.)	Мы можем иметь очень много разных цветов.	werk::refinement::A2
+kunt	<b>Kunt</b> je de beschrijving van het ontwerp erbij vermelden?	можешь (2е л. ед.ч., формально)	Можешь добавить описание дизайна?	werk::refinement::A2
+kon	Vorige sprint <b>kon</b> ik maar één onderdeel afwerken.	мог (1е л. ед.ч., прош. вр.)	В прошлом спринте я мог закончить только одну часть.	werk::refinement::A2
+moet	Dit <b>moet</b> zeker goed bekeken worden voor de afdeling.	должен (3е л. ед.ч., наст. вр.)	Это определённо нужно тщательно рассмотреть для отдела.	werk::refinement::A2
+moeten	We <b>moeten</b> nadenken of het goed genoeg is als onderdeel.	должны (1е л. мн.ч., наст. вр.)	Мы должны подумать, достаточно ли это хорошо как компонент.	werk::refinement::A2
+goed	De implementatie is <b>goed</b> genoeg voor het deelplatform.	хороший, хорошо	Реализация достаточно хороша для платформы.	werk::refinement::A2
+beter	Dan kun je <b>beter</b> tien onderdelen opleveren dan één complexe.	лучше (сравн. степ.)	Тогда лучше сдать десять компонентов, чем один сложный.	werk::refinement::A2
+goede	Is er al een <b>goede</b> implementatie bij de organisatie?	хорошая (прил., de-woord)	Есть ли уже хорошая реализация в организации?	werk::refinement::A2
+best	Het is <b>best</b> een complex onderdeel in de app.	довольно, весьма	Это довольно сложный компонент в приложении.	werk::refinement::A2
+beste	We nemen de <b>beste</b> versie als basis voor het project.	лучший (превосх. степ.)	Мы берём лучшую версию как основу для проекта.	werk::refinement::A2
+label	Alle schakelaars die ik kan bedenken zijn met een <b>label</b>.	надпись, метка (het label)	Все переключатели, которые я могу представить, имеют надпись.	werk::refinement::A2
+wil	Ik <b>wil</b> er een beschrijving bij, zodat het automatisch goed staat.	хочу (1е л. ед.ч., наст. вр.)	Я хочу добавить описание, чтобы всё автоматически выглядело правильно.	werk::refinement::A2
+wilt	Stel, je <b>wilt</b> alleen een schakelaar hebben zonder label.	хочешь (2е л. ед.ч., формально)	Допустим, ты хочешь только переключатель без надписи.	werk::refinement::A2
+willen	We <b>willen</b> een goede knop voor het deelplatform toevoegen.	хотим (1е л. мн.ч., наст. вр.)	Мы хотим добавить хорошую кнопку для платформы.	werk::refinement::A2
+zou	Dat <b>zou</b> een ander onderdeel moeten zijn, denk ik.	бы (условн. наклон., все лица)	Это, думаю, должно быть другим компонентом.	werk::refinement::A2
+zullen	<b>Zullen</b> we proberen het gesprek in het Nederlands te houden?	давайте (предлож., 1е л. мн.ч.)	Давайте попробуем вести разговор на нидерландском?	werk::refinement::A2
+denk	Ik <b>denk</b> dat je hem opnieuw bouwt met de juiste kleuren.	думаю (1е л. ед.ч., наст. вр.)	Я думаю, что ты его заново построишь с правильными цветами.	werk::refinement::A2
+denken	We moeten <b>denken</b> over hoe we de stijlen goed inrichten.	думать (инфинитив)	Мы должны подумать о том, как правильно настроить стили.	werk::refinement::A2
+dacht	Ik <b>dacht</b> dat de beschrijving miste in het ontwerp.	думал (1е л. ед.ч., прош. вр.)	Я думал, что описание пропущено в дизайне.	werk::refinement::A2
+maken	We <b>maken</b> het zo simplistisch en goed mogelijk.	делаем (1е л. мн.ч., наст. вр.)	Мы делаем это максимально просто и качественно.	werk::refinement::A2
+maakt	Een betrouwbare collega <b>maakt</b> het makkelijk om samen te werken.	делает (3е л. ед.ч., наст. вр.)	Надёжный коллега делает совместную работу простой.	werk::refinement::A2
+maak	<b>Maak</b> een afspraak bij de huisarts als je pijn hebt.	сделай (повелит. наклон.)	Запишись к врачу, если у тебя боль.	werk::refinement::A2
+gaat	De inhoud <b>gaat</b> omlaag als de banner verschijnt.	идёт (3е л. ед.ч., наст. вр.)	Содержимое сдвигается вниз, когда появляется баннер.	werk::refinement::A2
+gaan	We <b>gaan</b> morgen naar de makelaar om de woning te bekijken.	идём, собираемся (1е л. мн.ч.)	Мы завтра идём к маклеру, чтобы посмотреть жильё.	werk::refinement::A2
+ga	Ik <b>ga</b> volgende sprint aan deze onderdelen werken.	иду, собираюсь (1е л. ед.ч.)	Я собираюсь работать над этими компонентами в следующем спринте.	werk::refinement::A2
+gewoon	Mijn buurman is <b>gewoon</b> een bescheiden ambtenaar bij de gemeente.	просто, обычный	Мой сосед — просто скромный чиновник в муниципалитете.	werk::refinement::A2
+hele	Er is een <b>hele</b> waslijst aan advertenties voor huurwoningen in de buurt.	целый (прил., de-woord)	Есть целый список объявлений об арендном жилье в районе.	werk::refinement::A2
+heel	Dat vond ik een <b>heel</b> mooi punt over de structuur.	очень (наречие)	Я нашёл это очень хорошим замечанием о структуре.	werk::refinement::A2
+zit	Die schakelaar <b>zit</b> in de instellingenpagina van de app.	сидит, находится (3е л. ед.ч.)	Этот переключатель находится на странице настроек приложения.	werk::refinement::A2
+nodig	De fysiotherapeut zegt dat ik meer beweging <b>nodig</b> heb.	нужно, необходимо	Физиотерапевт говорит, что мне нужно больше движения.	werk::refinement::A2
+eigenlijk	Het idee is <b>eigenlijk</b> om die uiteindelijk te verbeteren.	собственно, на самом деле	Идея, собственно, в том, чтобы в итоге это улучшить.	werk::refinement::A2
+meer	Dan heb je iets <b>meer</b> tijd om erover na te denken.	больше (сравн. степ.)	Тогда у тебя будет чуть больше времени, чтобы об этом подумать.	werk::refinement::A2
+veel	Er zijn <b>veel</b> activiteiten in het weekend voor de avondgroep.	много	В выходные много мероприятий для вечерней группы.	werk::refinement::A2
+meest	De <b>meest</b> complexe onderdelen laten we even voor wat ze zijn.	самый (превосх. степ.)	Самые сложные компоненты мы пока оставим как есть.	werk::refinement::A2
+even	Laten we dat <b>even</b> opschuiven naar de volgende sprint.	ненадолго, на минуточку	Давайте пока это отложим на следующий спринт.	werk::refinement::A2
+één	We kopiëren hem uit <b>één</b> van de andere projecten als basis.	один (числит., с ударением)	Мы копируем его из одного из других проектов как основу.	werk::refinement::A2
+eentje	Je wilt er een voor en een achter, of alleen <b>eentje</b>.	один, одну штуку (разг.)	Ты хочешь один спереди и один сзади, или только один.	werk::refinement::A2
+doen	We <b>doen</b> wat we kunnen deze sessie met de collega's.	делаем (1е л. мн.ч., наст. вр.)	Мы делаем что можем на этой сессии с коллегами.	werk::refinement::A2
+doet	Kijk hoe het invoerveld het <b>doet</b> in de praktijk.	делает (3е л. ед.ч., наст. вр.)	Посмотри, как поле ввода работает на практике.	werk::refinement::A2
+gedaan	Ik heb gisteren een examen <b>gedaan</b> voor de cursus.	сделал (причастие прош. вр.)	Я вчера сдал экзамен на курсе.	werk::refinement::A2
+projecten	Je breidt hem uit naar andere <b>projecten</b> waar nodig.	проекты (мн.ч.)	Ты расширяешь его для других проектов по необходимости.	werk::refinement::A2
+project	In ons <b>project</b> hebben we al zo'n kleine ronde knop.	проект (het project)	В нашем проекте у нас уже есть такая маленькая круглая кнопка.	werk::refinement::A2
+kijken	We <b>kijken</b> naar de advertentie en bellen daarna de makelaar.	смотрим (1е л. мн.ч., наст. вр.)	Мы смотрим объявление и потом звоним маклеру.	werk::refinement::A2
+kijkt	Als je realistisch naar deze hele lijst <b>kijkt</b>, is het te veel.	смотришь (2е л. ед.ч., наст. вр.)	Если реалистично посмотреть на весь список, это слишком много.	werk::refinement::A2
+wordt	Het onderdeel <b>wordt</b> nergens apart getoond op dit moment.	отображается (3е л. ед.ч., пассив)	Компонент нигде не отображается отдельно на данный момент.	werk::refinement::A2
+worden	Ze moeten aangepast <b>worden</b> zodat het overeenkomt met het ontwerp.	быть (инф., пассив)	Их нужно адаптировать, чтобы это соответствовало дизайну.	werk::refinement::A2
+alleen	Het is <b>alleen</b> niet voorbereid vanwege de drukte op de afdeling.	только, лишь	Это лишь не подготовлено из-за загруженности в отделе.	werk::refinement::A2
+zeggen	Je moet <b>zeggen</b>: we kopiëren hem uit één van de projecten.	сказать (инфинитив)	Нужно сказать: мы копируем его из одного из проектов.	werk::refinement::A2
+zegt	Marcus <b>zegt</b> dat er geen vaste betekenis achter de kleur zit.	говорит (3е л. ед.ч., наст. вр.)	Маркус говорит, что за цветом нет фиксированного значения.	werk::refinement::A2
+staat	Er <b>staat</b> "icoon optioneel" in de beschrijving van het ontwerp.	стоит (3е л. ед.ч., наст. вр.)	В описании дизайна написано «иконка опциональна».	werk::refinement::A2
+zo'n	Op alle plekken waar ik een schakelaar kan bedenken, zit er <b>zo'n</b> label bij.	такой (указат., разг.)	Во всех местах, где я могу представить переключатель, рядом есть такая надпись.	werk::refinement::A2
+implementatie	Is er al een goede <b>implementatie</b> ergens in de organisatie?	реализация, имплементация	Есть ли уже где-то хорошая реализация в организации?	werk::refinement::A2
+implementaties	We kijken naar beide <b>implementaties</b> en kiezen de beste.	реализации (мн.ч.)	Мы смотрим на обе реализации и выбираем лучшую.	werk::refinement::A2
+kleur	Je geeft gewoon een <b>kleur</b> mee aan het statuslabel.	цвет (de kleur)	Ты просто передаёшь цвет метке статуса.	werk::refinement::A2
+werkt	Dat <b>werkt</b> goed voor de app op het deelplatform.	работает (3е л. ед.ч., наст. вр.)	Это хорошо работает для приложения на платформе.	werk::refinement::A2
+werken	Alex gaat hier volgende sprint aan <b>werken</b> met het team.	работать (инфинитив)	Алекс собирается работать над этим в следующем спринте с командой.	werk::refinement::A2
+procent	Ik heb zesenzeventig <b>procent</b> gehaald op mijn examen.	процент (het procent)	Я набрал семьдесят шесть процентов на экзамене.	werk::refinement::A2
+bouwen	De politicus belooft meer woningen te <b>bouwen</b> in onze wijk.	строить (инфинитив)	Политик обещает построить больше жилья в нашем районе.	werk::refinement::A2
+bouwt	De aannemer <b>bouwt</b> een praktische tussenwoning in onze buurt.	строишь, строит (2/3е л. ед.ч., наст. вр.)	Подрядчик строит практичный рядовой дом в нашем районе.	werk::refinement::A2
+allemaal	De studenten zijn <b>allemaal</b> aanwezig bij het college vandaag.	все, всё вместе	Все студенты присутствуют на лекции сегодня.	werk::refinement::A2
+mooi	De architect heeft een heel <b>mooi</b> ontwerp gemaakt voor de woning.	красивый, хороший	Архитектор сделал очень красивый проект для жилья.	werk::refinement::A2
+mooie	Het was een <b>mooie</b> oefening om Nederlands te spreken met collega's.	красивая, хорошая (прил., de-woord)	Это была хорошая практика — говорить на нидерландском с коллегами.	werk::refinement::A2
+volgens	<b>Volgens</b> mij hebben we er al een in het andere project.	по мнению, согласно	По-моему, у нас уже есть такой в другом проекте.	werk::refinement::A2
+andere	De programmeur werkt flexibel en helpt ook <b>andere</b> afdelingen.	другие (прил., мн.ч.)	Программист работает гибко и помогает также другим отделам.	werk::refinement::A2
+ander	Dat zou een <b>ander</b> onderdeel moeten zijn in de bibliotheek.	другой (прил., ед.ч.)	Это должен быть другой компонент в библиотеке.	werk::refinement::A2
+losse	Het zijn twee <b>losse</b> onderdelen die je apart kunt gebruiken.	отдельные, несвязанные (прил., мн.ч.)	Это два отдельных компонента, которые можно использовать по отдельности.	werk::refinement::A2
+los	Dit bestaat eigenlijk al als <b>los</b> pakket in het project.	отдельный, свободный (прил.)	Это, по сути, уже существует как отдельный пакет в проекте.	werk::refinement::A2
+optioneel	De hovenier zegt dat het balkon <b>optioneel</b> is bij de inrichting.	опциональный, необязательный	Садовник говорит, что балкон необязателен при обустройстве.	werk::refinement::A2
+mogelijk	Het resultaat van de opleiding was <b>mogelijk</b> beter dan de prognose.	возможно, возможный	Результат обучения был, возможно, лучше прогноза.	werk::refinement::A2
+basis	We nemen de bestaande implementatie als <b>basis</b> voor het nieuwe onderdeel.	основа, база (de basis)	Мы берём существующую реализацию как основу для нового компонента.	werk::refinement::A2
+ziet	Je <b>ziet</b> het resultaat in de bibliotheek na de sprint.	видишь (2е л. ед.ч., наст. вр.)	Ты увидишь результат в библиотеке после спринта.	werk::refinement::A2
+zie	Ik <b>zie</b> alleen de types: primair, secundair en waarschuwing.	вижу (1е л. ед.ч., наст. вр.)	Я вижу только типы: основной, вторичный и предупреждение.	werk::refinement::A2
+zag	Dat <b>zag</b> ik in het ontwerp — een tijdelijke tekst voor het invoerveld.	видел (1е л. ед.ч., прош. вр.)	Я видел это в дизайне — временный текст для поля ввода.	werk::refinement::A2
+types	Er zijn twaalf verschillende <b>types</b> knop in het ontwerp.	типы (мн.ч.)	В дизайне двенадцать разных типов кнопок.	werk::refinement::A2
+type	Rood betekent niet altijd fout — het hangt af van het <b>type</b>.	тип (het type)	Красный не всегда означает ошибку — это зависит от типа.	werk::refinement::A2
+Nederlands	Laten we proberen <b>Nederlands</b> te spreken op de vergadering.	нидерландский (язык)	Давайте попробуем говорить на нидерландском на совещании.	werk::refinement::A2
+Nederlandse	Ik heb een <b>Nederlandse</b> cursus gevonden bij het Taalthuis.	нидерландский (прил., de-woord)	Я нашёл нидерландский курс в языковом центре.	werk::refinement::A2
+zonder	De arts raadt aan om niet <b>zonder</b> afspraak naar het ziekenhuis te komen.	без (предлог)	Врач советует не приходить в больницу без записи.	werk::refinement::A2
+erbij	Dat is handig om <b>erbij</b> te vermelden in de technische details.	к этому, при этом (наречие)	Это полезно упомянуть в технических деталях.	werk::refinement::A2
+iets	Er moet op z'n minst <b>iets</b> zijn — een titel of een knop.	что-то, кое-что	Должно быть хотя бы что-то — заголовок или кнопка.	werk::refinement::A2
+bedenken	Alle plekken waar ik een schakelaar kan <b>bedenken</b>, hebben een label.	придумать, представить	Во всех местах, где я могу представить переключатель, есть надпись.	werk::refinement::A2
+voorbereiden	Ik wilde het écht goed <b>voorbereiden</b> voor de vergadering.	подготовить (инфинитив)	Я хотел это действительно хорошо подготовить к совещанию.	werk::refinement::A2
+voorbereid	Dat is allemaal niet <b>voorbereid</b> vanwege tijdgebrek op de afdeling.	подготовлен (причастие)	Это всё не подготовлено из-за нехватки времени в отделе.	werk::refinement::A2
+informatie	Is dit genoeg <b>informatie</b> om de taak te schatten?	информация (de informatie)	Достаточно ли информации, чтобы оценить задачу?	werk::refinement::A2
+gesprek	Zullen we het <b>gesprek</b> in het Nederlands houden vandaag?	разговор (het gesprek)	Давайте сегодня вести разговор на нидерландском?	werk::refinement::A2
+sessie	We doen wat we kunnen deze <b>sessie</b> met het team.	сессия, заседание (de sessie)	Мы делаем что можем на этой сессии с командой.	werk::refinement::A2
