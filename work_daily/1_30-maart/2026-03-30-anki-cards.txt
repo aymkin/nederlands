@@ -1,0 +1,158 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+ik	Ik begin vandaag om negen uur.	я	Я начинаю сегодня в девять часов.	werk::daily::A2
+is	De vergadering is om drie uur.	есть, является (3-е лицо ед.ч. от zijn)	Совещание в три часа.	werk::daily::A2
+dat	Dat klopt, ik heb het al gedaan.	это, то	Верно, я уже это сделал.	werk::daily::A2
+het	Het rapport is bijna klaar.	оно, это (артикль ср. рода)	Отчёт почти готов.	werk::daily::A2
+de	De trein naar Amsterdam vertrekt om acht uur.	определённый артикль	Поезд до Амстердама отправляется в восемь.	werk::daily::A2
+en	Ik lees de mail en schrijf een antwoord.	и	Я читаю письмо и пишу ответ.	werk::daily::A2
+niet	Ik ben vandaag niet op kantoor.	не	Я сегодня не в офисе.	werk::daily::A2
+een	We hebben een nieuw project gekregen.	один, некий (неопр. артикль)	Мы получили новый проект.	werk::daily::A2
+even	Ik kijk even naar je bericht.	быстро, на минутку	Я быстро гляну на твоё сообщение.	werk::daily::A2
+dan	Als je klaar bent, bel me dan.	тогда, потом	Когда закончишь, позвони мне тогда.	werk::daily::A2
+met	Ik overleg met mijn teamgenoot.	с, вместе с	Я советуюсь с коллегой по команде.	werk::daily::A2
+we	We bespreken dat in de pauze.	мы	Мы обсудим это в перерыве.	werk::daily::A2
+wel	Het is wel belangrijk om dat op tijd te doen.	ведь, всё-таки, действительно	Всё-таки важно сделать это вовремя.	werk::daily::A2
+nog	Heb je nog vragen over dit onderwerp?	ещё	У тебя ещё есть вопросы по этой теме?	werk::daily::A2
+daar	Het kantoor? Daar werk ik elke dag.	там, вот	Офис? Там я работаю каждый день.	werk::daily::A2
+dus	De klant belt niet terug, dus ik stuur een mail.	значит, итак, поэтому	Клиент не перезванивает, поэтому я отправлю письмо.	werk::daily::A2
+te	Het is handig om een lijst te maken.	чтобы (инфинитивная частица)	Полезно составить список.	werk::daily::A2
+van	Dit is de laptop van mijn collega.	от, из (принадлежность)	Это ноутбук моего коллеги.	werk::daily::A2
+ook	Jan houdt ook van fietsen naar het werk.	тоже, также	Ян тоже любит ездить на работу на велосипеде.	werk::daily::A2
+nu	Ik heb nu even geen tijd, sorry.	сейчас, теперь	У меня сейчас нет времени, извини.	werk::daily::A2
+want	Ik neem een paraplu mee, want het regent.	потому что, ведь	Я беру зонт с собой, потому что идёт дождь.	werk::daily::A2
+maar	Het was druk, maar we zijn klaar.	но, однако	Было напряжённо, но мы справились.	werk::daily::A2
+zo	Ik ben zo terug, even koffie halen.	так, настолько / сейчас	Я сейчас вернусь, быстро за кофе.	werk::daily::A2
+voor	Dit taakje is voor jou.	для, за	Эта задачка для тебя.	werk::daily::A2
+heb	Ik heb het verslag al gelezen.	имею (1-е лицо от hebben)	Я уже прочитал отчёт.	werk::daily::A2
+kijken	Laat mij kijken wat er aan de hand is.	смотреть, посмотреть	Дай мне посмотреть, что происходит.	werk::daily::A2
+ga	Ik ga morgen naar een cursus Nederlands.	иду, еду (1-е лицо от gaan)	Я завтра иду на курсы нидерландского.	werk::daily::A2
+dit	Dit probleem moet vandaag opgelost worden.	это, этот (ср. род)	Эту проблему нужно решить сегодня.	werk::daily::A2
+zijn	De bestanden zijn al naar de klant gestuurd.	быть, являться	Файлы уже отправлены клиенту.	werk::daily::A2
+heeft	Zij heeft het contract al ondertekend.	имеет (3-е лицо от hebben)	Она уже подписала контракт.	werk::daily::A2
+wat	Wat vind je van het nieuwe plan?	что, какой	Что ты думаешь о новом плане?	werk::daily::A2
+moet	De presentatie moet voor vrijdag af zijn.	должен, обязан (от moeten)	Презентация должна быть готова к пятнице.	werk::daily::A2
+nee	Nee, die taak is niet van mij.	нет	Нет, та задача не моя.	werk::daily::A2
+op	Het bestand staat op de gedeelde schijf.	на (предлог)	Файл лежит на общем диске.	werk::daily::A2
+om	De pauze begint om twaalf uur.	в (время), чтобы, вокруг	Перерыв начинается в двенадцать.	werk::daily::A2
+naar	Ik loop naar de vergaderzaal op de tweede verdieping.	к, в направлении	Я иду в переговорную на втором этаже.	werk::daily::A2
+over	Heb je het artikel over de nieuwe regels gelezen?	о, про, через	Ты читал статью о новых правилах?	werk::daily::A2
+goed	Het gaat goed met het project.	хорошо, правильно	С проектом всё хорошо.	werk::daily::A2
+geen	Er zijn geen problemen met de bestelling.	никакой, нет (отрицание перед сущ.)	С заказом нет никаких проблем.	werk::daily::A2
+kunnen	Kunnen we dat overleg verplaatsen naar donderdag?	мочь, уметь	Можем ли мы перенести совещание на четверг?	werk::daily::A2
+mij	Stuur het bestand naar mij als het klaar is.	мне, меня	Отправь мне файл, когда будет готов.	werk::daily::A2
+aan	Ik werk aan een nieuw voorstel.	на, к (приставка/предлог)	Я работаю над новым предложением.	werk::daily::A2
+je	Als je wilt, kan ik je helpen.	ты, тебе (неформ.)	Если хочешь, я могу тебе помочь.	werk::daily::A2
+doen	Ik doe dat na de lunch.	делать	Я сделаю это после обеда.	werk::daily::A2
+bij	De printer staat bij het raam.	у, при, около	Принтер стоит у окна.	werk::daily::A2
+deze	Deze week heb ik veel afspraken.	этот, эта, эти	На этой неделе у меня много встреч.	werk::daily::A2
+natuurlijk	Natuurlijk mag je vroeger naar huis.	конечно, разумеется	Конечно, можешь уйти домой пораньше.	werk::daily::A2
+hebben	We hebben genoeg tijd om alles af te maken.	иметь (мн. число / инфинитив)	У нас достаточно времени, чтобы всё доделать.	werk::daily::A2
+kan	Kan iemand mij helpen met deze vraag?	может (от kunnen)	Кто-нибудь может помочь мне с этим вопросом?	werk::daily::A2
+meteen	Ik ga het meteen regelen.	сразу, тут же	Я сразу этим займусь.	werk::daily::A2
+gaan	Hoe gaan we dit aanpakken?	идти, ходить	Как мы будем это решать?	werk::daily::A2
+hoe	Hoe lang duurt de rit naar kantoor?	как	Сколько длится поездка до офиса?	werk::daily::A2
+weer	We moeten dat weer opnieuw bekijken.	снова, опять	Нам нужно снова это пересмотреть.	werk::daily::A2
+dingen	Er zijn een paar dingen die ik wil bespreken.	вещи, дела	Есть несколько вещей, которые я хочу обсудить.	werk::daily::A2
+verder	Laten we verder gaan met het volgende punt.	дальше, далее	Давайте перейдём к следующему пункту.	werk::daily::A2
+zou	Zou je mij de notulen kunnen sturen?	бы (условное наклонение, от zullen)	Ты мог бы отправить мне протокол?	werk::daily::A2
+werken	Ik werk op maandag en dinsdag vanuit huis.	работать	Я работаю из дома по понедельникам и вторникам.	werk::daily::A2
+samen	Samen lukt het beter dan alleen.	вместе	Вместе получается лучше, чем в одиночку.	werk::daily::A2
+oké	Oké, helder. Dan regel ik dat vanmiddag.	ладно, хорошо	Ладно, ясно. Тогда я это улажу после обеда.	werk::daily::A2
+of	Weet je al of de review klaar is?	или, ли	Ты уже знаешь, готово ли ревью?	werk::daily::A2
+anders	Zullen we dat anders vanmiddag bespreken?	иначе, в таком случае лучше	Может, лучше обсудим это после обеда?	werk::daily::A2
+twee	Er zijn twee sprints nodig om dat af te maken.	два	Нужно два спринта, чтобы это доделать.	werk::daily::A2
+volgens	Volgens mij is het al gefixt.	по (мнению), согласно	По-моему, это уже исправлено.	werk::daily::A2
+zal	Ik zal Kennet alvast even opwarmen voor die call.	буду (от zullen)	Я пока предупрежу Кеннета насчёт того звонка.	werk::daily::A2
+had	Ik had wat feedback gegeven op het ontwerp.	имел (прошедшее от hebben)	Я давал обратную связь по дизайну.	werk::daily::A2
+de week	Je had er nog eentje openstaan van vorige week.	неделя	У тебя ещё один оставался с прошлой недели.	werk::daily::A2
+worden	De registratie moet een beetje aangepast worden.	становиться, быть (пассив)	Регистрацию нужно немного подправить.	werk::daily::A2
+gewoon	Het is gewoon weer een nieuwe taak op het bord.	просто, обычный	Это просто снова новая задача на доске.	werk::daily::A2
+denken	Ik denk dat het handig is om dat even samen te doen.	думать	Думаю, было бы полезно это быстро вместе сделать.	werk::daily::A2
+ander	Moet ik het op een ander scherm delen?	другой	Мне показать на другом экране?	werk::daily::A2
+de rest	De rest krijgt later te horen hoe het verder gaat.	остальные, остаток	Остальные узнают позже, как всё пойдёт дальше.	werk::daily::A2
+nou	Ja, nou, die is er morgen weer.	ну (разг.)	Ну, он завтра снова будет.	werk::daily::A2
+ben	Ik ben heel even benieuwd naar waar we daarmee staan.	есть (1-е лицо от zijn)	Мне очень интересно, на каком мы этапе с этим.	werk::daily::A2
+handig	Een tweede scherm is heel handig op kantoor.	удобный, полезный	Второй монитор очень удобен в офисе.	werk::daily::A2
+meer	Zo vaak komt dat nu niet meer voor, toch?	больше (в отриц.)	Так часто это уже не случается, правда?	werk::daily::A2
+toch	Het werkte vrijdag, maar ik wil het toch nog een keer testen.	всё-таки, ведь	В пятницу работало, но я всё-таки хочу ещё раз протестировать.	werk::daily::A2
+vandaag	Dat moet vandaag af zijn, eigenlijk.	сегодня	Это, собственно, должно быть готово сегодня.	werk::daily::A2
+mee	Wil je meedoen aan de kickoff woensdag?	с собой, вместе (частица)	Хочешь поучаствовать в кикоффе в среду?	werk::daily::A2
+bezig	Speakers zijn met de daily bezig, even wachten.	занят	Колонки заняты дейли, подожди минутку.	werk::daily::A2
+laten	Laten we eerst even kijken wat het probleem is.	позволять, давай(те)	Давай сначала глянем, в чём проблема.	werk::daily::A2
+staan	Er staan er twee nog niet op naam in het bord.	стоять, находиться	Два на доске ещё не назначены.	werk::daily::A2
+ermee	Iemand kan ermee verder, de basis staat er al.	с этим	Кто-нибудь может с этим продолжить, основа уже есть.	werk::daily::A2
+gedaan	Die heb ik samen met Samuel gedaan, volgens mij.	сделано (причастие от doen)	Это я сделал вместе с Самюэлем, по-моему.	werk::daily::A2
+helemaal	We hebben nog helemaal geen antwoord gekregen.	полностью, совсем	Мы вообще ещё не получили ответа.	werk::daily::A2
+daarmee	De basis staat er al, iemand kan daarmee aan de slag.	с этим, с тем	Основа уже есть, кто-нибудь может с этим взяться за работу.	werk::daily::A2
+hem	Zal ik hem even op jouw naam zetten?	его, ему	Мне поставить его на твоё имя?	werk::daily::A2
+morgen	De refinement is morgen, de sprint begint donderdag.	завтра	Рефайнмент завтра, спринт начинается в четверг.	werk::daily::A2
+af	De taak moet vandaag af, anders schuift het weer door.	готовый, прочь (отделяемая приставка)	Задача должна быть готова сегодня, иначе опять сдвинется.	werk::daily::A2
+de naam	Daar staan er twee nog niet op naam.	имя	Два ещё не записаны ни на чьё имя.	werk::daily::A2
+zeggen	Ja, laat ik het zo zeggen: dat was niet de bedoeling.	говорить, сказать	Скажем так: это не планировалось.	werk::daily::A2
+langzaam	Praat alsjeblieft langzaam, ik leer nog Nederlands.	медленный, медленно	Говори, пожалуйста, медленно, я ещё учу нидерландский.	werk::daily::A2
+alleen	Ik mag hem eigenlijk alleen daarop zetten.	только, единственно / один	Я его, собственно, могу только на это назначить.	werk::daily::A2
+lekker	Zitten jullie lekker? Dan gaan we door.	приятно, комфортно (разг.)	Удобно сидите? Тогда продолжаем.	werk::daily::A2
+jullie	Bel even in, dan kunnen jullie het bord zien.	вы (мн.ч.)	Позвоните, тогда вы сможете видеть доску.	werk::daily::A2
+zitten	Ik heb zaterdag veel zitten nadenken over de planning.	сидеть / (zitten te = progressive)	Я в субботу много думал о планировании.	werk::daily::A2
+heel	Het heeft heel veel impact op de rest van het team.	очень	Это очень сильно влияет на остальную команду.	werk::daily::A2
+allebei	Die zijn allebei klaar, ik regel het zo meteen.	оба, обе	Оба готовы, я это вскоре улажу.	werk::daily::A2
+klaar	Het ontwerp is klaar, maar de code nog niet.	готовый, законченный	Дизайн готов, но код ещё нет.	werk::daily::A2
+wachten	Ik wacht tot de preview beschikbaar is.	ждать	Я жду, пока превью станет доступным.	werk::daily::A2
+net	Die is nu net beschikbaar geworden.	как раз, только что	Он как раз только что стал доступен.	werk::daily::A2
+eigenlijk	De status is eigenlijk hetzelfde als vorige week.	собственно, на самом деле	Статус, собственно, такой же, как на прошлой неделе.	werk::daily::A2
+door	Oh, dat had ik nog niet door.	через, насквозь / (doorhebben = понимать)	О, до меня это ещё не дошло.	werk::daily::A2
+vorige	De vorige sprint was heel productief.	прошлый, предыдущий	Прошлый спринт был очень продуктивным.	werk::daily::A2
+aanvragen	Je kunt een OV-pas aanvragen in de app.	запрашивать, подавать заявку	Ты можешь подать заявку на OV-pas в приложении.	werk::daily::A2
+misschien	Misschien ga ik het wel doorzetten voor haar.	может быть, возможно	Может, я продвину это вместо неё.	werk::daily::A2
+jou	Komt dat uit voor jou?	тебя, тебе (ударная форма)	Тебе это подходит?	werk::daily::A2
+zetten	Ik zet de koffie, begin jij alvast met de demo.	ставить, класть	Я поставлю кофе, а ты пока начинай с демо.	werk::daily::A2
+mooi	Oké, mooi. Dan was dat het voor nu.	красивый, отлично (разг.)	Окей, отлично. Тогда на этом пока всё.	werk::daily::A2
+iemand	Heb jij iemand nodig voor die taak?	кто-нибудь, кто-то	Тебе нужен кто-нибудь для той задачи?	werk::daily::A2
+een beetje	Het is een beetje afhankelijk van dit verhaal.	немного, чуть-чуть	Это немного зависит от этой истории.	werk::daily::A2
+iets	Iets anders te melden over dit bord?	что-нибудь, кое-что	Ещё что-нибудь сообщить по этой доске?	werk::daily::A2
+echt	Er is niet echt een kickoff geweest.	настоящий, действительно	Настоящего кикоффа не было.	werk::daily::A2
+waar	Echt waar? Dat wist ik niet.	где / правда, истинный	Правда? Я не знал.	werk::daily::A2
+mogelijk	Mogelijk ga ik even kijken naar de huidige status.	возможно, возможный	Возможно, я гляну на текущий статус.	werk::daily::A2
+het bord	Er staan nog een paar taken op het bord.	доска (задач)	На доске ещё есть несколько задач.	werk::daily::A2
+zien	Ik wil eerst zien hoe het eruitziet.	видеть	Я хочу сначала посмотреть, как это выглядит.	werk::daily::A2
+tot	Die staat in progress tot morgen.	до (предлог)	Это в работе до завтра.	werk::daily::A2
+beschikbaar	De preview is nu beschikbaar.	доступный	Превью теперь доступно.	werk::daily::A2
+daarna	Ik rond dit af, en daarna ga ik verder.	после этого, затем	Я заканчиваю это, а потом продолжу.	werk::daily::A2
+aanpassen	De Spinner in het Admin Portal moet ik aanpassen.	настраивать, корректировать	Spinner в Admin Portal мне нужно подправить.	werk::daily::A2
+oud	Het oude ontwerp toont niet alle onderdelen.	старый	Старый дизайн показывает не все элементы.	werk::daily::A2
+weten	Ik wil even afwachten om zeker te weten.	знать	Я хочу подождать, чтобы точно знать.	werk::daily::A2
+pas	Zij is er pas vrijdag weer.	только (недавно), лишь	Она будет снова только в пятницу.	werk::daily::A2
+vrijdag	Vrijdag werkte het, dus nu testen we het met de auto.	пятница	В пятницу работало, поэтому теперь тестируем с машиной.	werk::daily::A2
+praten	We gaan zo even praten over hoe het zit.	разговаривать	Мы сейчас поговорим о том, как обстоят дела.	werk::daily::A2
+al	Hij heeft de repo al aangemaakt.	уже	Он уже создал репозиторий.	werk::daily::A2
+tegen	Ik zei al tegen mijn collega dat ik het gemist heb.	против / к (кому-то, при речи)	Я уже сказал коллеге, что пропустил это.	werk::daily::A2
+allemaal	Dat is natuurlijk allemaal niet ideaal.	все, всё вместе	Это, конечно, всё не идеально.	werk::daily::A2
+later	We bespreken dat later deze week.	позже	Мы обсудим это позже на этой неделе.	werk::daily::A2
+jij	Ja, want jij bent de volgende sprint ook niet hier.	ты (ударная форма)	Ну да, ведь тебя тоже не будет в следующем спринте.	werk::daily::A2
+de registratie	De registratie is al afgerond, maar moet worden aangepast.	регистрация	Регистрация уже завершена, но её нужно подправить.	werk::daily::A2
+dacht	Ik dacht: laten we dat dan samen doen.	думал (прошедшее от denken, неправ.)	Я подумал: давай тогда сделаем это вместе.	werk::daily::A2
+mogen	Als iets hoge prioriteit heeft, mag het doorgaan.	мочь, сметь (разрешение)	Если что-то имеет высокий приоритет, оно может продолжаться.	werk::daily::A2
+liggen	Die taak ligt bij de teamlead, maar die is afwezig.	лежать (liggen bij = быть в ведении)	Эта задача лежит на тимлиде, но он отсутствует.	werk::daily::A2
+de vraag	Er ligt nog een vraag bij de klant over de uitwerking.	вопрос	У клиента ещё остался вопрос по реализации.	werk::daily::A2
+het fietsslot	Werkt het nu wel met het fietsslot?	велозамок	С велозамком теперь работает?	werk::daily::A2
+testen	Dat ga ik morgen testen met de auto.	тестировать	Я это завтра протестирую с машиной.	werk::daily::A2
+sowieso	Die staat sowieso nog in progress tot morgen.	в любом случае, всё равно	Это в любом случае ещё в работе до завтра.	werk::daily::A2
+melden	Ik meld hem straks wel even af.	сообщать, отмечать(ся)	Я его потом отмечу.	werk::daily::A2
+straks	We bespreken dat straks, oké?	скоро, попозже	Мы обсудим это попозже, ладно?	werk::daily::A2
+willen	Ik wil niet dat het blijft liggen.	хотеть	Я не хочу, чтобы это лежало без дела.	werk::daily::A2
+eens	Mee eens? Dan sluiten we deze.	раз / согласен (mee eens)	Согласен? Тогда закрываем этот.	werk::daily::A2
+bijzonderheden	Geen bijzonderheden voor vandaag.	особенности, замечания	Никаких особенностей на сегодня.	werk::daily::A2
+vijf	Hij is er dus vijf weken niet vanwege de baby.	пять	Его, значит, не будет пять недель из-за малыша.	werk::daily::A2
+hij	Hij heeft de eerste commit gedaan en de start ingezet.	он	Он сделал первый коммит и положил начало.	werk::daily::A2
+elkaar	Ik moet even kijken hoe dat in elkaar steekt.	друг друга	Мне нужно посмотреть, как это устроено.	werk::daily::A2
+veel	Er is nu niet heel veel over te zeggen.	много, многое	Сейчас об этом не так много можно сказать.	werk::daily::A2
+bespreken	We moeten de impact van zijn afwezigheid bespreken.	обсуждать	Нам нужно обсудить влияние его отсутствия.	werk::daily::A2
+eerst	Ik wil eerst weten wat de prioriteit is.	сначала, первый	Я сначала хочу знать, какой приоритет.	werk::daily::A2
+komen	Er komt binnenkort een nieuwe collega bij het team.	приходить, приезжать	Скоро в команду придёт новый коллега.	werk::daily::A2
+interessant	We hebben een interessante refinement morgen.	интересный	У нас завтра интересный рефайнмент.	werk::daily::A2
+verdiepen	Ik moet me verdiepen in hoe de workflows werken.	углубляться, разбираться	Мне нужно разобраться, как работают воркфлоу.	werk::daily::A2
+eventueel	Ik bel eventueel later vandaag nog.	возможно, при необходимости	Я при необходимости ещё позвоню сегодня.	werk::daily::A2
+zei	Ik zei al dat ik de kickoff gemist heb.	сказал (прошедшее от zeggen)	Я уже говорил, что пропустил кикофф.	werk::daily::A2
