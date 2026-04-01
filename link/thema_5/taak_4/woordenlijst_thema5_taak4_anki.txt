@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+allebei	We wonen allebei in de stad, maar in verschillende buurten.	оба	Мы оба живём в городе, но в разных районах.	link::thema5::taak4::A2
+allemaal	We gaan vanavond allemaal bij mijn vriendin eten. Heel gezellig!	все (вместе)	Мы сегодня вечером все вместе едим у подруги. Очень уютно!	link::thema5::taak4::A2
+elkaar	Mijn buurvrouw en ik helpen elkaar altijd. Zo hoort het toch?	друг друга	Мы с соседкой всегда помогаем друг другу. Так ведь и должно быть?	link::thema5::taak4::A2
+het geld	Ik heb niet genoeg geld om een huis te kopen. Daarom huur ik.	деньги	У меня недостаточно денег, чтобы купить дом. Поэтому снимаю.	link::thema5::taak4::A2
+gratis	De koffie op het werk is gratis. Ik drink er elke dag wel drie kopjes!	бесплатный, бесплатно	Кофе на работе бесплатный. Я выпиваю там каждый день чашки три!	link::thema5::taak4::A2
+huren	We huren een klein huis vlakbij de school. Handig met kinderen!	арендовать, снимать	Мы снимаем маленький дом рядом со школой. С детьми удобно!	link::thema5::taak4::A2
+lang	Hoelang woon je hier al? — Best lang, bijna vijf jaar!	длинный; долго	Давно тут живёшь? — Довольно долго, почти пять лет!	link::thema5::taak4::A2
+makkelijk	Met de fiets is het heel makkelijk om bij de supermarkt te komen.	лёгкий, простой	На велосипеде до супермаркета добраться очень легко.	link::thema5::taak4::A2
+meeste	De meeste mensen in onze straat werken in de stad.	большинство, большая часть	Большинство людей на нашей улице работают в городе.	link::thema5::taak4::A2
+moeilijk	Het is best moeilijk om een goedkoop huis te vinden in het centrum.	трудный, сложный	Довольно сложно найти недорогой дом в центре.	link::thema5::taak4::A2
+de ouder	Mijn ouders wonen in een ander land. Ik bel ze iedere week.	родитель (мн. ouders)	Мои родители живут в другой стране. Звоню им каждую неделю.	link::thema5::taak4::A2
+het procent	Ongeveer dertig procent van mijn salaris gaat naar de huur. Best veel!	процент	Около тридцати процентов зарплаты уходит на аренду. Довольно много!	link::thema5::taak4::A2
+sparen	Ik spaar iedere maand een beetje. Ik wil later een eigen huis kopen.	копить, откладывать	Я каждый месяц откладываю понемногу. Хочу потом купить собственный дом.	link::thema5::taak4::A2
+streng	Mijn ouders zijn best streng, maar ze doen het wel uit liefde, hoor.	строгий	Мои родители довольно строгие, но делают это из любви.	link::thema5::taak4::A2
+studeren	Mijn zus studeert in Amsterdam. Ze woont daar in een kleine kamer.	учиться (в вузе)	Моя сестра учится в Амстердаме. Живёт там в маленькой комнатке.	link::thema5::taak4::A2
+de studie	De studie van mijn broer duurt nog twee jaar. Daarna gaat hij werken.	учёба, специальность	Учёба брата продлится ещё два года. Потом он пойдёт работать.	link::thema5::taak4::A2
+uitstappen	Je moet bij het volgende station uitstappen. Daar is het centrum.	выходить (из транспорта)	Тебе нужно выйти на следующей остановке. Там центр.	link::thema5::taak4::A2
+vinden	Ik vind het hier heel gezellig. De buren zijn leuk en de buurt is rustig.	считать, находить	Мне тут очень нравится. Соседи приятные, и район спокойный.	link::thema5::taak4::A2
+de vrijheid	Ik hou van de vrijheid om zelf te kiezen wanneer ik eet en slaap.	свобода	Мне нравится свобода самому решать, когда есть и спать.	link::thema5::taak4::A2
+wachten	Ik wacht al een kwartier op de trein. Hij is weer te laat!	ждать	Я уже пятнадцать минут жду поезд. Он снова опаздывает!	link::thema5::taak4::A2
+de was	Ik moet vandaag echt de was doen. Ik heb bijna geen schone kleding meer!	стирка (de was doen)	Мне сегодня правда надо постирать. У меня почти нет чистой одежды!	link::thema5::taak4::A2
+de wasmachine	De wasmachine is kapot. Mag ik die van de buren even gebruiken?	стиральная машина	Стиральная машина сломалась. Можно мне соседскую пока попользовать?	link::thema5::taak4::A2
+zelfstandig	Mijn zoon woont nu zelfstandig. Hij doet zelf de boodschappen en kookt elke dag.	самостоятельный	Мой сын теперь живёт самостоятельно. Сам ходит за покупками и готовит каждый день.	link::thema5::taak4::A2
+de zomer	In de zomer zitten we altijd lekker buiten in de tuin. Heel gezellig!	лето	Летом мы всегда уютно сидим на улице в саду. Очень приятно!	link::thema5::taak4::A2

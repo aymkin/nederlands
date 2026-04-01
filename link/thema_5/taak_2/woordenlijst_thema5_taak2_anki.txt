@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+het bed	Ik heb een nieuw bed gekocht. Nu slaap ik eindelijk goed!	кровать	Я купил новую кровать. Теперь наконец хорошо сплю!	link::thema5::taak2::A2
+de ervaring	Heb je al ervaring met werken in een restaurant?	опыт	У тебя уже есть опыт работы в ресторане?	link::thema5::taak2::A2
+de flat	We wonen in een flat in het centrum. Het is er best druk.	квартира (в многоэтажке)	Мы живём в квартире в центре. Тут довольно шумно.	link::thema5::taak2::A2
+de hulp	Ik heb hulp nodig. Kun je mij even helpen met de boodschappen?	помощь	Мне нужна помощь. Можешь помочь с покупками?	link::thema5::taak2::A2
+klussen	Mijn broer klust graag. Vorig weekend heeft hij de keuken geverfd.	мастерить, делать ремонт	Мой брат любит мастерить. В прошлые выходные он покрасил кухню.	link::thema5::taak2::A2
+kwijt	Ik ben mijn telefoon kwijt. Ik kan nu niemand bellen!	потерянный (iets kwijt zijn)	Я потерял телефон. Теперь никому не могу позвонить!	link::thema5::taak2::A2
+laag	De huur hier is best laag. Daarom wonen er veel studenten.	низкий	Аренда тут довольно низкая. Поэтому здесь живёт много студентов.	link::thema5::taak2::A2
+langskomen	Wil je vanmiddag even langskomen? Ik heb koffie en cake!	заходить, зайти (в гости)	Хочешь сегодня днём заскочить? У меня есть кофе и пирог!	link::thema5::taak2::A2
+het meisje	Het meisje van hiernaast is heel lief. Ze helpt altijd de buren.	девочка, девушка	Девочка по соседству очень милая. Она всегда помогает соседям.	link::thema5::taak2::A2
+mooi	Wat een mooi huis! Is het duur? — Nou, het valt eigenlijk best mee.	красивый	Какой красивый дом! Дорогой? — Ну, на самом деле не так уж.	link::thema5::taak2::A2
+ongeveer	De markt is hier ongeveer tien minuten lopen.	приблизительно, около	Рынок отсюда примерно десять минут пешком.	link::thema5::taak2::A2
+ophalen	Kun je de kinderen om drie uur ophalen? Ik ben tot vijf uur op het werk.	забирать	Можешь забрать детей в три? Я до пяти на работе.	link::thema5::taak2::A2
+de oppas	Onze oppas komt iedere woensdag. Ze is heel goed met de kinderen.	няня, присматривающий	Наша няня приходит каждую среду. Она прекрасно ладит с детьми.	link::thema5::taak2::A2
+opruimen	Ik moet de keuken opruimen. Het is hier echt een bende!	убирать, наводить порядок	Мне надо убрать кухню. Тут правда бардак!	link::thema5::taak2::A2
+de prijs	De prijs is wel hoog, maar de buurt is echt heel leuk.	цена	Цена и правда высокая, но район действительно очень приятный.	link::thema5::taak2::A2
+schoonmaken	Ik maak elke zaterdag het hele huis schoon. Dat duurt wel twee uur!	мыть, чистить, убирать	Я каждую субботу убираю весь дом. Это занимает часа два!	link::thema5::taak2::A2
+de sleutel	Heb je de sleutel bij je? Ik ben de mijne thuis vergeten.	ключ	У тебя ключ с собой? Я свой дома забыл.	link::thema5::taak2::A2
+de spullen	We hebben nog veel spullen in dozen. We zijn net verhuisd.	вещи	У нас ещё много вещей в коробках. Мы только что переехали.	link::thema5::taak2::A2
+de stoel	Ik koop een nieuwe stoel voor de keuken. Die van nu is al oud.	стул	Покупаю новый стул для кухни. Нынешний уже старый.	link::thema5::taak2::A2
+de student	De student naast ons maakt soms best veel lawaai 's avonds.	студент	Студент по соседству иногда устраивает довольно много шума по вечерам.	link::thema5::taak2::A2
+tweedehands	Ik koop mijn meubels altijd tweedehands. Veel goedkoper!	подержанный, б/у	Я мебель всегда покупаю б/у. Намного дешевле!	link::thema5::taak2::A2
+verhuizen	We verhuizen volgende maand naar een groter huis. Ik heb het er druk mee!	переезжать	Мы в следующем месяце переезжаем в дом побольше. Дел невпроворот!	link::thema5::taak2::A2
+verkopen	We willen ons huis verkopen. We wonen hier al tien jaar.	продавать	Мы хотим продать дом. Мы живём тут уже десять лет.	link::thema5::taak2::A2
+zoeken	Ik zoek een goedkoop restaurant in de buurt. Weet jij er eentje?	искать	Ищу недорогой ресторан в районе. Ты какой-нибудь знаешь?	link::thema5::taak2::A2

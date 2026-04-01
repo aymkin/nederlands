@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+het appartement	Wij wonen nu in een klein appartement vlakbij de school.	квартира	Мы сейчас живём в маленькой квартире рядом со школой.	link::thema5::taak1::A2
+de badkamer	De badkamer is best klein, maar we hebben wel warm water, hoor.	ванная комната	Ванная довольно маленькая, но зато есть горячая вода.	link::thema5::taak1::A2
+het balkon	Als het lekker weer is, drink ik 's ochtends koffie op het balkon.	балкон	Когда хорошая погода, я утром пью кофе на балконе.	link::thema5::taak1::A2
+betalen	Hoeveel betaal je eigenlijk per maand voor je huis?	платить	Сколько ты вообще-то платишь в месяц за дом?	link::thema5::taak1::A2
+het centrum	We wonen niet ver van het centrum. Ik fiets er in tien minuten naartoe.	центр (города)	Мы живём недалеко от центра. Доезжаю на велосипеде за десять минут.	link::thema5::taak1::A2
+delen	Mijn broer en ik delen de keuken. We koken gewoon om de beurt.	делить	Мы с братом делим кухню. Просто готовим по очереди.	link::thema5::taak1::A2
+eigen	Ik wil later graag een eigen huis kopen. Nu huur ik nog.	собственный	Я хочу потом купить собственный дом. Пока ещё арендую.	link::thema5::taak1::A2
+de familie	Mijn hele familie woont in een ander land, maar we bellen wel vaak.	семья	Вся моя семья живёт в другой стране, но мы часто созваниваемся.	link::thema5::taak1::A2
+gebruiken	Mag ik even je telefoon gebruiken? Die van mij is leeg.	использовать	Можно воспользоваться твоим телефоном? Мой разрядился.	link::thema5::taak1::A2
+het gezin	Ons gezin is niet zo groot: mijn vrouw, onze dochter en ik.	семья (родители и дети)	Наша семья не такая большая: жена, дочка и я.	link::thema5::taak1::A2
+hoog	De huur in het centrum is echt hoog. Daarom woon ik liever in een dorp.	высокий	Аренда в центре правда высокая. Поэтому я лучше живу в деревне.	link::thema5::taak1::A2
+de huisgenoot	Mijn huisgenoot is heel lief. Ze helpt mij altijd als het druk is.	сосед(ка) по дому	Моя соседка по дому очень милая. Она мне всегда помогает, когда много дел.	link::thema5::taak1::A2
+de huur	De huur is zeshonderd euro per maand. Dat vind ik best veel.	аренда, арендная плата	Аренда — шестьсот евро в месяц. По-моему, это довольно много.	link::thema5::taak1::A2
+de informatie	Heb je misschien informatie over een goedkope bakker in de buurt?	информация	Нет ли у тебя информации о недорогой пекарне в районе?	link::thema5::taak1::A2
+de kamer	Mijn kamer is klein, maar wel heel gezellig met een bank en een tafel.	комната	Моя комната маленькая, но зато очень уютная — с диваном и столом.	link::thema5::taak1::A2
+maar	Ik vind de buurt heel leuk, maar de supermarkt is echt ver weg.	но, однако	Мне район очень нравится, но супермаркет правда далеко.	link::thema5::taak1::A2
+de plek	Dit is een fijne plek om te wonen. Er is een markt en een bakker vlakbij.	место	Это приятное место для жизни. Рядом рынок и пекарня.	link::thema5::taak1::A2
+het rijtjeshuis	In onze straat staan veel rijtjeshuizen. Niet zo groot, maar wel gezellig.	рядный дом, таунхаус	На нашей улице много рядных домов. Не такие большие, но уютные.	link::thema5::taak1::A2
+de slaapkamer	Onze slaapkamer is lekker rustig. We slapen daar altijd goed.	спальня	Наша спальня приятно тихая. Мы там всегда хорошо спим.	link::thema5::taak1::A2
+de tuin	Mijn buurvrouw heeft een grote tuin. Ze zit er graag als de zon schijnt.	сад	У моей соседки большой сад. Она любит сидеть там, когда светит солнце.	link::thema5::taak1::A2
+de verdieping	Mijn vriendin woont op de tweede verdieping. Gelukkig is er een lift!	этаж	Моя подруга живёт на втором этаже. К счастью, есть лифт!	link::thema5::taak1::A2
+de vierkante meter	Het huis is maar vijftig vierkante meter. Met twee kinderen is dat niet genoeg.	квадратный метр	Дом всего пятьдесят квадратных метров. С двумя детьми этого недостаточно.	link::thema5::taak1::A2
+vlakbij	De school is vlakbij. De kinderen lopen er gewoon in vijf minuten naartoe.	поблизости, рядом	Школа рядом. Дети просто доходят пешком за пять минут.	link::thema5::taak1::A2
+vrijstaand	Mijn moeder woont in een vrijstaand huis buiten de stad. Heel rustig daar.	отдельно стоящий	Мама живёт в отдельном доме за городом. Очень тихо там.	link::thema5::taak1::A2
+de wc	Sorry, waar is hier de wc? — Gewoon rechtdoor, naast de keuken.	туалет	Извините, где здесь туалет? — Прямо, рядом с кухней.	link::thema5::taak1::A2

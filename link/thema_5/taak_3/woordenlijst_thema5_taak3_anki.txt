@@ -1,0 +1,32 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+belangrijk	Het is voor mij heel belangrijk dat de buurt rustig is.	важный	Для меня очень важно, чтобы район был спокойным.	link::thema5::taak3::A2
+blauw	Mijn zus heeft haar kamer blauw geverfd. Het staat echt mooi!	голубой, синий	Моя сестра покрасила комнату в голубой. Выглядит правда красиво!	link::thema5::taak3::A2
+donker	In de winter is het al om vier uur donker buiten. Dan maak ik het gezellig thuis.	тёмный	Зимой уже в четыре часа темно на улице. Тогда я устраиваю уют дома.	link::thema5::taak3::A2
+iedereen	Iedereen in de buurt kent de bakker. Het brood is daar heel lekker!	каждый, все	Все в районе знают пекарню. Хлеб там очень вкусный!	link::thema5::taak3::A2
+de kast	Mijn broer heeft mij geholpen met de nieuwe kast. Samen ging het best snel!	шкаф	Брат помог мне с новым шкафом. Вместе получилось довольно быстро!	link::thema5::taak3::A2
+kiezen	Je moet goed kiezen waar je gaat wonen. De buurt is net zo belangrijk als het huis.	выбирать	Нужно хорошо выбирать, где будешь жить. Район так же важен, как и дом.	link::thema5::taak3::A2
+de kleding	Ik heb echt te veel kleding! De helft wil ik weggeven of verkopen.	одежда	У меня правда слишком много одежды! Половину хочу раздать или продать.	link::thema5::taak3::A2
+de kleur	Welke kleur heeft je jas? — Zwart. Ik draag eigenlijk altijd zwart.	цвет	Какого цвета твоя куртка? — Чёрная. Я вообще-то всегда ношу чёрное.	link::thema5::taak3::A2
+de la	Ik heb de sleutels in de la gelegd. Kijk maar even!	ящик (выдвижной)	Я положил ключи в ящик. Посмотри!	link::thema5::taak3::A2
+de lamp	Mijn buurvrouw gaf mij een mooie lamp. Ze had er twee thuis staan.	лампа	Соседка подарила мне красивую лампу. У неё дома стояли две.	link::thema5::taak3::A2
+licht	Onze keuken is heel licht. Dat vinden we fijn bij het koken.	светлый, лёгкий (прил.)	Наша кухня очень светлая. Нам это нравится при готовке.	link::thema5::taak3::A2
+het licht	Doe je het licht even uit? Ik wil gaan slapen.	свет	Выключишь свет? Я хочу спать.	link::thema5::taak3::A2
+het meubel	We kopen de meeste meubels tweedehands. Dat is veel goedkoper!	предмет мебели (мн. meubels)	Мы покупаем большую часть мебели б/у. Намного дешевле!	link::thema5::taak3::A2
+de muur	Er hangt een mooie foto van mijn familie aan de muur.	стена	На стене висит красивая фотография моей семьи.	link::thema5::taak3::A2
+onder	De poes ligt lekker onder de bank. Ze slaapt de hele dag!	под	Кошка уютно лежит под диваном. Она спит целый день!	link::thema5::taak3::A2
+het raam	Doe je het raam even open? Het is hier zo warm!	окно	Откроешь окно? Тут так жарко!	link::thema5::taak3::A2
+de ruimte	We hebben niet genoeg ruimte thuis. Misschien moeten we verhuizen.	пространство, место	У нас дома недостаточно места. Может, нам нужно переехать.	link::thema5::taak3::A2
+tegen	Zet die doos maar even tegen de muur. Dan is er meer plek.	к (прислонить), против	Поставь ту коробку пока к стене. Тогда будет больше места.	link::thema5::taak3::A2
+de tip	Heb je een tip voor een goede bakker in de buurt? We zijn hier nieuw.	совет, подсказка	Есть совет по хорошей пекарне в районе? Мы тут новенькие.	link::thema5::taak3::A2
+de vloer	De vloer in de keuken is vies. Ik moet hem even schoonmaken.	пол	Пол на кухне грязный. Мне надо его быстренько помыть.	link::thema5::taak3::A2
+vol	De koelkast is helemaal vol! We hoeven vandaag geen boodschappen te doen.	полный	Холодильник совсем полный! Нам сегодня не нужно за покупками.	link::thema5::taak3::A2
+vooral	Ik hou vooral van de tuin. Het is er zo lekker rustig!	особенно, прежде всего	Мне особенно нравится сад. Там так приятно тихо!	link::thema5::taak3::A2
+wit	Mijn jas is wit. Dat is niet handig, want hij wordt snel vies!	белый	Моя куртка белая. Это непрактично — быстро пачкается!	link::thema5::taak3::A2
+de woning	We zoeken al een paar maanden een woning vlakbij de school.	жильё, жилище	Мы уже несколько месяцев ищем жильё рядом со школой.	link::thema5::taak3::A2
+de woonkamer	We zitten 's avonds altijd in de woonkamer. Dan kijken we samen tv.	гостиная	Мы по вечерам всегда сидим в гостиной и вместе смотрим телевизор.	link::thema5::taak3::A2
+zetten	Zet je de boodschappen even op de tafel? Dan ruim ik het later op.	ставить, поставить	Поставишь покупки на стол? Потом я уберу.	link::thema5::taak3::A2
+zorgen voor	Mijn buurvrouw zorgt altijd voor de poes als wij op vakantie zijn.	заботиться о	Соседка всегда присматривает за кошкой, когда мы в отпуске.	link::thema5::taak3::A2
