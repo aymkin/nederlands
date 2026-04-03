@@ -31,14 +31,45 @@ VOICES = {
 
 
 def parse_sentences(md_path: Path) -> list[str]:
-    """Read MD file, return sentences (one per non-empty, non-heading line)."""
+    """Read MD file, return narrative sentences only.
+
+    Stops at second-level headings (## Vragen, ## Woordenlijst, etc.).
+    Skips horizontal rules, blockquotes, table rows, HTML comments,
+    and italic-only metadata lines.
+    """
     sentences = []
     with open(md_path, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
-            if line and not line.startswith("#"):
-                sentences.append(line)
+            if line.startswith("## "):
+                break
+            if not line or line.startswith("#"):
+                continue
+            if line == "---":
+                continue
+            if line.startswith(">") or line.startswith("|"):
+                continue
+            if line.startswith("<!--"):
+                continue
+            if line.startswith("_") and line.endswith("_") and not line.startswith("__"):
+                continue
+            sentences.append(line)
     return sentences
+
+
+def md_to_html(text: str) -> str:
+    """Convert markdown bold/italic to HTML tags for display."""
+    text = html_mod.escape(text)
+    text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
+    text = re.sub(r"(?<!\w)_(.+?)_(?!\w)", r"<em>\1</em>", text)
+    return text
+
+
+def strip_md(text: str) -> str:
+    """Strip markdown formatting for clean TTS input."""
+    text = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
+    text = re.sub(r"(?<!\w)_(.+?)_(?!\w)", r"\1", text)
+    return text
 
 
 def parse_timestamp(ts: str) -> float:
@@ -136,7 +167,7 @@ def build_html(
 
     sent_html = "\n".join(
         f'    <p class="s" data-i="{i}" data-s="{t["start"]:.3f}" '
-        f'data-e="{t["end"]:.3f}">{html_mod.escape(s)}</p>'
+        f'data-e="{t["end"]:.3f}">{md_to_html(s)}</p>'
         for i, (s, t) in enumerate(zip(sentences, timings))
     )
 
@@ -354,7 +385,7 @@ def main():
     print(f"Sentences: {len(sentences)}")
 
     # 2. Generate TTS
-    full_text = " ".join(sentences)
+    full_text = " ".join(strip_md(s) for s in sentences)
     with tempfile.TemporaryDirectory() as tmp:
         mp3 = Path(tmp) / "audio.mp3"
         vtt = Path(tmp) / "audio.vtt"
