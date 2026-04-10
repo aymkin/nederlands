@@ -7,23 +7,23 @@ _Vijf huisgenoten in Utrecht — Woorden uit Thema 8 (pagina 23)_
 
 ---
 
-De eerste week in het studentenhuis **is** voorbij. Ik **begin** de mensen
-hier beter te kennen. Het **is** heel anders dan ik **had** verwacht. In eerste
+De eerste week in het studentenhuis **is** voorbij. Ik **begin** de mensen hier
+beter te kennen. Het **is** heel anders dan ik **had** verwacht. In eerste
 instantie **dacht** ik: dit **gaat** meevallen. Maar het karakter van elke
 huisgenoot **is** heel onvoorspelbaar.
 
 ---
 
 **Maandag.** Het **is** heet buiten. Ik **zit** in de keuken. Sophie **komt**
-binnen. Ze **heeft** haar lange, blonde haar in een knotje. Ze **maakt** zich
-op voor de les.
+binnen. Ze **heeft** haar lange, blonde haar in een knotje. Ze **maakt** zich op
+voor de les.
 
 Sophie **zegt**: "Hoezo **kijk** je zo? **Vind** je het grappig?"
 
 Ik **zeg**: "Nee, je **ziet** er knap uit!"
 
-Sophie **lacht**. Ze **is** gevoelig voor complimenten. Ze **heeft** een
-mooi gezicht, maar ze **is** soms onzeker over haar uiterlijk.
+Sophie **lacht**. Ze **is** gevoelig voor complimenten. Ze **heeft** een mooi
+gezicht, maar ze **is** soms onzeker over haar uiterlijk.
 
 Dan **komt** Daan de keuken in. Hij **is** groot — bijna twee meter — en
 **heeft** halflang, grijs haar. Ja, grijs! Hij **is** pas vierentwintig jaar
@@ -36,14 +36,14 @@ voor zijn uiterlijk. Zijn innerlijk **is** voor hem belangrijker.
 hoofddoek en moderne kleding. Ze **is** initiatiefrijk en ondernemend. Ze
 **organiseert** alles zelf.
 
-Yara **zegt**: "Ik **heb** geen haarband nodig. Ik **draag** een hoofddoek.
-Dat **is** mijn keuze."
+Yara **zegt**: "Ik **heb** geen haarband nodig. Ik **draag** een hoofddoek. Dat
+**is** mijn keuze."
 
-Niemand **heeft** daar een probleem mee. De mentaliteit in het huis **is**
-open en optimistisch.
+Niemand **heeft** daar een probleem mee. De mentaliteit in het huis **is** open
+en optimistisch.
 
-Maar Yara **is** ook koppig. Ze **heeft** altijd gelijk — of ze **denkt** dat
-ze altijd gelijk **heeft**. Dat **is** een lastige karaktereigenschap.
+Maar Yara **is** ook koppig. Ze **heeft** altijd gelijk — of ze **denkt** dat ze
+altijd gelijk **heeft**. Dat **is** een lastige karaktereigenschap.
 
 ---
 
@@ -51,8 +51,8 @@ ze altijd gelijk **heeft**. Dat **is** een lastige karaktereigenschap.
 **herinner** me wat Yara **heeft** gezegd: Bram **maakt** veel herrie.
 
 Bram **is** humoristisch en lief, maar ook heel impulsief. Gisteravond **heeft**
-hij impulsief een hond **mee naar huis genomen** van de straat. Een klein,
-mager hondje.
+hij impulsief een hond **mee naar huis genomen** van de straat. Een klein, mager
+hondje.
 
 Ik **zeg**: "Bram, we **mogen** hier geen huisdieren **hebben**."
 
@@ -93,16 +93,16 @@ geklaagd over het kabaal. We **moeten** het oplossen.
 
 Bram **zegt**: "Plaatselijk kabaal **is** normaal in een studentenhuis!"
 
-Yara **zegt**: "Nee, Bram. Je **moet** je aanpassen. Niet alles **draait**
-om jou. Dat **is** egoïstisch."
+Yara **zegt**: "Nee, Bram. Je **moet** je aanpassen. Niet alles **draait** om
+jou. Dat **is** egoïstisch."
 
 Ik **kijk** naar iedereen. In eerste instantie **leek** het een gewone week.
 Maar ik **heb** veel geleerd over deze mensen. Elk mens **heeft** een ander
 karakter. De oorzaak van conflicten **is** altijd hetzelfde: we **lijken** op
 elkaar, maar we **zijn** ook heel anders.
 
-Het klimaat in huis **is** niet altijd nuchter of netjes. Maar het **valt**
-mee. We **zijn** jong en we **leren**.
+Het klimaat in huis **is** niet altijd nuchter of netjes. Maar het **valt** mee.
+We **zijn** jong en we **leren**.
 
 ---
 
@@ -110,17 +110,17 @@ mee. We **zijn** jong en we **leren**.
 
 _Niet in woordenlijst Thema 8 (pagina 23), maar wel in dit verhaal:_
 
-| Nederlands      | Русский              | English              |
-| --------------- | -------------------- | -------------------- |
-| de gang         | коридор              | hallway              |
-| het huisdier    | домашнее животное    | pet                  |
-| het hondje      | собачка              | little dog           |
-| de cursus       | курс                 | course               |
-| het park        | парк                 | park                 |
-| de jas          | куртка               | jacket               |
-| de huisbaas     | хозяин дома          | landlord             |
-| de brief        | письмо               | letter               |
-| klagen          | жаловаться           | to complain          |
-| oplossen        | решать (проблему)    | to solve             |
-| gelijk hebben   | быть правым          | to be right          |
-| de keuze        | выбор                | choice               |
+| Nederlands    | Русский           | English     |
+| ------------- | ----------------- | ----------- |
+| de gang       | коридор           | hallway     |
+| het huisdier  | домашнее животное | pet         |
+| het hondje    | собачка           | little dog  |
+| de cursus     | курс              | course      |
+| het park      | парк              | park        |
+| de jas        | куртка            | jacket      |
+| de huisbaas   | хозяин дома       | landlord    |
+| de brief      | письмо            | letter      |
+| klagen        | жаловаться        | to complain |
+| oplossen      | решать (проблему) | to solve    |
+| gelijk hebben | быть правым       | to be right |
+| de keuze      | выбор             | choice      |

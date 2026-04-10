@@ -21,8 +21,8 @@ Ik **open** de deur. In de keuken **zitten** drie mensen aan de tafel. Ze
 
 De eerste **is** Sophie. Ze **is** extravert en **praat** meteen heel druk.
 
-Sophie **heeft** lang, blond haar en blauwe ogen. Ze **draagt** een bril met
-een breed, bruin montuur. Sophie **studeert** kunst — ze **is** heel creatief.
+Sophie **heeft** lang, blond haar en blauwe ogen. Ze **draagt** een bril met een
+breed, bruin montuur. Sophie **studeert** kunst — ze **is** heel creatief.
 Bovendien **is** ze emotioneel: ze **toont** haar emoties altijd direct.
 
 Sophie **zegt**: "Welkom! Ik **ben** zo blij dat je er **bent**! We **hebben**
@@ -62,9 +62,9 @@ Yara **zegt**: "Heb je bezwaar tegen lawaai? Bram **maakt** veel herrie."
 ---
 
 Later die avond **komt** Bram thuis. Hij **is** breed en een beetje dik. Hij
-**heeft** een grote glimlach op zijn gezicht. Bram **is** gastvrij en
-emotioneel — hij **geeft** me meteen een hand en **zegt**: "Hey! Welkom! Ik
-**heb** gehoord dat je uit het buitenland **komt**. Geweldig!"
+**heeft** een grote glimlach op zijn gezicht. Bram **is** gastvrij en emotioneel
+— hij **geeft** me meteen een hand en **zegt**: "Hey! Welkom! Ik **heb** gehoord
+dat je uit het buitenland **komt**. Geweldig!"
 
 Bram **is** niet conservatief. Hij **is** avontuurlijk en **houdt** van
 culturele activiteiten — bijvoorbeeld concerten en festivals. Hij **belooft**
@@ -73,8 +73,8 @@ dat hij **zal** koken voor iedereen. Hij **geniet** van koken.
 Maar Yara **zegt**: "Bram, je **bent** belachelijk. Je **kookt** nooit! Je
 **bent** te lui!"
 
-Bram **is** niet boos. Hij **lacht** en **zegt**: "Dat **is** niet eerlijk.
-Ik **ben** flexibel — ik **kan** ook bestellen!"
+Bram **is** niet boos. Hij **lacht** en **zegt**: "Dat **is** niet eerlijk. Ik
+**ben** flexibel — ik **kan** ook bestellen!"
 
 ---
 
@@ -92,16 +92,16 @@ anders dan alleen wonen.
 
 _Niet in woordenlijst Thema 8 (pagina 22), maar wel in dit verhaal:_
 
-| Nederlands      | Русский              | English              |
-| --------------- | -------------------- | -------------------- |
-| de huisgenoot   | сосед по дому        | housemate            |
-| de keuken       | кухня                | the kitchen          |
-| het montuur     | оправа (очков)       | frame (glasses)      |
-| de kunst        | искусство            | art                  |
-| de spullen      | вещи                 | stuff, belongings    |
-| de herrie       | шум                  | noise                |
-| het buitenland  | заграница            | abroad               |
-| het concert     | концерт              | concert              |
-| het festival    | фестиваль            | festival             |
-| bestellen       | заказывать           | to order             |
-| de glimlach     | улыбка               | smile                |
+| Nederlands     | Русский        | English           |
+| -------------- | -------------- | ----------------- |
+| de huisgenoot  | сосед по дому  | housemate         |
+| de keuken      | кухня          | the kitchen       |
+| het montuur    | оправа (очков) | frame (glasses)   |
+| de kunst       | искусство      | art               |
+| de spullen     | вещи           | stuff, belongings |
+| de herrie      | шум            | noise             |
+| het buitenland | заграница      | abroad            |
+| het concert    | концерт        | concert           |
+| het festival   | фестиваль      | festival          |
+| bestellen      | заказывать     | to order          |
+| de glimlach    | улыбка         | smile             |
