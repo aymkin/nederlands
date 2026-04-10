@@ -1,23 +1,23 @@
 # Refinement — 31 maart 2026
 
-**Deelnemers:** Erik, Rafaël, Alex, Cindy
-**Onderwerp:** Component library — nieuwe componenten voor deelvervoer-app
+**Deelnemers:** Erik, Rafaël, Alex, Cindy **Onderwerp:** Component library —
+nieuwe componenten voor deelvervoer-app
 
 ---
 
 ## Introductie
 
 **Erik:** Ja, het is nu gewoon een uitzonderlijke situatie. Ik wilde het
-voorbereiden, ik wilde het écht goed voorbereiden, maar ik ben er gewoon niet aan
-toegekomen. We moeten even schipperen, want Bal is er nu niet bij. Er is een hele
-waslijst aan componenten die naar de component library moet, en dat is allemaal
-niet voorbereid. Dus we doen wat we kunnen deze sessie.
+voorbereiden, ik wilde het écht goed voorbereiden, maar ik ben er gewoon niet
+aan toegekomen. We moeten even schipperen, want Bal is er nu niet bij. Er is een
+hele waslijst aan componenten die naar de component library moet, en dat is
+allemaal niet voorbereid. Dus we doen wat we kunnen deze sessie.
 
 **Rafaël:** Zeker, dat was ook de reden waarom ik zit — maar we kunnen wisselen
 als je wilt.
 
-**Erik:** Zullen we proberen het gesprek in het Nederlands te houden? Niet per se
-verplicht, maar laten we het proberen.
+**Erik:** Zullen we proberen het gesprek in het Nederlands te houden? Niet per
+se verplicht, maar laten we het proberen.
 
 ---
 
@@ -35,9 +35,9 @@ switch. Moeten we daar een label bij hebben of niet? Of zou dat te groot zijn?
 **Rafaël:** Stel, je wilt alleen een switch hebben zonder label...
 
 **Erik:** Ik zou zeggen dat dat een ander component zou moeten zijn. We nemen de
-button en de switch als gecombineerd component. Of eigenlijk: het zijn twee losse
-componenten, maar je zou de toggle een higher-order component kunnen maken,
-waarbij je zegt: als die een label heeft, rendert hij het label erbij.
+button en de switch als gecombineerd component. Of eigenlijk: het zijn twee
+losse componenten, maar je zou de toggle een higher-order component kunnen
+maken, waarbij je zegt: als die een label heeft, rendert hij het label erbij.
 
 **Rafaël:** Ja, dat klopt. Want je kunt het zo maken dat je een toggle los hebt,
 maar meestal staat er wel iets bij.
@@ -45,8 +45,8 @@ maar meestal staat er wel iets bij.
 **Erik:** Ja, ik zit ook te denken: op alle plekken waar ik een toggle kan
 bedenken, zit er zo'n label bij.
 
-**Rafaël:** Alle switches die ik kan bedenken zijn met een label. Dus bij default
-is het "met label", toch?
+**Rafaël:** Alle switches die ik kan bedenken zijn met een label. Dus bij
+default is het "met label", toch?
 
 **Erik:** Ja. Maar staat het label altijd links? Naast dat is dan nog de vraag:
 heb je al een label-component?
@@ -78,8 +78,8 @@ implementaties en maken het zo simplistisch en goed mogelijk. Er moet mogelijk
 nog iets aan gebeuren, ook al kopieer je hem van één van de projecten.
 
 **Rafaël:** Dat is misschien handig om erbij te vermelden. Misschien in de
-technische details — dat we de implementatie uit reisbalans of reisrewards pakken
-als basis, maar dat er nog aanpassingen nodig zijn. Het is niet zomaar
+technische details — dat we de implementatie uit reisbalans of reisrewards
+pakken als basis, maar dat er nog aanpassingen nodig zijn. Het is niet zomaar
 copy-paste. We moeten nadenken of het goed genoeg is als component, met de
 design tokens en alles erop en eraan.
 
@@ -98,8 +98,8 @@ dat we zo'n kleine ronde button al hebben in React Native. Maar in reisbalans
 waarschijnlijk niet.
 
 **Rafaël:** We willen een goede button voor het deelplatform toevoegen. Met de
-juiste eisen. En wanneer je hem downstream merget naar andere projecten, breid je
-hem uit met wat daar nodig is.
+juiste eisen. En wanneer je hem downstream merget naar andere projecten, breid
+je hem uit met wat daar nodig is.
 
 **Erik:** Dat is de doorflow — en het mooie is dat als je een nieuwe versie
 toevoegt... Ik zie alleen de types: primary, secondary, tertiary, warning, ghost
@@ -108,9 +108,9 @@ warning, en inline.
 **Rafaël:** Bij ons heten ze anders. Volgens het design hebben we zo'n 12
 verschillende types button.
 
-**Erik:** Ze zijn waarschijnlijk hetzelfde, maar anders benoemd in de
-webversie — dat is oké. Het gaat erom dat je een nieuwe button maakt en zorgt dat
-die alle benodigde stijlen krijgt.
+**Erik:** Ze zijn waarschijnlijk hetzelfde, maar anders benoemd in de webversie
+— dat is oké. Het gaat erom dat je een nieuwe button maakt en zorgt dat die alle
+benodigde stijlen krijgt.
 
 ### Stemming: 2 punten
 
@@ -123,8 +123,8 @@ leading icon en een trailing icon die je kunt hebben.
 
 **Rafaël:** Dat vond ik een heel mooi punt. In onze vorige button had ik een
 icon-property en een icon-position. Dus je kon altijd maar één icon hebben: of
-before, of after. Maar met deze opzet heb je twee properties en kun je kiezen: ik
-wil er een voor en een achter, of alleen eentje.
+before, of after. Maar met deze opzet heb je twee properties en kun je kiezen:
+ik wil er een voor en een achter, of alleen eentje.
 
 **Erik:** Je verliest geen extra properties, maar je kunt wel kiezen. Leading
 icon en trailing icon — dat is echt chill. In plaats van icon met icon-position.
@@ -313,8 +313,8 @@ nog niet bij, want het wordt nergens gedeployed.
 ## Algemene afspraken
 
 - **Aanpak:** We kijken naar bestaande implementaties in reisbalans en
-  reisrewards, nemen de beste als basis, en bouwen het zo simpel mogelijk voor de
-  deelvervoer-app. Downstream projecten breiden later uit waar nodig.
+  reisrewards, nemen de beste als basis, en bouwen het zo simpel mogelijk voor
+  de deelvervoer-app. Downstream projecten breiden later uit waar nodig.
 - **Design tokens:** Zorg dat elk component werkt met de design tokens.
 - **DateTimePicker:** Doorgeschoven — even rustig uitwerken buiten de
   refine-sessie.
@@ -326,15 +326,15 @@ nog niet bij, want het wordt nergens gedeployed.
 
 ## Schattingen samenvatting
 
-| Component         | Punten | Opmerking                                   |
-| ----------------- | ------ | ------------------------------------------- |
-| Switch + label    | 3      | Kopiëren + aanpassen uit reisbalans/rewards  |
-| Icon Button       | 2      | Relatief simpel, kleine ronde button         |
-| Button            | 3      | Leading/trailing icon-patroon                |
-| Status Label      | 2      | Op kleur, niet semantisch                    |
-| DateTimePicker    | —      | Doorgeschoven, te complex voor nu            |
-| Empty State       | 2      | Bestaat al grotendeels                       |
-| Checkbox + label  | 2      | Vergelijkbaar met switch-aanpak              |
-| TextArea          | 3      | Opnieuw bouwen, simpel houden                |
-| Banner            | 2      | Aanpassen van bestaande implementatie         |
-| Toaster           | —      | Kort besproken                               |
+| Component        | Punten | Opmerking                                   |
+| ---------------- | ------ | ------------------------------------------- |
+| Switch + label   | 3      | Kopiëren + aanpassen uit reisbalans/rewards |
+| Icon Button      | 2      | Relatief simpel, kleine ronde button        |
+| Button           | 3      | Leading/trailing icon-patroon               |
+| Status Label     | 2      | Op kleur, niet semantisch                   |
+| DateTimePicker   | —      | Doorgeschoven, te complex voor nu           |
+| Empty State      | 2      | Bestaat al grotendeels                      |
+| Checkbox + label | 2      | Vergelijkbaar met switch-aanpak             |
+| TextArea         | 3      | Opnieuw bouwen, simpel houden               |
+| Banner           | 2      | Aanpassen van bestaande implementatie       |
+| Toaster          | —      | Kort besproken                              |
