@@ -35,13 +35,13 @@ YouTube — Easy Dutch kanaal
 
 ## Overdag — verwerking (gisteren: Heb je zin?)
 
-| Slot                         | Klaar | Activiteit                       |
-| ---------------------------- | :---: | -------------------------------- |
-| Ochtend telefoon (15 min)    |  [ ]  | Anki herhaling                   |
-| Ochtend koptelefoon (15 min) |  [ ]  | Shadowing: Heb je zin?           |
-| Lunch koptelefoon (15 min)   |  [ ]  | Herhaling Heb je zin? / passief  |
-| Thuis telefoon (15 min)      |  [ ]  | Anki extra / lezen               |
-| Thuis koptelefoon (15 min)   |  [ ]  | Passief luisteren (Tier 3)       |
+| Slot                         | Klaar | Activiteit                      |
+| ---------------------------- | :---: | ------------------------------- |
+| Ochtend telefoon (15 min)    |  [ ]  | Anki herhaling                  |
+| Ochtend koptelefoon (15 min) |  [ ]  | Shadowing: Heb je zin?          |
+| Lunch koptelefoon (15 min)   |  [ ]  | Herhaling Heb je zin? / passief |
+| Thuis telefoon (15 min)      |  [ ]  | Anki extra / lezen              |
+| Thuis koptelefoon (15 min)   |  [ ]  | Passief luisteren (Tier 3)      |
 
 > **Shadowing niveau:** Licht: herhaal losse zinnen
 

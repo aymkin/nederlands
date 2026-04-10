@@ -35,13 +35,13 @@ YouTube — Bart de Pau / Kinderen voor Kinderen
 
 ## Overdag — verwerking (gisteren: Easy Dutch Super Easy)
 
-| Slot                         | Klaar | Activiteit                                 |
-| ---------------------------- | :---: | ------------------------------------------ |
-| Ochtend telefoon (15 min)    |  [ ]  | Anki herhaling                             |
-| Ochtend koptelefoon (15 min) |  [ ]  | Shadowing: Easy Dutch Super Easy           |
-| Lunch koptelefoon (15 min)   |  [ ]  | Herhaling Easy Dutch Super Easy / passief  |
-| Thuis telefoon (15 min)      |  [ ]  | Anki extra / lezen                         |
-| Thuis koptelefoon (15 min)   |  [ ]  | Passief luisteren (Tier 3)                 |
+| Slot                         | Klaar | Activiteit                                |
+| ---------------------------- | :---: | ----------------------------------------- |
+| Ochtend telefoon (15 min)    |  [ ]  | Anki herhaling                            |
+| Ochtend koptelefoon (15 min) |  [ ]  | Shadowing: Easy Dutch Super Easy          |
+| Lunch koptelefoon (15 min)   |  [ ]  | Herhaling Easy Dutch Super Easy / passief |
+| Thuis telefoon (15 min)      |  [ ]  | Anki extra / lezen                        |
+| Thuis koptelefoon (15 min)   |  [ ]  | Passief luisteren (Tier 3)                |
 
 > **Shadowing niveau:** Licht: herhaal losse zinnen, niet de hele stroom
 

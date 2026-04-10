@@ -10,25 +10,28 @@
 
 ## Avond — stappen 1-3 (nieuw materiaal)
 
-**Bron:** [Bluey doet aan magie](https://youtu.be/7rWQ9sGR7do?si=ou2xfYbl1RyZT9iY) **Type:** YouTube video (~2 min) **Waar:** YouTube — Bluey Officieel Nederlands kanaal
+**Bron:**
+[Bluey doet aan magie](https://youtu.be/7rWQ9sGR7do?si=ou2xfYbl1RyZT9iY)
+**Type:** YouTube video (~2 min) **Waar:** YouTube — Bluey Officieel Nederlands
+kanaal
 
 > Versie ZONDER ondertiteling voor stap 1, MET ondertiteling voor stap 2.
 
-| Stap                             | Klaar | Notities       |
-| -------------------------------- | :---: | -------------- |
+| Stap                             | Klaar | Notities     |
+| -------------------------------- | :---: | ------------ |
 | 1. Koud kijken (5 min)           |  [ ]  | Begrip: 20 % |
-| 2. Betekenis analyseren (10 min) |  [ ]  |                |
-| 3. Zinnen uitschrijven (10 min)  |  [ ]  | Aantal: \_\_   |
+| 2. Betekenis analyseren (10 min) |  [ ]  |              |
+| 3. Zinnen uitschrijven (10 min)  |  [ ]  | Aantal: \_\_ |
 
 ## Overdag — verwerking (gisteren: Peppa Pig)
 
-| Slot                         | Klaar | Activiteit                      |
-| ---------------------------- | :---: | ------------------------------- |
-| Ochtend telefoon (15 min)    |  [ ]  | Anki herhaling                  |
-| Ochtend koptelefoon (15 min) |  [ ]  | Shadowing: Peppa Pig            |
-| Lunch koptelefoon (15 min)   |  [ ]  | Herhaling Peppa Pig / passief   |
-| Thuis telefoon (15 min)      |  [ ]  | Anki extra / lezen              |
-| Thuis koptelefoon (15 min)   |  [ ]  | Passief luisteren (Tier 3)      |
+| Slot                         | Klaar | Activiteit                    |
+| ---------------------------- | :---: | ----------------------------- |
+| Ochtend telefoon (15 min)    |  [ ]  | Anki herhaling                |
+| Ochtend koptelefoon (15 min) |  [ ]  | Shadowing: Peppa Pig          |
+| Lunch koptelefoon (15 min)   |  [ ]  | Herhaling Peppa Pig / passief |
+| Thuis telefoon (15 min)      |  [ ]  | Anki extra / lezen            |
+| Thuis koptelefoon (15 min)   |  [ ]  | Passief luisteren (Tier 3)    |
 
 > **Shadowing niveau:** Licht: herhaal losse zinnen
 
@@ -38,7 +41,9 @@
 
 ## Dagboek
 
-Ik ben na de lunch naar mijn werk gegaan. Ik was pas na zessen weer thuis. We hebben heerlijk gegeten. 's Avonds heb ik een biertje gedronken. En ik heb ook aan mijn Nederlands gewerkt.
+Ik ben na de lunch naar mijn werk gegaan. Ik was pas na zessen weer thuis. We
+hebben heerlijk gegeten. 's Avonds heb ik een biertje gedronken. En ik heb ook
+aan mijn Nederlands gewerkt.
 
 ## Fouten
 

@@ -1,6 +1,7 @@
 # Transcriptie — Bluey doet aan magie
 
-**Bron:** [Bluey doet aan magie — Bluey Officieel Nederlands kanaal](https://youtu.be/7rWQ9sGR7do?si=ou2xfYbl1RyZT9iY)
+**Bron:**
+[Bluey doet aan magie — Bluey Officieel Nederlands kanaal](https://youtu.be/7rWQ9sGR7do?si=ou2xfYbl1RyZT9iY)
 
 ---
 
@@ -12,7 +13,8 @@ Wat is hier aan de hand?
 
 — Dat deed Bluey.
 
-— Ik had het kunnen weten. En Bluey, heb je haar ook de belangrijkste regel geleerd over toveren?
+— Ik had het kunnen weten. En Bluey, heb je haar ook de belangrijkste regel
+geleerd over toveren?
 
 — Die kon ik me niet herinneren.
 
@@ -36,7 +38,8 @@ Wat is hier aan de hand?
 
 — Maar pas vanaf morgen, Bluey.
 
-— We bepalen zelf wel wanneer we toverkracht gebruiken. En als we ondeugend willen zijn, dan zijn we dat lekker.
+— We bepalen zelf wel wanneer we toverkracht gebruiken. En als we ondeugend
+willen zijn, dan zijn we dat lekker.
 
 — Het is niet jullie toverkracht. Die is van iedereen.
 
@@ -46,7 +49,8 @@ Wat is hier aan de hand?
 
 — Je mag alleen toverkracht gebruiken voor iets goeds.
 
-— Ik gebruikte de toverkracht voor iets goeds. Bingo was verdrietig omdat jij niet met haar wilde spelen, en nu is ze weer blij.
+— Ik gebruikte de toverkracht voor iets goeds. Bingo was verdrietig omdat jij
+niet met haar wilde spelen, en nu is ze weer blij.
 
 — Volwassenen moeten met kinderen spelen wanneer de kinderen dat willen.
 
@@ -68,24 +72,25 @@ Wat is hier aan de hand?
 
 — Bingo, je moet me helpen. Geef me jouw toverkracht.
 
-— Iemand kan alleen met je spelen omdat iemand dat wil, niet omdat jij dat afdwingt.
+— Iemand kan alleen met je spelen omdat iemand dat wil, niet omdat jij dat
+afdwingt.
 
 ---
 
 ## Correcties van auto-ondertiteling
 
-| Origineel (auto)   | Correctie       | Reden                      |
-| ------------------- | --------------- | -------------------------- |
-| kertitjes           | klusjes         | Slechte spraakherkenning   |
-| Blie                | Bluey           | Naam niet herkend          |
-| iets goed           | iets goeds      | Grammatica (genitief-s)    |
+| Origineel (auto) | Correctie  | Reden                    |
+| ---------------- | ---------- | ------------------------ |
+| kertitjes        | klusjes    | Slechte spraakherkenning |
+| Blie             | Bluey      | Naam niet herkend        |
+| iets goed        | iets goeds | Grammatica (genitief-s)  |
 
 ## Grammaticale patronen
 
-| Patroon                         | Voorbeeld uit fragment                                  | Uitleg                                       |
-| ------------------------------- | ------------------------------------------------------- | -------------------------------------------- |
-| `daar...mee` (scheidbaar)       | Je mag alleen toveren als je daar anderen **mee** kunt helpen | Voorzetselsplitsing: `daarmee` → `daar...mee` |
-| `omdat` + werkwoord-einde       | Bingo was verdrietig **omdat** jij niet met haar **wilde** spelen | Bijzin: werkwoord naar het einde              |
-| `niet...maar` / `niet...omdat`  | Niet omdat jij dat **afdwingt**                         | Contrast/ontkenning                          |
-| `lekker` (partikel)             | Dan zijn we dat **lekker**                              | Versterkend partikel: "dan doen we dat gewoon" |
-| `had het kunnen weten`          | Ik **had** het **kunnen weten**                         | Voltooide tijd met modaal werkwoord           |
+| Patroon                        | Voorbeeld uit fragment                                            | Uitleg                                         |
+| ------------------------------ | ----------------------------------------------------------------- | ---------------------------------------------- |
+| `daar...mee` (scheidbaar)      | Je mag alleen toveren als je daar anderen **mee** kunt helpen     | Voorzetselsplitsing: `daarmee` → `daar...mee`  |
+| `omdat` + werkwoord-einde      | Bingo was verdrietig **omdat** jij niet met haar **wilde** spelen | Bijzin: werkwoord naar het einde               |
+| `niet...maar` / `niet...omdat` | Niet omdat jij dat **afdwingt**                                   | Contrast/ontkenning                            |
+| `lekker` (partikel)            | Dan zijn we dat **lekker**                                        | Versterkend partikel: "dan doen we dat gewoon" |
+| `had het kunnen weten`         | Ik **had** het **kunnen weten**                                   | Voltooide tijd met modaal werkwoord            |
