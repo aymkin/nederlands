@@ -1,4 +1,4 @@
-# Hoe laat is het? 
+# Hoe laat is het?
 
 Het is één uur.
 
@@ -22,7 +22,7 @@ Het is acht uur.
 
 ​​​​​​​Het is elf uur.
 
-​​​​​​​Het is twaalf uur. 
+​​​​​​​Het is twaalf uur.
 
 Hoe laat is het?
 

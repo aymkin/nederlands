@@ -2,68 +2,46 @@
 
 ## Faiza is op de markt. Ze doet boodschappen.
 
-Verkoper	
-Wie kan ik helpen? Mevrouw? Ja, zeg het maar.
+Verkoper Wie kan ik helpen? Mevrouw? Ja, zeg het maar.
 
-Faiza	
-Ja, ik wil graag een kilo aardappels.
+Faiza Ja, ik wil graag een kilo aardappels.
 
-Verkoper	
-Kijk eens, een kilo aardappels voor u. Anders nog iets?
+Verkoper Kijk eens, een kilo aardappels voor u. Anders nog iets?
 
-Faiza	
-Ja, nog vijf bananen alstublieft.
+Faiza Ja, nog vijf bananen alstublieft.
 
-Verkoper	
-Hè, wat jammer. Ik heb nog maar vier bananen mevrouw. Ze zijn bijna op.
+Verkoper Hè, wat jammer. Ik heb nog maar vier bananen mevrouw. Ze zijn bijna op.
 
-Faiza	
-O, nou ja. Dan neem ik vier bananen. Dat is ook goed.
+Faiza O, nou ja. Dan neem ik vier bananen. Dat is ook goed.
 
-Verkoper	
-Anders nog iets?
+Verkoper Anders nog iets?
 
-Faiza	
-Nee, dank u wel.
+Faiza Nee, dank u wel.
 
-Verkoper	
-Oké. Dat is dan 4,35 alstublieft.
+Verkoper Oké. Dat is dan 4,35 alstublieft.
 
-Faiza	
-Alstublieft.
+Faiza Alstublieft.
 
-Verkoper	
-Ja, dank u wel. Fijne dag nog.
+Verkoper Ja, dank u wel. Fijne dag nog.
 
+Verkoper Wie kan ik helpen?
 
-Verkoper	
-Wie kan ik helpen?
+Faiza Ik. Mag ik 500 gram kaas alsjeblieft?
 
-Faiza	
-Ik. Mag ik 500 gram kaas alsjeblieft?
+Verkoper Alsjeblieft. Anders nog iets?
 
-Verkoper	
-Alsjeblieft. Anders nog iets?
+Faiza Ja, eieren graag.
 
-Faiza	
-Ja, eieren graag.
+Verkoper Hoeveel eieren wil je?
 
-Verkoper	
-Hoeveel eieren wil je?
+Faiza Zes alsjeblieft.
 
-Faiza	
-Zes alsjeblieft.
+Verkoper Kijk eens, zes eieren. Dat is dan 7,65 alsjeblieft.
 
-Verkoper	
-Kijk eens, zes eieren. Dat is dan 7,65 alsjeblieft.
+Faiza Kan ik pinnen?
 
-Faiza	
-Kan ik pinnen?
-
-Verkoper	
-Dat kan.
+Verkoper Dat kan.
 
 Ja, dank je wel. Tot ziens.
 
-Faiza	
-Dag.
+Faiza Dag.

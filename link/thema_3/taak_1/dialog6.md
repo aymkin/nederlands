@@ -16,7 +16,8 @@ Lees de zin. Typ het goede woord in de zin.
 
 [druk, ver]
 
-5. Mijn **broer** is getrouwd met een Nederlandse vrouw. Hij heeft de Nederlandse nationaliteit.
+5. Mijn **broer** is getrouwd met een Nederlandse vrouw. Hij heeft de
+   Nederlandse nationaliteit.
 
 [broer, man]
 
@@ -40,7 +41,8 @@ Lees de zin. Typ het goede woord in de zin.
 
 [ander, zo]
 
-11. Walter is een jaar getrouwd. Zijn vrouw en hij hebben nu **eindelijk** een huis.
+11. Walter is een jaar getrouwd. Zijn vrouw en hij hebben nu **eindelijk** een
+    huis.
 
 [eindelijk, soms]
 
