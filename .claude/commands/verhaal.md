@@ -44,13 +44,13 @@ Parse `$ARGUMENTS` to extract:
 
 ### Difficulty levels
 
-| Level | Label        | Max words/sent | New words | Tenses                    | Discourse markers              |
-| ----- | ------------ | -------------- | --------- | ------------------------- | ------------------------------ |
-| 1     | A2 basis     | 12             | 8-10      | present + perfectum       | want, maar, omdat              |
-| 2     | A2+ (default)| 15             | 12-15     | + imperfectum             | + hoewel, daarom, terwijl      |
-| 3     | A2/B1        | 18             | 15-20     | + modals + passive        | + tenzij, bovendien, zodra     |
-| 4     | B1 basis     | 20             | 20-25     | + conditionalis           | + enerzijds, desondanks        |
-| 5     | B1+          | 25             | 25-30     | all tenses                | full range                     |
+| Level | Label         | Max words/sent | New words | Tenses              | Discourse markers          |
+| ----- | ------------- | -------------- | --------- | ------------------- | -------------------------- |
+| 1     | A2 basis      | 12             | 8-10      | present + perfectum | want, maar, omdat          |
+| 2     | A2+ (default) | 15             | 12-15     | + imperfectum       | + hoewel, daarom, terwijl  |
+| 3     | A2/B1         | 18             | 15-20     | + modals + passive  | + tenzij, bovendien, zodra |
+| 4     | B1 basis      | 20             | 20-25     | + conditionalis     | + enerzijds, desondanks    |
+| 5     | B1+           | 25             | 25-30     | all tenses          | full range                 |
 
 ## Step 3: Generate story
 
@@ -97,11 +97,11 @@ gemeente, huisarts, daily life. Never abstract or fairy-tale.
    naturally (not forced into every paragraph)
 6. **50% narrative / 50% dialogue** — alternate between action and conversation
 7. **Sentence length** — respect the level's maximum words per sentence
-8. **Register: zakelijk/informeel** — modern spoken Dutch, not textbook.
-   Use `je` not `jij`, `m'n` not `mijn` where natural.
-9. **Anti-bureaucratic** — avoid: vermelden (use toevoegen/zetten),
-   bij de organisatie (use binnen het bedrijf), desalniettemin (use toch),
-   ten behoeve van (use voor)
+8. **Register: zakelijk/informeel** — modern spoken Dutch, not textbook. Use
+   `je` not `jij`, `m'n` not `mijn` where natural.
+9. **Anti-bureaucratic** — avoid: vermelden (use toevoegen/zetten), bij de
+   organisatie (use binnen het bedrijf), desalniettemin (use toch), ten behoeve
+   van (use voor)
 10. **Nouns include articles**: de keuken, het kantoor, de trein
 
 ### Length calibration
@@ -134,21 +134,19 @@ _{Character names} — Woorden uit {source}_
 
 _Woorden die niet in de woordenlijst staan, maar wel in dit verhaal:_
 
-| Nederlands | Русский | English |
-| --- | --- | --- |
-| het raadsel | загадка | riddle |
-| ... | ... | ... |
+| Nederlands  | Русский | English |
+| ----------- | ------- | ------- |
+| het raadsel | загадка | riddle  |
+| ...         | ...     | ...     |
 ```
 
 If `--retelling` is requested, add between narrative and questions:
 
 ```markdown
 ---
-
 ## Hetzelfde verhaal — nu van {character name}
 
-{Retelling from different POV, ik-form, same events, different observations}
-
+{ Retelling from different POV, ik-form, same events, different observations }
 ---
 ```
 
@@ -157,30 +155,30 @@ If `--retelling` is requested, add between narrative and questions:
 **Type 1 — Detail + wrong premise (2-3 questions):**
 
 ```markdown
-**1.** Sophie werkt bij een bank.
-_Klopt dat?_
-Nee, Sophie **werkt** niet bij een bank. Ze **werkt** bij een IT-bedrijf.
+**1.** Sophie werkt bij een bank. _Klopt dat?_ Nee, Sophie **werkt** niet bij
+een bank. Ze **werkt** bij een IT-bedrijf.
 ```
 
 **Type 2 — Open "waarom" question (1-2 questions):**
 
 ```markdown
-**4.** Waarom **wil** Alexander niet met de trein gaan?
-Omdat hij de vorige keer te laat **was** en zijn collega boos **werd**.
+**4.** Waarom **wil** Alexander niet met de trein gaan? Omdat hij de vorige keer
+te laat **was** en zijn collega boos **werd**.
 ```
 
 **Type 3 — Fill in the blank (1 question):**
 
 ```markdown
-**5.** Vul in: Sophie **loopt** naar de ___ en **pakt** een ___ uit de kast.
+**5.** Vul in: Sophie **loopt** naar de **_ en **pakt** een _** uit de kast.
 ```
 
 **Type 4 — Student exercise (1-2 questions):**
 
 ```markdown
 <!-- TODO(human) -->
-**6.** Wat **denk** jij? Heeft Alexander gelijk?
-Schrijf 2-3 zinnen in het Nederlands.
+
+**6.** Wat **denk** jij? Heeft Alexander gelijk? Schrijf 2-3 zinnen in het
+Nederlands.
 ```
 
 ### Quality checks after generation
@@ -208,8 +206,8 @@ Determine save path:
 
 Create directory with `mkdir -p` if needed. After saving, suggest:
 
-1. **Audio version**: `python3 scripts/story_reader.py {path}` — generates
-   HTML with TTS audio and synchronized sentence highlighting.
-   Note: works best with only the narrative section (before `## Vragen`).
-2. **Anki cards**: run `/anki-cards` with the woordenlijst table if the
-   student wants flashcards from the new vocabulary.
+1. **Audio version**: `python3 scripts/story_reader.py {path}` — generates HTML
+   with TTS audio and synchronized sentence highlighting. Note: works best with
+   only the narrative section (before `## Vragen`).
+2. **Anki cards**: run `/anki-cards` with the woordenlijst table if the student
+   wants flashcards from the new vocabulary.

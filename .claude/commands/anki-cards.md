@@ -57,13 +57,13 @@ Amsterdam or Utrecht today. Not a textbook, not a government letter.
 
 ### Anti-patterns to AVOID
 
-| Bureaucratic / bookish | Use instead | Why |
-|---|---|---|
-| vermelden | toevoegen, zetten | vermelden = official reports |
-| bij de organisatie | binnen het bedrijf, bij ons | bij sounds like "visiting" |
-| Kunt je? (with je) | Kun je? | -t drops in inversion with je |
-| ten behoeve van | voor | bureaucratic |
-| desalniettemin | toch, maar toch | literary |
+| Bureaucratic / bookish | Use instead                 | Why                           |
+| ---------------------- | --------------------------- | ----------------------------- |
+| vermelden              | toevoegen, zetten           | vermelden = official reports  |
+| bij de organisatie     | binnen het bedrijf, bij ons | bij sounds like "visiting"    |
+| Kunt je? (with je)     | Kun je?                     | -t drops in inversion with je |
+| ten behoeve van        | voor                        | bureaucratic                  |
+| desalniettemin         | toch, maar toch             | literary                      |
 
 ### Quality checks after generation
 
@@ -76,5 +76,5 @@ Amsterdam or Utrecht today. Not a textbook, not a government letter.
 
 ## Step 4: Save output
 
-Save the generated cards to the appropriate location following naming convention:
-`woordenlijst_thema{N}_taak{N}_anki.txt`
+Save the generated cards to the appropriate location following naming
+convention: `woordenlijst_thema{N}_taak{N}_anki.txt`
