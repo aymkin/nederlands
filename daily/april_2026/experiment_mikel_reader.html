@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experiment: Метод Микеля</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:#faf9f6;color:#2c2c2c;
+  line-height:1.85;
+}
+.wrap{
+  max-width:620px;margin:0 auto;
+  padding:48px 20px 80px;
+}
+h1{
+  font-size:1.4em;font-weight:700;
+  color:#333;margin-bottom:6px;
+}
+.meta{
+  font-size:0.85em;color:#888;
+  margin-bottom:28px;line-height:1.5;
+}
+.meta a{color:#666;text-decoration:underline}
+h2{
+  font-size:1.15em;font-weight:600;
+  color:#555;margin:36px 0 12px;
+  border-bottom:1px solid #e5e2db;
+  padding-bottom:6px;
+}
+h3{
+  font-size:1.05em;font-weight:600;
+  color:#666;margin:24px 0 8px;
+}
+p{font-size:1.2em;margin:12px 0}
+strong{color:#1a5f2a}
+em{color:#666}
+ul,ol{font-size:1.2em;margin:10px 0;padding-left:24px}
+li{margin:6px 0}
+hr{border:none;border-top:1px solid #e5e2db;margin:28px 0}
+code{
+  background:#f0f0ec;padding:2px 6px;border-radius:4px;
+  font-size:0.9em;font-family:"SF Mono",Menlo,monospace;
+}
+pre{
+  background:#f0f0ec;padding:14px 16px;border-radius:8px;
+  font-size:0.95em;overflow-x:auto;margin:12px 0;
+  font-family:"SF Mono",Menlo,monospace;
+  line-height:1.6;white-space:pre-wrap;
+}
+table{
+  width:100%;border-collapse:collapse;
+  font-size:1.05em;margin:12px 0;
+}
+th{
+  background:#f0f0ec;font-weight:600;
+  text-align:left;padding:8px 10px;
+  border-bottom:2px solid #ddd;
+  font-size:0.9em;color:#555;
+}
+td{
+  padding:8px 10px;
+  border-bottom:1px solid #eee;
+  vertical-align:top;
+}
+.check{font-size:1.15em;margin:8px 0;padding-left:8px}
+.box{
+  display:inline-block;width:22px;height:22px;
+  border:2px solid #ccc;border-radius:4px;
+  vertical-align:middle;margin-right:8px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Experiment: Метод Микеля</h1>
+<div class="meta">
+  Language Islands + Pre-input Comprehension<br>
+  Период: 14&ndash;30 апреля 2026<br>
+  <a href="https://youtu.be/_wYjXdt4a2I">Mikel Superpoliglot</a> &mdash; адаптация
+</div>
+
+<hr>
+
+<h2>Гипотеза</h2>
+
+<p>Ежедневная запись повседневных фраз (self-talk) с переводом на нидерландский даст более быстрое усвоение <em>личной</em> лексики, чем изучение по учебнику.</p>
+
+<p><strong>Не гонимся за 6 неделями.</strong> Цель &mdash; построить базу из личных тем (&laquo;о себе&raquo;), которая станет фундаментом для грамматики, лексики, паттернов. Фрагментарно в начале &mdash; потом строим мосты между островами.</p>
+
+<hr>
+
+<h2>Два потока</h2>
+
+<h3>Поток 1: Language Islands (ежедневно)</h3>
+<ol>
+  <li>В течение дня записывать self-talk через speech-to-text (русский)</li>
+  <li>Вечером/следующим утром &mdash; принести текст в Claude</li>
+  <li>Claude: очищает, переводит, создаёт файл + Anki карточки</li>
+  <li>Учить: shadowing + active recall по своим фразам</li>
+</ol>
+
+<h3>Поток 2: Pre-input Comprehension (1&ndash;2 раза в неделю)</h3>
+<ol>
+  <li>Выбрать видео на нидерландском</li>
+  <li>Скачать субтитры &rarr; нормализовать &rarr; reader.html</li>
+  <li>Прочитать текст на телефоне, пометить незнакомое</li>
+  <li>Выучить незнакомые слова</li>
+  <li>Посмотреть видео &mdash; теперь ~70&ndash;80% понятно</li>
+</ol>
+
+<hr>
+
+<h2>Daily workflow</h2>
+
+<pre>Утро:      Shadowing вчерашних фраз (в дороге, 15-20 мин)
+День:      Записывать self-talk (speech-to-text, фоново)
+Вечер:     Принести текст → Claude → новые islands
+           Active recall по всем islands (10-15 мин)
+Перед сном: Anki — islands карточки (10 мин)</pre>
+
+<hr>
+
+<h2>Трекинг</h2>
+
+<table>
+  <tr><th>Неделя</th><th>Islands</th><th>Фраз NL</th><th>Anki</th><th>Видео</th><th>Заметки</th></tr>
+  <tr><td>W1 (14&ndash;18)</td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>W2 (21&ndash;25)</td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>W3 (28&ndash;30)</td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<hr>
+
+<h2>Критерии успеха к 30 апреля</h2>
+
+<p class="check"><span class="box"></span>10+ дней с Language Islands записями</p>
+<p class="check"><span class="box"></span>150+ личных фраз переведено на NL</p>
+<p class="check"><span class="box"></span>2+ видео обработано через pre-input comprehension</p>
+<p class="check"><span class="box"></span>Могу описать свой день на NL (10 предложений без подглядывания)</p>
+<p class="check"><span class="box"></span>Субъективно: &laquo;свои&raquo; фразы выходят легче учебниковых</p>
+
+</div>
+</body>
+</html>
