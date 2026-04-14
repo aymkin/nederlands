@@ -169,7 +169,7 @@ te laat **was** en zijn collega boos **werd**.
 **Type 3 — Fill in the blank (1 question):**
 
 ```markdown
-**5.** Vul in: Sophie **loopt** naar de **_ en **pakt** een _** uit de kast.
+**5.** Vul in: Sophie **loopt** naar de **\_ en **pakt** een \_** uit de kast.
 ```
 
 **Type 4 — Student exercise (1-2 questions):**

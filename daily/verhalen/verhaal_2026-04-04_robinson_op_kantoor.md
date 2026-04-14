@@ -1020,8 +1020,8 @@ telefoon leeg **is** en hij geen **oplader** **heeft**.
 **4.** Wat **vindt** Mark in de kantine? Hij **vindt** twee boterhammen met
 kaas, een fles melk en een appel.
 
-**5.** Vul in: Mark **loopt** naar de **_ en **duwt** tegen de deur. Maar de
-deur **gaat** niet _**. (nooduitgang, open)
+**5.** Vul in: Mark **loopt** naar de **\_ en **duwt** tegen de deur. Maar de
+deur **gaat** niet \_**. (nooduitgang, open)
 
 <!-- TODO(human) -->
 

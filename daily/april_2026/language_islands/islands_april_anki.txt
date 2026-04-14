@@ -1,0 +1,42 @@
+#separator:tab
+#html:true
+#columns:Nederlands	Русский	Grammatica	Tags
+#tags column:4
+#notetype:Language Islands
+Er klopt hier iets niet.	Что-то тут не так.	<i>kloppen</i> = быть правильным	islands::april::dag_13::dagelijks
+Ik snap niet wat — er gaat iets mis.	Я не понимаю что — что-то идёт не так.	<i>snappen</i> = понимать (informeel)	islands::april::dag_13::dagelijks
+Ik ben al een heel jaar in Nederland.	Целый год я в Нидерландах.	<i>al</i> = уже (длительность)	islands::april::dag_13::dagelijks
+Het lijkt alsof ik al een heel jaar de taal probeer te leren.	Как будто целый год я пытаюсь выучить язык.	<i>het lijkt alsof</i> = как будто	islands::april::dag_13::dagelijks
+Ik heb mijn laptop uit mijn rugzak gehaald.	Я достал ноутбук из рюкзака.	<i>halen uit</i> = доставать из	islands::april::dag_13::werk
+Ik heb hem op tafel gelegd.	Положил его на стол.	<i>leggen</i> (класть) vs <i>liggen</i> (лежать)	islands::april::dag_13::werk
+Daarna sluit ik mijn laptop aan op het beeldscherm.	Потом я подключаю ноутбук к монитору.	<i>aansluiten op</i> = подключать к	islands::april::dag_13::werk
+Ik ben bijna klaar om te werken.	Я почти готов к работе.	<i>klaar om te</i> + inf.	islands::april::dag_13::werk
+Maar eerst moet ik naar het toilet.	Перед этим мне надо пойти в туалет.	<i>eerst</i> = сначала	islands::april::dag_13::dagelijks
+Luister naar het liedje dat ik je twee dagen geleden heb gestuurd.	Послушай песню, которую я тебе выслал 2 дня назад.	<i>geleden</i> = назад (после числа)	islands::april::dag_13::sociaal
+Vanavond is er een diner in de bibliotheek, weet je dat nog?	Сегодня вечером ужин в библиотеке, ты помнишь?	<i>weet je dat nog?</i> = помнишь?	islands::april::dag_13::sociaal
+Ik heb je een foto gestuurd om te checken hoe ik eruitzag.	Я отправил фото, чтобы проверить мой вид.	<i>eruitzien</i> = выглядеть	islands::april::dag_13::sociaal
+Geef me alsjeblieft feedback.	Дай, пожалуйста, обратную связь.		islands::april::dag_13::sociaal
+Ik ging bijna op tijd lunchen, net na twaalven.	Я пошёл на обед почти вовремя, сразу после 12.	<i>net na</i> = сразу после	islands::april::dag_13::eten
+Ik heb voor je lunch iets met veel eiwit gehaald.	Я взял тебе что-то богатое протеином.	<i>het eiwit</i> = белок	islands::april::dag_13::eten
+Ik had ook een salade van sla, tomaten, radijs, selderij, kappertjes en eiwit.	У меня был салат из листьев, томатов, редиски, сельдерея, каперсов, яичного белка.	<i>de sla</i> = салат-латук	islands::april::dag_13::eten
+Ik heb hem met honingmosterddressing gedaan.	Заправил соусом хани мастард.	<i>de honing</i> = мёд, <i>de mosterd</i> = горчица	islands::april::dag_13::eten
+Tijdens de lunch heb ik met Devi over kinderen gepraat.	Во время обеда я разговаривал с Деви о детях.	<i>praten over</i> = говорить о	islands::april::dag_13::sociaal
+Ik vroeg hem naar zijn jongste zoon.	Я спросил его про его младшего сына.	<i>vragen naar</i> = спрашивать о	islands::april::dag_13::sociaal
+Ik vertelde over Iliko — hoe hij slaapt en hoe hij Nederlands spreekt.	Я рассказал про Илико — как он спит и как говорит на нидерландском.	<i>vertellen over</i> = рассказывать о	islands::april::dag_13::sociaal
+Iliko doet het goed op school.	Илико делает успехи в школе.	<i>het goed doen</i> = хорошо справляться	islands::april::dag_13::sociaal
+Hij redt het goed met Nederlands.	Он хорошо справляется с нидерландским.	<i>het redden</i> = справляться	islands::april::dag_13::sociaal
+Ik wist niet hoe ik "gezondheid" moest zeggen na een nies.	Я не знал, как сказать «будь здоров» после чиха.	<b>Gezondheid!</b> = будь здоров	islands::april::dag_13::dagelijks
+Ik moest Google gebruiken.	Мне пришлось использовать Google.	<i>moeten</i> в прошедшем = <i>moest</i>	islands::april::dag_13::dagelijks
+Ik ga pelmeni maken — vier porties.	Я буду готовить пельмени — четыре порции.	<i>gaan</i> + inf. = будущее время	islands::april::dag_13::eten
+Ik sport graag.	Я люблю заниматься спортом.	<i>graag</i> после глагола = люблю	islands::april::dag_14::sport
+Je kunt zeggen dat ik gek ben op sport.	Можно сказать, я фанатею от спорта.	<i>gek zijn op</i> = фанатеть	islands::april::dag_14::sport
+Meestal ga ik drie keer per week naar de sportschool.	Обычно я хожу в зал три раза в неделю.	inversie: <i>meestal</i> → <i>ga ik</i>	islands::april::dag_14::sport
+Mijn sportdagen zijn dinsdag, vrijdag en zondag.	Мои дни занятий — вт, пт и вс.		islands::april::dag_14::sport
+Op dinsdag en vrijdag heb ik een zware training.	Во вторник и пятницу у меня тяжёлая тренировка.	<i>op</i> + dag = в (день недели)	islands::april::dag_14::sport
+Op zondag heb ik een lichte training.	В воскресенье — лёгкая тренировка.	<i>zwaar</i> ↔ <i>licht</i>	islands::april::dag_14::sport
+Elke training doe ik twee rondes van zes oefeningen.	Каждую тренировку я делаю два круга из шести упражнений.	<i>de ronde</i>, <i>de oefening</i>	islands::april::dag_14::sport
+In de eerste ronde gebruik ik heel zware gewichten met weinig herhalingen.	В первом круге — большие веса и мало повторений.	<i>het gewicht</i> = вес	islands::april::dag_14::sport
+De eerste ronde is bedoeld voor kracht en power.	Первый круг — для силы и мощности.	<i>bedoeld voor</i> = предназначен для	islands::april::dag_14::sport
+De tweede ronde is meer voor spieropbouw.	Второй круг — для наращивания мышц.	<i>de spieropbouw</i> = спиеропбоу	islands::april::dag_14::sport
+Lagere gewichten en meer herhalingen, van acht tot twaalf.	Веса ниже и больше повторений, от 8 до 12.	<i>lager</i> = ниже (ср. ст. <i>laag</i>)	islands::april::dag_14::sport
+Op zondag zijn de gewichten en herhalingen in elke ronde hetzelfde.	В воскресенье веса и повторения одинаковые.	<i>hetzelfde</i> = одинаковый	islands::april::dag_14::sport
