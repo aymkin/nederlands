@@ -30,18 +30,21 @@ VOICES = {
 # ─── Parsing ──────────────────────────────────────────────────────────
 
 
+STOP_HEADINGS = {"## Vragen", "## Woordenlijst"}
+
+
 def parse_sentences(md_path: Path) -> list[str]:
     """Read MD file, return narrative sentences only.
 
-    Stops at second-level headings (## Vragen, ## Woordenlijst, etc.).
-    Skips horizontal rules, blockquotes, table rows, HTML comments,
-    and italic-only metadata lines.
+    Stops at known non-narrative headings (## Vragen, ## Woordenlijst).
+    Skips other headings, horizontal rules, blockquotes, table rows,
+    HTML comments, and italic-only metadata lines.
     """
     sentences = []
     with open(md_path, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
-            if line.startswith("## "):
+            if any(line.startswith(h) for h in STOP_HEADINGS):
                 break
             if not line or line.startswith("#"):
                 continue
