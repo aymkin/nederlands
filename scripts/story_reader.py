@@ -20,6 +20,19 @@ import sys
 import tempfile
 from pathlib import Path
 
+# Optional: Whisper forced alignment (reuses helpers from audio_to_anki.py)
+try:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from audio_to_anki import (
+        transcribe_with_whisper,
+        extract_words_from_whisper,
+        find_best_match,
+        normalize_text,
+    )
+    WHISPER_AVAILABLE = True
+except ImportError:
+    WHISPER_AVAILABLE = False
+
 VOICES = {
     "colette": "nl-NL-ColetteNeural",
     "fenna": "nl-NL-FennaNeural",
@@ -154,6 +167,79 @@ def match_timings(sentences: list[str], cues: list[dict]) -> list[dict]:
         timings.append({"start": start, "end": end})
 
     return timings
+
+
+# ─── Whisper Forced Alignment ────────────────────────────────────────
+
+
+def align_timings_whisper(sentences: list[str], mp3_path: Path) -> list[dict]:
+    """Forced alignment via Whisper — ~95% precise sentence boundaries.
+
+    Replaces VTT-cue greedy matching. Whisper transcribes the MP3 with
+    word-level timestamps; each MD sentence is matched against the word
+    stream via sliding-window fuzzy matching (SequenceMatcher).
+    """
+    whisper_data = transcribe_with_whisper(mp3_path, word_timestamps=True)
+    whisper_words = extract_words_from_whisper(whisper_data)
+    if not whisper_words:
+        return [{"start": 0, "end": 0} for _ in sentences]
+
+    raw_timings: list[dict | None] = []
+    search_idx = 0
+    matched = 0
+
+    for sent in sentences:
+        plain = strip_md(sent)
+        words = normalize_text(plain).split()
+        if not words:
+            raw_timings.append(None)
+            continue
+        match = find_best_match(words, whisper_words, search_idx)
+        if match:
+            raw_timings.append({"start": match["start"], "end": match["end"]})
+            search_idx = match["match_idx"]
+            matched += 1
+        else:
+            raw_timings.append(None)
+
+    print(f"Aligned {matched} / {len(sentences)} sentences")
+    audio_end = whisper_words[-1]["end"] if whisper_words else 0
+    return _interpolate_gaps(raw_timings, audio_end)
+
+
+def _interpolate_gaps(timings: list[dict | None], audio_end: float) -> list[dict]:
+    """Replace None entries with interpolated spans between known neighbors."""
+    n = len(timings)
+    result: list[dict] = []
+    i = 0
+    while i < n:
+        t = timings[i]
+        if t is not None:
+            result.append(t)
+            i += 1
+            continue
+        # Find previous known end
+        prev_end = 0.0
+        for j in range(i - 1, -1, -1):
+            if timings[j] is not None:
+                prev_end = timings[j]["end"]
+                break
+        # Find next known start and count consecutive Nones
+        gap_count = 1
+        next_start = audio_end
+        for j in range(i + 1, n):
+            if timings[j] is None:
+                gap_count += 1
+            else:
+                next_start = timings[j]["start"]
+                break
+        # Equal split across consecutive Nones
+        span = max(0.0, (next_start - prev_end) / gap_count)
+        for k in range(gap_count):
+            start = prev_end + span * k
+            result.append({"start": start, "end": start + span})
+        i += gap_count
+    return result
 
 
 # ─── HTML Generation ─────────────────────────────────────────────────
@@ -365,6 +451,11 @@ def main():
         default=None,
         help="Output HTML path (default: <input_stem>_reader.html next to input)",
     )
+    parser.add_argument(
+        "--no-align",
+        action="store_true",
+        help="Skip Whisper forced alignment, use VTT greedy matching fallback",
+    )
     args = parser.parse_args()
 
     input_path = args.input.resolve()
@@ -396,18 +487,22 @@ def main():
         print(f"Generating audio ({args.voice})...")
         generate_tts(full_text, voice_id, mp3, vtt)
 
-        # 3. Parse VTT
-        cues = parse_vtt(vtt)
-        print(f"VTT cues: {len(cues)}")
-
-        if len(cues) != len(sentences):
-            print(
-                f"  Warning: cue count ({len(cues)}) != sentence count "
-                f"({len(sentences)}), using greedy matching"
-            )
-
-        # 4. Match timings
-        timings = match_timings(sentences, cues)
+        # 3. Align timings — Whisper forced alignment (default) or VTT greedy fallback
+        if WHISPER_AVAILABLE and not args.no_align:
+            print("Aligning with Whisper (forced alignment)...")
+            timings = align_timings_whisper(sentences, mp3)
+        else:
+            if not WHISPER_AVAILABLE and not args.no_align:
+                print("Warning: whisper not importable, using VTT greedy fallback")
+                print("  Install: pip install openai-whisper")
+            cues = parse_vtt(vtt)
+            print(f"VTT cues: {len(cues)}")
+            if len(cues) != len(sentences):
+                print(
+                    f"  Warning: cue count ({len(cues)}) != sentence count "
+                    f"({len(sentences)}), using greedy matching"
+                )
+            timings = match_timings(sentences, cues)
 
         # 5. Build HTML
         page = build_html(sentences, timings, mp3, title)
