@@ -2,5 +2,13 @@
   "proseWrap": "always",
   "printWidth": 80,
   "tabWidth": 2,
-  "useTabs": false
+  "useTabs": false,
+  "overrides": [
+    {
+      "files": "daily/verhalen/**/*.md",
+      "options": {
+        "proseWrap": "never"
+      }
+    }
+  ]
 }
