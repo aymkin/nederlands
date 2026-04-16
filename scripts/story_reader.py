@@ -49,19 +49,19 @@ STOP_HEADINGS = {"## Vragen", "## Woordenlijst"}
 def parse_sentences(md_path: Path) -> list[str]:
     """Read MD file, return narrative sentences only.
 
+    Handles both one-sentence-per-line and Prettier-wrapped paragraphs.
     Stops at known non-narrative headings (## Vragen, ## Woordenlijst).
-    Skips other headings, horizontal rules, blockquotes, table rows,
+    Skips headings, horizontal rules, blockquotes, table rows,
     HTML comments, and italic-only metadata lines.
     """
-    sentences = []
+    raw_lines: list = []  # str = content, None = paragraph break
     with open(md_path, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
             if any(line.startswith(h) for h in STOP_HEADINGS):
                 break
-            if not line or line.startswith("#"):
-                continue
-            if line == "---":
+            if not line or line.startswith("#") or line == "---":
+                raw_lines.append(None)
                 continue
             if line.startswith(">") or line.startswith("|"):
                 continue
@@ -69,8 +69,80 @@ def parse_sentences(md_path: Path) -> list[str]:
                 continue
             if line.startswith("_") and line.endswith("_") and not line.startswith("__"):
                 continue
-            sentences.append(line)
+            raw_lines.append(line)
+
+    # Merge continuation lines into paragraphs (handles Prettier proseWrap)
+    paragraphs: list[str] = []
+    buf: list[str] = []
+    for item in raw_lines:
+        if item is None:
+            if buf:
+                paragraphs.append(" ".join(buf))
+                buf = []
+        else:
+            buf.append(item)
+    if buf:
+        paragraphs.append(" ".join(buf))
+
+    # Split each paragraph into individual sentences
+    sentences: list[str] = []
+    for para in paragraphs:
+        sentences.extend(_split_paragraph(para))
+
     return sentences
+
+
+_NEW_SENT_RE = re.compile(r'\s+(?:["\u201c]?(?:\*\*)?[A-Z\u00c0-\u00d6\u00d8-\u00de]|\*\*[A-Z\u00c0-\u00d6\u00d8-\u00de])')
+
+
+def _split_paragraph(text: str) -> list[str]:
+    """Split a paragraph into sentences, keeping quoted dialogue intact.
+
+    Tracks quote state so that .!? inside "dialogue" don't trigger splits.
+    Also detects standalone quoted sentences ending with !" ." ?"
+    """
+    parts: list[str] = []
+    start = 0
+    in_quotes = False
+    i = 0
+
+    while i < len(text):
+        ch = text[i]
+
+        if ch == '"':
+            was_in = in_quotes
+            in_quotes = not in_quotes
+            # Closing quote right after .!? → standalone quoted sentence
+            if was_in and not in_quotes and i > 0 and text[i - 1] in ".!?":
+                rest = text[i + 1:]
+                if not rest.strip() or _NEW_SENT_RE.match(rest):
+                    parts.append(text[start:i + 1].strip())
+                    start = i + 1
+                    while start < len(text) and text[start] == " ":
+                        start += 1
+                    i = start
+                    continue
+
+        elif ch in ".!?" and not in_quotes:
+            rest = text[i + 1:]
+            if not rest.strip():
+                parts.append(text[start:i + 1].strip())
+                start = i + 1
+            elif _NEW_SENT_RE.match(rest):
+                parts.append(text[start:i + 1].strip())
+                start = i + 1
+                while start < len(text) and text[start] == " ":
+                    start += 1
+                i = start
+                continue
+
+        i += 1
+
+    remaining = text[start:].strip()
+    if remaining:
+        parts.append(remaining)
+
+    return [p for p in parts if p]
 
 
 def md_to_html(text: str) -> str:

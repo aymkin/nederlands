@@ -3,3 +3,5 @@ node_modules/
 *.mp3
 *.docx
 *_anki.txt
+**/verhaal_*.md
+*_reader.html
