@@ -1,0 +1,32 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+de dochter	Mijn dochter is achttien. Ze studeert in Utrecht en komt elk weekend thuis.	дочь	Моей дочери восемнадцать. Учится в Утрехте и приезжает на выходные домой.	link::thema6::taak2::A2
+duidelijk	Sorry, het is niet echt duidelijk voor mij. Wat bedoel je precies?	ясный, понятный	Извини, мне это не очень понятно. Что ты имеешь в виду?	link::thema6::taak2::A2
+eerst	Eerst koffie, dan werken. Zo doe ik het altijd 's ochtends.	сначала, сперва	Сначала кофе, потом работа. Так я всегда делаю по утрам.	link::thema6::taak2::A2
+eventueel	We gaan morgen naar de stad. Eventueel halen we ook wat voor jou?	возможно, при случае	Завтра едем в город. Если что, купим что-нибудь и тебе?	link::thema6::taak2::A2
+geloven	Ik geloof dat de winkel om negen uur opengaat. Je kunt bellen om zeker te weten.	верить; полагать	Мне кажется, магазин открывается в девять. Можешь позвонить, чтобы точно знать.	link::thema6::taak2::A2
+het idee	Dat is een goed idee, hoor! Daar had ik zelf niet aan gedacht.	идея	Это хорошая идея! Сама бы я до такого не додумалась.	link::thema6::taak2::A2
+de kleren	Ik heb vandaag nieuwe kleren gekocht. Ze staan me echt goed.	одежда	Сегодня купила новую одежду. Правда мне идёт.	link::thema6::taak2::A2
+links	Hallo, mag ik vragen waar de bakker is? — Ja, die is hier links.	налево; слева	Здравствуйте, можно спросить, где пекарня? — Да, она здесь слева.	link::thema6::taak2::A2
+linksaf	Bij de supermarkt ga je linksaf, en dan sta je er bijna.	налево (поворот)	У супермаркета поверни налево, и ты почти на месте.	link::thema6::taak2::A2
+lopen	Ik loop iedere dag naar m'n werk. Het is vlakbij!	идти, ходить пешком	Я каждый день хожу на работу пешком. Это совсем рядом!	link::thema6::taak2::A2
+mam	Mam! Kun je straks m'n vriendin ophalen van het station?	мам	Мам! Ты можешь потом забрать мою подругу с вокзала?	link::thema6::taak2::A2
+mezelf	Ik kook nu vaker voor mezelf. Dat is gezonder én goedkoper.	себя самого(-ую); для себя	Я теперь чаще готовлю для себя. И полезнее, и дешевле.	link::thema6::taak2::A2
+naartoe	Waar ga je naartoe? — Naar de supermarkt, heb je nog iets nodig?	куда (направление)	Ты куда? — В магазин, тебе ничего не нужно?	link::thema6::taak2::A2
+de plattegrond	Kun je even de plattegrond openen in je app? Ik weet niet waar we zijn.	карта (плана города), схема	Можешь открыть карту в приложении? Не знаю, где мы.	link::thema6::taak2::A2
+rechtdoor	U gaat nog vijf minuten rechtdoor en dan staat u bij het gemeentehuis.	прямо	Идите ещё пять минут прямо, и вы у ратуши.	link::thema6::taak2::A2
+de rechterkant	Aan de rechterkant zie je een grote school. Daar moet je zijn.	правая сторона	Справа увидишь большую школу. Тебе туда.	link::thema6::taak2::A2
+rechts	Kijk eens rechts! Zie je die leuke hond?	направо; справа	Посмотри направо! Видишь эту милую собаку?	link::thema6::taak2::A2
+rechtsaf	U gaat hier nog twintig meter, en dan rechtsaf. Daar is de winkel.	направо (поворот)	Идите ещё двадцать метров, потом направо. Там магазин.	link::thema6::taak2::A2
+de route	Weet je de route naar de supermarkt? Ik kom hier nog niet zo vaak.	маршрут, дорога	Ты знаешь, как добраться до магазина? Я тут ещё не так часто бываю.	link::thema6::taak2::A2
+slim	M'n vriendin is heel slim. Ze leert elke dag Nederlands en begrijpt nu bijna alles.	умный, сообразительный	Моя подруга очень умная. Каждый день учит нидерландский и теперь почти всё понимает.	link::thema6::taak2::A2
+het stuk	Wil je nog een stuk brood? Er is echt genoeg.	кусок, часть	Хочешь ещё кусок хлеба? Правда много.	link::thema6::taak2::A2
+tegenover	Ik zit in de trein, tegenover een lieve oude vrouw.	напротив	Сижу в поезде напротив милой пожилой женщины.	link::thema6::taak2::A2
+tekenen	Ik teken het even snel op een papiertje. Dan zie je het meteen.	рисовать, чертить	Сейчас быстро нарисую на бумажке. Сразу увидишь.	link::thema6::taak2::A2
+terug	Kom je morgen terug van je vakantie? Ik heb wat voor je.	обратно, назад	Завтра возвращаешься из отпуска? У меня кое-что для тебя есть.	link::thema6::taak2::A2
+het tijdje	Ik heb hem al een tijdje niet meer gezien. Hoe gaat het nu met hem?	немного времени, некоторое время	Я его уже какое-то время не видела. Как у него сейчас дела?	link::thema6::taak2::A2
+uitleggen	M'n moeder legt altijd rustig alles uit. Daarom snap ik haar goed.	объяснять	Моя мама всегда всё спокойно объясняет. Поэтому я её хорошо понимаю.	link::thema6::taak2::A2
+winkelen	Ik ga morgen winkelen in Utrecht. Ga je mee?	ходить по магазинам	Я завтра еду по магазинам в Утрехт. Пойдёшь со мной?	link::thema6::taak2::A2

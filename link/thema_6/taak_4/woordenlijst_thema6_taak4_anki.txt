@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+de benzine	Benzine is zo duur geworden. Daarom fietsen meer mensen nu.	бензин	Бензин стал таким дорогим. Поэтому больше людей ездят на велосипеде.	link::thema6::taak4::A2
+duren	De les duurt een uur. Daarna ga ik snel naar huis.	длиться, продолжаться	Урок идёт час. Потом быстро домой.	link::thema6::taak4::A2
+erg	Ik vind het erg vervelend dat je niet komt. Misschien volgende keer?	очень; неприятный, серьёзный	Мне очень жаль, что ты не придёшь. Может, в следующий раз?	link::thema6::taak4::A2
+de halte	Ik wacht bij de halte. Ik zie je daar, oké?	остановка	Я жду на остановке. Увидимся там, ок?	link::thema6::taak4::A2
+handig	Het is handig om bij de supermarkt te wonen. Zo hoef ik niet ver te fietsen.	удобный, сподручный	Удобно жить у супермаркета. Так не надо далеко ехать на велосипеде.	link::thema6::taak4::A2
+haten	Ik haat het om lang te wachten. Eén minuut is al genoeg!	ненавидеть	Ненавижу долго ждать. Одной минуты уже достаточно!	link::thema6::taak4::A2
+helemaal	Ik heb het helemaal niet koud vandaag. Lekker warm buiten, hè?	совсем, полностью	Мне совсем не холодно сегодня. Приятно тепло на улице, правда?	link::thema6::taak4::A2
+irritant	Wat irritant, m'n sleutels zijn weer kwijt. Waar zijn ze nou?	раздражающий	Как бесит — опять ключи потерялись. Где же они?	link::thema6::taak4::A2
+kosten	Wat kost een kilo bananen? — Drie euro, alstublieft.	стоить	Сколько стоит килограмм бананов? — Три евро, пожалуйста.	link::thema6::taak4::A2
+de kou	Ik vind de kou echt vervelend. Daarom ga ik nu naar m'n warme bed.	холод	Мне правда холод не по душе. Поэтому сейчас иду в тёплую постель.	link::thema6::taak4::A2
+het milieu	Voor het milieu fietsen we vaker. Dan doen we ons best.	окружающая среда	Ради природы чаще ездим на велосипеде. Стараемся.	link::thema6::taak4::A2
+de nieuwsbrief	Heb je de nieuwsbrief van de school al gezien? Nieuwe regels vanaf maandag!	рассылка, информационное письмо	Видел рассылку от школы? С понедельника новые правила!	link::thema6::taak4::A2
+het ov	In Nederland nemen veel mensen het ov om naar het werk te gaan.	общественный транспорт	В Нидерландах многие добираются на работу на общественном транспорте.	link::thema6::taak4::A2
+parkeren	Mag ik hier parkeren of moet ik ergens anders?	парковаться	Можно тут припарковаться, или надо где-то ещё?	link::thema6::taak4::A2
+prettig	Ik vind het prettig om in een rustige buurt te wonen.	приятный	Мне нравится жить в тихом районе.	link::thema6::taak4::A2
+de reistijd	De reistijd naar m'n werk is best lang. Twee uur in totaal!	время в пути	Дорога на работу у меня довольно долгая. Целых два часа!	link::thema6::taak4::A2
+het rijbewijs	Heb jij al een rijbewijs? — Nee, ik leer nog bij m'n broer.	водительские права	У тебя уже есть права? — Нет, ещё учусь у брата.	link::thema6::taak4::A2
+de rit	Hoe was de rit? — Gezellig! We hebben veel gekletst.	поездка	Как поездка? — Приятно! Много поболтали.	link::thema6::taak4::A2
+slecht	Het weer is echt slecht vandaag. Ik blijf lekker thuis.	плохой	Погода сегодня реально плохая. Уютно останусь дома.	link::thema6::taak4::A2
+stoppen	M'n vriend is gestopt met koken. Hij eet nu altijd buiten de deur.	останавливаться; прекращать	Мой друг перестал готовить. Теперь всегда ест не дома.	link::thema6::taak4::A2
+het treinkaartje	Heb je je treinkaartje al? We moeten nu echt gaan.	билет на поезд	У тебя уже есть билет? Нам правда пора идти.	link::thema6::taak4::A2
+het verhaal	Ik hoor graag verhalen van m'n oma. Ze is al 87 jaar oud!	рассказ, история	Мне нравится слушать истории бабушки. Ей уже 87 лет!	link::thema6::taak4::A2
+want	Ik ga nu naar huis, want m'n kinderen wachten op me.	потому что, так как	Сейчас еду домой, потому что мои дети меня ждут.	link::thema6::taak4::A2
+de winter	In de winter zit ik graag binnen met een kopje thee.	зима	Зимой я люблю сидеть дома с чашкой чая.	link::thema6::taak4::A2
+zelfs	Zelfs m'n moeder weet dat niet. Hoe moet ik het nou weten?	даже	Даже моя мама этого не знает. Откуда мне-то знать?	link::thema6::taak4::A2

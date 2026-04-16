@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+aankomen	Hoi mam, hoe laat kom je morgen aan? Ik heb echt zin om je weer te zien.	приезжать, прибывать	Привет, мам! Во сколько ты завтра приезжаешь? Я очень хочу снова тебя увидеть.	link::thema6::taak1::A2
+de aankomst	De aankomst is om kwart over acht. Daarna gaan we gezellig ergens koffie halen.	прибытие	Прибытие в 8:15. Потом уютно сходим куда-нибудь выпить кофе.	link::thema6::taak1::A2
+bedankt	Bedankt voor de koffie, hoor! Heel lief van je.	спасибо	Спасибо за кофе! Очень мило с твоей стороны.	link::thema6::taak1::A2
+centraal	Ik stap uit op Amsterdam Centraal. Daar wacht ik op m'n vriend.	центральный	Я выхожу на Амстердам Централ. Там жду своего друга.	link::thema6::taak1::A2
+direct	Ik wil m'n broer direct bellen, maar het is al best laat.	сразу, напрямую	Хочу сразу позвонить брату, но уже довольно поздно.	link::thema6::taak1::A2
+gelukkig	Gelukkig is de winkel nog open. Ik moet snel wat brood halen.	к счастью	К счастью, магазин ещё открыт. Нужно быстро купить хлеба.	link::thema6::taak1::A2
+de intercity	De intercity naar Rotterdam gaat elk half uur. Zullen we die maar nemen?	интерсити (скорый поезд)	Интерсити до Роттердама ходит каждые полчаса. Поедем на нём?	link::thema6::taak1::A2
+de minuut	Ik ben over vijf minuten thuis, echt! Zet de thee maar vast.	минута	Буду дома через пять минут, правда! Ставь чай.	link::thema6::taak1::A2
+nergens	Ik zoek m'n sleutels al een tijd. Ze zijn nergens te vinden!	нигде	Ищу ключи уже какое-то время. Нигде не могу найти!	link::thema6::taak1::A2
+normaal	Normaal eet ik 's avonds warm, maar vandaag heb ik geen zin.	обычно; нормальный	Обычно вечером я ем горячее, но сегодня нет желания.	link::thema6::taak1::A2
+opletten	Let op, het is vandaag echt koud buiten! Neem een warme jas mee.	быть внимательным	Обрати внимание, сегодня правда холодно на улице! Возьми тёплую куртку.	link::thema6::taak1::A2
+overstappen	Ik vind overstappen echt vervelend. Je moet je spullen steeds pakken.	пересаживаться	Мне правда не нравится делать пересадки. Приходится всё время собирать вещи.	link::thema6::taak1::A2
+de reiziger	In de ochtend zijn er veel reizigers op het station. Iedereen gaat naar het werk.	пассажир, путешественник	Утром на вокзале много пассажиров. Все едут на работу.	link::thema6::taak1::A2
+het spoor	Welk spoor is het nou? — Spoor vijf, geloof ik.	путь, платформа	Какая платформа? — Пятая, кажется.	link::thema6::taak1::A2
+de sprinter	De sprinter gaat in twintig minuten. Zullen we vast naar het spoor lopen?	спринтер (электричка)	Спринтер отходит через 20 минут. Пойдём уже на платформу?	link::thema6::taak1::A2
+het station	Zie ik je op het station? M'n trein gaat om half acht.	вокзал, станция	Увидимся на вокзале? Мой поезд в 7:30.	link::thema6::taak1::A2
+de tas	M'n tas is echt te klein. Ik krijg er niets meer in!	сумка	Моя сумка правда слишком маленькая. Больше ничего не помещается!	link::thema6::taak1::A2
+de telefoon	Waar is m'n telefoon nou? Volgens mij lag hij net op de bank.	телефон	Где же мой телефон? По-моему, он только что лежал на диване.	link::thema6::taak1::A2
+de verbinding	Sorry, ik had even geen verbinding. Wat zei je net?	связь; сообщение (между местами)	Извини, связь ненадолго пропала. Что ты только что сказал?	link::thema6::taak1::A2
+verstaan	Wat zeg je? Ik kan je niet verstaan, het is hier te druk.	понимать на слух, расслышать	Что ты говоришь? Я тебя не слышу, здесь слишком шумно.	link::thema6::taak1::A2
+de vertraging	M'n trein heeft twintig minuten vertraging. Ik kom dus wat later.	задержка, опоздание	У моего поезда задержка 20 минут. Так что буду чуть позже.	link::thema6::taak1::A2
+het vertrek	Het vertrek is bij spoor 3. We moeten daar over tien minuten zijn.	отправление, отъезд	Отправление с третьей платформы. Нам нужно быть там через 10 минут.	link::thema6::taak1::A2
+vertrekken	We vertrekken om kwart voor acht, dus we moeten nu echt gaan!	отправляться, уезжать	Мы отправляемся в 7:45, так что нам пора реально выходить!	link::thema6::taak1::A2
+volgende	De volgende trein gaat om vijf over half elf. Heb je nog even tijd?	следующий	Следующий поезд — в 10:35. У тебя ещё есть минутка?	link::thema6::taak1::A2

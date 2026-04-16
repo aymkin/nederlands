@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+de auto	M'n auto is best oud, maar hij doet het nog prima.	машина	Моя машина довольно старая, но пока ещё едет отлично.	link::thema6::taak3::A2
+de bus	Ik neem 's morgens de bus naar school. Dat gaat wel even snel.	автобус	По утрам я езжу на автобусе в школу. Довольно быстро получается.	link::thema6::taak3::A2
+de collega	M'n collega's zijn echt lief. We eten vaak samen 's middags.	коллега	Мои коллеги правда милые. Мы часто вместе обедаем.	link::thema6::taak3::A2
+de docent	Onze docent is heel lief. Ze heeft altijd tijd voor onze vragen.	преподаватель	Наша преподавательница очень добрая. У неё всегда есть время на наши вопросы.	link::thema6::taak3::A2
+enorm	Het is enorm druk op de markt vandaag. Ik ga wel morgen.	огромный, ужасно	Сегодня на рынке ужасно много народа. Пойду лучше завтра.	link::thema6::taak3::A2
+de excuses	M'n excuses, ik kan vanavond niet komen. Ik ben te moe.	извинения	Прошу прощения, сегодня вечером не смогу прийти. Я слишком устала.	link::thema6::taak3::A2
+de fiets	M'n fiets is al tien jaar oud, maar hij fietst nog als nieuw.	велосипед	Моему велосипеду уже десять лет, но едет как новый.	link::thema6::taak3::A2
+de file	Er is een grote file op de weg. Ik kom dus wat later thuis.	пробка	На дороге большая пробка. Так что буду дома попозже.	link::thema6::taak3::A2
+gewoon	Ik heb gewoon geen zin om te koken. Zullen we patat halen?	обычный; просто	Мне просто не хочется готовить. Может, возьмём картошку фри?	link::thema6::taak3::A2
+de griep	Ik heb griep. Ik slaap de hele dag in bed.	грипп	У меня грипп. Сплю весь день в кровати.	link::thema6::taak3::A2
+helaas	Helaas kan ik morgen niet komen. Ik heb al iets anders.	к сожалению	К сожалению, завтра не смогу прийти. У меня уже есть другие планы.	link::thema6::taak3::A2
+het kantoor	Ik ga nu naar kantoor. Zie je me vanavond thuis?	офис	Сейчас еду в офис. Увидимся вечером дома?	link::thema6::taak3::A2
+liggen	Ik lig nog in bed, man. Ik ben echt ziek vandaag.	лежать	Я ещё в кровати, чувак. Реально болею сегодня.	link::thema6::taak3::A2
+de manager	M'n manager is een lieve vrouw. Ze vraagt altijd hoe het met me gaat.	менеджер, руководитель	Моя начальница — добрая женщина. Всегда спрашивает, как у меня дела.	link::thema6::taak3::A2
+na	Na het eten blijf ik nog even op de bank. Lekker thee drinken.	после	После еды я ещё посижу на диване. Уютно попью чай.	link::thema6::taak3::A2
+het ongeluk	Er is een ongeluk op de weg. Daarom staat alles stil.	авария; несчастный случай	На дороге авария. Поэтому всё стоит.	link::thema6::taak3::A2
+pas	Ik ben pas om zeven uur thuis. Blijf jij koken of wacht je op mij?	только (не раньше чем)	Я только в семь буду дома. Будешь готовить или подождёшь меня?	link::thema6::taak3::A2
+rijden	Ik rijd liever niet door de stad, het is zo druk.	ехать (на транспорте); вести (машину)	Я не очень люблю ездить по городу — там так шумно.	link::thema6::taak3::A2
+sturen	Ik stuur je nu even het adres. Dan kun je m'n huis makkelijk vinden.	отправлять, посылать	Сейчас скину тебе адрес. Так легко найдёшь мой дом.	link::thema6::taak3::A2
+de tram	Ik zit in de tram naar huis. Ben over twintig minuten bij je.	трамвай	Я в трамвае, еду домой. Буду у тебя через двадцать минут.	link::thema6::taak3::A2
+de vergadering	M'n vergadering begint om tien uur. Ik moet snel koffie halen.	совещание, встреча	У меня совещание в десять. Надо быстро взять кофе.	link::thema6::taak3::A2
+de verhuizing	Onze verhuizing is klaar! Kom je snel langs kijken?	переезд	Наш переезд завершён! Заходи скорее посмотреть!	link::thema6::taak3::A2
+vriendelijk	M'n buurvrouw is zo vriendelijk. Ze helpt mij elke week met de was.	приветливый, дружелюбный	Моя соседка такая приветливая. Помогает мне каждую неделю со стиркой.	link::thema6::taak3::A2
+het werk	Hoe was het op je werk vandaag? Was het weer zo druk?	работа	Как сегодня было на работе? Снова было столько дел?	link::thema6::taak3::A2
