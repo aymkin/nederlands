@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+bedoelen	Ik bedoel niet dat je het fout doet, gewoon iets rustiger graag.	иметь в виду	Я не имею в виду, что ты делаешь не так — просто чуть спокойнее, пожалуйста.	link::thema8::taak2::A2
+de computer	M'n computer is al behoorlijk oud, ik moet er echt eentje nieuwe halen.	компьютер	Мой комп уже прилично старый, реально пора новый купить.	link::thema8::taak2::A2
+de cursus	Ik volg nu een cursus Nederlands, echt intensief, drie avonden per week.	курс	Я сейчас хожу на курс нидерландского, жёстко — три вечера в неделю.	link::thema8::taak2::A2
+de datum	Weet jij de datum van de volgende bijeenkomst eigenlijk nog?	дата	Ты вообще ещё помнишь дату следующей встречи?	link::thema8::taak2::A2
+Engels	M'n huisgenoot komt uit Zweden, dus thuis spreken we vaak Engels.	английский	Мой сосед по дому из Швеции, так что дома мы часто говорим по-английски.	link::thema8::taak2::A2
+gratis	De cursus is gratis voor bewoners van deze wijk, echt mooi meegenomen.	бесплатный	Курс для жителей этого района бесплатный — реально приятный бонус.	link::thema8::taak2::A2
+handig	Het is best handig dat het wijkcentrum zo dichtbij is.	удобный; практичный	Довольно удобно, что районный центр так близко.	link::thema8::taak2::A2
+de herfst	In de herfst word ik altijd wat moe, weinig zon hier.	осень	Осенью я всегда слегка вялый, солнца тут мало.	link::thema8::taak2::A2
+de kok	M'n zus is kok in een hip restaurant in Amsterdam.	повар	Моя сестра повар в модном ресторане в Амстердаме.	link::thema8::taak2::A2
+laatst	Ik heb haar laatst nog gezien, ze ziet er best gelukkig uit.	недавно; последний	Я её недавно видел, выглядит вполне счастливой.	link::thema8::taak2::A2
+leren	Ik leer nu al drie maanden Nederlands, langzaam wordt het beter.	учить(ся)	Я уже три месяца учу нидерландский, потихоньку идёт лучше.	link::thema8::taak2::A2
+maart	In maart begint hier eindelijk de lente, eindelijk wat licht.	март	В марте тут наконец начинается весна, наконец-то хоть свет.	link::thema8::taak2::A2
+mailen	Mail me gewoon even de datum, dan zet ik het in m'n agenda.	отправлять email	Скинь мне на почту дату, я в календарь вобью.	link::thema8::taak2::A2
+mei	In mei is het weer hier echt heerlijk, niet te warm en niet te koud.	май	В мае тут реально идеальная погода, не жарко и не холодно.	link::thema8::taak2::A2
+meteen	Ik begin meteen met de cursus, geen zin om nog te wachten.	сразу, тут же	Начинаю курс сразу, ждать больше не хочется.	link::thema8::taak2::A2
+het najaar	In het najaar gaat de cursus weer van start, dus ik meld me nu al aan.	осень (формальнее)	Осенью курс снова стартует, так что записываюсь уже сейчас.	link::thema8::taak2::A2
+noteren	Kun je even de data noteren? Anders vergeet ik het gegarandeerd.	записывать	Можешь записать даты? Иначе гарантированно забуду.	link::thema8::taak2::A2
+overdag	Overdag werk ik, dus 's avonds kan ik alleen naar de cursus.	днём	Днём я работаю, так что только вечером могу на курс.	link::thema8::taak2::A2
+'s morgens	's Morgens drink ik eerst koffie, anders lukt er echt niks.	утром, по утрам	По утрам я сперва пью кофе — иначе реально ничего не идёт.	link::thema8::taak2::A2
+starten	De cursus start volgende week maandag, op tijd komen hè!	стартовать, начинаться	Курс стартует в следующий понедельник, приходи вовремя!	link::thema8::taak2::A2
+super	Dat is super fijn, echt bedankt voor de info!	супер, отлично	Это супер, реально спасибо за инфу!	link::thema8::taak2::A2
+het voorjaar	In het voorjaar wil ik eindelijk meer buiten zijn, weg van die computer.	весна	Весной хочу наконец чаще бывать на улице, подальше от этого компа.	link::thema8::taak2::A2
+de wachtlijst	Helaas zit ik nog op de wachtlijst, misschien kan ik pas in mei beginnen.	лист ожидания	Увы, я ещё в листе ожидания — начать смогу, может, только в мае.	link::thema8::taak2::A2
+de wijk	Onze wijk is echt rustig, geen verkeer en veel groen.	район (городской)	Наш район реально спокойный, ни трафика, зелени полно.	link::thema8::taak2::A2
+het wijkcentrum	In het wijkcentrum geven ze gratis Nederlands, handig voor nieuwkomers.	районный центр	В районном центре бесплатно дают нидерландский — удобно для новоприбывших.	link::thema8::taak2::A2
+zullen	Zullen we morgen samen naar de cursus fietsen? Gezellig ook.	будем; -ем ли? (вежл.)	Давай завтра вместе на велике на курс? Ещё и весело будет.	link::thema8::taak2::A2

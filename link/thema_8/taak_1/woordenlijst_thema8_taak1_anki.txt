@@ -1,0 +1,32 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+allebei	We gaan allebei naar hetzelfde café vanavond, echt toevallig.	оба, обе	Мы оба идём в одно и то же кафе сегодня вечером, реально совпадение.	link::thema8::taak1::A2
+het balkon	M'n nieuwe kamer heeft een klein balkon, met dit weer echt heerlijk.	балкон	У моей новой комнаты есть маленький балкон — в такую погоду прям кайф.	link::thema8::taak1::A2
+belangrijk	Het is best belangrijk dat we op tijd zijn voor het huisoverleg.	важный	Довольно важно, чтобы мы вовремя пришли на домовое собрание.	link::thema8::taak1::A2
+de bewoner	Er zijn vier bewoners in dit huis, iedereen heeft z'n eigen kamer.	житель, жилец	В этом доме четверо жильцов, у каждого своя комната.	link::thema8::taak1::A2
+een paar	Kun je even wachten? Ik heb nog een paar minuten nodig.	несколько, пара	Можешь подождать? Мне ещё пару минут надо.	link::thema8::taak1::A2
+even	Mag ik even je laptop lenen? De mijne doet raar.	ненадолго; -ка (частица)	Можно на минутку твой ноут? Мой чего-то тупит.	link::thema8::taak1::A2
+het gesprek	We hadden gisteravond echt een lang gesprek over de schoonmaakregels.	разговор, беседа	У нас вчера вечером был реально долгий разговор про правила уборки.	link::thema8::taak1::A2
+hen	Ik heb hen gisteren nog gezien bij de supermarkt, alles goed.	их (прямое доп., мн.ч.)	Я их ещё вчера видел в супермаркете, всё в порядке.	link::thema8::taak1::A2
+het huisdier	Huisdieren zijn hier helaas niet toegestaan, ook geen kat.	домашний питомец	Питомцев здесь, увы, держать нельзя — даже кошку.	link::thema8::taak1::A2
+de huisgenoot	M'n huisgenoot kookt echt lekker, we eten eigenlijk altijd samen.	сосед по дому	Мой сосед по дому реально классно готовит, мы, собственно, всегда едим вместе.	link::thema8::taak1::A2
+hun	Dat is hun kamer, die zit aan de achterkant van het huis.	их (притяж.); им	Это их комната, она в задней части дома.	link::thema8::taak1::A2
+ideaal	Dit is echt ideaal voor mij: rustig, dicht bij werk, lieve mensen.	идеальный	Это прям идеально для меня: спокойно, близко к работе, приятные люди.	link::thema8::taak1::A2
+de krant	M'n opa leest nog elke ochtend de krant bij het ontbijt, gewoon gewoonte.	газета	Мой дед до сих пор каждое утро читает газету за завтраком — просто привычка.	link::thema8::taak1::A2
+de leeftijd	Wat is jouw leeftijd eigenlijk? Ik dacht dat we even oud waren.	возраст	А сколько тебе лет, кстати? Я думал, мы одного возраста.	link::thema8::taak1::A2
+de omgeving	De omgeving is heel groen, er is een park op vijf minuten lopen.	окружение, район	Район очень зелёный, до парка пять минут пешком.	link::thema8::taak1::A2
+het plezier	Ik heb echt veel plezier met m'n huisgenoten, een goed team eigenlijk.	удовольствие, радость	Мне реально кайф с моими сожителями, хорошая, в общем-то, команда.	link::thema8::taak1::A2
+het profiel	We zoeken een nieuwe bewoner, ons profiel: rustig, werkend, niet-roker.	профиль, анкета	Ищем нового жильца, наш профиль: спокойный, работает, не курит.	link::thema8::taak1::A2
+de reactie	Ik heb op de advertentie gereageerd, maar nog geen reactie gekregen.	реакция, отклик	Откликнулся на объявление, но ответа пока нет.	link::thema8::taak1::A2
+de rest	De rest van de avond bleven we gewoon praten op het balkon.	остальное, остаток	Остаток вечера мы просто болтали на балконе.	link::thema8::taak1::A2
+roken	In dit huis rookt niemand, dat is gewoon een harde regel hier.	курить	В этом доме никто не курит, это просто жёсткое правило.	link::thema8::taak1::A2
+schoon	De keuken is eigenlijk altijd schoon, iedereen doet zijn deel.	чистый	Кухня, в принципе, всегда чистая — каждый делает свою часть.	link::thema8::taak1::A2
+schoonmaken	Wie gaat het toilet deze week schoonmaken? Ik was vorige keer, hoor.	убирать	Кто на этой неделе убирает туалет? Я в прошлый раз был, между прочим.	link::thema8::taak1::A2
+de slaapkamer	M'n slaapkamer is klein maar wel gezellig, precies wat ik zocht.	спальня	Моя спальня маленькая, но уютная — ровно то, что я искал.	link::thema8::taak1::A2
+de sport	Welke sport doe jij eigenlijk? Ik ben zelf best actief.	спорт	А каким спортом ты занимаешься? Я сам довольно активный.	link::thema8::taak1::A2
+stellen	Mag ik je even een persoonlijke vraag stellen? Niks dringends hoor.	задавать (вопрос); ставить	Можно тебе задать один личный вопрос? Ничего срочного.	link::thema8::taak1::A2
+het team	Wij zijn hier echt een team, we helpen elkaar altijd.	команда	Мы здесь реально команда, всегда друг другу помогаем.	link::thema8::taak1::A2
+zelfs	Zelfs als ik moe ben, eten we nog altijd samen. Dat hoort bij ons.	даже	Даже когда я устал, мы всё равно едим вместе. Это наше.	link::thema8::taak1::A2

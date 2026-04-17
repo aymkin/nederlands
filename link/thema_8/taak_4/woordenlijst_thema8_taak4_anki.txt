@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+aardig	Hij leek echt aardig in het begin, maar na een week begon het te irriteren.	милый, приятный	Он казался реально приятным в начале, но через неделю начало раздражать.	link::thema8::taak4::A2
+beter	Het is beter om eerst gewoon te praten dan meteen te klagen.	лучше; лучший	Лучше сначала просто поговорить, чем сразу жаловаться.	link::thema8::taak4::A2
+blaffen	Die hond blaft de hele dag door, ik word er echt gek van.	лаять	Эта собака весь день лает напролёт, я реально с ума схожу.	link::thema8::taak4::A2
+de buurman	M'n buurman is eigenlijk best een oké gast, we groeten elkaar altijd.	сосед (муж.)	Мой сосед, в общем-то, нормальный мужик, мы всегда здороваемся.	link::thema8::taak4::A2
+door	De baby huilt de hele nacht door, niemand slaapt hier nog.	через; напролёт	Малыш ревёт всю ночь напролёт, тут уже никто не спит.	link::thema8::taak4::A2
+het geluid	Het geluid van de buren komt gewoon door de muur, echt irritant.	звук, шум	Звук из соседней квартиры просто пробивается через стену, реально бесит.	link::thema8::taak4::A2
+hard	Moet die muziek echt zo hard? Het is al na elven hoor.	громкий; жёсткий	Неужели музыка должна быть так громко? Уже после одиннадцати, между прочим.	link::thema8::taak4::A2
+de hond	Hun hond is nog jong, die moeten ze nog goed opvoeden.	собака	Их собака ещё молодая, им надо ещё её толком воспитать.	link::thema8::taak4::A2
+huilen	De baby huilt altijd 's nachts, dat is gewoon normaal op die leeftijd.	плакать	Малыш всегда плачет по ночам — это просто нормально в таком возрасте.	link::thema8::taak4::A2
+inderdaad	Inderdaad, het is gisteren echt laat geworden. Sorry hoor.	действительно	Да, реально вчера поздно получилось. Извини.	link::thema8::taak4::A2
+irritant	Dat constante blaffen is echt irritant, ik kan me gewoon niet concentreren.	раздражающий	Это постоянное лаяние реально достаёт, я просто не могу сосредоточиться.	link::thema8::taak4::A2
+jong	Ze zijn nog jong, geef ze gewoon even tijd om zich aan te passen.	молодой, юный	Они ещё молоды, просто дай им время адаптироваться.	link::thema8::taak4::A2
+klinken	Dat klinkt eigenlijk best goed, zullen we het zo doen?	звучать; чокаться	Звучит, в общем-то, неплохо, давай так и сделаем?	link::thema8::taak4::A2
+lachen	We moesten echt lachen om z'n verhaal, zo grappig.	смеяться	Мы реально смеялись с его истории, такая смешная.	link::thema8::taak4::A2
+nauwelijks	Ik heb nauwelijks geslapen, die hond blafte de hele nacht door.	едва, почти не	Я почти не спал, эта собака всю ночь напролёт лаяла.	link::thema8::taak4::A2
+normaal	Normaal is het hier best rustig, maar sinds de nieuwe buren niet meer.	нормально; обычно	Обычно тут довольно спокойно, но с новыми соседями — уже нет.	link::thema8::taak4::A2
+opvoeden	Een hond opvoeden kost gewoon tijd, dat weet iedereen met huisdieren.	воспитывать	Воспитывать собаку просто требует времени — это знает любой с питомцем.	link::thema8::taak4::A2
+prettig	Het is niet echt prettig om dit te zeggen, maar het moet even.	приятный, комфортный	Мне не очень приятно это говорить, но надо.	link::thema8::taak4::A2
+sinds	Sinds die nieuwe buren er zijn, is het gewoon niet meer rustig hier.	с (момента)	С тех пор как новые соседи въехали, тут просто перестало быть спокойно.	link::thema8::taak4::A2
+sommige	Sommige mensen denken gewoon niet na over hun geluid, echt jammer.	некоторые	Некоторые люди просто не задумываются о шуме — реально обидно.	link::thema8::taak4::A2
+sterk	Ik maak altijd een sterke koffie als ik echt moet werken.	сильный; крепкий	Я всегда варю крепкий кофе, когда реально надо работать.	link::thema8::taak4::A2
+zacht	Kun je iets zachter praten? De baby slaapt net lekker.	мягкий; тихий	Можешь чуть тише говорить? Малыш как раз уснул.	link::thema8::taak4::A2
+zoveel	Ik heb eigenlijk nog nooit zoveel geluid in één nacht gehoord.	столько	Я, в общем-то, никогда столько шума за одну ночь не слышал.	link::thema8::taak4::A2
+zwaar	Het is zwaar om elke nacht wakker te worden, ik ben er echt kapot van.	тяжёлый	Тяжело просыпаться каждую ночь, я от этого просто разбит.	link::thema8::taak4::A2

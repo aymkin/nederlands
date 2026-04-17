@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+de basisschool	M'n dochter gaat naar de basisschool om de hoek, echt handig.	начальная школа	Моя дочь ходит в начальную школу за углом, реально удобно.	link::thema8::taak3::A2
+de boom	Er staat een enorme boom voor ons huis, geeft lekker veel schaduw.	дерево	Перед нашим домом стоит огромное дерево, даёт прям много тени.	link::thema8::taak3::A2
+het café	Zullen we straks even naar dat café op de hoek? Lekker bakje koffie.	кафе, паб	Сгоняем потом в то кафе на углу? Чашечку кофе.	link::thema8::taak3::A2
+elkaar	In deze buurt kennen de bewoners elkaar eigenlijk allemaal.	друг друга	В этом районе жильцы, в общем-то, все друг друга знают.	link::thema8::taak3::A2
+er	Er zijn hier echt veel parken en speelplaatsen voor kinderen.	там; (безл.)	Тут реально много парков и детских площадок.	link::thema8::taak3::A2
+fietsen	Ik fiets elke dag naar m'n werk, zelfs als het regent.	кататься на велосипеде	Я каждый день на велике на работу — даже когда дождь.	link::thema8::taak3::A2
+gemakkelijk	Dit is best een gemakkelijke buurt om in te wonen: alles dichtbij.	лёгкий, удобный	Это вполне удобный для жизни район: всё рядом.	link::thema8::taak3::A2
+het gezin	Het is een klein gezin: twee ouders en een dochter van zes.	семья (ядро)	Это маленькая семья: двое родителей и шестилетняя дочь.	link::thema8::taak3::A2
+groen	De buurt is echt groen, overal struiken en bomen.	зелёный	Район реально зелёный, кругом кусты и деревья.	link::thema8::taak3::A2
+de kerk	Op zondagochtend hoor je gewoon de klokken van de kerk.	церковь	По воскресеньям утром просто слышишь колокола церкви.	link::thema8::taak3::A2
+de kop	Kom je even langs voor een kop koffie? Ik heb net verse.	чашка; голова (разг.)	Заглянешь на чашку кофе? У меня свежий сварен.	link::thema8::taak3::A2
+lelijk	Sommige nieuwe gebouwen vind ik echt lelijk, zonder karakter.	некрасивый	Некоторые новые здания мне кажутся реально уродливыми, без характера.	link::thema8::taak3::A2
+de lift	Onze lift is al drie dagen kapot, best wel vervelend.	лифт	Наш лифт уже три дня как сломан, довольно раздражает.	link::thema8::taak3::A2
+missen	Ik mis dat oude café toch wel, die sfeer was echt uniek.	скучать; не хватать	Мне всё-таки не хватает того старого кафе — атмосфера была реально особая.	link::thema8::taak3::A2
+de moskee	Naast de kerk staat ook een kleine moskee, echt een gemengde buurt.	мечеть	Рядом с церковью стоит и маленькая мечеть — прям смешанный район.	link::thema8::taak3::A2
+het park	In het park spelen 's middags altijd kinderen, leuk om te zien.	парк	В парке по обеду всегда играют дети, приятно смотреть.	link::thema8::taak3::A2
+het praatje	Ik maak graag even een praatje met de buren bij het hek.	разговорчик, small talk	Люблю поболтать с соседями у забора.	link::thema8::taak3::A2
+het rijtjeshuis	We wonen in een rijtjeshuis met een klein tuintje erachter.	таунхаус	Мы живём в таунхаусе с маленьким садиком сзади.	link::thema8::taak3::A2
+spelen	M'n dochter speelt elke middag met de buurkinderen in het park.	играть	Моя дочь каждый день после обеда играет с соседскими детьми в парке.	link::thema8::taak3::A2
+de struik	Die struiken moeten echt gesnoeid worden, ze worden zo groot.	куст, кустарник	Эти кусты реально надо подстричь, так большие становятся.	link::thema8::taak3::A2
+de trap	Ik neem eigenlijk altijd de trap, ook al werkt de lift.	лестница	Я, в принципе, всегда по лестнице хожу, даже если лифт работает.	link::thema8::taak3::A2
+het verkeer	's Ochtends is het verkeer hier gewoon niet te doen, echt druk.	движение, трафик	По утрам трафик тут просто невыносимый, реально пробки.	link::thema8::taak3::A2
+voetballen	De jongens voetballen elke zaterdag op het pleintje, altijd gezellig.	играть в футбол	Пацаны каждую субботу играют в футбол на площадке, всегда весело.	link::thema8::taak3::A2
