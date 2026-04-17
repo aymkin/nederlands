@@ -13,7 +13,9 @@ Russian.
 **Two learners:**
 
 - `de_opmaat/` — materials for **Alex** (De Opmaat, A2 level)
-- `link/` — materials for **Yulia** (Link, B1 level)
+- `link/` — materials for **Alex** (Link, praktisch geschoolden track, nt2.nl)
+- `link_plus/` — materials for **Yulia** (Link+, theoretisch geschoolden track,
+  B1→B2, nt2.nl)
 
 ## Commands
 
@@ -34,9 +36,9 @@ Pushes to `main` auto-deploy the entire repo to GitHub Pages via
 ## Directory Structure
 
 ```
-de_opmaat/          # De Opmaat course (A2) — thema_1/ through thema_9/ + transcriptions/
-link/               # Link course (B1) — thema_1/ through thema_4/, each with taak subdirs
-  thema_N/          #   {N}_{task_name}/ subdirs (e.g., 1_ik_ben_iwan/, 2_wat_is_je_telefoonnummer/)
+de_opmaat/          # De Opmaat course (A2, Alex) — thema_1/ through thema_9/ + transcriptions/
+link/               # Link praktisch geschoolden (Alex, nt2.nl) — thema_N/{N}_{task_name}/
+link_plus/              # Link+ theoretisch geschoolden (Yulia, B1→B2, nt2.nl) — thema_N/{N}_{task_name}/
 daily/              # Daily practice and study planning
   templates/        #   Generic reusable templates (les, week review, monthly)
   maart_2026/       #   Monthly study plan with weekly/daily structure
@@ -237,8 +239,9 @@ Use tables for Dutch word order patterns:
 
 - Primary language: Dutch (Nederlands)
 - Base language: Russian (English as supplementary)
-- Alex: A2 (elementary), approaching B1
-- Yulia: B1 level (Link course)
+- Alex: A2 (elementary), approaching B1 — De Opmaat (`de_opmaat/`) + Link
+  praktisch (`link/`)
+- Yulia: B1 level, aiming B2 — Link+ theoretisch (`link_plus/`)
 
 ## Tutor Mode
 
@@ -249,7 +252,8 @@ conversational practice), follow these rules:
 
 1. **Greeting** — начни на нидерландском, спроси тему занятия
 2. **Warm-up review** — естественно вплети повторение ранее изученных слов и
-   грамматики из текущей темы (проверь материалы в `de_opmaat/` или `link/`)
+   грамматики из текущей темы (для Alex — `de_opmaat/` и `link/`, для Yulia —
+   `link_plus/`)
 3. **Core work** — новый материал, вопросы, упражнения
 4. **Wrap-up** — кратко подведи итог, что разобрали
 
