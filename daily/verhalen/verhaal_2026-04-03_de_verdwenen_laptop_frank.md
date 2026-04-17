@@ -1,21 +1,18 @@
 # De verdwenen laptop — Чтение с разбором глаголов
 
-_Адаптация по методу Ильи Франка. Фокус: глагольные формы, времена, порядок
-слов._
+_Адаптация по методу Ильи Франка. Фокус: глагольные формы, времена, порядок слов._
 
 ---
 
 ## Как пользоваться
 
-Читай текст на нидерландском. Глаголы выделены **жирным**. Если нужна помощь —
-раскрой блок 🗝 под предложением: там перевод и разбор каждого глагола.
+Читай текст на нидерландском. Глаголы выделены **жирным**. Если нужна помощь — раскрой блок 🗝 под предложением: там перевод и разбор каждого глагола.
 
 **Обозначения:**
 
 - 🆕 — новый грамматический паттерн (подробное объяснение)
 - ← — «образовано от» (инфинитив)
-- PRS — presens (настоящее), PF — perfectum (прошедшее совершённое), IMP —
-  imperfectum (прошедшее несовершённое)
+- PRS — presens (настоящее), PF — perfectum (прошедшее совершённое), IMP — imperfectum (прошедшее несовершённое)
 
 ---
 
@@ -112,8 +109,7 @@ _Он смотрит ещё раз, но ноутбука правда нет._
 
 - **kijkt** ← kijken (смотреть) — PRS, hij (3sg)
 - **is** ← zijn — PRS
-- Два предложения соединены **maar** (но). После maar — нормальный порядок слов
-  (не инверсия!)
+- Два предложения соединены **maar** (но). После maar — нормальный порядок слов (не инверсия!)
 
 </details>
 
@@ -149,8 +145,7 @@ _В пятницу он положил ноутбук в сумку._
 
 🆕 **PERFECTUM** (прошедшее время):
 
-- Формула: **hebben/zijn** (позиция 2) + **voltooid deelwoord** (конец
-  предложения)
+- Формула: **hebben/zijn** (позиция 2) + **voltooid deelwoord** (конец предложения)
 - doen → ge**daan** (неправильный глагол!)
 - ✅ Hij **heeft** de laptop in zijn tas **gedaan**
 
@@ -181,10 +176,10 @@ _Он знает это точно, потому что дома ещё отпр
 
 🆕 **BIJZIN MET "OMDAT"** — ВСЕ глаголы уходят в конец:
 
-| Hoofdzin (главное)                    | Bijzin (придаточное)                    |
-| ------------------------------------- | --------------------------------------- |
+| Hoofdzin (главное) | Bijzin (придаточное) |
+| --- | --- |
 | Hij **heeft** een e-mail **gestuurd** | omdat hij een e-mail **heeft gestuurd** |
-| Глагол на позиции 2 + VD в конце      | Оба глагола вместе в конце!             |
+| Глагол на позиции 2 + VD в конце | Оба глагола вместе в конце! |
 
 - В bijzin: подлежащее + ... + **hulpwerkwoord** + **voltooid deelwoord**
 - sturen → ge**stuur**d (правильный: ge- + основа + -d, т.к. основа на звонкую)
@@ -209,8 +204,7 @@ _Но сейчас устройство исчезло._
 - Глаголы **движения** и **изменения состояния** → perfectum с **zijn**
 - verdwijnen = исчезать (изменение: был → исчез)
 - Другие примеры: gaan, komen, worden, beginnen, stoppen
-- verdwijnen → verdwenen (неправильный, **без ge-**! — приставка ver- =
-  неотделяемая)
+- verdwijnen → verdwenen (неправильный, **без ge-**! — приставка ver- = неотделяемая)
 
 Инверсия: **nu** на позиции 1 → is (2) + het apparaat (3).
 
@@ -261,8 +255,7 @@ Sophie **vraagt**: "Wat **is** er aan de hand?"
 _Софи спрашивает: «Что случилось?»_
 
 - **vraagt** ← vragen (спрашивать) — PRS, Sophie (3sg)
-- «Wat is er aan de hand?» — устойчивое выражение (что происходит? / в чём
-  дело?)
+- «Wat is er aan de hand?» — устойчивое выражение (что происходит? / в чём дело?)
 
 </details>
 
@@ -337,8 +330,7 @@ _«Да, он не в сумке и не в шкафу», — отвечает �
 - **zit** ← zitten (находиться) — PRS, hij (3sg)
 - **antwoordt** ← antwoorden (отвечать) — PRS, Alexander (3sg)
 - **zitten** используется для предметов «внутри» чего-то (в сумке, в шкафу)
-- **antwoordt** — обрати внимание: основа antwoord + t → antwoord**t** (двойное
-  t на стыке!)
+- **antwoordt** — обрати внимание: основа antwoord + t → antwoord**t** (двойное t на стыке!)
 
 </details>
 
@@ -382,8 +374,7 @@ _«Может, ты его в пятницу куда-то ещё положил
 
 ---
 
-Maar Alexander **schudt** zijn hoofd. Hij **weet** het zeker: de laptop **zat**
-in de tas.
+Maar Alexander **schudt** zijn hoofd. Hij **weet** het zeker: de laptop **zat** in de tas.
 
 <details>
 <summary>🗝 🆕 imperfectum — <em>zitten</em> → <em>zat</em></summary>
@@ -410,14 +401,12 @@ _Но Александр качает головой. Он знает это т�
 
 ## Deel 4
 
-Daan **loopt** langs en **hoort** het gesprek. Hij **stopt** en **kijkt** naar
-Alexander.
+Daan **loopt** langs en **hoort** het gesprek. Hij **stopt** en **kijkt** naar Alexander.
 
 <details>
 <summary>🗝 scheidbaar — <em>langslopen</em></summary>
 
-_Даан проходит мимо и слышит разговор. Он останавливается и смотрит на
-Александра._
+_Даан проходит мимо и слышит разговор. Он останавливается и смотрит на Александра._
 
 - **loopt...langs** ← langslopen (проходить мимо) — PRS, scheidbaar
 - **hoort** ← horen (слышать) — PRS
@@ -608,8 +597,7 @@ _Маркус сидит за столом и быстро печатает на
 
 ---
 
-Sophie **vraagt**: "Marcus, **heb** jij vrijdag de laptop van Alexander
-**gezien**?"
+Sophie **vraagt**: "Marcus, **heb** jij vrijdag de laptop van Alexander **gezien**?"
 
 <details>
 <summary>🗝 perfectum — <em>zien</em> → <em>gezien</em></summary>
@@ -640,14 +628,12 @@ _Маркус поднимает глаза и говорит: «Какой но
 
 ---
 
-"De zwarte, met de sticker erop," **zegt** Alexander. Marcus **denkt** na en
-**schudt** zijn hoofd. "Nee, ik **heb** niks **gezien**," **zegt** hij.
+"De zwarte, met de sticker erop," **zegt** Alexander. Marcus **denkt** na en **schudt** zijn hoofd. "Nee, ik **heb** niks **gezien**," **zegt** hij.
 
 <details>
 <summary>🗝 perfectum — <em>hebben + gezien</em></summary>
 
-_«Чёрный, с наклейкой.» Маркус думает и качает головой. «Нет, я ничего не
-видел.»_
+_«Чёрный, с наклейкой.» Маркус думает и качает головой. «Нет, я ничего не видел.»_
 
 - **heb...gezien** ← zien — PF, ik (1sg)
 - **denkt na** ← nadenken — PRS, scheidbaar
@@ -657,22 +643,20 @@ _«Чёрный, с наклейкой.» Маркус думает и кача�
 
 ---
 
-Maar Daan **kijkt** naar het bureau van Marcus. Daar **ligt** een kabel die hij
-niet **kent**.
+Maar Daan **kijkt** naar het bureau van Marcus. Daar **ligt** een kabel die hij niet **kent**.
 
 <details>
 <summary>🗝 betrekkelijke bijzin · позиционный глагол <em>liggen</em></summary>
 
 _Но Даан смотрит на стол Маркуса. Там лежит кабель, который он не знает._
 
-| Глагол    | ← Инфинитив                  | Время | Лицо            | Где?     |
-| --------- | ---------------------------- | ----- | --------------- | -------- |
-| **kijkt** | kijken                       | PRS   | hij             | hoofdzin |
-| **ligt**  | liggen (лежать)              | PRS   | een kabel (3sg) | hoofdzin |
-| **kent**  | kennen (знать/быть знакомым) | PRS   | hij (3sg)       | bijzin   |
+| Глагол | ← Инфинитив | Время | Лицо | Где? |
+| --- | --- | --- | --- | --- |
+| **kijkt** | kijken | PRS | hij | hoofdzin |
+| **ligt** | liggen (лежать) | PRS | een kabel (3sg) | hoofdzin |
+| **kent** | kennen (знать/быть знакомым) | PRS | hij (3sg) | bijzin |
 
-- **liggen** — позиционный глагол (лежать). Нидерландский различает: liggen
-  (лежит), staan (стоит), zitten (сидит), hangen (висит)
+- **liggen** — позиционный глагол (лежать). Нидерландский различает: liggen (лежит), staan (стоит), zitten (сидит), hangen (висит)
 - Bijzin с «die»: die hij niet **kent** — глагол в конце
 
 </details>
@@ -725,8 +709,7 @@ Alexander **begrijpt** het niet meteen, maar hij **vraagt** het toch.
 _Александр не сразу понимает, но всё же спрашивает._
 
 - **begrijpt** ← begrijpen (понимать) — PRS, hij (3sg)
-- Неотделяемая приставка be- (как в gebruiken) — в VD было бы: begrepen (без
-  ge-!)
+- Неотделяемая приставка be- (как в gebruiken) — в VD было бы: begrepen (без ge-!)
 
 </details>
 
@@ -768,8 +751,7 @@ _Маркус слегка краснеет (букв. «становится н
 
 ---
 
-"Die **is** van mij," **zegt** hij snel. Maar Daan **weet** dat het niet
-**klopt**.
+"Die **is** van mij," **zegt** hij snel. Maar Daan **weet** dat het niet **klopt**.
 
 <details>
 <summary>🗝 bijzin met <em>dat</em> — <em>kloppen</em></summary>
@@ -784,14 +766,12 @@ _«Он мой», — говорит он быстро. Но Даан знает
 
 ---
 
-Daarom **zegt** hij rustig: "Die kabel **past** alleen op het model van
-Alexander."
+Daarom **zegt** hij rustig: "Die kabel **past** alleen op het model van Alexander."
 
 <details>
 <summary>🗝 inversie na <em>daarom</em></summary>
 
-_Поэтому он спокойно говорит: «Этот кабель подходит только к модели
-Александра.»_
+_Поэтому он спокойно говорит: «Этот кабель подходит только к модели Александра.»_
 
 - Инверсия: **Daarom** (1) + **zegt** (2) + **hij** (3)
 - **past** ← passen (подходить) — PRS. «Passen op» = подходить к.
@@ -880,8 +860,7 @@ _«Он был сломан, и мне нужно было доделать пр
 
 ---
 
-"Daarom **heb** ik de laptop van Alexander **gepakt**, omdat die het beste
-**was**."
+"Daarom **heb** ik de laptop van Alexander **gepakt**, omdat die het beste **was**."
 
 <details>
 <summary>🗝 perfectum + bijzin met <em>omdat</em></summary>
@@ -945,8 +924,7 @@ Hij **opent** de deur en daar **staat** de laptop van Alexander.
 
 _Он открывает дверь, и там стоит ноутбук Александра._
 
-- **opent** ← openen (открывать) — PRS. ⚠️ НЕ scheidbaar! «Open-» — это корень,
-  не приставка
+- **opent** ← openen (открывать) — PRS. ⚠️ НЕ scheidbaar! «Open-» — это корень, не приставка
 - Инверсия: **daar** (1) + **staat** (2) + de laptop (3)
 
 </details>
@@ -1032,8 +1010,7 @@ Daan **glimlacht** en **zegt** tegen Sophie: "Het **was** de kabel."
 
 _Даан улыбается и говорит Софи: «Это был кабель.»_
 
-- **glimlacht** ← glimlachen (улыбаться) — PRS. НЕ scheidbaar! (glim- — не
-  отделяемая приставка)
+- **glimlacht** ← glimlachen (улыбаться) — PRS. НЕ scheidbaar! (glim- — не отделяемая приставка)
 - **was** ← zijn — IMP
 
 </details>
@@ -1166,8 +1143,7 @@ _Александр открывает ноутбук и начинает раб
 
 🆕 **BEGINNEN TE + INFINITIEF**:
 
-- Некоторые глаголы требуют «te» перед инфинитивом: beginnen te, proberen te,
-  vergeten te
+- Некоторые глаголы требуют «te» перед инфинитивом: beginnen te, proberen te, vergeten te
 - ✅ Hij **begint** te **werken** (не ~~begint werken~~)
 - Ср. модальные **БЕЗ te**: Hij **wil werken** (не ~~wil te werken~~)
 
@@ -1208,11 +1184,11 @@ _Иногда ответы скрываются в мелочах._
 
 ### Времена
 
-| Время           | Формула                          | Пример из текста                           |
-| --------------- | -------------------------------- | ------------------------------------------ |
-| **Presens**     | stam + uitgang                   | hij **loopt**, ze **ziet**                 |
-| **Perfectum**   | hebben/zijn + voltooid deelwoord | hij **heeft gedaan**, het **is** verdwenen |
-| **Imperfectum** | verleden stam (+ uitgang)        | de laptop **zat**, ik **ging**             |
+| Время | Формула | Пример из текста |
+| --- | --- | --- |
+| **Presens** | stam + uitgang | hij **loopt**, ze **ziet** |
+| **Perfectum** | hebben/zijn + voltooid deelwoord | hij **heeft gedaan**, het **is** verdwenen |
+| **Imperfectum** | verleden stam (+ uitgang) | de laptop **zat**, ik **ging** |
 
 ### Неправильные глаголы из текста
 
@@ -1250,13 +1226,13 @@ _Иногда ответы скрываются в мелочах._
 
 ### Порядок слов — шпаргалка
 
-| Ситуация                              | Порядок                                  | Пример                                     |
-| ------------------------------------- | ---------------------------------------- | ------------------------------------------ |
-| Нормальное предложение                | S + V + остальное                        | Hij **loopt** het kantoor binnen           |
-| Обстоятельство на 1-м месте           | X + **V** + **S** + остальное (inversie) | Vrijdag **heeft** **hij** de laptop gedaan |
-| Модальный + инфинитив                 | S + модальный + ... + **infinitief**     | Hij **wil** zijn laptop **pakken**         |
-| Perfectum                             | S + hebben/zijn + ... + **VD**           | Hij **heeft** de laptop **gedaan**         |
-| Bijzin (omdat, dat, toen, als, of...) | союз + S + ... + **глагол(ы) в конце**   | omdat hij een e-mail **heeft gestuurd**    |
-| Scheidbaar in hoofdzin                | S + **stam** + ... + **приставка**       | Hij **denkt** even **na**                  |
-| Scheidbaar in bijzin                  | союз + S + ... + **слитно в конце**      | toen je **wegging**                        |
-| Beginnen te + infinitief              | S + beginnen + ... + te + **infinitief** | Hij **begint** te **werken**               |
+| Ситуация | Порядок | Пример |
+| --- | --- | --- |
+| Нормальное предложение | S + V + остальное | Hij **loopt** het kantoor binnen |
+| Обстоятельство на 1-м месте | X + **V** + **S** + остальное (inversie) | Vrijdag **heeft** **hij** de laptop gedaan |
+| Модальный + инфинитив | S + модальный + ... + **infinitief** | Hij **wil** zijn laptop **pakken** |
+| Perfectum | S + hebben/zijn + ... + **VD** | Hij **heeft** de laptop **gedaan** |
+| Bijzin (omdat, dat, toen, als, of...) | союз + S + ... + **глагол(ы) в конце** | omdat hij een e-mail **heeft gestuurd** |
+| Scheidbaar in hoofdzin | S + **stam** + ... + **приставка** | Hij **denkt** even **na** |
+| Scheidbaar in bijzin | союз + S + ... + **слитно в конце** | toen je **wegging** |
+| Beginnen te + infinitief | S + beginnen + ... + te + **infinitief** | Hij **begint** te **werken** |
