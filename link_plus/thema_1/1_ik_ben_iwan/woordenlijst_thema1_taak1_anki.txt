@@ -12,7 +12,7 @@ hij	Hij woont in Amsterdam.	он	Он живёт в Амстердаме.	link::
 ik	Ik ben student.	я	Я студент.	link::thema1::taak1::A1
 in	Ik woon in Nederland.	в	Я живу в Нидерландах.	link::thema1::taak1::A1
 het jaar	Ik woon hier al twee jaar.	год	Я живу здесь уже два года.	link::thema1::taak1::A1
-komen	Ik kom uit Rusland.	приходить, приезжать	Я из России.	link::thema1::taak1::A1
+komen	Ik kom uit Oekraïne.	приходить, приезжать	Я из Украины.	link::thema1::taak1::A1
 leren	Ik leer Nederlands op school.	учить(ся)	Я учу нидерландский в школе.	link::thema1::taak1::A1
 de maand	Ik ben hier één maand.	месяц	Я здесь один месяц.	link::thema1::taak1::A1
 naar	Ik ga naar de winkel.	в, к (направление)	Я иду в магазин.	link::thema1::taak1::A1

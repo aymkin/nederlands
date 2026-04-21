@@ -8,7 +8,7 @@ Hoe heet jij?	Как тебя зовут?	link::thema1::taak2::luisteren
 Ik ben Julia.	Я Юлия.	link::thema1::taak2::luisteren
 Waar kom je vandaan, Julia?	Откуда ты, Юлия?	link::thema1::taak2::luisteren
 Ik kom uit Argentinië.	Я из Аргентины.	link::thema1::taak2::luisteren
-Ik kom uit Rusland.	Я из России.	link::thema1::taak2::luisteren
+Ik kom uit Polen.	Я из Польши.	link::thema1::taak2::luisteren
 Leuk!	Приятно!	link::thema1::taak2::luisteren
 Hoelang woon je al in Nederland?	Как долго ты уже живёшь в Нидерландах?	link::thema1::taak2::luisteren
 Een jaar, en jij?	Один год, а ты?	link::thema1::taak2::luisteren

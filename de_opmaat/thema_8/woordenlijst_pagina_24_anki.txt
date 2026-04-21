@@ -43,7 +43,7 @@ tegenkomen	Ik kwam mijn buurman tegen in de winkel.	встретить (случ
 timide	Ze is een beetje timide in groepen.	робкий, застенчивый	Она немного робкая в группах.	opmaat::thema8::pagina24::A2
 de tip	Heb je een tip voor een goed restaurant?	совет, подсказка	У тебя есть совет по хорошему ресторану?	opmaat::thema8::pagina24::A2
 toch	Je komt toch naar het feest?	всё-таки, ведь	Ты ведь придёшь на праздник?	opmaat::thema8::pagina24::A2
-toen	Toen ik klein was, woonde ik in Rusland.	тогда, когда	Когда я был маленьким, я жил в России.	opmaat::thema8::pagina24::A2
+toen	Toen ik klein was, woonde ik in Polen.	тогда, когда	Когда я был маленьким, я жил в Польше.	opmaat::thema8::pagina24::A2
 toepassen	Je moet de grammaticaregels toepassen.	применять	Тебе нужно применять грамматические правила.	opmaat::thema8::pagina24::A2
 trouwens	Trouwens, heb je het al gehoord?	кстати	Кстати, ты уже слышал?	opmaat::thema8::pagina24::A2
 de twijfel	Ik heb twijfels over deze beslissing.	сомнение	У меня есть сомнения по поводу этого решения.	opmaat::thema8::pagina24::A2

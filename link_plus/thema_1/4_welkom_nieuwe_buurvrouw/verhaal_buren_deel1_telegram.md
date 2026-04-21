@@ -35,7 +35,7 @@ vandaan?"
 
 👩 Iuliia **zegt**: "Ik **kom** uit Oekraïne."
 
-🧑 Alexander **zegt**: "En ik **kom** uit Rusland."
+🧑 Alexander **zegt**: "En ik **kom** uit Polen."
 
 👵 De buurvrouw **zegt**: "En wie **is** dit kind?"
 

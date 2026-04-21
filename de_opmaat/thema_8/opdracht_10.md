@@ -1,6 +1,6 @@
 # 10 Spreken
 
-Marleen (oefening 9) vertelt over haar leven als Nederlandse in Rusland. Voor
+Marleen (oefening 9) vertelt over haar leven als Nederlandse in Polen. Voor
 jou is de situatie andersom. Jij bent uit een ander land naar Nederland gekomen
 en woont hier nu sinds kort of misschien al langere tijd.
 
@@ -34,21 +34,21 @@ dus het gaat al veel beter.
 ### 5 Wat vind je van het gedrag van Nederlanders?
 
 Nederlanders zijn heel direct — dat **vond** ik in het begin een beetje vreemd.
-In Rusland zijn mensen vaak niet zo direct. Maar ik vind het nu eigenlijk wel
+In Polen zijn mensen vaak niet zo direct. Maar ik vind het nu eigenlijk wel
 prettig, want je weet altijd wat iemand denkt. Nederlanders zijn ook heel
 vriendelijk en geduldig als je hun taal probeert te spreken.
 
 ### 6 Wat heeft je in Nederland het meest verbaasd?
 
 Wat mij het meest **verbaasde**, is dat bijna iedereen hier fietst — ook als het
-regent of waait! In Rusland **ging** ik altijd met de auto of met het openbaar
+regent of waait! In Polen **ging** ik altijd met de auto of met het openbaar
 vervoer. En ik **vond** het ook bijzonder dat Nederlanders zo veel Engels
 spreken.
 
 ### 7 Denk je dat je ooit naar jouw land teruggaat of in een ander land gaat wonen? Waarom?
 
 Ik weet het nog niet zeker. Ik voel me nu goed in Nederland en wil hier nog een
-paar jaar blijven. Misschien ga ik ooit terug naar Rusland, maar het hangt af
+paar jaar blijven. Misschien ga ik ooit terug naar Polen, maar het hangt af
 van mijn werk en mijn leven hier. Ik wil eerst beter Nederlands leren.
 
 ### 8 Welke tip kun je geven aan mensen die naar Nederland willen verhuizen?

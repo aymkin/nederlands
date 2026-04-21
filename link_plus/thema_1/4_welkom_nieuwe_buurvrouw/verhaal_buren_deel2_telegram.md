@@ -32,7 +32,7 @@ vrouw Iuliia. Leuk u te ontmoeten!"
 
 👩 Ik **zeg**: "Ik **kom** uit Oekraïne."
 
-🧑 Alexander **zegt**: "En ik **kom** uit Rusland."
+🧑 Alexander **zegt**: "En ik **kom** uit Polen."
 
 👵 Ze **zegt**: "En wie **is** dit kind?"
 
