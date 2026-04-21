@@ -4,120 +4,185 @@ _Yulia, Alexander, Iliko — Woorden uit Link+ thema 7, taak 1_
 
 ---
 
-Ik **moet** dit opschrijven, anders **gelooft** niemand mij. Ik **weet** nog
-steeds niet of het die **nacht** echt **is** **gebeurd**, of alleen in mijn
-hoofd. Maar dit **is** hoe het **ging**.
+Ik **moet** dit opschrijven. Want gisteravond **is** iets raars gebeurd.
 
-Het **is** bijna **middernacht**. Ik **word** wakker van een vreemd **geluid**
-in de gang. Iliko **slaapt** **gewoon** door, maar ik **voel** me helemaal niet
-lekker. M'n **keel** **doet** pijn, ik **heb** **koorts** — 39 **graden**,
-**volgens** de **thermometer**. Dit **is** geen gewone **klacht**, **denk** ik.
-Dit **is** best **ernstig**. "**Ga** even naar de **huisartsenpost**," **zeg**
-ik tegen mezelf.
-
-**Eerst** **probeer** ik m'n **huisarts**. Het **automatische** **antwoord**
-**is** **kort** en duidelijk: "De **praktijk** **is** **gesloten**. Voor
-**spoedgevallen** **belt** u de **huisartsenpost**. **Toets** 1 voor de
-**spoed**-lijn." Ik **toets** 1. De lijn **rinkelt** een **paar** keer. Dan
-**hoor** ik een stem.
+Of misschien **droom** ik alleen. Ik **weet** het niet.
 
 ---
 
-"Goedenavond, **huisartsenpost** Hilversum. Met de **assistente**. Wat **is** uw
-**klacht**?" De stem **klinkt** vriendelijk, maar heel ver weg. "Ik **heb**
-**koorts** en **keelpijn**," **zeg** ik zacht. "Hoe lang al?" **vraagt** ze.
-"Sinds vanavond." "**Is** het een **spoedgeval**?" "Nee," **zeg** ik. "**Gewoon**
-**erg**. Maar ik **wil** de **dokter** graag **zien**."
+Het **is** middernacht. Ik **word** wakker. Ik **heb** koorts.
 
-Ze **zucht**. "**Even** uw **gegevens**, alstublieft. Naam en **geboortedatum**?"
-Ik **geef** alles door. Ze **zegt**: "U **komt** om half één. Dokter Beek
-**behandelt** u vanavond. Het **is** een **dubbele** **afspraak**, want er
-**zijn** veel zieke mensen." "**Dubbel**? Waarom **dubbel**?" **vraag** ik. Maar
-de lijn **is** al dood.
+M'n keel **doet** pijn. Ik **voel** me heel ziek.
 
----
+"Dit **is** best **ernstig**," **denk** ik. "Dit **is** geen kleine **klacht**."
 
-Ik **kleed** me snel **aan** en **loop** door de stille straten. De lucht **is**
-koud. **Sommige** ramen **branden** nog, maar de meeste huizen **zijn** donker.
-**Via** **Google Maps** **vind** ik de **huisartsenpost**. Het **is** een groot
-gebouw, vlakbij het **ziekenhuis**. Maar **alles** **is** donker. Geen licht, geen
-**auto's**, niemand.
+Ik **pak** m'n telefoon. Ik **bel** m'n **huisarts**.
 
-"**Klopt** dit wel?" **fluister** ik. Ik **druk** op de **bel**. Een **intercom**
-**kraakt**. Een stem — een andere stem dan aan de **telefoon** — **zegt**: "Ja?"
-"Ik **heb** een **afspraak** met dokter Beek," **zeg** ik. Lange stilte. "Dokter
-Beek **is** er niet vanavond," **zegt** de stem. "Maar de **assistente** **zei**
-net..." "Ik **ben** de **assistente**. Ik **heb** geen **afspraak** voor u."
+Een stem **zegt**: "De **praktijk** **is** **gesloten**."
+
+"Bel de **huisartsenpost**. **Toets** 1 voor **spoed**."
+
+Ik **toets** 1. Een vrouw **neemt** op.
 
 ---
 
-Koud. Héél koud. Ik **zoek** het nummer **opnieuw** op m'n **telefoon**.
-Hetzelfde **spoed**-nummer. Ik **toets** het in. Nu **klinkt** de stem dieper,
-ouder. "**Hebt** u een **verwijzing**?" **vraagt** de stem. "Nee, ik **heb**
-**alleen** **klachten**," **zeg** ik. "Voor een **specialist** **hebt** u een
-**verwijzing** van uw **huisarts** nodig." "Maar ik **wil** geen **specialist**!
-Ik **wil** de **huisarts**!" "Op dit **moment** **is** het **spreekuur** voorbij.
-Probeert u het morgen opnieuw." Klik.
+"Met de **assistente**. Wat **is** uw **klacht**?"
 
-Ik **sta** voor een donkere deur. **Sommige** praktijken **willen** je gewoon
-niet **binnen** **laten**, **denk** ik. Of **is** de **gezondheidszorg** echt zo
-onduidelijk hier?
+"Ik **heb** koorts en keelpijn," **zeg** ik.
 
----
+"**Is** het een **spoedgeval**?"
 
-Ik **bel** Alexander. Hij **neemt** op, slaperig. "Yulia, het **is** één uur 's
-nachts!" **zegt** hij. "Alexander, er **klopt** iets niet hier," **fluister** ik.
-"Ik **sta** bij de **huisartsenpost**. De **assistente** **heeft** me een
-**afspraak** **gegeven**. Maar er **is** niemand, en een andere stem **zegt** dat
-er geen **afspraak** **is**." Alexander **lacht** zacht. "Yulia... je **hebt**
-**koorts**. Je **hebt** waarschijnlijk **gedroomd**." "Nee, echt niet!" "Ga naar
-huis. Morgenochtend **bel** je je eigen **huisarts**." Hij **hangt** op.
+"Nee. Maar ik **wil** de **dokter** zien."
 
-Ik **kijk** naar m'n **telefoon**. Er **komt** een bericht **binnen**: "U **bent**
-aan de beurt. **Toets** 1 om **binnen** te **komen**."
+"Oké. U **komt** om half één. **Geef** even uw **gegevens**."
+
+Ik **geef** m'n naam en geboortedatum.
+
+"Dokter Beek **behandelt** u. We **maken** een **dubbele** afspraak."
+
+"Waarom **dubbel**?" **vraag** ik. Maar de lijn **is** dood.
 
 ---
 
-Met trillende handen **toets** ik 1. De deur **gaat** langzaam open. Binnen
-**is** het warm en licht. Een **vriendelijke** **assistente** — een derde vrouw,
-weer anders — **zit** achter de balie. "Sorry voor het **wachten**," **zegt** ze.
-"Er **was** verwarring met de **gegevens**. Loopt u maar mee."
+Ik **trek** m'n jas aan. Ik **loop** naar de **praktijk**.
 
-Dokter Beek **komt** uit een spreekkamer. "**Even** uw **klacht**," **zegt** hij
-rustig. Ik **vertel** alles. Hij **doet** een **kort** **onderzoek** — **keel**,
-oren, **koorts**. "U **bent** **gewoon** **verkouden**," **zegt** hij. "Dit
-**gaat** na een **paar** dagen **vanzelf** over. **Drink** veel water, **rust**
-uit. Geen **verwijzing** nodig, geen **specialist**."
+De straten **zijn** donker. Ik **heb** het koud.
 
-Hij **is** zo **normaal**, zo rustig, dat ik me bijna dom **voel**. Heb ik dit
-allemaal **verzonnen**?
+De **huisartsenpost** **is** vlakbij het **ziekenhuis**.
+
+Maar alles **is** donker! Geen licht. Geen auto's.
+
+Ik **druk** op de bel. De intercom **kraakt**.
+
+"Ja?" **zegt** een stem. Een andere stem.
+
+"Ik **heb** een afspraak met dokter Beek."
+
+"Dokter Beek **is** hier niet vanavond."
+
+"Maar de **assistente** **zei**..."
+
+"Ik **ben** de **assistente**. Ik **heb** niet gebeld."
 
 ---
 
-Thuis **vertel** ik alles aan Iliko. "Er **waren** drie **assistentes**!" **zeg**
-ik. "Eén aan de **telefoon**, één aan de **intercom**, één bij de balie. En de
-**praktijk** **leek** eerst **gesloten**..." Iliko **lacht**. "Yulia, de
-**gezondheidszorg** hier **is** misschien ingewikkeld, maar niet **spookachtig**.
-Je **was** **gewoon** ziek."
+Ik **ben** koud. Heel koud.
 
-Maar de volgende ochtend **krijg** ik een appbericht: "Dank u voor uw **bezoek**
-aan de **huisartsenpost** gisteravond. Uw **gegevens** **zijn** **verwerkt**."
-Drie **verschillende** **assistentes**. Twee **verschillende** stemmen. Eén
-**dokter** die heel echt **was**.
+Ik **bel** het nummer nog een keer.
 
-Ik **drink** m'n koffie. M'n **keel** **doet** geen pijn meer. De **koorts** **is**
-weg. Het **onderzoek**, de donkere **praktijk**, de drie stemmen — **alles**
-**voelt** als een droom.
+Nu **klinkt** de stem anders. Dieper.
 
-Maar in m'n **telefoon** **zie** ik één **gemiste** oproep om 00:47. Van een
-nummer zonder naam.
+"**Hebt** u een **verwijzing**?" **vraagt** de stem.
 
-Ik **weet** nog steeds niet wat er die **nacht** **is** **gebeurd**. Iliko
-**lacht** erom, Alexander **zegt** dat het de **koorts** **was**. Maar als ik
-eraan **denk**, **voel** ik me nog een beetje koud. In Oekraïne **zeggen** we:
-**soms** **openen** zich deuren die er niet **horen**. Ik **weet** niet of ik
-dat **geloof**. Maar **sommige** **nachten** **is** de **gezondheidszorg** hier
-vreemder dan ik **had** **verwacht**.
+"Nee. Ik **heb** alleen **klachten**."
+
+"**Via** uw **huisarts** **moet** u een **verwijzing** krijgen."
+
+"Voor een **specialist**."
+
+"Maar ik **wil** geen **specialist**! Ik **wil** de **huisarts**!"
+
+"Het **spreekuur** **is** voorbij. Bel morgen."
+
+Klik.
+
+Ik **sta** voor een donkere deur. Ik **snap** het niet.
+
+"**Sommige** **praktijken** **laten** je niet binnen," **denk** ik.
+
+Of **is** de **gezondheidszorg** hier echt zo raar?
+
+---
+
+Ik **bel** Alexander. Hij **neemt** slaperig op.
+
+"Yulia, het **is** één uur 's nachts!"
+
+"Alexander, er **klopt** iets niet hier."
+
+"Ik **sta** bij de **huisartsenpost**. Er **is** niemand."
+
+Alexander **lacht** zacht.
+
+"Yulia... je **hebt** koorts. Je **droomt**."
+
+"Nee, ik **droom** niet!"
+
+"Ga naar huis. Bel morgen je eigen **huisarts**."
+
+Hij **hangt** op.
+
+Ik **kijk** naar m'n telefoon. Er **komt** een bericht:
+
+"U **bent** aan de beurt. **Toets** 1 om binnen te komen."
+
+---
+
+Ik **toets** 1. De deur **gaat** open.
+
+Binnen **is** het warm en licht.
+
+Een vrouw **zit** achter de balie. De derde vrouw deze avond.
+
+"Sorry voor het wachten," **zegt** ze. "Er **was** verwarring met de
+**gegevens**."
+
+Dokter Beek **komt** eraan. Hij **is** rustig en vriendelijk.
+
+"Wat **is** uw **klacht**?" **vraagt** hij.
+
+Ik **vertel** over de koorts en keelpijn.
+
+Hij **doet** een **kort** **onderzoek**.
+
+"U **bent** **gewoon** verkouden," **zegt** hij.
+
+"Dit **gaat** na een **paar** dagen over."
+
+"**Drink** veel water. Rust uit."
+
+"Geen **verwijzing** nodig. Geen **specialist**."
+
+---
+
+Thuis **vertel** ik alles aan Iliko.
+
+"Iliko, er **waren** drie **assistentes**!"
+
+"Eén aan de telefoon. Eén aan de intercom. Eén aan de balie."
+
+Iliko **lacht**.
+
+"Yulia, je **had** koorts. Je **hebt** gedroomd."
+
+Maar 's ochtends **krijg** ik een bericht:
+
+"Dank u voor uw bezoek aan de **huisartsenpost**."
+
+"Uw **gegevens** **zijn** verwerkt."
+
+Drie **assistentes**. Twee stemmen. Eén **dokter**.
+
+---
+
+Ik **drink** m'n koffie. M'n keel **doet** geen pijn meer.
+
+Het **onderzoek**, de donkere **praktijk**, de drie stemmen — alles **voelt**
+als een droom.
+
+Maar in m'n telefoon **zie** ik: één gemiste oproep om 00:47.
+
+Van een nummer zonder naam.
+
+Iliko **lacht** erom. Alexander **zegt** dat het de koorts **was**.
+
+Maar ik **voel** me nog een beetje koud.
+
+In Oekraïne **zeggen** we: soms **openen** zich deuren die er niet horen.
+
+Ik **weet** niet of ik dat **geloof**.
+
+Maar **sommige** nachten **is** de **gezondheidszorg** hier echt raar.
 
 ---
 
@@ -126,39 +191,36 @@ vreemder dan ik **had** **verwacht**.
 **1.** Yulia **gaat** naar de **huisartsenpost** om tien uur 's avonds. _Klopt
 dat?_
 
-Nee, dat **klopt** niet. Ze **gaat** om bijna **middernacht** — het **is** één
-uur 's nachts als ze Alexander **belt**.
+Nee, dat **klopt** niet. Ze **gaat** om middernacht — het **is** bijna één uur
+'s nachts.
 
 **2.** Wat **zijn** de **klachten** van Yulia?
 
-Ze **heeft** **koorts** (39 **graden**) en **keelpijn**. Ze **voelt** zich
-helemaal niet lekker.
+Ze **heeft** koorts en keelpijn. Ze **voelt** zich heel ziek.
 
-**3.** Waarom **denkt** Alexander dat Yulia **gedroomd** **heeft**?
+**3.** Waarom **denkt** Alexander dat Yulia **droomt**?
 
-Omdat het één uur 's nachts **is** en Yulia **koorts** **heeft**. Hij **denkt**
-dat ze ziek **is** en dingen **hoort** die er niet **zijn**.
+Omdat het laat **is** en Yulia koorts **heeft**. Hij **denkt** dat ze dingen
+**hoort** die er niet **zijn**.
 
-**4.** Wat **zegt** dokter Beek over de **klacht** van Yulia?
+**4.** Wat **zegt** dokter Beek?
 
-Hij **zegt** dat ze **gewoon** **verkouden** **is**. Het **gaat** na een **paar**
-dagen **vanzelf** over. Ze **moet** veel water **drinken** en rusten. Geen
-**verwijzing** of **specialist** nodig.
+Hij **zegt** dat Yulia **gewoon** verkouden **is**. Het **gaat** na een **paar**
+dagen over. Ze **moet** water **drinken** en rusten.
 
 **5.** Vul in: Voor een **specialist** **heb** je een \_\_\_ nodig. De
 **praktijk** **is** 's avonds \_\_\_. Bij een **spoedgeval** **toets** je \_\_\_.
 
 _(verwijzing, gesloten, 1)_
 
-**6.** Hoeveel **verschillende** **assistentes** **hoort** Yulia die avond?
+**6.** Hoeveel **assistentes** **hoort** Yulia die avond?
 
-Drie **verschillende** stemmen: eerst aan de **telefoon**, daarna via de
-**intercom**, en als laatste een vriendelijke **assistente** bij de balie.
+Drie: aan de telefoon, aan de intercom, en aan de balie.
 
 <!-- TODO(human) -->
 
-**7.** Wat **denk** jij? **Is** dit een droom of **gebeurt** het echt? Schrijf
-2-3 zinnen in het Nederlands en **leg** **uit** waarom.
+**7.** Wat **denk** jij? **Is** het een droom of **gebeurt** het echt? Schrijf 2
+zinnen.
 
 ---
 
@@ -166,18 +228,15 @@ Drie **verschillende** stemmen: eerst aan de **telefoon**, daarna via de
 
 _Woorden die niet in de woordenlijst staan, maar wel in dit verhaal:_
 
-| Nederlands     | Русский             | English        |
-| -------------- | ------------------- | -------------- |
-| middernacht    | полночь             | midnight       |
-| slaperig       | сонный              | sleepy         |
-| de intercom    | домофон             | intercom       |
-| kraken         | трещать, скрипеть   | to crackle     |
-| het bericht    | сообщение           | message        |
-| spookachtig    | призрачный          | ghostly        |
-| trillen        | вибрировать, дрожать| to tremble     |
-| het bezoek     | посещение, визит    | visit          |
-| verzinnen      | выдумывать          | to invent      |
-| de thermometer | термометр           | thermometer    |
-| de geboortedatum | дата рождения     | date of birth  |
-| verwerken      | обрабатывать        | to process     |
-| de gemiste oproep | пропущенный звонок | missed call  |
+| Nederlands    | Русский          | English       |
+| ------------- | ---------------- | ------------- |
+| middernacht   | полночь          | midnight      |
+| slaperig      | сонный           | sleepy        |
+| de intercom   | домофон          | intercom      |
+| kraken        | трещать          | to crackle    |
+| raar          | странный         | strange       |
+| het bericht   | сообщение        | message       |
+| verwarring    | путаница         | confusion     |
+| de beurt      | очередь          | turn          |
+| verwerken     | обрабатывать     | to process    |
+| gemist        | пропущенный      | missed        |
