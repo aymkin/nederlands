@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+de alcohol	Met deze pillen geen alcohol drinken, hè?	алкоголь	С этими таблетками алкоголь не пей, да?	link::thema7::taak4::A2
+bewaren	Bewaar het even in de koelkast.	хранить, сохранять	Положи пока в холодильник.	link::thema7::taak4::A2
+de bijwerking	Heeft dit medicijn veel bijwerkingen?	побочный эффект	У этого лекарства много побочек?	link::thema7::taak4::A2
+de borstvoeding	Tijdens de borstvoeding mag dit niet.	грудное вскармливание	При грудном вскармливании нельзя.	link::thema7::taak4::A2
+boven	Niet boven de 25 graden bewaren.	выше, над	Не хранить выше 25 градусов.	link::thema7::taak4::A2
+het contact	Neem gewoon even contact op, hoor.	контакт, связь	Просто свяжись с ними.	link::thema7::taak4::A2
+erg	Ze voelt zich erg moe eigenlijk.	очень; сильно	Она, вообще-то, очень устала.	link::thema7::taak4::A2
+het glas	Neem een glas water erbij.	стакан	Запей стаканом воды.	link::thema7::taak4::A2
+hardlopen	Ik ga even lekker hardlopen, hoor.	бегать (трусцой)	Пойду-ка побегаю.	link::thema7::taak4::A2
+innemen	Neem de pil 's avonds in.	принимать (лекарство)	Прими таблетку вечером.	link::thema7::taak4::A2
+de knie	M'n knie doet echt al weken pijn.	колено	Колено реально болит уже недели.	link::thema7::taak4::A2
+laatst	De laatste dagen voel ik me beter.	последний, недавний	Последние дни чувствую себя лучше.	link::thema7::taak4::A2
+maal	Drie maal per dag één tablet.	раз (о частоте)	Три раза в день по одной таблетке.	link::thema7::taak4::A2
+de maaltijd	Innemen tijdens de maaltijd, hoor.	приём пищи, трапеза	Принимать во время еды.	link::thema7::taak4::A2
+misselijk	Ik voel me eigenlijk best misselijk.	подташнивает, тошно	Меня, вообще-то, прилично подташнивает.	link::thema7::taak4::A2
+de nacht	Vannacht heb ik slecht geslapen.	ночь	Ночью я плохо спала.	link::thema7::taak4::A2
+de pil	De pil helpt echt snel, hoor.	таблетка	Таблетка правда быстро помогает.	link::thema7::taak4::A2
+de slaappil	Ik neem soms een slaappil.	снотворное	Я иногда пью снотворное.	link::thema7::taak4::A2
+de stress	Ze heeft gewoon veel stress.	стресс	У неё просто много стресса.	link::thema7::taak4::A2
+de tablet	Neem één tablet voor de nacht.	таблетка (плоская)	Прими одну таблетку на ночь.	link::thema7::taak4::A2
+tegelijk	Niet tegelijk met alcohol, echt niet.	одновременно	Не вместе с алкоголем — правда нельзя.	link::thema7::taak4::A2
+tijdens	Tijdens de pauze eten we samen.	во время	В перерыв мы едим вместе.	link::thema7::taak4::A2
+de verpakking	Op de verpakking staat gewoon de datum.	упаковка	На упаковке просто написана дата.	link::thema7::taak4::A2
+de zwangerschap	Is het eigenlijk haar eerste zwangerschap?	беременность	А это у неё первая беременность?	link::thema7::taak4::A2

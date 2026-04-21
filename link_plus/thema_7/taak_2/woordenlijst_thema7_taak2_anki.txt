@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+brengen	Pap brengt me even naar de dokter.	приводить, привозить	Папа меня отвезёт к врачу.	link::thema7::taak2::A2
+de dag	Fijne dag nog!	день	Хорошего тебе дня!	link::thema7::taak2::A2
+eigenlijk	Eigenlijk wilde ik 's middags komen.	вообще-то, на самом деле	Вообще-то я хотел прийти днём.	link::thema7::taak2::A2
+het geduld	Heb nog even geduld, hoor.	терпение	Потерпи ещё немножко, ладно.	link::thema7::taak2::A2
+de graad	Wow, 38 graden is best hoog, hè?	градус	Ух, 38 — это довольно много, да?	link::thema7::taak2::A2
+hoesten	Ik moet de hele dag hoesten.	кашлять	Я весь день кашляю.	link::thema7::taak2::A2
+de keel	M'n keel is droog vandaag.	горло	У меня сегодня пересохло горло.	link::thema7::taak2::A2
+de keelpijn	Keelpijn kan best vervelend zijn, hè?	боль в горле	Боль в горле бывает прям противной, да?	link::thema7::taak2::A2
+de koorts	Ze heeft koorts, arme meid.	температура, жар	У неё температура, бедняжка.	link::thema7::taak2::A2
+de lijn	Blijft u even aan de lijn?	линия (телефонная)	Оставайтесь, пожалуйста, на линии.	link::thema7::taak2::A2
+mogelijk	We helpen u zo snel mogelijk.	возможный, возможно	Мы поможем вам как можно скорее.	link::thema7::taak2::A2
+het moment	Op dit moment is het lastig.	момент	Сейчас это сложно.	link::thema7::taak2::A2
+het ogenblik	Een ogenblikje, ik kom zo.	мгновение, момент (формал.)	Минутку, сейчас подойду.	link::thema7::taak2::A2
+opnieuw	Zullen we opnieuw even bellen?	заново, снова	Перезвоним ещё разок?	link::thema7::taak2::A2
+overgaan	Dit gaat gelukkig best snel over.	проходить (о боли, болезни)	Это, к счастью, довольно быстро пройдёт.	link::thema7::taak2::A2
+de pijn	Ik heb echt veel pijn vandaag.	боль	У меня сегодня реально сильно болит.	link::thema7::taak2::A2
+spijten	Sorry, het spijt me echt.	сожалеть	Извини, мне правда жаль.	link::thema7::taak2::A2
+spreken	U spreekt met Abdul Mohamed, goeiemorgen.	говорить	Это Абдул Мохамед, доброе утро.	link::thema7::taak2::A2
+de vader	M'n vader maakt zich echt zorgen.	отец, папа	Папа правда переживает.	link::thema7::taak2::A2
+vanzelf	Dat komt vanzelf wel goed, hoor.	сам собой, автоматически	Всё само собой наладится.	link::thema7::taak2::A2
+verkouden	Iedereen is verkouden op het moment.	простуженный	Сейчас все ходят с простудой.	link::thema7::taak2::A2
+verzetten	Ik wil eigenlijk m'n afspraak verzetten.	переносить (запись)	Я вообще-то хотел бы перенести запись.	link::thema7::taak2::A2
+vrij	Heb je morgen nog iets vrij?	свободный	У тебя завтра есть свободное время?	link::thema7::taak2::A2

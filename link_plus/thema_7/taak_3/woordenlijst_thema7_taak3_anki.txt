@@ -1,0 +1,34 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+de apotheek	De apotheek is hier lekker dichtbij.	аптека (с рецептурными препаратами)	Аптека тут удобно близко.	link::thema7::taak3::A2
+de bijsluiter	Lees even de bijsluiter, hoor.	инструкция к лекарству	Прочитай, пожалуйста, инструкцию.	link::thema7::taak3::A2
+de doos	Hoeveel zit er eigenlijk in een doosje?	коробка, коробочка	А сколько штук в коробочке?	link::thema7::taak3::A2
+de dosering	Let even op de dosering, hoor.	дозировка	Обрати внимание на дозировку.	link::thema7::taak3::A2
+de drogist	Ga even naar de drogist, hoor.	дрогерия (магазин безрецептурных средств)	Зайди в дрогерию, ладно?	link::thema7::taak3::A2
+het gebruik	Hebt u vragen over het gebruik?	применение, использование	У вас есть вопросы по применению?	link::thema7::taak3::A2
+het huismerk	Het huismerk is meestal wat goedkoper.	своя марка (магазина)	Своя марка обычно чуть дешевле.	link::thema7::taak3::A2
+jong	Dit is voor hele jonge kindjes.	молодой, маленький (по возрасту)	Это для совсем маленьких детишек.	link::thema7::taak3::A2
+de kant	Het staat gewoon aan die kant.	сторона	Это просто с той стороны.	link::thema7::taak3::A2
+de leeftijd	Op die leeftijd kan dat, hoor.	возраст	В этом возрасте такое бывает.	link::thema7::taak3::A2
+de luier	Waar staan de luiers eigenlijk?	подгузник, памперс	А где вообще памперсы?	link::thema7::taak3::A2
+maar	Neem er maar eentje, hoor.	просто, давай (частица побуждения)	Возьми одну, не переживай.	link::thema7::taak3::A2
+maximaal	Maximaal drie pillen per dag.	максимум, максимальный	Максимум три таблетки в день.	link::thema7::taak3::A2
+het medicijn	Dit medicijn werkt best goed, hoor.	лекарство	Это лекарство довольно хорошо помогает.	link::thema7::taak3::A2
+het merk	Welk merk is beter, denk je?	марка, бренд	Какая марка лучше, как думаешь?	link::thema7::taak3::A2
+de milligram	Hebt u ook 25 milligram?	миллиграмм	А 25 мг у вас есть?	link::thema7::taak3::A2
+naast	De luiers staan naast het wc-papier.	рядом, около	Памперсы рядом с туалетной бумагой.	link::thema7::taak3::A2
+de neus	Hij heeft gewoon een verstopte neus.	нос	У него просто заложен нос.	link::thema7::taak3::A2
+de neusspray	Probeer eens een neusspray, hoor.	назальный спрей	Попробуй спрей для носа.	link::thema7::taak3::A2
+de pijnstiller	Heb je een lichte pijnstiller?	обезболивающее	У тебя есть что-нибудь слабое от боли?	link::thema7::taak3::A2
+proberen	Zal ik het eens proberen?	пробовать, пытаться	А мне попробовать?	link::thema7::taak3::A2
+het recept	Daarvoor heb je gewoon een recept nodig.	рецепт (от врача)	Для этого просто нужен рецепт.	link::thema7::taak3::A2
+de rug	Ik heb echt last van m'n rug.	спина	У меня реально спина беспокоит.	link::thema7::taak3::A2
+verder	Hebt u verder nog vragen?	ещё, далее	У вас есть ещё вопросы?	link::thema7::taak3::A2
+het verschil	Wat is eigenlijk het verschil?	разница, отличие	А в чём вообще разница?	link::thema7::taak3::A2
+wakker	Hij wordt 's nachts steeds wakker.	бодрствующий, проснувшийся	Он постоянно просыпается ночью.	link::thema7::taak3::A2
+het wc-papier	We hebben geen wc-papier meer!	туалетная бумага	У нас закончилась туалетная бумага!	link::thema7::taak3::A2
+de zoon	M'n zoontje is heel vaak verkouden.	сын	Мой сынишка часто простужается.	link::thema7::taak3::A2
+zwaar	Dit is wel een zware pijnstiller.	тяжёлый, сильный (о лекарстве)	Это довольно сильное обезболивающее.	link::thema7::taak3::A2

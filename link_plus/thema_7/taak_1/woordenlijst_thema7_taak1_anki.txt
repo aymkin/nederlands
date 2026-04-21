@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+het spreekuur	Wanneer is het spreekuur eigenlijk?	часы приёма (у врача)	А когда вообще приём?	link::thema7::taak1::A2
+de assistente	De assistente belt je zo terug.	ассистентка (в медпрактике), регистратор	Тебе сейчас регистратор перезвонит.	link::thema7::taak1::A2
+behandelen	De dokter gaat m'n rug behandelen.	лечить, проводить лечение	Врач будет лечить мою спину.	link::thema7::taak1::A2
+de dokter	Ik moet echt even naar de dokter.	врач, доктор	Мне правда надо сходить к врачу.	link::thema7::taak1::A2
+dubbel	Kun je gewoon een dubbele afspraak maken?	двойной	Можешь просто записать на двойной приём?	link::thema7::taak1::A2
+een paar	Het gaat na een paar dagen over.	несколько, пара	Через пару дней пройдёт.	link::thema7::taak1::A2
+ernstig	Is het best ernstig, dokter?	серьёзный	Это довольно серьёзно, доктор?	link::thema7::taak1::A2
+de gegevens	Geef even je gegevens door, hoor.	данные, сведения	Сообщи, пожалуйста, свои данные.	link::thema7::taak1::A2
+gesloten	De praktijk is 's avonds gesloten.	закрытый	Практика вечером закрыта.	link::thema7::taak1::A2
+de gezondheidszorg	De gezondheidszorg hier is echt goed.	здравоохранение	Здравоохранение здесь правда хорошее.	link::thema7::taak1::A2
+de huisarts	M'n huisarts is vandaag helaas ziek.	семейный врач (ГП)	Мой семейный врач сегодня, к сожалению, болен.	link::thema7::taak1::A2
+de huisartsenpost	In het weekend bel je de huisartsenpost.	дежурный пункт семейных врачей (вне часов практики)	В выходные звонишь в дежурный пункт.	link::thema7::taak1::A2
+de klacht	Wat zijn je klachten eigenlijk?	жалоба, симптом	А что именно тебя беспокоит?	link::thema7::taak1::A2
+kort	Ik kom even kort langs.	короткий, ненадолго	Я забегу ненадолго.	link::thema7::taak1::A2
+het onderzoek	Het onderzoek duurde wel een uur.	обследование, осмотр	Обследование длилось целый час.	link::thema7::taak1::A2
+de praktijk	De praktijk zit vlakbij het station.	практика (врача)	Практика рядом с вокзалом.	link::thema7::taak1::A2
+sommige	Sommige dagen ben ik gewoon moe.	некоторые	В некоторые дни я просто устаю.	link::thema7::taak1::A2
+de specialist	M'n huisarts stuurt me naar een specialist.	специалист (врач узкого профиля)	Семейный врач направит меня к специалисту.	link::thema7::taak1::A2
+de spoed	Met spoed bel je 112, hoor.	срочность, экстренность	В экстренном случае звонишь 112, помни.	link::thema7::taak1::A2
+het spoedgeval	Bij spoedgevallen toets je gewoon een 1.	экстренный случай	В экстренных случаях просто нажимаешь 1.	link::thema7::taak1::A2
+toetsen	Welke knop moet ik even toetsen?	нажимать (кнопку)	А какую кнопку мне нажать?	link::thema7::taak1::A2
+de verwijzing	Je hebt een verwijzing nodig hiervoor.	направление (к врачу)	Тебе для этого нужно направление.	link::thema7::taak1::A2
+via	Dat gaat alleen via je huisarts.	через, по	Это только через семейного врача.	link::thema7::taak1::A2
+het ziekenhuis	M'n oma ligt nu in het ziekenhuis.	больница	Моя бабушка сейчас в больнице.	link::thema7::taak1::A2
