@@ -1,0 +1,26 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+bang	Ik ben bang in 't verkeer.	боящийся; страшно (мне)	Я в дороге побаиваюсь.	link::thema9::taak1::A2
+de boot	We gaan met de boot, lekker!	лодка, катер	Поедем на катере, кайф!	link::thema9::taak1::A2
+de brommer	Z'n brommer staat gewoon buiten.	мопед, скутер	Его мопед просто на улице стоит.	link::thema9::taak1::A2
+durven	Durf jij echt in een vliegtuig?	решаться, осмеливаться	Не страшно тебе в самолёт?	link::thema9::taak1::A2
+de fietser	Daar gaat een snelle fietser, joh.	велосипедист	Вон едет быстрый велосипедист, прикинь.	link::thema9::taak1::A2
+het gevaar	Wat is hier eigenlijk het gevaar?	опасность	А в чём здесь, собственно, опасность?	link::thema9::taak1::A2
+gevaarlijk	Dat kruispunt is echt gevaarlijk.	опасный	Этот перекрёсток реально стрёмный.	link::thema9::taak1::A2
+liever	Ik ga liever met de fiets.	охотнее, лучше бы	Я лучше на велосипеде.	link::thema9::taak1::A2
+meest	Wat is het meest veilig?	самый, более всего (превосх.)	Что безопаснее всего?	link::thema9::taak1::A2
+ondertussen	Ondertussen wacht ik op groen.	тем временем, а пока	А я пока жду зелёный.	link::thema9::taak1::A2
+het ongeluk	Er was een klein ongeluk.	несчастный случай, авария	Тут была небольшая авария.	link::thema9::taak1::A2
+oversteken	Kijk goed uit met oversteken, hoor.	переходить (улицу)	Внимательно переходи, понял.	link::thema9::taak1::A2
+rijden	Hij rijdt echt rustig, hoor.	ехать; водить	Он реально спокойно едет.	link::thema9::taak1::A2
+uitkijken	Kijk goed uit op je fiets!	смотреть в оба, быть начеку	Смотри в оба на велике!	link::thema9::taak1::A2
+veilig	Ik vind treinen best veilig.	безопасный, надёжный	Поезда — это довольно надёжно.	link::thema9::taak1::A2
+de veiligheid	Veiligheid gaat altijd voor, hoor.	безопасность	Безопасность прежде всего, между прочим.	link::thema9::taak1::A2
+het vliegtuig	Met het vliegtuig is 't sneller.	самолёт	Самолётом-то быстрее.	link::thema9::taak1::A2
+de volwassene	Volwassenen rijden ook soms gevaarlijk.	взрослый (человек)	Взрослые тоже иногда опасно ездят.	link::thema9::taak1::A2
+voorzichtig	Wees gewoon voorzichtig op de weg.	осторожный, аккуратный	Просто будь осторожен на дороге.	link::thema9::taak1::A2
+zich voelen	Ik voel me hier wel oké.	чувствовать себя	Я тут себя нормально чувствую.	link::thema9::taak1::A2
+zomaar	Hij stak zomaar de straat over.	просто так, ни с того ни с сего	Он просто так перешёл улицу.	link::thema9::taak1::A2

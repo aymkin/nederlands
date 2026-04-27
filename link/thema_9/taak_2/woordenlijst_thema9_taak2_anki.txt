@@ -1,0 +1,35 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+het bad	Het bad loopt nu lekker vol.	ванна, ванная	Ванна как раз наполняется, кайф.	link::thema9::taak2::A2
+controleren	Even controleren of de oven uitstaat.	проверять, контролировать	Проверить, выключена ли духовка.	link::thema9::taak2::A2
+het fornuis	Het fornuis staat gewoon nog aan.	плита, печь (кухонная)	Плита просто ещё включена.	link::thema9::taak2::A2
+het gevoel	Ik heb echt een raar gevoel.	чувство, ощущение	У меня реально странное чувство.	link::thema9::taak2::A2
+giftig	Dit middel is best giftig.	ядовитый, токсичный	Это средство довольно ядовитое.	link::thema9::taak2::A2
+heet	Die pan is echt gloeiend heet!	горячий	Сковорода реально раскалённая!	link::thema9::taak2::A2
+hieronder	Hieronder staat eigenlijk alles.	ниже (по тексту); под этим	Ниже, в общем-то, всё.	link::thema9::taak2::A2
+jouw	Is dat jouw speelgoed?	твой (полная форма)	Это твоя игрушка?	link::thema9::taak2::A2
+de keukenkast	Het zit gewoon in de keukenkast.	кухонный шкаф	Это просто в кухонном шкафу.	link::thema9::taak2::A2
+de kraan	Doe de kraan goed dicht.	кран (водопроводный)	Закрой кран как следует.	link::thema9::taak2::A2
+de mond	Niet in je mond, hè!	рот	Не в рот, понял?	link::thema9::taak2::A2
+namelijk	Hij is namelijk nog klein.	видишь ли, дело в том (поясн. частица)	Он, видишь ли, ещё маленький.	link::thema9::taak2::A2
+nieuwsgierig	Kinderen zijn echt nieuwsgierig, hoor.	любопытный	Дети реально любопытные, между прочим.	link::thema9::taak2::A2
+ontdekken	Hij ontdekt eigenlijk overal dingen.	открывать, обнаруживать	Он, в общем-то, везде что-то находит.	link::thema9::taak2::A2
+openmaken	Niet zomaar die kast openmaken!	открывать	Не открывай этот шкаф просто так!	link::thema9::taak2::A2
+oppassen	Pas op met die hete pan!	быть осторожным; присматривать	Осторожно с горячей сковородкой!	link::thema9::taak2::A2
+de oven	De oven is nog best warm.	духовка	Духовка ещё довольно тёплая.	link::thema9::taak2::A2
+overal	Hij rommelt eigenlijk overal in huis.	везде, повсюду	Он, в принципе, везде по дому шарится.	link::thema9::taak2::A2
+de pan	Pak even de grote pan.	сковорода, кастрюля	Возьми большую сковородку.	link::thema9::taak2::A2
+het plaatje	Op dit plaatje zie je risico's.	картинка	На этой картинке видно опасности.	link::thema9::taak2::A2
+het schoonmaakmiddel	Schoonmaakmiddel hoort hoog in de kast.	чистящее средство	Чистящие средства — повыше в шкафу.	link::thema9::taak2::A2
+het slot	De deur heeft een goed slot.	замок	У двери хороший замок.	link::thema9::taak2::A2
+de sluiting	Deze fles heeft een veilige sluiting.	застёжка, замок (на крышке)	У этой бутылки безопасный замок-затвор.	link::thema9::taak2::A2
+het speelgoed	Ruim je speelgoed even op.	игрушки (собир.)	Убери свои игрушки.	link::thema9::taak2::A2
+stevig	Hou m'n hand stevig vast.	крепкий, прочный	Крепко держи мою руку.	link::thema9::taak2::A2
+het stopcontact	Niks in het stopcontact stoppen!	розетка	Ничего в розетку не суй!	link::thema9::taak2::A2
+stoppen	Stop dit even in de la.	класть, совать; останавливать(ся)	Положи это в ящик.	link::thema9::taak2::A2
+de tip	Heb je nog een tip?	совет, подсказка	Есть ещё совет?	link::thema9::taak2::A2
+het traphekje	Doe het traphekje even dicht.	воротца у лестницы (детск.)	Закрой воротца у лестницы.	link::thema9::taak2::A2
+trekken	Niet zomaar aan de kabel trekken!	тянуть, дёргать	Не дёргай за кабель просто так!	link::thema9::taak2::A2

@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+daarna	Eerst kijken, daarna gewoon oversteken.	после этого, потом	Сначала глянь, потом переходи.	link::thema9::taak3::A2
+eng	Het is hier 's avonds eng.	страшный, жутковатый	Тут вечером жутковато.	link::thema9::taak3::A2
+het fietspad	Het fietspad is gewoon helemaal glad.	велосипедная дорожка	Велодорожка совсем скользкая.	link::thema9::taak3::A2
+het gat	Er is een groot gat hier.	дыра, отверстие	Тут большая дыра.	link::thema9::taak3::A2
+glad	Pas op, het is echt glad!	скользкий	Осторожно, реально скользко!	link::thema9::taak3::A2
+de hand	Geef me even je hand.	рука (кисть)	Дай-ка руку.	link::thema9::taak3::A2
+heleboel	Er ligt echt een heleboel sneeuw.	куча, много	Снега реально навалом.	link::thema9::taak3::A2
+langzaam	Rij vandaag echt langzaam, hè.	медленный, медленно	Сегодня езжай реально медленно.	link::thema9::taak3::A2
+laten	Laat de auto maar staan.	давать, позволять; оставлять	Оставь машину, пусть стоит.	link::thema9::taak3::A2
+levensgevaarlijk	Met ijzel is fietsen echt levensgevaarlijk.	смертельно опасный	В гололёд кататься реально смертельно опасно.	link::thema9::taak3::A2
+het licht	Doe het licht even aan.	свет	Включи-ка свет.	link::thema9::taak3::A2
+melden	Even bij de gemeente melden.	сообщать, заявлять	Сообщи в муниципалитет.	link::thema9::taak3::A2
+online	Ik meld het gewoon online.	онлайн, в интернете	Сообщу просто онлайн.	link::thema9::taak3::A2
+onveilig	Dit kruispunt voelt gewoon onveilig aan.	небезопасный	Этот перекрёсток ощущается небезопасно.	link::thema9::taak3::A2
+repareren	Wanneer gaan ze 't nou repareren?	чинить, ремонтировать	Когда они это уже починят?	link::thema9::taak3::A2
+het schema	Het schema staat gewoon hieronder.	схема, расписание	Расписание ниже, в общем.	link::thema9::taak3::A2
+de situatie	De situatie is best gevaarlijk.	ситуация, обстановка	Ситуация довольно опасная.	link::thema9::taak3::A2
+sneeuwen	Het gaat vannacht hard sneeuwen.	идти снегу, снежить	Ночью сильно засыпет снегом.	link::thema9::taak3::A2
+het stoplicht	Hij rijdt zomaar door het stoplicht!	светофор	Он на красный — просто так!	link::thema9::taak3::A2
+de straatverlichting	De straatverlichting is hier kapot.	уличное освещение	Уличное освещение здесь сломано.	link::thema9::taak3::A2
+strooien	Ze strooien zout op het ijs.	сыпать, посыпать	Они посыпают соль на лёд.	link::thema9::taak3::A2
+de verlichting	Werkt de verlichting nog?	освещение	Освещение ещё работает?	link::thema9::taak3::A2
+de vrachtwagen	Die vrachtwagen rijdt echt langzaam.	грузовик	Этот грузовик реально медленно едет.	link::thema9::taak3::A2
+vriezen	Het gaat morgen flink vriezen.	морозить, замерзать	Завтра будет крепкий мороз.	link::thema9::taak3::A2
+het zebrapad	Steek even over op 't zebrapad.	пешеходный переход (зебра)	Перейди-ка по зебре.	link::thema9::taak3::A2

@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+de aandacht	Ze trekken altijd echt veel aandacht.	внимание	Они вечно реально привлекают внимание.	link::thema9::taak4::A2
+de agent	De agent komt zo even langs.	полицейский, агент	Полицейский скоро подойдёт.	link::thema9::taak4::A2
+het alarm	Het alarm gaat echt af!	сигнализация, тревога	Сигнализация реально сработала!	link::thema9::taak4::A2
+de alarmcentrale	Bel meteen de alarmcentrale, hoor.	служба экстренной помощи	Сразу звони в службу спасения!	link::thema9::taak4::A2
+het alarmnummer	Het alarmnummer hier is 112.	номер службы спасения	Номер службы спасения здесь — 112.	link::thema9::taak4::A2
+algemeen	In het algemeen is 't rustig.	общий; в общем	В общем-то, тут спокойно.	link::thema9::taak4::A2
+de criminaliteit	Criminaliteit valt hier echt mee.	преступность	Преступности тут реально мало.	link::thema9::taak4::A2
+dichtdoen	Doe de deur even dicht!	закрывать	Закрой-ка дверь!	link::thema9::taak4::A2
+de diefstal	Er was hier gewoon een diefstal.	кража, воровство	Тут просто была кража.	link::thema9::taak4::A2
+gooien	Hij gooit alles op de grond.	бросать, кидать	Он швыряет всё на пол.	link::thema9::taak4::A2
+de inbreker	Er staat zomaar een inbreker buiten!	вор-взломщик	На улице вор стоит, прикинь!	link::thema9::taak4::A2
+de jongere	Een paar jongeren staan buiten.	молодой человек, подросток	Несколько подростков снаружи стоят.	link::thema9::taak4::A2
+de last	Heb je echt last van geluid?	тяжесть, обуза; помеха	Тебе реально мешает шум?	link::thema9::taak4::A2
+het oog	Hou je ogen goed open.	глаз	Смотри во все глаза.	link::thema9::taak4::A2
+het oor	M'n oren doen echt pijn.	ухо	Уши реально болят.	link::thema9::taak4::A2
+de overlast	Veel overlast van die honden.	помеха, шум, неудобство	Много шума от этих собак.	link::thema9::taak4::A2
+de politie	Heb je de politie al gebeld?	полиция	Ты уже звонил в полицию?	link::thema9::taak4::A2
+het politiebureau	Het politiebureau is hier echt vlakbij.	полицейский участок	Полицейский участок реально рядом.	link::thema9::taak4::A2
+de steen	Er ligt daar een grote steen.	камень	Там лежит большой камень.	link::thema9::taak4::A2
+tegelijk	We praten allemaal tegelijk, hoor.	одновременно, в то же время	Мы все одновременно говорим.	link::thema9::taak4::A2
+weggaan	We moeten nu echt weggaan.	уходить, уезжать	Нам пора реально уходить.	link::thema9::taak4::A2
+de wijkagent	Onze wijkagent is heel aardig.	участковый полицейский	Наш участковый очень приятный.	link::thema9::taak4::A2
+de woning	Onze woning heeft een goed slot.	жилище, квартира	В нашей квартире хороший замок.	link::thema9::taak4::A2
+zeker	Bel zeker de politie, hoor.	конечно, точно; уверенный	Точно звони в полицию.	link::thema9::taak4::A2
