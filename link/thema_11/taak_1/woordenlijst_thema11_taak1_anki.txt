@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+de activiteit	Welke activiteit doe je in 't weekend? Iets actiefs?	занятие, активность	Какое занятие у тебя на выходных? Что-нибудь активное?	link::thema11::taak1::A2
+de arm	M'n arm doet zeer sinds gisteren, ik kan niet trainen.	рука	У меня рука болит со вчера, не могу тренироваться.	link::thema11::taak1::A2
+beloven	Ik beloof het, ik kom echt op tijd.	обещать	Обещаю, приду точно вовремя.	link::thema11::taak1::A2
+bewegen	Je moet gewoon meer bewegen, hoor.	двигаться	Тебе просто надо больше двигаться.	link::thema11::taak1::A2
+de blessure	Met deze blessure mag ik voorlopig niks zwaar tillen.	травма	С такой травмой пока ничего тяжёлого поднимать нельзя.	link::thema11::taak1::A2
+ernstig	Is het ernstig? Of valt 't mee?	серьёзный	Это серьёзно? Или не страшно?	link::thema11::taak1::A2
+gelden	Die regel geldt voor iedereen, ook voor jou.	действовать (о правиле)	Это правило действует для всех, и для тебя тоже.	link::thema11::taak1::A2
+gisteren	Gisteren ben ik gevallen op de fiets, balen.	вчера	Вчера упал с велика, обидно.	link::thema11::taak1::A2
+haast	Ik heb haast, ik bel je later wel.	спешка	Я тороплюсь, перезвоню позже.	link::thema11::taak1::A2
+hopen	Ik hoop dat 't morgen droog blijft.	надеяться	Надеюсь, завтра не будет дождя.	link::thema11::taak1::A2
+leven	Hij leeft echt gezond sinds die blessure.	жить	Он реально здоровый образ жизни ведёт после той травмы.	link::thema11::taak1::A2
+niets	Ik heb niets gedaan dit weekend, lekker rustig.	ничего	Я в эти выходные ничего не делал, прям спокойно.	link::thema11::taak1::A2
+oppassen	Pas op met optillen, je rug is nog niet helemaal goed.	беречься, быть осторожным	Аккуратно поднимай, спина ещё не полностью оправилась.	link::thema11::taak1::A2
+optillen	Mag ik dit even optillen of is 't te zwaar voor me?	поднимать	Можно мне это поднять или слишком тяжёлое?	link::thema11::taak1::A2
+de speeltuin	De kinderen zijn even naar de speeltuin met de buurvrouw.	детская площадка	Дети ушли на детскую площадку с соседкой.	link::thema11::taak1::A2
+sporten	Ik sport drie keer per week, anders word ik gek.	заниматься спортом	Спортом занимаюсь три раза в неделю, иначе с ума схожу.	link::thema11::taak1::A2
+de sportschool	Ga je vanavond ook naar de sportschool?	спортзал, фитнес-клуб	Идёшь сегодня вечером в зал?	link::thema11::taak1::A2
+trainen	Vandaag train ik m'n armen, morgen m'n benen.	тренировать(ся)	Сегодня тренирую руки, завтра ноги.	link::thema11::taak1::A2
+uiterlijk	Voor mij is gezondheid belangrijker dan uiterlijk.	внешность	Для меня здоровье важнее внешности.	link::thema11::taak1::A2
+vast	Hij komt vast nog, hij is meestal wat later.	наверняка, точно	Он точно ещё придёт, он обычно немного опаздывает.	link::thema11::taak1::A2
+de vinger	M'n vinger doet pijn, ik kan nu echt niet schrijven.	палец	Палец болит, реально не могу сейчас писать.	link::thema11::taak1::A2
+voorlopig	Voorlopig ga ik niet sporten, de dokter zei nee.	пока что, временно	Пока я спортом заниматься не буду, врач сказал нельзя.	link::thema11::taak1::A2
+het weekend	Wat doe je dit weekend? Iets leuks gepland?	выходные	Что делаешь на выходных? Запланировано что-нибудь весёлое?	link::thema11::taak1::A2
+zwaar	Die tas is best zwaar, geef 'm even hier.	тяжёлый	Эта сумка довольно тяжёлая, дай-ка сюда.	link::thema11::taak1::A2
+het zwembad	Het zwembad is vlak bij m'n huis, lekker handig.	бассейн	Бассейн совсем рядом с домом, прям удобно.	link::thema11::taak1::A2
+zwemmen	Ik ga elke zondag zwemmen, rustige sport vind ik.	плавать	Я каждое воскресенье хожу плавать, для меня спокойный спорт.	link::thema11::taak1::A2

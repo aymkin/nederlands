@@ -1,0 +1,25 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+anders	Vrijdag kan niet, maar anders kom ik graag.	иначе; в другой раз	В пятницу не могу, но в другой день с радостью.	link::thema11::taak2::A2
+antwoorden	Ze antwoordt niet op m'n appjes, gek hoor.	отвечать	Она не отвечает на мои сообщения, странно.	link::thema11::taak2::A2
+beslist	Ik kom beslist op tijd, beloofd.	точно, обязательно	Я приду точно вовремя, обещаю.	link::thema11::taak2::A2
+de bioscoop	Zullen we naar de bioscoop? Er draait iets leuks.	кинотеатр	Сходим в кино? Идёт что-то интересное.	link::thema11::taak2::A2
+eerder	Sorry, ik heb dit eerder al beloofd aan m'n moeder.	раньше	Извини, я раньше уже обещал это маме.	link::thema11::taak2::A2
+eerlijk	Eerlijk gezegd, ik heb gewoon geen zin vanavond.	честный, откровенный	Если честно, мне просто не хочется сегодня вечером.	link::thema11::taak2::A2
+egoïstisch	Doe niet zo egoïstisch, denk ook even aan ons.	эгоистичный	Не будь эгоистом, подумай и о нас.	link::thema11::taak2::A2
+de familie	Het is m'n familie, ik kan niet zomaar nee zeggen.	семья (родня)	Это моя семья, я не могу просто так отказать.	link::thema11::taak2::A2
+geleden	Ik heb haar twee weken geleden voor het laatst gezien.	тому назад	Я её две недели назад в последний раз видела.	link::thema11::taak2::A2
+kwaad	Hij wordt vast kwaad als ik nu afzeg.	злой, сердитый	Он наверняка разозлится, если я сейчас откажусь.	link::thema11::taak2::A2
+lastig	Het is best lastig om voor allebei tijd te vinden.	трудный, неудобный	Довольно сложно найти время для обоих.	link::thema11::taak2::A2
+liegen	Ik wil niet liegen tegen m'n schoonouders.	лгать, врать	Не хочу врать свекрови и свёкру.	link::thema11::taak2::A2
+logeren	M'n tante komt logeren dit weekend, druk dus.	ночевать в гостях	Моя тётя приедет с ночёвкой на выходных, так что куча дел.	link::thema11::taak2::A2
+ontzettend	Ik ben ontzettend moe, vanavond ga ik nergens heen.	ужасно, страшно (усил.)	Я дико уставшая, вечером никуда не пойду.	link::thema11::taak2::A2
+de oppas	De oppas komt om zeven, daarna kunnen we weg.	няня	Няня приходит в семь, потом мы можем уйти.	link::thema11::taak2::A2
+de schoonouders	M'n schoonouders komen eten, ik kan niet weg.	тесть с тёщей; свекровь со свёкром	Свекровь со свёкром придут на ужин, не могу уйти.	link::thema11::taak2::A2
+toen	Toen ik dat hoorde, was ik echt boos, hoor.	тогда; когда (в прошлом)	Когда я это услышала, реально разозлилась.	link::thema11::taak2::A2
+de toets	Ik heb morgen een toets, ik moet echt leren vanavond.	контрольная, тест	У меня завтра тест, реально надо учить вечером.	link::thema11::taak2::A2
+uitgaan	We gaan ontzettend weinig uit sinds de baby er is.	выходить тусоваться	Мы дико мало выходим тусоваться с тех пор, как у нас ребёнок.	link::thema11::taak2::A2
+worden	Het wordt gewoon te druk, ik moet ergens nee zeggen.	становиться	Просто становится слишком напряжённо, надо где-то отказать.	link::thema11::taak2::A2

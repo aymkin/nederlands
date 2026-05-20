@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+bederven	Het weer kan de vrijmarkt echt bederven.	портить	Погода может реально испортить барахолку.	link::thema11::taak4::A2
+betekenen	Wat betekent dat woord precies?	значить, означать	Что именно значит это слово?	link::thema11::taak4::A2
+de bevolking	De hele bevolking van Zwolle is op straat vandaag.	население	Сегодня всё население Зволле на улице.	link::thema11::taak4::A2
+bezoeken	We bezoeken m'n oom in Amsterdam morgen.	посещать, навещать	Завтра идём в гости к дяде в Амстердам.	link::thema11::taak4::A2
+het blikje	Een blikje fris is hier duurder dan in de supermarkt.	баночка, банка	Баночка газировки тут дороже, чем в супермаркете.	link::thema11::taak4::A2
+het cadeau	Wat geef je haar als cadeau? Ik weet 't echt niet.	подарок	Что подаришь ей в подарок? Реально не знаю.	link::thema11::taak4::A2
+de cake	Ik heb een lekkere cake gebakken voor haar verjaardag.	кекс, тортик	Я испекла вкусный кекс на её день рождения.	link::thema11::taak4::A2
+enzovoort	We hebben drank, eten, muziek enzovoort, alles geregeld.	и так далее	У нас выпивка, еда, музыка и так далее, всё готово.	link::thema11::taak4::A2
+extra	Op Koningsdag werk ik niet, lekker een extra dag vrij.	дополнительный	На День короля я не работаю, дополнительный выходной.	link::thema11::taak4::A2
+feliciteren	Vergeet niet om je tante te feliciteren met haar verjaardag!	поздравлять	Не забудь поздравить тётю с днём рождения!	link::thema11::taak4::A2
+de frisdrank	Veel frisdrank in plastic flesjes, jammer voor het milieu.	газировка, безалк. напиток	Много газировки в пластиковых бутылочках, жаль для экологии.	link::thema11::taak4::A2
+glazen	Op de markt zijn alleen plastic bekers, geen glazen.	стеклянный (прил.)	На рынке только пластиковые стаканчики, не стеклянные.	link::thema11::taak4::A2
+interviewen	Ze gaan vandaag mensen op de markt interviewen voor de tv.	брать интервью	Сегодня будут на рынке брать интервью у людей для телевидения.	link::thema11::taak4::A2
+de koning	De koning komt elk jaar naar een andere stad.	король	Король каждый год приезжает в другой город.	link::thema11::taak4::A2
+de koningin	Vroeger was er een koningin, nu hebben we een koning.	королева	Раньше была королева, теперь у нас король.	link::thema11::taak4::A2
+Koningsdag	Koningsdag is 27 april, vergeet 't oranje niet!	День короля (27 апреля)	День короля 27 апреля, не забудь оранжевое!	link::thema11::taak4::A2
+plastic	Op de vrijmarkt mag geen plastic meer, het is verboden.	пластик; пластиковый	На барахолке пластик больше нельзя, запрещено.	link::thema11::taak4::A2
+streng	De regels zijn streng op Koningsdag, oppassen dus.	строгий	Правила в День короля строгие, так что осторожно.	link::thema11::taak4::A2
+verboden	Het is verboden om hier glazen flessen te hebben.	запрещённый	Здесь запрещено иметь стеклянные бутылки.	link::thema11::taak4::A2
+verdienen	Op de vrijmarkt kun je echt wat verdienen, hoor.	зарабатывать	На барахолке реально можно подзаработать.	link::thema11::taak4::A2
+de verjaardag	Z'n verjaardag valt dit jaar op Koningsdag, dubbel feest!	день рождения	Его день рождения в этом году на День короля, двойной праздник!	link::thema11::taak4::A2
+vieren	Hoe vier jij meestal Koningsdag? Met familie?	праздновать	Как ты обычно отмечаешь День короля? С семьёй?	link::thema11::taak4::A2
+de vrijmarkt	Op de vrijmarkt verkoop ik m'n oude spullen.	блошиный рынок, барахолка	На барахолке продаю свои старые вещи.	link::thema11::taak4::A2
+de wandeling	Na 't eten maken we een wandeling door 't park.	прогулка	После еды погуляем по парку.	link::thema11::taak4::A2
+weggeven	Niet alles weggeven, hoor, sommige dingen wil ik houden.	отдавать (даром), раздавать	Не всё раздавай, кое-что хочу оставить себе.	link::thema11::taak4::A2
+het zakgeld	M'n dochter spaart haar zakgeld voor Koningsdag.	карманные деньги	Моя дочь копит карманные деньги на День короля.	link::thema11::taak4::A2

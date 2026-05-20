@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+bekend	Ik ken dat merk niet, is het bekend?	известный	Я не знаю эту марку, она известная?	link::thema10::taak3::A2
+beslissen	Ik kan niet beslissen tussen die twee, allebei mooi.	решать, выбирать	Не могу выбрать между этими двумя, обе хороши.	link::thema10::taak3::A2
+besteden	Hoeveel wil je eigenlijk besteden aan zo'n wasmachine?	тратить (на)	Сколько ты вообще хочешь потратить на такую стиралку?	link::thema10::taak3::A2
+het boek	Heb je dat boek nog dat ik je laatst gaf?	книга	У тебя ещё та книга, что я тебе на днях дал?	link::thema10::taak3::A2
+eindelijk	Yes, eindelijk een nieuwe stofzuiger, die oude was kapot.	наконец-то	Ура, наконец-то новый пылесос, старый был сломан.	link::thema10::taak3::A2
+het fornuis	Het fornuis in m'n nieuwe huis is best modern.	плита (кухонная)	Плита в моём новом доме довольно современная.	link::thema10::taak3::A2
+de kast	Die kast past niet in m'n slaapkamer, te groot.	шкаф	Этот шкаф не помещается в спальне, слишком большой.	link::thema10::taak3::A2
+de kringloopwinkel	In de kringloopwinkel vind je echt leuke spullen, hoor.	секонд-хенд, благотв. магазин	В секонд-хенде реально классные вещи попадаются.	link::thema10::taak3::A2
+lenen	Kan ik even je auto lenen? Ik moet een kast ophalen.	одалживать	Можно одолжить твою машину? Надо шкаф забрать.	link::thema10::taak3::A2
+de manier	Online kopen is gewoon de makkelijkste manier, vind ik.	способ	Онлайн-покупка, по мне, просто самый удобный способ.	link::thema10::taak3::A2
+maximaal	Ik kan maximaal honderd euro betalen, meer niet.	максимум, не более	Максимум сотку могу заплатить, больше нет.	link::thema10::taak3::A2
+de neef	M'n neef heeft een tv te koop, tweedehands maar prima.	двоюродный брат; племянник	У моего двоюродного брата продаётся телевизор, б/у, но норм.	link::thema10::taak3::A2
+de nicht	M'n nicht woont in Utrecht, ik ga binnenkort op bezoek.	двоюродная сестра; племянница	Моя двоюродная сестра живёт в Утрехте, скоро поеду в гости.	link::thema10::taak3::A2
+onmogelijk	Een goede laptop voor vijftig euro? Dat is gewoon onmogelijk.	невозможный, нереальный	Хороший ноутбук за полтинник? Это просто нереально.	link::thema10::taak3::A2
+perfect	Deze stofzuiger werkt perfect, echt een aanrader.	идеальный, отличный	Этот пылесос работает идеально, реально рекомендую.	link::thema10::taak3::A2
+het plan	Wat is het plan voor zaterdag? Gaan we shoppen?	план	Какой план на субботу? Идём по магазинам?	link::thema10::taak3::A2
+de scooter	Z'n scooter staat altijd buiten, ook in de winter.	скутер, мопед	Его скутер всегда на улице, даже зимой.	link::thema10::taak3::A2
+de site	Ik vergelijk meestal eerst de prijzen op een site.	сайт	Обычно сначала сравниваю цены на каком-нибудь сайте.	link::thema10::taak3::A2
+de stofzuiger	M'n stofzuiger is alweer kapot, derde keer dit jaar.	пылесос	Мой пылесос опять сломан, третий раз за год.	link::thema10::taak3::A2
+tweedehands	Een tweedehands wasmachine voor honderd euro? Top.	подержанный, б/у	Стиралка б/у за сотку? Огонь.	link::thema10::taak3::A2
+via	Ik kocht het via internet, kwam binnen drie dagen aan.	через	Я купил через интернет, пришло за три дня.	link::thema10::taak3::A2
+voldoende	Honderd euro is wel voldoende voor een tweedehands fornuis.	достаточно	Сотки вполне достаточно на б/у плиту.	link::thema10::taak3::A2
+de wasmachine	De wasmachine maakt vreemde geluiden, niet best.	стиральная машина	Стиралка странно шумит, нехорошо.	link::thema10::taak3::A2
+zien	Ik wil 'm graag eerst in de winkel zien voor ik beslis.	видеть, смотреть	Хочу сначала глянуть в магазине, прежде чем решать.	link::thema10::taak3::A2

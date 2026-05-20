@@ -1,0 +1,32 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+afgeven	Je kan het pakket bij de buren afgeven als ik er niet ben.	отдавать, сдавать	Можешь оставить посылку у соседей, если меня нет.	link::thema10::taak4::A2
+het artikel	Het artikel zit nog in de originele verpakking, hoor.	товар, изделие	Товар ещё в оригинальной упаковке.	link::thema10::taak4::A2
+de bankrekening	M'n geld staat alweer op m'n bankrekening, snel zeg!	банковский счёт	Деньги уже снова на моём счету, ну и быстро!	link::thema10::taak4::A2
+de bestelling	M'n bestelling is nog steeds niet aangekomen, balen.	заказ	Мой заказ всё ещё не пришёл, обидно.	link::thema10::taak4::A2
+de doos	Doe de schoenen terug in de doos en plak het etiket erop.	коробка	Положи туфли обратно в коробку и наклей сверху этикетку.	link::thema10::taak4::A2
+het etiket	Het etiket plakt niet goed, heb je nog tape?	этикетка	Этикетка плохо приклеивается, скотча нет?	link::thema10::taak4::A2
+de gegevens	Vul even je gegevens in op de website, dan komt 't goed.	данные (анкетные)	Заполни свои данные на сайте, и всё будет в порядке.	link::thema10::taak4::A2
+de handtekening	Zet hier nog even je handtekening, alsjeblieft.	подпись	Поставь ещё здесь свою подпись, пожалуйста.	link::thema10::taak4::A2
+juist	Heb je het juiste adres ingevuld? Kijk even na.	правильный, верный	Правильный адрес ввёл? Проверь.	link::thema10::taak4::A2
+de locatie	Er is een PostNL-locatie hier om de hoek.	место, локация	Тут за углом отделение PostNL.	link::thema10::taak4::A2
+mobiel	M'n mobiel ligt boven, even halen.	мобильный (телефон)	Мой мобильный наверху, схожу за ним.	link::thema10::taak4::A2
+ontvangen	Wanneer ontvang ik m'n geld eigenlijk terug?	получать	Когда я, собственно, получу деньги обратно?	link::thema10::taak4::A2
+het pakje	Er ligt een pakje voor je bij de buurvrouw.	пакет, посылочка	У соседки лежит для тебя посылка.	link::thema10::taak4::A2
+het pakketje	Het pakketje moet vandaag echt nog weg.	посылочка	Посылку прям сегодня надо ещё отправить.	link::thema10::taak4::A2
+passen	Sorry, deze trui past me niet, ik stuur 'm terug.	подходить по размеру	Этот свитер мне не подходит, отправлю обратно.	link::thema10::taak4::A2
+plakken	Plak het etiket stevig op de doos, anders valt 't eraf.	клеить, приклеивать	Приклей этикетку покрепче, иначе отвалится.	link::thema10::taak4::A2
+het postkantoor	Ik ren even naar het postkantoor, ben zo terug.	почтовое отделение	Сгоняю на почту, скоро буду.	link::thema10::taak4::A2
+privé	Stuur het pakketje liever niet naar m'n werk, privé is beter.	частный, личный	Лучше не присылай посылку на работу, на домашний лучше.	link::thema10::taak4::A2
+de reden	Wat is de reden om te ruilen? Past 't niet?	причина	Какая причина обмена? Не подходит?	link::thema10::taak4::A2
+retour	Dit pakje gaat retour, het is gewoon de verkeerde maat.	возврат, обратно	Эта посылка пойдёт обратно, просто не тот размер.	link::thema10::taak4::A2
+het retourformulier	Vul eerst het retourformulier in, daarna pas de doos dichtdoen.	форма возврата	Сначала заполни форму возврата, и только потом закрывай коробку.	link::thema10::taak4::A2
+stevig	Doe het stevig dicht, anders gaat 't onderweg open.	крепкий, прочный	Закрой как следует, а то по дороге откроется.	link::thema10::taak4::A2
+terugkrijgen	Wanneer krijg ik m'n geld terug? Het duurt nu best lang.	получать обратно	Когда деньги вернутся? Что-то уже долго.	link::thema10::taak4::A2
+terugleggen	Leg de spullen even terug in de doos, dan zit alles erin.	класть обратно	Положи вещи обратно в коробку, чтобы всё было внутри.	link::thema10::taak4::A2
+terugsturen	Ik stuur deze laarzen terug, ze zijn te klein.	отправлять обратно	Отправляю эти сапоги обратно, они слишком малы.	link::thema10::taak4::A2
+het verzendbewijs	Bewaar het verzendbewijs goed, voor het geval dat.	квитанция отправки	Сохрани квитанцию отправки, на всякий случай.	link::thema10::taak4::A2
+de webwinkel	Welke webwinkel gebruik jij meestal voor schoenen?	интернет-магазин	Каким интернет-магазином обычно пользуешься для обуви?	link::thema10::taak4::A2

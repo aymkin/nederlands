@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+aantrekken	Wat trek je vanavond aan? Het wordt best fris.	надевать	Что наденешь сегодня вечером? Будет довольно прохладно.	link::thema10::taak1::A2
+afgesproken	Morgen om twee uur bij de H&M? Afgesproken.	договорились	Завтра в два у H&M? Договорились.	link::thema10::taak1::A2
+binnenkort	M'n zus trouwt binnenkort, ik moet echt nog een jurk kopen.	скоро, в ближайшее время	Сестра скоро выходит замуж, мне реально надо ещё платье купить.	link::thema10::taak1::A2
+de broek	Die broek staat je echt goed, hoor.	брюки, штаны	Эти штаны тебе реально идут, серьёзно.	link::thema10::taak1::A2
+bruin	Ik zoek iets in bruin, geen zwart deze keer.	коричневый	Ищу что-то коричневое, не чёрное на этот раз.	link::thema10::taak1::A2
+dragen	M'n collega draagt altijd een net overhemd op kantoor.	носить (одежду)	Мой коллега всегда носит приличную рубашку в офисе.	link::thema10::taak1::A2
+geel	Een gele trui? Nou, dat is wel gewaagd.	жёлтый	Жёлтый свитер? Ну, это смело.	link::thema10::taak1::A2
+gelijk hebben	Je hebt gelijk, die schoenen zijn echt versleten.	быть правым	Ты прав, эти ботинки реально изношенные.	link::thema10::taak1::A2
+grijs	Een grijs jasje past gewoon bij alles.	серый	Серый пиджак вообще подходит ко всему.	link::thema10::taak1::A2
+het jasje	Doe dat jasje even aan, ik wil zien hoe het zit.	пиджак, куртка	Накинь пиджак, хочу глянуть, как сидит.	link::thema10::taak1::A2
+de jurk	Die jurk heb ik vorig jaar één keer gedragen, niet vaker.	платье	Это платье я в прошлом году один раз надевала, не больше.	link::thema10::taak1::A2
+de kleur	Welke kleur staat me beter, blauw of grijs?	цвет	Какой цвет мне идёт больше — синий или серый?	link::thema10::taak1::A2
+lang	Hoe lang wachten we hier al? Bijna een half uur.	долгий, длинный	Сколько мы тут уже ждём? Почти полчаса.	link::thema10::taak1::A2
+na	Na de les gaan we even naar de Hema, kom je mee?	после	После урока зайдём в Hema, пойдёшь с нами?	link::thema10::taak1::A2
+net	Trek iets nets aan, we gaan uit eten.	приличный, аккуратный	Надень что-нибудь приличное, идём в ресторан.	link::thema10::taak1::A2
+het overhemd	M'n overhemd is alweer kapot in de was, balen.	рубашка	Моя рубашка опять порвалась в стирке, обидно.	link::thema10::taak1::A2
+de rok	Ik draag bijna nooit een rok, gewoon niet m'n stijl.	юбка	Я почти никогда не ношу юбку, просто не мой стиль.	link::thema10::taak1::A2
+de schoenen	Die schoenen zijn lekker zacht, fijn voor lang lopen.	обувь, ботинки	Эти ботинки прям мягкие, в самый раз для долгой ходьбы.	link::thema10::taak1::A2
+de spullen	Hè, waar zijn m'n spullen? Ik kan niks vinden.	вещи (общее)	Ой, где мои вещи? Ничего не могу найти.	link::thema10::taak1::A2
+de trui	Pak even een dikke trui mee, het is koud buiten.	свитер	Возьми тёплый свитер, на улице холодно.	link::thema10::taak1::A2
+het T-shirt	Een wit T-shirt past eigenlijk altijd wel, hoor.	футболка	Белая футболка, в принципе, всегда подходит.	link::thema10::taak1::A2
+uitgeven	Ik wil niet te veel geld uitgeven aan dit feest.	тратить (деньги)	Не хочу слишком много тратить на этот праздник.	link::thema10::taak1::A2
+vanmiddag	Heb je vanmiddag tijd om mee te gaan naar de winkel?	сегодня днём	У тебя сегодня днём есть время сходить со мной в магазин?	link::thema10::taak1::A2
+waar	Waar koop jij meestal je kleren? Bij C&A?	где	Где ты обычно одежду покупаешь? В C&A?	link::thema10::taak1::A2
+de zus	M'n zus heeft echt smaak, ze helpt me altijd met kopen.	сестра	У моей сестры реально вкус, она всегда помогает мне с покупками.	link::thema10::taak1::A2

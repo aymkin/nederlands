@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+afwachten	Ik moet eerst het antwoord van m'n baas afwachten.	ждать (ответа), выжидать	Сначала надо дождаться ответа начальника.	link::thema11::taak3::A2
+alvast	Begin alvast met eten, ik kom zo.	уже, заранее	Начинайте уже есть, я сейчас приду.	link::thema11::taak3::A2
+het antwoord	Heb je al een antwoord van de juf gekregen?	ответ	Ты уже получила ответ от учительницы?	link::thema11::taak3::A2
+april	In april ben ik twee weken vrij, eindelijk.	апрель	В апреле у меня две недели отпуска, наконец-то.	link::thema11::taak3::A2
+de baas	M'n baas is echt streng met vrije dagen.	начальник, шеф	Мой начальник реально строг по поводу выходных.	link::thema11::taak3::A2
+België	M'n collega woont net over de grens in België.	Бельгия	Мой коллега живёт сразу за границей в Бельгии.	link::thema11::taak3::A2
+de collega	M'n collega neemt m'n dienst over volgende week.	коллега	Коллега возьмёт мою смену на следующей неделе.	link::thema11::taak3::A2
+erna	We gaan eerst lunchen, erna naar het centrum.	потом, после этого	Сначала пообедаем, потом в центр.	link::thema11::taak3::A2
+het geduld	Heb even geduld, ik ben zo klaar.	терпение	Имей терпение, я скоро закончу.	link::thema11::taak3::A2
+gek	Wat een gek idee, joh!	сумасшедший; странный	Какая дурацкая идея!	link::thema11::taak3::A2
+hoeven	Je hoeft niet te wachten, hoor, ga maar.	быть нужным (с отрицанием)	Тебе ждать не надо, иди.	link::thema11::taak3::A2
+hoezo	Hoezo geen vrij? M'n collega heeft al ja gehad.	как так, почему	Это почему нет выходного? Коллеге уже разрешили.	link::thema11::taak3::A2
+de juf	De juf van m'n dochter is echt lief.	учительница (нач. школы)	Учительница моей дочери реально милая.	link::thema11::taak3::A2
+het kaartje	Heb je 't kaartje voor de bioscoop nog?	билет	Билет в кино у тебя ещё?	link::thema11::taak3::A2
+de kantine	We zien elkaar in de kantine om twaalf uur.	столовая (на работе/учёбе)	Встретимся в столовой в двенадцать.	link::thema11::taak3::A2
+de oom	M'n oom uit België belt vandaag, vergeet 't niet.	дядя	Дядя из Бельгии звонит сегодня, не забудь.	link::thema11::taak3::A2
+de rij	Wat een lange rij bij de slagerij vandaag, balen.	очередь, ряд	Ну и очередь сегодня у мясника, обидно.	link::thema11::taak3::A2
+het schoolplein	De kinderen wachten op 't schoolplein, gaan we?	школьный двор	Дети ждут на школьном дворе, идём?	link::thema11::taak3::A2
+de slagerij	Ik haal even wat vlees bij de slagerij, ben zo terug.	мясная лавка	Заскочу за мясом к мяснику, скоро буду.	link::thema11::taak3::A2
+het Suikerfeest	Onze buren vieren het Suikerfeest, ze hebben een dag vrij.	Ураза-байрам (сладкий праздник)	Наши соседи отмечают Ураза-байрам, у них выходной.	link::thema11::taak3::A2
+de tante	M'n tante komt logeren in april, gezellig.	тётя	Моя тётя приедет с ночёвкой в апреле, будет весело.	link::thema11::taak3::A2
+de toestemming	Ik heb toestemming van m'n baas, gelukkig.	разрешение	К счастью, начальник дал добро.	link::thema11::taak3::A2
+verkeerd	Sorry, ik heb je verkeerd begrepen, hoor.	неправильный, неверный	Извини, я тебя неправильно понял.	link::thema11::taak3::A2
+voordelig	Online is meestal voordeliger dan in de winkel.	выгодный	Онлайн обычно выгоднее, чем в магазине.	link::thema11::taak3::A2
+voorstellen	Mag ik je even voorstellen aan m'n collega?	представлять (знакомить)	Можно я тебя представлю своему коллеге?	link::thema11::taak3::A2
+weggooien	Niet weggooien, dat kan ik nog gebruiken!	выбрасывать	Не выбрасывай, мне это ещё пригодится!	link::thema11::taak3::A2

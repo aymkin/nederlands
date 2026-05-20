@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+het bankafschrift	Ik kijk even op m'n bankafschrift, ik weet niet of het al is afgeschreven.	банковская выписка	Гляну в выписку — не знаю, списали ли уже.	link::thema10::taak2::A2
+beschadigd	Het pakketje kwam helemaal beschadigd aan, balen.	повреждённый	Посылка пришла вся помятая, обидно.	link::thema10::taak2::A2
+bestellen	Bestel je 'm online of haal je 'm gewoon in de winkel?	заказывать	Закажешь онлайн или просто заберёшь в магазине?	link::thema10::taak2::A2
+bewaren	Bewaar de bon, voor het geval dat je 'm wil ruilen.	хранить, сохранять	Сохрани чек на случай, если захочешь обменять.	link::thema10::taak2::A2
+de bon	Sorry, zonder bon kunnen we hier niks doen.	чек	Извините, без чека мы здесь ничего сделать не можем.	link::thema10::taak2::A2
+contant	Kan ik contant betalen of alleen met pinpas?	наличными	Могу наличкой или только картой?	link::thema10::taak2::A2
+een tijdje	Ik draag deze schoenen al een tijdje, ze zijn echt fijn.	какое-то время	Я ношу эти ботинки уже какое-то время, они реально удобные.	link::thema10::taak2::A2
+de laarzen	Die laarzen zijn te klein, ik wil ze graag ruilen.	сапоги, ботинки высокие	Эти сапоги маловаты, хочу их обменять.	link::thema10::taak2::A2
+laten zien	Laat eens zien wat je hebt gekocht?	показывать	Покажи, что купила?	link::thema10::taak2::A2
+de man	M'n man wil deze trui ruilen, hij vindt 'm te warm.	мужчина; муж	Мой муж хочет обменять этот свитер, ему в нём жарко.	link::thema10::taak2::A2
+ontzettend	Het is hier ontzettend druk vandaag, joh.	ужасно, страшно (усил.)	Тут сегодня дико много народа.	link::thema10::taak2::A2
+origineel	Heb je de originele verpakking nog?	оригинальный	Оригинальная упаковка ещё у тебя?	link::thema10::taak2::A2
+pinnen	Ik kan even niet pinnen, m'n pas is kapot.	платить картой	Картой сейчас не могу, моя карта сломалась.	link::thema10::taak2::A2
+de pinpas	Heb je m'n pinpas ergens gezien? Ik ben 'm kwijt.	банковская карта	Ты мою карту нигде не видела? Потеряла.	link::thema10::taak2::A2
+het product	Is het product beschadigd, dan kun je 't terugbrengen.	товар, продукт	Если товар повреждён, можно вернуть.	link::thema10::taak2::A2
+speciaal	Deze actie is speciaal voor klanten van de winkel, hoor.	специальный, особый	Эта акция специально для клиентов магазина.	link::thema10::taak2::A2
+spijt hebben	Ik heb spijt van die aankoop, eerlijk gezegd.	сожалеть	Жалею об этой покупке, если честно.	link::thema10::taak2::A2
+terugbrengen	Kan ik deze laarzen vandaag nog terugbrengen?	возвращать (вещь)	Могу я сегодня ещё вернуть эти сапоги?	link::thema10::taak2::A2
+de tijd	Heb je even tijd om mee te gaan naar de winkel?	время	У тебя есть минутка сходить со мной в магазин?	link::thema10::taak2::A2
+toch	Die trui leek mooi in de winkel, maar toch staat hij me niet.	всё же, всё-таки	В магазине свитер казался классным, а всё-таки не идёт мне.	link::thema10::taak2::A2
+vanaf	Vanaf maandag kun je 'm weer terugbrengen.	с (момента)	С понедельника можно его опять вернуть.	link::thema10::taak2::A2
+de verpakking	De verpakking is open, kan ik 't dan nog ruilen?	упаковка	Упаковка вскрыта, можно ещё обменять?	link::thema10::taak2::A2
+het verschil	Wat is eigenlijk het verschil tussen deze twee broeken?	разница	А в чём, собственно, разница между этими двумя брюками?	link::thema10::taak2::A2
+verschrikkelijk	Die kleur vind ik echt verschrikkelijk lelijk, sorry.	ужасный, кошмарный	Этот цвет реально жуть какой страшный, извини.	link::thema10::taak2::A2
