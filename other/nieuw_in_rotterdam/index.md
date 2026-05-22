@@ -13,6 +13,8 @@ beschikbaar, plus uitgebreide herschrijvingen.
 Vrije herschrijvingen met extra scènes en woordenschat uit De Opmaat en Link.
 
 - [Hoofdstuk 1 — Reza en de serveerster (uitgebreid)](?f=other/nieuw_in_rotterdam/hoofdstuk_01_uitgebreid.md)
+- [Hoofdstuk 2 — Ben moet Nederlands leren (uitgebreid)](?f=other/nieuw_in_rotterdam/hoofdstuk_02_uitgebreid.md)
+- [Hoofdstuk 3 — Reza helpt Ben (uitgebreid)](?f=other/nieuw_in_rotterdam/hoofdstuk_03_uitgebreid.md)
 
 ---
 

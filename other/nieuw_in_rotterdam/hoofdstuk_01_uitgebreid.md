@@ -17,7 +17,7 @@ klein, maar het is **schoon**. Hij heeft één **slaapkamer**, een **woonkamer**
 een **keuken** en een kleine **badkamer**. De **wasmachine** staat in de **gang**.
 De **koelkast** is bijna leeg. Hij moet **boodschappen** doen.
 
-Reza **woont** **alleen**. Hij komt **uit** **Iran**. Hij is **dertig** jaar. Hij
+Reza **woont** **alleen**. Hij komt **uit** **Iran**. Hij is **achtentwintig** jaar. Hij
 is **niet getrouwd**, maar hij is wel **een romantisch** type. Zijn **familie**
 woont **ver** weg. Hij **mist** zijn moeder, zijn vader, zijn **broer** en zijn
 twee **zussen**. Hij **belt** ze elke **zondag**.
@@ -363,7 +363,7 @@ Hij **weet** het **nog niet**. Maar hij **hoopt** het **zeker**.
 
 | Personage          | Beschrijving                                                                                                                                              |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Reza**           | 30 jaar, architect, woont sinds 3 maanden in Rotterdam-Noord, komt uit Iran                                                                               |
+| **Reza**           | 28 jaar, kleine man met zwart haar en korte donkere baard, architect, woont sinds 3 maanden in Rotterdam-Noord, komt uit Iran (spreekt Farsi)             |
 | **De serveerster** | Serveerster én eigenaresse van Speck. Witblond haar, blauwe ogen, tatoeages, ~30 jaar. Woont om de hoek. **Haar naam blijft in dit hoofdstuk onbekend.**  |
 | **Buurman**        | Een man met een hond achter het hek, vriendelijk                                                                                                          |
 
