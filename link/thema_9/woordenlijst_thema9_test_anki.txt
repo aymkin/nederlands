@@ -1,0 +1,54 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+vriezen	Het vriest.	морозить, быть морозу	На улице минусит.	link::thema9::test::A2
+sneeuwen	Het sneeuwt.	идти (о снеге)	Снег идёт.	link::thema9::test::A2
+zorgen voor	De politie zorgt voor minder criminaliteit.	следить за, обеспечивать	Полиция следит, чтобы преступности было меньше.	link::thema9::test::A2
+wandelen	Ze wandelt elke dag met haar hond door het park.	гулять	Она каждый день гуляет с собакой по парку.	link::thema9::test::A2
+op slot doen	Ik doe mijn fiets altijd op slot.	запирать на замок	Велик я всегда на замок ставлю.	link::thema9::test::A2
+mogen	Je mag niet met de auto op het fietspad.	можно, иметь право	На велодорожку на машине нельзя.	link::thema9::test::A2
+liever hebben	Wil je koffie of thee? — Ik heb liever thee.	предпочитать	Кофе или чай? — Я лучше чай.	link::thema9::test::A2
+bang zijn	Elisa hoort 's nachts een geluid. Ze is bang.	бояться, страшно	Элиза ночью слышит шорох. Ей страшно.	link::thema9::test::A2
+zich voelen	Hoe gaat het? — Ik voel me goed.	чувствовать себя	Как ты? — Нормально, всё хорошо.	link::thema9::test::A2
+houden van	Hou je van winkelen? — Nee, dat is niks voor mij.	любить, нравиться	Любишь шопинг? — Не, это вообще не моё.	link::thema9::test::A2
+kwijt zijn	Ik ben mijn boek kwijt. — Ach, wat jammer!	потерять, не найти	Я свою книгу куда-то дела. — Ой, обидно.	link::thema9::test::A2
+drinken	Yousef drinkt water uit de kraan.	пить	Юсеф пьёт воду прямо из-под крана.	link::thema9::test::A2
+stoppen in	Je stopt het formulier in je tas.	положить, сунуть в	Анкету кладёшь к себе в сумку.	link::thema9::test::A2
+alleen laten	Laat je baby nooit alleen thuis.	оставлять одного	Малыша дома одного никогда не оставляй.	link::thema9::test::A2
+veilig maken	Ze maakt de woonkamer veilig voor de kinderen.	сделать безопасным	Она в гостиной всё делает безопасным для детей.	link::thema9::test::A2
+controleren	Controleer het formulier goed.	проверять	Анкету проверь как следует.	link::thema9::test::A2
+kloppen	Klopt je postcode? Wil je het controleren?	быть верным, сходиться	Индекс правильный? Проверишь?	link::thema9::test::A2
+door rood licht rijden	De fietser rijdt door rood licht. Dat is gevaarlijk.	ехать на красный	Велосипедист едет на красный. Это опасно.	link::thema9::test::A2
+durven	Zij durft het niet aan de docent te vragen.	решаться, осмелиться	Она не решается у преподавателя спросить.	link::thema9::test::A2
+werken bij	Wat doe je precies? — Ik werk bij een apotheek.	работать в	Чем ты, кстати, занимаешься? — Я в аптеке работаю.	link::thema9::test::A2
+dichtdoen	Doe altijd uw ramen dicht.	закрывать	Окна всегда закрывайте.	link::thema9::test::A2
+gaan eten	Het is al laat. Laten we maar gaan eten.	идти есть	Уже поздно. Давай-ка есть пойдём.	link::thema9::test::A2
+kopen	Ik kan niks meer kopen, want ik heb niet genoeg geld.	покупать	Больше ничего купить не могу, денег не хватает.	link::thema9::test::A2
+spreken met	U spreekt met de alarmcentrale.	говорить (по телефону) с	Вы дозвонились до службы спасения.	link::thema9::test::A2
+aandacht geven	De moeder speelt met het kind en geeft hem aandacht.	уделять внимание	Мама играет с ребёнком и уделяет ему внимание.	link::thema9::test::A2
+zeker weten	Morgen hebben we geen les. Echt, ik weet het zeker!	точно знать	Завтра занятий нет. Серьёзно, я точно знаю!	link::thema9::test::A2
+geluid maken	Het alarm maakt een hard geluid.	издавать звук	Сигнализация громко орёт.	link::thema9::test::A2
+melden	Ik kom thuis en mijn laptop is weg! Ik ga de diefstal melden.	сообщать (о происшествии)	Прихожу домой, а ноутбука нет! Пойду заявлю о краже.	link::thema9::test::A2
+last hebben van	Ik heb last van dat lawaai. Ik kan niet slapen.	страдать от, мешать	Этот шум реально достаёт. Уснуть не могу.	link::thema9::test::A2
+bellen	Iwan ziet een ongeluk. Hij belt de politie.	звонить	Иван видит аварию. Звонит в полицию.	link::thema9::test::A2
+vragen stellen	Naima stelt veel vragen. Ze is heel nieuwsgierig.	задавать вопросы	Найма много спрашивает. Жутко любопытная.	link::thema9::test::A2
+thuisblijven	Eli blijft vandaag thuis, hij is namelijk ziek.	оставаться дома	Эли сегодня дома, он, кстати, болеет.	link::thema9::test::A2
+eng vinden	Fietsen in een drukke straat vind ik eng.	находить страшным	Кататься на велике по оживлённой улице — стрёмно как-то.	link::thema9::test::A2
+ruzie hebben met	Housam heeft ruzie met zijn buurman.	ссориться с	У Хусама конфликт с соседом.	link::thema9::test::A2
+openmaken	Ben jij sterk? Kun je deze fles openmaken?	открывать	Ты сильный? Эту бутылку откроешь?	link::thema9::test::A2
+ontdekken	Wisam reist veel. Hij wil de wereld ontdekken.	открывать (новое), узнавать	Висам много путешествует. Хочет мир посмотреть.	link::thema9::test::A2
+oppassen	Je moet oppassen. Deze weg is gevaarlijk.	быть осторожным	Аккуратнее. Дорога тут опасная.	link::thema9::test::A2
+invullen	Heb je internet? Je kunt dit formulier online invullen.	заполнять	Интернет есть? Анкету можно онлайн заполнить.	link::thema9::test::A2
+trekken aan	Ik trek aan de deur. De deur gaat open.	тянуть за	Тяну за дверь — открывается.	link::thema9::test::A2
+lekker vinden	De meeste kinderen vinden snoepjes lekker.	любить (вкус)	Дети чаще всего обожают сладости.	link::thema9::test::A2
+oversteken	Ik zie geen auto's. Kom, we kunnen de straat oversteken.	переходить (улицу)	Машин не видно. Давай, можно переходить.	link::thema9::test::A2
+meegaan	Ik durf niet alleen met de trein te gaan. Ga je mee?	идти вместе	Одна на поезде ехать боюсь. Поедешь со мной?	link::thema9::test::A2
+groeten	Elke dag groet ik de buurvrouw.	здороваться	Каждый день здороваюсь с соседкой.	link::thema9::test::A2
+praten met	Ik praat met mijn buren.	разговаривать с	С соседями я общаюсь.	link::thema9::test::A2
+helpen	Kan ik u helpen?	помогать	Могу я вам помочь?	link::thema9::test::A2
+weggaan	Ik ga weg. Tot ziens!	уходить	Я ухожу. Пока!	link::thema9::test::A2
+overlast hebben van	We hebben overlast van de harde muziek.	страдать от	Громкая музыка прямо достаёт.	link::thema9::test::A2
+nemen	Je neemt water uit de kraan.	брать	Воду берёшь из-под крана.	link::thema9::test::A2
+zien	Ik kan niks meer zien.	видеть	Я больше ничего не вижу.	link::thema9::test::A2
+hoog zetten	Zet de schoonmaakmiddelen hoog.	поставить высоко	Чистящие средства убери повыше.	link::thema9::test::A2
