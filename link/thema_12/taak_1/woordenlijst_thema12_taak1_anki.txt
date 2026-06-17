@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+de aardrijkskunde	Mijn dochter vindt aardrijkskunde echt leuk, vooral landen en hoofdsteden.	география	Моя дочь реально любит географию, особенно страны и столицы.	link::thema12::taak1::A2
+anders	Op deze school gaat het echt anders dan ik gewend ben.	по-другому, иначе	В этой школе всё устроено реально по-другому, чем я привык.	link::thema12::taak1::A2
+het bedrag	Wat is het bedrag voor het schoolreisje? Ik moet 't nog even betalen.	сумма	Какая сумма за школьную поездку? Мне ещё надо её оплатить.	link::thema12::taak1::A2
+de biologie	Bij biologie leren ze nu eigenlijk over planten en dieren.	биология	По биологии они сейчас, в общем-то, проходят растения и животных.	link::thema12::taak1::A2
+bouwen	In de pauze bouwen de kinderen graag iets met blokken.	строить	На перемене дети любят что-нибудь строить из кубиков.	link::thema12::taak1::A2
+het ding	Wat is dat nou voor ding in z'n tas? Geen idee wat 't is.	вещь, штука	Что это за штука у него в рюкзаке? Понятия не имею.	link::thema12::taak1::A2
+de geschiedenis	Geschiedenis vind ik zelf het leukste vak, echt waar.	история (предмет)	История — для меня самый интересный предмет, честно.	link::thema12::taak1::A2
+de groep	M'n zoon zit nu in groep 4, hij leert al best goed lezen.	группа, класс (в началке)	Мой сын сейчас в четвёртой группе, уже довольно хорошо читает.	link::thema12::taak1::A2
+de gymnastiek	Op woensdag hebben ze gymnastiek, dus dan moeten ze sportkleren mee.	физкультура, гимнастика	По средам у них физра, так что нужна спортивная форма.	link::thema12::taak1::A2
+hetzelfde	Doen jullie hier alles hetzelfde als op de oude school?	то же самое	Вы тут всё делаете так же, как в старой школе?	link::thema12::taak1::A2
+knutselen	De juf laat de kinderen op vrijdag lekker knutselen.	мастерить, делать поделки	По пятницам учительница даёт детям спокойно помастерить.	link::thema12::taak1::A2
+langskomen	Kun je morgen even langskomen op school voor een gesprek?	заходить, заглядывать	Можешь завтра заглянуть в школу на разговор?	link::thema12::taak1::A2
+de meester	De meester van groep 6 is best streng, zeggen de kinderen.	учитель	Учитель шестой группы довольно строгий, говорят дети.	link::thema12::taak1::A2
+de ontwikkeling	We bespreken de ontwikkeling van je kind tijdens het oudergesprek.	развитие	Мы обсудим развитие вашего ребёнка на родительской встрече.	link::thema12::taak1::A2
+de prestatie	Haar prestaties op school zijn dit jaar echt beter geworden.	результаты, успехи	Её успехи в школе в этом году реально стали лучше.	link::thema12::taak1::A2
+regelmatig	Lees je regelmatig met je kind thuis? Dat helpt echt enorm.	регулярно	Ты регулярно читаешь с ребёнком дома? Это реально очень помогает.	link::thema12::taak1::A2
+het rekenen	Met rekenen heeft hij wat moeite, maar 't gaat al beter.	математика, счёт (предмет)	С математикой у него небольшие трудности, но уже получше.	link::thema12::taak1::A2
+de religie	Op een openbare school krijgen de kinderen geen les in religie.	религия	В государственной школе у детей нет уроков религии.	link::thema12::taak1::A2
+rennen	Niet rennen in de gang, jongens! Gewoon rustig lopen.	бегать, мчаться	Не бегайте по коридору, ребята! Просто спокойно идите.	link::thema12::taak1::A2
+het schoolreisje	Volgende week gaan ze lekker op schoolreisje naar de dierentuin.	школьная экскурсия/поездка	На следующей неделе у них классная поездка в зоопарк.	link::thema12::taak1::A2
+het spelletje	Als het werk klaar is, mogen ze nog een spelletje doen.	игра	Когда задание сделано, им можно ещё немного поиграть.	link::thema12::taak1::A2
+het tekenen	Tekenen vindt ze het allerleukst, ze tekent de hele dag.	рисование (предмет)	Рисование она любит больше всего, рисует целый день.	link::thema12::taak1::A2
+het uniform	Hier dragen de kinderen geen uniform, gewoon hun eigen kleren.	форма (школьная)	Здесь дети не носят форму, просто свою обычную одежду.	link::thema12::taak1::A2
+het vak	Welk vak vind jij het moeilijkst? Voor mij is dat rekenen.	предмет (учебный)	Какой предмет тебе самый сложный? Мне — математика.	link::thema12::taak1::A2
+verplicht	Is dat schoolreisje verplicht of mag m'n kind ook thuisblijven?	обязательный	Эта поездка обязательная или мой ребёнок может остаться дома?	link::thema12::taak1::A2
+verschillend	De kinderen komen uit heel verschillende landen, echt leuk.	разный, различный	Дети из самых разных стран, прям здорово.	link::thema12::taak1::A2

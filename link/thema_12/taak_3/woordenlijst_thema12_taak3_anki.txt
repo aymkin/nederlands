@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+de administratie	Vraag het even na bij de administratie, die weten 't precies.	канцелярия, секретариат (школы)	Уточни в секретариате, они точно знают.	link::thema12::taak3::A2
+afhalen	Wie haalt de kinderen vandaag van school af, jij of ik?	забирать (ребёнка)	Кто сегодня забирает детей из школы, ты или я?	link::thema12::taak3::A2
+het begin	In het begin vond hij de nieuwe groep best spannend.	начало	Поначалу новая группа казалась ему довольно волнительной.	link::thema12::taak3::A2
+het belang	Het is echt in het belang van je kind om op tijd te komen.	интерес, важность	Это правда в интересах ребёнка — приходить вовремя.	link::thema12::taak3::A2
+de gids	In de gids staat hoe laat de school 's ochtends begint.	справочник, путеводитель	В справочнике написано, во сколько утром начинается школа.	link::thema12::taak3::A2
+de kleuter	M'n jongste is nog een kleuter, hij zit in groep 1.	дошкольник (4–6 лет)	Мой младший ещё дошкольник, он в первой группе.	link::thema12::taak3::A2
+de kosten	De kosten voor het schoolreisje vallen dit jaar best mee.	расходы, затраты	Расходы на школьную поездку в этом году вполне посильные.	link::thema12::taak3::A2
+de leerkracht	De leerkracht mailt de ouders als er iets is.	учитель, педагог	Учитель пишет родителям на почту, если что-то случается.	link::thema12::taak3::A2
+de leerling	Er zitten echt veel leerlingen in één groep, hè?	ученик, учащийся	Реально много учеников в одной группе, да?	link::thema12::taak3::A2
+de nieuwsbrief	De nieuwsbrief komt elke vrijdag in je mail.	рассылка, информационное письмо	Рассылка приходит на почту каждую пятницу.	link::thema12::taak3::A2
+opgeven	Heb je de kinderen al opgegeven voor het schoolreisje?	записать, подать заявку	Ты уже записал детей на школьную поездку?	link::thema12::taak3::A2
+de opleiding	M'n nichtje doet een opleiding tot leerkracht.	обучение, учебная программа	Моя племянница учится на педагога.	link::thema12::taak3::A2
+de opvang	Na schooltijd gaat hij gewoon naar de opvang tot ik er ben.	продлёнка, присмотр за детьми	После школы он просто идёт на продлёнку, пока я не приду.	link::thema12::taak3::A2
+overblijven	Mag m'n dochter tussen de middag overblijven op school?	оставаться (в школе на обед)	Можно моей дочке оставаться в школе на обед?	link::thema12::taak3::A2
+papieren	Heb je alle papieren al ingevuld voor school?	документы, бумаги	Ты уже заполнил все бумаги для школы?	link::thema12::taak3::A2
+de peuter	Voor peuters is er een speciale groep, twee ochtenden per week.	малыш, ребёнок 2–4 лет	Для малышей есть особая группа, два утра в неделю.	link::thema12::taak3::A2
+het schooljaar	Aan het begin van 't schooljaar krijg je een hele lijst spullen.	учебный год	В начале учебного года тебе дают целый список вещей.	link::thema12::taak3::A2
+de stage	M'n zoon loopt nu stage bij een garage, hij vindt 't top.	стажировка, практика	Мой сын сейчас на стажировке в автосервисе, ему очень нравится.	link::thema12::taak3::A2
+de stagiaire	In de klas helpt een stagiaire de juf een paar dagen per week.	стажёр, практикант	В классе стажёрка помогает учительнице пару дней в неделю.	link::thema12::taak3::A2
+de traktatie	Wat voor traktatie neemt hij mee voor z'n verjaardag?	угощение (на праздник)	Какое угощение он возьмёт на свой день рождения?	link::thema12::taak3::A2
+trakteren	Hij mag morgen lekker trakteren, hij wordt vier.	угощать, ставить угощение	Завтра он угощает всех, ему исполняется четыре.	link::thema12::taak3::A2
+tussenschools	De tussenschoolse opvang kost een paar euro per keer.	обеденный (присмотр в школе)	Обеденный присмотр стоит пару евро за раз.	link::thema12::taak3::A2
+de versie	Er is een nieuwe versie van het formulier, gebruik die maar.	версия, вариант	Есть новая версия бланка, используй её.	link::thema12::taak3::A2
+voorlezen	Elke avond lees ik de kinderen nog even voor.	читать вслух	Каждый вечер я ещё немного читаю детям вслух.	link::thema12::taak3::A2
+zich inschrijven	Je moet je wel op tijd inschrijven, anders is de groep vol.	записываться, регистрироваться	Записываться нужно вовремя, иначе группа будет переполнена.	link::thema12::taak3::A2

@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+de agenda	Ik zet 't gesprek met de juf even in m'n agenda.	ежедневник, планер	Запишу-ка разговор с учительницей в ежедневник.	link::thema12::taak2::A2
+allemaal	Hebben jullie allemaal je spullen? We moeten zo weg.	все; всё	У вас у всех вещи собраны? Нам скоро выходить.	link::thema12::taak2::A2
+bah	Bah, de melk is zuur! Niet drinken, hoor.	фу, бе	Фу, молоко скисло! Не пей.	link::thema12::taak2::A2
+beter	Gaat het al wat beter dan gisteren, schat?	лучше	Тебе уже получше, чем вчера, солнышко?	link::thema12::taak2::A2
+de broodtrommel	Je broodtrommel staat nog in de keuken, vergeet 'm niet.	ланч-бокс, контейнер для бутербродов	Ланч-бокс ещё на кухне, не забудь его.	link::thema12::taak2::A2
+de dorst	Ik heb zo'n dorst, mag ik even wat drinken?	жажда	Так пить хочется, можно мне попить?	link::thema12::taak2::A2
+douchen	Ga je nog even douchen voordat we weg moeten?	принимать душ	Сходишь ещё в душ, прежде чем выходить?	link::thema12::taak2::A2
+eens	Kom eens hier, dan help ik je even met je jas.	-ка (частица)	Иди-ка сюда, помогу тебе с курткой.	link::thema12::taak2::A2
+het etui	Zit je etui wel in je rugzak? Anders heb je geen pen.	пенал	Пенал точно в рюкзаке? А то ручки не будет.	link::thema12::taak2::A2
+het gezicht	Was even je gezicht, je hebt nog slaap in je ogen.	лицо	Умой лицо, у тебя ещё глаза заспанные.	link::thema12::taak2::A2
+het haar	Zal ik je haar even kammen? 't Zit helemaal door de war.	волосы	Причешу тебе волосы? Они совсем растрёпаны.	link::thema12::taak2::A2
+de honger	Heb je honger? Ik smeer snel een boterham voor je.	голод	Есть хочешь? Сейчас быстро намажу тебе бутерброд.	link::thema12::taak2::A2
+de honing	Doe maar wat honing in de thee, dat is echt goed voor je keel.	мёд	Добавь мёда в чай, это реально хорошо для горла.	link::thema12::taak2::A2
+de keel	M'n keel doet echt pijn als ik slik.	горло	У меня реально болит горло, когда глотаю.	link::thema12::taak2::A2
+de nek	Ik heb een stijve nek, ik heb gek geslapen vannacht.	шея (задняя часть)	У меня шея затекла, как-то неудобно спал ночью.	link::thema12::taak2::A2
+opschieten	Schiet op, anders missen we de bus echt!	торопиться, поторапливаться	Давай быстрее, а то реально пропустим автобус!	link::thema12::taak2::A2
+opstaan	Ik kon vanochtend bijna niet opstaan, zo moe was ik.	вставать (с постели)	Я утром еле встал, такой уставший был.	link::thema12::taak2::A2
+pakken	Pak even je jas, het is koud buiten.	взять, схватить	Возьми куртку, на улице холодно.	link::thema12::taak2::A2
+regelen	Ik regel wel iemand die op je past terwijl ik werk.	организовать, уладить	Я найду кого-нибудь, кто за тобой присмотрит, пока я на работе.	link::thema12::taak2::A2
+de rugzak	Je gymspullen zitten toch in je rugzak?	рюкзак	Спортивная форма же в рюкзаке?	link::thema12::taak2::A2
+schat	Kom maar, schat, ik breng je zo naar bed.	солнышко, дорогой/-ая (ласковое обращение)	Иди сюда, солнышко, сейчас уложу тебя в постель.	link::thema12::taak2::A2
+terugkomen	De juf zei dat je pas mag terugkomen als je beter bent.	возвращаться	Учительница сказала, что вернуться можно, только когда выздоровеешь.	link::thema12::taak2::A2
+voelen	Voel maar hoe warm m'n hoofd is.	чувствовать, трогать	Потрогай, какая горячая у меня голова.	link::thema12::taak2::A2
+vorig	Vorige week was hij ook al ziek, echt balen.	прошлый, предыдущий	На прошлой неделе он тоже болел, вот непруха.	link::thema12::taak2::A2
+de wekker	M'n wekker ging niet af, daarom zijn we nu te laat.	будильник	Будильник не сработал, поэтому мы теперь опаздываем.	link::thema12::taak2::A2

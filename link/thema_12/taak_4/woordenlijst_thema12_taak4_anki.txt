@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+de activiteit	We zoeken ouders die willen helpen bij de activiteiten op school.	мероприятие, занятие	Мы ищем родителей, которые хотят помочь с мероприятиями в школе.	link::thema12::taak4::A2
+het afscheid	Het afscheid van de juf was best emotioneel, hoor.	прощание	Прощание с учительницей было довольно трогательным.	link::thema12::taak4::A2
+daarom	Hij is ziek, daarom blijft hij vandaag lekker thuis.	поэтому, вот почему	Он болеет, поэтому сегодня спокойно сидит дома.	link::thema12::taak4::A2
+de directeur	Heb je de nieuwe directeur al gezien? Aardige vent.	директор	Видел уже нового директора? Приятный мужик.	link::thema12::taak4::A2
+dolgraag	Ik help dolgraag mee met het schoolreisje, gezellig!	с большим удовольствием, охотно	Я с радостью помогу со школьной поездкой, будет здорово!	link::thema12::taak4::A2
+enig	Wat een enig idee, zeg! Dat gaan we zeker doen.	чудесный, прелестный; единственный (enig kind)	Какая прелесть, да! Это мы точно сделаем.	link::thema12::taak4::A2
+fantastisch	Het schoolreisje was echt fantastisch, ze praten er nog over.	фантастический, потрясающий	Школьная поездка была просто потрясающей, они до сих пор о ней говорят.	link::thema12::taak4::A2
+geweldig	Wat geweldig dat zoveel ouders zich opgeven!	великолепно, здорово	Как здорово, что столько родителей записывается!	link::thema12::taak4::A2
+de hulpouder	We zoeken nog een paar hulpouders voor het uitstapje.	родитель-помощник (волонтёр)	Нам ещё нужны несколько родителей-помощников для экскурсии.	link::thema12::taak4::A2
+het kaartje	De kinderen maken samen een kaartje voor de juf, leuk hè?	открытка; билетик	Дети вместе делают открытку для учительницы, мило, да?	link::thema12::taak4::A2
+de klassenouder	De klassenouder regelt de cadeautjes voor de leerkracht.	классный родитель (представитель класса)	Классный родитель организует подарки для учителя.	link::thema12::taak4::A2
+langdurig	Na een langdurige griep mag hij eindelijk weer naar school.	длительный, продолжительный	После долгого гриппа ему наконец можно снова в школу.	link::thema12::taak4::A2
+meegeven	Geef je z'n gymspullen even mee morgen?	давать с собой	Дашь ему с собой спортивную форму завтра?	link::thema12::taak4::A2
+de moeite	Bedankt voor de moeite, dat had echt niet gehoeven.	хлопоты, усилие, труд	Спасибо за хлопоты, правда не стоило.	link::thema12::taak4::A2
+nuttig	Het is best nuttig om als ouder eens mee te helpen.	полезный	Как родителю довольно полезно разок помочь.	link::thema12::taak4::A2
+ongelooflijk	Het is ongelooflijk hoe snel de kinderen Nederlands leren.	невероятный, неимоверный	Невероятно, как быстро дети учат нидерландский.	link::thema12::taak4::A2
+organiseren	Wie organiseert dit jaar eigenlijk het zomerfeest?	организовывать, устраивать	А кто в этом году организует летний праздник?	link::thema12::taak4::A2
+de sfeer	De sfeer op deze school is heel open en gezellig.	атмосфера, обстановка	Атмосфера в этой школе очень открытая и приятная.	link::thema12::taak4::A2
+de sportdag	Op de sportdag doen alle groepen leuke spelletjes buiten.	спортивный день	В спортивный день все группы играют в разные игры на улице.	link::thema12::taak4::A2
+timmeren	De kinderen timmeren samen een vogelhuisje, leuk hè?	мастерить из дерева, столярничать	Дети вместе сколачивают скворечник, здорово, да?	link::thema12::taak4::A2
+trots	Ik ben echt trots op hoe goed ze al leest.	гордый	Я правда горжусь тем, как хорошо она уже читает.	link::thema12::taak4::A2
+het uitstapje	Volgende week gaan we op uitstapje naar de boerderij, hartstikke leuk!	вылазка, экскурсия	На следующей неделе едем на экскурсию на ферму, ужасно здорово!	link::thema12::taak4::A2
+verven	In de vakantie helpen de ouders het lokaal even verven.	красить	На каникулах родители помогают подкрасить класс.	link::thema12::taak4::A2
+de verzorger	Op het formulier vul je de naam van de ouder of verzorger in.	опекун, попечитель	В бланке указываешь имя родителя или опекуна.	link::thema12::taak4::A2
