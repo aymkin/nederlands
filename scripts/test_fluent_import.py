@@ -291,6 +291,38 @@ def test_advance_at_last_unit_raises():
             pass
 
 
+def test_grammar_items_prefers_thema_folder():
+    with tempfile.TemporaryDirectory() as d:
+        course_dir = Path(d) / "link"
+        (course_dir / "thema_8").mkdir(parents=True)
+        (course_dir / "gramatica").mkdir(parents=True)
+        # same filename in BOTH locations, different content
+        (course_dir / "thema_8" / "g.md").write_text(
+            "## 1.1 In thema folder\n\n### Voorbeelden uit oefeningen\n- Ik **woon** hier.\n",
+            encoding="utf-8")
+        (course_dir / "gramatica" / "g.md").write_text(
+            "## 1.1 In central dir\n\n### Voorbeelden uit oefeningen\n- Ik **werk** daar.\n",
+            encoding="utf-8")
+        unit = {"id": "thema_8", "grammar_file": "g.md", "grammar_modules": "all"}
+        items, skipped = fi.grammar_items("link", unit, course_dir)
+        assert len(items) == 1
+        assert items[0]["answer"] == "woon"  # thema-folder version wins
+        assert items[0]["category"] == "grammar_thema8"
+
+
+def test_grammar_items_falls_back_to_gramatica():
+    with tempfile.TemporaryDirectory() as d:
+        course_dir = Path(d) / "link"
+        (course_dir / "thema_8").mkdir(parents=True)
+        (course_dir / "gramatica").mkdir(parents=True)
+        (course_dir / "gramatica" / "g.md").write_text(
+            "## 1.1 Central\n\n### Voorbeelden uit oefeningen\n- Ik **werk** daar.\n",
+            encoding="utf-8")
+        unit = {"id": "thema_8", "grammar_file": "g.md", "grammar_modules": "all"}
+        items, skipped = fi.grammar_items("link", unit, course_dir)
+        assert len(items) == 1 and items[0]["answer"] == "werk"
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items())
            if k.startswith("test_") and callable(v)]

@@ -156,10 +156,14 @@ def parse_grammar_clozes(md_text: str, modules, prefix: str) -> tuple:
     return items, skipped
 
 
-def grammar_items(course: str, unit: dict, gramatica_dir: Path) -> tuple:
+def grammar_items(course: str, unit: dict, course_dir: Path) -> tuple:
     num = unit["id"].split("_")[-1]
     prefix = unit_prefix(course, unit["id"])
-    md = (gramatica_dir / unit["grammar_file"]).read_text(encoding="utf-8")
+    fname = unit["grammar_file"]
+    path = course_dir / unit["id"] / fname          # new layout: grammar inside thema folder
+    if not path.exists():
+        path = course_dir / "gramatica" / fname     # fallback: central gramatica/ dir
+    md = path.read_text(encoding="utf-8")
     items, skipped = parse_grammar_clozes(md, unit.get("grammar_modules", "all"), prefix)
     for it in items:
         it["category"] = f"grammar_thema{num}"
@@ -260,7 +264,7 @@ def do_import(course: str, repo_root: Path, sr_path: Path, today: str) -> dict:
     manifest = load_manifest(course_dir)
     unit = active_unit(manifest)
     vocab = vocab_items(course, unit, course_dir)
-    grammar, skipped = grammar_items(course, unit, course_dir / "gramatica")
+    grammar, skipped = grammar_items(course, unit, course_dir)
     sr = json.loads(sr_path.read_text(encoding="utf-8"))
     added = add_items(sr, vocab + grammar, today)
     rebuild_queue(sr, today)
