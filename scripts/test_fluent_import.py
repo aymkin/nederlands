@@ -204,6 +204,36 @@ def test_do_import_end_to_end_and_idempotent():
         assert s2["added"] == 0  # idempotent
 
 
+def _sr_with(items):
+    return {"items": items, "review_queue": {}, "metadata": {}}
+
+
+def test_check_ready():
+    with tempfile.TemporaryDirectory() as d:
+        root = _make_repo(d)
+        sr_path = root / "spaced-repetition.json"
+        items = {f"link_t8_voc_x{i}": {"mastery_level": 3,
+                 "consecutive_incorrect": 0} for i in range(8)}
+        items.update({f"link_t8_voc_y{i}": {"mastery_level": 1,
+                      "consecutive_incorrect": 0} for i in range(2)})
+        sr_path.write_text(json.dumps(_sr_with(items)))
+        v = fi.check("link", root, sr_path)
+        assert v["total"] == 10 and v["mastered"] == 8 and v["red"] == 0
+        assert v["ready"] is True
+
+
+def test_check_blocked_by_red():
+    with tempfile.TemporaryDirectory() as d:
+        root = _make_repo(d)
+        sr_path = root / "spaced-repetition.json"
+        items = {f"link_t8_voc_x{i}": {"mastery_level": 3,
+                 "consecutive_incorrect": 0} for i in range(9)}
+        items["link_t8_voc_bad"] = {"mastery_level": 3, "consecutive_incorrect": 2}
+        sr_path.write_text(json.dumps(_sr_with(items)))
+        v = fi.check("link", root, sr_path)
+        assert v["red"] == 1 and v["ready"] is False
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items())
            if k.startswith("test_") and callable(v)]

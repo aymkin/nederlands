@@ -223,6 +223,27 @@ def write_sr(sr: dict, sr_path: Path) -> None:
     tmp.replace(sr_path)
 
 
+MASTERY_THRESHOLD = 0.80
+
+
+def check(course: str, repo_root: Path, sr_path: Path) -> dict:
+    manifest = load_manifest(repo_root / course)
+    unit = active_unit(manifest)
+    prefix = unit_prefix(course, unit["id"])
+    sr = json.loads(sr_path.read_text(encoding="utf-8"))
+    unit_items = [it for i, it in sr.get("items", {}).items() if i.startswith(prefix)]
+    total = len(unit_items)
+    mastered = sum(1 for it in unit_items if it.get("mastery_level", 0) >= 3)
+    red = sum(1 for it in unit_items if it.get("consecutive_incorrect", 0) >= 2)
+    pct = (mastered / total) if total else 0.0
+    ready = total > 0 and pct >= MASTERY_THRESHOLD and red == 0
+    mark = "✅ готов дальше — запусти --advance" if ready else "⏳ продолжай"
+    report = (f"{unit['id']} — {total} карточек | mastery≥3: {mastered}/{total} "
+              f"({pct:.0%}) | красных: {red}\n{mark}")
+    return {"unit": unit["id"], "total": total, "mastered": mastered,
+            "red": red, "ready": ready, "report": report}
+
+
 def fluent_data_dir() -> Path:
     return Path.home() / ".claude" / "fluent-data"
 
