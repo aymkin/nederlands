@@ -43,9 +43,6 @@ def unit_prefix(course: str, unit_id: str) -> str:
     return f"{course}_t{num}_"
 
 
-_HEADER = ("#separator", "#html", "#columns", "#tags", "#notetype")
-
-
 def slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
 
@@ -57,10 +54,10 @@ def parse_woordenlijst(anki_path: Path) -> list:
         if not line or line.startswith("#"):
             continue
         cols = line.split("\t")
+        if len(cols) < 3:
+            continue  # ponytail: woordenlijst rows have 5 cols; <3 = malformed, skip
         word = cols[0].strip()
-        # колонки: Word | Example | Translation | TranslationExample | Tags
-        translation = cols[2].strip() if len(cols) > 2 else (
-            cols[1].strip() if len(cols) > 1 else "")
+        translation = cols[2].strip()  # Word | Example | Translation | ...
         if word:
             rows.append((word, translation))
     return rows

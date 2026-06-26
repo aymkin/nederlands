@@ -59,6 +59,7 @@ def test_parse_woordenlijst():
         p.write_text(
             "#separator:tab\n#html:true\n#tags column:5\n"
             "de buurt\tIk woon in de buurt.\tрайон\tЯ живу в районе.\tlink::thema8\n"
+            "kapot\ttwee kolommen\n"
             "lopen\tIk loop.\tходить\tЯ хожу.\tlink::thema8\n",
             encoding="utf-8")
         rows = fi.parse_woordenlijst(p)
@@ -82,6 +83,7 @@ def test_vocab_items():
         assert it["content"] == "de buurt"
         assert it["answer"] == "район"
         assert it["category"] == "link_thema8"
+        assert it["priority"] == "medium"
 
 
 def _run_all():
