@@ -1,11 +1,11 @@
 {
   "course": "link",
   "units": [
-    { "id": "thema_4",  "grammar_file": "grammatica_thema04_lekker.md",                  "grammar_modules": "all", "status": "done" },
-    { "id": "thema_5",  "grammar_file": "grammatica_thema05_dit_is_mijn_huis.md",        "grammar_modules": "all", "status": "done" },
-    { "id": "thema_6",  "grammar_file": "grammatica_thema06_met_de_trein.md",            "grammar_modules": "all", "status": "done" },
-    { "id": "thema_7",  "grammar_file": "grammatica_thema07_naar_de_dokter.md",          "grammar_modules": "all", "status": "done" },
-    { "id": "thema_8",  "grammar_file": "grammatica_thema08_in_mijn_buurt.md",           "grammar_modules": "all", "status": "active" },
+    { "id": "thema_4",  "grammar_file": "grammatica_thema04_lekker.md",                  "grammar_modules": "all", "status": "active" },
+    { "id": "thema_5",  "grammar_file": "grammatica_thema05_dit_is_mijn_huis.md",        "grammar_modules": "all", "status": "locked" },
+    { "id": "thema_6",  "grammar_file": "grammatica_thema06_met_de_trein.md",            "grammar_modules": "all", "status": "locked" },
+    { "id": "thema_7",  "grammar_file": "grammatica_thema07_naar_de_dokter.md",          "grammar_modules": "all", "status": "locked" },
+    { "id": "thema_8",  "grammar_file": "grammatica_thema08_in_mijn_buurt.md",           "grammar_modules": "all", "status": "locked" },
     { "id": "thema_9",  "grammar_file": "grammatica_thema09_is_dat_wel_veilig.md",       "grammar_modules": "all", "status": "locked" },
     { "id": "thema_10", "grammar_file": "grammatica_thema10_wat_koop_je.md",             "grammar_modules": "all", "status": "locked" },
     { "id": "thema_11", "grammar_file": "grammatica_thema11_wat_gaan_we_doen.md",        "grammar_modules": "all", "status": "locked" },
