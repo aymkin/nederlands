@@ -86,6 +86,44 @@ def test_vocab_items():
         assert it["priority"] == "medium"
 
 
+GRAMMAR_SAMPLE = """# Thema X
+
+## 2.1 Het werkwoord: ik, we + werkwoord
+
+### Regel
+| Persoon | Vorm |
+|---|---|
+| ik | **werk** |
+
+### Voorbeelden uit oefeningen
+- Ik **werk** in Rotterdam.
+- We **werken** in Rotterdam.
+
+## 3.1 Alleen een tabel
+
+### Regel
+| a | b |
+|---|---|
+"""
+
+
+def test_parse_grammar_clozes_basic():
+    items, skipped = fi.parse_grammar_clozes(GRAMMAR_SAMPLE, "all", "link_t8_")
+    assert len(items) == 2
+    first = items[0]
+    assert first["item_id"] == "link_t8_gram_2.1_1"
+    assert first["item_type"] == "grammar_rule"
+    assert first["answer"] == "werk"
+    assert first["content"] == "Ik ___ in Rotterdam. (Het werkwoord: ik, we + werkwoord)"
+    # модуль 3.1 без жирных примеров — пропущен
+    assert any("3.1" in s for s in skipped)
+
+
+def test_parse_grammar_clozes_module_filter():
+    items, skipped = fi.parse_grammar_clozes(GRAMMAR_SAMPLE, ["3.1"], "link_t8_")
+    assert items == []  # 2.1 отфильтрован, 3.1 без примеров
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items())
            if k.startswith("test_") and callable(v)]

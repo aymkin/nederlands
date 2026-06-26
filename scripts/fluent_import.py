@@ -86,3 +86,69 @@ def vocab_items(course: str, unit: dict, course_dir: Path) -> list:
                 "priority": "medium",
             })
     return items
+
+
+_SECTION_RE = re.compile(r"^##\s+(\d+\.\d+)\s+(.+?)\s*$")
+_BOLD_RE = re.compile(r"\*\*(.+?)\*\*")
+
+
+def _split_sections(md_text: str) -> list:
+    """[(section_num, title, body_lines), ...] по заголовкам '## N.N Title'."""
+    sections, cur = [], None
+    for line in md_text.splitlines():
+        m = _SECTION_RE.match(line)
+        if m:
+            cur = {"num": m.group(1), "title": m.group(2), "lines": []}
+            sections.append(cur)
+        elif cur is not None:
+            cur["lines"].append(line)
+    return sections
+
+
+def _voorbeelden_lines(body_lines: list) -> list:
+    """Буллеты блока 'Voorbeelden uit oefeningen' секции."""
+    out, collecting = [], False
+    for line in body_lines:
+        s = line.strip()
+        if s.startswith("###"):
+            collecting = s.lower().startswith("### voorbeelden")
+            continue
+        if collecting and s.startswith("- "):
+            out.append(s[2:].strip())
+    return out
+
+
+def parse_grammar_clozes(md_text: str, modules, prefix: str) -> tuple:
+    items, skipped = [], []
+    for sec in _split_sections(md_text):
+        if modules != "all" and sec["num"] not in modules:
+            continue
+        examples = _voorbeelden_lines(sec["lines"])
+        made = 0
+        for ex in examples:
+            m = _BOLD_RE.search(ex)
+            if not m:
+                continue
+            answer = m.group(1)
+            content = (ex[:m.start()] + "___" + ex[m.end():]).strip()
+            made += 1
+            items.append({
+                "item_id": f"{prefix}gram_{sec['num']}_{made}",
+                "item_type": "grammar_rule",
+                "content": f"{content} ({sec['title']})",
+                "answer": answer,
+                "priority": "medium",
+            })
+        if made == 0:
+            skipped.append(f"{sec['num']} {sec['title']}")
+    return items, skipped
+
+
+def grammar_items(course: str, unit: dict, gramatica_dir: Path) -> tuple:
+    num = unit["id"].split("_")[-1]
+    prefix = unit_prefix(course, unit["id"])
+    md = (gramatica_dir / unit["grammar_file"]).read_text(encoding="utf-8")
+    items, skipped = parse_grammar_clozes(md, unit.get("grammar_modules", "all"), prefix)
+    for it in items:
+        it["category"] = f"grammar_thema{num}"
+    return items, skipped
