@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Импорт лексики/грамматики активной темы курса в spaced-repetition Fluent."""
 import json
+import os
 import re
 import shutil
 from datetime import datetime, timedelta
@@ -212,9 +213,10 @@ def rebuild_queue(sr: dict, today: str) -> None:
 
 def write_sr(sr: dict, sr_path: Path) -> None:
     if sr_path.exists():
-        backup_dir = sr_path.parent / ".backups" / f"pre-import-{today_str()}"
+        stamp = today_str() + datetime.now().strftime("-%H%M%S")
+        backup_dir = sr_path.parent / ".backups" / f"pre-import-{stamp}"
         backup_dir.mkdir(parents=True, exist_ok=True)
         shutil.copy2(sr_path, backup_dir / sr_path.name)
-    tmp = sr_path.with_suffix(".json.tmp")
+    tmp = sr_path.with_name(f"{sr_path.name}.{os.getpid()}.tmp")
     tmp.write_text(json.dumps(sr, ensure_ascii=False, indent=2), encoding="utf-8")
     tmp.replace(sr_path)

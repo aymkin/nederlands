@@ -140,18 +140,20 @@ def test_add_items_idempotent():
 
 def test_rebuild_queue_buckets():
     sr = {"items": {
-        "a": {"due_date": "2026-06-25"},   # <= today
+        "a": {"due_date": "2026-06-25"},   # < today
         "b": {"due_date": "2026-06-27"},   # tomorrow
         "c": {"due_date": "2026-06-30"},   # this_week
         "d": {"due_date": "2026-08-01"},   # later
+        "e": {"due_date": "2026-06-26"},   # == today  -> today bucket
+        "f": {"due_date": "2026-07-03"},   # == today+7 -> this_week upper edge
     }, "review_queue": {}, "metadata": {}}
     fi.rebuild_queue(sr, "2026-06-26")
     q = sr["review_queue"]
-    assert q["today"] == ["a"]
+    assert q["today"] == ["a", "e"]
     assert q["tomorrow"] == ["b"]
-    assert q["this_week"] == ["c"]
+    assert q["this_week"] == ["c", "f"]
     assert q["later"] == ["d"]
-    assert sr["metadata"]["total_items_tracked"] == 4
+    assert sr["metadata"]["total_items_tracked"] == 6
 
 
 def test_write_sr_backs_up_and_writes():
@@ -162,6 +164,11 @@ def test_write_sr_backs_up_and_writes():
         assert json.loads(sr_path.read_text())["items"] == {"x": {}}
         backups = list((Path(d) / ".backups").rglob("spaced-repetition.json"))
         assert len(backups) == 1  # старая версия сохранена
+        # first write to a non-existent path: file created, no backup needed
+        fresh = Path(d) / "sub" / "spaced-repetition.json"
+        fresh.parent.mkdir()
+        fi.write_sr({"items": {"y": {}}, "metadata": {}}, fresh)
+        assert json.loads(fresh.read_text())["items"] == {"y": {}}
 
 
 def _run_all():
