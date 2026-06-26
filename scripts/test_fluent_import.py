@@ -253,6 +253,44 @@ def test_check_not_ready():
         assert v1["ready"] is False
 
 
+def test_advance_moves_pointer_and_imports():
+    with tempfile.TemporaryDirectory() as d:
+        root = _make_repo(d)
+        # добавим thema_9, чтобы было куда переходить
+        (root / "link" / "thema_9" / "taak_1").mkdir(parents=True)
+        (root / "link" / "thema_9" / "taak_1" /
+         "woordenlijst_thema9_taak1_anki.txt").write_text(
+            "#separator:tab\nde straat\tIk loop.\tулица\tЯ.\tt\n", encoding="utf-8")
+        (root / "link" / "gramatica" / "grammatica_thema09_x.md").write_text(
+            "## 1.1 T\n\n### Voorbeelden uit oefeningen\n- Ik **ga** weg.\n",
+            encoding="utf-8")
+        m = json.loads((root / "link" / "curriculum.json").read_text())
+        m["units"].append({"id": "thema_9", "grammar_file": "grammatica_thema09_x.md",
+                           "grammar_modules": "all", "status": "locked"})
+        (root / "link" / "curriculum.json").write_text(json.dumps(m))
+        sr_path = root / "spaced-repetition.json"
+        sr_path.write_text(json.dumps({"items": {}, "metadata": {}}))
+
+        s = fi.advance("link", root, sr_path, "2026-06-26")
+        assert s["unit"] == "thema_9"
+        m2 = json.loads((root / "link" / "curriculum.json").read_text())
+        st = {u["id"]: u["status"] for u in m2["units"]}
+        assert st == {"thema_8": "done", "thema_9": "active"}
+        assert "link_t9_voc_taak1_de-straat" in json.loads(sr_path.read_text())["items"]
+
+
+def test_advance_at_last_unit_raises():
+    with tempfile.TemporaryDirectory() as d:
+        root = _make_repo(d)  # единственный юнит thema_8 = active
+        sr_path = root / "spaced-repetition.json"
+        sr_path.write_text(json.dumps({"items": {}, "metadata": {}}))
+        try:
+            fi.advance("link", root, sr_path, "2026-06-26")
+            assert False, "expected ValueError"
+        except ValueError:
+            pass
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items())
            if k.startswith("test_") and callable(v)]

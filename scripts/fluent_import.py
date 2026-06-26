@@ -33,6 +33,13 @@ def load_manifest(course_dir: Path) -> dict:
     return json.loads((course_dir / "curriculum.json").read_text(encoding="utf-8"))
 
 
+def save_manifest(course_dir: Path, manifest: dict) -> None:
+    tmp = course_dir / "curriculum.json.tmp"
+    tmp.write_text(json.dumps(manifest, ensure_ascii=False, indent=2),
+                   encoding="utf-8")
+    tmp.replace(course_dir / "curriculum.json")
+
+
 def active_unit(manifest: dict) -> dict:
     actives = [u for u in manifest["units"] if u.get("status") == "active"]
     if len(actives) != 1:
@@ -260,6 +267,19 @@ def do_import(course: str, repo_root: Path, sr_path: Path, today: str) -> dict:
     write_sr(sr, sr_path)
     return {"unit": unit["id"], "vocab": len(vocab), "grammar": len(grammar),
             "added": added, "skipped": skipped}
+
+
+def advance(course: str, repo_root: Path, sr_path: Path, today: str) -> dict:
+    course_dir = repo_root / course
+    manifest = load_manifest(course_dir)
+    units = manifest["units"]
+    idx = next(i for i, u in enumerate(units) if u.get("status") == "active")
+    if idx + 1 >= len(units):
+        raise ValueError("course complete — нет следующего юнита")
+    units[idx]["status"] = "done"
+    units[idx + 1]["status"] = "active"
+    save_manifest(course_dir, manifest)
+    return do_import(course, repo_root, sr_path, today)
 
 
 def main(argv=None):
