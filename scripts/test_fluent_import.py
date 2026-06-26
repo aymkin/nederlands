@@ -234,6 +234,25 @@ def test_check_blocked_by_red():
         assert v["red"] == 1 and v["ready"] is False
 
 
+def test_check_not_ready():
+    with tempfile.TemporaryDirectory() as d:
+        root = _make_repo(d)
+        sr_path = root / "spaced-repetition.json"
+        # empty unit: total == 0 -> not ready
+        sr_path.write_text(json.dumps(_sr_with({})), encoding="utf-8")
+        v0 = fi.check("link", root, sr_path)
+        assert v0["total"] == 0 and v0["ready"] is False
+        # below threshold (7/10 mastered, no red) -> not ready
+        items = {f"link_t8_voc_x{i}": {"mastery_level": 3,
+                 "consecutive_incorrect": 0} for i in range(7)}
+        items.update({f"link_t8_voc_y{i}": {"mastery_level": 1,
+                      "consecutive_incorrect": 0} for i in range(3)})
+        sr_path.write_text(json.dumps(_sr_with(items)), encoding="utf-8")
+        v1 = fi.check("link", root, sr_path)
+        assert v1["total"] == 10 and v1["mastered"] == 7 and v1["red"] == 0
+        assert v1["ready"] is False
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items())
            if k.startswith("test_") and callable(v)]

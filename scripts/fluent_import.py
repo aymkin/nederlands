@@ -239,7 +239,7 @@ def check(course: str, repo_root: Path, sr_path: Path) -> dict:
     ready = total > 0 and pct >= MASTERY_THRESHOLD and red == 0
     mark = "✅ готов дальше — запусти --advance" if ready else "⏳ продолжай"
     report = (f"{unit['id']} — {total} карточек | mastery≥3: {mastered}/{total} "
-              f"({pct:.0%}) | красных: {red}\n{mark}")
+              f"({pct:.1%}) | красных: {red}\n{mark}")
     return {"unit": unit["id"], "total": total, "mastered": mastered,
             "red": red, "ready": ready, "report": report}
 
