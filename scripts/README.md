@@ -443,13 +443,13 @@ python3 scripts/fluent_import.py --course link --advance
     {
       "id": "thema_8",
       "status": "active",
-      "grammar_file": "gramatica/grammatica_thema8.md",
-      "grammar_modules": ["8.1", "8.2"]
+      "grammar_file": "grammatica_thema08_in_mijn_buurt.md",
+      "grammar_modules": ["2.1", "2.11"]
     },
     {
       "id": "thema_9",
       "status": "locked",
-      "grammar_file": "gramatica/grammatica_thema9.md",
+      "grammar_file": "grammatica_thema09_is_dat_wel_veilig.md",
       "grammar_modules": "all"
     }
   ]
@@ -460,7 +460,7 @@ python3 scripts/fluent_import.py --course link --advance
 | ----------------- | ------------------------------- | ----------------------------------------- |
 | `status`          | `done` / `active` / `locked`    | Ровно одна тема — `active` в любой момент |
 | `grammar_modules` | `"all"` или список `["8.1", …]` | Какие разделы грамматики включить         |
-| `grammar_file`    | путь от папки курса             | Markdown с разделами `## N.N Заголовок`   |
+| `grammar_file`    | имя файла грамматики             | Markdown с разделами `## N.N Заголовок`   |
 
 ### Что и откуда берётся
 
@@ -468,10 +468,13 @@ python3 scripts/fluent_import.py --course link --advance
 (5-колоночный TSV: Word | Example | Translation | TranslationExample | Tags).
 Берётся колонка 1 (слово) и колонка 3 (перевод).
 
-**Грамматика** — cloze-карточки из Markdown-файла `grammar_file`. Скрипт ищет
-разделы `## N.N Заголовок → ### Voorbeelden uit oefeningen → буллеты`. Первый
-**жирный** фрагмент в буллете становится пробелом (`___`), остальной текст —
-вопросом. Разделы без жирных примеров пропускаются и сообщаются в stdout.
+**Грамматика** — cloze-карточки из Markdown-файла `grammar_file` (голое имя
+файла). Скрипт ищет его сначала в папке темы `link/thema_N/<grammar_file>`, а
+если там нет — в общей папке `link/gramatica/<grammar_file>` (поддерживает обе
+раскладки). Внутри файла берутся разделы
+`## N.N Заголовок → ### Voorbeelden uit oefeningen → буллеты`. Первый **жирный**
+фрагмент в буллете становится пробелом (`___`), остальной текст — вопросом.
+Разделы без жирных примеров пропускаются и сообщаются в stdout.
 
 ### Идентификаторы карточек
 
