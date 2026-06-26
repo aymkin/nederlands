@@ -273,7 +273,8 @@ def advance(course: str, repo_root: Path, sr_path: Path, today: str) -> dict:
     course_dir = repo_root / course
     manifest = load_manifest(course_dir)
     units = manifest["units"]
-    idx = next(i for i, u in enumerate(units) if u.get("status") == "active")
+    active = active_unit(manifest)  # descriptive ValueError + exactly-one-active invariant
+    idx = next(i for i, u in enumerate(units) if u is active)
     if idx + 1 >= len(units):
         raise ValueError("course complete — нет следующего юнита")
     units[idx]["status"] = "done"
