@@ -2,6 +2,7 @@
 """Импорт лексики/грамматики активной темы курса в spaced-repetition Fluent."""
 import json
 import re
+import shutil
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -154,3 +155,66 @@ def grammar_items(course: str, unit: dict, gramatica_dir: Path) -> tuple:
     for it in items:
         it["category"] = f"grammar_thema{num}"
     return items, skipped
+
+
+def new_sr_item(item: dict, today: str) -> dict:
+    return {
+        "id": item["item_id"],
+        "type": item.get("item_type", "vocabulary"),
+        "content": item.get("content", ""),
+        "answer": item.get("answer", ""),
+        "category": item.get("category", ""),
+        "difficulty": "",
+        "created_date": today,
+        "due_date": tomorrow(today),
+        "interval_days": 1,
+        "repetitions": 0,
+        "easiness_factor": 2.5,
+        "consecutive_correct": 0,
+        "consecutive_incorrect": 0,
+        "last_reviewed": today,
+        "last_quality": 3,
+        "mastery_level": 0,
+        "total_reviews": 0,
+        "priority": item.get("priority", "medium"),
+    }
+
+
+def add_items(sr: dict, items: list, today: str) -> int:
+    store = sr.setdefault("items", {})
+    added = 0
+    for it in items:
+        if it["item_id"] not in store:
+            store[it["item_id"]] = new_sr_item(it, today)
+            added += 1
+    return added
+
+
+def rebuild_queue(sr: dict, today: str) -> None:
+    items = sr.setdefault("items", {})
+    q = {"today": [], "tomorrow": [], "this_week": [], "later": []}
+    tom = tomorrow(today)
+    week_end = date_plus_days(today, 7)
+    for item_id, item in items.items():
+        due = item.get("due_date", today)
+        if due <= today:
+            q["today"].append(item_id)
+        elif due == tom:
+            q["tomorrow"].append(item_id)
+        elif due <= week_end:
+            q["this_week"].append(item_id)
+        else:
+            q["later"].append(item_id)
+    sr["review_queue"] = q
+    sr.setdefault("metadata", {})["last_updated"] = today
+    sr["metadata"]["total_items_tracked"] = len(items)
+
+
+def write_sr(sr: dict, sr_path: Path) -> None:
+    if sr_path.exists():
+        backup_dir = sr_path.parent / ".backups" / f"pre-import-{today_str()}"
+        backup_dir.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(sr_path, backup_dir / sr_path.name)
+    tmp = sr_path.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(sr, ensure_ascii=False, indent=2), encoding="utf-8")
+    tmp.replace(sr_path)

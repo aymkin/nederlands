@@ -125,6 +125,45 @@ def test_parse_grammar_clozes_module_filter():
     assert any("3.1" in s for s in skipped)
 
 
+def test_add_items_idempotent():
+    sr = {"items": {}, "review_queue": {}, "metadata": {}}
+    items = [{"item_id": "link_t8_voc_taak1_de-buurt", "item_type": "vocabulary",
+              "content": "de buurt", "answer": "район", "category": "link_thema8",
+              "priority": "medium"}]
+    assert fi.add_items(sr, items, "2026-06-26") == 1
+    assert fi.add_items(sr, items, "2026-06-26") == 0  # второй раз — 0
+    it = sr["items"]["link_t8_voc_taak1_de-buurt"]
+    assert it["due_date"] == "2026-06-27"
+    assert it["easiness_factor"] == 2.5
+    assert it["mastery_level"] == 0
+
+
+def test_rebuild_queue_buckets():
+    sr = {"items": {
+        "a": {"due_date": "2026-06-25"},   # <= today
+        "b": {"due_date": "2026-06-27"},   # tomorrow
+        "c": {"due_date": "2026-06-30"},   # this_week
+        "d": {"due_date": "2026-08-01"},   # later
+    }, "review_queue": {}, "metadata": {}}
+    fi.rebuild_queue(sr, "2026-06-26")
+    q = sr["review_queue"]
+    assert q["today"] == ["a"]
+    assert q["tomorrow"] == ["b"]
+    assert q["this_week"] == ["c"]
+    assert q["later"] == ["d"]
+    assert sr["metadata"]["total_items_tracked"] == 4
+
+
+def test_write_sr_backs_up_and_writes():
+    with tempfile.TemporaryDirectory() as d:
+        sr_path = Path(d) / "spaced-repetition.json"
+        sr_path.write_text(json.dumps({"items": {}, "metadata": {}}))
+        fi.write_sr({"items": {"x": {}}, "metadata": {}}, sr_path)
+        assert json.loads(sr_path.read_text())["items"] == {"x": {}}
+        backups = list((Path(d) / ".backups").rglob("spaced-repetition.json"))
+        assert len(backups) == 1  # старая версия сохранена
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items())
            if k.startswith("test_") and callable(v)]
