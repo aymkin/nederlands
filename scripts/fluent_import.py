@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Импорт лексики/грамматики активной темы курса в spaced-repetition Fluent."""
+import argparse
 import json
 import os
 import re
@@ -220,3 +221,50 @@ def write_sr(sr: dict, sr_path: Path) -> None:
     tmp = sr_path.with_name(f"{sr_path.name}.{os.getpid()}.tmp")
     tmp.write_text(json.dumps(sr, ensure_ascii=False, indent=2), encoding="utf-8")
     tmp.replace(sr_path)
+
+
+def fluent_data_dir() -> Path:
+    return Path.home() / ".claude" / "fluent-data"
+
+
+def do_import(course: str, repo_root: Path, sr_path: Path, today: str) -> dict:
+    course_dir = repo_root / course
+    manifest = load_manifest(course_dir)
+    unit = active_unit(manifest)
+    vocab = vocab_items(course, unit, course_dir)
+    grammar, skipped = grammar_items(course, unit, course_dir / "gramatica")
+    sr = json.loads(sr_path.read_text(encoding="utf-8"))
+    added = add_items(sr, vocab + grammar, today)
+    rebuild_queue(sr, today)
+    write_sr(sr, sr_path)
+    return {"unit": unit["id"], "vocab": len(vocab), "grammar": len(grammar),
+            "added": added, "skipped": skipped}
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description="Curriculum → Fluent bridge")
+    ap.add_argument("--course", required=True)
+    ap.add_argument("--check", action="store_true")
+    ap.add_argument("--advance", action="store_true")
+    args = ap.parse_args(argv)
+
+    repo_root = Path(__file__).resolve().parent.parent
+    sr_path = fluent_data_dir() / "spaced-repetition.json"
+    today = today_str()
+
+    if args.check:
+        print(check(args.course, repo_root, sr_path)["report"])
+        return
+    if args.advance:
+        s = advance(args.course, repo_root, sr_path, today)
+        print(f"→ active: {s['unit']} | added {s['added']}")
+        return
+    s = do_import(args.course, repo_root, sr_path, today)
+    print(f"Импорт {s['unit']}: лексика {s['vocab']}, грамматика {s['grammar']}, "
+          f"новых {s['added']}")
+    if s["skipped"]:
+        print("Пропущены модули без жирных примеров: " + "; ".join(s["skipped"]))
+
+
+if __name__ == "__main__":
+    main()

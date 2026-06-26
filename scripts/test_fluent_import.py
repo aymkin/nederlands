@@ -171,6 +171,39 @@ def test_write_sr_backs_up_and_writes():
         assert json.loads(fresh.read_text())["items"] == {"y": {}}
 
 
+def _make_repo(d):
+    root = Path(d)
+    (root / "link" / "thema_8" / "taak_1").mkdir(parents=True)
+    (root / "link" / "gramatica").mkdir(parents=True)
+    (root / "link" / "thema_8" / "taak_1" /
+     "woordenlijst_thema8_taak1_anki.txt").write_text(
+        "#separator:tab\nde buurt\tIk woon in de buurt.\tрайон\tЯ живу.\tt\n",
+        encoding="utf-8")
+    (root / "link" / "gramatica" / "grammatica_thema08_in_mijn_buurt.md").write_text(
+        "## 1.1 Test\n\n### Voorbeelden uit oefeningen\n- Ik **werk** hier.\n",
+        encoding="utf-8")
+    (root / "link" / "curriculum.json").write_text(json.dumps({
+        "course": "link", "units": [
+            {"id": "thema_8", "grammar_file": "grammatica_thema08_in_mijn_buurt.md",
+             "grammar_modules": "all", "status": "active"}]}), encoding="utf-8")
+    return root
+
+
+def test_do_import_end_to_end_and_idempotent():
+    with tempfile.TemporaryDirectory() as d:
+        root = _make_repo(d)
+        sr_path = root / "spaced-repetition.json"
+        sr_path.write_text(json.dumps({"items": {}, "metadata": {}}))
+        s1 = fi.do_import("link", root, sr_path, "2026-06-26")
+        assert s1["vocab"] == 1 and s1["grammar"] == 1 and s1["added"] == 2
+        sr = json.loads(sr_path.read_text())
+        assert "link_t8_voc_taak1_de-buurt" in sr["items"]
+        assert "link_t8_gram_1.1_1" in sr["items"]
+        assert sr["review_queue"]["tomorrow"]  # due завтра
+        s2 = fi.do_import("link", root, sr_path, "2026-06-26")
+        assert s2["added"] == 0  # idempotent
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items())
            if k.startswith("test_") and callable(v)]
