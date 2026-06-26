@@ -193,7 +193,7 @@ def test_do_import_end_to_end_and_idempotent():
     with tempfile.TemporaryDirectory() as d:
         root = _make_repo(d)
         sr_path = root / "spaced-repetition.json"
-        sr_path.write_text(json.dumps({"items": {}, "metadata": {}}))
+        sr_path.write_text(json.dumps({"items": {}, "metadata": {}}), encoding="utf-8")
         s1 = fi.do_import("link", root, sr_path, "2026-06-26")
         assert s1["vocab"] == 1 and s1["grammar"] == 1 and s1["added"] == 2
         sr = json.loads(sr_path.read_text())
