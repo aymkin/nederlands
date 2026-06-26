@@ -31,6 +31,14 @@ def test_active_unit_requires_exactly_one():
         assert False, "expected ValueError"
     except ValueError:
         pass
+    m2 = {"course": "link", "units": [
+        {"id": "thema_8", "status": "active"},
+        {"id": "thema_9", "status": "active"}]}
+    try:
+        fi.active_unit(m2)
+        assert False, "expected ValueError"
+    except ValueError:
+        pass
 
 
 def test_load_manifest():
