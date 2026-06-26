@@ -1,0 +1,22 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 4 taak 3: "Eet je gezond?" (1000050444.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+afvallen
+het bed
+het been
+bijna
+de buik
+dat
+dik
+de dokter
+echt
+eigenlijk
+gewoon
+gezond
+halen
+de hamburger
+hebben
+het koekje
+koken

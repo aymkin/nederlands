@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 7 taak 1: "Wanneer heeft de dokter spreekuur?" (1000050454.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+aanvragen
+de afspraak
+de apotheek
+de assistente
+de drogist
+duren
+de huisarts
+de huisartsenpost
+het huisbezoek
+de koorts
+het medicijn
+de praktijk
+de ruzie
+de specialist
+de spoed
+het spoedgeval
+het spreekuur
+de stress
+toetsen
+tussen
+verkouden
+de vraag
+het weekend
+zeggen tegen
+de zin

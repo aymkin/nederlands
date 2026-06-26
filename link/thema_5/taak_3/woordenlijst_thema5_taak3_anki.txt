@@ -1,0 +1,26 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 5 taak 3: "Hier zit ik het liefst" (1000050448.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+alleen
+blauw
+daar
+dit
+donker
+het idee
+jou
+de laptop
+mezelf
+net
+de plek
+het raam
+de stoel
+de tafel
+trouwens
+twijfelen
+waarom
+de winter
+de zolder
+de zomer
+de zon

@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 5 taak 2: "Wie kan mij helpen?" (1000050447.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+het briefje
+deze
+de ervaring
+de fiets
+de flat
+gek op
+hangen
+helpen
+de hulp
+de ingang
+klussen
+leeg
+mij
+het nummer
+ophalen
+oppassen
+opruimen
+de poes
+de sleutel
+de stoep
+uw
+zijn
+zorgen voor

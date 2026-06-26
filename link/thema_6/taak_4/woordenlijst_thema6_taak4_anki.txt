@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 6 taak 4: "Ik reis elke dag met de bus" (1000050453.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+achter
+de auto
+de bushalte
+de chauffeur
+de deur
+dromen
+droog
+elke
+eruit
+de haast
+iedereen
+inchecken
+instappen
+de keer
+de mensen
+nat
+niemand
+opengaan
+regenen
+stil
+stoppen
+het strand
+uitstappen
+het verhaal
+vol
+de weg

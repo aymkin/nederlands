@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 6 taak 2: "Mag ik u wat vragen?" (1000050451.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+duidelijk
+eerst
+geloven
+haar
+de linkerkant
+links
+linksaf
+lopen
+mam
+naartoe
+rechtdoor
+de rechterkant
+rechts
+rechtsaf
+de route
+slim
+tegenover
+tekenen
+terug
+de uitleg
+uitleggen
+volgens
+het werkblad
+het winkelcentrum
+winkelen

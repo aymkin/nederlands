@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 7 taak 4: "Innemen met een glas water" (1000050457.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+de crème
+het doosje
+het geld
+genoeg
+de gezondheid
+haar
+hem
+innemen
+maal
+de maaltijd
+moeilijk
+de nacht
+overleden
+de pijnstiller
+de pil
+het recept
+slecht
+de tablet
+de trap
+vallen
+vergelijken
+verschrikkelijk
+de zalf
+de zorg

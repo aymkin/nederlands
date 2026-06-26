@@ -1,0 +1,27 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 6 taak 3: "Sorry, ik heb vertraging" (1000050452.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+appen
+het appje
+het bericht
+beste
+dank
+de docent
+geachte
+groet
+groetjes
+hartelijke
+helaas
+hoi
+kapot
+later
+de les
+lieve
+moe
+ongeveer
+sturen
+texten
+vriendelijke
+wat

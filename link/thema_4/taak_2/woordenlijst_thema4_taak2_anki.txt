@@ -1,0 +1,26 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 4 taak 2: "Wat eet je bij het ontbijt?" (1000050443.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+af en toe
+beantwoorden
+het bier
+de boerenkool
+de boterham
+het ei
+gebruiken
+houden van
+het interview
+het jaar
+jullie
+de kruiden
+de lunch
+het ontbijt
+de pap
+de patat
+de rijst
+vinden
+weleens
+zoet
+zout

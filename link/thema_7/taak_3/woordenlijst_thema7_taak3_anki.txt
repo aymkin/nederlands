@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 7 taak 3: "Ik zoek de neusdruppels" (1000050456.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+het advies
+afrekenen
+bedenken
+de deodorant
+helaas
+ergens
+de kassa
+de luier
+de make-up
+meelopen
+het merk
+nergens
+de neusdruppels
+ons
+de paracetamol
+het parfum
+pas
+pinnen
+de shampoo
+de tandenborstel
+de tandpasta
+toevallig
+verder
+de verkoopster
+de vitamine
+de zeep

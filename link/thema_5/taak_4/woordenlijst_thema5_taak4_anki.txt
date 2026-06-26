@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 5 taak 4: "Deze tafel wil ik wel" (1000050449.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+de feestdag
+de folder
+de helft
+de informatie
+de kast
+kiezen
+de klant
+de korting
+kosten
+de lamp
+de meubels
+onze
+de opruiming
+de prijs
+het procent
+rood
+samen
+de soort
+verkopen
+de website
+welk
+wij
+wit
+zwart

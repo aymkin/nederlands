@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 6 taak 1: "We moeten in Utrecht overstappen" (1000050450.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+de aankomst
+bedankt
+de bus
+centraal
+direct
+heen
+de intercity
+de metro
+overstappen
+plannen
+de reis
+de reistijd
+reizen
+de richting
+het spoor
+de sprinter
+het station
+de tas
+tonen
+de trein
+de verbinding
+de vertraging
+het vertrek
+vertrekken
+vinden
+volgende

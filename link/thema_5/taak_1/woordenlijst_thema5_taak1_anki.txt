@@ -1,0 +1,36 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 5 taak 1: "Ik woon in een appartement" (1000050446.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+alle
+het appartement
+de badkamer
+beneden
+betalen
+de broer
+buiten
+de buren
+het centrum
+delen
+druk
+hij
+hoeveel
+hoog
+de kamer
+laag
+het licht
+het liefst
+maken
+per
+ruilen
+rustig
+de tuin
+de verdieping
+verhuizen
+vlakbij
+want
+wat voor
+de woonkamer
+zij
+zoeken

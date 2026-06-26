@@ -1,0 +1,27 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 4 taak 4: "Ik vind alles lekker!" (1000050445.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+de alcohol
+de boon
+het broodje
+de cola
+de couscous
+gebakken
+genieten
+het glas
+heel
+ieder
+het lam
+het lievelingseten
+de mayonaise
+het moment
+precies
+ruiken
+smaken
+de taart
+tussendoor
+vies
+weinig
+de wereld

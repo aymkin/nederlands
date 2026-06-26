@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 4 taak 1: "Wat eten we vanavond?" (1000050442.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+de aanbieding
+allerlei
+het avondeten
+de boter
+het brood
+de fles
+het huis
+klaar
+de knoflook
+de koelkast
+langs
+meenemen
+niks
+nodig hebben
+het pak
+de soep
+staan
+straks
+het stuk
+het toetje
+het volkorenbrood
+we
+de worst
+de yoghurt
+zonder
+het zout

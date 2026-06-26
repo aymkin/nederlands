@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#columns:Word
+# woordenlijst stub — thema 7 taak 2: "Kan het ook vandaag?" (1000050455.pdf, LINK © Boom 2019)
+# alleen Word-kolom (geen vertaling/audio) — voedt woordenlijst_index.txt
+blijven
+buikpijn
+de diarree
+erg
+goeiemorgen
+de griep
+hoelang
+de keelpijn
+de klacht
+de lijn
+maar
+me
+meer
+mogelijk
+morgen
+morgenmiddag
+morgenochtend
+nou
+de oorpijn
+overgaan
+de pijn
+de rug
+spijten
+verzetten
+vrij
