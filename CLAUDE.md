@@ -130,6 +130,27 @@ opens in browser. Dependency: `pip install edge-tts`
 python3 scripts/story_reader.py de_opmaat/thema_8/verhaal_studentenhuis/verhaal_studentenhuis_deel1.md
 ```
 
+### fluent_import.py — Curriculum → Fluent Bridge
+
+Seeds Link/De Opmaat vocab and grammar into Fluent's spaced-repetition database.
+No dependencies beyond Python 3 stdlib.
+
+```bash
+python3 scripts/fluent_import.py --course link          # import active unit
+python3 scripts/fluent_import.py --course link --check  # mastery gate check
+python3 scripts/fluent_import.py --course link --advance # advance + import next
+```
+
+- Per-course progress lives in `<course>/curriculum.json` (units with
+  `status: done|active|locked`; exactly one `active` at a time).
+- Writes only `~/.claude/fluent-data/spaced-repetition.json`; backs it up to
+  `.backups/pre-import-<timestamp>/` before every write. Idempotent: stable
+  `item_id` prefixed `{course}_t{N}_` so re-running is safe.
+- SM-2 scheduling is owned by Fluent — the importer only seeds new items and
+  rebuilds the review queue.
+- Advancement threshold: ≥ 80% of the unit's cards at `mastery_level ≥ 3` AND
+  zero "red" cards (`consecutive_incorrect ≥ 2`).
+
 ## Anki Integration
 
 **Profile:** `alex` — media at
@@ -241,7 +262,8 @@ Use tables for Dutch word order patterns:
 - Base language: Russian (English as supplementary)
 - Alex: A2 (elementary), approaching B1 — De Opmaat (`de_opmaat/`) + Link
   praktisch (`link/`)
-- Yulia: B1 level, aiming B2 — Link+ theoretisch (`link_plus/`)
+- Yulia: A1+ (between A1 and A2), working toward Link+ B1→B2 — Link+
+  theoretisch (`link_plus/`)
 
 ## Tutor Mode
 
