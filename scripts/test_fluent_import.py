@@ -122,6 +122,7 @@ def test_parse_grammar_clozes_basic():
 def test_parse_grammar_clozes_module_filter():
     items, skipped = fi.parse_grammar_clozes(GRAMMAR_SAMPLE, ["3.1"], "link_t8_")
     assert items == []  # 2.1 отфильтрован, 3.1 без примеров
+    assert any("3.1" in s for s in skipped)
 
 
 def _run_all():

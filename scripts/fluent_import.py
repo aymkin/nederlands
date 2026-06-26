@@ -113,6 +113,8 @@ def _voorbeelden_lines(body_lines: list) -> list:
         if s.startswith("###"):
             collecting = s.lower().startswith("### voorbeelden")
             continue
+        if s.startswith("##"):
+            break  # граница секции — дальше не собираем
         if collecting and s.startswith("- "):
             out.append(s[2:].strip())
     return out
@@ -124,22 +126,22 @@ def parse_grammar_clozes(md_text: str, modules, prefix: str) -> tuple:
         if modules != "all" and sec["num"] not in modules:
             continue
         examples = _voorbeelden_lines(sec["lines"])
-        made = 0
+        idx = 0
         for ex in examples:
             m = _BOLD_RE.search(ex)
             if not m:
                 continue
             answer = m.group(1)
             content = (ex[:m.start()] + "___" + ex[m.end():]).strip()
-            made += 1
+            idx += 1
             items.append({
-                "item_id": f"{prefix}gram_{sec['num']}_{made}",
+                "item_id": f"{prefix}gram_{sec['num']}_{idx}",
                 "item_type": "grammar_rule",
                 "content": f"{content} ({sec['title']})",
                 "answer": answer,
                 "priority": "medium",
             })
-        if made == 0:
+        if idx == 0:
             skipped.append(f"{sec['num']} {sec['title']}")
     return items, skipped
 
