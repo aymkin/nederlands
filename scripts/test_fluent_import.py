@@ -48,6 +48,42 @@ def test_load_manifest():
         assert fi.load_manifest(Path(d))["course"] == "link"
 
 
+def test_slug():
+    assert fi.slug("de buurt") == "de-buurt"
+    assert fi.slug("'s morgens") == "s-morgens"
+
+
+def test_parse_woordenlijst():
+    with tempfile.TemporaryDirectory() as d:
+        p = Path(d) / "woordenlijst_thema8_taak1_anki.txt"
+        p.write_text(
+            "#separator:tab\n#html:true\n#tags column:5\n"
+            "de buurt\tIk woon in de buurt.\tрайон\tЯ живу в районе.\tlink::thema8\n"
+            "lopen\tIk loop.\tходить\tЯ хожу.\tlink::thema8\n",
+            encoding="utf-8")
+        rows = fi.parse_woordenlijst(p)
+        assert rows == [("de buurt", "район"), ("lopen", "ходить")]
+
+
+def test_vocab_items():
+    with tempfile.TemporaryDirectory() as d:
+        unit_dir = Path(d) / "thema_8" / "taak_1"
+        unit_dir.mkdir(parents=True)
+        (unit_dir / "woordenlijst_thema8_taak1_anki.txt").write_text(
+            "#separator:tab\n"
+            "de buurt\tIk woon in de buurt.\tрайон\tЯ живу.\tlink::thema8\n",
+            encoding="utf-8")
+        unit = {"id": "thema_8", "status": "active"}
+        items = fi.vocab_items("link", unit, Path(d))
+        assert len(items) == 1
+        it = items[0]
+        assert it["item_id"] == "link_t8_voc_taak1_de-buurt"
+        assert it["item_type"] == "vocabulary"
+        assert it["content"] == "de buurt"
+        assert it["answer"] == "район"
+        assert it["category"] == "link_thema8"
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items())
            if k.startswith("test_") and callable(v)]

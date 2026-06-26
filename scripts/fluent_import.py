@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Импорт лексики/грамматики активной темы курса в spaced-repetition Fluent."""
 import json
+import re
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -40,3 +41,51 @@ def unit_prefix(course: str, unit_id: str) -> str:
     # "thema_8" -> "8"; устойчивый префикс для idempotency + фильтра гейта
     num = unit_id.split("_")[-1]
     return f"{course}_t{num}_"
+
+
+_HEADER = ("#separator", "#html", "#columns", "#tags", "#notetype")
+
+
+def slug(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
+def parse_woordenlijst(anki_path: Path) -> list:
+    rows = []
+    for line in anki_path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        cols = line.split("\t")
+        word = cols[0].strip()
+        # колонки: Word | Example | Translation | TranslationExample | Tags
+        translation = cols[2].strip() if len(cols) > 2 else (
+            cols[1].strip() if len(cols) > 1 else "")
+        if word:
+            rows.append((word, translation))
+    return rows
+
+
+def _taak_from_name(name: str) -> str:
+    m = re.search(r"taak(\d+)", name)
+    return f"taak{m.group(1)}" if m else "taak0"
+
+
+def vocab_items(course: str, unit: dict, course_dir: Path) -> list:
+    num = unit["id"].split("_")[-1]
+    prefix = unit_prefix(course, unit["id"])
+    unit_dir = course_dir / unit["id"]
+    items = []
+    files = sorted(unit_dir.rglob(f"*woordenlijst*thema{num}*_anki.txt"))
+    for f in files:
+        taak = _taak_from_name(f.name)
+        for word, translation in parse_woordenlijst(f):
+            items.append({
+                "item_id": f"{prefix}voc_{taak}_{slug(word)}",
+                "item_type": "vocabulary",
+                "content": word,
+                "answer": translation,
+                "category": f"{course}_thema{num}",
+                "priority": "medium",
+            })
+    return items
