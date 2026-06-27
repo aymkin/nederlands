@@ -421,16 +421,23 @@ python3 scripts/fluent_import.py --course link --check
 
 # Перевести курс на следующую тему и сразу импортировать её
 python3 scripts/fluent_import.py --course link --advance
+
+# Фокус на конкретной теме БЕЗ сдвига указателя прогресса
+python3 scripts/fluent_import.py --course link --thema 5
+python3 scripts/fluent_import.py --course link --thema 5 --taak 2  # только taak 2
+python3 scripts/fluent_import.py --course link --check --thema 5   # её mastery
 ```
 
 ### Параметры
 
-| Параметр    | Описание                                      |
-| ----------- | --------------------------------------------- |
-| `--course`  | Имя курса — папка в корне репо (`link` и др.) |
-| `--check`   | Показать статистику mastery без изменений     |
-| `--advance` | Пометить активную тему `done`, активировать   |
-|             | следующую, импортировать её                   |
+| Параметр    | Описание                                          |
+| ----------- | ------------------------------------------------- |
+| `--course`  | Имя курса — папка в корне репо (`link` и др.)     |
+| `--check`   | Показать статистику mastery без изменений         |
+| `--advance` | Пометить активную тему `done`, активировать       |
+|             | следующую, импортировать её                       |
+| `--thema N` | Импорт/проверка темы N **без** сдвига указателя   |
+| `--taak N`  | Сузить лексику до одной taak (грамматика — вся)    |
 
 ### Формат curriculum.json
 

@@ -47,6 +47,13 @@ def active_unit(manifest: dict) -> dict:
     return actives[0]
 
 
+def unit_by_id(manifest: dict, unit_id: str) -> dict:
+    for u in manifest["units"]:
+        if u["id"] == unit_id:
+            return u
+    raise ValueError(f"unit {unit_id!r} not found in manifest")
+
+
 def unit_prefix(course: str, unit_id: str) -> str:
     # "thema_8" -> "8"; устойчивый префикс для idempotency + фильтра гейта
     num = unit_id.split("_")[-1]
@@ -78,17 +85,19 @@ def _taak_from_name(name: str) -> str:
     return f"taak{m.group(1)}" if m else "taak0"
 
 
-def vocab_items(course: str, unit: dict, course_dir: Path) -> list:
+def vocab_items(course: str, unit: dict, course_dir: Path, taak=None) -> list:
     num = unit["id"].split("_")[-1]
     prefix = unit_prefix(course, unit["id"])
     unit_dir = course_dir / unit["id"]
     items = []
     files = sorted(unit_dir.rglob(f"*woordenlijst*thema{num}*_anki.txt"))
     for f in files:
-        taak = _taak_from_name(f.name)
+        taak_label = _taak_from_name(f.name)
+        if taak is not None and taak_label != f"taak{taak}":
+            continue  # --taak N: только эта taak
         for word, translation in parse_woordenlijst(f):
             items.append({
-                "item_id": f"{prefix}voc_{taak}_{slug(word)}",
+                "item_id": f"{prefix}voc_{taak_label}_{slug(word)}",
                 "item_type": "vocabulary",
                 "content": word,
                 "answer": translation,
@@ -237,9 +246,9 @@ def write_sr(sr: dict, sr_path: Path) -> None:
 MASTERY_THRESHOLD = 0.80
 
 
-def check(course: str, repo_root: Path, sr_path: Path) -> dict:
+def check(course: str, repo_root: Path, sr_path: Path, unit_id=None) -> dict:
     manifest = load_manifest(repo_root / course)
-    unit = active_unit(manifest)
+    unit = unit_by_id(manifest, unit_id) if unit_id else active_unit(manifest)
     prefix = unit_prefix(course, unit["id"])
     sr = json.loads(sr_path.read_text(encoding="utf-8"))
     unit_items = [it for i, it in sr.get("items", {}).items() if i.startswith(prefix)]
@@ -259,11 +268,12 @@ def fluent_data_dir() -> Path:
     return Path.home() / ".claude" / "fluent-data"
 
 
-def do_import(course: str, repo_root: Path, sr_path: Path, today: str) -> dict:
+def do_import(course: str, repo_root: Path, sr_path: Path, today: str,
+              unit_id=None, taak=None) -> dict:
     course_dir = repo_root / course
     manifest = load_manifest(course_dir)
-    unit = active_unit(manifest)
-    vocab = vocab_items(course, unit, course_dir)
+    unit = unit_by_id(manifest, unit_id) if unit_id else active_unit(manifest)
+    vocab = vocab_items(course, unit, course_dir, taak=taak)
     grammar, skipped = grammar_items(course, unit, course_dir)
     sr = json.loads(sr_path.read_text(encoding="utf-8"))
     added = add_items(sr, vocab + grammar, today)
@@ -292,20 +302,24 @@ def main(argv=None):
     ap.add_argument("--course", required=True)
     ap.add_argument("--check", action="store_true")
     ap.add_argument("--advance", action="store_true")
+    ap.add_argument("--thema", type=int, help="фокус на теме N без сдвига указателя")
+    ap.add_argument("--taak", type=int, help="только эта taak (с --thema или активной темы)")
     args = ap.parse_args(argv)
 
     repo_root = Path(__file__).resolve().parent.parent
     sr_path = fluent_data_dir() / "spaced-repetition.json"
     today = today_str()
+    unit_id = f"thema_{args.thema}" if args.thema else None
 
     if args.check:
-        print(check(args.course, repo_root, sr_path)["report"])
+        print(check(args.course, repo_root, sr_path, unit_id=unit_id)["report"])
         return
     if args.advance:
         s = advance(args.course, repo_root, sr_path, today)
         print(f"→ active: {s['unit']} | added {s['added']}")
         return
-    s = do_import(args.course, repo_root, sr_path, today)
+    s = do_import(args.course, repo_root, sr_path, today,
+                  unit_id=unit_id, taak=args.taak)
     print(f"Импорт {s['unit']}: лексика {s['vocab']}, грамматика {s['grammar']}, "
           f"новых {s['added']}")
     if s["skipped"]:

@@ -36,6 +36,22 @@ Danner — а не абстрактные слова.
 | `/fluent-review`                                    | **каждый день**                |
 | `python3 scripts/fluent_import.py --course link --check`   | раз в неделю — дозрел ли?  |
 | `python3 scripts/fluent_import.py --course link --advance` | когда `--check` сказал ✅   |
+| `python3 scripts/fluent_import.py --course link --thema N`  | фокус на теме N (см. ниже) |
+
+### Фокус на конкретной теме
+
+Хочешь прогнать **отдельную** тему, не трогая основной указатель прогресса:
+
+```bash
+python3 scripts/fluent_import.py --course link --thema 5            # засеять тему 5
+python3 scripts/fluent_import.py --course link --thema 5 --taak 2   # только taak 2
+python3 scripts/fluent_import.py --course link --check --thema 5    # её готовность
+```
+
+`--thema N` импортирует тему N напрямую — `active` в manifest **не меняется**,
+последовательность не сбивается. Удобно подтянуть раннюю тему (4–7) или
+забежать вперёд, оставаясь «официально» на своей активной теме. Можно и просто
+попросить меня: «проведи сессию по thema 5» — соберу упражнения из её файлов.
 
 ---
 

@@ -323,6 +323,81 @@ def test_grammar_items_falls_back_to_gramatica():
         assert len(items) == 1 and items[0]["answer"] == "werk"
 
 
+def test_unit_by_id():
+    m = {"course": "link", "units": [
+        {"id": "thema_8", "status": "active"},
+        {"id": "thema_9", "status": "locked"}]}
+    assert fi.unit_by_id(m, "thema_9")["id"] == "thema_9"
+    try:
+        fi.unit_by_id(m, "thema_99")
+        assert False, "expected ValueError"
+    except ValueError:
+        pass
+
+
+def test_vocab_items_taak_filter():
+    with tempfile.TemporaryDirectory() as d:
+        cd = Path(d) / "link"
+        (cd / "thema_8" / "taak_1").mkdir(parents=True)
+        (cd / "thema_8" / "taak_2").mkdir(parents=True)
+        (cd / "thema_8" / "taak_1" / "woordenlijst_thema8_taak1_anki.txt").write_text(
+            "#separator:tab\nde buurt\tx\tрайон\ty\tt\n", encoding="utf-8")
+        (cd / "thema_8" / "taak_2" / "woordenlijst_thema8_taak2_anki.txt").write_text(
+            "#separator:tab\nde straat\tx\tулица\ty\tt\n", encoding="utf-8")
+        unit = {"id": "thema_8"}
+        assert len(fi.vocab_items("link", unit, cd)) == 2
+        only2 = fi.vocab_items("link", unit, cd, taak=2)
+        assert len(only2) == 1
+        assert only2[0]["item_id"] == "link_t8_voc_taak2_de-straat"
+
+
+def _make_repo2(d):
+    root = Path(d)
+    for t in ("8", "9"):
+        td = root / "link" / f"thema_{t}" / "taak_1"
+        td.mkdir(parents=True)
+        word = "de buurt" if t == "8" else "de straat"
+        tr = "район" if t == "8" else "улица"
+        (td / f"woordenlijst_thema{t}_taak1_anki.txt").write_text(
+            f"#separator:tab\n{word}\tx\t{tr}\ty\tt\n", encoding="utf-8")
+        (root / "link" / f"thema_{t}" / f"g{t}.md").write_text(
+            "## 1.1 T\n\n### Voorbeelden uit oefeningen\n- Ik **werk** hier.\n",
+            encoding="utf-8")
+    (root / "link" / "curriculum.json").write_text(json.dumps({
+        "course": "link", "units": [
+            {"id": "thema_8", "grammar_file": "g8.md", "grammar_modules": "all",
+             "status": "active"},
+            {"id": "thema_9", "grammar_file": "g9.md", "grammar_modules": "all",
+             "status": "locked"}]}), encoding="utf-8")
+    return root
+
+
+def test_do_import_thema_override():
+    with tempfile.TemporaryDirectory() as d:
+        root = _make_repo2(d)
+        sr_path = root / "spaced-repetition.json"
+        sr_path.write_text(json.dumps({"items": {}, "metadata": {}}), encoding="utf-8")
+        s = fi.do_import("link", root, sr_path, "2026-06-27", unit_id="thema_9")
+        assert s["unit"] == "thema_9"
+        sr = json.loads(sr_path.read_text())
+        assert "link_t9_voc_taak1_de-straat" in sr["items"]
+        # указатель НЕ сдвинут
+        m = json.loads((root / "link" / "curriculum.json").read_text())
+        st = {u["id"]: u["status"] for u in m["units"]}
+        assert st == {"thema_8": "active", "thema_9": "locked"}
+
+
+def test_check_thema_override():
+    with tempfile.TemporaryDirectory() as d:
+        root = _make_repo2(d)
+        sr_path = root / "spaced-repetition.json"
+        items = {f"link_t9_voc_x{i}": {"mastery_level": 3, "consecutive_incorrect": 0}
+                 for i in range(10)}
+        sr_path.write_text(json.dumps(_sr_with(items)), encoding="utf-8")
+        v = fi.check("link", root, sr_path, unit_id="thema_9")
+        assert v["unit"] == "thema_9" and v["total"] == 10 and v["ready"] is True
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items())
            if k.startswith("test_") and callable(v)]
