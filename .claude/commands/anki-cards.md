@@ -23,9 +23,13 @@ Then read the generated index file to understand existing vocabulary.
 
 ## Step 2: Determine course and tags
 
-- If input references `link/` → course is Link (Yulia, B1)
+- If input references `link/` → course is Link praktisch (Alex, A2→B1)
+- If input references `link_plus/` → course is Link+ (Yulia). The textbook is
+  B1→B2, but Yulia's actual level is A1–A2 — generate examples at A1–A2, not at
+  the textbook level.
 - If input references `de_opmaat/` → course is De Opmaat (Alex, A2)
-- Tags format: `link::thema{N}::taak{N}::A2` or `de_opmaat::thema{N}::A2`
+- Tags format: `link::thema{N}::taak{N}::A2`,
+  `link_plus::thema{N}::taak{N}::A2`, or `de_opmaat::thema{N}::A2`
 
 ## Step 3: Generate cards
 
