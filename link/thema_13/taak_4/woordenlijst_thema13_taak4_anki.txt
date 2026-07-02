@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+het beeldscherm	Mijn beeldscherm doet het opeens niet meer, alles is zwart.	экран, монитор	Мой монитор вдруг перестал работать, всё чёрное.	link::thema13::taak4::A2
+checken	Kun je even checken of het pakje al verstuurd is?	проверять	Можешь глянуть, отправлена ли уже посылка?	link::thema13::taak4::A2
+defect	De wasmachine is defect, ik heb de monteur al gebeld.	неисправный, сломанный	Стиральная машина неисправна, я уже вызвал мастера.	link::thema13::taak4::A2
+de garantie	Gelukkig zit er nog garantie op, dus de reparatie is gratis.	гарантия	К счастью, гарантия ещё действует, так что ремонт бесплатный.	link::thema13::taak4::A2
+de handdoek	Geef me even een handdoek, ik ben helemaal nat.	полотенце	Дай мне полотенце, я весь мокрый.	link::thema13::taak4::A2
+kletsnat	Ik kwam kletsnat thuis, het regende echt keihard.	промокший насквозь	Я пришёл домой насквозь мокрый, дождь лил как из ведра.	link::thema13::taak4::A2
+het laken	Ik heb net de lakens verschoond, het bed is weer lekker fris.	простыня	Я только что сменил простыни, постель снова приятно свежая.	link::thema13::taak4::A2
+lukken	Het is me eindelijk gelukt om de storing zelf op te lossen.	удаваться, получаться	Мне наконец удалось самому устранить сбой.	link::thema13::taak4::A2
+meevallen	De rekening viel gelukkig mee, minder dan ik dacht.	оказаться лучше ожидаемого	Счёт, к счастью, оказался меньше, чем я думал.	link::thema13::taak4::A2
+de monteur	De monteur komt morgen tussen tien en twaalf langs.	мастер, монтёр	Мастер зайдёт завтра между десятью и двенадцатью.	link::thema13::taak4::A2
+het ondergoed	Was je het ondergoed apart? Ik doe het meestal op zestig graden.	нижнее бельё	Ты стираешь нижнее бельё отдельно? Я обычно на шестидесяти градусах.	link::thema13::taak4::A2
+opeens	Opeens deed de verwarming het niet meer, midden in de winter.	вдруг, внезапно	Вдруг отопление перестало работать, посреди зимы.	link::thema13::taak4::A2
+de oplossing	Bedankt, dat is echt een goede oplossing voor het probleem.	решение	Спасибо, это реально хорошее решение проблемы.	link::thema13::taak4::A2
+opnieuw	De bestelling was fout, dus ik moet 'm opnieuw doen.	заново, снова	Заказ был неправильный, так что придётся оформить заново.	link::thema13::taak4::A2
+de pizza	Zullen we vanavond gewoon een pizza bestellen? Geen zin om te koken.	пицца	Может, сегодня просто закажем пиццу? Нет настроения готовить.	link::thema13::taak4::A2
+proberen	Heb je al geprobeerd om 'm uit en weer aan te zetten?	пробовать, пытаться	Ты уже пробовал выключить и снова включить?	link::thema13::taak4::A2
+het programma	Dit wasprogramma duurt wel twee uur, echt lang.	программа	Эта программа стирки длится целых два часа, реально долго.	link::thema13::taak4::A2
+raar	Er komt een raar geluid uit de wasmachine, dat klinkt niet goed.	странный	Из стиральной машины идёт странный звук, звучит нехорошо.	link::thema13::taak4::A2
+reageren	Ik heb de webwinkel gemaild, maar ze reageren gewoon niet.	реагировать, отвечать	Я написал в интернет-магазин, но они просто не отвечают.	link::thema13::taak4::A2
+stuk	M'n telefoon is stuk gevallen, het scherm doet het niet meer.	сломанный	Мой телефон разбился, экран больше не работает.	link::thema13::taak4::A2
+vanmorgen	Vanmorgen kwam de monteur langs en nu doet alles het weer.	сегодня утром	Сегодня утром приходил мастер, и теперь всё снова работает.	link::thema13::taak4::A2
+verzenden	De webshop heeft het pakket vandaag verzonden, morgen is het er.	отправлять, высылать	Магазин отправил посылку сегодня, завтра будет на месте.	link::thema13::taak4::A2
+de voorletter	Vul hier je voorletters en je achternaam in.	инициал	Впишите здесь свои инициалы и фамилию.	link::thema13::taak4::A2

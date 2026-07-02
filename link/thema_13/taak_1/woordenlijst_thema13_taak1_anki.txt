@@ -1,0 +1,27 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+de aankoop	Die nieuwe koelkast was een dure aankoop, maar hij was 't echt waard.	покупка, приобретение	Этот новый холодильник был дорогой покупкой, но он реально того стоил.	link::thema13::taak1::A2
+het apparaat	Zo'n apparaat gaat bij mij meestal jaren mee, gelukkig.	прибор, устройство	Такой прибор у меня обычно служит годами, к счастью.	link::thema13::taak1::A2
+elektrisch	We koken nu elektrisch, want het gasfornuis was echt op.	электрический	Мы теперь готовим на электричестве, потому что газовая плита совсем сдохла.	link::thema13::taak1::A2
+de energie	Met die oude vriezer verbruik je gewoon te veel energie.	энергия	Со старой морозилкой ты просто тратишь слишком много энергии.	link::thema13::taak1::A2
+flauw	Deze friet is een beetje flauw, doe er nog wat zout op.	пресный, безвкусный	Эта картошка фри пресновата, добавь ещё чуть соли.	link::thema13::taak1::A2
+de friet	Zullen we vanavond even friet uit de frituurpan doen? Lekker makkelijk.	картошка фри	Может, сегодня вечером сделаем картошку фри во фритюрнице? Удобно и вкусно.	link::thema13::taak1::A2
+de frituurpan	Onze frituurpan is stuk, dus ik bak de friet nu gewoon in de oven.	фритюрница	Наша фритюрница сломалась, так что картошку фри я теперь просто пеку в духовке.	link::thema13::taak1::A2
+de haardroger	Mag ik even je haardroger lenen? De mijne is opeens kapot.	фен	Можно одолжить твой фен? Мой вдруг сломался.	link::thema13::taak1::A2
+invriezen	Ik heb de soep ingevroren, dan hebben we volgende week ook wat.	замораживать	Я заморозил суп, тогда у нас и на следующей неделе что-то будет.	link::thema13::taak1::A2
+het leven	Zo'n vaatwasser maakt het leven echt een stuk makkelijker.	жизнь	Такая посудомойка реально делает жизнь заметно проще.	link::thema13::taak1::A2
+Marktplaats	Die mixer heb ik gewoon tweedehands op Marktplaats gekocht.	Marktplaats (сайт объявлений)	Этот миксер я просто б/у купил на Marktplaats.	link::thema13::taak1::A2
+de mixer	Met de mixer maak ik 's ochtends snel een smoothie voor onderweg.	миксер	Миксером я по утрам быстро делаю смузи с собой.	link::thema13::taak1::A2
+nuttig	Een waterkoker is echt zo'n nuttig apparaat, die gebruik ik elke dag.	полезный	Электрочайник — реально такой полезный прибор, я им пользуюсь каждый день.	link::thema13::taak1::A2
+prachtig	We hebben een prachtig oud fornuis op de kringloop gevonden.	прекрасный, великолепный	Мы нашли шикарную старую плиту в комиссионке.	link::thema13::taak1::A2
+het scheerapparaat	M'n scheerapparaat doet 't niet meer, ik moet 'm opladen denk ik.	электробритва	Моя электробритва больше не работает, надо, наверное, зарядить.	link::thema13::taak1::A2
+strijken	Ik heb echt een hekel aan strijken, dat overhemd doe ik morgen wel.	гладить	Терпеть не могу гладить, эту рубашку поглажу завтра.	link::thema13::taak1::A2
+het strijkijzer	Pas op, het strijkijzer is nog heet!	утюг	Осторожно, утюг ещё горячий!	link::thema13::taak1::A2
+vervangen	De wasmachine is zo oud, we moeten 'm binnenkort vervangen.	заменять	Стиральная машина такая старая, скоро придётся её заменить.	link::thema13::taak1::A2
+vooral	Ik let vooral op het stroomverbruik als ik iets nieuws koop.	особенно, прежде всего	Я особенно смотрю на энергопотребление, когда покупаю что-то новое.	link::thema13::taak1::A2
+de vriezer	Doe de deur van de vriezer goed dicht, anders gaat het eten kapot.	морозильник	Закрой дверцу морозилки как следует, иначе еда испортится.	link::thema13::taak1::A2
+de wasdroger	Sinds we een wasdroger hebben, hangt er niks meer in de woonkamer.	сушильная машина	С тех пор как у нас есть сушилка, в гостиной больше ничего не висит.	link::thema13::taak1::A2
+de waterkoker	Zet jij even de waterkoker aan? Ik heb zin in thee.	электрочайник	Поставь чайник, а? Хочу чаю.	link::thema13::taak1::A2

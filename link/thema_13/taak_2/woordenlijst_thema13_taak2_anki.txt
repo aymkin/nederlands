@@ -1,0 +1,33 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+het bedrijf	Ik werk bij een klein bedrijf, we zijn maar met z'n tienen.	компания, фирма	Я работаю в маленькой фирме, нас всего десять человек.	link::thema13::taak2::A2
+drogen	Deze trui moet je niet in de droger doen, gewoon laten drogen.	сушить, сохнуть	Этот свитер нельзя в сушилку, просто дай ему высохнуть.	link::thema13::taak2::A2
+de elektriciteit	De elektriciteit is hier best duur geworden dit jaar.	электричество	Электричество здесь в этом году стало довольно дорогим.	link::thema13::taak2::A2
+het gas	We koken op gas, maar de verwarming is elektrisch.	газ	Мы готовим на газу, а отопление электрическое.	link::thema13::taak2::A2
+het gebruik	Mijn gebruik van stroom is 's winters altijd hoger.	использование, потребление	Моё потребление электричества зимой всегда выше.	link::thema13::taak2::A2
+de leverancier	Ik ben van energieleverancier gewisseld, nu ben ik goedkoper uit.	поставщик	Я сменил поставщика энергии, теперь выходит дешевле.	link::thema13::taak2::A2
+leveren	Ze leveren het pakket morgen tussen negen en twaalf.	поставлять, доставлять	Посылку доставят завтра между девятью и двенадцатью.	link::thema13::taak2::A2
+de meter	De meter staat in de gang, naast de voordeur.	счётчик	Счётчик стоит в коридоре, рядом с входной дверью.	link::thema13::taak2::A2
+de meterkast	Er is kortsluiting; kun je even in de meterkast kijken?	электрощиток	Замыкание; можешь глянуть в электрощиток?	link::thema13::taak2::A2
+de meterstand	Elke maand geef ik de meterstand door aan het bedrijf.	показания счётчика	Каждый месяц я передаю показания счётчика в компанию.	link::thema13::taak2::A2
+de molen	In Nederland zie je overal molens, echt typisch Hollands.	мельница	В Нидерландах повсюду мельницы, реально типично голландское.	link::thema13::taak2::A2
+nadenken	Ik moet even nadenken over dat energiecontract, ik bel je morgen.	обдумывать, размышлять	Мне надо подумать над этим энергоконтрактом, позвоню тебе завтра.	link::thema13::taak2::A2
+onmiddellijk	Er was een storing en de monteur kwam bijna onmiddellijk.	немедленно, тут же	Была авария, и мастер приехал почти сразу.	link::thema13::taak2::A2
+de rekening	De rekening van de energie was deze maand hoger dan normaal.	счёт (к оплате)	Счёт за энергию в этом месяце был выше обычного.	link::thema13::taak2::A2
+steken	Je moet de stekker goed in het stopcontact steken.	втыкать, всовывать	Вилку нужно как следует воткнуть в розетку.	link::thema13::taak2::A2
+de stekker	Trek even de stekker eruit als het apparaat raar doet.	вилка (электрическая)	Выдерни вилку, если прибор ведёт себя странно.	link::thema13::taak2::A2
+de storing	Sorry, er is een storing op het internet, ik bel je zo terug.	сбой, неполадка, авария	Извини, сбой с интернетом, перезвоню тебе сейчас.	link::thema13::taak2::A2
+de stroom	Vanmorgen viel opeens de stroom uit, echt vervelend.	ток, электричество	Сегодня утром вдруг вырубилось электричество, очень неприятно.	link::thema13::taak2::A2
+de termijn	Ik betaal de energie in maandelijkse termijnen, dat is makkelijker.	срок; взнос	Я плачу за энергию ежемесячными взносами, так проще.	link::thema13::taak2::A2
+de toekomst	In de toekomst wil ik zonnepanelen op het dak.	будущее	В будущем хочу солнечные панели на крыше.	link::thema13::taak2::A2
+het type	Wat voor type wasmachine heb jij? De mijne is echt zuinig.	тип, вид	Какой у тебя тип стиральной машины? Моя реально экономная.	link::thema13::taak2::A2
+vanzelf	Het licht in de gang gaat vanzelf uit, dat is wel handig.	сам собой, автоматически	Свет в коридоре гаснет сам, это довольно удобно.	link::thema13::taak2::A2
+de warmte	De warmte van de zon is in de zomer genoeg om binnen warm te blijven.	тепло	Тепла от солнца летом хватает, чтобы дома было тепло.	link::thema13::taak2::A2
+wassen	Ik was m'n kleren meestal op dertig graden, dat bespaart energie.	мыть, стирать	Я обычно стираю одежду при тридцати градусах, это экономит энергию.	link::thema13::taak2::A2
+de wind	Er staat vandaag veel wind, perfect voor de windmolens.	ветер	Сегодня сильный ветер, идеально для ветряков.	link::thema13::taak2::A2
+de windmolen	Die grote windmolens op zee leveren steeds meer stroom.	ветряная мельница, ветряк	Эти большие ветряки в море дают всё больше электричества.	link::thema13::taak2::A2
+zelden	Ik gebruik de verwarming zelden, ik trek liever een trui aan.	редко	Отоплением я пользуюсь редко, лучше надену свитер.	link::thema13::taak2::A2
+de zonne-energie	Met zonne-energie is mijn rekening flink lager geworden.	солнечная энергия	С солнечной энергией мой счёт заметно уменьшился.	link::thema13::taak2::A2

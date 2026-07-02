@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#columns:Word	Example	Translation	TranslationExample	Tags
+#tags column:5
+
+besparen	Door korter te douchen kun je echt geld besparen.	экономить, сберегать	Принимая душ покороче, реально можно сэкономить деньги.	link::thema13::taak3::A2
+de douche	Ik neem 's ochtends altijd even een snelle douche.	душ	Я по утрам всегда быстренько принимаю душ.	link::thema13::taak3::A2
+eenvoudig	De oplossing was heel eenvoudig: gewoon de stekker eruit.	простой, несложный	Решение было очень простым: просто выдернуть вилку.	link::thema13::taak3::A2
+de gang	Zet de verwarming in de gang maar uit, daar komt toch niemand.	коридор, прихожая	Выключи отопление в коридоре, туда всё равно никто не заходит.	link::thema13::taak3::A2
+de graad	Zet 'm maar een graadje lager, dan is het nog steeds warm genoeg.	градус	Убавь на градус, всё равно будет достаточно тепло.	link::thema13::taak3::A2
+halfvol	Zet de wasmachine niet halfvol aan, wacht tot 'ie vol is.	наполовину полный	Не включай стиральную машину полупустой, подожди, пока наполнится.	link::thema13::taak3::A2
+kort	Een korte douche is beter voor je rekening dan een lang bad.	короткий, недолгий	Короткий душ лучше для твоего счёта, чем долгая ванна.	link::thema13::taak3::A2
+de magnetron	Ik warm m'n eten meestal even op in de magnetron, snel en zuinig.	микроволновка	Я обычно разогреваю еду в микроволновке, быстро и экономно.	link::thema13::taak3::A2
+merken	Sinds we zuiniger stoken, merk ik echt verschil op de rekening.	замечать	С тех пор как мы экономнее топим, я реально замечаю разницу в счёте.	link::thema13::taak3::A2
+minimaal	Zet de verwarming 's nachts op minimaal achttien graden.	минимально, минимум	Ставь отопление ночью минимум на восемнадцать градусов.	link::thema13::taak3::A2
+onder	's Nachts komt de temperatuur hier soms onder nul.	под, ниже	Ночью температура здесь иногда опускается ниже нуля.	link::thema13::taak3::A2
+'s winters	's Winters draag ik binnen gewoon een dikke trui en warme sokken.	зимой	Зимой дома я просто ношу толстый свитер и тёплые носки.	link::thema13::taak3::A2
+de sok	Trek even een paar dikke sokken aan, dan heb je 't minder koud.	носок	Надень пару толстых носков, тогда меньше будешь мёрзнуть.	link::thema13::taak3::A2
+de temperatuur	Wat is de temperatuur binnen? Het voelt echt fris.	температура	Какая температура в доме? Прям прохладно.	link::thema13::taak3::A2
+het tientje	Zo'n zuinige lamp kost maar een tientje en gaat jaren mee.	десятка (10 евро)	Такая экономная лампочка стоит всего десятку и служит годами.	link::thema13::taak3::A2
+het toilet	Na het toilet doe ik altijd meteen het licht weer uit.	туалет	После туалета я всегда сразу выключаю свет.	link::thema13::taak3::A2
+uitdoen	Doe je het licht even uit als je weggaat? Scheelt geld.	выключать, снимать	Выключишь свет, когда уходишь? Экономит деньги.	link::thema13::taak3::A2
+uitzetten	Ik zet 's nachts de verwarming helemaal uit, ik slaap liever koel.	выключать	Ночью я полностью выключаю отопление, лучше сплю в прохладе.	link::thema13::taak3::A2
+verstandig	Het is verstandig om de verwarming lager te zetten als je weg bent.	разумный, благоразумный	Разумно убавлять отопление, когда тебя нет дома.	link::thema13::taak3::A2
+de verwarming	De verwarming staat veel te hoog, doe 'm eens wat lager.	отопление	Отопление стоит слишком высоко, убавь-ка немного.	link::thema13::taak3::A2
+vuil	M'n werkkleren zijn hartstikke vuil, die moeten echt in de was.	грязный	Моя рабочая одежда жутко грязная, её точно надо в стирку.	link::thema13::taak3::A2
+vullen	Vul de wasmachine helemaal, dan draai je minder vaak.	наполнять	Наполняй стиральную машину полностью, тогда реже будешь запускать.	link::thema13::taak3::A2
+waarschijnlijk	De rekening wordt deze winter waarschijnlijk weer hoger.	вероятно, наверное	Счёт этой зимой, вероятно, снова будет выше.	link::thema13::taak3::A2
+de was	Ik hang de was liever buiten dan in de droger, dat bespaart stroom.	стирка, бельё	Бельё я лучше повешу на улице, чем в сушилку, это экономит электричество.	link::thema13::taak3::A2
+de wol	Deze trui is van wol, die moet je heel voorzichtig wassen.	шерсть	Этот свитер из шерсти, его надо очень аккуратно стирать.	link::thema13::taak3::A2
+wollen	Met een paar wollen sokken heb je de verwarming bijna niet nodig.	шерстяной	В шерстяных носках отопление почти не нужно.	link::thema13::taak3::A2
