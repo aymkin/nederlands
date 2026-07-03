@@ -145,12 +145,17 @@ optimized weights from metadata when present:
 weights = sr.get("metadata", {}).get("weights")   # None -> fsrs.DEFAULT_W
 score   = review.get("score", quality * 2)         # 0-10, richer than floored quality
 rating  = 1 if score <= 4 else 2 if score <= 6 else 3 if score <= 8 else 4
-r = fsrs.schedule(item, rating, today, weights)
-item["stability"]     = r["stability"]
-item["difficulty"]    = r["difficulty"]
-item["interval_days"] = r["interval_days"]
-item["due_date"]      = r["due_date"]
-item["last_rating"]   = rating
+# The item "difficulty" key holds the CEFR level (e.g. "A2") — the FSRS
+# numeric difficulty lives under "fsrs_difficulty". Map to schedule()'s dict.
+fsrs_state = {"stability": item.get("stability"),
+              "difficulty": item.get("fsrs_difficulty"),
+              "last_reviewed": item.get("last_reviewed")}
+r = fsrs.schedule(fsrs_state, rating, today, weights)
+item["stability"]      = r["stability"]
+item["fsrs_difficulty"] = r["difficulty"]
+item["interval_days"]  = r["interval_days"]
+item["due_date"]       = r["due_date"]
+item["last_rating"]    = rating
 # keep maintaining repetitions / consecutive_* exactly as before:
 item["repetitions"] = item.get("repetitions", 0) + 1 if quality >= 3 else 0
 ```
@@ -166,12 +171,15 @@ rollback branch.
 
 ### Component 3 — card schema + metadata
 
-Add three fields to every SR item: `stability` (float|null), `difficulty`
-(float|null), `last_rating` (int 1-4|null). Keep `easiness_factor` and
-`repetitions` (mastery heuristic reads `repetitions`; `easiness_factor` is the
-rollback net). New-card defaults gain `stability: null, difficulty: null` in all
-three creation sites: `update-db.py` (vocabulary ~line 430, error-pattern
-~line 455) and `scripts/fluent_import.py:new_sr_item` (~line 192, this repo).
+Add three fields to every SR item: `stability` (float|null), `fsrs_difficulty`
+(float|null), `last_rating` (int 1-4|null). **Field-name collision (caught in
+review):** the item schema already uses `difficulty` for the CEFR level string
+(e.g. `"A2"`), so FSRS's numeric difficulty MUST live under `fsrs_difficulty` —
+never overwrite `difficulty`. Keep `easiness_factor` and `repetitions` (mastery
+heuristic reads `repetitions`; `easiness_factor` is the rollback net). New-card
+defaults gain `stability: null, fsrs_difficulty: null` in all three creation
+sites: `update-db.py` (vocabulary ~line 430, error-pattern ~line 455) and
+`scripts/fluent_import.py:new_sr_item` (~line 192, this repo).
 
 `spaced_repetition.metadata` becomes the single source for scheduler config and
 the optimizer↔hook loop:
@@ -191,8 +199,9 @@ the optimizer↔hook loop:
 
 ### Component 4 — one-time migration `.claude/hooks/migrate_to_fsrs.py`
 
-Backfills `stability`/`difficulty` for the 404 existing cards. Backs up all DBs
-first (same helper `update-db.py` uses). Idempotent: skips any card with a
+Backfills `stability`/`fsrs_difficulty` for the 404 existing cards (writing the
+FSRS difficulty to `fsrs_difficulty`, never the CEFR `difficulty`). Backs up all
+DBs first (same helper `update-db.py` uses). Idempotent: skips any card with a
 non-null `stability`.
 
 ```
@@ -249,7 +258,7 @@ Runtime (per session, stdlib hook):
     -> update-db.py: score -> rating (1-4); weights = metadata.weights or DEFAULT_W
     -> fsrs.schedule(item, rating, today, weights)
          new card: S0/D0 ;  review: R(elapsed,S) -> S', D'
-    -> item.stability/difficulty/interval_days/due_date updated
+    -> item.stability/fsrs_difficulty/interval_days/due_date updated
     -> mastery/priority heuristics (unchanged) -> queue rebuilt by due_date
 
 Weekly (offline, venv, LaunchAgent Sun 09:05):
@@ -307,8 +316,9 @@ Convention: `unittest`, run via `python3 tests/<file>.py`.
   `quality` history to correct 1-4 ratings and counts totals. The
   `fsrs-optimizer` call is behind the guard and not exercised here.
 - **`tests/test_update_db.py`** (extend) — after a review, the item carries
-  `stability`, `difficulty`, `last_rating`, and a `due_date` consistent with
-  `interval_days`; metadata `weights` (when set) are honored.
+  `stability`, `fsrs_difficulty`, `last_rating`, and a `due_date` consistent
+  with `interval_days`; the CEFR `difficulty` string is preserved unchanged;
+  metadata `weights` (when set) are honored.
 
 ## Rollback
 

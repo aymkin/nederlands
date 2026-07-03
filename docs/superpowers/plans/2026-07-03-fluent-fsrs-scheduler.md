@@ -419,9 +419,12 @@ spaced-repetition output, add (adapt variable names to the file's fixtures):
 # FSRS fields present on a reviewed item
 reviewed = sr["items"][REVIEWED_ID]
 self.assertIn("stability", reviewed)
-self.assertIn("difficulty", reviewed)
+self.assertIn("fsrs_difficulty", reviewed)          # NOT "difficulty" (that is CEFR)
 self.assertIn("last_rating", reviewed)
 self.assertIsInstance(reviewed["stability"], (int, float))
+self.assertIsInstance(reviewed["fsrs_difficulty"], (int, float))
+# CEFR difficulty must survive untouched (regression for the field collision)
+self.assertEqual(reviewed["difficulty"], REVIEWED_CEFR)  # e.g. "A1", unchanged
 # due_date is interval_days after the session date
 from datetime import date, timedelta
 exp = (date.fromisoformat(SESSION_DATE) + timedelta(days=reviewed["interval_days"])).isoformat()
@@ -429,7 +432,9 @@ self.assertEqual(reviewed["due_date"], exp)
 ```
 
 Ensure the fixture session includes a `review_results` entry for `REVIEWED_ID`
-with a `score`. If the fixture lacks one, add it.
+with a `score`, and that `REVIEWED_ID`'s fixture item has a CEFR `difficulty`
+string (e.g. `"A1"`) so the collision regression is meaningful. If the fixture
+lacks either, add it.
 
 - [ ] **Step 2: Run the test to verify it fails**
 
@@ -462,9 +467,17 @@ with:
             weights = sr.get("metadata", {}).get("weights")
             score = review.get("score", quality * 2)
             rating = 1 if score <= 4 else 2 if score <= 6 else 3 if score <= 8 else 4
-            r = fsrs.schedule(item, rating, today, weights)
+            # NOTE: the item's "difficulty" key holds the CEFR level string
+            # (e.g. "A2") — do NOT overwrite it. FSRS difficulty lives under
+            # "fsrs_difficulty". Map to fsrs.schedule's dict interface here.
+            fsrs_state = {
+                "stability": item.get("stability"),
+                "difficulty": item.get("fsrs_difficulty"),
+                "last_reviewed": item.get("last_reviewed"),
+            }
+            r = fsrs.schedule(fsrs_state, rating, today, weights)
             item["stability"] = r["stability"]
-            item["difficulty"] = r["difficulty"]
+            item["fsrs_difficulty"] = r["difficulty"]
             item["interval_days"] = r["interval_days"]
             item["due_date"] = r["due_date"]
             item["last_rating"] = rating
@@ -473,16 +486,19 @@ with:
 
 (Leave the subsequent `last_reviewed`, `last_quality`, `total_reviews`,
 `consecutive_*`, `mastery_level`, `priority`, and `review_history` lines
-unchanged. `calculate_sm2` stays defined in the file as the rollback branch.)
+unchanged. `calculate_sm2` stays defined in the file as the rollback branch.
+This block must run BEFORE `item["last_reviewed"] = today` so fsrs reads the
+prior review date to compute elapsed days.)
 
-- [ ] **Step 4: Add `stability`/`difficulty` to new-card defaults**
+- [ ] **Step 4: Add `stability`/`fsrs_difficulty` to new-card defaults**
 
 In the vocabulary new-item dict (~line 430) and the error-pattern new-item dict
-(~line 455), add these two keys next to `"easiness_factor": 2.5,`:
+(~line 455), add these two keys next to `"easiness_factor": 2.5,` — note it is
+`fsrs_difficulty` (NOT `difficulty`, which already holds the CEFR level):
 
 ```python
                 "stability": None,
-                "difficulty": None,
+                "fsrs_difficulty": None,
 ```
 
 - [ ] **Step 5: Run the test to verify it passes**
@@ -580,8 +596,11 @@ def _clamp(x, lo, hi):
 
 
 def seed(card):
-    """Return (stability, difficulty), or (None, None) for never-reviewed cards.
-    Never-reviewed cards stay null so the first FSRS review initializes them."""
+    """Return (stability, fsrs_difficulty), or (None, None) for never-reviewed
+    cards. Never-reviewed cards stay null so the first FSRS review initializes
+    them. NOTE: the returned difficulty is the FSRS numeric difficulty; it is
+    stored under the item key "fsrs_difficulty" (the "difficulty" key already
+    holds the CEFR level string and must not be touched)."""
     if card.get("repetitions", 0) <= 0:
         return None, None
     interval = card.get("interval_days", 1)
@@ -611,11 +630,11 @@ def main():
             continue  # idempotent
         s, d = seed(card)
         if s is not None:
-            card["stability"], card["difficulty"] = s, d
+            card["stability"], card["fsrs_difficulty"] = s, d
             seeded += 1
         else:
             card.setdefault("stability", None)
-            card.setdefault("difficulty", None)
+            card.setdefault("fsrs_difficulty", None)
 
     meta = sr.setdefault("metadata", {})
     meta.update({
@@ -664,16 +683,18 @@ git commit -m "feat(fsrs): one-time SM-2 -> FSRS-6 migration script"
 **Interfaces:**
 
 - Produces: items created by the importer carry
-  `stability: None, difficulty: None`, consistent with `update-db.py` new-card
-  defaults.
+  `stability: None, fsrs_difficulty: None`, consistent with `update-db.py`
+  new-card defaults.
 
 - [ ] **Step 1: Add the two fields**
 
-In `new_sr_item`, next to `"easiness_factor": 2.5,`:
+In `new_sr_item`, next to `"easiness_factor": 2.5,` — use `fsrs_difficulty` (NOT
+`difficulty`; if `new_sr_item` already sets a `difficulty` CEFR level, leave it
+untouched):
 
 ```python
         "stability": None,
-        "difficulty": None,
+        "fsrs_difficulty": None,
 ```
 
 - [ ] **Step 2: Sanity-run the importer check (no write)**
