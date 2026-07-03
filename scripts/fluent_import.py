@@ -192,6 +192,8 @@ def new_sr_item(item: dict, today: str) -> dict:
         "interval_days": 1,
         "repetitions": 0,
         "easiness_factor": 2.5,
+        "stability": None,
+        "fsrs_difficulty": None,
         "consecutive_correct": 0,
         "consecutive_incorrect": 0,
         "last_reviewed": today,
