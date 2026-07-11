@@ -14,13 +14,13 @@ het **regent** een beetje. De **gordijnen** zijn dicht. Reza opent ze.
 
 Hij **woont** **sinds** drie maanden in Rotterdam-Noord. Zijn **appartement** is
 klein, maar het is **schoon**. Hij heeft één **slaapkamer**, een **woonkamer**,
-een **keuken** en een kleine **badkamer**. De **wasmachine** staat in de **gang**.
-De **koelkast** is bijna leeg. Hij moet **boodschappen** doen.
+een **keuken** en een kleine **badkamer**. De **wasmachine** staat in de
+**gang**. De **koelkast** is bijna leeg. Hij moet **boodschappen** doen.
 
-Reza **woont** **alleen**. Hij komt **uit** **Iran**. Hij is **achtentwintig** jaar. Hij
-is **niet getrouwd**, maar hij is wel **een romantisch** type. Zijn **familie**
-woont **ver** weg. Hij **mist** zijn moeder, zijn vader, zijn **broer** en zijn
-twee **zussen**. Hij **belt** ze elke **zondag**.
+Reza **woont** **alleen**. Hij komt **uit** **Iran**. Hij is **achtentwintig**
+jaar. Hij is **niet getrouwd**, maar hij is wel **een romantisch** type. Zijn
+**familie** woont **ver** weg. Hij **mist** zijn moeder, zijn vader, zijn
+**broer** en zijn twee **zussen**. Hij **belt** ze elke **zondag**.
 
 Reza is **architect** van **beroep**. Hij **werkt** in een **klein bedrijf** in
 **het centrum** van Rotterdam. Hij **neemt** elke dag **de tram** naar zijn
@@ -30,10 +30,10 @@ werk. Hij heeft **geen fiets**. Hij vindt **fietsen** **een echte sport** —
 voor **woon-werkverkeer**. Reza **begrijpt** **nog niet** **goed** waarom
 **iedereen** in Nederland **een fiets** **heeft**. Hij is **ambitieus**, maar
 ook **bescheiden**. Zijn **collega's** zijn **aardig**, maar zij **spreken**
-heel **snel** Nederlands. Reza **begrijpt** ze **nauwelijks**. Hij
-**volgt** **sinds** een paar weken een **cursus** Nederlands in het
-**wijkcentrum**. De **cursus** is **gratis** en **gezellig**. Hij leert daar
-**veel** nieuwe **woorden**.
+heel **snel** Nederlands. Reza **begrijpt** ze **nauwelijks**. Hij **volgt**
+**sinds** een paar weken een **cursus** Nederlands in het **wijkcentrum**. De
+**cursus** is **gratis** en **gezellig**. Hij leert daar **veel** nieuwe
+**woorden**.
 
 Vandaag is het **vrijdag**. Reza heeft de hele dag gewerkt. Hij is **moe**, maar
 ook **hongerig**. Hij heeft geen **zin** om thuis te **koken**. Hij **denkt**:
@@ -48,11 +48,11 @@ draagt hij een **donkere jas**, een **spijkerbroek** en stevige **schoenen**.
 Buiten is het **donker** en **glad**. De **straatverlichting** is **aan**. Hij
 moet **voorzichtig** zijn. Op de **stoep** liggen natte **bladeren**.
 
-Reza loopt door zijn **wijk**. Hij **kent** de **omgeving** nog **niet** **goed**.
-Hij **kijkt** om zich heen. Aan de **overkant** ziet hij een kleine **basisschool**.
-Er staat een grote **boom** voor de **ingang**. Iets verder is een **moskee** en
-een **kerk**. Reza vindt dat **bijzonder**: een **moskee** en een **kerk** in
-dezelfde **straat**. Hij denkt: dit is **typisch** Nederlands.
+Reza loopt door zijn **wijk**. Hij **kent** de **omgeving** nog **niet**
+**goed**. Hij **kijkt** om zich heen. Aan de **overkant** ziet hij een kleine
+**basisschool**. Er staat een grote **boom** voor de **ingang**. Iets verder is
+een **moskee** en een **kerk**. Reza vindt dat **bijzonder**: een **moskee** en
+een **kerk** in dezelfde **straat**. Hij denkt: dit is **typisch** Nederlands.
 
 Hij loopt langs een **rijtjeshuis** met een **mooie tuin**. Er **blaft** een
 **hond** **achter** het **hek**. Een **buurman** **groet** hem **vriendelijk**:
@@ -61,14 +61,15 @@ Hij loopt langs een **rijtjeshuis** met een **mooie tuin**. Er **blaft** een
 
 — **Inderdaad**! antwoordt Reza. Heel **koud**.
 
-Reza **glimlacht**. Hij vindt het **prettig** dat de **bewoners** hier zo **aardig**
-zijn. In het **café** op de hoek zitten **een paar mensen** te **kletsen**. Twee
-**oude mannen** **drinken** koffie. Een **vrouw** **leest** de **krant**. Reza
-denkt: misschien een andere keer. Vanavond wil hij **iets nieuws**.
+Reza **glimlacht**. Hij vindt het **prettig** dat de **bewoners** hier zo
+**aardig** zijn. In het **café** op de hoek zitten **een paar mensen** te
+**kletsen**. Twee **oude mannen** **drinken** koffie. Een **vrouw** **leest** de
+**krant**. Reza denkt: misschien een andere keer. Vanavond wil hij **iets
+nieuws**.
 
-Op zijn **mobiel** **zoekt** hij een **restaurant** **in de buurt**. Hij vindt een
-**Italiaans restaurant**: **_Speck_**. De **reacties** zijn heel **positief**. De
-**foto's** zien er **lekker** uit. Reza **kiest** **Speck**.
+Op zijn **mobiel** **zoekt** hij een **restaurant** **in de buurt**. Hij vindt
+een **Italiaans restaurant**: **_Speck_**. De **reacties** zijn heel
+**positief**. De **foto's** zien er **lekker** uit. Reza **kiest** **Speck**.
 
 ---
 
@@ -79,20 +80,20 @@ staat een **plant**. Hij **doet** de **deur open** en **stapt** naar binnen.
 
 Het is **warm** en **gezellig**. Het ruikt naar **pizza**, **knoflook** en
 **verse basilicum**. Op de **achtergrond** speelt **rustige muziek**. Aan de
-**muur** hangen **schilderijen** van Italië. Op elke **tafel** staat een **kleine
-kaars** en een **vaasje** met **een rode bloem**.
+**muur** hangen **schilderijen** van Italië. Op elke **tafel** staat een
+**kleine kaars** en een **vaasje** met **een rode bloem**.
 
 Het restaurant is **niet groot**. Er zijn ongeveer **twaalf tafels**. Een
 **ouder echtpaar** zit bij het **raam**. Drie **jonge vrouwen** **lachen** en
-**drinken** **wijn**. In de **hoek** zit een **man** **alleen** met een **boek**.
-Reza **voelt** zich meteen **op zijn gemak**.
+**drinken** **wijn**. In de **hoek** zit een **man** **alleen** met een
+**boek**. Reza **voelt** zich meteen **op zijn gemak**.
 
 Een **collega** van de **serveerster** wijst Reza een **tafel** **bij** het
 **raam**. Hij gaat **zitten**. De **stoel** is **comfortabel**. Hij **kijkt** in
 de **menukaart**. Er staan **veel** soorten **pizza's**: pizza margherita, pizza
 quattro stagioni, pizza diavolo... Hij **twijfelt**. Hij **leest** ook de
-**wijnkaart**. **Rode wijn**, **witte wijn**, **rosé**. Reza **houdt** **liever**
-van **rode wijn**.
+**wijnkaart**. **Rode wijn**, **witte wijn**, **rosé**. Reza **houdt**
+**liever** van **rode wijn**.
 
 En dan staat zij ineens **naast** zijn **tafel**.
 
@@ -104,8 +105,8 @@ En dan staat zij ineens **naast** zijn **tafel**.
 Nederlandse **vrouw** **mooi**. Heel **mooi**. Hij kan **niet** **normaal**
 **denken**. **Luisteren** kan hij ook niet. Hij kan **alleen kijken**.
 
-Ze heeft **witblond haar**. Het is **lang** en **steil**. Ze heeft **blauwe ogen**
-en een **vriendelijke glimlach**. Ze is **lang** en **slank**. Ze heeft
+Ze heeft **witblond haar**. Het is **lang** en **steil**. Ze heeft **blauwe
+ogen** en een **vriendelijke glimlach**. Ze is **lang** en **slank**. Ze heeft
 **tatoeages** **op haar armen**. Reza ziet **een bloem**, **een vogel** en **een
 zin** in het **Italiaans**. Ze draagt **een blauwe bloes** met **een
 spijkerbroek**. Aan haar **vinger** zit **een zilveren ring**, maar **niet** aan
@@ -219,8 +220,8 @@ Maar hij **wil** **weten**: **wie** is deze **leuke serveerster**? **Wat** is
 **kinderen**? Heeft ze **een partner**? Reza **denkt**: **misschien** is ze al
 **getrouwd**. Of misschien woont ze samen met iemand. Hij **weet het niet**.
 
-Hij **kijkt** om zich heen. **Aan de andere kant** van het **restaurant** zit
-nu een **jong stel**. De **vrouw** **lacht** en houdt de **hand** van de **man**
+Hij **kijkt** om zich heen. **Aan de andere kant** van het **restaurant** zit nu
+een **jong stel**. De **vrouw** **lacht** en houdt de **hand** van de **man**
 vast. Reza **voelt** zich **even** **een beetje alleen**.
 
 Maar dan denkt hij: **nee**. Ik ben **niet alleen**. Ik heb een **goed leven**.
@@ -233,8 +234,8 @@ Ik heb een **leuk werk**. Ik woon in **Nederland**. En ik **leer** de **taal**.
 
 **Twintig minuten later** komt de **serveerster** terug. Ze heeft **een grote
 pizza** in haar **handen**. De **pizza** **ruikt** **heerlijk**. Reza ziet
-**tomaat**, **mozzarella**, **basilicum**, **olijven** en **iets** **bijzonders**:
-**een kleine** **rode** **peper**.
+**tomaat**, **mozzarella**, **basilicum**, **olijven** en **iets**
+**bijzonders**: **een kleine** **rode** **peper**.
 
 — **Alstublieft**! Mijn **speciale** pizza. **Italiaans** **met een Iraans
 detail**: een **rode peper**.
@@ -249,9 +250,9 @@ parmezaan**?
 — Nee, dit is **perfect** **zo**. **Echt** perfect.
 
 Ze **glimlacht** en gaat naar een andere **tafel**. Reza **proeft** **een
-stukje**. **De pizza is** **fantastisch**. **De bodem is** **dun** en **knapperig**.
-De **tomaten** zijn **vers**. De **mozzarella** is **zacht** en **warm**. De
-**peper** geeft een **lichte pittige** **smaak**.
+stukje**. **De pizza is** **fantastisch**. **De bodem is** **dun** en
+**knapperig**. De **tomaten** zijn **vers**. De **mozzarella** is **zacht** en
+**warm**. De **peper** geeft een **lichte pittige** **smaak**.
 
 Reza **eet** **langzaam**. Hij **geniet** van **elke** **hap**.
 
@@ -275,8 +276,8 @@ Ze gaat **tegenover** Reza **zitten**. Ze heeft **een glas water** bij zich. Ze
 
 — Ik ben **architect**. Ik werk bij een **klein bedrijf** in het centrum.
 
-— **Wat interessant**! Mijn **broer** is ook **architect**, maar hij woont
-**in België**.
+— **Wat interessant**! Mijn **broer** is ook **architect**, maar hij woont **in
+België**.
 
 Ze **vertelt** **een beetje** over zichzelf. Ze **woont** ook in deze **wijk**,
 **om de hoek**. Ze **kent** veel **bewoners**. Ze **organiseert** **soms**
@@ -324,7 +325,8 @@ De **serveerster** komt **langs**. Ze **kijkt** **naar** Reza.
 — **Geweldig**. **Echt** de **lekkerste** pizza van Rotterdam. **Misschien** de
 **lekkerste** van **Nederland**.
 
-— **Wat aardig van u**! **Wilt u** nog **iets**? **Een koffie**? **Een dessert**?
+— **Wat aardig van u**! **Wilt u** nog **iets**? **Een koffie**? **Een
+dessert**?
 
 — Nee, **dank u wel**. Ik ben **vol**. **Mag** ik **de rekening**?
 
@@ -361,31 +363,31 @@ Hij **weet** het **nog niet**. Maar hij **hoopt** het **zeker**.
 
 ## Personages
 
-| Personage          | Beschrijving                                                                                                                                              |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Reza**           | 28 jaar, kleine man met zwart haar en korte donkere baard, architect, woont sinds 3 maanden in Rotterdam-Noord, komt uit Iran (spreekt Farsi)             |
-| **De serveerster** | Serveerster én eigenaresse van Speck. Witblond haar, blauwe ogen, tatoeages, ~30 jaar. Woont om de hoek. **Haar naam blijft in dit hoofdstuk onbekend.**  |
-| **Buurman**        | Een man met een hond achter het hek, vriendelijk                                                                                                          |
+| Personage          | Beschrijving                                                                                                                                             |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Reza**           | 28 jaar, kleine man met zwart haar en korte donkere baard, architect, woont sinds 3 maanden in Rotterdam-Noord, komt uit Iran (spreekt Farsi)            |
+| **De serveerster** | Serveerster én eigenaresse van Speck. Witblond haar, blauwe ogen, tatoeages, ~30 jaar. Woont om de hoek. **Haar naam blijft in dit hoofdstuk onbekend.** |
+| **Buurman**        | Een man met een hond achter het hek, vriendelijk                                                                                                         |
 
 ## Locaties
 
-| Locatie              | Beschrijving                                              |
-| -------------------- | --------------------------------------------------------- |
-| Reza's appartement   | Klein, in Rotterdam-Noord, één slaapkamer                 |
-| De wijk              | Basisschool, moskee, kerk, café, rijtjeshuizen, park      |
-| Speck                | Italiaans restaurant, ~12 tafels, rustige muziek          |
+| Locatie            | Beschrijving                                         |
+| ------------------ | ---------------------------------------------------- |
+| Reza's appartement | Klein, in Rotterdam-Noord, één slaapkamer            |
+| De wijk            | Basisschool, moskee, kerk, café, rijtjeshuizen, park |
+| Speck              | Italiaans restaurant, ~12 tafels, rustige muziek     |
 
 ## Belangrijke nieuwe woorden uit dit hoofdstuk
 
-> Geordend per thema. Vet = woorden uit de bestaande woordenlijst van Alex
-> (Link / De Opmaat thema 5-11).
+> Geordend per thema. Vet = woorden uit de bestaande woordenlijst van Alex (Link
+> / De Opmaat thema 5-11).
 
 ### Wonen (thema 6, link thema 8)
 
 de **slaapkamer**, de **woonkamer**, de **keuken**, de **badkamer**, de
-**wasmachine**, de **koelkast**, de **gang**, de **buurman**, de **bewoner**,
-de **wijk**, de **omgeving**, het **rijtjeshuis**, de **moskee**, de **kerk**,
-de **basisschool**
+**wasmachine**, de **koelkast**, de **gang**, de **buurman**, de **bewoner**, de
+**wijk**, de **omgeving**, het **rijtjeshuis**, de **moskee**, de **kerk**, de
+**basisschool**
 
 ### Uiterlijk & karakter (thema 8)
 
@@ -401,8 +403,8 @@ de **serveerster**, de **eigenaresse**, de keuken, de **pizza**, de wijn,
 
 ### Veiligheid & weer (thema 9, link thema 9)
 
-**glad**, donker, de **straatverlichting**, **voorzichtig**, koud, regenen,
-de **herfst**
+**glad**, donker, de **straatverlichting**, **voorzichtig**, koud, regenen, de
+**herfst**
 
 ### Buurt & activiteiten (link thema 11)
 
@@ -411,10 +413,10 @@ de **wandeling**, het **wijkcentrum**, **Koningsdag**, de **vrijmarkt**, het
 
 ## Grammatica-aandachtspunten
 
-| Patroon              | Voorbeeld uit het verhaal                       |
-| -------------------- | ----------------------------------------------- |
-| Inversie na bijwoord | **Vandaag** ga ik uit eten.                     |
-| Modaal + infinitief  | Hij **wil** de cultuur **begrijpen**.           |
-| Scheidbaar werkwoord | Hij **trekt** zijn jas **aan**.                 |
-| Sinds + tijdsduur    | Ik woon hier **sinds drie maanden**.            |
-| Perfectum            | Eerst **heb** ik in Amsterdam **gewerkt**.      |
+| Patroon              | Voorbeeld uit het verhaal                  |
+| -------------------- | ------------------------------------------ |
+| Inversie na bijwoord | **Vandaag** ga ik uit eten.                |
+| Modaal + infinitief  | Hij **wil** de cultuur **begrijpen**.      |
+| Scheidbaar werkwoord | Hij **trekt** zijn jas **aan**.            |
+| Sinds + tijdsduur    | Ik woon hier **sinds drie maanden**.       |
+| Perfectum            | Eerst **heb** ik in Amsterdam **gewerkt**. |

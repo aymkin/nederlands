@@ -1,30 +1,4 @@
-terugbrengen
-binnenkomen
-schoonmaken
-opruimen
-opschrijven
-weggaan
-nadenken
-opengaan
-openmaken
-terugkrijgen
-dichtdoen
-uitnodigen
-ophalen
-overgaan
-uitgeven
-oversteken
-aantrekken
-aankomen
-afvallen
-uitkijken
-uitgeven
-meenemen
-aanvragen
-uitstappen
-terugsturen
-instappen
-invullen
-goedkeuren
-uitleggen
-afschriven
+terugbrengen binnenkomen schoonmaken opruimen opschrijven weggaan nadenken
+opengaan openmaken terugkrijgen dichtdoen uitnodigen ophalen overgaan uitgeven
+oversteken aantrekken aankomen afvallen uitkijken uitgeven meenemen aanvragen
+uitstappen terugsturen instappen invullen goedkeuren uitleggen afschriven

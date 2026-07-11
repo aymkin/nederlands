@@ -3,15 +3,18 @@
 ## 3.16 De zin met 'om … te': ik vind het fijn om je te helpen
 
 ### Regel
-De constructie **om … te + infinitief** geeft een doel of inhoud aan. Het infinitief staat **aan het eind**:
 
-| Structuur | Voorbeeld |
-|-----------|-----------|
-| ... + **om** + ... + **te** + **infinitief** | Ik vind het fijn **om** je **te helpen**. |
+De constructie **om … te + infinitief** geeft een doel of inhoud aan. Het
+infinitief staat **aan het eind**:
+
+| Structuur                                    | Voorbeeld                                               |
+| -------------------------------------------- | ------------------------------------------------------- |
+| ... + **om** + ... + **te** + **infinitief** | Ik vind het fijn **om** je **te helpen**.               |
 | ... + **om** + ... + **te** + **infinitief** | We gaan naar Turkije **om** de familie **te bezoeken**. |
-| ... + **om** + ... + **te** + **infinitief** | Hebben jullie zin **om** vanavond bij ons **te eten**? |
+| ... + **om** + ... + **te** + **infinitief** | Hebben jullie zin **om** vanavond bij ons **te eten**?  |
 
 ### Voorbeelden uit oefeningen
+
 - Ik ben blij **om** je **te zien**.
 - We gaan naar de markt **om** vis **te halen**.
 - Hebben jullie zin **om** bij ons **te eten**?

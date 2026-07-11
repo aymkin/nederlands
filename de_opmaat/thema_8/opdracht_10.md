@@ -1,8 +1,8 @@
 # 10 Spreken
 
-Marleen (oefening 9) vertelt over haar leven als Nederlandse in Polen. Voor
-jou is de situatie andersom. Jij bent uit een ander land naar Nederland gekomen
-en woont hier nu sinds kort of misschien al langere tijd.
+Marleen (oefening 9) vertelt over haar leven als Nederlandse in Polen. Voor jou
+is de situatie andersom. Jij bent uit een ander land naar Nederland gekomen en
+woont hier nu sinds kort of misschien al langere tijd.
 
 Werk in drietallen en bespreek onderstaande vragen.
 
@@ -48,8 +48,8 @@ spreken.
 ### 7 Denk je dat je ooit naar jouw land teruggaat of in een ander land gaat wonen? Waarom?
 
 Ik weet het nog niet zeker. Ik voel me nu goed in Nederland en wil hier nog een
-paar jaar blijven. Misschien ga ik ooit terug naar Polen, maar het hangt af
-van mijn werk en mijn leven hier. Ik wil eerst beter Nederlands leren.
+paar jaar blijven. Misschien ga ik ooit terug naar Polen, maar het hangt af van
+mijn werk en mijn leven hier. Ik wil eerst beter Nederlands leren.
 
 ### 8 Welke tip kun je geven aan mensen die naar Nederland willen verhuizen?
 

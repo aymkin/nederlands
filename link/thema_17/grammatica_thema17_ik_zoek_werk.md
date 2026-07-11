@@ -3,20 +3,23 @@
 ## 2.26 Scheidbare werkwoorden in de verleden tijd met -de/-den of -te/-ten: ik ruimde op
 
 ### Regel
-Scheidbare werkwoorden in de verleden tijd worden gesplitst (net als in de tegenwoordige tijd), maar met de verleden tijdsvorm:
 
-| Werkwoord | Tegenwoordig | Verleden tijd |
-|-----------|--------------|---------------|
-| op**ruimen** | Ik ruim ... **op** | Ik **ruimde** ... **op** |
-| in**vullen** | Ik vul ... **in** | Ik **vulde** ... **in** |
-| uit**nodigen** | Ik nodig ... **uit** | Ik **nodigde** ... **uit** |
+Scheidbare werkwoorden in de verleden tijd worden gesplitst (net als in de
+tegenwoordige tijd), maar met de verleden tijdsvorm:
+
+| Werkwoord       | Tegenwoordig           | Verleden tijd                |
+| --------------- | ---------------------- | ---------------------------- |
+| op**ruimen**    | Ik ruim ... **op**     | Ik **ruimde** ... **op**     |
+| in**vullen**    | Ik vul ... **in**      | Ik **vulde** ... **in**      |
+| uit**nodigen**  | Ik nodig ... **uit**   | Ik **nodigde** ... **uit**   |
 | schoon**maken** | Ik maak ... **schoon** | Ik **maakte** ... **schoon** |
-| op**halen** | Ik haal ... **op** | Ik **haalde** ... **op** |
-| uit**stappen** | Ik stap ... **uit** | Ik **stapte** ... **uit** |
+| op**halen**     | Ik haal ... **op**     | Ik **haalde** ... **op**     |
+| uit**stappen**  | Ik stap ... **uit**    | Ik **stapte** ... **uit**    |
 
 **Kies -de(n) of -te(n)** volgens de stam (zie thema 14 voor de regels).
 
 ### Voorbeelden uit oefeningen
+
 - Ik nodigde mijn vrienden **uit**.
 - We rekenden de boodschappen **af**.
 - Sarah stuurde de spullen **terug**.
@@ -33,21 +36,25 @@ Scheidbare werkwoorden in de verleden tijd worden gesplitst (net als in de tegen
 ## 2.27 Scheidbare onregelmatige werkwoorden in de verleden tijd: ik deed het raam open
 
 ### Regel
-Onregelmatige scheidbare werkwoorden in de verleden tijd — het eerste deel krijgt de onregelmatige verleden tijdsvorm, het tweede deel blijft aan het einde van de zin:
 
-| Werkwoord | Tegenwoordig | Verleden tijd |
-|-----------|--------------|---------------|
-| dicht**doen** | Ik doe ... dicht | Ik **deed** ... dicht |
-| weg**gaan** | Ik ga ... weg | Ik **ging** ... weg |
+Onregelmatige scheidbare werkwoorden in de verleden tijd — het eerste deel
+krijgt de onregelmatige verleden tijdsvorm, het tweede deel blijft aan het einde
+van de zin:
+
+| Werkwoord       | Tegenwoordig      | Verleden tijd         |
+| --------------- | ----------------- | --------------------- |
+| dicht**doen**   | Ik doe ... dicht  | Ik **deed** ... dicht |
+| weg**gaan**     | Ik ga ... weg     | Ik **ging** ... weg   |
 | op**schrijven** | Ik schrijf ... op | Ik **schreef** ... op |
-| aan**trekken** | Ik trek ... aan | Ik **trok** ... aan |
-| mee**nemen** | Ik neem ... mee | Ik **nam** ... mee |
-| uit**geven** | Ik geef ... uit | Ik **gaf** ... uit |
-| op**staan** | Ik sta op | Ik **stond** op |
-| mee**gaan** | Ik ga mee | Ik **ging** mee |
-| aan**komen** | Ik kom aan | Ik **kwam** aan |
+| aan**trekken**  | Ik trek ... aan   | Ik **trok** ... aan   |
+| mee**nemen**    | Ik neem ... mee   | Ik **nam** ... mee    |
+| uit**geven**    | Ik geef ... uit   | Ik **gaf** ... uit    |
+| op**staan**     | Ik sta op         | Ik **stond** op       |
+| mee**gaan**     | Ik ga mee         | Ik **ging** mee       |
+| aan**komen**    | Ik kom aan        | Ik **kwam** aan       |
 
 ### Voorbeelden uit oefeningen
+
 - Ik **deed** de deur **open**.
 - Mijn vrouw **nam** boodschappen **mee**.
 - Julia **gaf** haar dochtertje voor zwemles **op**.

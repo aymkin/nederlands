@@ -13,8 +13,8 @@ bezoek** is Reza **weer terug**. Hij **zit** aan **dezelfde tafel** bij het
 **raam**. Voor hem **ligt** **een boek** over **Iran**. Op de **kaft** **staat**
 **een foto** van **Tehran** **bij nacht**.
 
-Reza **leest niet echt**. Hij **kijkt** **stiekem** naar **de serveerster**.
-Ze **werkt** **vandaag** **opnieuw**. Hij **weet** haar **naam** **nog steeds
+Reza **leest niet echt**. Hij **kijkt** **stiekem** naar **de serveerster**. Ze
+**werkt** **vandaag** **opnieuw**. Hij **weet** haar **naam** **nog steeds
 niet**. Hij **weet** **alleen** dat hij haar **leuk** **vindt**.
 
 Reza **bestelt** **een glas** **rode wijn**. Hij **proeft** **langzaam**. Hij
@@ -77,8 +77,8 @@ Hij **praat Engels**. Reza **kijkt** **op**. Hij **glimlacht**.
 
 — Ik **studeer** elke dag. Ik **vind** het **leuk**.
 
-— **Wat interessant**! **De meeste** **expats** **studeren** **jaren**. Maar
-u **spreekt** **al** Nederlands **na** **een paar maanden**.
+— **Wat interessant**! **De meeste** **expats** **studeren** **jaren**. Maar u
+**spreekt** **al** Nederlands **na** **een paar maanden**.
 
 Dan **komt** de **Nederlandse vrouw** ook **dichtbij**. Ze **glimlacht**
 **vriendelijk**.
@@ -234,14 +234,16 @@ helpen**, Ben. **Als** je **wilt**.
 
 Reza **denkt** **even**. Hij **drinkt** **een slok wijn**.
 
-— Hebben jullie **volgende week** **vrije tijd**? **Misschien** **zondagochtend**?
+— Hebben jullie **volgende week** **vrije tijd**? **Misschien**
+**zondagochtend**?
 
 Ben **kijkt** naar Laura. **Laura** **knikt**.
 
 — **Zondagochtend** **kan**. **Ik moet** **die zondag** **eigenlijk** **een
 wandeling** **doen** in **mijn wijk**, **'s ochtends** om **elf uur**, **zegt**
-Reza. **Maar** **vóór** **die wandeling**? **Om** **negen uur** **bijvoorbeeld**?
-**Hier**, in **Speck**? **Wij** **drinken** **koffie** en ik **leg uit**.
+Reza. **Maar** **vóór** **die wandeling**? **Om** **negen uur**
+**bijvoorbeeld**? **Hier**, in **Speck**? **Wij** **drinken** **koffie** en ik
+**leg uit**.
 
 — **Negen uur** is **vroeg** voor **een** **vrije zondag**, **lacht** Ben.
 
@@ -300,9 +302,9 @@ zijn** **wij** **voor** **expats**?
 — **Vrienden**, **bevestigt** Laura.
 
 **Op dat moment** **begint** **voor Ben** **een nieuw leven**. Hij **weet** het
-**nog niet helemaal**. Maar **iets** is **veranderd**. Hij **heeft een** **plan**.
-Hij **heeft** **iemand** die hem **wil helpen**. En hij **heeft** **een
-afspraak**.
+**nog niet helemaal**. Maar **iets** is **veranderd**. Hij **heeft een**
+**plan**. Hij **heeft** **iemand** die hem **wil helpen**. En hij **heeft**
+**een afspraak**.
 
 **Zondag** om **negen uur**. **Speck**. **Koffie**.
 
@@ -316,12 +318,12 @@ Ben **glimlacht**. Hij **kijkt** naar Laura. Laura **glimlacht** ook.
 
 ## Personages
 
-| Personage          | Beschrijving                                                                                                                                              |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Reza**           | 28 jaar, architect uit Iran, spreekt Farsi/Engels/Nederlands. Bezoekt Speck opnieuw, zit te lezen, kijkt stiekem naar de serveerster.                     |
-| **Ben**            | Engelse dokter, werkt als kok + fitness trainer, wil weer dokter worden in Nederland.                                                                     |
-| **Laura**          | Bens Nederlandse vriendin uit Schiedam, ingenieur, voetbalt.                                                                                              |
-| **De serveerster** | Eigenaresse van Speck. Naam blijft onbekend voor zowel Reza als Ben en Laura in dit hoofdstuk.                                                            |
+| Personage          | Beschrijving                                                                                                                          |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Reza**           | 28 jaar, architect uit Iran, spreekt Farsi/Engels/Nederlands. Bezoekt Speck opnieuw, zit te lezen, kijkt stiekem naar de serveerster. |
+| **Ben**            | Engelse dokter, werkt als kok + fitness trainer, wil weer dokter worden in Nederland.                                                 |
+| **Laura**          | Bens Nederlandse vriendin uit Schiedam, ingenieur, voetbalt.                                                                          |
+| **De serveerster** | Eigenaresse van Speck. Naam blijft onbekend voor zowel Reza als Ben en Laura in dit hoofdstuk.                                        |
 
 ## Belangrijke nieuwe woorden uit dit hoofdstuk
 
@@ -352,11 +354,11 @@ tijd**
 
 ## Grammatica-aandachtspunten
 
-| Patroon                  | Voorbeeld                                          |
-| ------------------------ | -------------------------------------------------- |
-| Imperatief met "geen"    | **Geen 'u'** **zeggen**!                           |
-| Zelfstandig + bijwoord   | Hij **doet alsof** hij **leest**.                  |
-| Vergelijking met "dan"   | **Mensen helpen** is **mooier dan** gebouwen tekenen. |
-| Toekomst met "gaan"      | **Jij gaat mij leren**.                            |
-| Reflexief                | Hij **vraagt zich af**: waarom...?                 |
-| "Net als"                | **Net als jij** ben ik expat.                       |
+| Patroon                | Voorbeeld                                             |
+| ---------------------- | ----------------------------------------------------- |
+| Imperatief met "geen"  | **Geen 'u'** **zeggen**!                              |
+| Zelfstandig + bijwoord | Hij **doet alsof** hij **leest**.                     |
+| Vergelijking met "dan" | **Mensen helpen** is **mooier dan** gebouwen tekenen. |
+| Toekomst met "gaan"    | **Jij gaat mij leren**.                               |
+| Reflexief              | Hij **vraagt zich af**: waarom...?                    |
+| "Net als"              | **Net als jij** ben ik expat.                         |

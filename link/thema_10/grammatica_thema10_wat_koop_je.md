@@ -3,17 +3,21 @@
 ## 2.13 Het werkwoord met twee delen: scheidbare werkwoorden
 
 ### Regel
-Sommige werkwoorden bestaan uit **twee delen** (scheidbare werkwoorden). In een gewone zin worden ze **gesplitst**: het eerste deel staat op positie 2, het tweede deel staat **aan het eind**.
 
-| Werkwoord | Zin |
-|-----------|-----|
-| dichtdoen | Je **doet** de deur **dicht**. |
-| aantrekken | Ik **trek** mijn broek **aan**. |
-| opruimen | We **ruimen** de kamer **op**. |
+Sommige werkwoorden bestaan uit **twee delen** (scheidbare werkwoorden). In een
+gewone zin worden ze **gesplitst**: het eerste deel staat op positie 2, het
+tweede deel staat **aan het eind**.
+
+| Werkwoord    | Zin                              |
+| ------------ | -------------------------------- |
+| dichtdoen    | Je **doet** de deur **dicht**.   |
+| aantrekken   | Ik **trek** mijn broek **aan**.  |
+| opruimen     | We **ruimen** de kamer **op**.   |
 | terugbrengen | Ik **breng** het boek **terug**. |
-| weggaan | Ik **ga** straks **weg**. |
+| weggaan      | Ik **ga** straks **weg**.        |
 
 ### Voorbeelden uit oefeningen
+
 - Anna **gaat** om acht uur **weg**.
 - Adam **doet** het raam **dicht**.
 - We **maken** de keuken **schoon**.
@@ -30,21 +34,25 @@ Sommige werkwoorden bestaan uit **twee delen** (scheidbare werkwoorden). In een 
 ## 2.14 Het werkwoord: gebiedende wijs (imperatief)
 
 ### Regel
-De **gebiedende wijs** (een opdracht geven) heeft **geen onderwerp** en gebruikt de **stam** van het werkwoord:
 
-| Infinitief | Gebiedende wijs |
-|------------|-----------------|
-| komen | **Kom** hier! |
-| luisteren | **Luister** goed! |
-| kijken | **Kijk** uit! |
-| invullen | **Vul** het formulier **in**. |
+De **gebiedende wijs** (een opdracht geven) heeft **geen onderwerp** en gebruikt
+de **stam** van het werkwoord:
+
+| Infinitief  | Gebiedende wijs                |
+| ----------- | ------------------------------ |
+| komen       | **Kom** hier!                  |
+| luisteren   | **Luister** goed!              |
+| kijken      | **Kijk** uit!                  |
+| invullen    | **Vul** het formulier **in**.  |
 | terugsturen | **Stuur** het pakje **terug**. |
 
 **maar** en **even** maken de zin vriendelijker:
-- Kom **maar** binnen. *(niet dwingend)*
+
+- Kom **maar** binnen. _(niet dwingend)_
 - Stuur me **even** een e-mail.
 
 ### Voorbeelden uit oefeningen
+
 - **Stop!**
 - **Kom** maar binnen.
 - **Luister** naar de zin.
@@ -61,20 +69,23 @@ De **gebiedende wijs** (een opdracht geven) heeft **geen onderwerp** en gebruikt
 ## 12.4 Verkleinwoorden
 
 ### Regel
-Elk zelfstandig naamwoord kan een **verkleinvorm** hebben. De verkleinvorm eindigt altijd op **-je** (soms -tje, -pje, -etje):
 
-| Basisvorm | Verkleinwoord |
-|-----------|---------------|
-| de zus | het **zusje** |
-| de broer | het **broertje** |
-| het kind | het **kindje** |
-| de taart | het **taartje** |
-| de bon | het **bonnetje** |
+Elk zelfstandig naamwoord kan een **verkleinvorm** hebben. De verkleinvorm
+eindigt altijd op **-je** (soms -tje, -pje, -etje):
+
+| Basisvorm  | Verkleinwoord      |
+| ---------- | ------------------ |
+| de zus     | het **zusje**      |
+| de broer   | het **broertje**   |
+| het kind   | het **kindje**     |
+| de taart   | het **taartje**    |
+| de bon     | het **bonnetje**   |
 | de dochter | het **dochtertje** |
 
 **Alle verkleinwoorden zijn het-woorden!**
 
 ### Voorbeelden uit oefeningen
+
 - de zus → het **zusje**
 - de broer → het **broertje**
 - de vis → het **visje**

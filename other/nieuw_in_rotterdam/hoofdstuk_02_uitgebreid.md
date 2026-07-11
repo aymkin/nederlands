@@ -1,8 +1,8 @@
 # Hoofdstuk 2 — Ben moet Nederlands leren (uitgebreide versie)
 
-> Vrije herschrijving van het tweede hoofdstuk uit _Nieuw in Rotterdam_.
-> Niveau: A1 → A2. Korte zinnen, meer scènes en details. **Vet** = belangrijke
-> woorden voor de woordenlijst.
+> Vrije herschrijving van het tweede hoofdstuk uit _Nieuw in Rotterdam_. Niveau:
+> A1 → A2. Korte zinnen, meer scènes en details. **Vet** = belangrijke woorden
+> voor de woordenlijst.
 
 ---
 
@@ -13,8 +13,8 @@ Het is **vrijdagmiddag** vijf uur. Ben staat in de **keuken** van een
 Ben is **kok**. Hij maakt **pasta**, **pizza**, **salades** en **soep**.
 
 Het is **warm** in de **keuken**. **Te warm**. Ben **zweet**. Zijn **witte
-schort** is **vies**. Hij draagt **een witte koksmuts** op zijn **blonde
-haar**. Zijn **groene ogen** **kijken** **moe**.
+schort** is **vies**. Hij draagt **een witte koksmuts** op zijn **blonde haar**.
+Zijn **groene ogen** **kijken** **moe**.
 
 Vandaag is **een drukke dag**. Veel **bestellingen**. De **baas** **roept** in
 de keuken:
@@ -35,8 +35,8 @@ Hij **slikt** zijn **frustratie** in. Hij **lacht** naar **de baas**. Hij
 **lacht** naar **zijn collega's**. **Niemand** **ziet** dat **Ben** **niet
 blij** is. **Niemand** **ziet** dat **Ben** **verdrietig** is.
 
-Om **acht uur** is het **iets rustiger**. Ben **kijkt** op zijn **mobiel**.
-Hij heeft **een bericht** van **Laura**:
+Om **acht uur** is het **iets rustiger**. Ben **kijkt** op zijn **mobiel**. Hij
+heeft **een bericht** van **Laura**:
 
 > _"Ik haal je op om half elf. Speck? xx"_
 
@@ -47,29 +47,29 @@ Ben **glimlacht**. Eindelijk **iets goeds** vandaag.
 ## Deel 2 — Laura komt Ben ophalen
 
 Het is **half elf** 's avonds. Ben loopt **naar buiten**. Buiten staat
-**Laura**. Ze **wacht** **met haar fiets**. Laura heeft **blonde krullen**.
-Ze draagt **een witte trui** en **een lange jas**. Ze **glimlacht** als ze
-Ben ziet.
+**Laura**. Ze **wacht** **met haar fiets**. Laura heeft **blonde krullen**. Ze
+draagt **een witte trui** en **een lange jas**. Ze **glimlacht** als ze Ben
+ziet.
 
 — **Hé schat**, **hoe was je dag**?
 
 — **Druk**. Heel druk. Maar **oké**.
 
 Ze **kust** hem op zijn **wang**. Laura is **een gezellige vrouw**. Ze is
-**Nederlandse**. Ze komt **uit Schiedam**. Ze **werkt** **drie dagen per
-week** als **ingenieur**. **Vijf dagen per week** **voetbalt** ze. **Sport**
-is **belangrijk** voor haar.
+**Nederlandse**. Ze komt **uit Schiedam**. Ze **werkt** **drie dagen per week**
+als **ingenieur**. **Vijf dagen per week** **voetbalt** ze. **Sport** is
+**belangrijk** voor haar.
 
-Ben **kent** Laura **al twee jaar**. Twee jaar geleden **ontmoette** hij haar
-in een **café** in **Rotterdam-Centrum**. Hij was toen **net** in Nederland.
-Hij **studeerde** **een beetje** Nederlands. Laura **lachte** veel om zijn
-**Engelse accent**. Ze **werd** **zijn vriendin**. Nu **wonen** ze **samen**
-in **een kleine flat** in **Rotterdam-Zuid**.
+Ben **kent** Laura **al twee jaar**. Twee jaar geleden **ontmoette** hij haar in
+een **café** in **Rotterdam-Centrum**. Hij was toen **net** in Nederland. Hij
+**studeerde** **een beetje** Nederlands. Laura **lachte** veel om zijn **Engelse
+accent**. Ze **werd** **zijn vriendin**. Nu **wonen** ze **samen** in **een
+kleine flat** in **Rotterdam-Zuid**.
 
 Laura **fietst** **naast** Ben. Ben **loopt**. Hij heeft **geen fiets**.
 Eigenlijk **kan** hij **wel** fietsen. Maar na **een lange dag** in de
-**keuken** wil hij **liever** **lopen**. Het is **fris** buiten. Het is
-**stil** op straat.
+**keuken** wil hij **liever** **lopen**. Het is **fris** buiten. Het is **stil**
+op straat.
 
 — **En**? **Hoe gaat het echt**, Ben? **vraagt Laura**.
 
@@ -92,11 +92,11 @@ Ze **zeggen** **een tijdje** **niets**. Ze **lopen** **naar** **Speck**.
 en **knoflook**. Op de **achtergrond** speelt **rustige muziek**. Aan de
 **muren** hangen **schilderijen** van **Italië**.
 
-Een **collega** van de **eigenaresse** wijst Ben en Laura **een tafeltje**
-bij het **raam**. Ben **kijkt** om zich heen. Het restaurant is **niet groot**.
-Bij **een andere tafel** zit **een kleine man** **alleen**. De man heeft
-**zwart haar** en **een korte, donkere baard**. Hij **eet** **een pizza**. Hij
-**leest** **een boek**.
+Een **collega** van de **eigenaresse** wijst Ben en Laura **een tafeltje** bij
+het **raam**. Ben **kijkt** om zich heen. Het restaurant is **niet groot**. Bij
+**een andere tafel** zit **een kleine man** **alleen**. De man heeft **zwart
+haar** en **een korte, donkere baard**. Hij **eet** **een pizza**. Hij **leest**
+**een boek**.
 
 — **Kijk**, fluistert Laura. **Die man** **leest** **een boek over Iran**.
 
@@ -118,15 +118,15 @@ De **serveerster** loopt **naar de keuken**. Ben **glimlacht**.
 
 — **Bio en zonder alcohol**? **Echt** Laura?
 
-— **Ja, echt**! Ik **rij vanavond** **terug**. En **bio** is **beter** voor
-het **milieu**.
+— **Ja, echt**! Ik **rij vanavond** **terug**. En **bio** is **beter** voor het
+**milieu**.
 
 — **Oké**, **oké**, **gezond meisje**.
 
 — **Iemand** moet **gezond** zijn in dit **gezin**, **hè**?
 
-Ben **lacht**. Hij **kijkt** Laura **aan**. Hij **houdt** **veel** **van**
-haar. Ze is **slim**, **lief** en **eerlijk**. **Misschien** **te eerlijk**.
+Ben **lacht**. Hij **kijkt** Laura **aan**. Hij **houdt** **veel** **van** haar.
+Ze is **slim**, **lief** en **eerlijk**. **Misschien** **te eerlijk**.
 
 ---
 
@@ -135,8 +135,7 @@ haar. Ze is **slim**, **lief** en **eerlijk**. **Misschien** **te eerlijk**.
 De **wijn** komt. Ben en Laura **bestellen** ook **eten**: **één pizza vier
 kazen** en **één vegetarische lasagne**. **Lekker**.
 
-Ze **proosten**. Dan **kijkt** Laura Ben **aan**. Haar **ogen** zijn
-**zacht**.
+Ze **proosten**. Dan **kijkt** Laura Ben **aan**. Haar **ogen** zijn **zacht**.
 
 — **Ben**. **Vertel** me **de waarheid** nu. **Hoe gaat het echt**?
 
@@ -159,8 +158,8 @@ Laura **kijkt** hem **lang aan**.
 — Ben! Je **doet** **blij**, maar je **kijkt** **niet blij**. Je **kijkt**
 **verdrietig**.
 
-Ben **zwijgt** **weer**. Hij **drinkt** **een slok wijn**. Hij **kijkt** naar
-de **kaars** op de **tafel**.
+Ben **zwijgt** **weer**. Hij **drinkt** **een slok wijn**. Hij **kijkt** naar de
+**kaars** op de **tafel**.
 
 — **Oké**... **Het gaat** **niet fantastisch**. **Het gaat** **slecht**...
 
@@ -174,8 +173,8 @@ Ben **slikt**. Hij **zucht**.
 — **Ja**, **natuurlijk**.
 
 — **CrossFit** en **koken** is **leuk** als **hobby**. **Niet** als **werk**.
-**Drie nachten** per **week** in de **keuken**. **Vier ochtenden** als
-**fitness trainer**. **Wanneer** **leef** ik? **Wanneer** **slaap** ik?
+**Drie nachten** per **week** in de **keuken**. **Vier ochtenden** als **fitness
+trainer**. **Wanneer** **leef** ik? **Wanneer** **slaap** ik?
 
 — **Tja**, dan **moet** je **meer Nederlands** **studeren**.
 
@@ -196,9 +195,9 @@ kan** ook in **Nederland** **dokter worden**. **Dat moet kunnen**.
 — **Tja** en je **kan niet** **stoppen** **met werken**, want je **huis** is
 **heel duur**.
 
-— **Precies**. **Meer dan duizend euro per maand** voor **drie kamers**. Het
-is **belachelijk**. Maar **een ander huis** is **nog duurder**. **Of** **te
-ver van** mijn **werk**.
+— **Precies**. **Meer dan duizend euro per maand** voor **drie kamers**. Het is
+**belachelijk**. Maar **een ander huis** is **nog duurder**. **Of** **te ver
+van** mijn **werk**.
 
 — **Hoe** kan **jij** dan **Nederlands** **leren**?
 
@@ -224,9 +223,9 @@ Dan **hoort** Laura **iets**. **Een stem**. Een **mannenstem**. **Nederlands**.
 Ben **stopt** **met praten**. Hij **luistert**.
 
 Aan **de andere tafel** zit **de kleine man** met het **zwarte haar**. Hij
-**praat** met de **serveerster**. Hij **praat** **Nederlands**. Ben
-**verstaat** **niet alles**. Hij **hoort** **woorden**: **cultuur**, **muziek**,
-**Iran**, **interessant**, **graag**.
+**praat** met de **serveerster**. Hij **praat** **Nederlands**. Ben **verstaat**
+**niet alles**. Hij **hoort** **woorden**: **cultuur**, **muziek**, **Iran**,
+**interessant**, **graag**.
 
 De **serveerster** **lacht**. Dan **zegt** ze **één** **belangrijke** **zin**:
 
@@ -263,35 +262,35 @@ Ben **drinkt** **zijn wijn** **leeg**. Hij **kijkt** naar **Laura**. Hij
 
 — **Wacht**...
 
-Maar Laura **wacht niet**. Ze **kijkt** **al** naar **de tafel** van de
-**kleine man**. Ze **glimlacht** **vriendelijk**. **Iets** **gaat** **veranderen**.
+Maar Laura **wacht niet**. Ze **kijkt** **al** naar **de tafel** van de **kleine
+man**. Ze **glimlacht** **vriendelijk**. **Iets** **gaat** **veranderen**.
 
 ---
 
 ## Personages
 
-| Personage          | Beschrijving                                                                                                                       |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Personage          | Beschrijving                                                                                                                                   |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Ben**            | Blonde Engelsman uit Londen, groene ogen. Dokter in Engeland, kok + fitness trainer in Nederland. Woont in kleine dure flat in Rotterdam-Zuid. |
-| **Laura**          | Bens vriendin, Nederlandse uit Schiedam. Blonde krullen. Ingenieur (3 dagen/week) + voetbalt (5 dagen/week). Twee jaar samen met Ben. |
-| **De baas**        | Bens chef in restaurant De Gouden Lepel.                                                                                            |
-| **De kleine man**  | Iraanse man met zwart haar en korte baard — hij is Reza (maar Ben en Laura kennen zijn naam nog niet).                              |
-| **De serveerster** | Eigenaresse van Speck (Yolanda — maar nog steeds zonder naam in dit hoofdstuk).                                                     |
+| **Laura**          | Bens vriendin, Nederlandse uit Schiedam. Blonde krullen. Ingenieur (3 dagen/week) + voetbalt (5 dagen/week). Twee jaar samen met Ben.          |
+| **De baas**        | Bens chef in restaurant De Gouden Lepel.                                                                                                       |
+| **De kleine man**  | Iraanse man met zwart haar en korte baard — hij is Reza (maar Ben en Laura kennen zijn naam nog niet).                                         |
+| **De serveerster** | Eigenaresse van Speck (Yolanda — maar nog steeds zonder naam in dit hoofdstuk).                                                                |
 
 ## Locaties
 
-| Locatie              | Beschrijving                                              |
-| -------------------- | --------------------------------------------------------- |
-| De Gouden Lepel      | Restaurant in Rotterdam-Zuid waar Ben werkt als kok       |
-| Bens flat            | Klein, duur (~€1100/maand), drie kamers, Rotterdam-Zuid   |
-| Speck                | Italiaans restaurant — bio-opties, alcoholvrije wijn      |
+| Locatie         | Beschrijving                                            |
+| --------------- | ------------------------------------------------------- |
+| De Gouden Lepel | Restaurant in Rotterdam-Zuid waar Ben werkt als kok     |
+| Bens flat       | Klein, duur (~€1100/maand), drie kamers, Rotterdam-Zuid |
+| Speck           | Italiaans restaurant — bio-opties, alcoholvrije wijn    |
 
 ## Belangrijke nieuwe woorden uit dit hoofdstuk
 
 ### Beroepen (thema 9)
 
-de **kok**, de **dokter**, de **ingenieur**, de **architect**, de **baas**,
-de **collega**, de **fitness trainer**, de **chef**, de **serveerster**
+de **kok**, de **dokter**, de **ingenieur**, de **architect**, de **baas**, de
+**collega**, de **fitness trainer**, de **chef**, de **serveerster**
 
 ### Werk & gevoel (thema 8)
 
@@ -319,11 +318,11 @@ de **pizza**, **vier kazen**, de **lasagne**, **vegetarisch**, **biologisch**,
 
 ## Grammatica-aandachtspunten
 
-| Patroon                  | Voorbeeld                                            |
-| ------------------------ | ---------------------------------------------------- |
-| Tijdsbepaling vooraan    | **Vandaag** is het een drukke dag.                   |
-| Imperatief               | **Luister**! **Vertel**!                             |
-| Modaal + infinitief      | Hij **kan** Ben **helpen**.                          |
-| Vraagwoord + werkwoord   | **Hoe** is dit mijn leven **geworden**?              |
-| Comparatief              | Het is **duurder** dan een ander huis.               |
-| Reden met "want"         | Hij kan niet stoppen, **want** zijn huis is **duur**. |
+| Patroon                | Voorbeeld                                             |
+| ---------------------- | ----------------------------------------------------- |
+| Tijdsbepaling vooraan  | **Vandaag** is het een drukke dag.                    |
+| Imperatief             | **Luister**! **Vertel**!                              |
+| Modaal + infinitief    | Hij **kan** Ben **helpen**.                           |
+| Vraagwoord + werkwoord | **Hoe** is dit mijn leven **geworden**?               |
+| Comparatief            | Het is **duurder** dan een ander huis.                |
+| Reden met "want"       | Hij kan niet stoppen, **want** zijn huis is **duur**. |

@@ -3,25 +3,29 @@
 ## 3.15 De zin met 'omdat', 'als': Ik ga naar bed omdat ik moe ben. Omdat ik moe ben, ga ik naar bed.
 
 ### Regel
+
 De bijzin met **omdat** of **als** kan op twee plaatsen staan:
 
 **1. Bijzin achteraan** (na de hoofdzin):
+
 - Normale volgorde in de hoofdzin
 - Werkwoord aan het eind van de bijzin
 - Geen komma verplicht (maar gebruikelijk)
 
 **2. Bijzin vooraan** (voor de hoofdzin):
+
 - Werkwoord aan het eind van de bijzin
 - Inversie in de hoofdzin (werkwoord vóór onderwerp)
 - Komma na de bijzin
 
-| Bijzin achter | Bijzin voor |
-|--------------|-------------|
-| Ik ga naar bed **omdat ik moe ben**. | **Omdat ik moe ben**, ga ik naar bed. |
-| Ik eet niks **als ik geen honger heb**. | **Als ik geen honger heb**, eet ik niks. |
+| Bijzin achter                                      | Bijzin voor                                         |
+| -------------------------------------------------- | --------------------------------------------------- |
+| Ik ga naar bed **omdat ik moe ben**.               | **Omdat ik moe ben**, ga ik naar bed.               |
+| Ik eet niks **als ik geen honger heb**.            | **Als ik geen honger heb**, eet ik niks.            |
 | We gaan op vakantie **als we genoeg geld hebben**. | **Als we genoeg geld hebben**, gaan we op vakantie. |
 
 ### Voorbeelden uit oefeningen
+
 - We eten vis, omdat het gezond **is**.
 - Omdat het gezond is, **eten we** vis.
 - We gaan naar buiten, als het niet meer **regent**.

@@ -5,17 +5,18 @@
 > superpowers:executing-plans to implement this plan task-by-task. Steps use
 > checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Один CLI-скрипт, который импортирует лексику и грамматику активной темы
-курса в spaced-repetition Fluent и сообщает, когда тема освоена и пора дальше.
+**Goal:** Один CLI-скрипт, который импортирует лексику и грамматику активной
+темы курса в spaced-repetition Fluent и сообщает, когда тема освоена и пора
+дальше.
 
 **Architecture:** Manifest (`<course>/curriculum.json`) владеет
-последовательностью и прогрессом (`done/active/locked`). `scripts/fluent_import.py`
-читает активный юнит, превращает woordenlijst и модули грамматики в карточки и
-пишет их **напрямую** в `~/.claude/fluent-data/spaced-repetition.json`,
-перестраивая очередь так же, как это делает `update-db.py`. Режим `--check`
-читает ту же БД и считает освоенность юнита по префиксу `item_id`; `--advance`
-двигает указатель и импортирует следующий юнит. SM-2 внутри Fluent владеет
-расписанием и рециклингом.
+последовательностью и прогрессом (`done/active/locked`).
+`scripts/fluent_import.py` читает активный юнит, превращает woordenlijst и
+модули грамматики в карточки и пишет их **напрямую** в
+`~/.claude/fluent-data/spaced-repetition.json`, перестраивая очередь так же, как
+это делает `update-db.py`. Режим `--check` читает ту же БД и считает освоенность
+юнита по префиксу `item_id`; `--advance` двигает указатель и импортирует
+следующий юнит. SM-2 внутри Fluent владеет расписанием и рециклингом.
 
 **Tech Stack:** Python 3, только stdlib (`json`, `argparse`, `pathlib`, `re`,
 `datetime`, `shutil`, `tempfile`). Тесты — plain `assert`, запускаются
@@ -137,9 +138,9 @@ if __name__ == "__main__":
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: FAIL — `ModuleNotFoundError: No module named 'fluent_import'`
-(или `AttributeError` на первой функции).
+Run: `cd scripts && python3 test_fluent_import.py` Expected: FAIL —
+`ModuleNotFoundError: No module named 'fluent_import'` (или `AttributeError` на
+первой функции).
 
 - [ ] **Step 3: Write minimal implementation**
 
@@ -196,19 +197,43 @@ def unit_prefix(course: str, unit_id: str) -> str:
 {
   "course": "link",
   "units": [
-    { "id": "thema_8",  "grammar_file": "grammatica_thema08_in_mijn_buurt.md",        "grammar_modules": "all", "status": "active" },
-    { "id": "thema_9",  "grammar_file": "grammatica_thema09_is_dat_wel_veilig.md",     "grammar_modules": "all", "status": "locked" },
-    { "id": "thema_10", "grammar_file": "grammatica_thema10_wat_koop_je.md",           "grammar_modules": "all", "status": "locked" },
-    { "id": "thema_11", "grammar_file": "grammatica_thema11_wat_gaan_we_doen.md",      "grammar_modules": "all", "status": "locked" },
-    { "id": "thema_12", "grammar_file": "grammatica_thema12_op_de_basisschool.md",     "grammar_modules": "all", "status": "locked" }
+    {
+      "id": "thema_8",
+      "grammar_file": "grammatica_thema08_in_mijn_buurt.md",
+      "grammar_modules": "all",
+      "status": "active"
+    },
+    {
+      "id": "thema_9",
+      "grammar_file": "grammatica_thema09_is_dat_wel_veilig.md",
+      "grammar_modules": "all",
+      "status": "locked"
+    },
+    {
+      "id": "thema_10",
+      "grammar_file": "grammatica_thema10_wat_koop_je.md",
+      "grammar_modules": "all",
+      "status": "locked"
+    },
+    {
+      "id": "thema_11",
+      "grammar_file": "grammatica_thema11_wat_gaan_we_doen.md",
+      "grammar_modules": "all",
+      "status": "locked"
+    },
+    {
+      "id": "thema_12",
+      "grammar_file": "grammatica_thema12_op_de_basisschool.md",
+      "grammar_modules": "all",
+      "status": "locked"
+    }
   ]
 }
 ```
 
 - [ ] **Step 5: Run test to verify it passes**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: PASS — `5 passed`
+Run: `cd scripts && python3 test_fluent_import.py` Expected: PASS — `5 passed`
 
 - [ ] **Step 6: Commit**
 
@@ -234,8 +259,9 @@ git commit -m "feat(fluent): scaffold curriculum-bridge importer + Link manifest
   - `parse_woordenlijst(anki_path: Path) -> list[tuple[str, str]]` — список
     `(word, translation)` без header-строк.
   - `vocab_items(course: str, unit: dict, course_dir: Path) -> list[dict]` —
-    карточки Fluent (`item_id, item_type="vocabulary", content, answer,
-    category, priority`). Читает все `*woordenlijst*thema{N}*_anki.txt` темы.
+    карточки Fluent
+    (`item_id, item_type="vocabulary", content, answer, category, priority`).
+    Читает все `*woordenlijst*thema{N}*_anki.txt` темы.
 
 - [ ] **Step 1: Write the failing test**
 
@@ -278,8 +304,8 @@ def test_vocab_items():
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: FAIL — `AttributeError: module 'fluent_import' has no attribute 'slug'`
+Run: `cd scripts && python3 test_fluent_import.py` Expected: FAIL —
+`AttributeError: module 'fluent_import' has no attribute 'slug'`
 
 - [ ] **Step 3: Write minimal implementation**
 
@@ -336,8 +362,7 @@ def vocab_items(course: str, unit: dict, course_dir: Path) -> list:
 
 - [ ] **Step 4: Run test to verify it passes**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: PASS — `8 passed`
+Run: `cd scripts && python3 test_fluent_import.py` Expected: PASS — `8 passed`
 
 - [ ] **Step 5: Commit**
 
@@ -423,8 +448,8 @@ def test_parse_grammar_clozes_module_filter():
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: FAIL — `AttributeError: ... 'parse_grammar_clozes'`
+Run: `cd scripts && python3 test_fluent_import.py` Expected: FAIL —
+`AttributeError: ... 'parse_grammar_clozes'`
 
 - [ ] **Step 3: Write minimal implementation**
 
@@ -497,8 +522,7 @@ def grammar_items(course: str, unit: dict, gramatica_dir: Path) -> tuple:
 
 - [ ] **Step 4: Run test to verify it passes**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: PASS — `10 passed`
+Run: `cd scripts && python3 test_fluent_import.py` Expected: PASS — `10 passed`
 
 - [ ] **Step 5: Commit**
 
@@ -573,8 +597,8 @@ def test_write_sr_backs_up_and_writes():
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: FAIL — `AttributeError: ... 'add_items'`
+Run: `cd scripts && python3 test_fluent_import.py` Expected: FAIL —
+`AttributeError: ... 'add_items'`
 
 - [ ] **Step 3: Write minimal implementation**
 
@@ -647,8 +671,7 @@ def write_sr(sr: dict, sr_path: Path) -> None:
 
 - [ ] **Step 4: Run test to verify it passes**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: PASS — `13 passed`
+Run: `cd scripts && python3 test_fluent_import.py` Expected: PASS — `13 passed`
 
 - [ ] **Step 5: Commit**
 
@@ -673,8 +696,9 @@ git commit -m "feat(fluent): idempotent SR write + queue rebuild mirroring updat
 - Produces:
   - `fluent_data_dir() -> Path` — `Path.home()/".claude"/"fluent-data"`.
   - `do_import(course: str, repo_root: Path, sr_path: Path, today: str) -> dict`
-    — возвращает summary `{unit, vocab, grammar, added, skipped}`. `course_dir =
-    repo_root/course`; грамматика из `repo_root/course/"gramatica"` для Link.
+    — возвращает summary `{unit, vocab, grammar, added, skipped}`.
+    `course_dir = repo_root/course`; грамматика из
+    `repo_root/course/"gramatica"` для Link.
   - `main(argv=None)` — argparse: `--course` (required), `--check`, `--advance`.
 
 Замечание: каталог грамматики Link — `link/gramatica` (буква как в репозитории).
@@ -717,8 +741,8 @@ def test_do_import_end_to_end_and_idempotent():
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: FAIL — `AttributeError: ... 'do_import'`
+Run: `cd scripts && python3 test_fluent_import.py` Expected: FAIL —
+`AttributeError: ... 'do_import'`
 
 - [ ] **Step 3: Write minimal implementation**
 
@@ -775,8 +799,7 @@ if __name__ == "__main__":
 
 - [ ] **Step 4: Run test to verify it passes**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: PASS — `14 passed`
+Run: `cd scripts && python3 test_fluent_import.py` Expected: PASS — `14 passed`
 
 (`main` ещё ссылается на `check`/`advance` из Task 6–7 — это в порядке: они
 вызываются только в соответствующих ветках CLI, тест их не трогает. Если запуск
@@ -841,8 +864,8 @@ def test_check_blocked_by_red():
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: FAIL — `AttributeError: ... 'check'`
+Run: `cd scripts && python3 test_fluent_import.py` Expected: FAIL —
+`AttributeError: ... 'check'`
 
 - [ ] **Step 3: Write minimal implementation**
 
@@ -870,8 +893,7 @@ def check(course: str, repo_root: Path, sr_path: Path) -> dict:
 
 - [ ] **Step 4: Run test to verify it passes**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: PASS — `16 passed`
+Run: `cd scripts && python3 test_fluent_import.py` Expected: PASS — `16 passed`
 
 - [ ] **Step 5: Commit**
 
@@ -943,8 +965,8 @@ def test_advance_at_last_unit_raises():
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: FAIL — `AttributeError: ... 'advance'`
+Run: `cd scripts && python3 test_fluent_import.py` Expected: FAIL —
+`AttributeError: ... 'advance'`
 
 - [ ] **Step 3: Write minimal implementation**
 
@@ -971,8 +993,7 @@ def advance(course: str, repo_root: Path, sr_path: Path, today: str) -> dict:
 
 - [ ] **Step 4: Run test to verify it passes**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: PASS — `18 passed`
+Run: `cd scripts && python3 test_fluent_import.py` Expected: PASS — `18 passed`
 
 - [ ] **Step 5: Commit**
 
@@ -994,16 +1015,17 @@ git commit -m "feat(fluent): --advance moves curriculum pointer and imports"
 
 - [ ] **Step 1: Прогнать тесты целиком**
 
-Run: `cd scripts && python3 test_fluent_import.py`
-Expected: PASS — `18 passed`
+Run: `cd scripts && python3 test_fluent_import.py` Expected: PASS — `18 passed`
 
 - [ ] **Step 2: Реальный dry-сценарий на Link thema 8**
 
 Run:
+
 ```bash
 python3 scripts/fluent_import.py --course link        # импорт активной темы
 python3 scripts/fluent_import.py --course link --check # должно показать статистику
 ```
+
 Expected: импорт сообщает число лексики/грамматики; `--check` печатает строку
 вида `thema_8 — N карточек | mastery≥3: 0/N (0%) | красных: 0` (свежий импорт →
 ещё ничего не освоено).

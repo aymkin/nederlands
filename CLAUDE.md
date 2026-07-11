@@ -262,8 +262,8 @@ Use tables for Dutch word order patterns:
 - Base language: Russian (English as supplementary)
 - Alex: A2 (elementary), approaching B1 — De Opmaat (`de_opmaat/`) + Link
   praktisch (`link/`)
-- Yulia: A1+ (between A1 and A2), working toward Link+ B1→B2 — Link+
-  theoretisch (`link_plus/`)
+- Yulia: A1+ (between A1 and A2), working toward Link+ B1→B2 — Link+ theoretisch
+  (`link_plus/`)
 
 ## Tutor Mode
 
