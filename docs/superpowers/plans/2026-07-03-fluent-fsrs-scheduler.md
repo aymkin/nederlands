@@ -987,7 +987,7 @@ git commit -m "feat(fsrs): guarded weekly weight optimizer (no-op until 400 revi
 - Produces: a venv at `~/.claude/fluent-data/.venv-optimizer` with
   `fsrs-optimizer` installed; `train()` adapted to its real API.
 
-- [ ] **Step 1: Create the venv and install fsrs-optimizer**
+- [x] **Step 1: Create the venv and install fsrs-optimizer**
 
 ```bash
 python3 -m venv ~/.claude/fluent-data/.venv-optimizer
@@ -997,7 +997,7 @@ python3 -m venv ~/.claude/fluent-data/.venv-optimizer
 
 Expected: `optimizer OK`.
 
-- [ ] **Step 2: Adapt `train()` to the installed API**
+- [x] **Step 2: Adapt `train()` to the installed API**
 
 Inspect the real entry point and update `train()` in `optimize_weights.py` to
 match (the package's optimize call and its expected review-log columns):
@@ -1010,14 +1010,14 @@ Map our `(card_id, date, rating)` logs to the columns the optimizer expects
 (typically `card_id`, `review_time`, `review_rating`). Keep the 21-weight sanity
 check.
 
-- [ ] **Step 3: Dry-run the optimizer in its venv against real data**
+- [x] **Step 3: Dry-run the optimizer in its venv against real data**
 
 Run:
 `~/.claude/fluent-data/.venv-optimizer/bin/python ~/Projects/fluent/.claude/hooks/optimize_weights.py`
 Expected: still `[optimize] insufficient data (165/400 …) — no-op` (torch
 present but the guard blocks; confirms the venv path runs cleanly).
 
-- [ ] **Step 4: Commit any `train()` adjustments**
+- [x] **Step 4: Commit any `train()` adjustments**
 
 ```bash
 cd ~/Projects/fluent
@@ -1038,7 +1038,7 @@ git push
 - Consumes: the optimizer venv + `optimize_weights.py` from Tasks 7-8.
 - Produces: a weekly (Sunday 09:05) job that runs the optimizer and logs.
 
-- [ ] **Step 0: Push the fork and sync `optimize_weights.py` into the cache**
+- [x] **Step 0: Push the fork and sync `optimize_weights.py` into the cache**
 
 ```bash
 cd ~/Projects/fluent && git push
@@ -1051,7 +1051,7 @@ ls ~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks/optimize_weights.py
 Expected: the optimizer path is listed (now in the runtime cache the plist
 references).
 
-- [ ] **Step 1: Write the plist (keep `/Users/Alex.Naymkin` literal)**
+- [x] **Step 1: Write the plist (keep `/Users/Alex.Naymkin` literal)**
 
 Create `launchd/com.aymkin.fluent-fsrs-optimize.plist` in the dotfiles repo:
 
@@ -1079,7 +1079,7 @@ Create `launchd/com.aymkin.fluent-fsrs-optimize.plist` in the dotfiles repo:
 </plist>
 ```
 
-- [ ] **Step 2: Install and load it**
+- [x] **Step 2: Install and load it**
 
 ```bash
 mkdir -p ~/.claude/logs
@@ -1091,7 +1091,7 @@ launchctl list | grep fluent-fsrs-optimize
 
 Expected: the label appears in `launchctl list`.
 
-- [ ] **Step 3: Trigger once to confirm the wiring (should no-op)**
+- [x] **Step 3: Trigger once to confirm the wiring (should no-op)**
 
 ```bash
 launchctl start com.aymkin.fluent-fsrs-optimize
@@ -1100,7 +1100,7 @@ sleep 5 && cat ~/.claude/logs/fluent-fsrs-optimize.log
 
 Expected: log shows `[optimize] insufficient data (165/400 …) — no-op`.
 
-- [ ] **Step 4: Commit in the dotfiles repo**
+- [x] **Step 4: Commit in the dotfiles repo**
 
 ```bash
 # in the dotfiles repo working copy
@@ -1112,15 +1112,15 @@ git commit -m "feat(launchd): weekly FSRS weight optimizer (Sun 09:05)"
 
 ## Verification (whole feature)
 
-- [ ] `cd ~/Projects/fluent && python3 tests/test_fsrs.py && python3 tests/test_migrate_to_fsrs.py && python3 tests/test_optimize_weights.py && python3 tests/test_update_db.py`
+- [x] `cd ~/Projects/fluent && python3 tests/test_fsrs.py && python3 tests/test_migrate_to_fsrs.py && python3 tests/test_optimize_weights.py && python3 tests/test_update_db.py`
       → all `OK`.
-- [ ] `~/Projects/fluent/.devvenv/bin/python tests/test_fsrs_crosscheck.py` →
+- [x] `~/Projects/fluent/.devvenv/bin/python tests/test_fsrs_crosscheck.py` →
       `OK`.
-- [ ] `read-db.py` shows `metadata.scheduler == "fsrs-6"` and migrated cards
+- [x] `read-db.py` shows `metadata.scheduler == "fsrs-6"` and migrated cards
       have `stability`.
-- [ ] A real `/fluent-review` session reschedules via FSRS (item gains
+- [x] A real `/fluent-review` session reschedules via FSRS (item gains
       `stability`, `difficulty`, `last_rating`).
-- [ ] `launchctl list | grep fluent-fsrs-optimize` present; manual `start` logs
+- [x] `launchctl list | grep fluent-fsrs-optimize` present; manual `start` logs
       a no-op.
 
 ## Notes for the implementer
