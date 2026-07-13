@@ -17,8 +17,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Exclude copyrighted book source from publication
-        run: rm -f "other/nieuw_in_rotterdam"/*.epub "other/nieuw_in_rotterdam"/*.pdf
+      - name: Exclude non-public files (book source + internal Claude Code config)
+        run: |
+          rm -f "other/nieuw_in_rotterdam"/*.epub "other/nieuw_in_rotterdam"/*.pdf
+          rm -rf .claude
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
