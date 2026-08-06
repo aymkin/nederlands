@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Spreekbriefje — Sinterklaas in Nederland en Oekraïne</title>
+<style>
+  @page { size: A4 portrait; margin: 12mm 15mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    /* 13pt / 1.5 is de grootste maat die nog op ÉÉN A4 past — een blad
+       omslaan tijdens het spreken is erger dan twee punten kleiner lezen. */
+    font-size: 13pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+    max-width: 178mm;
+    margin: 0 auto;
+    padding: 15mm 0;
+  }
+  @media print { body { padding: 0; } }
+
+  /* ---------- kop ---------- */
+  header {
+    border-bottom: 2.5px solid #000;
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-size: 15pt;
+    font-weight: 700;
+    letter-spacing: -.2px;
+  }
+  header .sub {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9.5pt;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #555;
+    margin-top: 4px;
+  }
+
+  /* ---------- blok per dia ---------- */
+  .blok {
+    display: grid;
+    grid-template-columns: 17mm 1fr;
+    column-gap: 5mm;
+    margin-bottom: 10px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .blok + .blok { border-top: 1px solid #bbb; padding-top: 10px; }
+
+  /* linker kolom: welke dia staat er op het scherm */
+  .tab {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 7.8pt;
+    font-weight: 700;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    color: #555;
+    line-height: 1.35;
+    padding-top: 6px;
+  }
+  .tab .nr {
+    display: block;
+    font-size: 21pt;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: #000;
+    margin-bottom: 2px;
+  }
+
+  /* rechter kolom: wat je zegt */
+  .tekst { text-align: left; }
+  .sig { font-weight: 700; }              /* Ten eerste, Ten tweede … */
+  b { font-weight: 700; }
+
+  /* weglaatbaar: grijs en tussen haken */
+  .opt { color: #8a8a8a; }
+  .opt::before { content: "⟨ "; }
+  .opt::after  { content: " ⟩"; }
+
+  /* laatste blok: de vaste slotzinnen */
+  .slot {
+    margin-top: 4px;
+    font-weight: 700;
+  }
+
+  /* ---------- voet ---------- */
+  footer {
+    margin-top: 10px;
+    border-top: 1px solid #bbb;
+    padding-top: 6px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 8.5pt;
+    line-height: 1.45;
+    color: #666;
+    page-break-before: avoid;
+    break-before: avoid;
+  }
+  footer b { color: #000; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Sinterklaas in Nederland en Oekraïne</h1>
+  <p class="sub">Spreekbriefje · Presentatie Spreken A2 · Link thema 13</p>
+</header>
+
+<div class="blok">
+  <div class="tab"><span class="nr">2</span>Inleiding</div>
+  <div class="tekst">
+    Hallo allemaal. Vandaag vertel ik over Sinterklaas. Toen ik in Nederland
+    kwam, dacht ik eerst: Santa Claus, 25 december! Maar nee — Sinterklaas is op
+    <b>5 december</b>. En in Oekraïne hebben wij ook Sinterklaas, maar op
+    <b>19 december</b>. Ik vertel wat hetzelfde is en wat anders is.
+  </div>
+</div>
+
+<div class="blok">
+  <div class="tab"><span class="nr">3</span>Nederland<br>5 dec.</div>
+  <div class="tekst">
+    <span class="sig">Ten eerste:</span> Sinterklaas in Nederland. Hij is een
+    oude man met een witte <b>baard</b> en een <b>mijter</b>.
+    <span class="opt">Hij draagt een rode mantel.</span>
+    Nederlanders vertellen hun kinderen dat hij wel <b>duizend jaar</b> oud is.
+    Hij komt met de <b>boot</b> uit <b>Spanje</b>.
+    <span class="opt">Waarom uit Spanje? Dat weet niemand precies.</span>
+    Hij komt niet alleen: hij komt met <b>Zwarte Piet</b>. In de weken vóór het
+    feest <b>zetten de kinderen hun schoen</b> bij de verwarming.
+  </div>
+</div>
+
+<div class="blok">
+  <div class="tab"><span class="nr">4</span>Oekraïne<br>19 dec.</div>
+  <div class="tekst">
+    <span class="sig">Ten tweede:</span> Sinterklaas in Oekraïne. Bij ons heet
+    hij <b>Sint-Mykolaj</b>. Het feest is op <b>19 december</b>, want wij hebben
+    een andere <b>kalender</b>. Hij komt ook niet alleen, maar niet met Zwarte
+    Piet: hij komt met <b>een engel en een duiveltje</b>.
+    <span class="opt">De engel geeft het cadeau, het duiveltje geeft de roe.</span>
+    Het cadeau ligt <b>onder het kussen</b>.
+    <span class="opt">Daarbij liggen koekjes met honing.</span>
+    En de kinderen leren een klein <b>versje</b> of een <b>liedje</b>. Dat
+    zeggen zij op voor Sint-Mykolaj.
+  </div>
+</div>
+
+<div class="blok">
+  <div class="tab"><span class="nr">5</span>Hetzelfde</div>
+  <div class="tekst">
+    <span class="sig">Ten derde:</span> wat is <b>hetzelfde</b>? Het is dezelfde
+    man: <b>Sint-Nicolaas</b>.
+    <span class="opt">Hij was een bisschop van lang geleden.</span>
+    In beide landen komt hij in <b>december</b>, 's nachts, met cadeaus. En de
+    regel is hetzelfde: ben je <b>zoet</b>, dan krijg je een cadeau; ben je
+    <b>stout</b>, dan krijg je <b>de roe</b>.
+  </div>
+</div>
+
+<div class="blok">
+  <div class="tab"><span class="nr">6</span>Anders</div>
+  <div class="tekst">
+    <span class="sig">Ten vierde:</span> wat is <b>anders</b>?
+    <span class="opt">En dit is voor mij het grootste verschil.</span>
+    In Nederland is het <b>eten niet belangrijk</b>. De <b>gedichten</b> zijn
+    belangrijk, en de <b>cadeaus</b>. De <b>volwassenen</b> maken de gedichten —
+    voor elkaar. Bij ons maken de volwassenen niets: de <b>kinderen</b> zeggen
+    een versje op — voor Sint-Mykolaj. <b>Precies andersom!</b>
+  </div>
+</div>
+
+<div class="blok">
+  <div class="tab"><span class="nr">7</span>Afsluiting</div>
+  <div class="tekst">
+    Dat was mijn presentatie. Twee landen vieren dezelfde man, maar op een
+    andere manier. Ik begrijp de Nederlandse gedichten nog niet helemaal — maar
+    wel een beetje. En nu vier ik het <b>twee keer</b>: op 5 en op 19 december!
+    <p class="slot">Bedankt voor het luisteren.<br>
+    Heeft iemand nog een vraag?</p>
+  </div>
+</div>
+
+<footer>
+  <b>⟨ grijs ⟩</b> = weglaatbaar &nbsp;·&nbsp; <b>cijfer</b> = dia
+  &nbsp;·&nbsp; <b>vet</b> = rustpunt &nbsp;·&nbsp; alles ≈ 3:30, zonder grijs ≈ 3:10
+</footer>
+
+</body>
+</html>
