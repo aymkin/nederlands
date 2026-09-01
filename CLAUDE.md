@@ -33,6 +33,11 @@ writing markdown, keep lines wrapped at 80 characters. Prettier ignores
 Pushes to `main` auto-deploy the entire repo to GitHub Pages via
 `.github/workflows/pages.yml`. All content becomes publicly accessible.
 
+`private/` is gitignored and therefore never published. Put third-party source
+texts there — a scanned NT2 adaptation is a copyrighted derivative work even
+when the original is public domain, so its text must not reach Pages. Generated
+readers built from it belong in a private Artifact, not in the repo.
+
 ## Directory Structure
 
 ```
@@ -51,6 +56,7 @@ daily/              # Daily practice and study planning
 other/              # Learning methodology notes and analysis
   language_learning_methods/  # Evgeniy 6-step, Alisher immersion, comparisons
 scripts/            # Automation utilities (audio_to_anki.py, text_to_speech.py, etc.)
+private/            # Gitignored: third-party source texts, never deployed
 ```
 
 ## Study Plan System (daily/maart_2026/)
@@ -81,7 +87,9 @@ audio_to_anki.py ──┐
                    ├─→ anki_utils.py (find profiles, validate, copy to media)
 text_to_speech.py ─┘
 
-story_reader.py ─→ standalone (edge-tts Python API + WordBoundary timings)
+story_reader.py ──────┐ standalone readers
+multivoice_reader.py ─┘ (edge-tts Python API + WordBoundary timings;
+                        multivoice_reader imports align_timings from story_reader)
 ```
 
 ### audio_to_anki.py — Audio to Anki Sentence Cards
@@ -138,6 +146,29 @@ events, whose text is the input's own — no Whisper, no fuzzy matching. Same
 ```bash
 python3 scripts/story_reader.py de_opmaat/thema_8/verhaal_studentenhuis/verhaal_studentenhuis_deel1.md
 ```
+
+### multivoice_reader.py — Cast Reader (dialogue, several voices)
+
+Same idea as `story_reader.py`, but for texts with a narrator and characters:
+each role gets its own voice and speech rate, segments are synthesised
+separately and concatenated with ffmpeg, so sentence boundaries are exact by
+construction rather than aligned after the fact. Roles are colour-coded in the
+page and listed in a cast table. Only three Dutch voices exist, so distinguish
+more characters by rate — a slow role and a fast role read as different people
+on the same voice.
+
+Input is a markdown cast script: `---` frontmatter with `title` / `subtitle` /
+`verse_role` / `footer` and a `cast:` block of `role: voice rate`; then `# ` for
+a chapter, `**Role:**` for that role's speech, `> ` for verse (lines kept, each
+highlights separately), anything else the narrator. Blank lines separate
+segments. `--dry-run` reports the segment plan without synthesising.
+
+```bash
+python3 scripts/multivoice_reader.py private/verhaal.md --dry-run
+python3 scripts/multivoice_reader.py private/verhaal.md --out ~/Desktop/verhaal
+```
+
+Parser checks: `python3 scripts/test_multivoice_reader.py`
 
 ### fluent_import.py — Curriculum → Fluent Bridge
 

@@ -4,3 +4,4 @@ __pycache__
 .pnp.cjs
 .yarn/
 music/
+private/
