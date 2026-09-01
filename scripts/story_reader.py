@@ -3,7 +3,8 @@
 LingQ-style Audio Reader for Dutch texts.
 
 Generates a self-contained HTML page with synchronized audio and
-sentence-by-sentence highlighting. Uses edge-tts for TTS + VTT timings.
+sentence-by-sentence highlighting. Uses the edge-tts Python API for TTS
+plus its per-word WordBoundary timings (no speech recognition needed).
 
 Usage:
     python3 scripts/story_reader.py mini_stories.md/01.md --voice maarten
@@ -14,24 +15,16 @@ Output: mini_stories.md/01_reader.html (self-contained, no server needed)
 import argparse
 import base64
 import html as html_mod
+import asyncio
 import re
-import subprocess
 import sys
 import tempfile
 from pathlib import Path
 
-# Optional: Whisper forced alignment (reuses helpers from audio_to_anki.py)
-try:
-    sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from audio_to_anki import (
-        transcribe_with_whisper,
-        extract_words_from_whisper,
-        find_best_match,
-        normalize_text,
-    )
-    WHISPER_AVAILABLE = True
-except ImportError:
-    WHISPER_AVAILABLE = False
+import edge_tts
+
+# Темп речи: "-10%" = 0.9x от скорости носителя (замерено на nl-NL голосах).
+DEFAULT_RATE = "-10%"
 
 VOICES = {
     "colette": "nl-NL-ColetteNeural",
@@ -160,158 +153,77 @@ def strip_md(text: str) -> str:
     return text
 
 
-def parse_timestamp(ts: str) -> float:
-    """Parse '00:00:03,412' or '00:00:03.412' → seconds."""
-    ts = ts.replace(",", ".")
-    h, m, s = ts.split(":")
-    return int(h) * 3600 + int(m) * 60 + float(s)
-
-
-def parse_vtt(vtt_path: Path) -> list[dict]:
-    """Parse VTT/SRT → [{start, end, text}, ...]."""
-    content = vtt_path.read_text(encoding="utf-8")
-    cues = []
-    pattern = re.compile(
-        r"(\d{2}:\d{2}:\d{2}[.,]\d{3})\s*-->\s*(\d{2}:\d{2}:\d{2}[.,]\d{3})\s*\n"
-        r"((?:(?!\d{2}:\d{2}:\d{2}).+\n?)+)",
-        re.MULTILINE,
-    )
-    for m in pattern.finditer(content):
-        cues.append({
-            "start": parse_timestamp(m.group(1)),
-            "end": parse_timestamp(m.group(2)),
-            "text": m.group(3).strip(),
-        })
-    return cues
-
-
 # ─── TTS Generation ──────────────────────────────────────────────────
 
 
-def generate_tts(text: str, voice: str, mp3_path: Path, vtt_path: Path):
-    """Run edge-tts CLI → MP3 + VTT."""
-    result = subprocess.run(
-        [
-            "edge-tts",
-            "-t", text,
-            "-v", voice,
-            "--write-media", str(mp3_path),
-            "--write-subtitles", str(vtt_path),
-        ],
-        capture_output=True,
-        text=True,
-    )
-    if result.returncode != 0:
-        print(f"edge-tts error: {result.stderr}", file=sys.stderr)
-        sys.exit(1)
+async def _synthesize(text: str, voice: str, rate: str, mp3_path: Path) -> list[dict]:
+    """Stream edge-tts → MP3 on disk + per-word timings.
 
-
-# ─── Timing Matching ─────────────────────────────────────────────────
-
-
-def match_timings(sentences: list[str], cues: list[dict]) -> list[dict]:
-    """Map VTT cues → per-sentence [{start, end}, ...]."""
-    if not cues:
-        return [{"start": 0, "end": 0} for _ in sentences]
-
-    if len(cues) == len(sentences):
-        return [{"start": c["start"], "end": c["end"]} for c in cues]
-
-    # Greedy assignment: accumulate cues until they cover each sentence
-    timings = []
-    cue_idx = 0
-
-    for sent in sentences:
-        if cue_idx >= len(cues):
-            timings.append({"start": cues[-1]["end"], "end": cues[-1]["end"]})
-            continue
-
-        start = cues[cue_idx]["start"]
-        end = cues[cue_idx]["end"]
-        accumulated_len = len(cues[cue_idx]["text"])
-        cue_idx += 1
-
-        while cue_idx < len(cues) and accumulated_len < len(sent) * 0.8:
-            end = cues[cue_idx]["end"]
-            accumulated_len += len(cues[cue_idx]["text"]) + 1
-            cue_idx += 1
-
-        timings.append({"start": start, "end": end})
-
-    return timings
-
-
-# ─── Whisper Forced Alignment ────────────────────────────────────────
-
-
-def align_timings_whisper(sentences: list[str], mp3_path: Path) -> list[dict]:
-    """Forced alignment via Whisper — ~95% precise sentence boundaries.
-
-    Replaces VTT-cue greedy matching. Whisper transcribes the MP3 with
-    word-level timestamps; each MD sentence is matched against the word
-    stream via sliding-window fuzzy matching (SequenceMatcher).
+    The CLI has no --boundary flag, so it can only emit sentence-level
+    subtitles. The Python API yields WordBoundary events whose text comes
+    from the input rather than from recognition, so sentence boundaries
+    are exact and no forced alignment is required.
     """
-    whisper_data = transcribe_with_whisper(mp3_path, word_timestamps=True)
-    whisper_words = extract_words_from_whisper(whisper_data)
-    if not whisper_words:
-        return [{"start": 0, "end": 0} for _ in sentences]
-
-    raw_timings: list[dict | None] = []
-    search_idx = 0
-    matched = 0
-
-    for sent in sentences:
-        plain = strip_md(sent)
-        words = normalize_text(plain).split()
-        if not words:
-            raw_timings.append(None)
-            continue
-        match = find_best_match(words, whisper_words, search_idx)
-        if match:
-            raw_timings.append({"start": match["start"], "end": match["end"]})
-            search_idx = match["match_idx"]
-            matched += 1
-        else:
-            raw_timings.append(None)
-
-    print(f"Aligned {matched} / {len(sentences)} sentences")
-    audio_end = whisper_words[-1]["end"] if whisper_words else 0
-    return _interpolate_gaps(raw_timings, audio_end)
+    comm = edge_tts.Communicate(text, voice, rate=rate, boundary="WordBoundary")
+    words: list[dict] = []
+    with open(mp3_path, "wb") as fh:
+        async for chunk in comm.stream():
+            if chunk["type"] == "audio":
+                fh.write(chunk["data"])
+            elif chunk["type"] == "WordBoundary":
+                words.append({
+                    "text": chunk["text"],
+                    "start": chunk["offset"] / 1e7,
+                    "end": (chunk["offset"] + chunk["duration"]) / 1e7,
+                })
+    return words
 
 
-def _interpolate_gaps(timings: list[dict | None], audio_end: float) -> list[dict]:
-    """Replace None entries with interpolated spans between known neighbors."""
-    n = len(timings)
-    result: list[dict] = []
+def generate_tts(text: str, voice: str, rate: str, mp3_path: Path) -> list[dict]:
+    """Blocking wrapper around _synthesize()."""
+    return asyncio.run(_synthesize(text, voice, rate, mp3_path))
+
+
+# ─── Timing Alignment ────────────────────────────────────────────────
+
+
+def _speakable_tokens(sentence: str) -> int:
+    """Count tokens that edge-tts will emit a WordBoundary for.
+
+    Pure-punctuation tokens (em dashes, lone quotes) produce no event.
+    """
+    return sum(
+        1 for t in strip_md(sentence).split() if any(c.isalnum() for c in t)
+    )
+
+
+def align_timings(sentences: list[str], words: list[dict]) -> list[dict]:
+    """Map per-word timings → per-sentence [{start, end}, ...].
+
+    Word events arrive in input order, so this is a sequential walk: each
+    sentence consumes as many events as it has speakable tokens.
+    """
+    counts = [_speakable_tokens(s) for s in sentences]
+    total = sum(counts)
+
+    # Guard against silent desync: if tokenisation disagrees with the event
+    # stream, rescale shares so the walk still spans the whole audio.
+    if total and total != len(words):
+        print(f"  Note: {total} tokens vs {len(words)} word events — rescaling")
+        scale = len(words) / total
+        counts = [max(1, round(c * scale)) for c in counts]
+
+    timings: list[dict] = []
     i = 0
-    while i < n:
-        t = timings[i]
-        if t is not None:
-            result.append(t)
-            i += 1
-            continue
-        # Find previous known end
-        prev_end = 0.0
-        for j in range(i - 1, -1, -1):
-            if timings[j] is not None:
-                prev_end = timings[j]["end"]
-                break
-        # Find next known start and count consecutive Nones
-        gap_count = 1
-        next_start = audio_end
-        for j in range(i + 1, n):
-            if timings[j] is None:
-                gap_count += 1
-            else:
-                next_start = timings[j]["start"]
-                break
-        # Equal split across consecutive Nones
-        span = max(0.0, (next_start - prev_end) / gap_count)
-        for k in range(gap_count):
-            start = prev_end + span * k
-            result.append({"start": start, "end": start + span})
-        i += gap_count
-    return result
+    for n in counts:
+        span = words[i:i + n]
+        i += n
+        if span:
+            timings.append({"start": span[0]["start"], "end": span[-1]["end"]})
+        else:
+            last = timings[-1]["end"] if timings else 0.0
+            timings.append({"start": last, "end": last})
+    return timings
 
 
 # ─── HTML Generation ─────────────────────────────────────────────────
@@ -524,9 +436,9 @@ def main():
         help="Output HTML path (default: <input_stem>_reader.html next to input)",
     )
     parser.add_argument(
-        "--no-align",
-        action="store_true",
-        help="Skip Whisper forced alignment, use VTT greedy matching fallback",
+        "--rate",
+        default=DEFAULT_RATE,
+        help="Speech rate: -10%% = 0.9x, +0%% = native (default: %(default)s)",
     )
     args = parser.parse_args()
 
@@ -554,27 +466,13 @@ def main():
     full_text = " ".join(strip_md(s) for s in sentences)
     with tempfile.TemporaryDirectory() as tmp:
         mp3 = Path(tmp) / "audio.mp3"
-        vtt = Path(tmp) / "audio.vtt"
 
-        print(f"Generating audio ({args.voice})...")
-        generate_tts(full_text, voice_id, mp3, vtt)
+        print(f"Generating audio ({args.voice}, rate {args.rate})...")
+        words = generate_tts(full_text, voice_id, args.rate, mp3)
+        print(f"Word timings: {len(words)}")
 
-        # 3. Align timings — Whisper forced alignment (default) or VTT greedy fallback
-        if WHISPER_AVAILABLE and not args.no_align:
-            print("Aligning with Whisper (forced alignment)...")
-            timings = align_timings_whisper(sentences, mp3)
-        else:
-            if not WHISPER_AVAILABLE and not args.no_align:
-                print("Warning: whisper not importable, using VTT greedy fallback")
-                print("  Install: pip install openai-whisper")
-            cues = parse_vtt(vtt)
-            print(f"VTT cues: {len(cues)}")
-            if len(cues) != len(sentences):
-                print(
-                    f"  Warning: cue count ({len(cues)}) != sentence count "
-                    f"({len(sentences)}), using greedy matching"
-                )
-            timings = match_timings(sentences, cues)
+        # 3. Align: sequential walk over the word stream
+        timings = align_timings(sentences, words)
 
         # 5. Build HTML
         page = build_html(sentences, timings, mp3, title)

@@ -34,6 +34,11 @@ except ImportError:
 from anki_utils import find_anki_media_folder, validate_anki_media, copy_to_anki_media
 
 # Голоса edge-tts для нидерландского
+# Темп речи edge-tts: "-10%" = 0.9x от скорости носителя.
+# Замерено: rate=-X% даёт длительность в 1/(1-X/100) раз больше,
+# то есть -10% -> 0.9x, -20% -> 0.8x, -30% -> 0.7x.
+DEFAULT_RATE = "-10%"
+
 VOICES = {
     "colette": "nl-NL-ColetteNeural",
     "fenna": "nl-NL-FennaNeural",
@@ -201,6 +206,7 @@ async def generate_whole_audio(
     sentences: list[dict],
     voice: str,
     output_path: Path,
+    rate: str = DEFAULT_RATE,
 ) -> None:
     """
     Генерирует один MP3 файл из всех предложений.
@@ -209,7 +215,7 @@ async def generate_whole_audio(
     чтобы edge-tts добавлял естественные паузы между ними.
     """
     full_text = "\n\n".join(s["text"] for s in sentences)
-    communicate = edge_tts.Communicate(full_text, voice)
+    communicate = edge_tts.Communicate(full_text, voice, rate=rate)
     await communicate.save(str(output_path))
 
 
@@ -218,6 +224,7 @@ async def generate_all_audio(
     voice: str,
     output_dir: Path,
     prefix: str,
+    rate: str = DEFAULT_RATE,
 ) -> list[str]:
     """
     Генерирует MP3 для каждого предложения через edge-tts.
@@ -233,7 +240,7 @@ async def generate_all_audio(
         filename = f"{prefix}_sentence_{i:03d}.mp3"
         output_path = output_dir / filename
 
-        communicate = edge_tts.Communicate(sent["text"], voice)
+        communicate = edge_tts.Communicate(sent["text"], voice, rate=rate)
         await communicate.save(str(output_path))
 
         audio_files.append(filename)
@@ -364,6 +371,12 @@ def main():
         help="Голос TTS: colette (жен.), fenna (жен.), maarten (муж.)",
     )
     parser.add_argument(
+        "--rate",
+        default=DEFAULT_RATE,
+        help="Темп речи: -10%% = 0.9x, +0%% = скорость носителя "
+        "(по умолчанию: %(default)s)",
+    )
+    parser.add_argument(
         "--copy-to-anki",
         action="store_true",
         help="Автоматически копировать аудио в Anki media folder",
@@ -403,7 +416,7 @@ def main():
     # Определяем формат
     fmt = detect_input_format(input_path)
     print(f"📄 Формат: {fmt}")
-    print(f"🎤 Голос: {args.voice} ({voice_id})")
+    print(f"🎤 Голос: {args.voice} ({voice_id}), темп: {args.rate}")
 
     # Парсим предложения
     if fmt == "transcript":
@@ -432,7 +445,9 @@ def main():
     if args.whole:
         output_path = input_path.parent / f"{prefix}.mp3"
         print(f"\n🔊 Генерирую цельное аудио ({len(sentences)} предложений)...")
-        asyncio.run(generate_whole_audio(sentences, voice_id, output_path))
+        asyncio.run(
+            generate_whole_audio(sentences, voice_id, output_path, args.rate)
+        )
         print(f"   ✅ Создан: {output_path}")
         print(f"\n✅ Готово!")
         print(f"   Аудио: {output_path}")
@@ -444,7 +459,7 @@ def main():
 
     print(f"\n🔊 Генерирую аудио ({len(sentences)} предложений)...")
     audio_files = asyncio.run(
-        generate_all_audio(sentences, voice_id, output_dir, prefix)
+        generate_all_audio(sentences, voice_id, output_dir, prefix, args.rate)
     )
     print(f"   ✅ Создано файлов: {len(audio_files)}")
 

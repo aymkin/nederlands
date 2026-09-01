@@ -81,7 +81,7 @@ audio_to_anki.py ──┐
                    ├─→ anki_utils.py (find profiles, validate, copy to media)
 text_to_speech.py ─┘
 
-story_reader.py ─→ standalone (uses edge-tts CLI)
+story_reader.py ─→ standalone (edge-tts Python API + WordBoundary timings)
 ```
 
 ### audio_to_anki.py — Audio to Anki Sentence Cards
@@ -116,8 +116,12 @@ maarten). Auto-detects three input formats: transcript (`Speaker: text`), plain
 markdown, or existing Anki TSV (updates cards with audio). Dependency:
 `pip install edge-tts`
 
+Speech rate defaults to `-10%` (0.9x native) for A2–B1 listeners; `--rate` takes
+any edge-tts percentage, where `-X%` yields exactly `1/(1-X/100)` duration.
+
 ```bash
 python3 scripts/text_to_speech.py input.md --voice colette --copy-to-anki
+python3 scripts/text_to_speech.py input.md --rate -20%   # 0.8x, slower
 ```
 
 ### story_reader.py — Interactive HTML Reader
@@ -125,6 +129,11 @@ python3 scripts/text_to_speech.py input.md --voice colette --copy-to-anki
 Creates self-contained HTML pages with synchronized sentence highlighting and
 embedded audio (base64). Supports playback speed 0.7x-1.5x. No server needed —
 opens in browser. Dependency: `pip install edge-tts`
+
+Sentence timings come from the edge-tts Python API's `boundary="WordBoundary"`
+events, whose text is the input's own — no Whisper, no fuzzy matching. Same
+`--rate` default as above. Alignment checks:
+`python3 scripts/test_story_reader.py`
 
 ```bash
 python3 scripts/story_reader.py de_opmaat/thema_8/verhaal_studentenhuis/verhaal_studentenhuis_deel1.md
