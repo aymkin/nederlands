@@ -1,7 +1,14 @@
-# Gesprekken met de bijsluiter — Wat Zopiclon mij leerde
-
-_Yulia — Woorden uit Link+ thema 7, taak 4_
-
+---
+title: Gesprekken met de bijsluiter
+subtitle: Wat Zopiclon mij leerde — Yulia, Link+ thema 7, taak 4
+footer: Stemmen: edge-tts (nl-NL Colette, Fenna, Maarten). Tempo per rol ingesteld. Persoonlijk studiemateriaal.
+cast:
+  verteller: colette +0%
+  moeder: fenna +6%
+  Zopiclon: fenna -10%
+  de huisarts: maarten +0%
+  Iliko: maarten -6%
+  de bijsluiter: maarten -14%
 ---
 
 Ik **moet** dit opschrijven.
@@ -20,10 +27,10 @@ Werk, taalcursus, zorgen om opa die ziek **is**.
 
 Thuis in Oekraïne **zei** m'n moeder altijd:
 
-"Als je slecht **slaapt**, eet honing en ga **hardlopen**."
+**moeder:** Als je slecht **slaapt**, eet honing en ga **hardlopen**.
 
-Maar hier in Nederland? Als ik 's avonds **hardloop**, **word** ik alleen
-meer wakker.
+Maar hier in Nederland? Als ik 's avonds **hardloop**, **word** ik alleen meer
+wakker.
 
 ---
 
@@ -31,25 +38,27 @@ Gisterochtend **ben** ik naar de **huisarts** geweest.
 
 Hij **heeft** rustig geluisterd.
 
-"Yulia, je **hebt** de **laatste** weken veel **stress**," **zei** hij.
+**de huisarts:** Yulia, je **hebt** de **laatste** weken veel **stress**.
 
-"**Heb** je **hardlopen** **geprobeerd**? Of therapie?"
+**zei** hij.
+
+**de huisarts:** **Heb** je **hardlopen** **geprobeerd**? Of therapie?
 
 "Ik **ben** 's avonds te moe om te **hardlopen**," **zei** ik.
 
-"Oké," **zei** hij.
+**de huisarts:** Oké.
 
-"Dan voor een paar **nachten** een **slaappil**."
+**zei** hij.
 
-"Zopiclon, 7,5 **milligram**."
-
-"Eén **maal** per **nacht**. **Maximaal** twee weken."
+**de huisarts:** Dan voor een paar **nachten** een **slaappil**. Zopiclon, 7,5
+**milligram**. Eén **maal** per **nacht**. **Maximaal** twee weken.
 
 Hij **gaf** mij een recept.
 
-Hij **zei** nog: "**Neem** **contact** op als er iets **is**."
+Hij **zei** nog:
 
-"**Lees** de **bijsluiter** goed."
+**de huisarts:** **Neem** **contact** op als er iets **is**. **Lees** de
+**bijsluiter** goed.
 
 ---
 
@@ -73,21 +82,18 @@ Ik **heb** de **bijsluiter** opengevouwen.
 
 Alles **gelezen**. Elke regel.
 
-"**Gebruik** van Zopiclon: u **kunt** niet slapen."
-
-"U **bent** **erg** moe."
+**de bijsluiter:** **Gebruik** van Zopiclon: u **kunt** niet slapen. U **bent**
+**erg** moe.
 
 "Dat **ben** ik," **denk** ik.
 
-"**Dosering**: één **tablet** van 7,5 **milligram** voor de **nacht**."
-
-"**Maximaal** twee weken. Nooit meer dan één **maal** per dag."
-
-"**Tijdens** **zwangerschap** en **borstvoeding**: niet **gebruiken**."
+**de bijsluiter:** **Dosering**: één **tablet** van 7,5 **milligram** voor de
+**nacht**. **Maximaal** twee weken. Nooit meer dan één **maal** per dag.
+**Tijdens** **zwangerschap** en **borstvoeding**: niet **gebruiken**.
 
 "Gelukkig," **denk** ik, "dat **is** niet mijn probleem."
 
-"Niet **tegelijk** met **alcohol** **innemen**."
+**de bijsluiter:** Niet **tegelijk** met **alcohol** **innemen**.
 
 "Ook goed, ik **drink** toch geen **alcohol**."
 
@@ -95,13 +101,9 @@ Alles **gelezen**. Elke regel.
 
 Maar dan **komt** de lijst met **bijwerkingen**:
 
-"Hoofdpijn. U **bent** moe. Soms **misselijk**."
-
-"Bij vragen, **neem** **contact** op met uw **huisarts** of apotheek."
-
-"**Bewaren**: niet **boven** de 25 graden."
-
-"Op de **verpakking** **staat** een datum."
+**de bijsluiter:** Hoofdpijn. U **bent** moe. Soms **misselijk**. Bij vragen,
+**neem** **contact** op met uw **huisarts** of apotheek. **Bewaren**: niet
+**boven** de 25 graden. Op de **verpakking** **staat** een datum.
 
 Ik **heb** lang naar de **tablet** gekeken.
 
@@ -121,53 +123,61 @@ In m'n droom **stond** de **bijsluiter** naast m'n bed.
 
 Hij **was** een klein mannetje van papier.
 
-"Goedenavond, Yulia," **zei** hij.
+**de bijsluiter:** Goedenavond, Yulia.
 
-"Ik **ben** de **bijsluiter**. We **moeten** praten."
+**zei** hij.
+
+**de bijsluiter:** Ik **ben** de **bijsluiter**. We **moeten** praten.
 
 Ik **zei**: "Ik **dacht** dat je alleen tekst **was**."
 
-"Iedereen **denkt** dat," **zei** hij.
+**de bijsluiter:** Iedereen **denkt** dat.
 
-"Maar ik **ben** de **verpakking** van jouw gezonde verstand."
+**zei** hij.
+
+**de bijsluiter:** Maar ik **ben** de **verpakking** van jouw gezonde verstand.
 
 ---
 
 Hij **ging** zitten op m'n stoel.
 
-"Eerste vraag: **heb** je vanavond **alcohol** gedronken?"
+**de bijsluiter:** Eerste vraag: **heb** je vanavond **alcohol** gedronken?
 
 "Nee."
 
-"**Tijdens** deze week **alcohol**?"
+**de bijsluiter:** **Tijdens** deze week **alcohol**?
 
 "Nee."
 
-"Tweede vraag: **ben** je zwanger?"
+**de bijsluiter:** Tweede vraag: **ben** je zwanger?
 
 "Nee."
 
-"**Borstvoeding**?"
+**de bijsluiter:** **Borstvoeding**?
 
 "Ik **voed** niemand!"
 
-"Prima. Dan **kunnen** we **verder**."
+**de bijsluiter:** Prima. Dan **kunnen** we **verder**.
 
 ---
 
-"Nu de **bijwerkingen**," **zei** de **bijsluiter**-man.
+**de bijsluiter:** Nu de **bijwerkingen**.
 
-"**Voel** je je **misselijk**?"
+**zei** de **bijsluiter**-man.
+
+**de bijsluiter:** **Voel** je je **misselijk**?
 
 "Een beetje."
 
-"**Tijdens** welke **maaltijd** **kwam** dat?"
+**de bijsluiter:** **Tijdens** welke **maaltijd** **kwam** dat?
 
 "Niet **tijdens** een **maaltijd**. Gewoon — spanning."
 
-"Ah." Hij **knikte**.
+**de bijsluiter:** Ah.
 
-"Dat **is** **stress**, niet de **pil**."
+Hij **knikte**.
+
+**de bijsluiter:** Dat **is** **stress**, niet de **pil**.
 
 ---
 
@@ -177,29 +187,27 @@ Toen **kwam** een oude vrouw binnen.
 
 Ze **droeg** een klein potje.
 
-"Hallo, Yulia," **zei** ze.
+**Zopiclon:** Hallo, Yulia.
 
-"Ik **ben** Zopiclon."
+**zei** ze.
+
+**Zopiclon:** Ik **ben** Zopiclon.
 
 "**Ben** jij het medicijn zelf?" **vroeg** ik.
 
-"Ja. Morgen **werk** ik vier uur voor je."
-
-"Maar alleen als je mij respecteert."
-
-"Geen **alcohol**. Geen dubbele **tablet**. Geen auto rijden morgenochtend."
-
-"**Tijdens** m'n **gebruik** **moet** je rustig **zijn**."
+**Zopiclon:** Ja. Morgen **werk** ik vier uur voor je. Maar alleen als je mij
+respecteert. Geen **alcohol**. Geen dubbele **tablet**. Geen auto rijden
+morgenochtend. **Tijdens** m'n **gebruik** **moet** je rustig **zijn**.
 
 "Ik **rijd** geen auto."
 
-"Goed. Dan **zie** ik je over vijf minuten."
+**Zopiclon:** Goed. Dan **zie** ik je over vijf minuten.
 
 ---
 
 De **bijsluiter**-man **lachte** zacht.
 
-"Zij **is** streng, Zopiclon. Maar eerlijk."
+**de bijsluiter:** Zij **is** streng, Zopiclon. Maar eerlijk.
 
 Ik **keek** hem aan.
 
@@ -209,37 +217,24 @@ Ik **keek** hem aan.
 
 Hij **zuchtte**.
 
-"Yulia, ik **weet** dat."
-
-"Maar als iets **gebeurt**, **zeggen** mensen:"
-
-"'Waarom **heeft** niemand mij dit verteld?'"
-
-"Dus ik **schrijf** alles op."
-
-"Elke **bijwerking**. Elke waarschuwing."
-
-"Ook als het maar één op duizend **gebeurt**."
+**de bijsluiter:** Yulia, ik **weet** dat. Maar als iets **gebeurt**, **zeggen**
+mensen: 'Waarom **heeft** niemand mij dit verteld?' Dus ik **schrijf** alles op.
+Elke **bijwerking**. Elke waarschuwing. Ook als het maar één op duizend
+**gebeurt**.
 
 ---
 
 "Dus de meeste mensen **voelen** niks?"
 
-"De meesten **voelen** niks."
-
-"Ik **ben** alleen de worst-case lijst."
-
-"Maar iedereen **moet** mij **lezen**."
-
-"Dan **kan** niemand **zeggen**: 'ik **wist** het niet.'"
+**de bijsluiter:** De meesten **voelen** niks. Ik **ben** alleen de worst-case
+lijst. Maar iedereen **moet** mij **lezen**. Dan **kan** niemand **zeggen**: 'ik
+**wist** het niet.'
 
 Ik **begreep** het eindelijk.
 
 "Dus je **bent** niet m'n vijand."
 
-"Ik **ben** je beste vriend."
-
-"Ik **ben** alleen **erg** eerlijk."
+**de bijsluiter:** Ik **ben** je beste vriend. Ik **ben** alleen **erg** eerlijk.
 
 ---
 
@@ -262,7 +257,8 @@ Maar toen ik 'm **las**, **leek** hij anders.
 
 Niet dreigend. Alleen eerlijk.
 
-"**Bijwerkingen**: hoofdpijn, u **bent** moe en soms **misselijk**."
+**de bijsluiter:** **Bijwerkingen**: hoofdpijn, u **bent** moe en soms
+**misselijk**.
 
 Ik **had** geen hoofdpijn.
 
@@ -274,7 +270,9 @@ Ik **was** alleen uitgerust.
 
 Op het werk **vertelde** ik Iliko over m'n droom.
 
-Hij **lachte**. "Yulia, je **leest** te veel."
+Hij **lachte**.
+
+**Iliko:** Yulia, je **leest** te veel.
 
 "Misschien," **zei** ik.
 
@@ -286,11 +284,11 @@ Hij **lachte**. "Yulia, je **leest** te veel."
 
 Iliko **keek** me aan.
 
-"**Heb** je vannacht echt goed geslapen?"
+**Iliko:** **Heb** je vannacht echt goed geslapen?
 
 "Als een baby. Geen **bijwerkingen**."
 
-"Dan **heeft** je **bijsluiter**-mannetje z'n werk gedaan."
+**Iliko:** Dan **heeft** je **bijsluiter**-mannetje z'n werk gedaan.
 
 ---
 
@@ -312,7 +310,7 @@ Maar omdat ik hem dankbaar **ben**.
 
 Ik **denk** wel eens aan m'n moeder in Oekraïne.
 
-"Eet honing. Ga **hardlopen**."
+**moeder:** Eet honing. Ga **hardlopen**.
 
 Dat **was** haar **bijsluiter**.
 

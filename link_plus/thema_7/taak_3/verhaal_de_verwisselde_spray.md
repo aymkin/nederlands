@@ -1,7 +1,13 @@
-# De verwisselde spray — Iliko speelt detective
-
-_Yulia, Iliko, Zula en baby Micha — Woorden uit Link+ thema 7, taak 3_
-
+---
+title: De verwisselde spray
+subtitle: Iliko speelt detective — Yulia, Link+ thema 7, taak 3
+footer: Stemmen: edge-tts (nl-NL Colette, Fenna, Maarten). Tempo per rol ingesteld. Persoonlijk studiemateriaal.
+cast:
+  verteller: colette +0%
+  Zula: fenna +8%
+  de verkoopster: fenna -8%
+  Iliko: maarten -6%
+  de apotheker: maarten +0%
 ---
 
 Ik **moet** dit vandaag opschrijven.
@@ -14,11 +20,9 @@ Het **is** zaterdagmorgen. Zula **belt** mij.
 
 Ze **praat** snel en zacht.
 
-"Yulia, er **is** iets vreemds met Micha."
-
-"Hij **is** niet **wakker** zoals anders."
-
-"Hij **ademt** goed, maar hij **slaapt** te **zwaar** voor z'n **leeftijd**."
+**Zula:** Yulia, er **is** iets vreemds met Micha. Hij **is** niet **wakker**
+zoals anders. Hij **ademt** goed, maar hij **slaapt** te **zwaar** voor z'n
+**leeftijd**.
 
 Micha **is** negen maanden oud. Een lieve **jonge** **zoon**.
 
@@ -30,13 +34,15 @@ Ik **roep** Iliko. "Kom mee, Zula **heeft** ons nodig."
 
 Iliko **trekt** z'n jas aan.
 
-"Wat **is** er precies gebeurd?" **vraagt** hij.
+**Iliko:** Wat **is** er precies gebeurd?
+
+**vraagt** hij.
 
 "Ze **zegt** dat Micha te **zwaar** **slaapt**."
 
 Iliko **kijkt** me scherp aan.
 
-"Interessant. Eerst de feiten, dan de conclusie."
+**Iliko:** Interessant. Eerst de feiten, dan de conclusie.
 
 ---
 
@@ -46,54 +52,59 @@ Hij **ademt** rustig. Maar hij **reageert** nauwelijks.
 
 Zula **huilt** bijna.
 
-"Ik **heb** hem gisteren een **neusspray** gegeven," **zegt** ze.
+**Zula:** Ik **heb** hem gisteren een **neusspray** gegeven.
 
-"Hij **was** verkouden."
+**zegt** ze.
 
-"De verkoopster bij de **drogist** **zei** dat dit **huismerk** prima **is** voor
-**jonge** kinderen."
+**Zula:** Hij **was** verkouden. De verkoopster bij de **drogist** **zei** dat
+dit **huismerk** prima **is** voor **jonge** kinderen.
 
 ---
 
 Iliko **loopt** naar de keuken. Hij **pakt** het flesje.
 
-"Mag ik deze **doos** zien?" **vraagt** hij.
+**Iliko:** Mag ik deze **doos** zien?
 
-"En de **bijsluiter**?"
+**vraagt** hij.
+
+**Iliko:** En de **bijsluiter**?
 
 Zula **pakt** alles. Iliko **leest** de **bijsluiter**.
 
-"Observatie één: dit **is** het **huismerk**. Dat **klopt**."
+**Iliko:** Observatie één: dit **is** het **huismerk**. Dat **klopt**.
 
-"Observatie twee: op de verpakking **staat** '12 **milligram**'."
+**Iliko:** Observatie twee: op de verpakking **staat** '12 **milligram**'.
 
-Hij **kijkt** op. "Zula, op welke **leeftijd** **is** deze **neusspray** voor?"
+Hij **kijkt** op.
+
+**Iliko:** Zula, op welke **leeftijd** **is** deze **neusspray** voor?
 
 ---
 
 Zula **wordt** bleek.
 
-"Voor... kinderen?"
+**Zula:** Voor... kinderen?
 
-"Nee," **zegt** Iliko rustig.
+**Iliko:** Nee.
 
-"Dit **is** de versie voor volwassenen."
+**zegt** Iliko rustig.
 
-"Voor jouw **zoon** **is** de **dosering** veel te **zwaar**."
+**Iliko:** Dit **is** de versie voor volwassenen. Voor jouw **zoon** **is** de
+**dosering** veel te **zwaar**.
 
 Hij **wijst** op de **bijsluiter**.
 
-"**Maximaal** 4 **milligram** voor baby's onder een jaar."
+**Iliko:** **Maximaal** 4 **milligram** voor baby's onder een jaar. Dit flesje
+**heeft** 12 **milligram** per **dosering**.
 
-"Dit flesje **heeft** 12 **milligram** per **dosering**."
+**Zula:** Maar de verkoopster...
 
-"Maar de verkoopster..." **begint** Zula.
+**begint** Zula.
 
 Iliko **legt** z'n hand op haar schouder.
 
-"Laten we **opnieuw** naar de **drogist** gaan."
-
-"Ik **wil** iets controleren."
+**Iliko:** Laten we **opnieuw** naar de **drogist** gaan. Ik **wil** iets
+controleren.
 
 ---
 
@@ -105,7 +116,9 @@ Daar **staan** de **neussprays**.
 
 Hij **bekijkt** de schappen lang.
 
-"Kijk hier," **zegt** hij.
+**Iliko:** Kijk hier.
+
+**zegt** hij.
 
 Op de bovenste plank **staan** de **neussprays** voor volwassenen.
 
@@ -123,61 +136,57 @@ Alleen een kleine rode stip **laat** zien welk **merk** voor baby's **is**.
 
 ---
 
-"Zula, welke **neusspray** **heb** je gepakt?" **vraagt** Iliko.
+**Iliko:** Zula, welke **neusspray** **heb** je gepakt?
+
+**vraagt** Iliko.
 
 Zula **wijst** naar de volwassenen-versie.
 
-"Ik **zag** 'huismerk' en **dacht**..."
+**Zula:** Ik **zag** 'huismerk' en **dacht**... Ik **was** in een haast. Ik
+**heb** niet **verder** gekeken.
 
-"Ik **was** in een haast."
+Iliko **knikt**.
 
-"Ik **heb** niet **verder** gekeken."
-
-Iliko **knikt**. "Precies."
-
-"De **drogist** **verkoopt** beide."
-
-"Het **verschil** **is** klein. **Maar** heel belangrijk."
+**Iliko:** Precies. De **drogist** **verkoopt** beide. Het **verschil** **is**
+klein. **Maar** heel belangrijk.
 
 ---
 
 Zula **wordt** boos.
 
-"Waarom **staan** deze zo dicht bij elkaar?"
-
-"Een moeder **kan** **gewoon** het verkeerde pakken!"
+**Zula:** Waarom **staan** deze zo dicht bij elkaar? Een moeder **kan**
+**gewoon** het verkeerde pakken!
 
 De verkoopster **komt** erbij.
 
-"Wat **is** er aan de hand?" **vraagt** ze vriendelijk.
+**de verkoopster:** Wat **is** er aan de hand?
+
+**vraagt** ze vriendelijk.
 
 Iliko **legt** het rustig uit.
 
 De verkoopster **kijkt** geschokt.
 
-"Ik **heb** u alleen de kindersprays aangewezen."
-
-"Maar u **heeft** misschien niet goed **geluisterd**?"
+**de verkoopster:** Ik **heb** u alleen de kindersprays aangewezen. Maar u
+**heeft** misschien niet goed **geluisterd**?
 
 Zula **knikt**.
 
-"Het **spijt** me. Ik **was** in een haast."
-
-"M'n **zoontje** **hoestte** al twee dagen."
-
-"Ik **wilde** snel iets **proberen**."
+**Zula:** Het **spijt** me. Ik **was** in een haast. M'n **zoontje** **hoestte**
+al twee dagen. Ik **wilde** snel iets **proberen**.
 
 ---
 
-"Maar wat nu?" **vraagt** Zula.
+**Zula:** Maar wat nu?
 
-"**Is** het ernstig?"
+**vraagt** Zula.
+
+**Zula:** **Is** het ernstig?
 
 Iliko **denkt** even na.
 
-"Laten we naar de **apotheek** gaan."
-
-"Daar **werken** specialisten voor **medicijnen**."
+**Iliko:** Laten we naar de **apotheek** gaan. Daar **werken** specialisten voor
+**medicijnen**.
 
 We **rijden** snel naar de **apotheek**.
 
@@ -189,38 +198,31 @@ Hij **bekijkt** de **bijsluiter** en de **dosering**.
 
 Hij **kijkt** naar de **leeftijd** van Micha.
 
-"Hoe vaak **heeft** u het gegeven?"
+**de apotheker:** Hoe vaak **heeft** u het gegeven?
 
-"Drie keer," **zegt** Zula zacht.
+**Zula:** Drie keer.
 
-"Om vier uur, om zes uur, en één keer voor het slapen."
+**zegt** Zula zacht.
+
+**Zula:** Om vier uur, om zes uur, en één keer voor het slapen.
 
 De apotheker **glimlacht**.
 
-"Eerlijk gezegd: niet geweldig, maar ook geen ramp."
-
-"Drie **doseringen** van 12 **milligram** — dat **is** veel."
-
-"Maar niet levensbedreigend."
-
-"Hij **slaapt** **zwaar** omdat deze spray ook een lichte **pijnstiller**
-**bevat**."
-
-"Over een **paar** uur **is** hij weer **wakker**."
+**de apotheker:** Eerlijk gezegd: niet geweldig, maar ook geen ramp. Drie
+**doseringen** van 12 **milligram** — dat **is** veel. Maar niet
+levensbedreigend. Hij **slaapt** **zwaar** omdat deze spray ook een lichte
+**pijnstiller** **bevat**. Over een **paar** uur **is** hij weer **wakker**.
 
 ---
 
-"Voor de zekerheid," **zegt** de apotheker **verder**.
+**de apotheker:** Voor de zekerheid.
 
-"**Mag** u dit **maximaal** één keer per dag **gebruiken**."
+**zegt** de apotheker **verder**.
 
-"Maar beter helemaal niet voor baby's."
-
-"Voor **jonge** kinderen **gebruikt** u alleen zout water."
-
-"Die **neusspray** **heeft** een blauwe **doos** met een ster."
-
-"Het **verschil** **is** belangrijk."
+**de apotheker:** **Mag** u dit **maximaal** één keer per dag **gebruiken**.
+Maar beter helemaal niet voor baby's. Voor **jonge** kinderen **gebruikt** u
+alleen zout water. Die **neusspray** **heeft** een blauwe **doos** met een ster.
+Het **verschil** **is** belangrijk.
 
 Zula **schrijft** alles op.
 
@@ -228,21 +230,16 @@ Zula **schrijft** alles op.
 
 Buiten bij de auto **zucht** Zula.
 
-"Iliko, dank je."
+**Zula:** Iliko, dank je. Ik **wist** het **verschil** niet. Ik **dacht** dat
+**huismerk** gewoon gelijk **was**.
 
-"Ik **wist** het **verschil** niet."
+**Iliko:** **Merken** **zijn** verwarrend.
 
-"Ik **dacht** dat **huismerk** gewoon gelijk **was**."
+**zegt** Iliko.
 
-"**Merken** **zijn** verwarrend," **zegt** Iliko.
-
-"De **drogist** **verkoopt** alles op **leeftijd** en **gebruik**."
-
-"Maar de verpakkingen **lijken** te veel op elkaar."
-
-"Eigenlijk **is** een **drogist** ook een plek voor specialisten."
-
-"Alleen **kopen** we te snel."
+**Iliko:** De **drogist** **verkoopt** alles op **leeftijd** en **gebruik**.
+Maar de verpakkingen **lijken** te veel op elkaar. Eigenlijk **is** een
+**drogist** ook een plek voor specialisten. Alleen **kopen** we te snel.
 
 ---
 
@@ -254,11 +251,13 @@ Z'n handje **grijpt** naar Zula's haar.
 
 Zula **kust** hem.
 
-"Volgende keer," **fluistert** ze, "**lees** ik eerst de **bijsluiter**."
+**Zula:** Volgende keer **lees** ik eerst de **bijsluiter**.
+
+**fluistert** ze.
 
 Iliko **kijkt** naar mij en **glimlacht**.
 
-"Sherlock Holmes **zou** trots zijn."
+**Iliko:** Sherlock Holmes **zou** trots zijn.
 
 "Elementary, mijn beste Yulia," **lach** ik.
 

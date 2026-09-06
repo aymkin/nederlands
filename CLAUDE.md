@@ -163,6 +163,15 @@ a chapter, `**Role:**` for that role's speech, `> ` for verse (lines kept, each
 highlights separately), anything else the narrator. Blank lines separate
 segments. `--dry-run` reports the segment plan without synthesising.
 
+Verhaal files work as cast scripts unchanged: `**bold**` vocabulary renders as
+`<b>` and is stripped before TTS, a lone `---` becomes a scene rule plus pause,
+and parsing stops at `## Vragen` / `## Woordenlijst` (`STOP_HEADINGS`, shared
+with `story_reader.py`) so exercises are read, not narrated. Metadata lines
+(`_..._`), HTML comments and table rows are skipped.
+
+An unknown role is a hard error, so `--dry-run` also catches a narrator
+paragraph that the `**Role:**` pattern grabbed by accident.
+
 ```bash
 python3 scripts/multivoice_reader.py private/verhaal.md --dry-run
 python3 scripts/multivoice_reader.py private/verhaal.md --out ~/Desktop/verhaal

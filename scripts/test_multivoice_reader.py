@@ -101,6 +101,36 @@ def test_rejects_bad_cast_line():
         raise AssertionError("should have rejected an unknown voice name")
 
 
+def test_scene_rule_becomes_a_break():
+    _, _, blocks = _parse("\nEerste scene.\n\n---\n\nTweede scene.\n")
+    assert [b["type"] for b in blocks] == ["speech", "break", "speech"]
+
+
+def test_stops_at_exercise_headings():
+    _, _, blocks = _parse(
+        "\nHet verhaal.\n\n## Vragen\n\n**1.** Klopt dat?\n")
+    assert [b["type"] for b in blocks] == ["speech"]
+    assert blocks[0]["sentences"] == ["Het verhaal."]
+
+
+def test_skips_metadata_comments_and_tables():
+    _, _, blocks = _parse(
+        "\n_Yulia — thema 7_\n\n<!-- TODO(human) -->\n\n"
+        "| nl | ru |\n\nHet verhaal.\n")
+    assert [b["type"] for b in blocks] == ["speech"]
+
+
+def test_bold_survives_to_html_but_not_to_speech():
+    sentence = "Ik **heb** koorts."
+    assert mv.md_to_html(sentence) == "Ik <b>heb</b> koorts."
+    assert mv.strip_md(sentence) == "Ik heb koorts."
+
+
+def test_bold_paragraph_is_not_mistaken_for_a_role():
+    _, _, blocks = _parse("\n**Stress**, **stress**, **stress**.\n")
+    assert blocks[0]["role"] == ""
+
+
 def test_slugify_is_css_safe():
     assert mv.slugify("Majoor zingt") == "majoor-zingt"
     assert mv.slugify("De eenden") == "de-eenden"

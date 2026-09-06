@@ -49,7 +49,12 @@ from pathlib import Path
 import edge_tts
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from story_reader import align_timings  # sequential word-stream walk
+from story_reader import (  # sequential word-stream walk + markdown handling
+    STOP_HEADINGS,
+    align_timings,
+    md_to_html,
+    strip_md,
+)
 
 VOICES = {
     "colette": "nl-NL-ColetteNeural",
@@ -62,6 +67,7 @@ DEFAULT_CAST = (NARRATOR_KEY, "+0%")
 PAUSE_SAME = 0.55     # same speaker, new paragraph
 PAUSE_SWITCH = 0.40   # voice change
 PAUSE_CHAPTER = 1.30  # after a chapter heading
+PAUSE_SCENE = 0.95    # across a --- scene break
 
 # Role colours, assigned in order of first appearance. Light / dark pairs.
 PALETTE = [
@@ -107,6 +113,15 @@ def parse_script(path: Path) -> tuple[dict, dict, list]:
         chunk = chunk.strip()
         if not chunk:
             continue
+        if any(chunk.startswith(h) for h in STOP_HEADINGS):
+            break  # exercises and glossaries are read, not narrated
+        if re.fullmatch(r"-{3,}|\*{3,}", chunk):
+            blocks.append({"type": "break"})
+            continue
+        if chunk.startswith("<!--") or chunk.startswith("|"):
+            continue
+        if chunk.startswith("_") and chunk.endswith("_") and "\n" not in chunk:
+            continue  # italic-only metadata line under the title
         if chunk.startswith("# "):
             blocks.append({"type": "chapter", "title": chunk[2:].strip()})
             continue
@@ -161,25 +176,28 @@ def duration(path: Path) -> float:
 
 def build_audio(blocks: list, cast: dict, tmp: Path, out_mp3: Path) -> float:
     """Synthesise every segment, concatenate, and stamp absolute timings."""
-    parts, prev_role, after_chapter, idx = [], None, False, 0
+    parts, prev_role, pending_gap, idx = [], None, None, 0
 
     for blk in blocks:
         if blk["type"] == "chapter":
-            after_chapter = True
+            pending_gap = PAUSE_CHAPTER
+            continue
+        if blk["type"] == "break":
+            pending_gap = PAUSE_SCENE
             continue
         voice_key, rate = cast.get(blk["role"] or NARRATOR_KEY, DEFAULT_CAST)
         if parts:
-            gap = (PAUSE_CHAPTER if after_chapter
-                   else PAUSE_SAME if blk["role"] == prev_role else PAUSE_SWITCH)
+            gap = pending_gap or (PAUSE_SAME if blk["role"] == prev_role
+                                  else PAUSE_SWITCH)
             sp = tmp / f"gap_{idx:03d}.mp3"
             subprocess.run(["ffmpeg", "-v", "error", "-f", "lavfi", "-t", str(gap),
                             "-i", "anullsrc=r=24000:cl=mono", "-q:a", "4",
                             str(sp), "-y"], check=True)
             parts.append(sp)
-        after_chapter = False
+        pending_gap = None
 
         seg = tmp / f"seg_{idx:03d}.mp3"
-        words = asyncio.run(_synth(" ".join(blk["sentences"]),
+        words = asyncio.run(_synth(strip_md(" ".join(blk["sentences"])),
                                    VOICES[voice_key], rate, seg))
         blk["timings"] = align_timings(blk["sentences"], words)
         blk["part"] = seg.name
@@ -249,6 +267,9 @@ def build_html(meta: dict, cast: dict, blocks: list, mp3: Path,
         if b["type"] == "chapter":
             body.append(f'<h2 class="ch">{html_mod.escape(b["title"])}</h2>')
             continue
+        if b["type"] == "break":
+            body.append('<hr class="scene">')
+            continue
         cls = f'seg v-{slugify(b["role"])}'
         if b["role"]:
             cls += " spoken"
@@ -257,7 +278,7 @@ def build_html(meta: dict, cast: dict, blocks: list, mp3: Path,
         spans = []
         for s, t in zip(b["sentences"], b["timings"]):
             spans.append(f'<span class="s" data-a="{t["start"]:.3f}" '
-                         f'data-b="{t["end"]:.3f}">{html_mod.escape(s)}</span>')
+                         f'data-b="{t["end"]:.3f}">{md_to_html(s)}</span>')
             si += 1
         who = (f'<span class="who">{html_mod.escape(b["role"])}</span>'
                if b["role"] else "")
@@ -282,7 +303,7 @@ _TEMPLATE = """<title>{title}</title>
 :root {{
   --paper:#EFEBE0; --raised:#F7F4EC; --ink:#1E1B16; --soft:#6B6455;
   --rule:#DAD4C4; --lamp:#C8A02E; --lamp-wash:rgba(200,160,46,.26);
-  --c-verteller:#6B6455;
+  --vocab:#7D2E23; --c-verteller:#6B6455;
 {tokens_light}
   --shadow:0 1px 2px rgba(30,27,22,.07), 0 8px 24px rgba(30,27,22,.06);
 }}
@@ -290,7 +311,7 @@ _TEMPLATE = """<title>{title}</title>
   :root:not([data-theme="light"]) {{
     --paper:#16171B; --raised:#1E2026; --ink:#E7E1D4; --soft:#9A9384;
     --rule:#33353D; --lamp:#E3BE58; --lamp-wash:rgba(227,190,88,.17);
-    --c-verteller:#9A9384;
+    --vocab:#E8A584; --c-verteller:#9A9384;
 {tokens_dark}
     --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
   }}
@@ -298,7 +319,7 @@ _TEMPLATE = """<title>{title}</title>
 :root[data-theme="dark"] {{
   --paper:#16171B; --raised:#1E2026; --ink:#E7E1D4; --soft:#9A9384;
   --rule:#33353D; --lamp:#E3BE58; --lamp-wash:rgba(227,190,88,.17);
-  --c-verteller:#9A9384;
+  --vocab:#E8A584; --c-verteller:#9A9384;
 {tokens_dark}
   --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
 }}
@@ -355,6 +376,11 @@ p.spoken .who {{
   text-transform:uppercase; margin-bottom:.3em;
 }}
 p.verse {{ font-style:italic; line-height:1.6; }}
+hr.scene {{
+  border:none; height:1px; background:var(--rule);
+  width:56px; margin:34px auto 34px;
+}}
+.s b {{ font-weight:600; color:var(--vocab); }}
 .s {{
   cursor:pointer; border-radius:3px; padding:1px 2px; margin:0 -2px;
   transition:background-color .18s ease, box-shadow .18s ease;

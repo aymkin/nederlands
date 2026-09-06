@@ -1,7 +1,17 @@
-# De huisartsenpost om middernacht — Een vreemd verhaal
-
-_Yulia, Alexander, Iliko — Woorden uit Link+ thema 7, taak 1_
-
+---
+title: De huisartsenpost om middernacht
+subtitle: Een vreemd verhaal — Yulia, Link+ thema 7, taak 1
+footer: Stemmen: edge-tts (nl-NL Colette, Fenna, Maarten). Tempo per rol ingesteld. Persoonlijk studiemateriaal.
+cast:
+  verteller: colette +0%
+  de bandstem: fenna -14%
+  de assistente: fenna +0%
+  de tweede stem: fenna +10%
+  de vrouw achter de balie: fenna -6%
+  de derde stem: maarten -14%
+  dokter Beek: maarten +0%
+  Alexander: maarten +10%
+  Iliko: maarten -6%
 ---
 
 Ik **moet** dit opschrijven. Want gisteravond **is** iets raars gebeurd.
@@ -18,27 +28,29 @@ M'n keel **doet** pijn. Ik **voel** me heel ziek.
 
 Ik **pak** m'n telefoon. Ik **bel** m'n **huisarts**.
 
-Een stem **zegt**: "De **praktijk** **is** **gesloten**."
+Een stem **zegt**:
 
-"Bel de **huisartsenpost**. **Toets** 1 voor **spoed**."
+**de bandstem:** De **praktijk** **is** **gesloten**. Bel de **huisartsenpost**.
+**Toets** 1 voor **spoed**.
 
 Ik **toets** 1. Een vrouw **neemt** op.
 
 ---
 
-"Met de **assistente**. Wat **is** uw **klacht**?"
+**de assistente:** Met de **assistente**. Wat **is** uw **klacht**?
 
 "Ik **heb** koorts en keelpijn," **zeg** ik.
 
-"**Is** het een **spoedgeval**?"
+**de assistente:** **Is** het een **spoedgeval**?
 
 "Nee. Maar ik **wil** de **dokter** zien."
 
-"Oké. U **komt** om half één. **Geef** even uw **gegevens**."
+**de assistente:** Oké. U **komt** om half één. **Geef** even uw **gegevens**.
 
 Ik **geef** m'n naam en geboortedatum.
 
-"Dokter Beek **behandelt** u. We **maken** een **dubbele** afspraak."
+**de assistente:** Dokter Beek **behandelt** u. We **maken** een **dubbele**
+afspraak.
 
 "Waarom **dubbel**?" **vraag** ik. Maar de lijn **is** dood.
 
@@ -58,11 +70,11 @@ Ik **druk** op de bel. De intercom **kraakt**.
 
 "Ik **heb** een afspraak met dokter Beek."
 
-"Dokter Beek **is** hier niet vanavond."
+**de tweede stem:** Dokter Beek **is** hier niet vanavond.
 
 "Maar de **assistente** **zei**..."
 
-"Ik **ben** de **assistente**. Ik **heb** niet gebeld."
+**de tweede stem:** Ik **ben** de **assistente**. Ik **heb** niet gebeld.
 
 ---
 
@@ -72,17 +84,18 @@ Ik **bel** het nummer nog een keer.
 
 Nu **klinkt** de stem anders. Dieper.
 
-"**Hebt** u een **verwijzing**?" **vraagt** de stem.
+**de derde stem:** **Hebt** u een **verwijzing**?
+
+**vraagt** de stem.
 
 "Nee. Ik **heb** alleen **klachten**."
 
-"**Via** uw **huisarts** **moet** u een **verwijzing** krijgen."
-
-"Voor een **specialist**."
+**de derde stem:** **Via** uw **huisarts** **moet** u een **verwijzing** krijgen.
+Voor een **specialist**.
 
 "Maar ik **wil** geen **specialist**! Ik **wil** de **huisarts**!"
 
-"Het **spreekuur** **is** voorbij. Bel morgen."
+**de derde stem:** Het **spreekuur** **is** voorbij. Bel morgen.
 
 Klik.
 
@@ -96,7 +109,7 @@ Of **is** de **gezondheidszorg** hier echt zo raar?
 
 Ik **bel** Alexander. Hij **neemt** slaperig op.
 
-"Yulia, het **is** één uur 's nachts!"
+**Alexander:** Yulia, het **is** één uur 's nachts!
 
 "Alexander, er **klopt** iets niet hier."
 
@@ -104,11 +117,11 @@ Ik **bel** Alexander. Hij **neemt** slaperig op.
 
 Alexander **lacht** zacht.
 
-"Yulia... je **hebt** koorts. Je **droomt**."
+**Alexander:** Yulia... je **hebt** koorts. Je **droomt**.
 
 "Nee, ik **droom** niet!"
 
-"Ga naar huis. Bel morgen je eigen **huisarts**."
+**Alexander:** Ga naar huis. Bel morgen je eigen **huisarts**.
 
 Hij **hangt** op.
 
@@ -124,24 +137,26 @@ Binnen **is** het warm en licht.
 
 Een vrouw **zit** achter de balie. De derde vrouw deze avond.
 
-"Sorry voor het wachten," **zegt** ze. "Er **was** verwarring met de
-**gegevens**."
+**de vrouw achter de balie:** Sorry voor het wachten. Er **was** verwarring met
+de **gegevens**.
+
+**zegt** ze.
 
 Dokter Beek **komt** eraan. Hij **is** rustig en vriendelijk.
 
-"Wat **is** uw **klacht**?" **vraagt** hij.
+**dokter Beek:** Wat **is** uw **klacht**?
+
+**vraagt** hij.
 
 Ik **vertel** over de koorts en keelpijn.
 
 Hij **doet** een **kort** **onderzoek**.
 
-"U **bent** **gewoon** verkouden," **zegt** hij.
+**dokter Beek:** U **bent** **gewoon** verkouden. Dit **gaat** na een **paar**
+dagen over. **Drink** veel water. Rust uit. Geen **verwijzing** nodig. Geen
+**specialist**.
 
-"Dit **gaat** na een **paar** dagen over."
-
-"**Drink** veel water. Rust uit."
-
-"Geen **verwijzing** nodig. Geen **specialist**."
+**zegt** hij.
 
 ---
 
@@ -153,7 +168,7 @@ Thuis **vertel** ik alles aan Iliko.
 
 Iliko **lacht**.
 
-"Yulia, je **had** koorts. Je **hebt** gedroomd."
+**Iliko:** Yulia, je **had** koorts. Je **hebt** gedroomd.
 
 Maar 's ochtends **krijg** ik een bericht:
 
