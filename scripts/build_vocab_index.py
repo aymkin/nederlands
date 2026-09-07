@@ -2,13 +2,18 @@
 """
 Builds a compact vocabulary index from all woordenlijst Anki files.
 
-Scans link/ and de_opmaat/ for *woordenlijst*_anki.txt files,
-extracts the Word column, and writes a grouped index to
-link/woordenlijst_index.txt (or de_opmaat/ respectively).
+Scans link/, link_plus/ and de_opmaat/ for *woordenlijst*_anki.txt
+files, extracts the Word column, and writes a grouped index to
+<course>/woordenlijst_index.txt.
+
+Each course has its own learner, so the indexes must stay separate:
+link/ is Alex, link_plus/ is Yulia. Indexing one into the other would
+build vocabulary recycling on the wrong learner's words.
 
 Usage:
-    python3 scripts/build_vocab_index.py              # both courses
-    python3 scripts/build_vocab_index.py --course link # only Link
+    python3 scripts/build_vocab_index.py                   # all courses
+    python3 scripts/build_vocab_index.py --course link      # Alex, Link
+    python3 scripts/build_vocab_index.py --course link_plus # Yulia, Link+
 """
 
 import argparse
@@ -18,6 +23,9 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 HEADER_PREFIXES = ("#separator", "#html", "#columns", "#tags", "#notetype")
+
+# One index per course directory — never merged (see module docstring).
+COURSES = ["link", "link_plus", "de_opmaat"]
 
 
 def find_anki_files(course_dir: Path) -> list[Path]:
@@ -94,17 +102,14 @@ def main():
     )
     parser.add_argument(
         "--course",
-        choices=["link", "de_opmaat", "both"],
-        default="both",
-        help="Which course to index (default: both)",
+        choices=COURSES + ["all"],
+        default="all",
+        help="Which course to index (default: all)",
     )
     args = parser.parse_args()
 
-    courses = []
-    if args.course in ("link", "both"):
-        courses.append(PROJECT_ROOT / "link")
-    if args.course in ("de_opmaat", "both"):
-        courses.append(PROJECT_ROOT / "de_opmaat")
+    selected = COURSES if args.course == "all" else [args.course]
+    courses = [PROJECT_ROOT / name for name in selected]
 
     for course_dir in courses:
         if not course_dir.exists():
