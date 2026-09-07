@@ -179,6 +179,26 @@ python3 scripts/multivoice_reader.py private/verhaal.md --out ~/Desktop/verhaal
 
 Parser checks: `python3 scripts/test_multivoice_reader.py`
 
+### build_vocab_index.py / check_recycling.py — /anki-cards toolchain
+
+Both serve the `/anki-cards` command and need nothing beyond Python 3 stdlib.
+`build_vocab_index.py` writes `<course>/woordenlijst_index.txt` — every
+woordenlijst word the learner has met, grouped by thema, so card generation
+reads one file instead of 40 decks. One index per course, because each course
+has its own learner (`link/` Alex, `link_plus/` Yulia).
+
+`check_recycling.py` gates style rule 4 on a finished deck: every example must
+reuse 2-4 words from that index, at least one from an earlier thema. It folds
+Dutch inflection crudely (doubled letters collapsed, infinitive `-en` dropped,
+prefix match) and ignores rule 3's discourse markers plus closed-class words, so
+its count is a floor — read a flagged example before rewriting it. Exit 1 means
+at least one card recycles too little.
+
+```bash
+python3 scripts/build_vocab_index.py --course link_plus
+python3 scripts/check_recycling.py link/thema_13/taak_1/woordenlijst_thema13_taak1_anki.txt
+```
+
 ### fluent_import.py — Curriculum → Fluent Bridge
 
 Seeds Link/De Opmaat vocab and grammar into Fluent's spaced-repetition database.

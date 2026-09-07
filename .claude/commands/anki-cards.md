@@ -97,7 +97,10 @@ actually says. A formal example fits only when the word itself is formal
 3. **Discourse markers** in ~50-60% of examples (1-2 per sentence, not every
    one): eigenlijk, gewoon, even, toch, wel, hoor, best, nou, echt, lekker
 4. **Vocabulary recycling**: each example reuses 2-4 words from the index built
-   in Step 2
+   in Step 2, **at least one of them from an earlier thema** — that is what
+   re-activates older material. Words from this taak's own list count on top:
+   letting the siblings carry each other (`de energie` → de vriezer) locks the
+   block being learned today
 5. **Natural expansion**: let context carry frequent words missing from the
    lists but obvious from known ones (kapot, vies, de lift, geverfd, `het werk`
    from `werken`, `een kop thee`). Sparingly — one per example at most.
@@ -125,7 +128,8 @@ actually says. A formal example fits only when the word itself is formal
 | `link/`, `link_plus/` | `{course}/thema_{N}/taak_{K}/woordenlijst_thema{N}_taak{K}_anki.txt` |
 | `de_opmaat/`          | `de_opmaat/thema_{N}/woordenlijst_pagina_{P}_anki.txt`               |
 
-Run the mechanical gates — each must print nothing but the tab markers:
+Run the mechanical gates. The first four print nothing when they pass; the fifth
+prints its counts and exits 0:
 
 ```bash
 f=<the saved file>
@@ -133,11 +137,17 @@ head -5 "$f" | sed -n l                 # separators must appear as \t
 awk -F'\t' '!/^#/ && NF && NF!=5' "$f"  # every card line has 5 fields
 grep -L '#html:true' "$f"               # header must declare html
 rg -i 'rusland|россия' "$f"             # Voldemort grep
+python3 scripts/check_recycling.py "$f" # rule 4, card by card
 ```
+
+`check_recycling.py` names every example that recycles too little; rewrite those
+examples rather than lowering its `--min`. Its count is a floor (it misses stem
+changes like `reizen` ~ `reis`), so read a flagged example before trusting the
+number.
 
 Then confirm each of these holds:
 
 - [ ] Every word from the Step 3 source list has a card
 - [ ] Every Dutch noun carries its article (`het stokbrood`, `de buurt`)
 - [ ] Every style rule above applied — register, markers in ~50-60% of examples,
-      2-4 recycled words each, no repeated scenario, translations carry tone
+      no repeated scenario, translations carry tone
