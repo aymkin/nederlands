@@ -239,7 +239,7 @@ Files ending in `_anki.txt` use tab-separated format with header directives:
 | Example            | Dutch example sentence                  |
 | Translation        | Russian translation                     |
 | TranslationExample | Russian translation of example sentence |
-| Tags               | `link::thema{N}::taak{N}::A1`           |
+| Tags               | `link::thema{N}::taak{N}::A2`           |
 
 **Dialog sentences** (zinnen) — 3 columns:
 
