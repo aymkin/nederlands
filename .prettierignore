@@ -5,3 +5,7 @@ node_modules/
 *_anki.txt
 **/verhaal_*.md
 *_reader.html
+
+# Lesson notes: hand-made line layout (conjugation tables, tijden lists).
+# proseWrap:always collapses those columns into prose and destroys them.
+**/les.md
