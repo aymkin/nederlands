@@ -70,6 +70,15 @@ def introduced_on(col: Path, day: date, notetypes: list[str] | None):
     with tempfile.TemporaryDirectory() as tmp:
         copy = Path(tmp) / "col.anki2"
         shutil.copy2(col, copy)  # Anki may hold the original open/locked
+        # Anki runs SQLite in WAL mode: a running Anki keeps recent changes in
+        # collection.anki2-wal and checkpoints them into the main file only
+        # later. Copying the main file alone yields a snapshot that can be
+        # minutes old — exactly long enough to miss the morning's session,
+        # which is the one this script exists to report. Copy the journal too.
+        for suffix in ("-wal", "-shm"):
+            side = col.with_name(col.name + suffix)
+            if side.exists():
+                shutil.copy2(side, copy.with_name(copy.name + suffix))
         con = sqlite3.connect(copy)
         # Anki registers a custom collation the plain sqlite3 module lacks.
         con.create_collation(
