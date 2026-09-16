@@ -36,14 +36,15 @@ prerequisite for problem 1's data) use `fluent-backlog-campaign`.
 
 ### Why current SOTA fails
 
-`fsrs-optimizer` (installed: 6.5.0 in `~/.claude/fluent-data/.venv-optimizer/`)
-is built for Anki-scale review logs — thousands to millions of reviews. On a few
-hundred reviews the fit can be worse than the population-default weights, which
-is exactly why this project's optimizer was guarded while it existed:
-`optimize_weights.py` hard-codes `MIN_TOTAL = 400` and `MIN_NEW = 50` and no-ops
-below them (its only run ever printed `insufficient data (185/400)`). The open
-question SOTA does not answer: _at what point, and with what safeguards, do
-personally fitted weights actually beat DEFAULT_W for one learner?_
+`fsrs-optimizer` (was 6.5.0 in `~/.claude/fluent-data/.venv-optimizer/`, deleted
+2026-09-16 — a revival reinstalls it) is built for Anki-scale review logs —
+thousands to millions of reviews. On a few hundred reviews the fit can be worse
+than the population-default weights, which is exactly why this project's
+optimizer was guarded while it existed: `optimize_weights.py` hard-codes
+`MIN_TOTAL = 400` and `MIN_NEW = 50` and no-ops below them (its only run ever
+printed `insufficient data (185/400)`). The open question SOTA does not answer:
+_at what point, and with what safeguards, do personally fitted weights actually
+beat DEFAULT_W for one learner?_
 
 Critically, the current adoption path has **no held-out check at all**: once the
 guard passes, `optimize_weights.py` trains and writes `metadata.weights`

@@ -55,8 +55,8 @@ Runtime hooks in the plugin cache (`fsrs.py` 168 ln, `update-db.py` 628 ln,
 standard library. Why: hooks run in whatever `python3` Claude Code finds — there
 is no venv guarantee at hook runtime. Heavy deps (torch, fsrs-optimizer) are
 isolated in the offline optimizer venv `~/.claude/fluent-data/.venv-optimizer/`,
-invoked only by the weekly LaunchAgent that was retired in 2026-09 (the venv
-survives at 975 MB, serving nothing). Adding a pip import to any runtime hook
+invoked only by the weekly LaunchAgent that was retired in 2026-09 (the venv was
+deleted 2026-09-16, freeing 993 MB). Adding a pip import to any runtime hook
 breaks every session on a machine without that package.
 
 Corollary: `fsrs.py` is a hand-port of py-fsrs pinned at 6.3.1. `DEFAULT_W` (21

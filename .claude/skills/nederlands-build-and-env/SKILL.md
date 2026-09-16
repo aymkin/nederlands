@@ -32,19 +32,19 @@ the separation is deliberate.
 
 ## Environment catalog (as of 2026-07-09)
 
-| Component         | Version                                                   | Install method                            | Location                                       |
-| ----------------- | --------------------------------------------------------- | ----------------------------------------- | ---------------------------------------------- |
-| python3 (default) | 3.14.5                                                    | `brew install python@3.14`                | `/opt/homebrew/bin/python3`                    |
-| python3.11        | 3.11.15                                                   | `brew install python@3.11`                | `/opt/homebrew/opt/python@3.11/bin/python3.11` |
-| ffmpeg            | 8.1.1                                                     | `brew install ffmpeg`                     | `/opt/homebrew/bin/ffmpeg`                     |
-| edge-tts          | 7.2.7                                                     | pip into Homebrew python (module + CLI)   | `/opt/homebrew/bin/edge-tts`                   |
-| openai-whisper    | 20250625                                                  | **pipx ONLY** (CLI, no importable module) | `~/.local/bin/whisper`                         |
-| node              | v20.17.0                                                  | nvm                                       | `~/.nvm/versions/node/v20.17.0/`               |
-| pnpm              | 10.29.2                                                   | corepack (ships with node)                | symlink in nvm bin dir                         |
-| prettier          | 3.8.1 (spec `^3.7.4`)                                     | `pnpm install` in repo                    | `node_modules/.bin/prettier`                   |
-| scripts/.venv     | py 3.14.5, torch 2.11.0, transformers 5.5.4               | manual venv                               | repo `scripts/.venv/` — **Parkiet only**       |
-| .venv-optimizer   | RETIRED — 975 MB serving a deleted script, safe to delete | do not recreate                           | `~/.claude/fluent-data/.venv-optimizer/`       |
-| Anki desktop      | profiles `alex`, `iuliia`                                 | app install                               | `~/Library/Application Support/Anki2/`         |
+| Component         | Version                                     | Install method                            | Location                                       |
+| ----------------- | ------------------------------------------- | ----------------------------------------- | ---------------------------------------------- |
+| python3 (default) | 3.14.5                                      | `brew install python@3.14`                | `/opt/homebrew/bin/python3`                    |
+| python3.11        | 3.11.15                                     | `brew install python@3.11`                | `/opt/homebrew/opt/python@3.11/bin/python3.11` |
+| ffmpeg            | 8.1.1                                       | `brew install ffmpeg`                     | `/opt/homebrew/bin/ffmpeg`                     |
+| edge-tts          | 7.2.7                                       | pip into Homebrew python (module + CLI)   | `/opt/homebrew/bin/edge-tts`                   |
+| openai-whisper    | 20250625                                    | **pipx ONLY** (CLI, no importable module) | `~/.local/bin/whisper`                         |
+| node              | v20.17.0                                    | nvm                                       | `~/.nvm/versions/node/v20.17.0/`               |
+| pnpm              | 10.29.2                                     | corepack (ships with node)                | symlink in nvm bin dir                         |
+| prettier          | 3.8.1 (spec `^3.7.4`)                       | `pnpm install` in repo                    | `node_modules/.bin/prettier`                   |
+| scripts/.venv     | py 3.14.5, torch 2.11.0, transformers 5.5.4 | manual venv                               | repo `scripts/.venv/` — **Parkiet only**       |
+| .venv-optimizer   | DELETED 2026-09-16 (freed 993 MB)           | do not recreate                           | `~/.claude/fluent-data/.venv-optimizer/`       |
+| Anki desktop      | profiles `alex`, `iuliia`                   | app install                               | `~/Library/Application Support/Anki2/`         |
 
 Repo scripts (`fluent_import.py`, `build_vocab_index.py`, `anki_utils.py`, test
 suite) are **stdlib-only** and run on plain Homebrew python3. The only pip
@@ -135,10 +135,9 @@ plugin in fork commit `09618f3` (2026-08-17); its weekly LaunchAgent was retired
 nothing here — `fsrs.py` uses the built-in `DEFAULT_W`, which is what ran all
 along: `metadata.weights` has always been `null`.
 
-On this machine the directory survives at **975 MB** (python 3.11.15,
-FSRS-Optimizer 6.5.0, torch 2.12.1) and is deletable. It is kept only so the
-decision to drop a gigabyte is made deliberately rather than by a cleanup
-script.
+It was deleted on 2026-09-16, freeing **993 MB** (it held python 3.11.15,
+FSRS-Optimizer 6.5.0, torch 2.12.1). The six learner JSONs beside it were
+verified unchanged by checksum before and after.
 
 Why it was ever separate, since the reasoning still applies to any future
 attempt: Fluent's runtime hooks are **stdlib-only by design** (no venv is
@@ -172,7 +171,7 @@ is the source of truth. Four locations matter:
 | `~/Projects/fluent`                            | dev clone of the fork (origin = `aymkin/fluent`) — source of truth for FSRS code  |
 | `~/.claude/plugins/marketplaces/aymkin/`       | marketplace clone — the **fork `aymkin/fluent`** (repointed 2026-07-11), has FSRS |
 | `~/.claude/plugins/cache/aymkin/fluent/0.4.0/` | **the runtime** — Claude Code executes hooks from HERE (has FSRS)                 |
-| `~/.claude/fluent-data/`                       | 6 learner JSON DBs + `.backups/` + `.venv-optimizer/`                             |
+| `~/.claude/fluent-data/`                       | 6 learner JSON DBs + `.backups/` + `results/`                                     |
 
 Verify the remotes (verified 2026-07-11):
 

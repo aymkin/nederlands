@@ -200,8 +200,8 @@ Symptom: the weekly weight-optimizer wrapper broke against the installed
 `optimize_weights.py` to the 6.5.0 API (train() is run with cwd chdir'd to a
 tempdir holding revlog.csv). Status: moot — the wrapper it fixed was deleted in
 2026-08-17 and the weekly job retired 2026-09-16 (entry 12). Kept as the reason
-the 975 MB `~/.claude/fluent-data/.venv-optimizer/` exists at all. The optimizer
-has run exactly once as of 2026-07-09: log line
+`~/.claude/fluent-data/.venv-optimizer/` existed at all. The optimizer has run
+exactly once as of 2026-07-09: log line
 `[optimize] insufficient data (185/400, +185 new) — no-op` in
 `~/.claude/logs/fluent-fsrs-optimize.log`.
 
@@ -266,8 +266,9 @@ time, exactly as before.
 
 Residue, still on disk:
 
-- `~/.claude/fluent-data/.venv-optimizer/` — **975 MB** (torch + fsrs-optimizer)
-  serving nothing. Deletable; kept until someone decides.
+- `~/.claude/fluent-data/.venv-optimizer/` — **deleted 2026-09-16**, 993 MB
+  freed (it held torch + fsrs-optimizer). The six learner JSONs beside it were
+  checksummed before and after: unchanged.
 - `~/.claude/logs/fluent-fsrs-optimize.log` — 2.9 KB, ends with the nine
   failures. The evidence; leave it.
 - `metadata.weights` / `last_optimized` / `reviews_at_last_optimize` in
