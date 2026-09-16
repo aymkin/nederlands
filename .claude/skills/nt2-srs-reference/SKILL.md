@@ -341,9 +341,9 @@ processes must be light and course-anchored (see `nederlands-change-control`).
 ## Provenance and maintenance
 
 All facts re-verified 2026-07-09 against disk. Cache path below means the Fluent
-runtime: `~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks/` (a version
+runtime: `~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/` (a version
 bump changes it — re-resolve with
-`ls -d ~/.claude/plugins/cache/m98/fluent/*/ | sort -V | tail -1`).
+`ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1`).
 
 | Claim                                           | Re-verify with                                                                                                                                 |
 | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -351,7 +351,7 @@ bump changes it — re-resolve with
 | score→rating thresholds in update-db            | `grep -n 'rating = 1 if' <cache>/update-db.py`                                                                                                 |
 | mastery thresholds (5/3 jump, 2/1/q4 increment) | `sed -n '399,421p' <cache>/update-db.py`                                                                                                       |
 | seeding formulas (max(interval,0.5), EF map)    | `sed -n '25,37p' <cache>/migrate_to_fsrs.py`                                                                                                   |
-| optimizer guards 400/50 + quality-only rating   | `sed -n '14,33p' <cache>/optimize_weights.py`                                                                                                  |
+| optimizer guards 400/50 + quality-only rating   | `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py \| sed -n '14,33p'` (retired 2026-09-16)                             |
 | gate 0.80 + red-card rule                       | `grep -n 'MASTERY_THRESHOLD\|red' scripts/fluent_import.py`                                                                                    |
 | live SR counts / queue / limits / metadata      | python probe in Part B above                                                                                                                   |
 | calculate_sm2 still dead code                   | `grep -rn calculate_sm2 <cache>/*.py` (definition only = dead)                                                                                 |

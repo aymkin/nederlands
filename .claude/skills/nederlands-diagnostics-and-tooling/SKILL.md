@@ -240,8 +240,8 @@ python3 -c "import json,pathlib;d=json.loads((pathlib.Path.home()/'.claude/fluen
 python3 scripts/fluent_import.py --course link --check --thema 13
 
 # what would the next session actually serve (capped, read-only)?
-# resolve plugin root: ls -d ~/.claude/plugins/cache/m98/fluent/*/ | sort -V | tail -1
-python3 ~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks/read-db.py --review | python3 -c "import json,sys;d=json.load(sys.stdin);print(d['computed']['review_queue_trimmed_to'])"
+# resolve plugin root: ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1
+python3 ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/read-db.py --review | python3 -c "import json,sys;d=json.load(sys.stdin);print(d['computed']['review_queue_trimmed_to'])"
 ```
 
 Trap inside that `--review` payload (verified 2026-07-10): the capped session
@@ -264,13 +264,13 @@ Re-verify drift-prone claims:
 - `gate_report.py` still imports cleanly (fluent_import API drift):
   `python3 .claude/skills/nederlands-diagnostics-and-tooling/scripts/gate_report.py --course link`
 - Two-review_history-keys trap still holds (optimizer counts per-item):
-  `grep -n "review_history" ~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks/optimize_weights.py`
+  `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py | grep -n "review_history"`
 - Queue rebuilt only on import/update (staleness message stays true):
-  `grep -n "review_queue" ~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks/update-db.py`
+  `grep -n "review_queue" ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/update-db.py`
 - Daily-cap code default still 20:
-  `grep -n "review_items_per_day" ~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks/read-db.py`
+  `grep -n "review_items_per_day" ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/read-db.py`
 - Plugin cache path version (`0.3.0` hardcoded above) —
-  `ls -d ~/.claude/plugins/cache/m98/fluent/*/ | sort -V | tail -1`
+  `ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1`
 - Anki header formats still match conventions:
   `head -5 link/thema_13/taak_1/woordenlijst_thema13_taak1_anki.txt`
 - Index builder still writes `woordenlijst_index.txt` and still lacks link_plus:

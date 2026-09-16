@@ -47,7 +47,7 @@ import sys
 from pathlib import Path
 
 DATA = Path(os.path.expanduser("~/.claude/fluent-data/spaced-repetition.json"))
-CACHE_GLOB = os.path.expanduser("~/.claude/plugins/cache/m98/fluent/*/.claude/hooks")
+CACHE_GLOB = os.path.expanduser("~/.claude/plugins/cache/*/fluent/*/.claude/hooks")
 
 EPS = 1e-6  # clamp p into (EPS, 1-EPS) for log-loss
 

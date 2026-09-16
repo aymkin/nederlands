@@ -22,7 +22,7 @@ path is absolute. `<CACHE>` below means the Fluent plugin runtime dir; resolve
 it first (the version segment changes on plugin bumps):
 
 ```bash
-CACHE=$(ls -d ~/.claude/plugins/cache/m98/fluent/*/ | sort -V | tail -1)
+CACHE=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1)
 ```
 
 **When NOT to use this skill:** for _running_ the tools (importer modes, session
@@ -129,7 +129,7 @@ Hooks live in `<CACHE>/.claude/hooks/` (runtime copies — the clone at
 Re-verify:
 
 ```bash
-grep -n "MIN_TOTAL\|MIN_NEW" "$CACHE/.claude/hooks/optimize_weights.py"
+git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py | grep -n "MIN_TOTAL\|MIN_NEW"
 python3 -c "import ast,re;s=open('$CACHE/.claude/hooks/fsrs.py').read();\
 print(len(ast.literal_eval(re.search(r'DEFAULT_W\s*=\s*(\[.*?\])',s,re.S).group(1))))"
 ```
@@ -197,15 +197,15 @@ Re-verify: `cat .prettierrc .prettierignore .gitignore` and
 
 All in `~/Library/LaunchAgents/`, verified 2026-07-09 via PlistBuddy.
 
-| Label                             | Schedule                 | Runs                                                                                                                        | Logs                                                                              |
-| --------------------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| `com.aymkin.claude-plugin-update` | daily 09:03              | `git pull` every repo under `~/.claude/plugins/marketplaces/*/` + `~/.claude/skills/*/`, rewrites skills.lock               | `/tmp/claude-plugin-update.log` (stdout+stderr)                                   |
-| `com.aymkin.claude-dotfiles-sync` | daily 09:04              | dotfiles `sync.sh`, auto-commit + push                                                                                      | `~/.claude/logs/sync.log`, `sync-error.log`                                       |
-| `com.aymkin.fluent-fsrs-optimize` | Sunday 09:05 (Weekday=0) | `.venv-optimizer/bin/python` against `optimize_weights.py` at the **hardcoded** cache path `.../cache/m98/fluent/0.3.0/...` | `~/.claude/logs/fluent-fsrs-optimize.log` (inline `>>` redirect), RunAtLoad false |
+| Label                             | Schedule                 | Runs                                                                                                                           | Logs                                                                              |
+| --------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| `com.aymkin.claude-plugin-update` | daily 09:03              | `git pull` every repo under `~/.claude/plugins/marketplaces/*/` + `~/.claude/skills/*/`, rewrites skills.lock                  | `/tmp/claude-plugin-update.log` (stdout+stderr)                                   |
+| `com.aymkin.claude-dotfiles-sync` | daily 09:04              | dotfiles `sync.sh`, auto-commit + push                                                                                         | `~/.claude/logs/sync.log`, `sync-error.log`                                       |
+| `com.aymkin.fluent-fsrs-optimize` | Sunday 09:05 (Weekday=0) | `.venv-optimizer/bin/python` against `optimize_weights.py` at the **hardcoded** cache path `.../cache/aymkin/fluent/0.4.0/...` | `~/.claude/logs/fluent-fsrs-optimize.log` (inline `>>` redirect), RunAtLoad false |
 
 **Guard/trap:** a Fluent plugin version bump 0.3.0→x changes the cache path and
 silently breaks the optimizer plist. After any bump, check the plist path
-against `ls -d ~/.claude/plugins/cache/m98/fluent/*/`.
+against `ls -d ~/.claude/plugins/cache/*/fluent/*/`.
 
 Re-verify:
 
@@ -262,7 +262,7 @@ if any fails or disagrees, update the table before relying on it.
 | MASTERY_THRESHOLD 0.80              | `grep -n MASTERY_THRESHOLD scripts/fluent_import.py`                                                                                    |
 | SR metadata + live daily limit      | `python3 -c "import json;d=json.load(open('$HOME/.claude/fluent-data/spaced-repetition.json'));print(d['metadata'],d['daily_limits'])"` |
 | daily-limit code default 20         | `grep -n review_items_per_day "$CACHE/.claude/hooks/read-db.py"`                                                                        |
-| optimizer guards 400/50             | `grep -n "MIN_TOTAL\|MIN_NEW" "$CACHE/.claude/hooks/optimize_weights.py"`                                                               |
+| optimizer guards 400/50 (retired)   | `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py \| grep -n "MIN_TOTAL\|MIN_NEW"`                              |
 | DEFAULT_W has 21 floats             | ast probe in section 4                                                                                                                  |
 | script flags/defaults               | `python3 scripts/<script>.py --help` for each                                                                                           |
 | whisper model hardcode              | `grep -n '"base"' scripts/audio_to_anki.py`                                                                                             |

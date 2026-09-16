@@ -133,14 +133,14 @@ sys.modules collision with the pip package — don't "simplify" that import danc
 
 ## Acceptance thresholds (the numbers that gate decisions)
 
-| Gate                                            | Threshold                                                                                                                 | Where defined                                                                                | Verified   |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ---------- |
-| Curriculum mastery gate (`--check`/`--advance`) | mastery≥3 count / total ≥ **0.80** AND **zero** red cards (`consecutive_incorrect ≥ 2`), total > 0                        | `scripts/fluent_import.py:248` (`MASTERY_THRESHOLD = 0.80`), :258-261                        | 2026-07-10 |
-| Item mastery reaching 3                         | `repetitions >= 5` AND `consecutive_correct >= 3`                                                                         | update-db.py ~:411 (runtime cache `~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks/`) | 2026-07-10 |
-| FSRS optimizer runs at all                      | total reviews ≥ **400** AND ≥ **50** new since last optimize; else `[optimize] insufficient data (N/400, +M new) — no-op` | fork `.claude/hooks/optimize_weights.py:14-15` (`MIN_TOTAL`, `MIN_NEW`)                      | 2026-07-10 |
-| Story-reader alignment bar                      | **285/285** sentences aligned (Whisper forced alignment; VTT greedy matching drifted past ~270)                           | commit `e6f41db` body                                                                        | 2026-07-10 |
-| Whisper model standard                          | turbo model: **0 overlaps** (base had occasional overlaps)                                                                | commit `1c88339` body                                                                        | 2026-07-10 |
-| FSRS port correctness                           | exact numeric parity vs py-fsrs 6.3.1                                                                                     | crosscheck gate above                                                                        | 2026-07-10 |
+| Gate                                            | Threshold                                                                                                                 | Where defined                                                                                   | Verified   |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ---------- |
+| Curriculum mastery gate (`--check`/`--advance`) | mastery≥3 count / total ≥ **0.80** AND **zero** red cards (`consecutive_incorrect ≥ 2`), total > 0                        | `scripts/fluent_import.py:248` (`MASTERY_THRESHOLD = 0.80`), :258-261                           | 2026-07-10 |
+| Item mastery reaching 3                         | `repetitions >= 5` AND `consecutive_correct >= 3`                                                                         | update-db.py ~:411 (runtime cache `~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/`) | 2026-07-10 |
+| FSRS optimizer runs at all                      | total reviews ≥ **400** AND ≥ **50** new since last optimize; else `[optimize] insufficient data (N/400, +M new) — no-op` | fork `.claude/hooks/optimize_weights.py:14-15` (`MIN_TOTAL`, `MIN_NEW`)                         | 2026-07-10 |
+| Story-reader alignment bar                      | **285/285** sentences aligned (Whisper forced alignment; VTT greedy matching drifted past ~270)                           | commit `e6f41db` body                                                                           | 2026-07-10 |
+| Whisper model standard                          | turbo model: **0 overlaps** (base had occasional overlaps)                                                                | commit `1c88339` body                                                                           | 2026-07-10 |
+| FSRS port correctness                           | exact numeric parity vs py-fsrs 6.3.1                                                                                     | crosscheck gate above                                                                           | 2026-07-10 |
 
 Live context (volatile, as of a 2026-07-10 probe): 408 SR items, 225 lifetime
 per-item reviews, 7 items at mastery≥3 — every gate above is far from firing.
@@ -293,7 +293,7 @@ state. Re-verify before relying on:
   `grep -n "MIN_TOTAL\|MIN_NEW" ~/Projects/fluent/.claude/hooks/optimize_weights.py`
   (400 / 50)
 - Item mastery rule:
-  `grep -n "repetitions.*>= 5" ~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks/update-db.py`
+  `grep -n "repetitions.*>= 5" ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/update-db.py`
 - 285/285 and 0-overlaps: `git show e6f41db | grep 285`;
   `git show 1c88339 | grep -i overlap`
 - Doc staleness: `grep -n "21 passed" scripts/README.md`; header census command

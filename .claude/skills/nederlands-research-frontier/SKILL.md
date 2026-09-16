@@ -280,8 +280,8 @@ the repo root):
 python3 -c "import json;d=json.load(open('$HOME/.claude/fluent-data/spaced-repetition.json'));print(sum(len(v.get('review_history',[])) for v in d['items'].values()))"
 
 # optimizer guards, missing held-out check, quality->rating mapping
-grep -n "MIN_TOTAL\|MIN_NEW\|def _rating" \
-  ~/.claude/plugins/cache/m98/fluent/*/.claude/hooks/optimize_weights.py
+git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py \
+  | grep -n "MIN_TOTAL\|MIN_NEW\|def _rating"
 
 # error-pattern count + top frequencies
 python3 -c "import json;d=json.load(open('$HOME/.claude/fluent-data/mistakes-db.json'));e=d['error_patterns'];print(len(e),sorted(e,key=lambda k:-e[k]['frequency'])[:5])"

@@ -24,20 +24,20 @@ curriculum → `fluent-backlog-campaign`; before any state-mutating change →
 
 ## Path anatomy
 
-| Thing                | Path                                                      |
-| -------------------- | --------------------------------------------------------- |
-| Repo root            | `/Users/Alex.Naymkin/Projects/nederlands`                 |
-| Fluent runtime hooks | `~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks/` |
-| Fluent data (6 DBs)  | `~/.claude/fluent-data/`                                  |
-| Backups              | `~/.claude/fluent-data/.backups/`                         |
-| Session results      | `~/.claude/fluent-data/results/fluent-*-session-NNN.md`   |
+| Thing                | Path                                                         |
+| -------------------- | ------------------------------------------------------------ |
+| Repo root            | `/Users/Alex.Naymkin/Projects/nederlands`                    |
+| Fluent runtime hooks | `~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/` |
+| Fluent data (6 DBs)  | `~/.claude/fluent-data/`                                     |
+| Backups              | `~/.claude/fluent-data/.backups/`                            |
+| Session results      | `~/.claude/fluent-data/results/fluent-*-session-NNN.md`      |
 
 The `0.3.0` in the cache path is a version pin: a plugin version bump changes
 the path AND breaks the optimizer LaunchAgent plist, which hardcodes it. Resolve
 dynamically when scripting:
 
 ```bash
-FLUENT_HOOKS=$(ls -d ~/.claude/plugins/cache/m98/fluent/*/ | sort -V \
+FLUENT_HOOKS=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V \
   | tail -1)/.claude/hooks
 ```
 
@@ -294,7 +294,8 @@ log's only line as of 2026-07-09):
 ```
 
 It activates at ≥400 total reviews AND ≥50 new since last optimize. Its plist
-hardcodes `.../cache/m98/fluent/0.3.0/.claude/hooks/optimize_weights.py` and
+hardcoded `optimize_weights.py` in the cache (job retired 2026-09-16, script
+deleted in fork `09618f3` — see `nederlands-change-control`) and
 `.venv-optimizer/bin/python` — a plugin version bump silently breaks it (empty
 log growth on Sundays = check the plist path first).
 

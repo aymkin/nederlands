@@ -371,9 +371,9 @@ All numbers date-stamped 2026-07-10 and VOLATILE. Re-verify with:
   due=tomorrow: read `scripts/fluent_import.py` (MASTERY_THRESHOLD,
   `active_unit`, `advance`, `new_sr_item`).
 - Mastery ladder + quality/rating map:
-  `grep -n -A6 mastery_level ~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks/update-db.py`
+  `grep -n -A6 mastery_level ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/update-db.py`
 - Cap serving path:
-  `grep -n review_items_per_day ~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks/read-db.py`
+  `grep -n review_items_per_day ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/read-db.py`
 - Interval table: re-simulate by importing `fsrs` from the cache hooks dir and
   calling `fsrs.schedule(state, rating, date, None)` in a loop (weights None =
   DEFAULT_W; if `metadata.weights` is no longer null, re-simulate with the live
@@ -381,7 +381,5 @@ All numbers date-stamped 2026-07-10 and VOLATILE. Re-verify with:
 - Owner approvals (repoint in principle, 2026-07-09) are conversation facts:
   RE-CONFIRM with the owner at each decision gate; never treat this file as
   consent.
-- defer*dues.py behavior: test against a copy first — `cp
-  ~/.claude/fluent-data/spaced-repetition.json /tmp/x/ && python3
-  .claude/skills/fluent-backlog-campaign/scripts/defer_dues.py --prefix link_t4*
-  --days 14 --data-dir /tmp/x`
+- defer*dues.py behavior: test against a copy first —
+  `cp ~/.claude/fluent-data/spaced-repetition.json /tmp/x/ && python3 .claude/skills/fluent-backlog-campaign/scripts/defer_dues.py --prefix link_t4* --days 14 --data-dir /tmp/x`

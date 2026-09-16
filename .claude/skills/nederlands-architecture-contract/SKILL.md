@@ -71,12 +71,12 @@ truth** for all FSRS code. Upstream `m98/fluent` has no FSRS scheduler. On
 daily 09:03 `git pull` now tracks the fork and materializes FSRS instead of
 clobbering it.
 
-| Location                                    | Role                     | Authoritative for           |
-| ------------------------------------------- | ------------------------ | --------------------------- |
-| `~/Projects/fluent`                         | dev clone of the fork    | new code, commits           |
-| `~/.claude/plugins/marketplaces/m98/`       | marketplace clone (fork) | what the daily pull updates |
-| `~/.claude/plugins/cache/m98/fluent/0.3.0/` | **the runtime**          | what actually executes      |
-| `~/.claude/fluent-data/`                    | data dir (6 JSONs)       | learner state               |
+| Location                                       | Role                     | Authoritative for           |
+| ---------------------------------------------- | ------------------------ | --------------------------- |
+| `~/Projects/fluent`                            | dev clone of the fork    | new code, commits           |
+| `~/.claude/plugins/marketplaces/aymkin/`       | marketplace clone (fork) | what the daily pull updates |
+| `~/.claude/plugins/cache/aymkin/fluent/0.4.0/` | **the runtime**          | what actually executes      |
+| `~/.claude/fluent-data/`                       | data dir (6 JSONs)       | learner state               |
 
 **The topology has a deliberate quirk — verify it, never assume** (repointed and
 verified 2026-07-11):
@@ -89,8 +89,8 @@ verified 2026-07-11):
   danger is now **resolved at the source**. Config backup:
   `~/.claude/known_marketplaces.json.pre-fork-20260711-222851`.
 - The marketplace KEY stays named `m98` **on purpose** — the name is baked into
-  the cache path `cache/m98/fluent/0.3.0`, the plugin id `fluent@m98`, and the
-  optimizer plist's hardcoded path; renaming would move all three.
+  the cache path `cache/aymkin/fluent/0.4.0`, the plugin id `fluent@aymkin`, and
+  the optimizer plist's hardcoded path; renaming would move all three.
 - The dev clone (`~/Projects/fluent`, origin = `aymkin/fluent`, upstream =
   `m98/fluent`, HEAD `4205bf1`) is unchanged; it and the **cache** both contain
   the FSRS hooks.
@@ -111,18 +111,19 @@ verified 2026-07-11):
 Verify live before trusting any of the above:
 
 ```bash
-git -C ~/.claude/plugins/marketplaces/m98 remote -v      # origin = aymkin/fluent (repointed 2026-07-11)
+git -C ~/.claude/plugins/marketplaces/aymkin remote -v      # origin = aymkin/fluent (repointed 2026-07-11)
 git -C ~/Projects/fluent log -1 --format=%h              # fork dev clone
-git -C ~/.claude/plugins/marketplaces/m98 log -1 --format=%h
-ls ~/.claude/plugins/marketplaces/m98/.claude/hooks/fsrs.py   # clone now HAS FSRS
+git -C ~/.claude/plugins/marketplaces/aymkin log -1 --format=%h
+ls ~/.claude/plugins/marketplaces/aymkin/.claude/hooks/fsrs.py   # clone now HAS FSRS
 diff -rq ~/Projects/fluent/.claude/hooks \
-  ~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks
+  ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks
 # expected: only migrate_to_fsrs.py differs (dead one-time script); read-db.py + fsrs.py match (synced 2026-07-11)
 ```
 
 A version bump 0.3.0→x changes the cache path AND silently breaks the optimizer
-LaunchAgent, whose plist hardcodes
-`.../cache/m98/fluent/0.3.0/.claude/hooks/optimize_weights.py`.
+LaunchAgent, whose plist hardcoded a cache path that two renames then broke (job
+retired 2026-09-16, script deleted in fork `09618f3` — see
+`nederlands-change-control`).
 
 ## 4. item_id idempotency schemes (and their asymmetry)
 
@@ -259,8 +260,9 @@ kills story reading; everything else is offline.
    `link|de_opmaat|both`); `link_plus/woordenlijst_index.txt` is a stale
    pre-rename snapshot.
 5. CLAUDE.md drift: calls the abandoned maart*2026 plan "active"; claims `link/`
-   task dirs are `{N}*{task*name}`— disk reality is plain`taak_N`(verified`ls
-   link/thema_8`); understates `.prettierignore`(it also ignores`\*\*/verhaal*_.md`, `_\_reader.html`).
+   task dirs are `{N}*{task*name}`— disk reality is
+   plain`taak_N`(verified`ls link/thema_8`); understates `.prettierignore`(it
+   also ignores`\*\*/verhaal*_.md`, `_\_reader.html`).
 6. `scripts/README.md` says "21 passed" for the importer tests; running
    `python3 scripts/test_fluent_import.py` gives **25 passed** (verified
    2026-07-09). The README is stale — do not delete tests to match it.
@@ -296,8 +298,9 @@ print(d["metadata"].get("scheduler"), d["metadata"].get("weights"),
       {k: len(v) for k, v in d["review_queue"].items()})
 EOF
 
-CACHE=~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks
-grep -n "MIN_TOTAL\|MIN_NEW" "$CACHE/optimize_weights.py"   # optimizer guards
+CACHE=~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks
+git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py \
+  | grep -n "MIN_TOTAL\|MIN_NEW"   # optimizer guards (script retired)
 grep -n "fsrs_difficulty" "$CACHE/update-db.py"             # field mapping
 grep -n "0.3.0\|Weekday" \
   ~/Library/LaunchAgents/com.aymkin.fluent-fsrs-optimize.plist  # hardcode

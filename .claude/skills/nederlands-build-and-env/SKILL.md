@@ -178,17 +178,17 @@ manually instead of patching without change control.
 Fluent is a Claude Code plugin, forked `m98/fluent` → `aymkin/fluent`; the fork
 is the source of truth. Four locations matter:
 
-| Location                                    | Role                                                                              |
-| ------------------------------------------- | --------------------------------------------------------------------------------- |
-| `~/Projects/fluent`                         | dev clone of the fork (origin = `aymkin/fluent`) — source of truth for FSRS code  |
-| `~/.claude/plugins/marketplaces/m98/`       | marketplace clone — the **fork `aymkin/fluent`** (repointed 2026-07-11), has FSRS |
-| `~/.claude/plugins/cache/m98/fluent/0.3.0/` | **the runtime** — Claude Code executes hooks from HERE (has FSRS)                 |
-| `~/.claude/fluent-data/`                    | 6 learner JSON DBs + `.backups/` + `.venv-optimizer/`                             |
+| Location                                       | Role                                                                              |
+| ---------------------------------------------- | --------------------------------------------------------------------------------- |
+| `~/Projects/fluent`                            | dev clone of the fork (origin = `aymkin/fluent`) — source of truth for FSRS code  |
+| `~/.claude/plugins/marketplaces/aymkin/`       | marketplace clone — the **fork `aymkin/fluent`** (repointed 2026-07-11), has FSRS |
+| `~/.claude/plugins/cache/aymkin/fluent/0.4.0/` | **the runtime** — Claude Code executes hooks from HERE (has FSRS)                 |
+| `~/.claude/fluent-data/`                       | 6 learner JSON DBs + `.backups/` + `.venv-optimizer/`                             |
 
 Verify the remotes (verified 2026-07-11):
 
 ```bash
-git -C ~/.claude/plugins/marketplaces/m98 remote -v
+git -C ~/.claude/plugins/marketplaces/aymkin remote -v
 # actual: origin  https://github.com/aymkin/fluent.git  <-- the fork (repointed 2026-07-11)
 git -C ~/Projects/fluent remote -v
 # actual: origin  https://github.com/aymkin/fluent.git  <-- the fork
@@ -205,12 +205,13 @@ Traps:
 
 - **Claude executes the CACHE copy**, not the marketplace clone and not
   `~/Projects/fluent`. Hook edits must reach
-  `~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks/` or they do nothing.
-  The clone→cache sync procedure is **undocumented — known weak point** (see
-  `nederlands-architecture-contract`).
+  `~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/` or they do
+  nothing. The clone→cache sync procedure is **undocumented — known weak point**
+  (see `nederlands-architecture-contract`).
 - A version bump 0.3.0→x changes the cache path AND silently breaks the
-  optimizer LaunchAgent, whose plist **hardcodes**
-  `.../cache/m98/fluent/0.3.0/.claude/hooks/optimize_weights.py`.
+  optimizer LaunchAgent, whose plist **hardcoded** a cache path (job retired
+  2026-09-16, script deleted in fork `09618f3` — see
+  `nederlands-change-control`).
 - Post-repoint (2026-07-11) the marketplace clone and dev clone both track the
   fork; after the same-day `read-db.py` sync the cache matches the fork on all
   live hooks (only the dead `migrate_to_fsrs.py` still differs). Before the
@@ -219,7 +220,7 @@ Traps:
 
 ```bash
 git -C ~/Projects/fluent fetch && git -C ~/Projects/fluent status
-git -C ~/.claude/plugins/marketplaces/m98 log -1 --format="%h %s"
+git -C ~/.claude/plugins/marketplaces/aymkin log -1 --format="%h %s"
 git -C ~/Projects/fluent log -1 --format="%h %s"
 ```
 
@@ -231,11 +232,11 @@ The three morning jobs live as plists in a separate repo,
 `~/Library/LaunchAgents/`, substituting the literal `/Users/Alex.Naymkin` with
 `$HOME`. Keep the literal path in the committed plists.
 
-| Plist (com.aymkin.\*)  | Schedule              | Does                                                                                               |
-| ---------------------- | --------------------- | -------------------------------------------------------------------------------------------------- |
-| `claude-plugin-update` | daily 09:03           | `git pull` all marketplaces/skills, rewrite skills.lock                                            |
-| `claude-dotfiles-sync` | daily 09:04           | sync `~/.claude/` → dotfiles repo, auto-commit+push                                                |
-| `fluent-fsrs-optimize` | Sun 09:05 (Weekday 0) | optimizer venv python → cache `optimize_weights.py`, log `~/.claude/logs/fluent-fsrs-optimize.log` |
+| Plist (com.aymkin.\*)  | Schedule           | Does                                                                                        |
+| ---------------------- | ------------------ | ------------------------------------------------------------------------------------------- |
+| `claude-plugin-update` | daily 09:03        | `git pull` all marketplaces/skills, rewrite skills.lock                                     |
+| `claude-dotfiles-sync` | daily 09:04        | sync `~/.claude/` → dotfiles repo, auto-commit+push                                         |
+| `fluent-fsrs-optimize` | RETIRED 2026-09-16 | booted out; script deleted in fork `09618f3`, log `~/.claude/logs/fluent-fsrs-optimize.log` |
 
 On a new machine: clone claude-dotfiles, run its `install.sh` (backs up
 overwritten files, merges `mcp.json` into `~/.claude.json` via jq, loads
@@ -260,8 +261,8 @@ LaunchAgents). Details are that repo's own README/CLAUDE.md territory.
 | `ls "$HOME/Library/Application Support/Anki2/"`                          | contains `alex` and `iuliia`                                                                          |
 | `~/.claude/fluent-data/.venv-optimizer/bin/python --version`             | `Python 3.11.15`                                                                                      |
 | `~/.claude/fluent-data/.venv-optimizer/bin/pip list \| grep -i fsrs`     | `FSRS-Optimizer 6.5.0`                                                                                |
-| `git -C ~/.claude/plugins/marketplaces/m98 remote -v`                    | origin = `aymkin/fluent` (the fork, repointed 2026-07-11 — has FSRS); dev fork is `~/Projects/fluent` |
-| `ls ~/.claude/plugins/cache/m98/fluent/`                                 | `0.3.0` (if different: plist path is now broken)                                                      |
+| `git -C ~/.claude/plugins/marketplaces/aymkin remote -v`                 | origin = `aymkin/fluent` (the fork, repointed 2026-07-11 — has FSRS); dev fork is `~/Projects/fluent` |
+| `ls ~/.claude/plugins/cache/aymkin/fluent/`                              | `0.3.0` (if different: plist path is now broken)                                                      |
 | `plutil -p ~/Library/LaunchAgents/com.aymkin.fluent-fsrs-optimize.plist` | valid plist; Hour 9, Minute 5, Weekday 0; ProgramArguments uses the venv python + cache path          |
 | `launchctl list \| grep aymkin`                                          | three `com.aymkin.*` entries, status `0`                                                              |
 
@@ -291,7 +292,7 @@ machine. Re-verify drift-prone items with:
   `ls "$HOME/Library/Application Support/Anki2/"` and
   `grep -n "profiles\[0\]" scripts/anki_utils.py`
 - Fluent remotes / cache version / clone drift: the three git commands in Step 5
-  plus `ls ~/.claude/plugins/cache/m98/fluent/`
+  plus `ls ~/.claude/plugins/cache/aymkin/fluent/`
 - LaunchAgents:
   `plutil -p ~/Library/LaunchAgents/com.aymkin.*.plist | grep -E "Label|Hour|Minute|Weekday"`
   and `launchctl list | grep aymkin`

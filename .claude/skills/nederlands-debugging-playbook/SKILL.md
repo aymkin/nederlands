@@ -25,7 +25,7 @@ Shell idiom used throughout (the Fluent runtime lives in a versioned cache dir;
 resolve it, never hardcode):
 
 ```bash
-CACHE=$(ls -d ~/.claude/plugins/cache/m98/fluent/*/ | sort -V | tail -1)
+CACHE=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1)
 ```
 
 ## Triage index
@@ -76,9 +76,9 @@ CACHE=$(ls -d ~/.claude/plugins/cache/m98/fluent/*/ | sort -V | tail -1)
 - **Root cause:** `proseWrap: always` (printWidth 80) split single-line
   sentences across lines; the reader parsed each physical line as a sentence.
 - **Fix:** story*reader now merges continuation lines (51c5ba6), and
-  `.prettierignore` excludes
-  `\*\*/verhaal*\*.md`. If a NEW story path pattern is used, add it to `.prettierignore`
-  before formatting — do not rely on the merge heuristic.
+  `.prettierignore` excludes `\*\*/verhaal*\*.md`. If a NEW story path pattern
+  is used, add it to `.prettierignore` before formatting — do not rely on the
+  merge heuristic.
 - **Story:** commit 51c5ba6 "Make story_reader resilient to Prettier-wrapped
   markdown".
 
@@ -166,9 +166,11 @@ CACHE=$(ls -d ~/.claude/plugins/cache/m98/fluent/*/ | sort -V | tail -1)
   ```
 
 - **Root cause:** grammar item*ids are POSITIONAL —
-  `{prefix}gram*{module*num}*{idx}` (`fluent*import.py:157`), where `idx`is the ordinal of the`**bold**`example under the module. Inserting, deleting, or reordering bold examples in`grammatica_thema{NN}*\*.md`after import shifts`idx`:
-  re-import then seeds NEW ids while the old scheduled cards keep their
-  (now-unmatched) content — orphans with live intervals.
+  `{prefix}gram*{module*num}*{idx}` (`fluent*import.py:157`), where `idx`is the
+  ordinal of the`**bold**`example under the module. Inserting, deleting, or
+  reordering bold examples in`grammatica_thema{NN}*\*.md`after import
+  shifts`idx`: re-import then seeds NEW ids while the old scheduled cards keep
+  their (now-unmatched) content — orphans with live intervals.
 - **Fix:** finish grammar edits BEFORE first import of that thema. If the file
   was already imported, appending new examples at the END of a module is safe
   (existing idx unchanged); anything else goes through
@@ -311,7 +313,7 @@ Contract (verified in `$CACHE/.claude/hooks/update-db.py`, 2026-07-09):
 - **Fix:** resolve the runtime path yourself, version-agnostically:
 
   ```bash
-  CACHE=$(ls -d ~/.claude/plugins/cache/m98/fluent/*/ | sort -V | tail -1)
+  CACHE=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1)
   python3 "$CACHE/.claude/hooks/read-db.py" | head -c 200
   ```
 
@@ -320,9 +322,9 @@ Contract (verified in `$CACHE/.claude/hooks/update-db.py`, 2026-07-09):
 
 ### 19. Weekly optimizer "did nothing" — log says no-op
 
-- **This is NORMAL, not a bug.** Guards (verified
-  `$CACHE/.claude/hooks/optimize_weights.py:14-15`): `MIN_TOTAL = 400` reviews
-  AND `MIN_NEW = 50` since last optimize, counted PER-ITEM (trap 9).
+- **This is NORMAL, not a bug.** Guards (verified `optimize_weights.py:14-15`,
+  retired — read it via `git show 09618f3^`): `MIN_TOTAL = 400` reviews AND
+  `MIN_NEW = 50` since last optimize, counted PER-ITEM (trap 9).
 - **First check:** `tail -3 ~/.claude/logs/fluent-fsrs-optimize.log` — expected
   line shape: `[optimize] insufficient data (185/400, +185 new) — no-op`.
 - **Only investigate if:** the log shows an exception/traceback, or the per-item
@@ -333,9 +335,9 @@ Contract (verified in `$CACHE/.claude/hooks/update-db.py`, 2026-07-09):
 ### 20. Edited a Fluent hook, behavior didn't change
 
 - **Root cause:** Claude Code executes hooks from the CACHE
-  (`~/.claude/plugins/cache/m98/fluent/<version>/.claude/hooks/`), not from the
-  dev clone (`~/Projects/fluent`) or the marketplace clone
-  (`~/.claude/plugins/marketplaces/m98`). Editing a clone changes nothing at
+  (`~/.claude/plugins/cache/aymkin/fluent/<version>/.claude/hooks/`), not from
+  the dev clone (`~/Projects/fluent`) or the marketplace clone
+  (`~/.claude/plugins/marketplaces/aymkin`). Editing a clone changes nothing at
   runtime until synced to the cache. The clone→cache sync procedure is
   UNDOCUMENTED (known weak point) — verify state, don't assume.
 - **Discriminating experiment:** diff the file you edited against the runtime
@@ -350,7 +352,7 @@ Contract (verified in `$CACHE/.claude/hooks/update-db.py`, 2026-07-09):
   cache — direction unverified; verify live before copying either way, and check
   clone sync too:
   `git -C ~/Projects/fluent fetch && git -C ~/Projects/fluent status` vs
-  `git -C ~/.claude/plugins/marketplaces/m98 log -1`.
+  `git -C ~/.claude/plugins/marketplaces/aymkin log -1`.
 
 - **Fix:** land the change in the fork (`aymkin/fluent`) first, then sync to
   cache; raw cache edits get silently clobbered by plugin updates. Route via
@@ -375,8 +377,8 @@ All claims verified 2026-07-09 against disk/git. Re-verify before trusting:
   `grep -n 'spaced_repetition' "$CACHE/.claude/hooks/read-db.py"`
 - update-db exit codes: `grep -n 'sys.exit' "$CACHE/.claude/hooks/update-db.py"`
 - Optimizer guards:
-  `grep -n 'MIN_TOTAL\|MIN_NEW' "$CACHE/.claude/hooks/optimize_weights.py"` and
-  `tail ~/.claude/logs/fluent-fsrs-optimize.log`
+  `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py | grep -n 'MIN_TOTAL\|MIN_NEW'`
+  and `tail ~/.claude/logs/fluent-fsrs-optimize.log`
 - CLAUDE_PLUGIN_ROOT: `printenv CLAUDE_PLUGIN_ROOT; echo $?`
 - format:check behavior: `pnpm run format:check` and read the `[warn]` list
 - Clone/cache drift: `diff -q` commands in trap 20 (state was CONFLICTING across
