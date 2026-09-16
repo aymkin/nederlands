@@ -538,3 +538,31 @@ thema_8 — 42 карточки | mastery≥3: 38/42 (90.5%) | красных: 0
 cd scripts && python3 test_fluent_import.py
 # Ожидается: 21 passed
 ```
+
+---
+
+## anki_vandaag.py — мостик Anki → Fluent
+
+Выписывает слова, чьи карточки получили **первое** повторение в заданный день
+(по умолчанию сегодня, с учётом суточного рубежа Anki в 04:00). Работает с
+копией `collection.anki2`, поэтому открытый Anki не мешает; в коллекцию ничего
+не пишет. Только stdlib.
+
+```bash
+python3 scripts/anki_vandaag.py                                  # сегодня, note type "Frequentie NL"
+python3 scripts/anki_vandaag.py --date 2026-06-30 --notetype "LINK Vocabulary"
+python3 scripts/anki_vandaag.py --all --out private/frequentie/vandaag.md
+```
+
+| Флаг         | Описание                               | По умолчанию          |
+| ------------ | -------------------------------------- | --------------------- |
+| `--date`     | День `YYYY-MM-DD`                      | сегодня (рубеж 04:00) |
+| `--notetype` | Тип заметок, можно несколько раз       | `Frequentie NL`       |
+| `--all`      | Все типы заметок                       | выкл                  |
+| `--profile`  | Профиль Anki                           | первый найденный      |
+| `--out`      | Дополнительно записать markdown в файл | —                     |
+
+Зачем: утренняя сессия Anki по частотной колоде (`frequentie/`), затем
+`/fluent-review` строит грамматические упражнения на этих словах. Слова в
+Fluent-SRS не заводятся — их интервалы ведёт Anki. Дневной цикл описан в
+`frequentie/README.md`.

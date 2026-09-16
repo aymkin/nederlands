@@ -53,6 +53,9 @@ daily/              # Daily practice and study planning
     controle/       #     Baseline and monthly progress measurements
   archive/          #   Old daily practice files (pre-maart_2026)
   dutch_stories/    #   Dutch story subtitles and transcripts
+  frequentie_2026/  #   Frequency-core plan 14.09–13.12.2026 (single plan.md, no templates)
+frequentie/         # Frequency-core Anki deck for Alex (note type "Frequentie NL", RU→NL) + README
+grammatica/         # Alex's grammar track (leading since 2026-09-16): regels/ = Link+ rule extracts + README
 other/              # Learning methodology notes and analysis
   language_learning_methods/  # Evgeniy 6-step, Alisher immersion, comparisons
 scripts/            # Automation utilities (audio_to_anki.py, text_to_speech.py, etc.)
@@ -198,6 +201,56 @@ at least one card recycles too little.
 python3 scripts/build_vocab_index.py --course link_plus
 python3 scripts/check_recycling.py link/thema_13/taak_1/woordenlijst_thema13_taak1_anki.txt
 ```
+
+### anki_vandaag.py — Anki → Fluent Bridge (frequentie)
+
+Prints the words whose Anki cards got their **first** review on a given day
+(default today, Anki's 04:00 rollover respected). Reads a copy of
+`collection.anki2`, never writes. Stdlib only. Feeds the "Frequentie bridge"
+rule in Tutor Mode; deck spec and daily cycle in `frequentie/README.md`.
+
+```bash
+python3 scripts/anki_vandaag.py --out private/frequentie/vandaag.md
+python3 scripts/anki_vandaag.py --date 2026-06-30 --notetype "LINK Vocabulary"
+```
+
+### frequentie_fluent.py — Fluent под частотный план
+
+Разделение труда: **Anki держит слова, Fluent — предложения** на этих словах
+плюс собственные ошибки Alex. Одно слово в одном SRS, не в двух.
+
+```bash
+python3 scripts/frequentie_fluent.py --reset                    # только error_pattern, история обнулена
+python3 scripts/frequentie_fluent.py --zinnen private/frequentie/vandaag.md
+python3 scripts/frequentie_fluent.py --zinnen … --dry-run       # отчёт без записи
+```
+
+Предложения дня заводятся с приоритетом `critical`: `read-db.py --review`
+сортирует по приоритету и режет по `daily_limits.review_items_per_day`, поэтому
+всё, что ниже среза, не подаётся вообще. Бэкап в
+`.backups/pre-frequentie-<режим>-<timestamp>/` перед каждой записью.
+
+### grammatica_fluent.py — грамматический трек в Fluent
+
+Заводит правила из `grammatica/regels/` как `grammar_rule` (`gram_lp_1.1`), **по
+одной карточке на правило** — чтобы у каждого правила копилась своя
+`review_history`, то есть число попыток. Без знаменателя «ошибся 7 раз» ничего
+не значит; `mistakes-db` его не даёт, а карточка на правило даёт.
+
+```bash
+python3 scripts/grammatica_fluent.py --regels grammatica/regels --per-dag 2 --dry-run
+python3 scripts/grammatica_fluent.py --regels grammatica/regels --per-dag 2
+```
+
+Fluent не настраивается — **расписание и объём живут в базе**: `--per-dag`
+раскладывает `due_date` по рабочим дням (воскресенье пропускается),
+`rebuild_queue` бакетит по `due_date`, `daily_limits` режет по объёму. Правка
+скилла в кэше плагина запрещена: её затрёт пересборка, и она обязана идти через
+форк. Идемпотентно — уже заведённое правило не трогается.
+
+`VOORRANG` поднимает `7.1`/`7.2` в начало: `1.1` и `4.1` ссылаются на них
+вперёд, после перестановки ссылок вперёд ноль (`grammatica/README.md`). Бэкап —
+тем же `save()`, что у `frequentie_fluent.py`.
 
 ### fluent_import.py — Curriculum → Fluent Bridge
 
@@ -360,6 +413,45 @@ conversational practice), follow these rules:
 4. **3 примера** — из реальных ситуаций (формальная, бытовая, профессиональная),
    на нидерландском с переводом на русский
 5. **Проверка** — спроси, всё ли понятно или нужны дополнения
+
+### Grammatica-traject (Alex, ведущий трек с 2026-09-16)
+
+- **Грамматика ведущая, слова нанизываются.** Правила лежат в Fluent как
+  `grammar_rule` с `item_id` вида `gram_lp_1.1`; свод — `grammatica/regels/`,
+  спецификация — `grammatica/README.md`.
+- Упражнение строится **на правиле дня**, а наполнение берётся из слов в
+  `private/frequentie/vandaag.md`. Правило — единственная трудность в задании.
+- **Держи ступень задания низкой.** Порядок возрастания: (1) пропуск в готовом
+  предложении, (2) найти и исправить одну ошибку, (3) своя фраза до 6 слов в
+  одну часть, (4) фраза с вынесенным вперёд обстоятельством, (5) две части с
+  союзом. Рабочая ступень Alex — 3. Ступень 5 давать не чаще раза в неделю и как
+  замер, не как тренировку.
+- Причина правила: 2026-09-15 упражнения строились сразу на ступени 5, каждое
+  требовало до 11 решений при одном проверяемом — Alex остановил сессию на 18-м
+  задании из 30. Подробности в `daily/frequentie_2026/plan.md`, раздел 5.
+- **Предложения выдумывать из его жизни**, не абстрактные: код, файлы, коллеги,
+  дорога, Hilversum. Проверено там же: искусственная ситуация не сцепляется.
+- Если Alex пишет «угадал» или «не уверен» — ставить `quality: 3`, не 5.
+  Угаданная пятёрка уводит карточку на недели и ломает расписание.
+
+### Frequentie bridge (Fluent sessions for Alex)
+
+- Перед `/fluent-review` (и любой Fluent-сессией для Alex) прочитай
+  `private/frequentie/vandaag.md`, если он датирован сегодня. Это слова, которые
+  Alex утром ввёл в Anki по частотной колоде (`frequentie/`).
+- Упражнения на `grammar_rule` строй **на этих словах**: они попадают в
+  предложения на инверсию, `omdat`-порядок, perfectum и т.д.
+- Упражнения на `error_pattern` — тоже: сама ошибка задана карточкой, но
+  предложение-носитель свободно, и брать для него надо слова дня. Правило про
+  спойлер остаётся: верную форму разбираемой ошибки в формулировку не выносить.
+- `vocabulary`-карточки **не трогай**: они проверяют собственное слово, подмена
+  ломает то, что они измеряют. Считай, что мост покрывает два типа из трёх.
+- Раздел «Al bekend» в файле — слова, которые Alex уже знает. Это опора: из них
+  строй остаток предложения, чтобы новое слово было единственной трудностью.
+- **Не** заводи их в `new_vocabulary[]` — их интервалы ведёт Anki; второй SRS на
+  то же слово — двойная работа без прибавки (Mondria & Wiersma 2004).
+- Файла нет или он вчерашний — работай как обычно, слова не выдумывай. Обновить:
+  `python3 scripts/anki_vandaag.py --out private/frequentie/vandaag.md`.
 
 ### Content Generation (Anki cards, reading texts)
 

@@ -1,0 +1,27 @@
+#separator:tab
+#html:true
+#notetype:Frequentie NL
+#deck:Frequentie::Kern
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+misschien	132	Misschien komt hij morgen.	может быть, возможно	Может быть, он придёт завтра.	[sound:freq_misschien.mp3]	frequentie::kern::0001-0100
+omdat	116	Ik blijf thuis omdat ik ziek ben.	потому что (глагол в конец)	Я остаюсь дома, потому что болен.	[sound:freq_omdat.mp3]	frequentie::kern::0001-0100
+lijken	171	Hij lijkt moe vandaag.	казаться, выглядеть	Он сегодня кажется усталым.	[sound:freq_lijken.mp3]	frequentie::kern::0001-0100
+de zaak	203	Dat is mijn zaak, niet die van jou.	дело; фирма	Это моё дело, а не твоё.	[sound:freq_zaak.mp3]	frequentie::kern::0001-0100
+het meisje	200	Het meisje speelt buiten.	девочка	Девочка играет на улице.	[sound:freq_meisje.mp3]	frequentie::kern::0001-0100
+meneer	481	Dag meneer Jansen, hoe gaat het?	господин (обращение)	Здравствуйте, господин Янсен, как дела?	[sound:freq_meneer.mp3]	frequentie::kern::0001-0100
+sterven	333	Zijn opa is vorig jaar gestorven.	умирать	Его дедушка умер в прошлом году.	[sound:freq_sterven.mp3]	frequentie::kern::0001-0100
+zelf	185	Dat heb ik zelf gedaan.	сам	Это я сделал сам.	[sound:freq_zelf.mp3]	frequentie::kern::0001-0100
+noemen	212	Ze noemen hun zoon Thomas.	называть (давать имя)	Они называют своего сына Томасом.	[sound:freq_noemen.mp3]	frequentie::kern::0001-0100
+de zoon	272	Hun zoon woont in Utrecht.	сын	Их сын живёт в Утрехте.	[sound:freq_zoon.mp3]	frequentie::kern::0001-0100
+hoeven	312	Je hoeft niet te komen.	быть нужным (в отрицании: не надо)	Тебе не нужно приходить.	[sound:freq_hoeven.mp3]	frequentie::kern::0001-0100
+alsof	351	Hij doet alsof hij alles weet.	как будто	Он делает вид, будто всё знает.	[sound:freq_alsof.mp3]	frequentie::kern::0001-0100
+raken	290	De bal raakte het raam.	попасть, задеть	Мяч попал в окно.	[sound:freq_raken.mp3]	frequentie::kern::0001-0100
+verliezen	287	We hebben de wedstrijd verloren.	проигрывать; терять	Мы проиграли матч.	[sound:freq_verliezen.mp3]	frequentie::kern::0001-0100
+de orde	331	Alles is in orde.	порядок	Всё в порядке.	[sound:freq_orde.mp3]	frequentie::kern::0001-0100
+de minuut	283	Wacht een minuut.	минута	Подожди минуту.	[sound:freq_minuut.mp3]	frequentie::kern::0001-0100
+de kans	278	Je krijgt nog een kans.	шанс, возможность	Ты получишь ещё один шанс.	[sound:freq_kans.mp3]	frequentie::kern::0001-0100
+slaan	326	Sla de hond niet.	бить, ударять	Не бей собаку.	[sound:freq_slaan.mp3]	frequentie::kern::0001-0100
+soms	274	Soms werk ik thuis.	иногда	Иногда я работаю дома.	[sound:freq_soms.mp3]	frequentie::kern::0001-0100
+vallen	244	Pas op, je laat het vallen.	падать	Осторожно, ты его уронишь.	[sound:freq_vallen.mp3]	frequentie::kern::0001-0100
+vertrouwen	384	Ik vertrouw je.	доверять	Я тебе доверяю.	[sound:freq_vertrouwen.mp3]	frequentie::kern::0001-0100
