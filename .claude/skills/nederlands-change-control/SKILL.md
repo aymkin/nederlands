@@ -101,11 +101,12 @@ not Alex's.
 ### 4. Edit grammar files BEFORE importing, never after
 
 Grammar item*ids are **positional**: `scripts/fluent_import.py:157` builds
-`item_id =
-f"{prefix}gram*{sec['num']}\_{idx}"`where`idx`is the bullet's index under`###
-Voorbeelden uit
-oefeningen`. Inserting, deleting, or reordering `**bold**`examples in an already-imported grammatica file makes re-import mint new ids and orphans the learner's scheduled cards. Also never renumber the`##
-N.N`H2 module numbers — they are the Link book's own numbering, consumed by`curriculum.json`.
+`item_id = f"{prefix}gram*{sec['num']}\_{idx}"`where`idx`is the bullet's index
+under`### Voorbeelden uit oefeningen`. Inserting, deleting, or reordering
+`**bold**`examples in an already-imported grammatica file makes re-import mint
+new ids and orphans the learner's scheduled cards. Also never renumber
+the`## N.N`H2 module numbers — they are the Link book's own numbering, consumed
+by`curriculum.json`.
 
 Sequence: edit grammatica md → THEN
 `python3 scripts/fluent_import.py --course link --thema N`.
@@ -159,56 +160,55 @@ after cards rendered raw markup.
 
 Fluent is a forked Claude Code plugin. Three code locations + one data dir:
 
-| Location                                    | Role                                                                                                                        |
-| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| `~/Projects/fluent`                         | dev clone of the fork — **source of truth** (origin = `aymkin/fluent`, upstream = `m98/fluent`)                             |
-| `~/.claude/plugins/marketplaces/m98/`       | marketplace clone (the fork since 2026-07-11), `git pull`ed daily at 09:03 by LaunchAgent `com.aymkin.claude-plugin-update` |
-| `~/.claude/plugins/cache/m98/fluent/0.3.0/` | **the runtime** — Claude Code executes hooks from HERE                                                                      |
-| `~/.claude/fluent-data/`                    | learner data (see backup table above)                                                                                       |
+| Location                                       | Role                                                                                                                             |
+| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `~/Projects/fluent`                            | dev clone of the fork — **where you edit** (origin = `aymkin/fluent`, upstream = `m98/fluent`)                                   |
+| `~/.claude/plugins/marketplaces/aymkin/`       | marketplace clone — **source of truth on rebuild**, `git pull`ed daily at 09:03 by LaunchAgent `com.aymkin.claude-plugin-update` |
+| `~/.claude/plugins/cache/aymkin/fluent/0.4.0/` | **the runtime** — Claude Code executes hooks and reads skills from HERE                                                          |
+| `~/.claude/fluent-data/`                       | learner data (see backup table above)                                                                                            |
 
-As of 2026-07-11 (verify live):
+As of 2026-09-16 (verify live):
 
-- The marketplace clone's `origin` was **repointed to the fork `aymkin/fluent`**
-  on 2026-07-11 (`known_marketplaces.json` key `m98` → `source.repo` =
-  `aymkin/fluent`; config backup
-  `~/.claude/known_marketplaces.json.pre-fork-20260711-222851`), and its
-  `.claude/hooks/` now contains `fsrs.py`, `migrate_to_fsrs.py`, and
-  `optimize_weights.py`. The marketplace KEY stays named `m98` on purpose —
-  renaming would move the cache path, the plugin id `fluent@m98`, and the
-  optimizer plist's hardcoded path. Before the repoint the clone tracked
-  upstream `m98/fluent` (`86fb80f`, 2026-06-15) with no FSRS hooks. Verify:
+- The marketplace key is **`aymkin`**, not `m98`. It was `m98` until the fork
+  became its own marketplace (2026-07-15, fluent commit `3c1c6b0`); the rename
+  moved both the clone path and the cache path, and the plugin id is now
+  `fluent@aymkin`. Anything still naming `m98` is pre-rename.
 
 ```bash
-git -C ~/.claude/plugins/marketplaces/m98 remote -v
-git -C ~/.claude/plugins/marketplaces/m98 log -1 --format='%h %ad %s' --date=short
+git -C ~/.claude/plugins/marketplaces/aymkin remote -v
+git -C ~/.claude/plugins/marketplaces/aymkin log -1 --format='%h %ad %s' --date=short
 git -C ~/Projects/fluent log -1 --format='%h %ad %s' --date=short
-diff -rq ~/Projects/fluent/.claude/hooks \
-  ~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks
+diff -rq ~/Projects/fluent/.claude/skills \
+  ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/skills
 ```
 
-- Consequence: the daily 09:03 pull now tracks the FORK, so a cache rebuild
-  materializes FSRS instead of reverting it — the old SM-2-reversion risk is
-  **closed at the source**. The fork→cache sync procedure is still a manual,
-  undocumented copy (open weak point, but **no longer dangerous** — both clone
-  and cache carry FSRS): after the 2026-07-11 `read-db.py` sync the only
-  cache↔fork drift is the dead one-time `migrate_to_fsrs.py` (`read-db.py` +
-  `fsrs.py` match). After ANY hook edit in the fork, run the `diff -rq` above
-  and reconcile before trusting a session.
-- New tradeoff: upstream `m98` fixes are **no longer auto-tracked**. Merge them
-  into the fork by hand —
+- **Three layers, not two — and the clone is the one that wins.** The cache is
+  materialized from the marketplace clone, so an edit synced fork→cache lives
+  only until the next rebuild (`/plugin update`, reinstall, version bump), which
+  silently restores whatever the clone holds. A fork commit that is not pushed
+  is therefore a temporary edit: the session runs on it today and reverts later,
+  with no error. Verified 2026-09-16 while auditing the session skills — the
+  cache carried the new text while the clone still held the old.
+- Change order for ANY edit under `.claude/` in the fork: edit in
+  `~/Projects/fluent` → commit → **push** → `git -C …/marketplaces/aymkin pull`
+  → copy the changed files into the cache → verify fork == clone == cache per
+  file → only then run a Fluent session. Skipping the push or the clone pull is
+  what makes the edit temporary.
+- Upstream `m98` fixes are **not auto-tracked**. Merge them by hand —
   `git -C ~/Projects/fluent fetch upstream && git merge upstream/main` — then
   push.
-- **Version-bump risk:** the optimizer LaunchAgent
-  `~/Library/LaunchAgents/com.aymkin.fluent-fsrs-optimize.plist` hardcodes
-  `…/plugins/cache/m98/fluent/0.3.0/.claude/hooks/optimize_weights.py` (verified
-  via `plutil -p`, 2026-07-09). A plugin version bump changes the cache path and
-  silently breaks the weekly optimizer. Any version bump must include a plist
-  update. The optimizer's dependency already broke once on an API change — fork
-  commit `133308c` adapted `train()` to fsrs-optimizer 6.5.0; expect breakage
-  again on pip upgrades.
-- Change order for hook edits: edit in `~/Projects/fluent` → commit there (fork
-  repo, its own history) → sync to cache → verify with `diff -rq` → only then
-  run a Fluent session.
+- **Version-bump risk — this one FIRED.** The optimizer LaunchAgent
+  `~/Library/LaunchAgents/com.aymkin.fluent-fsrs-optimize.plist` hardcodes the
+  cache path, and still points at
+  `…/cache/m98/fluent/0.3.0/.claude/hooks/ optimize_weights.py`, which no longer
+  exists. The weekly run (Sunday 09:05) has failed **9 times** with
+  `[Errno 2] No such file or directory`
+  (`~/.claude/logs/fluent-fsrs-optimize.log`, last 2026-09-13). Impact so far is
+  nil — the optimizer no-ops below 400 reviews and the history holds 17 — but it
+  fails silently, so it will still be broken when the data arrives. Fix is a
+  one-line plist path; any future version bump must update it in the same
+  change. Related: the dependency broke once on an API change already (fork
+  `133308c`, fsrs-optimizer 6.5.0) — expect it again on pip upgrades.
 
 ## The uncommitted working tree (as of 2026-07-09)
 
@@ -248,22 +248,22 @@ or discard) — never mixed with real changes.
 All claims verified 2026-07-09 against the working tree and live machine.
 Re-verify before relying:
 
-| Claim                              | Command                                                                                                                        |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| Pages deploys whole repo on push   | `cat .github/workflows/pages.yml`                                                                                              |
-| /commit format + confirmation step | `cat .claude/commands/commit.md`                                                                                               |
-| Voldemort scrub incident           | `git show 5be6931 --stat`                                                                                                      |
-| Importer backup hardening          | `git show a88b1ff --stat`                                                                                                      |
-| fsrs_difficulty collision          | `git show 350de1a --stat; git -C ~/Projects/fluent show 44fb945 --stat`                                                        |
-| link/→link_plus rename             | `git show 78f07e9 --stat`                                                                                                      |
-| html:true unification              | `git show 8cd356c --stat`                                                                                                      |
-| Positional grammar item_id         | `grep -n 'gram_' scripts/fluent_import.py`                                                                                     |
-| write_sr backup + atomic tmp       | `sed -n '237,246p' scripts/fluent_import.py`                                                                                   |
-| Backup dir patterns on disk        | `ls ~/.claude/fluent-data/.backups/ \| sort -u`                                                                                |
-| Marketplace clone remote/HEAD      | `git -C ~/.claude/plugins/marketplaces/m98 remote -v && git -C ~/.claude/plugins/marketplaces/m98 log -1`                      |
-| Fork↔cache hook drift              | `diff -rq ~/Projects/fluent/.claude/hooks ~/.claude/plugins/cache/m98/fluent/0.3.0/.claude/hooks`                              |
-| Optimizer plist hardcoded path     | `plutil -p ~/Library/LaunchAgents/com.aymkin.fluent-fsrs-optimize.plist`                                                       |
-| Working-tree census (volatile)     | `git status --porcelain \| awk '{print $1}' \| sort \| uniq -c`                                                                |
-| Test count (25, README stale)      | `python3 scripts/test_fluent_import.py`                                                                                        |
-| One active curriculum unit         | `python3 -c "import json;print([u['id'] for u in json.load(open('link/curriculum.json'))['units'] if u['status']=='active'])"` |
-| Dead study plans exist             | `ls daily/maart_2026 daily/april_2026; git show e379c80 --stat`                                                                |
+| Claim                              | Command                                                                                                                                                       |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pages deploys whole repo on push   | `cat .github/workflows/pages.yml`                                                                                                                             |
+| /commit format + confirmation step | `cat .claude/commands/commit.md`                                                                                                                              |
+| Voldemort scrub incident           | `git show 5be6931 --stat`                                                                                                                                     |
+| Importer backup hardening          | `git show a88b1ff --stat`                                                                                                                                     |
+| fsrs_difficulty collision          | `git show 350de1a --stat; git -C ~/Projects/fluent show 44fb945 --stat`                                                                                       |
+| link/→link_plus rename             | `git show 78f07e9 --stat`                                                                                                                                     |
+| html:true unification              | `git show 8cd356c --stat`                                                                                                                                     |
+| Positional grammar item_id         | `grep -n 'gram_' scripts/fluent_import.py`                                                                                                                    |
+| write_sr backup + atomic tmp       | `sed -n '237,246p' scripts/fluent_import.py`                                                                                                                  |
+| Backup dir patterns on disk        | `ls ~/.claude/fluent-data/.backups/ \| sort -u`                                                                                                               |
+| Marketplace clone remote/HEAD      | `git -C ~/.claude/plugins/marketplaces/aymkin remote -v && git -C ~/.claude/plugins/marketplaces/aymkin log -1`                                               |
+| Fork↔clone↔cache drift             | `diff -rq ~/Projects/fluent/.claude ~/.claude/plugins/marketplaces/aymkin/.claude` and the same against `~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude` |
+| Optimizer plist path (BROKEN)      | `plutil -p ~/Library/LaunchAgents/com.aymkin.fluent-fsrs-optimize.plist; tail -3 ~/.claude/logs/fluent-fsrs-optimize.log`                                     |
+| Working-tree census (volatile)     | `git status --porcelain \| awk '{print $1}' \| sort \| uniq -c`                                                                                               |
+| Test count (25, README stale)      | `python3 scripts/test_fluent_import.py`                                                                                                                       |
+| One active curriculum unit         | `python3 -c "import json;print([u['id'] for u in json.load(open('link/curriculum.json'))['units'] if u['status']=='active'])"`                                |
+| Dead study plans exist             | `ls daily/maart_2026 daily/april_2026; git show e379c80 --stat`                                                                                               |
