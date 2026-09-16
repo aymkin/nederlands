@@ -50,7 +50,7 @@ CACHE=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1)
 | 16  | `--update-anki` destroyed columns in an anki file          | TTS        |
 | 17  | TTS audio silently missing paragraphs                      | TTS        |
 | 18  | `$CLAUDE_PLUGIN_ROOT` is empty in Bash                     | Fluent env |
-| 19  | Weekly optimizer "did nothing"                             | Fluent     |
+| 19  | Weekly optimizer "did nothing" (retired)                   | Fluent     |
 | 20  | Edited a Fluent hook; behavior unchanged                   | Fluent     |
 
 ## Reader / alignment
@@ -317,20 +317,19 @@ Contract (verified in `$CACHE/.claude/hooks/update-db.py`, 2026-07-09):
   python3 "$CACHE/.claude/hooks/read-db.py" | head -c 200
   ```
 
-  Never hardcode `0.3.0` in new scripts or settings — a version bump changes the
-  path (the optimizer LaunchAgent plist already hardcodes it; known weak point).
+  Never hardcode a version in new scripts or settings — a bump changes the path.
+  The one place that did, the optimizer plist, failed silently for nine weeks
+  (archaeology 12).
 
-### 19. Weekly optimizer "did nothing" — log says no-op
+### 19. Weekly optimizer "did nothing" — cannot happen any more
 
-- **This is NORMAL, not a bug.** Guards (verified `optimize_weights.py:14-15`,
-  retired — read it via `git show 09618f3^`): `MIN_TOTAL = 400` reviews AND
-  `MIN_NEW = 50` since last optimize, counted PER-ITEM (trap 9).
-- **First check:** `tail -3 ~/.claude/logs/fluent-fsrs-optimize.log` — expected
-  line shape: `[optimize] insufficient data (185/400, +185 new) — no-op`.
-- **Only investigate if:** the log shows an exception/traceback, or the per-item
-  review sum is ≥400 with ≥50 new and it STILL no-ops. Until then
-  `weights: null` in spaced-repetition metadata (hook uses DEFAULT_W) is the
-  correct steady state.
+- **The job is retired** (2026-09-16, archaeology 12). `optimize_weights.py` was
+  deleted from the plugin in fork `09618f3`, and the LaunchAgent was booted out
+  after failing nine Sundays with `[Errno 2]`. Nothing runs on a schedule.
+- `metadata.weights: null` is the permanent, correct state — `fsrs.py` uses
+  `DEFAULT_W`, which is what ran even while the optimizer existed.
+- `~/.claude/logs/fluent-fsrs-optimize.log` no longer grows. If it does,
+  something re-created the job — that is the bug.
 
 ### 20. Edited a Fluent hook, behavior didn't change
 
@@ -376,9 +375,8 @@ All claims verified 2026-07-09 against disk/git. Re-verify before trusting:
 - read-db underscore keys:
   `grep -n 'spaced_repetition' "$CACHE/.claude/hooks/read-db.py"`
 - update-db exit codes: `grep -n 'sys.exit' "$CACHE/.claude/hooks/update-db.py"`
-- Optimizer guards:
-  `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py | grep -n 'MIN_TOTAL\|MIN_NEW'`
-  and `tail ~/.claude/logs/fluent-fsrs-optimize.log`
+- Optimizer guards: `launchctl list | grep fluent-fsrs` — expect no output (job
+  retired)
 - CLAUDE_PLUGIN_ROOT: `printenv CLAUDE_PLUGIN_ROOT; echo $?`
 - format:check behavior: `pnpm run format:check` and read the `[warn]` list
 - Clone/cache drift: `diff -q` commands in trap 20 (state was CONFLICTING across

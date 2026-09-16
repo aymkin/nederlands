@@ -122,7 +122,6 @@ that does not appear in this table, stop — you are off-process.
 | `scripts/fluent_import.py` (`write_sr`)   | `pre-import-<YYYY-MM-DD-HHMMSS>/`        |
 | plugin hook `update-db.py` (`backup_all`) | `pre-update-session-NNN/`                |
 | plugin hook `migrate_to_fsrs.py`          | `pre-migrate-fsrs-<ISO timestamp>/`      |
-| plugin hook `optimize_weights.py`         | `pre-optimize-<YYYY-MM-DD>/`             |
 | plugin hook `session-end.py` (daily)      | `<YYYYMMDD>/`                            |
 | plugin hook `precompact-backup.sh`        | `precompact/` (overwritten each compact) |
 
@@ -197,31 +196,16 @@ diff -rq ~/Projects/fluent/.claude/skills \
 - Upstream `m98` fixes are **not auto-tracked**. Merge them by hand —
   `git -C ~/Projects/fluent fetch upstream && git merge upstream/main` — then
   push.
-- **The optimizer LaunchAgent was a zombie — retired 2026-09-16.**
-  `~/Library/LaunchAgents/com.aymkin.fluent-fsrs-optimize.plist` fired every
-  Sunday 09:05 against a hardcoded cache path and failed 9 times running with
-  `[Errno 2] No such file or directory`
-  (`~/.claude/logs/fluent-fsrs-optimize.log`, last failure 2026-09-13). Two
-  separate causes stacked: the marketplace rename moved the cache path, and then
-  fork commit `09618f3` (2026-08-17) **deleted `optimize_weights.py` outright**.
-  That commit justified the deletion as "weekly FSRS-6 weight optimizer that
-  nothing schedules (no hook, no cron, no skill)" — true of the repo, false of
-  the machine, because nobody looked in `~/Library/LaunchAgents`. Repairing the
-  path would have resurrected a job whose script is deliberately gone, so the
-  job was booted out and the plist renamed aside (two backups kept beside it).
-  Impact was nil throughout: the optimizer no-ops below 400 reviews and the
-  history holds 17.
-- **Lesson for any "nothing calls this" deletion:** grep the repo AND
-  `launchctl list` plus `~/Library/LaunchAgents`. A scheduler outside the
-  repository is invisible to every in-repo search, and its failures land in a
-  log nobody reads.
-- **Hardcoded runtime paths rot silently.** Both the version (`0.3.0` → `0.4.0`)
-  and the marketplace key (`m98` → `aymkin`) have moved since the plist was
-  written. Anything outside the repo that points into `~/.claude/plugins/cache/`
-  must resolve the path
-  (`ls -d ~/.claude/plugins/cache/*/fluent/*/.claude/hooks | sort -V | tail -1`)
-  rather than name it. The dependency has also broken on an API change before
-  (fork `133308c`, fsrs-optimizer 6.5.0).
+- **Two rules the optimizer zombie produced** (the incident itself is
+  `nederlands-failure-archaeology` 12 — a weekly LaunchAgent that failed nine
+  Sundays into a log nobody read):
+  - Before deleting code "nothing calls", search the **machine** as well as the
+    repo — `launchctl list`, `~/Library/LaunchAgents`, crontab. The deletion
+    commit that started it claimed "no hook, no cron, no skill", which was true
+    of the repository and false of the machine.
+  - Anything outside the repo that points into `~/.claude/plugins/cache/` must
+    resolve the path, never name it. Both the version and the marketplace key
+    have moved once already.
 
 ## The uncommitted working tree (as of 2026-07-09)
 

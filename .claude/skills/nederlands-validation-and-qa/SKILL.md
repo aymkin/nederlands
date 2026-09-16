@@ -93,8 +93,6 @@ cd ~/Projects/fluent
 python3 tests/test_fsrs.py            # FSRS-6 stdlib port unit tests → OK
 python3 tests/test_read_db.py         # → OK
 python3 tests/test_update_db.py       # → OK
-python3 tests/test_migrate_to_fsrs.py # → OK
-python3 tests/test_optimize_weights.py # → OK (see note)
 python3 tests/test_fsrs_crosscheck.py  # → OK (skipped=1) under system python3
 ```
 
@@ -103,9 +101,9 @@ Notes:
 - Tests locate hooks via `Path(__file__).parent.parent/.claude/hooks` — they
   test the **clone**, not the runtime cache. After passing, hook changes still
   need the clone→cache sync (see `nederlands-run-and-operate`).
-- `test_optimize_weights.py` prints an
-  `[optimize] insufficient data (165/400, +165 new) — no-op` line after `OK` —
-  that is fixture output from the test itself, not the live DB. Expected.
+- `test_migrate_to_fsrs.py` and `test_optimize_weights.py` are gone: fork
+  `09618f3` deleted both scripts and their tests. Four test files remain, and
+  all four must pass.
 - To run under unittest verbosity: append `-v`.
 
 ### The py-fsrs numerical crosscheck gate
@@ -137,7 +135,7 @@ sys.modules collision with the pip package — don't "simplify" that import danc
 | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ---------- |
 | Curriculum mastery gate (`--check`/`--advance`) | mastery≥3 count / total ≥ **0.80** AND **zero** red cards (`consecutive_incorrect ≥ 2`), total > 0                        | `scripts/fluent_import.py:248` (`MASTERY_THRESHOLD = 0.80`), :258-261                           | 2026-07-10 |
 | Item mastery reaching 3                         | `repetitions >= 5` AND `consecutive_correct >= 3`                                                                         | update-db.py ~:411 (runtime cache `~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/`) | 2026-07-10 |
-| FSRS optimizer runs at all                      | total reviews ≥ **400** AND ≥ **50** new since last optimize; else `[optimize] insufficient data (N/400, +M new) — no-op` | fork `.claude/hooks/optimize_weights.py:14-15` (`MIN_TOTAL`, `MIN_NEW`)                         | 2026-07-10 |
+| FSRS optimizer (RETIRED — historical bar)       | total reviews ≥ **400** AND ≥ **50** new since last optimize; else `[optimize] insufficient data (N/400, +M new) — no-op` | fork `.claude/hooks/optimize_weights.py:14-15` (`MIN_TOTAL`, `MIN_NEW`)                         | 2026-07-10 |
 | Story-reader alignment bar                      | **285/285** sentences aligned (Whisper forced alignment; VTT greedy matching drifted past ~270)                           | commit `e6f41db` body                                                                           | 2026-07-10 |
 | Whisper model standard                          | turbo model: **0 overlaps** (base had occasional overlaps)                                                                | commit `1c88339` body                                                                           | 2026-07-10 |
 | FSRS port correctness                           | exact numeric parity vs py-fsrs 6.3.1                                                                                     | crosscheck gate above                                                                           | 2026-07-10 |
@@ -290,7 +288,7 @@ state. Re-verify before relying on:
 - py-fsrs pin: `~/Projects/fluent/.devvenv/bin/pip show fsrs` (6.3.1)
 - Mastery gate: `grep -n MASTERY_THRESHOLD scripts/fluent_import.py` (0.80)
 - Optimizer guard:
-  `grep -n "MIN_TOTAL\|MIN_NEW" ~/Projects/fluent/.claude/hooks/optimize_weights.py`
+  `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py | grep -n "MIN_TOTAL\|MIN_NEW"`
   (400 / 50)
 - Item mastery rule:
   `grep -n "repetitions.*>= 5" ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/update-db.py`

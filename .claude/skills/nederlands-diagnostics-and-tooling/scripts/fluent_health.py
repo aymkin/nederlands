@@ -59,8 +59,9 @@ def main():
         if k in meta:
             print(f"  {k}: {meta[k]}")
     if meta.get("weights") is None:
-        print("  -> weights null: FSRS hook falls back to DEFAULT_W "
-              "(built-in defaults; personal optimizer has not fired)")
+        print("  -> weights null: FSRS hook uses DEFAULT_W. This is the "
+              "normal, permanent state — the weight optimizer was "
+              "removed from the plugin (fork 09618f3, 2026-08-17).")
     if meta.get("total_items_tracked") != len(items):
         print(f"  !! total_items_tracked ({meta.get('total_items_tracked')}) "
               f"!= actual items ({len(items)}) — stale metadata")
@@ -125,8 +126,8 @@ def main():
     if top_hist:
         print("  !! top-level review_history is non-empty — something "
               "wrote to the legacy key; investigate before trusting counts")
-    print("  -> always count reviews per-item; the optimizer guard "
-          "(>=400) counts per-item too")
+    print("  -> always count reviews per-item; the top-level key is "
+          "legacy and lies about the total")
 
     # --- sessions ---
     try:
@@ -148,10 +149,10 @@ def main():
     except FileNotFoundError:
         print("\n[sessions] session-log.json not found")
 
-    # --- optimizer readiness ---
-    print(f"\n[optimizer] guard: needs >=400 per-item reviews AND >=50 new "
-          f"since last optimize; current {per_item}/400, "
-          f"+{per_item - meta.get('reviews_at_last_optimize', 0)} new")
+    # The weight optimizer and its weekly LaunchAgent are retired (see
+    # nederlands-failure-archaeology). Nothing reads reviews_at_last_optimize
+    # any more, so there is no readiness to report.
+    print(f"\n[reviews] {per_item} per-item reviews recorded")
 
 
 if __name__ == "__main__":

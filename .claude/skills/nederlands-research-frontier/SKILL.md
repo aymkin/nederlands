@@ -39,11 +39,11 @@ prerequisite for problem 1's data) use `fluent-backlog-campaign`.
 `fsrs-optimizer` (installed: 6.5.0 in `~/.claude/fluent-data/.venv-optimizer/`)
 is built for Anki-scale review logs — thousands to millions of reviews. On a few
 hundred reviews the fit can be worse than the population-default weights, which
-is exactly why this project's weekly optimizer is guarded: `optimize_weights.py`
-hard-codes `MIN_TOTAL = 400` and `MIN_NEW = 50` and no-ops below them (its only
-run ever printed `insufficient data (185/400)`). The open question SOTA does not
-answer: _at what point, and with what safeguards, do personally fitted weights
-actually beat DEFAULT_W for one learner?_
+is exactly why this project's optimizer was guarded while it existed:
+`optimize_weights.py` hard-codes `MIN_TOTAL = 400` and `MIN_NEW = 50` and no-ops
+below them (its only run ever printed `insufficient data (185/400)`). The open
+question SOTA does not answer: _at what point, and with what safeguards, do
+personally fitted weights actually beat DEFAULT_W for one learner?_
 
 Critically, the current adoption path has **no held-out check at all**: once the
 guard passes, `optimize_weights.py` trains and writes `metadata.weights`
@@ -62,9 +62,11 @@ not a quality check.
   (accuracy, skills practiced, command used) is joinable by date from
   `session-log.json` (21 sessions as of 2026-07-10) — it is NOT inside the
   review records themselves.
-- A live, guarded optimizer that self-activates (LaunchAgent
-  `com.aymkin.fluent-fsrs-optimize`, Sun 09:05) — a real deployment target for
-  any improvement, not a toy.
+- No deployment vehicle any more: the guarded optimizer and its weekly
+  LaunchAgent were retired 2026-09-16 (archaeology 12), so this problem now
+  starts one step further back — restoring
+  `git show 09618f3^:.claude/hooks/optimize_weights.py` and giving it a
+  scheduler is part of the work, not a given.
 - The exact production scheduler as an importable module: `fsrs.py` in the
   plugin cache (stdlib FSRS-6 port pinned against py-fsrs 6.3.1, 21-float
   DEFAULT_W — never hand-edit).
@@ -92,19 +94,16 @@ not a quality check.
    this harness proves useful, propose promoting it to `scripts/` proper via
    `nederlands-change-control`.
 
-2. **Pre-adoption comparison at optimizer activation.** When the 400/50 guard
-   finally passes (backlog draining will accelerate this — see
-   `fluent-backlog-campaign`), do NOT let fitted weights stand unexamined. Fit
-   on reviews before a split date, evaluate both DEFAULT_W and the fitted vector
-   on the held-out slice with the harness, and only keep `metadata.weights` if
-   fitted wins. Two routes, both via change control:
-   - _Manual (no code change):_ after the Sunday run, extract the new
-     `metadata.weights`, evaluate, and if it loses restore the
-     `pre-optimize-<date>` backup (restore runbook:
-     `nederlands-run-and-operate`).
-   - _Structural (preferred, larger change):_ add the held-out gate inside
-     `optimize_weights.py` in the fork — this touches the plugin clone→cache
-     sync, a documented weak point (`nederlands-architecture-contract`).
+2. **Pre-adoption comparison, whenever weights get fitted again.** Fitted
+   weights must never stand unexamined: fit on reviews before a split date,
+   evaluate both DEFAULT_W and the fitted vector on the held-out slice with the
+   harness, and keep `metadata.weights` only if fitted wins.
+
+   With the optimizer retired there is no Sunday run to inspect after the fact,
+   which removes the manual route and leaves the better one: build the held-out
+   gate **into** any restored optimizer before scheduling it at all. That still
+   touches the plugin clone→cache→push chain, a documented weak point
+   (`nederlands-architecture-contract`), so it goes through change control.
 
 3. **Document adopt/reject as a dated experiment.** Pre-register the prediction
    ("fitted will/will not beat DEFAULT_W held-out log-loss") before the guard

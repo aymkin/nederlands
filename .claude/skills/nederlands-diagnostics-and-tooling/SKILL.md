@@ -51,7 +51,8 @@ Real output (live data, 2026-07-10, abridged):
   target_retention: 0.9
   weights: None
   last_optimized: None
-  -> weights null: FSRS hook falls back to DEFAULT_W [...]
+  -> weights null: FSRS hook uses DEFAULT_W. This is the normal, permanent
+     state — the weight optimizer was removed from the plugin [...]
 
 [items] 408 items
 [queue buckets]
@@ -81,24 +82,22 @@ Real output (live data, 2026-07-10, abridged):
 [sessions] 21 total
   last: session-021 on 2026-07-09 (1 days ago), accuracy 0.767
 
-[optimizer] guard: needs >=400 per-item reviews AND >=50 new since last
-  optimize; current 225/400, +225 new
+[reviews] 225 per-item reviews recorded
 ```
 
 ### Interpretation
 
-| Signal                         | Green                        | Red / act on it                                                                                                                                                                |
-| ------------------------------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `scheduler`                    | `fsrs-6`                     | anything else → scheduler regressed; see `nederlands-failure-archaeology`                                                                                                      |
-| `weights`                      | `None` until optimizer fires | a 21-float list means the personal optimizer wrote weights — verify its log                                                                                                    |
-| queue.today vs recomputed due  | equal                        | mismatch = queue stale. NORMAL: it is rebuilt only by `fluent_import.py` and `update-db.py`, not nightly. Trust the recomputed number; a session or import refreshes the queue |
-| burn-down days                 | ≤ 3                          | ≥ 10 = structural backlog → `fluent-backlog-campaign`                                                                                                                          |
-| top-level review_history       | 0                            | non-zero = something wrote the legacy key; stop and investigate before trusting any review counts                                                                              |
-| per-item review_history sum    | growing over sessions        | frozen while sessions increase = `update-db.py` payloads lack `review_results` — see `nederlands-debugging-playbook`                                                           |
-| red cards                      | 0                            | any → these block `--advance`; drill them first in the next session                                                                                                            |
-| `total_items_tracked` vs items | equal                        | mismatch = stale metadata; a re-import rebuilds it                                                                                                                             |
-| days since last session        | 0–2                          | ≥ 7 = streak dead, backlog compounding                                                                                                                                         |
-| optimizer guard line           | informational                | at ≥400/+50 the Sunday LaunchAgent will actually train — check its log that week                                                                                               |
+| Signal                         | Green                 | Red / act on it                                                                                                                                                                |
+| ------------------------------ | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `scheduler`                    | `fsrs-6`              | anything else → scheduler regressed; see `nederlands-failure-archaeology`                                                                                                      |
+| `weights`                      | `None`, permanently   | a 21-float list means something revived weight fitting — nothing in the plugin writes this any more (archaeology 12)                                                           |
+| queue.today vs recomputed due  | equal                 | mismatch = queue stale. NORMAL: it is rebuilt only by `fluent_import.py` and `update-db.py`, not nightly. Trust the recomputed number; a session or import refreshes the queue |
+| burn-down days                 | ≤ 3                   | ≥ 10 = structural backlog → `fluent-backlog-campaign`                                                                                                                          |
+| top-level review_history       | 0                     | non-zero = something wrote the legacy key; stop and investigate before trusting any review counts                                                                              |
+| per-item review_history sum    | growing over sessions | frozen while sessions increase = `update-db.py` payloads lack `review_results` — see `nederlands-debugging-playbook`                                                           |
+| red cards                      | 0                     | any → these block `--advance`; drill them first in the next session                                                                                                            |
+| `total_items_tracked` vs items | equal                 | mismatch = stale metadata; a re-import rebuilds it                                                                                                                             |
+| days since last session        | 0–2                   | ≥ 7 = streak dead, backlog compounding                                                                                                                                         |
 
 **The review_history trap (memorize):** `spaced-repetition.json` has TWO
 `review_history` keys. The top-level list is a legacy stub, permanently empty.

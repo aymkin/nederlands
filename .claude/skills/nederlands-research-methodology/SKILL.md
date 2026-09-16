@@ -197,7 +197,7 @@ Verified 2026-07-10 unless noted. Re-verify before relying on a claim:
   order: implement → collision fix → migration).
 - Optimizer prediction vs run:
   `grep -n "insufficient data" docs/superpowers/plans/2026-07-03-*.md` (predicts
-  165/400) vs `cat ~/.claude/logs/fluent-fsrs-optimize.log` (actual
+  165/400) vs `head -2 ~/.claude/logs/fluent-fsrs-optimize.log` (actual
   `185/400, +185 new`). The log grows — check the latest line.
 - Payload trim numbers:
   `git -C ~/Projects/fluent show -s --format='%b' 281c2a4 13fd374`.

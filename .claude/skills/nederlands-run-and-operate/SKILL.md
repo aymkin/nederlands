@@ -32,9 +32,9 @@ curriculum → `fluent-backlog-campaign`; before any state-mutating change →
 | Backups              | `~/.claude/fluent-data/.backups/`                            |
 | Session results      | `~/.claude/fluent-data/results/fluent-*-session-NNN.md`      |
 
-The `0.3.0` in the cache path is a version pin: a plugin version bump changes
-the path AND breaks the optimizer LaunchAgent plist, which hardcodes it. Resolve
-dynamically when scripting:
+The version in the cache path is a pin: a plugin bump moves it. Nothing outside
+the repo may name it — the one thing that did, the optimizer plist, broke
+silently for nine weeks (archaeology 12). Resolve dynamically when scripting:
 
 ```bash
 FLUENT_HOOKS=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V \
@@ -266,7 +266,6 @@ Three agents (all present in `~/Library/LaunchAgents/`, verified via `plutil -p`
 | ------------------------------- | ----------- | ------------------------------------------- |
 | com.aymkin.claude-plugin-update | daily 09:03 | `/tmp/claude-plugin-update.log`             |
 | com.aymkin.claude-dotfiles-sync | daily 09:04 | `~/.claude/logs/sync.log`, `sync-error.log` |
-| com.aymkin.fluent-fsrs-optimize | Sun 09:05   | `~/.claude/logs/fluent-fsrs-optimize.log`   |
 
 Green/red criteria per agent:
 
@@ -286,32 +285,23 @@ and git writes push confirmations to stderr — so lines like
 sync-error.log are SUCCESS, not errors (verified: that is its entire recent
 content).
 
-**fluent-fsrs-optimize** — the guarded FSRS weight optimizer. Green no-op (the
-log's only line as of 2026-07-09):
-
-```
-[optimize] insufficient data (185/400, +185 new) — no-op
-```
-
-It activates at ≥400 total reviews AND ≥50 new since last optimize. Its plist
-hardcoded `optimize_weights.py` in the cache (job retired 2026-09-16, script
-deleted in fork `09618f3` — see `nederlands-change-control`) and
-`.venv-optimizer/bin/python` — a plugin version bump silently breaks it (empty
-log growth on Sundays = check the plist path first).
+**fluent-fsrs-optimize** — retired 2026-09-16, no longer scheduled. Its log
+`~/.claude/logs/fluent-fsrs-optimize.log` is frozen evidence: two guarded
+no-ops, then nine `[Errno 2]` failures. Nothing to operate; the story is
+archaeology 12.
 
 ## BACKUP RESTORE RUNBOOK (fluent-data)
 
 Snapshot types under `~/.claude/fluent-data/.backups/` (70 dirs as of
 2026-07-09) and what each contains (verified by listing):
 
-| Dir pattern                | Created by           | Contains                                    |
-| -------------------------- | -------------------- | ------------------------------------------- |
-| `YYYYMMDD/`                | session-end hook     | all 6 JSONs                                 |
-| `pre-update-session-NNN/`  | update-db.py         | all 6 JSONs                                 |
-| `precompact/` (single dir) | precompact-backup.sh | all 6 JSONs (overwritten each compact)      |
-| `pre-migrate-fsrs-<ts>/`   | migrate_to_fsrs.py   | all 6 JSONs                                 |
-| `pre-import-<ts>/`         | fluent_import.py     | spaced-repetition.json ONLY                 |
-| `pre-optimize-<date>/`     | optimize_weights.py  | none exist yet (optimizer has only no-op'd) |
+| Dir pattern                | Created by           | Contains                               |
+| -------------------------- | -------------------- | -------------------------------------- |
+| `YYYYMMDD/`                | session-end hook     | all 6 JSONs                            |
+| `pre-update-session-NNN/`  | update-db.py         | all 6 JSONs                            |
+| `precompact/` (single dir) | precompact-backup.sh | all 6 JSONs (overwritten each compact) |
+| `pre-migrate-fsrs-<ts>/`   | migrate_to_fsrs.py   | all 6 JSONs                            |
+| `pre-import-<ts>/`         | fluent_import.py     | spaced-repetition.json ONLY            |
 
 Restore procedure — all-or-nothing per snapshot, plain copy back:
 
@@ -381,7 +371,6 @@ Verified 2026-07-09. One re-check command per drift-prone claim:
   `ls ~/.claude/fluent-data/.backups/<newest>/`.
 - LaunchAgent schedules/paths:
   `plutil -p ~/Library/LaunchAgents/com.aymkin.*.plist`.
-- Optimizer state: `cat ~/.claude/logs/fluent-fsrs-optimize.log`.
 - Known-red plugin-update entries:
   `grep -cE 'autoresearch.*remote ref|claude-plugins-official.*not a git' /tmp/claude-plugin-update.log`.
 - Pages URL: `gh api repos/aymkin/nederlands/pages --jq .html_url`.

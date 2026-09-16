@@ -42,6 +42,7 @@ such).
 | Multi-voice TTS via Parkiet                      | Paused, NOT chosen for research frontier     | 7     |
 | Reading pre-2026-04-17 `link/` history as Alex's | Wrong; it was Yulia's                        | 2     |
 | Mentioning Rusland/Россия in any content         | Forbidden (Voldemort rule)                   | 3     |
+| Weekly FSRS weight optimizer                     | Retired; script deleted, job booted out      | 12    |
 
 ## 1. The Whisper/VTT alignment saga (Feb–Apr 2026) — fixed
 
@@ -191,16 +192,16 @@ measured comprehension, not estimated level) remains a good technique even
 though its host plan died. Status: enforced-ongoing (the rule) + stale-doc
 (CLAUDE.md's "active" claim).
 
-## 9. fsrs-optimizer 6.5.0 API break (2026-07-06) — fixed, expect recurrence
+## 9. fsrs-optimizer 6.5.0 API break (2026-07-06) — moot, component retired
 
 Symptom: the weekly weight-optimizer wrapper broke against the installed
 `fsrs-optimizer` 6.5.0 package (its `train()` API had changed; it also reads
 `./revlog.csv` from the current working directory). Fix: `fork:133308c` adapted
 `optimize_weights.py` to the 6.5.0 API (train() is run with cwd chdir'd to a
-tempdir holding revlog.csv). Status: fixed for 6.5.0, but this dependency has
-broken its API once already — treat any pip upgrade of `fsrs-optimizer` in
-`~/.claude/fluent-data/.venv-optimizer/` as a breaking change until the wrapper
-is re-tested. The optimizer has run exactly once as of 2026-07-09: log line
+tempdir holding revlog.csv). Status: moot — the wrapper it fixed was deleted in
+2026-08-17 and the weekly job retired 2026-09-16 (entry 12). Kept as the reason
+the 975 MB `~/.claude/fluent-data/.venv-optimizer/` exists at all. The optimizer
+has run exactly once as of 2026-07-09: log line
 `[optimize] insufficient data (185/400, +185 new) — no-op` in
 `~/.claude/logs/fluent-fsrs-optimize.log`.
 
@@ -239,6 +240,49 @@ live backlog/mastery-gate deadlock this migration exposed (335 due cards,
 mastery≥3 count = 0), see fluent-backlog-campaign — that is an active campaign,
 not archaeology.
 
+## 12. The optimizer zombie (2026-08-17 → 2026-09-16) — retired
+
+Symptom: nothing visible. A weekly LaunchAgent failed every Sunday at 09:05 for
+nine weeks and the only evidence was a log nobody opened.
+
+Root cause, two independent breakages stacked on one hardcoded path. The plist
+`~/Library/LaunchAgents/com.aymkin.fluent-fsrs-optimize.plist` named
+`…/plugins/cache/m98/fluent/0.3.0/.claude/hooks/optimize_weights.py`. First the
+marketplace rename moved the cache (`m98` → `aymkin`, `0.3.0` → `0.4.0`); then
+fork commit `09618f3` (2026-08-17) deleted `optimize_weights.py` outright. Even
+a corrected path resolves to nothing — verified 2026-09-16 by fixing the path
+and re-running: `[Errno 2]` at the new location too.
+
+The deletion commit justified itself as "weekly FSRS-6 weight optimizer that
+nothing schedules (no hook, no cron, no skill)". True of the repository, false
+of the machine: the scheduler lived in `~/Library/LaunchAgents`, which no
+in-repo grep reaches.
+
+Resolution: `launchctl bootout`, plist renamed aside (two backups kept beside
+it), and every skill that documented the optimizer as live updated. Impact
+throughout was nil — the guard no-ops below 400 per-item reviews and the history
+holds 17, `metadata.weights` is `null`, so `fsrs.py` used `DEFAULT_W` the whole
+time, exactly as before.
+
+Residue, still on disk:
+
+- `~/.claude/fluent-data/.venv-optimizer/` — **975 MB** (torch + fsrs-optimizer)
+  serving nothing. Deletable; kept until someone decides.
+- `~/.claude/logs/fluent-fsrs-optimize.log` — 2.9 KB, ends with the nine
+  failures. The evidence; leave it.
+- `metadata.weights` / `last_optimized` / `reviews_at_last_optimize` in
+  `spaced-repetition.json` — written by `update-db.py`, read by nobody now.
+
+Status: retired. Reviving FSRS weight optimization means restoring the script
+from `git show 09618f3^:.claude/hooks/optimize_weights.py` AND re-creating a
+scheduler — a deliberate decision, not a repair.
+
+**Two rules this produced.** Before deleting "code nothing calls", search the
+machine as well as the repo — `launchctl list`, `~/Library/LaunchAgents`,
+crontab. And anything outside the repo that points into
+`~/.claude/plugins/cache/` must resolve the path, never name it: the version and
+the marketplace key have each moved once already.
+
 ## When NOT to use this skill
 
 For a LIVE symptom you have not yet diagnosed, use nederlands-debugging-playbook
@@ -260,7 +304,7 @@ All claims verified 2026-07-09 against this repo, the fork clone, and
 | Renovate branch still unmerged              | `git fetch && git branch -r \| grep renovate; ls renovate.json`                                                                                                                                                                                                      |
 | Seeded/reviewed counts (95/408, 225)        | `python3 -c "import json,os;d=json.load(open(os.path.expanduser('~/.claude/fluent-data/spaced-repetition.json')));i=d['items'];print(len(i),sum(1 for v in i.values() if v.get('stability') is not None),sum(len(v.get('review_history',[])) for v in i.values()))"` |
 | scheduler/algorithm metadata agree          | same file: `metadata.scheduler`, `metadata.algorithm`                                                                                                                                                                                                                |
-| Optimizer still no-op                       | `tail -3 ~/.claude/logs/fluent-fsrs-optimize.log`                                                                                                                                                                                                                    |
+| Optimizer stays retired                     | `launchctl list \| grep fluent-fsrs` (no output) and `ls ~/.claude/plugins/cache/*/fluent/*/.claude/hooks/optimize_weights.py` (absent)                                                                                                                              |
 | maart_2026 still abandoned (no new commits) | `git log --oneline -3 -- daily/maart_2026`                                                                                                                                                                                                                           |
 | Prettier ignore entries still present       | `grep -n 'verhaal_\|reader' .prettierignore`                                                                                                                                                                                                                         |
 | Voldemort compliance                        | `grep -rn 'Rusland\|Росси' --include='*.md' --include='*.txt' de_opmaat link link_plus other daily`                                                                                                                                                                  |

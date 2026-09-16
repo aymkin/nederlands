@@ -64,7 +64,8 @@ what Alex studies, mastery≥3 is 0 in every unit, and 347 due cards swamp a
    `review_results`.** The 30/day cap is enforced server-side only in the
    `read-db.py --review` serving path; `update-db.py` accepts any number of
    results. Bypassing `/fluent-review` fakes `review_history`, which poisons the
-   future weight optimizer's training data (it trains from per-item history).
+   training data for any future weight optimizer (the retired one trained from
+   per-item history; archaeology 12).
 4. **Never "fix" `fluent_import.py` to write through `update-db.py` or to touch
    DBs other than spaced-repetition.json.** Two-owner invariant; going through
    the updater falsely increments sessions/streak. See

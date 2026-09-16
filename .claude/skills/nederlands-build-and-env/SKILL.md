@@ -32,19 +32,19 @@ the separation is deliberate.
 
 ## Environment catalog (as of 2026-07-09)
 
-| Component         | Version                                        | Install method                            | Location                                       |
-| ----------------- | ---------------------------------------------- | ----------------------------------------- | ---------------------------------------------- |
-| python3 (default) | 3.14.5                                         | `brew install python@3.14`                | `/opt/homebrew/bin/python3`                    |
-| python3.11        | 3.11.15                                        | `brew install python@3.11`                | `/opt/homebrew/opt/python@3.11/bin/python3.11` |
-| ffmpeg            | 8.1.1                                          | `brew install ffmpeg`                     | `/opt/homebrew/bin/ffmpeg`                     |
-| edge-tts          | 7.2.7                                          | pip into Homebrew python (module + CLI)   | `/opt/homebrew/bin/edge-tts`                   |
-| openai-whisper    | 20250625                                       | **pipx ONLY** (CLI, no importable module) | `~/.local/bin/whisper`                         |
-| node              | v20.17.0                                       | nvm                                       | `~/.nvm/versions/node/v20.17.0/`               |
-| pnpm              | 10.29.2                                        | corepack (ships with node)                | symlink in nvm bin dir                         |
-| prettier          | 3.8.1 (spec `^3.7.4`)                          | `pnpm install` in repo                    | `node_modules/.bin/prettier`                   |
-| scripts/.venv     | py 3.14.5, torch 2.11.0, transformers 5.5.4    | manual venv                               | repo `scripts/.venv/` — **Parkiet only**       |
-| .venv-optimizer   | py 3.11.15, FSRS-Optimizer 6.5.0, torch 2.12.1 | manual venv                               | `~/.claude/fluent-data/.venv-optimizer/`       |
-| Anki desktop      | profiles `alex`, `iuliia`                      | app install                               | `~/Library/Application Support/Anki2/`         |
+| Component         | Version                                                   | Install method                            | Location                                       |
+| ----------------- | --------------------------------------------------------- | ----------------------------------------- | ---------------------------------------------- |
+| python3 (default) | 3.14.5                                                    | `brew install python@3.14`                | `/opt/homebrew/bin/python3`                    |
+| python3.11        | 3.11.15                                                   | `brew install python@3.11`                | `/opt/homebrew/opt/python@3.11/bin/python3.11` |
+| ffmpeg            | 8.1.1                                                     | `brew install ffmpeg`                     | `/opt/homebrew/bin/ffmpeg`                     |
+| edge-tts          | 7.2.7                                                     | pip into Homebrew python (module + CLI)   | `/opt/homebrew/bin/edge-tts`                   |
+| openai-whisper    | 20250625                                                  | **pipx ONLY** (CLI, no importable module) | `~/.local/bin/whisper`                         |
+| node              | v20.17.0                                                  | nvm                                       | `~/.nvm/versions/node/v20.17.0/`               |
+| pnpm              | 10.29.2                                                   | corepack (ships with node)                | symlink in nvm bin dir                         |
+| prettier          | 3.8.1 (spec `^3.7.4`)                                     | `pnpm install` in repo                    | `node_modules/.bin/prettier`                   |
+| scripts/.venv     | py 3.14.5, torch 2.11.0, transformers 5.5.4               | manual venv                               | repo `scripts/.venv/` — **Parkiet only**       |
+| .venv-optimizer   | RETIRED — 975 MB serving a deleted script, safe to delete | do not recreate                           | `~/.claude/fluent-data/.venv-optimizer/`       |
+| Anki desktop      | profiles `alex`, `iuliia`                                 | app install                               | `~/Library/Application Support/Anki2/`         |
 
 Repo scripts (`fluent_import.py`, `build_vocab_index.py`, `anki_utils.py`, test
 suite) are **stdlib-only** and run on plain Homebrew python3. The only pip
@@ -127,35 +127,24 @@ scripts/.venv/bin/pip install torch transformers
 # PYTORCH_ENABLE_MPS_FALLBACK=1 python scripts/parkiet_test.py
 ```
 
-### ~/.claude/fluent-data/.venv-optimizer — FSRS weight optimizer
+### ~/.claude/fluent-data/.venv-optimizer — NOT part of a fresh setup
 
-Used only by the weekly LaunchAgent that runs `optimize_weights.py` (in the
-Fluent plugin cache) to retrain FSRS-6 weights from review history.
+**Do not create this venv.** It served `optimize_weights.py`, deleted from the
+plugin in fork commit `09618f3` (2026-08-17); its weekly LaunchAgent was retired
+2026-09-16 (`nederlands-failure-archaeology` entry 12). A fresh machine needs
+nothing here — `fsrs.py` uses the built-in `DEFAULT_W`, which is what ran all
+along: `metadata.weights` has always been `null`.
 
-Why it is separate — three deliberate reasons:
+On this machine the directory survives at **975 MB** (python 3.11.15,
+FSRS-Optimizer 6.5.0, torch 2.12.1) and is deletable. It is kept only so the
+decision to drop a gigabyte is made deliberately rather than by a cleanup
+script.
 
-1. Fluent's **runtime hooks are stdlib-only by design** (no venv is guaranteed
-   at hook runtime). The optimizer needs `fsrs-optimizer`, which pulls in torch
-   — that cannot live in the hook environment.
-2. It is pinned to **python 3.11** for fsrs-optimizer/torch compatibility,
-   independent of whatever Homebrew's default python3 currently is.
-3. fsrs-optimizer's API already broke once on upgrade (adapted in fork commit
-   133308c) — isolating it in its own venv contains the blast radius. Expect
-   breakage on pip upgrades; don't upgrade casually.
-
-Recreate:
-
-```bash
-brew install python@3.11
-/opt/homebrew/opt/python@3.11/bin/python3.11 -m venv \
-  ~/.claude/fluent-data/.venv-optimizer
-~/.claude/fluent-data/.venv-optimizer/bin/pip install fsrs-optimizer
-# torch comes as a dependency of fsrs-optimizer; no separate install
-```
-
-Baseline 2026-07-09: FSRS-Optimizer 6.5.0, torch 2.12.1. The optimizer is
-guarded (no-op below 400 total reviews / +50 new); its only run so far logged
-`[optimize] insufficient data (185/400, +185 new) — no-op`.
+Why it was ever separate, since the reasoning still applies to any future
+attempt: Fluent's runtime hooks are **stdlib-only by design** (no venv is
+guaranteed at hook runtime), `fsrs-optimizer` drags in torch, and it needed
+pinning to python 3.11 independent of Homebrew's default. Its API broke once on
+upgrade already (fork `133308c`).
 
 ## Step 4 — Anki desktop
 
@@ -194,12 +183,14 @@ git -C ~/Projects/fluent remote -v
 # actual: origin  https://github.com/aymkin/fluent.git  <-- the fork
 ```
 
-The FSRS hooks (`fsrs.py`, `migrate_to_fsrs.py`, `optimize_weights.py`) now
-exist in the fork dev clone, the marketplace clone, AND the runtime cache. A
-fresh plugin install now pulls the fork, so the old SM-2-reversion danger is
-resolved at the source. See `nederlands-architecture-contract` §3 for the
-remaining open point (the cache lags the fork on two files; the fork→cache sync
-is still manual but no longer dangerous).
+The FSRS hook `fsrs.py` exists in the fork dev clone, the marketplace clone, AND
+the runtime cache. (`migrate_to_fsrs.py` and `optimize_weights.py` were also
+FSRS hooks; both were deleted in fork `09618f3`, 2026-08-17 — the migration was
+one-shot and already run, the optimizer is retired.) A fresh plugin install now
+pulls the fork, so the old SM-2-reversion danger is resolved at the source. See
+`nederlands-architecture-contract` §3 for the remaining open point (the cache
+lags the fork on two files; the fork→cache sync is still manual but no longer
+dangerous).
 
 Traps:
 
@@ -244,27 +235,24 @@ LaunchAgents). Details are that repo's own README/CLAUDE.md territory.
 
 ## Verification checklist — run all, compare outputs
 
-| Command                                                                  | Expected (2026-07-09 baseline)                                                                        |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
-| `python3 --version`                                                      | `Python 3.14.5` (Homebrew; `which python3` → `/opt/homebrew/bin/python3`)                             |
-| `ffmpeg -version \| head -1`                                             | `ffmpeg version 8.1.1 ...`                                                                            |
-| `edge-tts --version`                                                     | `edge-tts 7.2.7`                                                                                      |
-| `python3 -c "import edge_tts; print('ok')"`                              | `ok`                                                                                                  |
-| `which whisper`                                                          | `/Users/<you>/.local/bin/whisper`                                                                     |
-| `whisper --help \| head -1`                                              | `usage: whisper [-h] [--model MODEL] ...`                                                             |
-| `python3 -c "import whisper"`                                            | **ModuleNotFoundError — this is the CORRECT state**                                                   |
-| `pipx list \| grep whisper`                                              | `package openai-whisper 20250625 ...`                                                                 |
-| `pnpm --version`                                                         | `10.29.2` (any 10.x fine)                                                                             |
-| `node_modules/.bin/prettier --version`                                   | `3.8.1` (any ^3.7.4)                                                                                  |
-| `python3 scripts/test_fluent_import.py \| tail -1`                       | `25 passed` (scripts/README.md says 21 — README is stale)                                             |
-| `python3 scripts/audio_to_anki.py --help`                                | usage text, exit 0 (stdlib import check)                                                              |
-| `ls "$HOME/Library/Application Support/Anki2/"`                          | contains `alex` and `iuliia`                                                                          |
-| `~/.claude/fluent-data/.venv-optimizer/bin/python --version`             | `Python 3.11.15`                                                                                      |
-| `~/.claude/fluent-data/.venv-optimizer/bin/pip list \| grep -i fsrs`     | `FSRS-Optimizer 6.5.0`                                                                                |
-| `git -C ~/.claude/plugins/marketplaces/aymkin remote -v`                 | origin = `aymkin/fluent` (the fork, repointed 2026-07-11 — has FSRS); dev fork is `~/Projects/fluent` |
-| `ls ~/.claude/plugins/cache/aymkin/fluent/`                              | `0.3.0` (if different: plist path is now broken)                                                      |
-| `plutil -p ~/Library/LaunchAgents/com.aymkin.fluent-fsrs-optimize.plist` | valid plist; Hour 9, Minute 5, Weekday 0; ProgramArguments uses the venv python + cache path          |
-| `launchctl list \| grep aymkin`                                          | three `com.aymkin.*` entries, status `0`                                                              |
+| Command                                                  | Expected (2026-07-09 baseline)                                                                         |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| `python3 --version`                                      | `Python 3.14.5` (Homebrew; `which python3` → `/opt/homebrew/bin/python3`)                              |
+| `ffmpeg -version \| head -1`                             | `ffmpeg version 8.1.1 ...`                                                                             |
+| `edge-tts --version`                                     | `edge-tts 7.2.7`                                                                                       |
+| `python3 -c "import edge_tts; print('ok')"`              | `ok`                                                                                                   |
+| `which whisper`                                          | `/Users/<you>/.local/bin/whisper`                                                                      |
+| `whisper --help \| head -1`                              | `usage: whisper [-h] [--model MODEL] ...`                                                              |
+| `python3 -c "import whisper"`                            | **ModuleNotFoundError — this is the CORRECT state**                                                    |
+| `pipx list \| grep whisper`                              | `package openai-whisper 20250625 ...`                                                                  |
+| `pnpm --version`                                         | `10.29.2` (any 10.x fine)                                                                              |
+| `node_modules/.bin/prettier --version`                   | `3.8.1` (any ^3.7.4)                                                                                   |
+| `python3 scripts/test_fluent_import.py \| tail -1`       | `25 passed` (scripts/README.md says 21 — README is stale)                                              |
+| `python3 scripts/audio_to_anki.py --help`                | usage text, exit 0 (stdlib import check)                                                               |
+| `ls "$HOME/Library/Application Support/Anki2/"`          | contains `alex` and `iuliia`                                                                           |
+| `git -C ~/.claude/plugins/marketplaces/aymkin remote -v` | origin = `aymkin/fluent` (the fork, repointed 2026-07-11 — has FSRS); dev fork is `~/Projects/fluent`  |
+| `ls ~/.claude/plugins/cache/aymkin/fluent/`              | `0.4.0` — the runtime version; nothing outside the repo may hardcode it                                |
+| `launchctl list \| grep aymkin`                          | two entries (`claude-plugin-update`, `claude-dotfiles-sync`); the optimizer job was retired 2026-09-16 |
 
 Note on `pnpm run format:check`: it currently exits 1 on untracked scratch files
 — a non-zero exit does NOT prove your environment is broken. Scope prettier
@@ -286,8 +274,6 @@ machine. Re-verify drift-prone items with:
   `python3 -c "import sysconfig,os; print(os.path.exists(os.path.join(sysconfig.get_path('stdlib'), 'EXTERNALLY-MANAGED')))"`
 - Parkiet venv contents:
   `scripts/.venv/bin/pip list | grep -Ei "torch|transformers"`
-- Optimizer venv:
-  `~/.claude/fluent-data/.venv-optimizer/bin/pip list | grep -Ei "fsrs|torch"`
 - Anki profiles + picker behavior:
   `ls "$HOME/Library/Application Support/Anki2/"` and
   `grep -n "profiles\[0\]" scripts/anki_utils.py`

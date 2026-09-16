@@ -93,9 +93,9 @@ File: `~/.claude/fluent-data/spaced-repetition.json`. Live values below verified
 | `metadata.scheduler`                | —                              | `"fsrs-6"`                  | **authoritative** scheduler switch                                                                                                                                               |
 | `metadata.algorithm`                | —                              | `"FSRS-6"`                  | informational only; was stale `"SM-2"` earlier — trust `scheduler`                                                                                                               |
 | `metadata.target_retention`         | 0.9                            | `0.9`                       | consumed by fsrs.py interval calc                                                                                                                                                |
-| `metadata.weights`                  | `null` → DEFAULT_W             | `null`                      | optimizer writes this when it fires                                                                                                                                              |
-| `metadata.last_optimized`           | `null`                         | `null`                      | optimizer has never fired                                                                                                                                                        |
-| `metadata.reviews_at_last_optimize` | 0                              | `0`                         | baseline for the +50 guard                                                                                                                                                       |
+| `metadata.weights`                  | `null` → DEFAULT_W             | `null`                      | permanently null — the optimizer that wrote it is retired (archaeology 12)                                                                                                       |
+| `metadata.last_optimized`           | `null`                         | `null`                      | never fired, and now cannot                                                                                                                                                      |
+| `metadata.reviews_at_last_optimize` | 0                              | `0`                         | written by update-db.py, read by nobody                                                                                                                                          |
 | `metadata.total_items_tracked`      | —                              | `408`                       | volatile                                                                                                                                                                         |
 | `algorithm_notes` block             | —                              | SM-2 prose/formula          | **stale legacy text — ignore**                                                                                                                                                   |
 | `daily_limits.review_items_per_day` | `20` (read-db.py:105 fallback) | `30`                        | **prompt-enforced only** — the cap is applied by read-db.py `--review` slicing + plugin SKILL.md prompts, no python hard stop; bypassing the fluent-review flow bypasses the cap |
@@ -115,16 +115,17 @@ Code default: `grep -n review_items_per_day "$CACHE/.claude/hooks/read-db.py"`
 Hooks live in `<CACHE>/.claude/hooks/` (runtime copies — the clone at
 `~/Projects/fluent` may drift; sync state before editing anything there).
 
-| Constant    | Value     | Where                  | Meaning                                                                                                                                      |
-| ----------- | --------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `MIN_TOTAL` | `400`     | optimize_weights.py:14 | no-op unless ≥400 lifetime per-item reviews                                                                                                  |
-| `MIN_NEW`   | `50`      | optimize_weights.py:15 | AND ≥50 new since `reviews_at_last_optimize`                                                                                                 |
-| `DEFAULT_W` | 21 floats | fsrs.py:24             | FSRS-6 weight vector, pinned against py-fsrs 6.3.1 — **never hand-edit**; regenerate programmatically from the pinned package if ever needed |
+| Constant    | Value     | Where                                                 | Meaning                                                                                                                                      |
+| ----------- | --------- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `MIN_TOTAL` | `400`     | optimize_weights.py:14 (deleted; `git show 09618f3^`) | historical: the retired optimizer no-op'd below 400 per-item reviews                                                                         |
+| `MIN_NEW`   | `50`      | optimize_weights.py:15 (deleted)                      | historical: AND below +50 new since `reviews_at_last_optimize`                                                                               |
+| `DEFAULT_W` | 21 floats | fsrs.py:24                                            | FSRS-6 weight vector, pinned against py-fsrs 6.3.1 — **never hand-edit**; regenerate programmatically from the pinned package if ever needed |
 
-- Guard check is optimize_weights.py:33; the only run ever logged
-  `[optimize] insufficient data (185/400, +185 new) — no-op`.
-- Optimizer trains from per-item `review_history` deriving rating from `quality`
-  (0-5 → 1-4), never from `score`.
+- Both guards are historical — the script is gone (archaeology 12). Its only two
+  successful runs logged `insufficient data (185/400)` and `(225/400)`; nine
+  later runs failed outright. Kept because any revived optimizer needs the same
+  guard, and because `quality` (0-5 → 1-4) — never `score` — is still the right
+  rating source.
 
 Re-verify:
 
@@ -197,20 +198,23 @@ Re-verify: `cat .prettierrc .prettierignore .gitignore` and
 
 All in `~/Library/LaunchAgents/`, verified 2026-07-09 via PlistBuddy.
 
-| Label                             | Schedule                 | Runs                                                                                                                           | Logs                                                                              |
-| --------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| `com.aymkin.claude-plugin-update` | daily 09:03              | `git pull` every repo under `~/.claude/plugins/marketplaces/*/` + `~/.claude/skills/*/`, rewrites skills.lock                  | `/tmp/claude-plugin-update.log` (stdout+stderr)                                   |
-| `com.aymkin.claude-dotfiles-sync` | daily 09:04              | dotfiles `sync.sh`, auto-commit + push                                                                                         | `~/.claude/logs/sync.log`, `sync-error.log`                                       |
-| `com.aymkin.fluent-fsrs-optimize` | Sunday 09:05 (Weekday=0) | `.venv-optimizer/bin/python` against `optimize_weights.py` at the **hardcoded** cache path `.../cache/aymkin/fluent/0.4.0/...` | `~/.claude/logs/fluent-fsrs-optimize.log` (inline `>>` redirect), RunAtLoad false |
+| Label                             | Schedule    | Runs                                                                                                          | Logs                                            |
+| --------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| `com.aymkin.claude-plugin-update` | daily 09:03 | `git pull` every repo under `~/.claude/plugins/marketplaces/*/` + `~/.claude/skills/*/`, rewrites skills.lock | `/tmp/claude-plugin-update.log` (stdout+stderr) |
+| `com.aymkin.claude-dotfiles-sync` | daily 09:04 | dotfiles `sync.sh`, auto-commit + push                                                                        | `~/.claude/logs/sync.log`, `sync-error.log`     |
 
-**Guard/trap:** a Fluent plugin version bump 0.3.0→x changes the cache path and
-silently breaks the optimizer plist. After any bump, check the plist path
-against `ls -d ~/.claude/plugins/cache/*/fluent/*/`.
+**Retired 2026-09-16:** `com.aymkin.fluent-fsrs-optimize` (Sunday 09:05) is gone
+— booted out, plist renamed aside. It named a cache path that two renames broke,
+then lost its script entirely (archaeology 12).
+
+**Guard/trap that remains:** nothing outside the repo may hardcode a path into
+`~/.claude/plugins/cache/`. Resolve it:
+`ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1`.
 
 Re-verify:
 
 ```bash
-for p in claude-plugin-update claude-dotfiles-sync fluent-fsrs-optimize; do
+for p in claude-plugin-update claude-dotfiles-sync; do
   /usr/libexec/PlistBuddy -c Print ~/Library/LaunchAgents/com.aymkin.$p.plist
 done
 ```

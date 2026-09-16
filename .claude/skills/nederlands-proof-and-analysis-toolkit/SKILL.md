@@ -114,7 +114,10 @@ noise (overfitting) and the "personalized" model is worse than the population
 default.
 
 **Worked example — the FSRS weight optimizer** (fork
-`.claude/hooks/optimize_weights.py`, commit 5ba0487):
+`.claude/hooks/optimize_weights.py`, commit `5ba0487`; the component was retired
+2026-09-16 and the file now lives only in history —
+`git show 09618f3^:.claude/hooks/optimize_weights.py`. The example stands: it is
+about how the guard was reasoned, not about a running job):
 
 - FSRS-6 has **21 free weights**. As of 2026-07-10 the live DB holds **225
   reviews** (sum of per-item `review_history`; the top-level `review_history`
@@ -140,8 +143,9 @@ default.
   weights would jitter from optimizer randomness, not new evidence.
 - **Belt-and-braces around the fit:** training failure keeps current weights
   (exit 1, scheduling untouched); a result with `len(weights) != 21`
-  (`EXPECTED_WEIGHTS`) aborts; all 6 DBs are snapshotted to
-  `.backups/pre-optimize-<date>/` before the write.
+  (`EXPECTED_WEIGHTS`) aborts; all 6 DBs were to be snapshotted to
+  `.backups/pre-optimize-<date>/` before the write — no such directory was ever
+  created, because the write never happened.
 - **Data hygiene:** rating is derived from each entry's `quality` (0–5), NEVER
   from `score` — historical `score` is unreliably 0 (optimize_weights.py
   `_rating`, line 20 comment).
@@ -373,9 +377,9 @@ drift — re-verify before quoting:
 | crosscheck test shape, tolerances        | `cat ~/Projects/fluent/tests/test_fsrs_crosscheck.py`                                                                                                                                                           |
 | py-fsrs pin 6.3.1 in dev venv            | `~/Projects/fluent/.devvenv/bin/pip show fsrs`                                                                                                                                                                  |
 | DEFAULT_W = 21 floats, extraction cmd    | head of `~/Projects/fluent/.claude/hooks/fsrs.py`                                                                                                                                                               |
-| optimizer guards 400 / 50 / 21           | `grep -n "MIN_TOTAL\|MIN_NEW\|EXPECTED" ~/Projects/fluent/.claude/hooks/optimize_weights.py`                                                                                                                    |
+| optimizer guards 400 / 50 / 21 (retired) | `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py \| grep -n "MIN_TOTAL\|MIN_NEW\|EXPECTED"`                                                                                            |
 | live per-item review count (225)         | python snippet in Recipe 2                                                                                                                                                                                      |
-| optimizer no-op log line                 | `tail ~/.claude/logs/fluent-fsrs-optimize.log`                                                                                                                                                                  |
+| optimizer no-op log line (historical)    | `head -2 ~/.claude/logs/fluent-fsrs-optimize.log`                                                                                                                                                               |
 | payload commits + byte counts            | `git -C ~/Projects/fluent show 281c2a4 13fd374 18d55c0 --stat`                                                                                                                                                  |
 | live payload bytes (298,697 / 35,282)    | `wc -c` commands in Recipe 3                                                                                                                                                                                    |
 | clone vs marketplace vs cache drift      | `git -C ~/Projects/fluent log -1; git -C ~/.claude/plugins/marketplaces/aymkin log -1; diff -q ~/Projects/fluent/.claude/hooks/read-db.py ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/read-db.py` |

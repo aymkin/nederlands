@@ -55,7 +55,8 @@ Runtime hooks in the plugin cache (`fsrs.py` 168 ln, `update-db.py` 628 ln,
 standard library. Why: hooks run in whatever `python3` Claude Code finds — there
 is no venv guarantee at hook runtime. Heavy deps (torch, fsrs-optimizer) are
 isolated in the offline optimizer venv `~/.claude/fluent-data/.venv-optimizer/`,
-invoked only by the weekly LaunchAgent. Adding a pip import to any runtime hook
+invoked only by the weekly LaunchAgent that was retired in 2026-09 (the venv
+survives at 975 MB, serving nothing). Adding a pip import to any runtime hook
 breaks every session on a machine without that package.
 
 Corollary: `fsrs.py` is a hand-port of py-fsrs pinned at 6.3.1. `DEFAULT_W` (21
@@ -88,9 +89,10 @@ verified 2026-07-11):
   cache rebuild from it would silently revert the scheduler to SM-2 — that
   danger is now **resolved at the source**. Config backup:
   `~/.claude/known_marketplaces.json.pre-fork-20260711-222851`.
-- The marketplace KEY stays named `m98` **on purpose** — the name is baked into
-  the cache path `cache/aymkin/fluent/0.4.0`, the plugin id `fluent@aymkin`, and
-  the optimizer plist's hardcoded path; renaming would move all three.
+- The marketplace key was renamed `m98` → `aymkin` when the fork became its own
+  marketplace (2026-07-15, fluent `3c1c6b0`). That moved the clone path, the
+  cache path (`cache/aymkin/fluent/0.4.0`) and the plugin id (`fluent@aymkin`) —
+  and broke the optimizer plist, which named the old one (archaeology 12).
 - The dev clone (`~/Projects/fluent`, origin = `aymkin/fluent`, upstream =
   `m98/fluent`, HEAD `4205bf1`) is unchanged; it and the **cache** both contain
   the FSRS hooks.
@@ -120,10 +122,10 @@ diff -rq ~/Projects/fluent/.claude/hooks \
 # expected: only migrate_to_fsrs.py differs (dead one-time script); read-db.py + fsrs.py match (synced 2026-07-11)
 ```
 
-A version bump 0.3.0→x changes the cache path AND silently breaks the optimizer
-LaunchAgent, whose plist hardcoded a cache path that two renames then broke (job
-retired 2026-09-16, script deleted in fork `09618f3` — see
-`nederlands-change-control`).
+A version bump changes the cache path, so nothing outside the repo may name it.
+The one thing that did — the optimizer plist — broke silently and stayed broken
+for nine weeks (archaeology 12). Resolve the path instead:
+`ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1`.
 
 ## 4. item_id idempotency schemes (and their asymmetry)
 
@@ -176,18 +178,18 @@ Two `review_history` keys trap: the top-level
 live per-item in `items[*].review_history` (sum = 225 on 2026-07-09).
 Diagnostics must count per-item.
 
-## 6. Guarded weight optimizer (400/50)
+## 6. Weight optimization: retired, and the reasoning that outlives it
 
-Weekly LaunchAgent `com.aymkin.fluent-fsrs-optimize.plist` (Sunday 09:05, venv
-python against the CACHE path). `optimize_weights.py` guards: `MIN_TOTAL = 400`
-total reviews AND `MIN_NEW = 50` since last optimize, else no-op. Why: FSRS-6
-has 21 free parameters; fitting them on a few hundred reviews overfits and can
-produce worse scheduling than `DEFAULT_W`. It has run once ever:
-`[optimize] insufficient data (185/400, +185 new) — no-op` (log
-`~/.claude/logs/fluent-fsrs-optimize.log`). It derives ratings from per-item
-`quality` (0–5 → 1–4), never from `score` (historically unreliable 0).
-fsrs-optimizer's API broke once on upgrade (fork `133308c`) — expect breakage on
-pip upgrades in the venv.
+There is **no weight optimizer**. `optimize_weights.py` was deleted (fork
+`09618f3`, 2026-08-17) and its weekly job retired 2026-09-16 (archaeology 12).
+`metadata.weights` is `null` and stays `null`, so `fsrs.py` uses `DEFAULT_W` —
+which is what actually ran the whole time it existed.
+
+The design constraint survives the code: FSRS-6 has 21 free parameters, and
+fitting them on a few hundred reviews overfits into scheduling worse than
+`DEFAULT_W`. That is why the deleted optimizer no-op'd below 400 reviews and +50
+new, and why any revival needs the same guard. Read it if you revive one:
+`git show 09618f3^:.claude/hooks/optimize_weights.py`.
 
 ## 7. Daily review cap — code trims, prompts enforce
 

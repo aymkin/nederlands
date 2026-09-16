@@ -288,17 +288,18 @@ it=sr['items']; print(len(it),
 `review_history` list in the same file is an empty legacy artifact — always
 count per-item.)
 
-### Why the optimizer waits for 400 reviews
+### Why 400 reviews was the bar (optimizer retired)
 
-`optimize_weights.py` (weekly LaunchAgent, Sun 09:05) fits all 21 FSRS weights
-to the personal review log via fsrs-optimizer 6.5.0. Guards (lines 14-15,
-32-33): no-op unless total reviews ≥ `MIN_TOTAL = 400` AND ≥ `MIN_NEW = 50`
-since the last optimize. Rationale: 21 free parameters against ~225 review
-events (2026-07-09) is a textbook overfitting setup — personalized weights
-fitted on that little data would be worse than the population DEFAULT_W. It has
-run once ever, logging
-`[optimize] insufficient data (185/400, +185 new) — no-op`. Until it fires,
-`metadata.weights` stays `null` and DEFAULT_W applies.
+There is no weight optimizer: `optimize_weights.py` was deleted (fork `09618f3`)
+and its weekly job retired 2026-09-16 (archaeology 12). `metadata.weights` is
+`null` and DEFAULT_W applies — permanently, and it applied throughout, since the
+optimizer never once got past its guard.
+
+The threshold is worth keeping in mind for any revival. It fitted all 21 FSRS
+weights to the personal review log and refused to run below `MIN_TOTAL = 400`
+reviews AND `MIN_NEW = 50` since the last fit. Rationale: 21 free parameters
+against a few hundred review events is a textbook overfitting setup, and weights
+fitted on that little data schedule worse than the population DEFAULT_W.
 
 ---
 
