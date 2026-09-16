@@ -197,18 +197,31 @@ diff -rq ~/Projects/fluent/.claude/skills \
 - Upstream `m98` fixes are **not auto-tracked**. Merge them by hand —
   `git -C ~/Projects/fluent fetch upstream && git merge upstream/main` — then
   push.
-- **Version-bump risk — this one FIRED.** The optimizer LaunchAgent
-  `~/Library/LaunchAgents/com.aymkin.fluent-fsrs-optimize.plist` hardcodes the
-  cache path, and still points at
-  `…/cache/m98/fluent/0.3.0/.claude/hooks/ optimize_weights.py`, which no longer
-  exists. The weekly run (Sunday 09:05) has failed **9 times** with
+- **The optimizer LaunchAgent was a zombie — retired 2026-09-16.**
+  `~/Library/LaunchAgents/com.aymkin.fluent-fsrs-optimize.plist` fired every
+  Sunday 09:05 against a hardcoded cache path and failed 9 times running with
   `[Errno 2] No such file or directory`
-  (`~/.claude/logs/fluent-fsrs-optimize.log`, last 2026-09-13). Impact so far is
-  nil — the optimizer no-ops below 400 reviews and the history holds 17 — but it
-  fails silently, so it will still be broken when the data arrives. Fix is a
-  one-line plist path; any future version bump must update it in the same
-  change. Related: the dependency broke once on an API change already (fork
-  `133308c`, fsrs-optimizer 6.5.0) — expect it again on pip upgrades.
+  (`~/.claude/logs/fluent-fsrs-optimize.log`, last failure 2026-09-13). Two
+  separate causes stacked: the marketplace rename moved the cache path, and then
+  fork commit `09618f3` (2026-08-17) **deleted `optimize_weights.py` outright**.
+  That commit justified the deletion as "weekly FSRS-6 weight optimizer that
+  nothing schedules (no hook, no cron, no skill)" — true of the repo, false of
+  the machine, because nobody looked in `~/Library/LaunchAgents`. Repairing the
+  path would have resurrected a job whose script is deliberately gone, so the
+  job was booted out and the plist renamed aside (two backups kept beside it).
+  Impact was nil throughout: the optimizer no-ops below 400 reviews and the
+  history holds 17.
+- **Lesson for any "nothing calls this" deletion:** grep the repo AND
+  `launchctl list` plus `~/Library/LaunchAgents`. A scheduler outside the
+  repository is invisible to every in-repo search, and its failures land in a
+  log nobody reads.
+- **Hardcoded runtime paths rot silently.** Both the version (`0.3.0` → `0.4.0`)
+  and the marketplace key (`m98` → `aymkin`) have moved since the plist was
+  written. Anything outside the repo that points into `~/.claude/plugins/cache/`
+  must resolve the path
+  (`ls -d ~/.claude/plugins/cache/*/fluent/*/.claude/hooks | sort -V | tail -1`)
+  rather than name it. The dependency has also broken on an API change before
+  (fork `133308c`, fsrs-optimizer 6.5.0).
 
 ## The uncommitted working tree (as of 2026-07-09)
 
@@ -262,7 +275,7 @@ Re-verify before relying:
 | Backup dir patterns on disk        | `ls ~/.claude/fluent-data/.backups/ \| sort -u`                                                                                                               |
 | Marketplace clone remote/HEAD      | `git -C ~/.claude/plugins/marketplaces/aymkin remote -v && git -C ~/.claude/plugins/marketplaces/aymkin log -1`                                               |
 | Fork↔clone↔cache drift             | `diff -rq ~/Projects/fluent/.claude ~/.claude/plugins/marketplaces/aymkin/.claude` and the same against `~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude` |
-| Optimizer plist path (BROKEN)      | `plutil -p ~/Library/LaunchAgents/com.aymkin.fluent-fsrs-optimize.plist; tail -3 ~/.claude/logs/fluent-fsrs-optimize.log`                                     |
+| Optimizer job stays retired        | `launchctl list \| grep fluent-fsrs` — expect no output; `ls -a ~/Library/LaunchAgents \| grep fsrs` shows only the renamed backups                           |
 | Working-tree census (volatile)     | `git status --porcelain \| awk '{print $1}' \| sort \| uniq -c`                                                                                               |
 | Test count (25, README stale)      | `python3 scripts/test_fluent_import.py`                                                                                                                       |
 | One active curriculum unit         | `python3 -c "import json;print([u['id'] for u in json.load(open('link/curriculum.json'))['units'] if u['status']=='active'])"`                                |
