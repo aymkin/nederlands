@@ -566,3 +566,46 @@ python3 scripts/anki_vandaag.py --all --out private/frequentie/vandaag.md
 `/fluent-review` строит грамматические упражнения на этих словах. Слова в
 Fluent-SRS не заводятся — их интервалы ведёт Anki. Дневной цикл описан в
 `frequentie/README.md`.
+
+## fluent_rebuild_queue.py — ребилд бакетов очереди Fluent
+
+Гонять **в начале** сессии, следом за `anki_vandaag.py`. Только stdlib.
+
+```bash
+python3 scripts/fluent_rebuild_queue.py                 # сухой прогон
+python3 scripts/fluent_rebuild_queue.py --apply         # записать
+python3 scripts/fluent_rebuild_queue.py --date 2026-09-22 --data-dir /tmp/x
+```
+
+| Флаг         | Описание                       | По умолчанию            |
+| ------------ | ------------------------------ | ----------------------- |
+| `--apply`    | Записать, а не только показать | выкл (сухой прогон)     |
+| `--date`     | Считать этот день сегодняшним  | сегодня                 |
+| `--data-dir` | Каталог Fluent                 | `~/.claude/fluent-data` |
+
+**Зачем.** `read-db.py --review` подаёт **сохранённый** список
+`review_queue.today` — он только сортирует его по `priority` и режет по
+`daily_limits`. Бакеты перестраивает исключительно `update-db.py`, и только в
+конце сессии. Отсюда однодневный лаг: карточка с `due_date` = завтра лежит в
+бакете `tomorrow` и переедет в `today` лишь после того, как завтрашняя сессия
+закончится, то есть подадут её послезавтра.
+
+Замерено на живой базе 2026-09-21: без ребилда назавтра выпадали из подачи 19
+карточек, включая правило дня `gram_lp_7.1` (`priority: critical`) и все три
+ошибки, назначенные на пересдачу.
+
+**Устройство.** Бакетинг не свой — `rebuild_queue` импортируется из
+`fluent_import.py`, чтобы в репозитории жила одна реализация правил
+today/tomorrow/this_week/later, а не третья копия (вторая — в
+`.claude/skills/fluent-backlog-campaign/scripts/defer_dues.py`).
+
+**Безопасность.** Трогает только `review_queue` и `metadata`; `due_date`,
+`stability`, `repetitions`, `mastery_level` не пересчитываются. Идемпотентен:
+если бакеты уже совпадают с расчётными, не пишет и не делает бэкап. Перед
+записью — бэкап в `.backups/pre-rebuild-<timestamp>/`, запись атомарная (tmp +
+`os.replace`).
+
+Проверки: `python3 scripts/test_fluent_rebuild_queue.py` — 13 тестов. Главные:
+`test_lag_detected` воспроизводит сам лаг, `test_parity_with_importer` держит
+совпадение с бакетингом импортёра, `test_apply_touches_only_queue_and_metadata`
+сторожит нетронутость расписания FSRS.

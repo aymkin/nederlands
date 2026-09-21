@@ -93,6 +93,9 @@ text_to_speech.py ─┘
 story_reader.py ──────┐ standalone readers
 multivoice_reader.py ─┘ (edge-tts Python API + WordBoundary timings;
                         multivoice_reader imports align_timings from story_reader)
+
+fluent_rebuild_queue.py ─→ fluent_import.py (imports rebuild_queue — one
+                           implementation of the bucket rules, not a copy)
 ```
 
 ### audio_to_anki.py — Audio to Anki Sentence Cards
@@ -277,6 +280,29 @@ python3 scripts/fluent_import.py --course link --advance # advance + import next
   rebuilds the review queue.
 - Advancement threshold: ≥ 80% of the unit's cards at `mastery_level ≥ 3` AND
   zero "red" cards (`consecutive_incorrect ≥ 2`).
+
+### fluent_rebuild_queue.py — Ребилд бакетов очереди
+
+Гонять **в начале** сессии, вместе с `anki_vandaag.py`. Закрывает однодневный
+лаг: `read-db.py --review` подаёт сохранённый список `review_queue.today`, а
+перестраивает бакеты только `update-db.py` — в конце сессии. Без ребилда
+карточка, назначенная на сегодня, лежит в `tomorrow` и в подачу попадёт лишь
+послезавтра.
+
+```bash
+python3 scripts/fluent_rebuild_queue.py            # сухой прогон
+python3 scripts/fluent_rebuild_queue.py --apply    # записать
+```
+
+Бакетинг не свой — импортирует `rebuild_queue` из `fluent_import.py`, чтобы в
+репозитории жила одна реализация правил today/tomorrow/this_week/later. Трогает
+только `review_queue` и `metadata`; `due_date`, `stability`, `repetitions`,
+`mastery_level` не пересчитываются. Идемпотентен: если бакеты уже актуальны, не
+пишет и не делает бэкап. Бэкап перед записью —
+`.backups/pre-rebuild-<timestamp>/`.
+
+Проверки: `python3 scripts/test_fluent_rebuild_queue.py` (13 тестов; главный —
+`test_lag_detected`, воспроизводит сам лаг, и `test_parity_with_importer`).
 
 ## Anki Integration
 
