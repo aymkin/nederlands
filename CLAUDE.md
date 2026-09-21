@@ -283,26 +283,19 @@ python3 scripts/fluent_import.py --course link --advance # advance + import next
 
 ### fluent_rebuild_queue.py — Ребилд бакетов очереди
 
-Гонять **в начале** сессии, вместе с `anki_vandaag.py`. Закрывает однодневный
-лаг: `read-db.py --review` подаёт сохранённый список `review_queue.today`, а
-перестраивает бакеты только `update-db.py` — в конце сессии. Без ребилда
-карточка, назначенная на сегодня, лежит в `tomorrow` и в подачу попадёт лишь
-послезавтра.
+Гонять **в начале** сессии, следом за `anki_vandaag.py`:
 
 ```bash
-python3 scripts/fluent_rebuild_queue.py            # сухой прогон
-python3 scripts/fluent_rebuild_queue.py --apply    # записать
+python3 scripts/fluent_rebuild_queue.py --apply
 ```
 
-Бакетинг не свой — импортирует `rebuild_queue` из `fluent_import.py`, чтобы в
-репозитории жила одна реализация правил today/tomorrow/this_week/later. Трогает
-только `review_queue` и `metadata`; `due_date`, `stability`, `repetitions`,
-`mastery_level` не пересчитываются. Идемпотентен: если бакеты уже актуальны, не
-пишет и не делает бэкап. Бэкап перед записью —
-`.backups/pre-rebuild-<timestamp>/`.
+Закрывает лаг: `read-db.py --review` подаёт сохранённый `review_queue.today`, а
+перестраивает бакеты только `update-db.py` — в конце сессии. Поэтому без ребилда
+карточка, назначенная на сегодня, приходит послезавтра.
 
-Проверки: `python3 scripts/test_fluent_rebuild_queue.py` (13 тестов; главный —
-`test_lag_detected`, воспроизводит сам лаг, и `test_parity_with_importer`).
+Расписание FSRS не трогает — только `review_queue` и `metadata`, так что запрет
+на ручную правку `spaced-repetition.json` здесь не нарушен. Сухой прогон по
+умолчанию. Проверки: `python3 scripts/test_fluent_rebuild_queue.py`.
 
 ## Anki Integration
 

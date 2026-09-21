@@ -605,7 +605,7 @@ today/tomorrow/this_week/later, а не третья копия (вторая �
 записью — бэкап в `.backups/pre-rebuild-<timestamp>/`, запись атомарная (tmp +
 `os.replace`).
 
-Проверки: `python3 scripts/test_fluent_rebuild_queue.py` — 13 тестов. Главные:
+Проверки: `python3 scripts/test_fluent_rebuild_queue.py`. Главные:
 `test_lag_detected` воспроизводит сам лаг, `test_parity_with_importer` держит
 совпадение с бакетингом импортёра, `test_apply_touches_only_queue_and_metadata`
 сторожит нетронутость расписания FSRS.
