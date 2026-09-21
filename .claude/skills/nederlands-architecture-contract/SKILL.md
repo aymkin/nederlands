@@ -262,9 +262,8 @@ kills story reading; everything else is offline.
    `link|de_opmaat|both`); `link_plus/woordenlijst_index.txt` is a stale
    pre-rename snapshot.
 5. CLAUDE.md drift: calls the abandoned maart*2026 plan "active"; claims `link/`
-   task dirs are `{N}*{task*name}`— disk reality is
-   plain`taak_N`(verified`ls link/thema_8`); understates `.prettierignore`(it
-   also ignores`\*\*/verhaal*_.md`, `_\_reader.html`).
+   task dirs are `{N}*{task*name}`— disk reality is plain`taak_N`(verified`ls
+   link/thema_8`); understates `.prettierignore`(it also ignores`\*\*/verhaal*_.md`, `_\_reader.html`).
 6. `scripts/README.md` says "21 passed" for the importer tests; running
    `python3 scripts/test_fluent_import.py` gives **25 passed** (verified
    2026-07-09). The README is stale — do not delete tests to match it.

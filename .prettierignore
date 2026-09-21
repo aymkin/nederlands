@@ -9,3 +9,10 @@ node_modules/
 # Lesson notes: hand-made line layout (conjugation tables, tijden lists).
 # proseWrap:always collapses those columns into prose and destroys them.
 **/les.md
+
+# Grammar rule extracts: scripts/grammatica_fluent.py parses them with
+# line-anchored regexes (REGEL_RE, RUSSISCH_RE, VALKUIL_RE use ^…$ with re.M).
+# proseWrap:always rewraps those lines and the parser then silently truncates
+# the rule text — measured 2026-09-21: 58 corrupted fields across 34 rules,
+# several Russian glosses emptied outright.
+grammatica/regels/

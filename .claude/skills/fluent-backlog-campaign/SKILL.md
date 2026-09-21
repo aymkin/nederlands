@@ -382,5 +382,7 @@ All numbers date-stamped 2026-07-10 and VOLATILE. Re-verify with:
 - Owner approvals (repoint in principle, 2026-07-09) are conversation facts:
   RE-CONFIRM with the owner at each decision gate; never treat this file as
   consent.
-- defer*dues.py behavior: test against a copy first —
-  `cp ~/.claude/fluent-data/spaced-repetition.json /tmp/x/ && python3 .claude/skills/fluent-backlog-campaign/scripts/defer_dues.py --prefix link_t4* --days 14 --data-dir /tmp/x`
+- defer*dues.py behavior: test against a copy first — `cp
+  ~/.claude/fluent-data/spaced-repetition.json /tmp/x/ && python3
+  .claude/skills/fluent-backlog-campaign/scripts/defer_dues.py --prefix link_t4*
+  --days 14 --data-dir /tmp/x`

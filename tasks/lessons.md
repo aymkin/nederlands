@@ -6,9 +6,9 @@ Corrections that should change future behavior. Newest first.
 
 ### Материал — про предмет, а не про источник
 
-Когда Alex просит использовать факты из книги (`Nieuw in Rotterdam` и т.п.),
-это значит **взять факты**, а не сделать книгу темой. Я построил презентацию
-на цитатах «In het boek zegt de moeder van Laura…», «In het boek vraagt Reza…» —
+Когда Alex просит использовать факты из книги (`Nieuw in Rotterdam` и т.п.), это
+значит **взять факты**, а не сделать книгу темой. Я построил презентацию на
+цитатах «In het boek zegt de moeder van Laura…», «In het boek vraagt Reza…» —
 получилась презентация про книгу, а не про праздник. Правильно: тот же факт
 подаётся как факт о предмете — «Nederlanders vertellen hun kinderen dat hij wel
 duizend jaar oud is». Побочная выгода: ученик берёт утверждение на себя, а не

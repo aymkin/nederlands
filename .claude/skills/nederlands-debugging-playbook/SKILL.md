@@ -76,9 +76,9 @@ CACHE=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1)
 - **Root cause:** `proseWrap: always` (printWidth 80) split single-line
   sentences across lines; the reader parsed each physical line as a sentence.
 - **Fix:** story*reader now merges continuation lines (51c5ba6), and
-  `.prettierignore` excludes `\*\*/verhaal*\*.md`. If a NEW story path pattern
-  is used, add it to `.prettierignore` before formatting — do not rely on the
-  merge heuristic.
+  `.prettierignore` excludes
+  `\*\*/verhaal*\*.md`. If a NEW story path pattern is used, add it to `.prettierignore`
+  before formatting — do not rely on the merge heuristic.
 - **Story:** commit 51c5ba6 "Make story_reader resilient to Prettier-wrapped
   markdown".
 
@@ -166,11 +166,9 @@ CACHE=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1)
   ```
 
 - **Root cause:** grammar item*ids are POSITIONAL —
-  `{prefix}gram*{module*num}*{idx}` (`fluent*import.py:157`), where `idx`is the
-  ordinal of the`**bold**`example under the module. Inserting, deleting, or
-  reordering bold examples in`grammatica_thema{NN}*\*.md`after import
-  shifts`idx`: re-import then seeds NEW ids while the old scheduled cards keep
-  their (now-unmatched) content — orphans with live intervals.
+  `{prefix}gram*{module*num}*{idx}` (`fluent*import.py:157`), where `idx`is the ordinal of the`**bold**`example under the module. Inserting, deleting, or reordering bold examples in`grammatica_thema{NN}*\*.md`after import shifts`idx`:
+  re-import then seeds NEW ids while the old scheduled cards keep their
+  (now-unmatched) content — orphans with live intervals.
 - **Fix:** finish grammar edits BEFORE first import of that thema. If the file
   was already imported, appending new examples at the END of a module is safe
   (existing idx unchanged); anything else goes through

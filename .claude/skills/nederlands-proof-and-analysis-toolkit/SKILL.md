@@ -216,9 +216,8 @@ not "fix" tests to match):
 
 - **Design that makes idempotency possible:** the item*id is a pure function of
   stable content, not of run state. Vocab:
-  `{course}\_t{N}\_voc_taak{K}*{slug(word)}`→`link_t8_voc_taak1_de-buurt`(fluent_import.py
-  line ~100). The same word always maps to the same id, so`add_items` can skip
-  ids already in the store (line ~211) and re-running adds 0.
+  `{course}\_t{N}\_voc_taak{K}*{slug(word)}`→`link_t8_voc_taak1_de-buurt`(fluent_import.py line ~100). The same word always maps to the same id, so`add_items`
+  can skip ids already in the store (line ~211) and re-running adds 0.
 - **The proof, as tests:**
   - `test_add_items_idempotent`: same items added twice → first call returns 1,
     second returns 0, existing item state untouched.

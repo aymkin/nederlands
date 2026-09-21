@@ -100,13 +100,13 @@ not Alex's.
 
 ### 4. Edit grammar files BEFORE importing, never after
 
-Grammar item*ids are **positional**: `scripts/fluent_import.py:157` builds
-`item_id = f"{prefix}gram*{sec['num']}\_{idx}"`where`idx`is the bullet's index
-under`### Voorbeelden uit oefeningen`. Inserting, deleting, or reordering
-`**bold**`examples in an already-imported grammatica file makes re-import mint
-new ids and orphans the learner's scheduled cards. Also never renumber
-the`## N.N`H2 module numbers — they are the Link book's own numbering, consumed
-by`curriculum.json`.
+Grammar item ids are **positional**: `scripts/fluent_import.py:157` builds
+`item_id = f"{prefix}gram_{sec['num']}_{idx}"`, where `idx` is the bullet's
+index under `### Voorbeelden uit oefeningen`. Inserting, deleting, or reordering
+`**bold**` examples in an already-imported grammatica file makes re-import mint
+new ids and orphans the learner's scheduled cards. Also never renumber the
+`## N.N` H2 module numbers — they are the Link book's own numbering, consumed by
+`curriculum.json`.
 
 Sequence: edit grammatica md → THEN
 `python3 scripts/fluent_import.py --course link --thema N`.
