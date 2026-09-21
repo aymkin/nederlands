@@ -536,7 +536,7 @@ thema_8 — 42 карточки | mastery≥3: 38/42 (90.5%) | красных: 0
 
 ```bash
 cd scripts && python3 test_fluent_import.py
-# Ожидается: 21 passed
+# Ожидается: 25 passed
 ```
 
 ---

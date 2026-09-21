@@ -30,12 +30,23 @@ from frequentie_fluent import load, save, rebuild_queue  # noqa: E402
 # carry two bracketed groups ("… als subject (herhaling) (повторение)"), which
 # a single optional trailing group cannot match.
 KOP_RE = re.compile(r"^### (?P<id>\d+\.\d+) · (?P<rest>.+?)\s*$", re.M)
-REGEL_RE = re.compile(r"^\*\*Regel:\*\*\s*(?P<txt>.+?)\s*$", re.M)
-RUSSISCH_RE = re.compile(r"^\*\*По-русски:\*\*\s*(?P<txt>.+?)\s*$", re.M)
-VOORBEELD_KOP_RE = re.compile(r"^\*\*Voorbeelden[^*]*\*\*\s*$", re.M)
+# A labelled field runs to the NEXT label, block element or blank line — never
+# to end of line. The extracts are prose, so a label lands mid-line and a rule
+# spans two lines as soon as anything rewraps them (Prettier's proseWrap does,
+# and did: 58 fields truncated across 34 rules, 2026-09-21). A `^…$` capture
+# fails silently there — the parser still succeeds and writes half a rule into
+# the learner's deck. Reading to the next label makes layout irrelevant.
+LABELS = "Regel|По-русски|Частая ошибка"
+VELD_RE = re.compile(
+    rf"\*\*(?P<label>{LABELS}):\*\*\s*(?P<txt>.+?)"
+    rf"(?=\*\*(?:{LABELS}|Voorbeelden|Подсказка|⚠)|\n\s*\n|\n\s*[-|#>]|\Z)",
+    re.S,
+)
+# Same reason, without the `$`: the heading shares a line with its first
+# example in some blocks, and gains a line of its own when rewrapped.
+VOORBEELD_KOP_RE = re.compile(r"\*\*Voorbeelden[^*]*\*\*", re.M)
 VOORBEELD_RE = re.compile(r"^-\s*`(?P<nl>[^`]+)`", re.M)
 BACKTICK_RE = re.compile(r"`([^`]+)`")
-VALKUIL_RE = re.compile(r"^\*\*Частая ошибка:\*\*\s*(?P<txt>.+?)\s*$", re.M)
 THEMA_RE = re.compile(r"thema_(\d+)")
 # de/het and adjective endings are A2 material even in a 0->A2 book; the rest
 # of themes 1-4 is A1. Only used to stamp `difficulty` (a CEFR STRING — never
@@ -44,9 +55,29 @@ A2_REGELS = {"5.1", "5.2", "1.14", "1.15", "2.5", "3.1", "3.2", "7.1", "7.2"}
 
 
 def strip_md(text: str) -> str:
-    """Drop markdown emphasis and backticks — SR content is shown as plain text."""
-    text = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
-    return text.replace("`", "").strip()
+    """Card text: markdown emphasis dropped, whitespace collapsed to one line.
+
+    Collapsing belongs here rather than at each call site — it is what makes
+    every extracted field wrap-invariant, and a card that keeps a newline from
+    the source layout renders as a broken line for the learner.
+    """
+    # Collapse BEFORE stripping emphasis: `.` does not cross a newline, so a
+    # `**bold**` span broken by a line wrap survives the emphasis regex and
+    # the asterisks land on the card.
+    text = re.sub(r"\s+", " ", text.replace("`", "")).strip()
+    return re.sub(r"\*\*(.+?)\*\*", r"\1", text)
+
+
+def velden(blok: str) -> dict[str, str]:
+    """Labelled fields of one rule block, keyed by label, whitespace collapsed.
+
+    Collapsing is what makes the result wrap-invariant: the same rule yields
+    the same string whether it sits on one line or five.
+    """
+    uit = {}
+    for m in VELD_RE.finditer(blok):
+        uit.setdefault(m.group("label"), strip_md(m.group("txt")))
+    return uit
 
 
 def haal_voorbeelden(blok: str) -> list[str]:
@@ -65,7 +96,7 @@ def haal_voorbeelden(blok: str) -> list[str]:
             return uit[:3]
     gezien, uit = set(), []
     for m in BACKTICK_RE.finditer(blok):
-        frag = m.group(1).strip()
+        frag = strip_md(m.group(1))
         if frag and frag not in gezien:
             gezien.add(frag)
             uit.append(frag)
@@ -79,10 +110,8 @@ def parse_regels(path: Path) -> list[dict]:
     rules = []
     for i, kop in enumerate(koppen):
         blok = md[kop.end(): koppen[i + 1].start() if i + 1 < len(koppen) else len(md)]
-        regel = REGEL_RE.search(blok)
-        russisch = RUSSISCH_RE.search(blok)
+        veld = velden(blok)
         voorbeelden = haal_voorbeelden(blok)
-        valkuil = VALKUIL_RE.search(blok)
         rest = kop.group("rest")
         # The LAST bracketed group is the Russian gloss; earlier ones
         # ("(herhaling)") belong to the Dutch title.
@@ -94,10 +123,10 @@ def parse_regels(path: Path) -> list[dict]:
             "thema": thema,
             "title": title,
             "gloss": gloss,
-            "regel": strip_md(regel.group("txt")) if regel else "",
-            "russisch": strip_md(russisch.group("txt")) if russisch else "",
+            "regel": veld.get("Regel", ""),
+            "russisch": veld.get("По-русски", ""),
             "voorbeelden": voorbeelden,
-            "valkuil": strip_md(valkuil.group("txt")) if valkuil else "",
+            "valkuil": veld.get("Частая ошибка", ""),
             "bron": f"{path.parent.name}/{path.name}#{kop.group('id')}",
         })
     return rules

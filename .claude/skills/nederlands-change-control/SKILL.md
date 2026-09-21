@@ -39,13 +39,13 @@ Consequences:
 
 ## Change lanes and their gates
 
-| Lane              | What's in it                                                             | Gate before commit                                                                                                                                       |
-| ----------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **content**       | `link/`, `link_plus/`, `de_opmaat/`, `other/`, `daily/` md + `_anki.txt` | Voldemort grep (below); Anki TSV format check (literal TABs, `#html:true` with `[sound:]`); no renames of existing files; Prettier on md only            |
-| **scripts**       | `scripts/*.py`                                                           | `python3 scripts/test_fluent_import.py` → expect **25 passed** (as of 2026-07-09; `scripts/README.md` says 21 — README is stale, don't "fix" tests down) |
-| **fluent-plugin** | fork `~/Projects/fluent`, cache hooks                                    | NOT this repo — see multi-repo flow below; never edit cache without syncing the fork first                                                               |
-| **docs**          | `docs/superpowers/`, `CLAUDE.md`, READMEs, `.claude/skills/`             | 80-col proseWrap; where CLAUDE.md is documented-stale, correct it or note it — never propagate the stale claim                                           |
-| **config**        | `curriculum.json`, `.prettierrc`, `package.json`, `pages.yml`            | curriculum.json: exactly ONE unit `status: "active"` (importer raises ValueError otherwise); pages.yml changes alter public exposure — owner sign-off    |
+| Lane              | What's in it                                                             | Gate before commit                                                                                                                                                                                  |
+| ----------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **content**       | `link/`, `link_plus/`, `de_opmaat/`, `other/`, `daily/` md + `_anki.txt` | Voldemort grep (below); Anki TSV format check (literal TABs, `#html:true` with `[sound:]`); no renames of existing files; Prettier on md only                                                       |
+| **scripts**       | `scripts/*.py`                                                           | `python3 scripts/test_fluent_import.py` → expect **25 passed**; touching `grammatica_fluent.py` or the rule extracts also needs `python3 scripts/test_grammatica_fluent.py` → expect **всё зелено** |
+| **fluent-plugin** | fork `~/Projects/fluent`, cache hooks                                    | NOT this repo — see multi-repo flow below; never edit cache without syncing the fork first                                                                                                          |
+| **docs**          | `docs/superpowers/`, `CLAUDE.md`, READMEs, `.claude/skills/`             | 80-col proseWrap; where CLAUDE.md is documented-stale, correct it or note it — never propagate the stale claim                                                                                      |
+| **config**        | `curriculum.json`, `.prettierrc`, `package.json`, `pages.yml`            | curriculum.json: exactly ONE unit `status: "active"` (importer raises ValueError otherwise); pages.yml changes alter public exposure — owner sign-off                                               |
 
 ## Commit protocol
 
@@ -154,6 +154,31 @@ converts tabs corrupts every card silently (`.prettierignore` excludes them;
 keep it that way). `#html:true` is REQUIRED whenever `[sound:…]` tags appear in
 fields — incident `8cd356c` (2026-03-03) unified this across all Link files
 after cards rendered raw markup.
+
+### 8. Formatter vs machine-read markdown: diff the parser's output
+
+A file diff cannot tell table alignment from data loss. When a formatter or a
+mass-edit touches markdown that a script parses, run that parser over both
+versions and compare its **output** — the only diff that shows the damage.
+
+Incident 2026-09-21: `pnpm run format` over `grammatica/regels/` truncated 58
+fields across 34 rules. `proseWrap:always` moved `**По-русски:**` mid-line while
+`grammatica_fluent.py` captured fields with `^…$`, so seven rules lost their
+Russian gloss outright — and silently: no exception, exit 0, "34 правил
+разобрано", half-rules bound for the learner's deck.
+
+Which remedy applies depends on whether the format is yours to change:
+
+| Format                          | Remedy            | Why                            |
+| ------------------------------- | ----------------- | ------------------------------ |
+| `_anki.txt` — literal TABs (§7) | `.prettierignore` | Anki's import format, not ours |
+| `**/les.md` — hand-made columns | `.prettierignore` | the layout IS the content      |
+| `grammatica/regels/` — prose    | fix the parser    | prose has no layout to protect |
+
+`grammatica/regels/` left `.prettierignore` once the parser read each field to
+the next label instead of to end of line. `scripts/test_grammatica_fluent.py`
+pins the property: every field of every rule identical when the source is
+rewrapped at 60, 80, 120 and one-line widths.
 
 ## Fluent multi-repo change flow
 
