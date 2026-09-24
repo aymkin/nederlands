@@ -4,14 +4,14 @@
 #deck:Frequentie::Kern
 #columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
 #tags column:7
-de serie	1230	Mijn favoriete serie begint vanavond om negen uur.	сериал; серия, ряд	Мой любимый сериал начинается сегодня в девять.	[sound:freq_serie.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
+de serie	1230	Mijn favoriete serie begint vanavond om negen uur.	сериал; серия	Мой любимый сериал начинается сегодня в девять.	[sound:freq_serie.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de regio	1248	Hun kantoor zit in de regio Utrecht.	регион, область	Их офис находится в регионе Утрехт.	[sound:freq_regio.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
-de stand	1256	Hun club staat voor: de stand is 2-1.	счёт (в игре); положение, состояние	Их клуб ведёт: счёт 2:1.	[sound:freq_stand.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
+de stand	1256	Hun club staat voor: de stand is 2-1.	счёт (в игре); положение дел	Их клуб ведёт: счёт 2:1.	[sound:freq_stand.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de periode	1283	In deze periode is mijn baas vaak op reis.	период	В этот период мой начальник часто в разъездах.	[sound:freq_periode.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de tand	1284	Mijn zoon heeft zijn eerste tand!	зуб	У моего сына первый зуб!	[sound:freq_tand.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de omstandigheid	1296	Onder deze omstandigheden werken hun mensen gewoon thuis.	обстоятельство (обычно мн. ч.)	При таких обстоятельствах их сотрудники просто работают из дома.	[sound:freq_omstandigheid.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de verkiezing	1316	Onze gemeente heeft volgend jaar verkiezingen.	выборы (обычно мн. ч.)	В нашей гемеенте в следующем году выборы.	[sound:freq_verkiezing.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
-de jeugd	1330	Mijn opa vertelt graag over zijn jeugd.	юность, детство; молодёжь	Мой дедушка любит рассказывать о своей юности.	[sound:freq_jeugd.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
+de jeugd	1330	Mijn opa vertelt graag over zijn jeugd.	юность; молодёжь	Мой дедушка любит рассказывать о своей юности.	[sound:freq_jeugd.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de poging	1355	Dit is al zijn derde poging voor het rijexamen.	попытка	Это уже его третья попытка сдать на права.	[sound:freq_poging.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de hersenen	1370	Slaap is goed voor je hersenen.	мозг (всегда мн. ч.)	Сон полезен для твоего мозга.	[sound:freq_hersenen.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de functie	1379	Wat is jouw functie bij het bedrijf?	должность; функция	Какая у тебя должность в компании?	[sound:freq_functie.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
@@ -36,7 +36,7 @@ de opname	1418	Luister eens naar onze opname van gisteren!	запись (ауд�
 de medewerker	1426	Onze nieuwe medewerker heet Mo.	сотрудник	Нашего нового сотрудника зовут Мо.	[sound:freq_medewerker.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
 het cijfer	1447	Mijn cijfer is een zeven. En jouw cijfer?	оценка (в школе); цифра	У меня семёрка. А у тебя какая оценка?	[sound:freq_cijfer.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
 de cultuur	1454	Wat vind je het mooiste aan onze cultuur?	культура	Что тебе больше всего нравится в нашей культуре?	[sound:freq_cultuur.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
-de oproep	1463	Onze oproep staat op de website: we zoeken vrijwilligers.	призыв, объявление; вызов (звонок)	Наше объявление на сайте: мы ищем волонтёров.	[sound:freq_oproep.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
+de oproep	1463	Onze oproep staat op de website: we zoeken vrijwilligers.	призыв, объявление	Наше объявление на сайте: мы ищем волонтёров.	[sound:freq_oproep.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
 het personeel	1473	Ons personeel spreekt Nederlands en Engels.	персонал, сотрудники (собир.)	Наш персонал говорит по-нидерландски и по-английски.	[sound:freq_personeel.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
 de wetenschap	1486	Jouw mening is leuk, maar wat zegt de wetenschap?	наука	Твоё мнение — это мило, но что говорит наука?	[sound:freq_wetenschap.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
 de aanpak	1489	Ik vind jouw aanpak beter dan die van mij.	подход, способ действий	По-моему, твой подход лучше моего.	[sound:freq_aanpak.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
@@ -44,7 +44,7 @@ het signaal	1525	Ons signaal is hier slecht, bel me straks even terug.	сигн�
 de voorzitter	1546	Onze voorzitter opent de vergadering om acht uur.	председатель	Наш председатель открывает собрание в восемь.	[sound:freq_voorzitter.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
 de gemeenschap	1547	Onze gemeenschap in de wijk organiseert elke maand een markt.	сообщество, община	Наше сообщество в районе каждый месяц устраивает рынок.	[sound:freq_gemeenschap.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
 de gebeurtenis	1551	Dat feest is voor onze familie een grote gebeurtenis.	событие	Этот праздник для нашей семьи — большое событие.	[sound:freq_gebeurtenis.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
-herstellen	1211	Na de operatie kun je thuis rustig herstellen.	выздоравливать, восстанавливаться; исправлять	После операции ты можешь спокойно восстанавливаться дома.	[sound:freq_herstellen.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
+herstellen	1211	Na de operatie kun je thuis rustig herstellen.	восстанавливаться (после болезни); исправлять	После операции ты можешь спокойно восстанавливаться дома.	[sound:freq_herstellen.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 vieren	1219	Zaterdag gaan we mijn verjaardag vieren.	праздновать, отмечать	В субботу мы будем праздновать мой день рождения.	[sound:freq_vieren.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 meemaken	1244	In Amsterdam ga je echt veel meemaken!	переживать, испытывать (на себе)	В Амстердаме ты правда многое увидишь и переживёшь!	[sound:freq_meemaken.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 vergeven	1253	Kun je me vergeven? Het spijt me echt.	прощать	Ты можешь меня простить? Мне правда жаль.	[sound:freq_vergeven.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
@@ -62,7 +62,7 @@ oefenen	1438	Morgen ga ik de woorden nog een keer oefenen.	упражнятьс�
 duiken	1467	In Egypte kun je prachtig duiken.	нырять	В Египте можно чудесно нырять.	[sound:freq_duiken.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 delen	1499	Kunnen we de pizza delen? Ik heb weinig honger.	делить(ся)	Можем разделить пиццу? Я не очень голоден.	[sound:freq_delen.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 opzoeken	1527	Ik ga dat woord even opzoeken.	искать (в словаре, в интернете); навещать	Сейчас посмотрю это слово.	[sound:freq_opzoeken.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
-ruiken	1528	Kun je het ruiken? De taart is bijna klaar!	пахнуть; чувствовать запах, нюхать	Чувствуешь запах? Пирог почти готов!	[sound:freq_ruiken.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
+ruiken	1528	Kun je het ruiken? De taart is bijna klaar!	чувствовать запах; пахнуть	Чувствуешь запах? Пирог почти готов!	[sound:freq_ruiken.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 verzorgen	1554	Wie gaat de kat verzorgen als we op vakantie zijn?	ухаживать, заботиться	Кто будет ухаживать за кошкой, пока мы в отпуске?	[sound:freq_verzorgen.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 waarderen	1210	Dat moet je waarderen, hoor!	ценить, оценивать	Это надо ценить!	[sound:freq_waarderen.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 creëren	1212	We willen meer ruimte voor fietsen creëren.	создавать	Мы хотим создать больше места для велосипедов.	[sound:freq_creëren.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
@@ -80,13 +80,13 @@ verwijten	1441	Wat wil je me eigenlijk verwijten?	упрекать, винить
 voorzien	1462	We moeten alle kamers van nieuwe ramen voorzien.	снабжать (van — чем-то); предвидеть	Нам нужно поставить во все комнаты новые окна.	[sound:freq_voorzien.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 beweren	1487	Wil je echt beweren dat jij altijd op tijd bent?	утверждать	Ты правда хочешь утверждать, что ты всегда вовремя?	[sound:freq_beweren.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 verdragen	1508	Ik moet die herrie de hele dag verdragen.	терпеть, переносить	Мне приходится терпеть этот шум весь день.	[sound:freq_verdragen.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
-aangeven	1518	Je moet je verhuizing bij de gemeente aangeven.	сообщать, заявлять (офиц.); указывать; передавать	Ты должен заявить о переезде в гемеенте.	[sound:freq_aangeven.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
+aangeven	1518	Je moet je verhuizing bij de gemeente aangeven.	заявлять, сообщать (офиц.)	Ты должен заявить о переезде в гемеенте.	[sound:freq_aangeven.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 handelen	1537	Bij brand moet je snel handelen.	действовать; торговать	При пожаре нужно действовать быстро.	[sound:freq_handelen.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 verzekeren	1557	Je moet je fiets echt goed verzekeren.	страховать; уверять	Тебе правда нужно хорошо застраховать велосипед.	[sound:freq_verzekeren.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 verhogen	1570	De verhuurder wil de huur in januari verhogen.	повышать	Арендодатель хочет повысить аренду в январе.	[sound:freq_verhogen.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 voormalig	1207	Mijn voormalige collega werkt nu niet meer in Hilversum.	бывший	Мой бывший коллега больше не работает в Хилверсюме.	[sound:freq_voormalig.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
-ineens	1226	Ineens doet mijn laptop het niet meer.	вдруг, внезапно; сразу	Внезапно мой ноутбук перестал работать.	[sound:freq_ineens.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
-behoorlijk	1239	Het is behoorlijk koud, maar niet nat.	довольно, изрядно; приличный	Довольно холодно, но не сыро.	[sound:freq_behoorlijk.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
+ineens	1226	Ineens doet mijn laptop het niet meer.	вдруг, внезапно	Внезапно мой ноутбук перестал работать.	[sound:freq_ineens.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
+behoorlijk	1239	Hij verdient geen behoorlijk salaris.	приличный, нормальный (о зарплате, поведении)	Он не получает нормальной зарплаты.	[sound:freq_behoorlijk.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 akkoord	1240	Ik ga niet akkoord met dit voorstel.	согласен (akkoord gaan met — соглашаться с)	Я не согласен с этим предложением.	[sound:freq_akkoord.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 financieel	1261	Financieel is het dit jaar niet makkelijk.	финансовый; в финансовом плане	В финансовом плане в этом году нелегко.	[sound:freq_financieel.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 technisch	1273	Ik ben niet zo technisch: kun jij de printer even maken?	технический; разбирающийся в технике	Я не очень разбираюсь в технике: можешь починить принтер?	[sound:freq_technisch.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
@@ -101,6 +101,6 @@ logisch	1364	Dat is toch niet logisch?	логичный; логично	Это �
 de maan	1365	Vannacht is er geen maan, het is heel donker.	луна	Этой ночью нет луны, очень темно.	[sound:freq_maan.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 tijdelijk	1375	Het is maar tijdelijk, geen probleem.	временный; временно	Это только временно, не проблема.	[sound:freq_tijdelijk.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 het miljard	1416	Nee, we hebben geen miljard euro nodig, hoor!	миллиард	Нет, нам не нужен миллиард евро!	[sound:freq_miljard.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
-puur	1423	Dit is puur geluk, geen talent.	чистый, беспримесный; чисто	Это чистое везение, а не талант.	[sound:freq_puur.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
-bewust	1451	Ik doe het niet bewust, sorry!	сознательный; осознанно, нарочно	Я делаю это не нарочно, извини!	[sound:freq_bewust.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
-scherp	1461	Dit mes is niet meer scherp, heb je een ander?	острый; резкий, чёткий	Этот нож уже не острый, есть другой?	[sound:freq_scherp.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
+puur	1423	Dit is puur geluk, geen talent.	чистый, сплошной	Это чистое везение, а не талант.	[sound:freq_puur.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
+bewust	1451	Ik doe het niet bewust, sorry!	сознательно, нарочно	Я делаю это не нарочно, извини!	[sound:freq_bewust.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
+scherp	1461	Dit mes is niet meer scherp, heb je een ander?	острый; резкий	Этот нож уже не острый, есть другой?	[sound:freq_scherp.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
