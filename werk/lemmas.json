@@ -1,0 +1,2012 @@
+{
+ "laatste_run": "2026-09-24",
+ "verwerkt": [
+  "mail/2026-09-22_reispas-vertraging.md",
+  "mail/2026-09-23_kennissessie-looncomponenten.md",
+  "mail/2026-09-24_gemiste-uitcheck.md"
+ ],
+ "lemmas": {
+  "goedemiddag": {
+   "count": 1,
+   "vormen": [
+    "Goedemiddag"
+   ],
+   "zinnen": [
+    {
+     "zin": "Goedemiddag allen,",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "afgelopen": {
+   "count": 2,
+   "vormen": [
+    "afgelopen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vrijdag": {
+   "count": 1,
+   "vormen": [
+    "vrijdag"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bekend": {
+   "count": 2,
+   "vormen": [
+    "bekend"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "De volgende ritgegevens zijn bij ons bekend: vervoerder RegioRail, station Zwolle, 08:12.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "aangeven": {
+   "count": 2,
+   "vormen": [
+    "aangegeven"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Vandaag nog heeft Kaartnet in een meeting aangegeven dat onze aantallen voor hen geen probleem zijn.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "migratie": {
+   "count": 1,
+   "vormen": [
+    "migratie"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "oud": {
+   "count": 1,
+   "vormen": [
+    "oude"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "ov-chipkaart": {
+   "count": 1,
+   "vormen": [
+    "OV-chipkaarten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "maand": {
+   "count": 1,
+   "vormen": [
+    "maanden"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vertragen": {
+   "count": 1,
+   "vormen": [
+    "vertragen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "periode": {
+   "count": 1,
+   "vormen": [
+    "periode"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "storing": {
+   "count": 1,
+   "vormen": [
+    "storingen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "zien": {
+   "count": 1,
+   "vormen": [
+    "gezien"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "aantal": {
+   "count": 2,
+   "vormen": [
+    "aantallen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Vandaag nog heeft Kaartnet in een meeting aangegeven dat onze aantallen voor hen geen probleem zijn.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "aandurven": {
+   "count": 1,
+   "vormen": [
+    "aandurfden"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vandaag": {
+   "count": 1,
+   "vormen": [
+    "Vandaag"
+   ],
+   "zinnen": [
+    {
+     "zin": "Vandaag nog heeft Kaartnet in een meeting aangegeven dat onze aantallen voor hen geen probleem zijn.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "meeting": {
+   "count": 1,
+   "vormen": [
+    "meeting"
+   ],
+   "zinnen": [
+    {
+     "zin": "Vandaag nog heeft Kaartnet in een meeting aangegeven dat onze aantallen voor hen geen probleem zijn.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "probleem": {
+   "count": 1,
+   "vormen": [
+    "probleem"
+   ],
+   "zinnen": [
+    {
+     "zin": "Vandaag nog heeft Kaartnet in een meeting aangegeven dat onze aantallen voor hen geen probleem zijn.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vertraging": {
+   "count": 1,
+   "vormen": [
+    "vertraging"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "impact": {
+   "count": 1,
+   "vormen": [
+    "impact"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "tijdlijn": {
+   "count": 1,
+   "vormen": [
+    "tijdlijnen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "project": {
+   "count": 1,
+   "vormen": [
+    "Reispas-project"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "liggen": {
+   "count": 1,
+   "vormen": [
+    "liggen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "schema": {
+   "count": 1,
+   "vormen": [
+    "schema"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "december": {
+   "count": 1,
+   "vormen": [
+    "december"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "productie": {
+   "count": 1,
+   "vormen": [
+    "productie"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "testen": {
+   "count": 1,
+   "vormen": [
+    "testen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "mits": {
+   "count": 1,
+   "vormen": [
+    "mits"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "overeenkomst": {
+   "count": 1,
+   "vormen": [
+    "overeenkomsten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vervoerder": {
+   "count": 6,
+   "vormen": [
+    "vervoerder"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Volgens de gegevens van de vervoerder is je reis helaas niet volledig geregistreerd: er ontbreekt een in- of uitcheck.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "In zulke gevallen rekent de vervoerder (ongeacht de oorzaak) het volledige instaptarief.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "De volgende ritgegevens zijn bij ons bekend: vervoerder RegioRail, station Zwolle, 08:12.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "De vervoerder heeft het instaptarief in rekening gebracht.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Via de website van de vervoerder kan je restitutie vragen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "kaart",
+   "kaart_dag": "2026-09-24"
+  },
+  "rond": {
+   "count": 1,
+   "vormen": [
+    "rond"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vraag": {
+   "count": 3,
+   "vormen": [
+    "vragen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Voor vragen kun je met mij contact opnemen.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Heb je het al gebruikt, maar heb je nog vragen, neem die mee naar de sessie.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "contact": {
+   "count": 3,
+   "vormen": [
+    "contact"
+   ],
+   "zinnen": [
+    {
+     "zin": "Voor vragen kun je met mij contact opnemen.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Neem dan contact op met onze klantenservice.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "opnemen": {
+   "count": 3,
+   "vormen": [
+    "opnemen",
+    "Neem … op",
+    "neem … op"
+   ],
+   "zinnen": [
+    {
+     "zin": "Voor vragen kun je met mij contact opnemen.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Neem dan contact op met onze klantenservice.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "kaart",
+   "kaart_dag": "2026-09-24"
+  },
+  "groet": {
+   "count": 2,
+   "vormen": [
+    "Groet"
+   ],
+   "zinnen": [
+    {
+     "zin": "Groet,",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Groet,",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "vrijdagmiddag": {
+   "count": 1,
+   "vormen": [
+    "vrijdagmiddag"
+   ],
+   "zinnen": [
+    {
+     "zin": "NB: vrijdagmiddag is mijn vaste vrije dagdeel.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vast": {
+   "count": 1,
+   "vormen": [
+    "vaste"
+   ],
+   "zinnen": [
+    {
+     "zin": "NB: vrijdagmiddag is mijn vaste vrije dagdeel.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vrij": {
+   "count": 2,
+   "vormen": [
+    "vrije",
+    "vrij"
+   ],
+   "zinnen": [
+    {
+     "zin": "NB: vrijdagmiddag is mijn vaste vrije dagdeel.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Komt deze alsnog beter uit, voel je vrij om dan te switchen en de andere alsnog af te wijzen.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "dagdeel": {
+   "count": 1,
+   "vormen": [
+    "dagdeel"
+   ],
+   "zinnen": [
+    {
+     "zin": "NB: vrijdagmiddag is mijn vaste vrije dagdeel.",
+     "bron": "mail/2026-09-22_reispas-vertraging.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "extra": {
+   "count": 1,
+   "vormen": [
+    "extra"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een extra sessie voor degenen die op 12 november niet aanwezig kunnen zijn, maar wel de kennis willen vergaren.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "sessie": {
+   "count": 2,
+   "vormen": [
+    "sessie"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een extra sessie voor degenen die op 12 november niet aanwezig kunnen zijn, maar wel de kennis willen vergaren.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Heb je het al gebruikt, maar heb je nog vragen, neem die mee naar de sessie.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "november": {
+   "count": 1,
+   "vormen": [
+    "november"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een extra sessie voor degenen die op 12 november niet aanwezig kunnen zijn, maar wel de kennis willen vergaren.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "aanwezig": {
+   "count": 1,
+   "vormen": [
+    "aanwezig"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een extra sessie voor degenen die op 12 november niet aanwezig kunnen zijn, maar wel de kennis willen vergaren.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "kennis": {
+   "count": 1,
+   "vormen": [
+    "kennis"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een extra sessie voor degenen die op 12 november niet aanwezig kunnen zijn, maar wel de kennis willen vergaren.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vergaren": {
+   "count": 1,
+   "vormen": [
+    "vergaren"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een extra sessie voor degenen die op 12 november niet aanwezig kunnen zijn, maar wel de kennis willen vergaren.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "uitkomen": {
+   "count": 1,
+   "vormen": [
+    "Komt … uit"
+   ],
+   "zinnen": [
+    {
+     "zin": "Komt deze alsnog beter uit, voel je vrij om dan te switchen en de andere alsnog af te wijzen.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "alsnog": {
+   "count": 2,
+   "vormen": [
+    "alsnog"
+   ],
+   "zinnen": [
+    {
+     "zin": "Komt deze alsnog beter uit, voel je vrij om dan te switchen en de andere alsnog af te wijzen.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "goed": {
+   "count": 1,
+   "vormen": [
+    "beter"
+   ],
+   "zinnen": [
+    {
+     "zin": "Komt deze alsnog beter uit, voel je vrij om dan te switchen en de andere alsnog af te wijzen.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "voelen": {
+   "count": 1,
+   "vormen": [
+    "voel"
+   ],
+   "zinnen": [
+    {
+     "zin": "Komt deze alsnog beter uit, voel je vrij om dan te switchen en de andere alsnog af te wijzen.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "switchen": {
+   "count": 1,
+   "vormen": [
+    "switchen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Komt deze alsnog beter uit, voel je vrij om dan te switchen en de andere alsnog af te wijzen.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "afwijzen": {
+   "count": 1,
+   "vormen": [
+    "af te wijzen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Komt deze alsnog beter uit, voel je vrij om dan te switchen en de andere alsnog af te wijzen.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "weten": {
+   "count": 1,
+   "vormen": [
+    "weten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wil je weten wat flexibele looncomponenten zijn, hoe je deze gebruikt en welke vervolgstappen we nog moeten nemen, zorg dan dat je erbij bent.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "flexibel": {
+   "count": 2,
+   "vormen": [
+    "flexibele"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wil je weten wat flexibele looncomponenten zijn, hoe je deze gebruikt en welke vervolgstappen we nog moeten nemen, zorg dan dat je erbij bent.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Waarom flexibele looncomponenten",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "looncomponent": {
+   "count": 3,
+   "vormen": [
+    "looncomponenten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wil je weten wat flexibele looncomponenten zijn, hoe je deze gebruikt en welke vervolgstappen we nog moeten nemen, zorg dan dat je erbij bent.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Korte terugblik op wat looncomponenten zijn",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Waarom flexibele looncomponenten",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "kaart",
+   "kaart_dag": "2026-09-24"
+  },
+  "gebruiken": {
+   "count": 2,
+   "vormen": [
+    "gebruikt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wil je weten wat flexibele looncomponenten zijn, hoe je deze gebruikt en welke vervolgstappen we nog moeten nemen, zorg dan dat je erbij bent.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Heb je het al gebruikt, maar heb je nog vragen, neem die mee naar de sessie.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "vervolgstap": {
+   "count": 1,
+   "vormen": [
+    "vervolgstappen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wil je weten wat flexibele looncomponenten zijn, hoe je deze gebruikt en welke vervolgstappen we nog moeten nemen, zorg dan dat je erbij bent.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "nemen": {
+   "count": 1,
+   "vormen": [
+    "nemen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wil je weten wat flexibele looncomponenten zijn, hoe je deze gebruikt en welke vervolgstappen we nog moeten nemen, zorg dan dat je erbij bent.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "zorgen": {
+   "count": 1,
+   "vormen": [
+    "zorg"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wil je weten wat flexibele looncomponenten zijn, hoe je deze gebruikt en welke vervolgstappen we nog moeten nemen, zorg dan dat je erbij bent.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "erbij": {
+   "count": 1,
+   "vormen": [
+    "erbij"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wil je weten wat flexibele looncomponenten zijn, hoe je deze gebruikt en welke vervolgstappen we nog moeten nemen, zorg dan dat je erbij bent.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "meenemen": {
+   "count": 1,
+   "vormen": [
+    "neem … mee"
+   ],
+   "zinnen": [
+    {
+     "zin": "Heb je het al gebruikt, maar heb je nog vragen, neem die mee naar de sessie.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vooraf": {
+   "count": 1,
+   "vormen": [
+    "vooraf"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je mag ze ook vooraf stellen, dan verwerk ik ze erin zodat iedereen er iets aan heeft.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "stellen": {
+   "count": 1,
+   "vormen": [
+    "stellen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je mag ze ook vooraf stellen, dan verwerk ik ze erin zodat iedereen er iets aan heeft.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verwerken": {
+   "count": 1,
+   "vormen": [
+    "verwerk"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je mag ze ook vooraf stellen, dan verwerk ik ze erin zodat iedereen er iets aan heeft.",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "inhoud": {
+   "count": 1,
+   "vormen": [
+    "Inhoud"
+   ],
+   "zinnen": [
+    {
+     "zin": "Inhoud kennissessie:",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "kennissessie": {
+   "count": 1,
+   "vormen": [
+    "kennissessie"
+   ],
+   "zinnen": [
+    {
+     "zin": "Inhoud kennissessie:",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "kort": {
+   "count": 1,
+   "vormen": [
+    "Korte"
+   ],
+   "zinnen": [
+    {
+     "zin": "Korte terugblik op wat looncomponenten zijn",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "terugblik": {
+   "count": 1,
+   "vormen": [
+    "terugblik"
+   ],
+   "zinnen": [
+    {
+     "zin": "Korte terugblik op wat looncomponenten zijn",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "potje": {
+   "count": 1,
+   "vormen": [
+    "potjes"
+   ],
+   "zinnen": [
+    {
+     "zin": "Welke potjes kennen we",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "kennen": {
+   "count": 1,
+   "vormen": [
+    "kennen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Welke potjes kennen we",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "inrichten": {
+   "count": 1,
+   "vormen": [
+    "richt … in"
+   ],
+   "zinnen": [
+    {
+     "zin": "Hoe richt je het in",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "gebeuren": {
+   "count": 1,
+   "vormen": [
+    "gebeuren"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wat moet er nog gebeuren",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "doorkijk": {
+   "count": 1,
+   "vormen": [
+    "Doorkijk"
+   ],
+   "zinnen": [
+    {
+     "zin": "Doorkijk naar nieuwe ontwikkelingen",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "nieuw": {
+   "count": 2,
+   "vormen": [
+    "nieuwe"
+   ],
+   "zinnen": [
+    {
+     "zin": "Doorkijk naar nieuwe ontwikkelingen",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "De transactie in de Reiskompas-omgeving wordt niet aangepast, wel verschijnt het opgehaalde restitutiebedrag als nieuwe transactie in jouw Reiskompas-omgeving.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "ontwikkeling": {
+   "count": 1,
+   "vormen": [
+    "ontwikkelingen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Doorkijk naar nieuwe ontwikkelingen",
+     "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "medewerker": {
+   "count": 1,
+   "vormen": [
+    "medewerker"
+   ],
+   "zinnen": [
+    {
+     "zin": "Beste medewerker,",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "maart": {
+   "count": 1,
+   "vormen": [
+    "maart"
+   ],
+   "zinnen": [
+    {
+     "zin": "Op 3 maart heb je gereisd met het openbaar vervoer.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "reizen": {
+   "count": 2,
+   "vormen": [
+    "gereisd",
+    "reist"
+   ],
+   "zinnen": [
+    {
+     "zin": "Op 3 maart heb je gereisd met het openbaar vervoer.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Indien je reist met RegioRail hoeft dit niet, dan gaat dit geheel automatisch.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "openbaar vervoer": {
+   "count": 1,
+   "vormen": [
+    "openbaar vervoer"
+   ],
+   "zinnen": [
+    {
+     "zin": "Op 3 maart heb je gereisd met het openbaar vervoer.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "gegevens": {
+   "count": 1,
+   "vormen": [
+    "gegevens"
+   ],
+   "zinnen": [
+    {
+     "zin": "Volgens de gegevens van de vervoerder is je reis helaas niet volledig geregistreerd: er ontbreekt een in- of uitcheck.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "reis": {
+   "count": 1,
+   "vormen": [
+    "reis"
+   ],
+   "zinnen": [
+    {
+     "zin": "Volgens de gegevens van de vervoerder is je reis helaas niet volledig geregistreerd: er ontbreekt een in- of uitcheck.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "helaas": {
+   "count": 1,
+   "vormen": [
+    "helaas"
+   ],
+   "zinnen": [
+    {
+     "zin": "Volgens de gegevens van de vervoerder is je reis helaas niet volledig geregistreerd: er ontbreekt een in- of uitcheck.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "volledig": {
+   "count": 2,
+   "vormen": [
+    "volledig",
+    "volledige"
+   ],
+   "zinnen": [
+    {
+     "zin": "Volgens de gegevens van de vervoerder is je reis helaas niet volledig geregistreerd: er ontbreekt een in- of uitcheck.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "In zulke gevallen rekent de vervoerder (ongeacht de oorzaak) het volledige instaptarief.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "registreren": {
+   "count": 1,
+   "vormen": [
+    "geregistreerd"
+   ],
+   "zinnen": [
+    {
+     "zin": "Volgens de gegevens van de vervoerder is je reis helaas niet volledig geregistreerd: er ontbreekt een in- of uitcheck.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "ontbreken": {
+   "count": 1,
+   "vormen": [
+    "ontbreekt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Volgens de gegevens van de vervoerder is je reis helaas niet volledig geregistreerd: er ontbreekt een in- of uitcheck.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "check-in": {
+   "count": 2,
+   "vormen": [
+    "in-",
+    "check-in"
+   ],
+   "zinnen": [
+    {
+     "zin": "Volgens de gegevens van de vervoerder is je reis helaas niet volledig geregistreerd: er ontbreekt een in- of uitcheck.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Dit kan bijvoorbeeld komen door een defecte kaartlezer of een gemiste check-in of check-out.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "check-out": {
+   "count": 2,
+   "vormen": [
+    "uitcheck",
+    "check-out"
+   ],
+   "zinnen": [
+    {
+     "zin": "Volgens de gegevens van de vervoerder is je reis helaas niet volledig geregistreerd: er ontbreekt een in- of uitcheck.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Dit kan bijvoorbeeld komen door een defecte kaartlezer of een gemiste check-in of check-out.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bijvoorbeeld": {
+   "count": 2,
+   "vormen": [
+    "bijvoorbeeld"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dit kan bijvoorbeeld komen door een defecte kaartlezer of een gemiste check-in of check-out.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Let op: is jouw pas geblokkeerd, bijvoorbeeld omdat je deze tijdens de rit bent verloren?",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "komen": {
+   "count": 1,
+   "vormen": [
+    "komen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dit kan bijvoorbeeld komen door een defecte kaartlezer of een gemiste check-in of check-out.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "defect": {
+   "count": 1,
+   "vormen": [
+    "defecte"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dit kan bijvoorbeeld komen door een defecte kaartlezer of een gemiste check-in of check-out.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "kaartlezer": {
+   "count": 1,
+   "vormen": [
+    "kaartlezer"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dit kan bijvoorbeeld komen door een defecte kaartlezer of een gemiste check-in of check-out.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "missen": {
+   "count": 1,
+   "vormen": [
+    "gemiste"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dit kan bijvoorbeeld komen door een defecte kaartlezer of een gemiste check-in of check-out.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "geval": {
+   "count": 1,
+   "vormen": [
+    "gevallen"
+   ],
+   "zinnen": [
+    {
+     "zin": "In zulke gevallen rekent de vervoerder (ongeacht de oorzaak) het volledige instaptarief.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "rekenen": {
+   "count": 1,
+   "vormen": [
+    "rekent"
+   ],
+   "zinnen": [
+    {
+     "zin": "In zulke gevallen rekent de vervoerder (ongeacht de oorzaak) het volledige instaptarief.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "ongeacht": {
+   "count": 1,
+   "vormen": [
+    "ongeacht"
+   ],
+   "zinnen": [
+    {
+     "zin": "In zulke gevallen rekent de vervoerder (ongeacht de oorzaak) het volledige instaptarief.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "oorzaak": {
+   "count": 1,
+   "vormen": [
+    "oorzaak"
+   ],
+   "zinnen": [
+    {
+     "zin": "In zulke gevallen rekent de vervoerder (ongeacht de oorzaak) het volledige instaptarief.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "instaptarief": {
+   "count": 2,
+   "vormen": [
+    "instaptarief"
+   ],
+   "zinnen": [
+    {
+     "zin": "In zulke gevallen rekent de vervoerder (ongeacht de oorzaak) het volledige instaptarief.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "De vervoerder heeft het instaptarief in rekening gebracht.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "volgend": {
+   "count": 1,
+   "vormen": [
+    "volgende"
+   ],
+   "zinnen": [
+    {
+     "zin": "De volgende ritgegevens zijn bij ons bekend: vervoerder RegioRail, station Zwolle, 08:12.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "ritgegevens": {
+   "count": 1,
+   "vormen": [
+    "ritgegevens"
+   ],
+   "zinnen": [
+    {
+     "zin": "De volgende ritgegevens zijn bij ons bekend: vervoerder RegioRail, station Zwolle, 08:12.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "station": {
+   "count": 1,
+   "vormen": [
+    "station"
+   ],
+   "zinnen": [
+    {
+     "zin": "De volgende ritgegevens zijn bij ons bekend: vervoerder RegioRail, station Zwolle, 08:12.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "rekening": {
+   "count": 1,
+   "vormen": [
+    "rekening"
+   ],
+   "zinnen": [
+    {
+     "zin": "De vervoerder heeft het instaptarief in rekening gebracht.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "brengen": {
+   "count": 1,
+   "vormen": [
+    "gebracht"
+   ],
+   "zinnen": [
+    {
+     "zin": "De vervoerder heeft het instaptarief in rekening gebracht.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "website": {
+   "count": 1,
+   "vormen": [
+    "website"
+   ],
+   "zinnen": [
+    {
+     "zin": "Via de website van de vervoerder kan je restitutie vragen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "restitutie": {
+   "count": 4,
+   "vormen": [
+    "restitutie"
+   ],
+   "zinnen": [
+    {
+     "zin": "Via de website van de vervoerder kan je restitutie vragen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Je ontvangt dan automatisch bericht wanneer je restitutie kunt vragen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Is het gelukt om restitutie aan te vragen, vergeet dan niet om het restitutiebedrag op te halen bij een kaartautomaat.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Heb je reeds restitutie gevraagd?",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "kaart",
+   "kaart_dag": "2026-09-24"
+  },
+  "vragen": {
+   "count": 3,
+   "vormen": [
+    "vragen",
+    "gevraagd"
+   ],
+   "zinnen": [
+    {
+     "zin": "Via de website van de vervoerder kan je restitutie vragen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Je ontvangt dan automatisch bericht wanneer je restitutie kunt vragen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Heb je reeds restitutie gevraagd?",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "duren": {
+   "count": 1,
+   "vormen": [
+    "duren"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het kan even duren voordat jouw rit wordt getoond.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "rit": {
+   "count": 4,
+   "vormen": [
+    "rit"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het kan even duren voordat jouw rit wordt getoond.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Meestal is de rit zichtbaar binnen 10 dagen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Indien de rit nog niet zichtbaar is, adviseren wij je om een e-mailalert in te stellen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Let op: is jouw pas geblokkeerd, bijvoorbeeld omdat je deze tijdens de rit bent verloren?",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "kaart",
+   "kaart_dag": "2026-09-24"
+  },
+  "tonen": {
+   "count": 1,
+   "vormen": [
+    "getoond"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het kan even duren voordat jouw rit wordt getoond.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "meestal": {
+   "count": 1,
+   "vormen": [
+    "Meestal"
+   ],
+   "zinnen": [
+    {
+     "zin": "Meestal is de rit zichtbaar binnen 10 dagen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "zichtbaar": {
+   "count": 2,
+   "vormen": [
+    "zichtbaar"
+   ],
+   "zinnen": [
+    {
+     "zin": "Meestal is de rit zichtbaar binnen 10 dagen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Indien de rit nog niet zichtbaar is, adviseren wij je om een e-mailalert in te stellen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "dag": {
+   "count": 1,
+   "vormen": [
+    "dagen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Meestal is de rit zichtbaar binnen 10 dagen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "indien": {
+   "count": 2,
+   "vormen": [
+    "Indien"
+   ],
+   "zinnen": [
+    {
+     "zin": "Indien de rit nog niet zichtbaar is, adviseren wij je om een e-mailalert in te stellen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Indien je reist met RegioRail hoeft dit niet, dan gaat dit geheel automatisch.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "adviseren": {
+   "count": 1,
+   "vormen": [
+    "adviseren"
+   ],
+   "zinnen": [
+    {
+     "zin": "Indien de rit nog niet zichtbaar is, adviseren wij je om een e-mailalert in te stellen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "e-mailalert": {
+   "count": 1,
+   "vormen": [
+    "e-mailalert"
+   ],
+   "zinnen": [
+    {
+     "zin": "Indien de rit nog niet zichtbaar is, adviseren wij je om een e-mailalert in te stellen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "instellen": {
+   "count": 1,
+   "vormen": [
+    "in te stellen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Indien de rit nog niet zichtbaar is, adviseren wij je om een e-mailalert in te stellen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "ontvangen": {
+   "count": 1,
+   "vormen": [
+    "ontvangt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je ontvangt dan automatisch bericht wanneer je restitutie kunt vragen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "automatisch": {
+   "count": 2,
+   "vormen": [
+    "automatisch"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je ontvangt dan automatisch bericht wanneer je restitutie kunt vragen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Indien je reist met RegioRail hoeft dit niet, dan gaat dit geheel automatisch.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bericht": {
+   "count": 1,
+   "vormen": [
+    "bericht"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je ontvangt dan automatisch bericht wanneer je restitutie kunt vragen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "opletten": {
+   "count": 1,
+   "vormen": [
+    "Let op"
+   ],
+   "zinnen": [
+    {
+     "zin": "Let op: is jouw pas geblokkeerd, bijvoorbeeld omdat je deze tijdens de rit bent verloren?",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "pas": {
+   "count": 1,
+   "vormen": [
+    "pas"
+   ],
+   "zinnen": [
+    {
+     "zin": "Let op: is jouw pas geblokkeerd, bijvoorbeeld omdat je deze tijdens de rit bent verloren?",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "blokkeren": {
+   "count": 1,
+   "vormen": [
+    "geblokkeerd"
+   ],
+   "zinnen": [
+    {
+     "zin": "Let op: is jouw pas geblokkeerd, bijvoorbeeld omdat je deze tijdens de rit bent verloren?",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verliezen": {
+   "count": 1,
+   "vormen": [
+    "verloren"
+   ],
+   "zinnen": [
+    {
+     "zin": "Let op: is jouw pas geblokkeerd, bijvoorbeeld omdat je deze tijdens de rit bent verloren?",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "klantenservice": {
+   "count": 2,
+   "vormen": [
+    "klantenservice"
+   ],
+   "zinnen": [
+    {
+     "zin": "Neem dan contact op met onze klantenservice.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "lukken": {
+   "count": 1,
+   "vormen": [
+    "gelukt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Is het gelukt om restitutie aan te vragen, vergeet dan niet om het restitutiebedrag op te halen bij een kaartautomaat.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "aanvragen": {
+   "count": 1,
+   "vormen": [
+    "aan te vragen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Is het gelukt om restitutie aan te vragen, vergeet dan niet om het restitutiebedrag op te halen bij een kaartautomaat.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vergeten": {
+   "count": 1,
+   "vormen": [
+    "vergeet"
+   ],
+   "zinnen": [
+    {
+     "zin": "Is het gelukt om restitutie aan te vragen, vergeet dan niet om het restitutiebedrag op te halen bij een kaartautomaat.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "restitutiebedrag": {
+   "count": 2,
+   "vormen": [
+    "restitutiebedrag"
+   ],
+   "zinnen": [
+    {
+     "zin": "Is het gelukt om restitutie aan te vragen, vergeet dan niet om het restitutiebedrag op te halen bij een kaartautomaat.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "De transactie in de Reiskompas-omgeving wordt niet aangepast, wel verschijnt het opgehaalde restitutiebedrag als nieuwe transactie in jouw Reiskompas-omgeving.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "ophalen": {
+   "count": 2,
+   "vormen": [
+    "op te halen",
+    "opgehaalde"
+   ],
+   "zinnen": [
+    {
+     "zin": "Is het gelukt om restitutie aan te vragen, vergeet dan niet om het restitutiebedrag op te halen bij een kaartautomaat.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "De transactie in de Reiskompas-omgeving wordt niet aangepast, wel verschijnt het opgehaalde restitutiebedrag als nieuwe transactie in jouw Reiskompas-omgeving.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "kaartautomaat": {
+   "count": 1,
+   "vormen": [
+    "kaartautomaat"
+   ],
+   "zinnen": [
+    {
+     "zin": "Is het gelukt om restitutie aan te vragen, vergeet dan niet om het restitutiebedrag op te halen bij een kaartautomaat.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "hoeven": {
+   "count": 1,
+   "vormen": [
+    "hoeft"
+   ],
+   "zinnen": [
+    {
+     "zin": "Indien je reist met RegioRail hoeft dit niet, dan gaat dit geheel automatisch.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "geheel": {
+   "count": 1,
+   "vormen": [
+    "geheel"
+   ],
+   "zinnen": [
+    {
+     "zin": "Indien je reist met RegioRail hoeft dit niet, dan gaat dit geheel automatisch.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "transactie": {
+   "count": 2,
+   "vormen": [
+    "transactie"
+   ],
+   "zinnen": [
+    {
+     "zin": "De transactie in de Reiskompas-omgeving wordt niet aangepast, wel verschijnt het opgehaalde restitutiebedrag als nieuwe transactie in jouw Reiskompas-omgeving.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "omgeving": {
+   "count": 2,
+   "vormen": [
+    "Reiskompas-omgeving"
+   ],
+   "zinnen": [
+    {
+     "zin": "De transactie in de Reiskompas-omgeving wordt niet aangepast, wel verschijnt het opgehaalde restitutiebedrag als nieuwe transactie in jouw Reiskompas-omgeving.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "aanpassen": {
+   "count": 1,
+   "vormen": [
+    "aangepast"
+   ],
+   "zinnen": [
+    {
+     "zin": "De transactie in de Reiskompas-omgeving wordt niet aangepast, wel verschijnt het opgehaalde restitutiebedrag als nieuwe transactie in jouw Reiskompas-omgeving.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verschijnen": {
+   "count": 1,
+   "vormen": [
+    "verschijnt"
+   ],
+   "zinnen": [
+    {
+     "zin": "De transactie in de Reiskompas-omgeving wordt niet aangepast, wel verschijnt het opgehaalde restitutiebedrag als nieuwe transactie in jouw Reiskompas-omgeving.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "reeds": {
+   "count": 1,
+   "vormen": [
+    "reeds"
+   ],
+   "zinnen": [
+    {
+     "zin": "Heb je reeds restitutie gevraagd?",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "mail": {
+   "count": 1,
+   "vormen": [
+    "mail"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dan kan je deze mail als niet verzonden beschouwen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verzenden": {
+   "count": 1,
+   "vormen": [
+    "verzonden"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dan kan je deze mail als niet verzonden beschouwen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "beschouwen": {
+   "count": 1,
+   "vormen": [
+    "beschouwen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dan kan je deze mail als niet verzonden beschouwen.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "opmerking": {
+   "count": 1,
+   "vormen": [
+    "opmerkingen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "gerust": {
+   "count": 1,
+   "vormen": [
+    "gerust"
+   ],
+   "zinnen": [
+    {
+     "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
+     "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  }
+ }
+}

@@ -55,6 +55,7 @@ daily/              # Daily practice and study planning
   dutch_stories/    #   Dutch story subtitles and transcripts
   frequentie_2026/  #   Frequency-core plan 14.09–13.12.2026 (single plan.md, no templates)
 frequentie/         # Frequency-core Anki deck for Alex (note type "Frequentie NL", RU→NL) + README
+werk/               # Work-mail lemmas for Alex: anonymised mail/, lemmas.json index, daily Frequentie::Werk decks
 grammatica/         # Alex's grammar track (leading since 2026-09-16): regels/ = Link+ rule extracts + README
 other/              # Learning methodology notes and analysis
   language_learning_methods/  # Evgeniy 6-step, Alisher immersion, comparisons
@@ -259,6 +260,13 @@ Fluent не настраивается — **расписание и объём 
 `VOORRANG` поднимает `7.1`/`7.2` в начало: `1.1` и `4.1` ссылаются на них
 вперёд, после перестановки ссылок вперёд ноль (`grammatica/README.md`). Бэкап —
 тем же `save()`, что у `frequentie_fluent.py`.
+
+### werk_woorden.py — рабочая почта → колода Frequentie::Werk
+
+Леммы из рабочих писем Alex, 5 карточек в день note type «Frequentie NL» (Rank =
+число встреч в письмах). Письма лежат в `werk/mail/` **обезличенными** — папка
+публикуется. Хук `SessionStart` вызывает `werk_woorden.py due`; порядок дня — в
+скилле `werk-woorden`. Stdlib, `--audio` — edge-tts.
 
 ### fluent_import.py — Curriculum → Fluent Bridge
 

@@ -1,0 +1,11 @@
+#separator:tab
+#html:true
+#notetype:Frequentie NL
+#deck:Frequentie::Werk
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+de vervoerder	6	Via de website van de vervoerder kan je restitutie vragen.	перевозчик (транспортная компания)	Через сайт перевозчика можно запросить возврат денег.	[sound:werk_vervoerder.mp3]	frequentie::werk frequentie::werk::dag2026-09-24
+de restitutie	4	Heb je reeds restitutie gevraagd?	возврат денег	Ты уже запросил возврат денег?	[sound:werk_restitutie.mp3]	frequentie::werk frequentie::werk::dag2026-09-24
+de rit	4	Meestal is de rit zichtbaar binnen 10 dagen.	поездка (одна, от входа до выхода)	Обычно поездка становится видна в течение 10 дней.	[sound:werk_rit.mp3]	frequentie::werk frequentie::werk::dag2026-09-24
+contact opnemen met	3	Voor vragen kun je met mij contact opnemen.	связаться с (кем-то)	С вопросами можешь связаться со мной.	[sound:werk_opnemen.mp3]	frequentie::werk frequentie::werk::dag2026-09-24
+de looncomponent	3	Wil je weten wat flexibele looncomponenten zijn?	составляющая зарплаты	Хочешь узнать, что такое гибкие составляющие зарплаты?	[sound:werk_looncomponent.mp3]	frequentie::werk frequentie::werk::dag2026-09-24
