@@ -82,11 +82,11 @@ KAARTEN.json (схема — `werk_woorden.py --help`). `word` — с lidwoord. 
 — 1–2 русских значения с пометой контекста.
 
 ```bash
-python3 scripts/werk_woorden.py kaarten <scratchpad>/kaarten.json --audio
+python3 scripts/werk_woorden.py kaarten <scratchpad>/kaarten.json --audio --anki
 ```
 
-Файл `werk/werk_dagYYYY-MM-DD_anki.txt` импортирует Alex (колода
-`Frequentie::Werk`, note type «Frequentie NL»).
+`--anki` импортирует TSV дня через AnkiConnect в `Frequentie::Werk`; Anki должен
+быть запущен. Дубль по полю `Word` пропускается, повторный запуск безопасен.
 
-**Готово**, когда TSV записан, 5 mp3 лежат в Anki media, а Alex получил список
-пяти слов и путь к файлу.
+**Готово**, когда скрипт напечатал `📥 Anki: +5`, а Alex получил список пяти
+слов.

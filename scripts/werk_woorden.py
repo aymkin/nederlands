@@ -10,7 +10,7 @@
     werk_woorden.py merge VOORKOMENS.json # влить леммы писем в индекс
     werk_woorden.py kies [-n 5]           # кандидаты дня, JSON в stdout
     werk_woorden.py markeer bekend LEMMA… # Alex знает — больше не предлагать
-    werk_woorden.py kaarten KAARTEN.json [--audio]
+    werk_woorden.py kaarten KAARTEN.json [--audio] [--anki]
 
 VOORKOMENS.json — одна запись на каждое словоупотребление:
     [{"lemma": "aangeven", "form": "aangegeven", "zin": "...",
@@ -19,7 +19,7 @@ KAARTEN.json — по записи на выбранную лемму:
     [{"lemma": "vertraging", "word": "de vertraging", "zin": "...",
       "vertaling": "задержка", "zin_vertaling": "..."}]
 
-Stdlib; `--audio` дополнительно требует edge-tts.
+Stdlib; `--audio` требует edge-tts, `--anki` — запущенный Anki с AnkiConnect.
 """
 
 import argparse
@@ -233,6 +233,12 @@ def cmd_kaarten(args) -> int:
         ]
         asyncio.run(synth(items))
         print(f"🔊 {len(items)} mp3 → {media}")
+
+    if args.anki:
+        from anki_utils import import_tsv
+
+        added, skipped = import_tsv(out)
+        print(f"📥 Anki: +{added}" + (f", уже были: {', '.join(skipped)}" if skipped else ""))
     return 0
 
 
@@ -252,6 +258,7 @@ def main() -> int:
     c = sub.add_parser("kaarten", help="KAARTEN.json → TSV дня, status=kaart")
     c.add_argument("file")
     c.add_argument("--audio", action="store_true", help="edge-tts → Anki media")
+    c.add_argument("--anki", action="store_true", help="импорт через AnkiConnect")
     args = p.parse_args()
     return {"due": cmd_due, "merge": cmd_merge, "kies": cmd_kies,
             "markeer": cmd_markeer, "kaarten": cmd_kaarten}[args.cmd](args)

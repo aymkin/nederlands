@@ -266,7 +266,9 @@ Fluent не настраивается — **расписание и объём 
 Леммы из рабочих писем Alex, 5 карточек в день note type «Frequentie NL» (Rank =
 число встреч в письмах). Письма лежат в `werk/mail/` **обезличенными** — папка
 публикуется. Хук `SessionStart` вызывает `werk_woorden.py due`; порядок дня — в
-скилле `werk-woorden`. Stdlib, `--audio` — edge-tts.
+скилле `werk-woorden`. Stdlib, `--audio` — edge-tts, `--anki` — импорт через
+AnkiConnect (`anki_utils.import_tsv`; любой `_anki.txt` с директивами:
+`python3 scripts/anki_utils.py import FILE`).
 
 ### fluent_import.py — Curriculum → Fluent Bridge
 

@@ -3,10 +3,16 @@
 Shared Anki utilities for audio_to_anki.py and text_to_speech.py.
 
 Functions for finding Anki profiles, validating media folders,
-and copying audio files into Anki's collection.media directory.
+copying audio files into Anki's collection.media directory, and importing
+an _anki.txt TSV straight into the running Anki via AnkiConnect.
+
+    python3 scripts/anki_utils.py import FILE_anki.txt
 """
 
+import json
 import shutil
+import sys
+import urllib.request
 from pathlib import Path
 
 # Базовые пути к Anki2 (кроссплатформенно)
@@ -89,3 +95,54 @@ def copy_to_anki_media(source_dir: Path, media_path: Path, prefix: str) -> int:
         shutil.copy2(audio_file, dest_file)
         copied += 1
     return copied
+
+
+ANKICONNECT = "http://127.0.0.1:8765"
+
+
+def ankiconnect(action: str, **params):
+    """Вызов AnkiConnect; Anki должен быть запущен с этим аддоном."""
+    body = json.dumps({"action": action, "version": 6, "params": params}).encode()
+    with urllib.request.urlopen(ANKICONNECT, body, timeout=10) as r:
+        reply = json.load(r)
+    if reply["error"]:
+        raise RuntimeError(f"AnkiConnect {action}: {reply['error']}")
+    return reply["result"]
+
+
+def import_tsv(path: Path) -> tuple[int, list[str]]:
+    """Импорт _anki.txt по его директивам #notetype / #deck / #columns /
+    #tags column. Дубли (первое поле уже есть у этого note type) пропускаются —
+    так повторный импорт безопасен. Возвращает (добавлено, пропущенные)."""
+    head, rows = {}, []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.startswith("#"):
+            key, _, val = line[1:].partition(":")
+            head[key] = val
+        elif line.strip():
+            rows.append(line.split("\t"))
+    columns = head["columns"].split("\t")
+    tags_col = int(head["tags column"]) - 1
+    ankiconnect("createDeck", deck=head["deck"])
+    notes = [
+        {
+            "deckName": head["deck"],
+            "modelName": head["notetype"],
+            "fields": {c: r[i] for i, c in enumerate(columns) if i != tags_col},
+            "tags": r[tags_col].split(),
+        }
+        for r in rows
+    ]
+    ok = ankiconnect("canAddNotesWithErrorDetail", notes=notes)
+    fresh = [n for n, o in zip(notes, ok) if o["canAdd"]]
+    skipped = [n["fields"][columns[0]] for n, o in zip(notes, ok) if not o["canAdd"]]
+    if fresh:
+        ankiconnect("addNotes", notes=fresh)
+    return len(fresh), skipped
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 3 or sys.argv[1] != "import":
+        sys.exit("usage: anki_utils.py import FILE_anki.txt")
+    added, skipped = import_tsv(Path(sys.argv[2]))
+    print(f"✅ добавлено {added}" + (f", уже были: {', '.join(skipped)}" if skipped else ""))
