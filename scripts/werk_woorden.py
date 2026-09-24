@@ -148,7 +148,14 @@ def cmd_merge(args) -> int:
 
 
 def cmd_kies(args) -> int:
-    lemmas = load()["lemmas"]
+    idx = load()
+    lemmas = idx["lemmas"]
+    # Kern растёт партиями уже после merge — сверяемся с ним на момент выбора.
+    kern = kern_lemmas()
+    for k, e in lemmas.items():
+        if e["status"] == "nieuw" and k in kern:
+            e["status"] = "kern"
+    save(idx)
     # Порядок: частота, затем в скольких письмах встретилась, затем кто раньше
     # попал в индекс — dict хранит порядок вставки, sorted() стабилен.
     kandidaten = sorted(
