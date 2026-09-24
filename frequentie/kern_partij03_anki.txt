@@ -33,7 +33,7 @@ de ronde	897	Doen we nog twee rondes, of ga je naar huis?	раунд, круг	�
 de leider	909	Hebben de teamleiders het nieuwe rooster al gezien?	руководитель, лидер	Руководители команд уже видели новый график?	[sound:freq_leider.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
 de burger	919	Mogen burgers hier gewoon parkeren?	гражданин, житель	А обычным жителям тут можно просто так парковаться?	[sound:freq_burger.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
 de held	924	Vind jij de verpleegkundigen ook helden?	герой	Ты тоже считаешь медсестёр героями?	[sound:freq_held.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
-de verklaring	950	Heb je de verklaringen van de gemeente al getekend?	заявление, справка; объяснение	Ты уже подписал заявления от муниципалитета?	[sound:freq_verklaring.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
+de verklaring	950	Heb je de verklaringen van de gemeente al getekend?	заявление; объяснение	Ты уже подписал заявления от муниципалитета?	[sound:freq_verklaring.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
 de vogel	956	Hoor je die vogels ook 's ochtends?	птица	Ты тоже слышишь по утрам этих птиц?	[sound:freq_vogel.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
 de vlieg	964	Zitten er nou weer vliegen in de keuken?	муха	Что, на кухне опять мухи?	[sound:freq_vlieg.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
 de kerel	982	Zijn dat die kerels van de verhuizing?	парень, мужик (разг.)	Это те ребята, что помогали с переездом?	[sound:freq_kerel.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
@@ -48,7 +48,7 @@ het lid	846	Het nieuwe lid van ons team begint maandag.	член (команды
 het excuus	843	Het excuus is altijd hetzelfde, hoor: de trein.	отговорка; извинение	Отговорка всегда одна и та же: поезд.	[sound:freq_excuus.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 het proces	976	Het proces duurt eigenlijk langer dan we dachten.	процесс	Процесс на самом деле тянется дольше, чем мы думали.	[sound:freq_proces.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 het gedrag	1110	Het gedrag van de hond is echt veranderd.	поведение	Собака правда стала вести себя по-другому.	[sound:freq_gedrag.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
-het besluit	1103	Zij nemen het besluit, niet wij.	решение	Решение принимают они, а не мы.	[sound:freq_besluit.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
+het besluit	1103	Het besluit van de gemeente staat in de brief.	постановление (офиц. решение)	Постановление гемеенте указано в письме.	[sound:freq_besluit.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 het pad	1173	Neem gewoon het pad langs het water, dat is sneller.	тропинка, дорожка	Просто иди по тропинке вдоль воды, так быстрее.	[sound:freq_pad.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 het goud	1086	Het goud van die ring is niet echt, zegt ze.	золото	Золото в этом кольце ненастоящее, говорит она.	[sound:freq_goud.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 de onzin	872	De onzin op internet geloof ik gewoon niet.	чушь, ерунда	В эту чушь из интернета я просто не верю.	[sound:freq_onzin.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
@@ -66,7 +66,7 @@ de bedoeling	1167	Wat is eigenlijk de bedoeling van deze meeting?	намерен
 de leugen	1176	Wij geloven de leugen niet, maar zij wel.	ложь	Мы в эту ложь не верим, а они — да.	[sound:freq_leugen.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 roepen	1008	Ik roep je straks even als het eten klaar is.	звать, кричать	Я тебя позову, когда еда будет готова.	[sound:freq_roepen.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
 storen	1017	Morgen stoor ik je echt niet, beloofd!	мешать, беспокоить	Завтра я тебя правда не дёргаю, обещаю!	[sound:freq_storen.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
-voeren	1038	Volgende week voeren we het gesprek met de nieuwe collega.	вести (разговор, переговоры); кормить	На следующей неделе мы проводим беседу с новым коллегой.	[sound:freq_voeren.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
+voeren	1038	Volgende week voeren we het gesprek met de nieuwe collega.	проводить (разговор, переговоры); кормить	На следующей неделе мы проводим беседу с новым коллегой.	[sound:freq_voeren.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
 aanbieden	1062	Vrijdag biedt hij ons eigenlijk een betere prijs aan.	предлагать	В пятницу он, вообще-то, предложит нам цену получше.	[sound:freq_aanbieden.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
 zich bevinden	1079	Volgende week bevindt het hele team zich in Utrecht, niet hier.	находиться	На следующей неделе вся команда будет в Утрехте, а не здесь.	[sound:freq_bevinden.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
 aannemen	1080	Neem je morgen de telefoon aan als ik bel?	брать (трубку), принимать	Ты завтра возьмёшь трубку, если я позвоню?	[sound:freq_aannemen.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
@@ -90,7 +90,7 @@ omhoog	887	Kijk eens omhoog, er zit een vogel op het dak.	вверх	Глянь-
 medisch	891	Vul eerst dit medische formulier in, dan kun je naar binnen.	медицинский	Сначала заполни эту медицинскую анкету, потом можешь проходить.	[sound:freq_medisch.mp3]	frequentie::kern::partij03 frequentie::kern::dag10
 menselijk	902	Wees niet zo streng, fouten maken is menselijk.	человеческий, по-человечески	Не будь таким строгим, ошибаться — это по-человечески.	[sound:freq_menselijk.mp3]	frequentie::kern::partij03 frequentie::kern::dag10
 verdacht	998	Bel even de beveiliging, die tas bij de deur is echt verdacht.	подозрительный	Позвони-ка охране, та сумка у двери правда подозрительная.	[sound:freq_verdacht.mp3]	frequentie::kern::partij03 frequentie::kern::dag10
-compleet	1067	Check even of de bestelling compleet is voordat je tekent.	полный, комплектный	Проверь-ка, всё ли в заказе на месте, прежде чем расписываться.	[sound:freq_compleet.mp3]	frequentie::kern::partij03 frequentie::kern::dag10
+compleet	1067	Check even of de bestelling compleet is voordat je tekent.	комплектный (всё на месте)	Проверь-ка, всё ли в заказе на месте, прежде чем расписываться.	[sound:freq_compleet.mp3]	frequentie::kern::partij03 frequentie::kern::dag10
 zwak	1096	Doe het rustig aan, je bent nog zwak na de griep.	слабый	Не спеши, ты ещё слабый после гриппа.	[sound:freq_zwak.mp3]	frequentie::kern::partij03 frequentie::kern::dag10
 onschuldig	1146	Kijk niet zo onschuldig, ik weet dat jij de laatste koek hebt gepakt.	невинный	Не делай такое невинное лицо, я знаю, что последнее печенье взял ты.	[sound:freq_onschuldig.mp3]	frequentie::kern::partij03 frequentie::kern::dag10
 wijs	1172	Wees wijs en ga vroeg naar bed, morgen heb je een drukke dag.	мудрый, разумный	Будь умницей и ложись пораньше, завтра у тебя тяжёлый день.	[sound:freq_wijs.mp3]	frequentie::kern::partij03 frequentie::kern::dag10
