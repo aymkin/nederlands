@@ -145,6 +145,11 @@ examples rather than lowering its `--min`. Its count is a floor (it misses stem
 changes like `reizen` ~ `reis`), so read a flagged example before trusting the
 number.
 
+Load the `anki-twenty-rules` skill and walk its manual checklist (minimum
+information, interference between synonyms, one sense per card). If Alex asks
+for the full rules text, suggest he run `/mcp__anki__twenty_rules` — it is an
+MCP prompt, Claude cannot invoke it.
+
 Then confirm each of these holds:
 
 - [ ] Every word from the Step 3 source list has a card

@@ -7,9 +7,11 @@ copying audio files into Anki's collection.media directory, and importing
 an _anki.txt TSV straight into the running Anki via AnkiConnect.
 
     python3 scripts/anki_utils.py import FILE_anki.txt
+    python3 scripts/anki_utils.py lint     # Twenty Rules по всей коллекции
 """
 
 import json
+import re
 import shutil
 import sys
 import urllib.request
@@ -110,10 +112,52 @@ def ankiconnect(action: str, **params):
     return reply["result"]
 
 
+FREQUENTIE = "Frequentie NL"
+MAX_BETEKENISSEN = 2
+
+
+class KaartFout(ValueError):
+    """Партия нарушает Twenty Rules — импорт не начат."""
+
+
+def betekenissen(translation: str) -> list[str]:
+    """`вдруг, внезапно; сразу (разг.)` → три значения. Скобки — пояснение."""
+    kaal = re.sub(r"\([^)]*\)", "", translation)
+    return [s.strip().lower() for s in re.split(r"[;,]", kaal) if s.strip()]
+
+
+def twenty_rules(nieuw: dict[str, str], bestaand: dict[str, str]) -> list[str]:
+    """Word → Translation новой партии против уже лежащих в Anki.
+
+    Правило 4 (минимум информации): не больше двух значений. Правило 10
+    (интерференция): первое значение — это ключ на лицевой стороне RU → NL,
+    и если он совпал с другим словом, верны оба ответа, а Anki засчитает
+    ошибку. Возвращает список нарушений, пустой — можно импортировать."""
+    fouten, sleutels = [], {}
+    for word, tr in bestaand.items():
+        if b := betekenissen(tr):
+            sleutels.setdefault(b[0], word)
+    for word, tr in nieuw.items():
+        b = betekenissen(tr)
+        if len(b) > MAX_BETEKENISSEN:
+            fouten.append(f"{word}: {len(b)} значений — «{tr}» (правило 4)")
+        if not b:
+            continue
+        ander = sleutels.setdefault(b[0], word)
+        if ander != word:
+            fouten.append(f"{word}: ключ «{b[0]}» уже у {ander} (правило 10)")
+    return fouten
+
+
 def import_tsv(path: Path) -> tuple[int, list[str]]:
     """Импорт _anki.txt по его директивам #notetype / #deck / #columns /
     #tags column. Дубли (первое поле уже есть у этого note type) пропускаются —
-    так повторный импорт безопасен. Возвращает (добавлено, пропущенные)."""
+    так повторный импорт безопасен. Возвращает (добавлено, пропущенные).
+
+    Для «Frequentie NL» сперва `twenty_rules` против всей коллекции этого
+    типа; нарушение — `KaartFout`, в Anki ничего не пишется. Проверять до
+    импорта обязательно: повторный импорт заметку с тем же Word пропускает,
+    так что исправленный перевод туда уже не попадёт."""
     head, rows = {}, []
     for line in path.read_text(encoding="utf-8").splitlines():
         if line.startswith("#"):
@@ -123,7 +167,6 @@ def import_tsv(path: Path) -> tuple[int, list[str]]:
             rows.append(line.split("\t"))
     columns = head["columns"].split("\t")
     tags_col = int(head["tags column"]) - 1
-    ankiconnect("createDeck", deck=head["deck"])
     notes = [
         {
             "deckName": head["deck"],
@@ -133,6 +176,16 @@ def import_tsv(path: Path) -> tuple[int, list[str]]:
         }
         for r in rows
     ]
+    if head["notetype"] == FREQUENTIE:
+        ids = ankiconnect("findNotes", query=f'"note:{FREQUENTIE}"')
+        bestaand = {
+            n["fields"]["Word"]["value"]: n["fields"]["Translation"]["value"]
+            for n in ankiconnect("notesInfo", notes=ids)
+        }
+        nieuw = {n["fields"]["Word"]: n["fields"]["Translation"] for n in notes}
+        if fouten := twenty_rules(nieuw, bestaand):
+            raise KaartFout("\n".join(fouten))
+    ankiconnect("createDeck", deck=head["deck"])
     ok = ankiconnect("canAddNotesWithErrorDetail", notes=notes)
     fresh = [n for n, o in zip(notes, ok) if o["canAdd"]]
     skipped = [n["fields"][columns[0]] for n, o in zip(notes, ok) if not o["canAdd"]]
@@ -141,8 +194,25 @@ def import_tsv(path: Path) -> tuple[int, list[str]]:
     return len(fresh), skipped
 
 
+def lint() -> list[str]:
+    """twenty_rules по всей коллекции «Frequentie NL» — после ручной правки."""
+    ids = ankiconnect("findNotes", query=f'"note:{FREQUENTIE}"')
+    alle = {
+        n["fields"]["Word"]["value"]: n["fields"]["Translation"]["value"]
+        for n in ankiconnect("notesInfo", notes=ids)
+    }
+    return twenty_rules(alle, {})
+
+
 if __name__ == "__main__":
+    if sys.argv[1:] == ["lint"]:
+        fouten = lint()
+        print("\n".join(fouten) or "✅ Twenty Rules: нарушений нет")
+        sys.exit(1 if fouten else 0)
     if len(sys.argv) != 3 or sys.argv[1] != "import":
-        sys.exit("usage: anki_utils.py import FILE_anki.txt")
-    added, skipped = import_tsv(Path(sys.argv[2]))
+        sys.exit("usage: anki_utils.py import FILE_anki.txt | anki_utils.py lint")
+    try:
+        added, skipped = import_tsv(Path(sys.argv[2]))
+    except KaartFout as e:
+        sys.exit(f"❌ Twenty Rules, импорт не начат:\n{e}")
     print(f"✅ добавлено {added}" + (f", уже были: {', '.join(skipped)}" if skipped else ""))

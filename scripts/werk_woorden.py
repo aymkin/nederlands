@@ -46,7 +46,7 @@ TSV_HEADER = (
 def vandaag() -> str:
     # Anki и anki_vandaag.py переворачивают день в 04:00 — так же и здесь,
     # иначе ночная сессия засчитает прогон вчерашним числом.
-    return (dt.datetime.now() - dt.timedelta(hours=4)).date().isoformat()
+    return (dt.datetime.now().astimezone() - dt.timedelta(hours=4)).date().isoformat()
 
 
 def kaal(word: str) -> str:
@@ -191,7 +191,6 @@ def cmd_markeer(args) -> int:
 
 async def synth(items: list[tuple[str, Path]]) -> None:
     import edge_tts
-
     from text_to_speech import DEFAULT_RATE, VOICES
 
     for text, path in items:
@@ -242,9 +241,13 @@ def cmd_kaarten(args) -> int:
         print(f"🔊 {len(items)} mp3 → {media}")
 
     if args.anki:
-        from anki_utils import import_tsv
+        from anki_utils import KaartFout, import_tsv
 
-        added, skipped = import_tsv(out)
+        try:
+            added, skipped = import_tsv(out)
+        except KaartFout as e:
+            print(f"❌ Twenty Rules, импорт не начат — поправь {out.name}:\n{e}")
+            return 1
         print(f"📥 Anki: +{added}" + (f", уже были: {', '.join(skipped)}" if skipped else ""))
     return 0
 

@@ -270,6 +270,13 @@ Fluent не настраивается — **расписание и объём 
 AnkiConnect (`anki_utils.import_tsv`; любой `_anki.txt` с директивами:
 `python3 scripts/anki_utils.py import FILE`).
 
+Для note type «Frequentie NL» импорт сперва гоняет Twenty Rules по всей
+коллекции: не больше двух значений в `Translation`, первое значение не совпадает
+с чужим. Нарушение — отказ без записи. `python3 scripts/anki_utils.py lint` — та
+же проверка после ручной правки; тесты `python3 scripts/test_anki_utils.py`.
+Ручной чек-лист — скилл `anki-twenty-rules`; полный текст правил — MCP-промпт
+`/mcp__anki__twenty_rules`, его запускает Alex (Claude вызвать не может).
+
 ### fluent_import.py — Curriculum → Fluent Bridge
 
 Seeds Link/De Opmaat vocab and grammar into Fluent's spaced-repetition database.
