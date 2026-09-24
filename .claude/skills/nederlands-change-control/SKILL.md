@@ -73,12 +73,23 @@ The words Rusland / Россия must never appear in any content. Characters in
 stories come from Oekraïne, Polen, Turkije.
 
 ```bash
-git grep -inE 'rusland|росси' -- '*.md' '*.txt'
+git grep -inE 'rusland|росси' -- \
+  link link_plus de_opmaat daily other frequentie werk grammatica
 ```
 
-Expect zero output. (`-i` matches Cyrillic case on macOS grep/git-grep —
-verified 2026-07-09.) Incident: commit `5be6931` (2026-04-21) had to scrub
-country-of-origin references from 8 already-published files.
+Expect zero output. Two things the command's shape carries:
+
+- **Content directories, not the whole repo.** The skills documenting this rule
+  spell the words out on purpose; a repo-wide `-- '*.md' '*.txt'` returned 16
+  such hits on 2026-09-24, and a gate that is always red is a gate nobody reads.
+  Extend the list when a content directory appears.
+- **`git grep`, not `grep -r`** — tracked and staged content only, so gitignored
+  `private/` stays out without an exclude flag, and a brand-new file is covered
+  once you `git add` it.
+
+(`-i` matches Cyrillic case on macOS grep/git-grep — verified 2026-07-09.)
+Incident: commit `5be6931` (2026-04-21) had to scrub country-of-origin
+references from 8 already-published files.
 
 ### 2. Never rename load-bearing typo'd files or normalize legacy naming
 
