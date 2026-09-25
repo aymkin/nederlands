@@ -3,7 +3,8 @@
  "verwerkt": [
   "mail/2026-09-22_reispas-vertraging.md",
   "mail/2026-09-23_kennissessie-looncomponenten.md",
-  "mail/2026-09-24_gemiste-uitcheck.md"
+  "mail/2026-09-24_gemiste-uitcheck.md",
+  "mail/2026-09-24_it-all-hands.md"
  ],
  "lemmas": {
   "goedemiddag": {
@@ -77,7 +78,7 @@
      "bron": "mail/2026-09-22_reispas-vertraging.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kern"
   },
   "migratie": {
    "count": 1,
@@ -93,17 +94,26 @@
    "status": "nieuw"
   },
   "oud": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "oude"
+    "oude",
+    "Oude"
    ],
    "zinnen": [
     {
      "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
      "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Oude kaarten: synchronisatie-issues voorkomen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Sommigen zweren bij hun oude build.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "ov-chipkaart": {
    "count": 1,
@@ -155,7 +165,7 @@
      "bron": "mail/2026-09-22_reispas-vertraging.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kern"
   },
   "storing": {
    "count": 1,
@@ -214,7 +224,7 @@
    "status": "nieuw"
   },
   "vandaag": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "Vandaag"
    ],
@@ -222,9 +232,13 @@
     {
      "zin": "Vandaag nog heeft Kaartnet in een meeting aangegeven dat onze aantallen voor hen geen probleem zijn.",
      "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Vandaag: monoloog.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "meeting": {
    "count": 1,
@@ -305,17 +319,30 @@
    "status": "nieuw"
   },
   "liggen": {
-   "count": 1,
+   "count": 4,
    "vormen": [
-    "liggen"
+    "liggen",
+    "ligt"
    ],
    "zinnen": [
     {
      "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
      "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Het ligt er.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Maar de potentiële winst die blijft liggen wint geen schoonheidsprijs, en de verwachting verschuift met of zonder ons.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Landen gaat vóór nieuw, half werk laten liggen is de duurste move die er is.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "schema": {
    "count": 1,
@@ -443,9 +470,10 @@
    "status": "nieuw"
   },
   "vraag": {
-   "count": 3,
+   "count": 6,
    "vormen": [
-    "vragen"
+    "vragen",
+    "Vragen"
    ],
    "zinnen": [
     {
@@ -459,6 +487,18 @@
     {
      "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Kritische vragen zijn welkom.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Routeer de vragen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Vragen uit je team gaan naar jou of naar hem.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
    "status": "bekend"
@@ -649,7 +689,7 @@
      "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kern"
   },
   "vergaren": {
    "count": 1,
@@ -743,17 +783,26 @@
    "status": "nieuw"
   },
   "weten": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "weten"
+    "weten",
+    "weet"
    ],
    "zinnen": [
     {
      "zin": "Wil je weten wat flexibele looncomponenten zijn, hoe je deze gebruikt en welke vervolgstappen we nog moeten nemen, zorg dan dat je erbij bent.",
      "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Die naam wil ik weten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Details over wat Bas gaat vinden weet ik niet.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "flexibel": {
    "count": 2,
@@ -795,9 +844,10 @@
    "kaart_dag": "2026-09-24"
   },
   "gebruiken": {
-   "count": 2,
+   "count": 4,
    "vormen": [
-    "gebruikt"
+    "gebruikt",
+    "gebruiken"
    ],
    "zinnen": [
     {
@@ -807,6 +857,14 @@
     {
      "zin": "Heb je het al gebruikt, maar heb je nog vragen, neem die mee naar de sessie.",
      "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Deze instelling heeft voorrang op het algoritme dat nu bepaalt welke modaliteit en welk vervoermiddel gebruikt worden bij het automatisch aanmaken van woon-werkritten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Dus pakken wij het op en bepalen we met focus hoe we het op onze manier kunnen gebruiken.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
    "status": "kern"
@@ -981,7 +1039,7 @@
    "status": "nieuw"
   },
   "kennen": {
-   "count": 1,
+   "count": 3,
    "vormen": [
     "kennen"
    ],
@@ -989,9 +1047,17 @@
     {
      "zin": "Welke potjes kennen we",
      "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Jullie kennen mijn regel: dialoog, niet monoloog.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Jullie kennen je teams.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "inrichten": {
    "count": 1,
@@ -1033,9 +1099,10 @@
    "status": "nieuw"
   },
   "nieuw": {
-   "count": 2,
+   "count": 4,
    "vormen": [
-    "nieuwe"
+    "nieuwe",
+    "nieuw"
    ],
    "zinnen": [
     {
@@ -1045,25 +1112,38 @@
     {
      "zin": "De transactie in de Reiskompas-omgeving wordt niet aangepast, wel verschijnt het opgehaalde restitutiebedrag als nieuwe transactie in jouw Reiskompas-omgeving.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "En af is af: landen gaat vóór nieuw.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Landen gaat vóór nieuw, half werk laten liggen is de duurste move die er is.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
    "status": "bekend"
   },
   "ontwikkeling": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "ontwikkelingen"
+    "ontwikkelingen",
+    "ontwikkeling"
    ],
    "zinnen": [
     {
      "zin": "Doorkijk naar nieuwe ontwikkelingen",
      "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Het wie: People Lead — de mensen: gesprekscyclus, verzuim, ontwikkeling, per people group.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
    "status": "nieuw"
   },
   "medewerker": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "medewerker"
    ],
@@ -1071,9 +1151,13 @@
     {
      "zin": "Beste medewerker,",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Standaard vervoermiddel instelbaar per medewerker.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kern"
   },
   "maart": {
    "count": 1,
@@ -1256,17 +1340,35 @@
    "status": "nieuw"
   },
   "komen": {
-   "count": 1,
+   "count": 6,
    "vormen": [
-    "komen"
+    "komen",
+    "kwam",
+    "komt"
    ],
    "zinnen": [
     {
      "zin": "Dit kan bijvoorbeeld komen door een defecte kaartlezer of een gemiste check-in of check-out.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Maar een consensus kwam er niet, en die komt er ook niet vanzelf.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Gezag komt uit de methode en het bewijs, niet uit een organigram.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Al het werk komt uit de waardestroombacklogs.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Die komen volgende week.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "defect": {
    "count": 1,
@@ -1377,7 +1479,7 @@
    "status": "nieuw"
   },
   "volgend": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "volgende"
    ],
@@ -1385,6 +1487,10 @@
     {
      "zin": "De volgende ritgegevens zijn bij ons bekend: vervoerder RegioRail, station Zwolle, 08:12.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Die komen volgende week.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
    "status": "nieuw"
@@ -1555,17 +1661,22 @@
    "status": "nieuw"
   },
   "meestal": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "Meestal"
+    "Meestal",
+    "meestal"
    ],
    "zinnen": [
     {
      "zin": "Meestal is de rit zichtbaar binnen 10 dagen.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Een sidequest is een uitdaging die spontaan spawnt, meestal op het moment dat je koffie wilde halen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "zichtbaar": {
    "count": 2,
@@ -1667,7 +1778,7 @@
    "status": "nieuw"
   },
   "automatisch": {
-   "count": 2,
+   "count": 3,
    "vormen": [
     "automatisch"
    ],
@@ -1679,6 +1790,10 @@
     {
      "zin": "Indien je reist met RegioRail hoeft dit niet, dan gaat dit geheel automatisch.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Deze instelling heeft voorrang op het algoritme dat nu bepaalt welke modaliteit en welk vervoermiddel gebruikt worden bij het automatisch aanmaken van woon-werkritten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
    "status": "nieuw"
@@ -1710,14 +1825,23 @@
    "status": "nieuw"
   },
   "pas": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "pas"
+    "pas",
+    "Pas"
    ],
    "zinnen": [
     {
      "zin": "Let op: is jouw pas geblokkeerd, bijvoorbeeld omdat je deze tijdens de rit bent verloren?",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Pas daarna, en in overleg, de eerste story in het eerste team.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "AI-first wordt pas de standaard via een guild-besluit op gemeten bewijs.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
    "status": "nieuw"
@@ -1876,17 +2000,22 @@
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kern"
   },
   "transactie": {
-   "count": 2,
+   "count": 3,
    "vormen": [
-    "transactie"
+    "transactie",
+    "Transacties"
    ],
    "zinnen": [
     {
      "zin": "De transactie in de Reiskompas-omgeving wordt niet aangepast, wel verschijnt het opgehaalde restitutiebedrag als nieuwe transactie in jouw Reiskompas-omgeving.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Transacties in 20 seconden in je app.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
    "status": "nieuw"
@@ -1928,7 +2057,7 @@
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kern"
   },
   "reeds": {
    "count": 1,
@@ -1980,7 +2109,7 @@
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kern"
   },
   "opmerking": {
    "count": 1,
@@ -2004,6 +2133,2721 @@
     {
      "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "tribune": {
+   "count": 1,
+   "vormen": [
+    "tribune"
+   ],
+   "zinnen": [
+    {
+     "zin": "Alle nerds op een tribune.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "uitdaging": {
+   "count": 1,
+   "vormen": [
+    "uitdaging"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een sidequest is een uitdaging die spontaan spawnt, meestal op het moment dat je koffie wilde halen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "spontaan": {
+   "count": 1,
+   "vormen": [
+    "spontaan"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een sidequest is een uitdaging die spontaan spawnt, meestal op het moment dat je koffie wilde halen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "moment": {
+   "count": 1,
+   "vormen": [
+    "moment"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een sidequest is een uitdaging die spontaan spawnt, meestal op het moment dat je koffie wilde halen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "koffie": {
+   "count": 1,
+   "vormen": [
+    "koffie"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een sidequest is een uitdaging die spontaan spawnt, meestal op het moment dat je koffie wilde halen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "halen": {
+   "count": 1,
+   "vormen": [
+    "halen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een sidequest is een uitdaging die spontaan spawnt, meestal op het moment dat je koffie wilde halen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "net": {
+   "count": 2,
+   "vormen": [
+    "net"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een sidequest is net als de badeend-NPC: hij duikt op als je het niet verwacht.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Een sidequest is als de saus op je frikandel, het maakt het leven net wat specialer.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "badeend": {
+   "count": 1,
+   "vormen": [
+    "badeend-NPC"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een sidequest is net als de badeend-NPC: hij duikt op als je het niet verwacht.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "opduiken": {
+   "count": 1,
+   "vormen": [
+    "duikt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een sidequest is net als de badeend-NPC: hij duikt op als je het niet verwacht.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verwachten": {
+   "count": 1,
+   "vormen": [
+    "verwacht"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een sidequest is net als de badeend-NPC: hij duikt op als je het niet verwacht.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "saus": {
+   "count": 1,
+   "vormen": [
+    "saus"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een sidequest is als de saus op je frikandel, het maakt het leven net wat specialer.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "frikandel": {
+   "count": 1,
+   "vormen": [
+    "frikandel"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een sidequest is als de saus op je frikandel, het maakt het leven net wat specialer.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "maken": {
+   "count": 1,
+   "vormen": [
+    "maakt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een sidequest is als de saus op je frikandel, het maakt het leven net wat specialer.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "leven": {
+   "count": 1,
+   "vormen": [
+    "leven"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een sidequest is als de saus op je frikandel, het maakt het leven net wat specialer.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "speciaal": {
+   "count": 1,
+   "vormen": [
+    "specialer"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een sidequest is als de saus op je frikandel, het maakt het leven net wat specialer.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "standaard": {
+   "count": 3,
+   "vormen": [
+    "Standaard",
+    "standaard"
+   ],
+   "zinnen": [
+    {
+     "zin": "Standaard vervoermiddel instelbaar per medewerker.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Het hoe: AI Development Lead — de methode: AI-first bouwen als standaard werkwijze, over alle domeinen heen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "AI-first wordt pas de standaard via een guild-besluit op gemeten bewijs.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vervoermiddel": {
+   "count": 2,
+   "vormen": [
+    "vervoermiddel"
+   ],
+   "zinnen": [
+    {
+     "zin": "Standaard vervoermiddel instelbaar per medewerker.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Deze instelling heeft voorrang op het algoritme dat nu bepaalt welke modaliteit en welk vervoermiddel gebruikt worden bij het automatisch aanmaken van woon-werkritten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "instelbaar": {
+   "count": 1,
+   "vormen": [
+    "instelbaar"
+   ],
+   "zinnen": [
+    {
+     "zin": "Standaard vervoermiddel instelbaar per medewerker.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "instelling": {
+   "count": 1,
+   "vormen": [
+    "instelling"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze instelling heeft voorrang op het algoritme dat nu bepaalt welke modaliteit en welk vervoermiddel gebruikt worden bij het automatisch aanmaken van woon-werkritten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "voorrang": {
+   "count": 1,
+   "vormen": [
+    "voorrang"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze instelling heeft voorrang op het algoritme dat nu bepaalt welke modaliteit en welk vervoermiddel gebruikt worden bij het automatisch aanmaken van woon-werkritten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "algoritme": {
+   "count": 1,
+   "vormen": [
+    "algoritme"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze instelling heeft voorrang op het algoritme dat nu bepaalt welke modaliteit en welk vervoermiddel gebruikt worden bij het automatisch aanmaken van woon-werkritten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "nu": {
+   "count": 3,
+   "vormen": [
+    "nu",
+    "Nu"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze instelling heeft voorrang op het algoritme dat nu bepaalt welke modaliteit en welk vervoermiddel gebruikt worden bij het automatisch aanmaken van woon-werkritten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Deelfiets is nu live.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Nu bewegen we.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "bepalen": {
+   "count": 3,
+   "vormen": [
+    "bepaalt",
+    "bepalen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze instelling heeft voorrang op het algoritme dat nu bepaalt welke modaliteit en welk vervoermiddel gebruikt worden bij het automatisch aanmaken van woon-werkritten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Dus pakken wij het op en bepalen we met focus hoe we het op onze manier kunnen gebruiken.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Niemand bepaalt wie mee mag doen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "modaliteit": {
+   "count": 1,
+   "vormen": [
+    "modaliteit"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze instelling heeft voorrang op het algoritme dat nu bepaalt welke modaliteit en welk vervoermiddel gebruikt worden bij het automatisch aanmaken van woon-werkritten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "aanmaken": {
+   "count": 1,
+   "vormen": [
+    "aanmaken"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze instelling heeft voorrang op het algoritme dat nu bepaalt welke modaliteit en welk vervoermiddel gebruikt worden bij het automatisch aanmaken van woon-werkritten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "woon-werkrit": {
+   "count": 1,
+   "vormen": [
+    "woon-werkritten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deze instelling heeft voorrang op het algoritme dat nu bepaalt welke modaliteit en welk vervoermiddel gebruikt worden bij het automatisch aanmaken van woon-werkritten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "leren": {
+   "count": 1,
+   "vormen": [
+    "leren"
+   ],
+   "zinnen": [
+    {
+     "zin": "Oops; wat leren we hiervan?",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vinden": {
+   "count": 2,
+   "vormen": [
+    "gevonden",
+    "vinden"
+   ],
+   "zinnen": [
+    {
+     "zin": "TL;DR: root cause gevonden, root gefixt, cause blijft mensenwerk.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Details over wat Bas gaat vinden weet ik niet.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "fixen": {
+   "count": 1,
+   "vormen": [
+    "gefixt"
+   ],
+   "zinnen": [
+    {
+     "zin": "TL;DR: root cause gevonden, root gefixt, cause blijft mensenwerk.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "blijven": {
+   "count": 2,
+   "vormen": [
+    "blijft"
+   ],
+   "zinnen": [
+    {
+     "zin": "TL;DR: root cause gevonden, root gefixt, cause blijft mensenwerk.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Maar de potentiële winst die blijft liggen wint geen schoonheidsprijs, en de verwachting verschuift met of zonder ons.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "mensenwerk": {
+   "count": 1,
+   "vormen": [
+    "mensenwerk"
+   ],
+   "zinnen": [
+    {
+     "zin": "TL;DR: root cause gevonden, root gefixt, cause blijft mensenwerk.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "repeterend": {
+   "count": 1,
+   "vormen": [
+    "Repeterende"
+   ],
+   "zinnen": [
+    {
+     "zin": "Repeterende facturatie: technisch opgeleverd!",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "facturatie": {
+   "count": 1,
+   "vormen": [
+    "facturatie"
+   ],
+   "zinnen": [
+    {
+     "zin": "Repeterende facturatie: technisch opgeleverd!",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "technisch": {
+   "count": 2,
+   "vormen": [
+    "technisch",
+    "technische"
+   ],
+   "zinnen": [
+    {
+     "zin": "Repeterende facturatie: technisch opgeleverd!",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Het wat: Tech Lead — technische koers, kwaliteit en haalbaarheid, per domein.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "opleveren": {
+   "count": 1,
+   "vormen": [
+    "opgeleverd"
+   ],
+   "zinnen": [
+    {
+     "zin": "Repeterende facturatie: technisch opgeleverd!",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "zelf": {
+   "count": 1,
+   "vormen": [
+    "zelf"
+   ],
+   "zinnen": [
+    {
+     "zin": "Thijs kan zelf dingen!",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "ding": {
+   "count": 1,
+   "vormen": [
+    "dingen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Thijs kan zelf dingen!",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verbetering": {
+   "count": 1,
+   "vormen": [
+    "Verbeteringen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Verbeteringen in de admin.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "deelfiets": {
+   "count": 1,
+   "vormen": [
+    "Deelfiets"
+   ],
+   "zinnen": [
+    {
+     "zin": "Deelfiets is nu live.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "seconde": {
+   "count": 1,
+   "vormen": [
+    "seconden"
+   ],
+   "zinnen": [
+    {
+     "zin": "Transacties in 20 seconden in je app.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "even": {
+   "count": 1,
+   "vormen": [
+    "Even"
+   ],
+   "zinnen": [
+    {
+     "zin": "Even snel, minder flaky.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "snel": {
+   "count": 1,
+   "vormen": [
+    "snel"
+   ],
+   "zinnen": [
+    {
+     "zin": "Even snel, minder flaky.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "minder": {
+   "count": 2,
+   "vormen": [
+    "minder"
+   ],
+   "zinnen": [
+    {
+     "zin": "Even snel, minder flaky.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Steeds minder tickets.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "ticket": {
+   "count": 2,
+   "vormen": [
+    "tickets"
+   ],
+   "zinnen": [
+    {
+     "zin": "Kaartnet-tickets van 64 naar 31, in twee weken tijd.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Steeds minder tickets.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "week": {
+   "count": 3,
+   "vormen": [
+    "weken",
+    "week"
+   ],
+   "zinnen": [
+    {
+     "zin": "Kaartnet-tickets van 64 naar 31, in twee weken tijd.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Scheelt zo 3 uur per week.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Die komen volgende week.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "tijd": {
+   "count": 1,
+   "vormen": [
+    "tijd"
+   ],
+   "zinnen": [
+    {
+     "zin": "Kaartnet-tickets van 64 naar 31, in twee weken tijd.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "kaart": {
+   "count": 1,
+   "vormen": [
+    "kaarten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Oude kaarten: synchronisatie-issues voorkomen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "synchronisatie": {
+   "count": 1,
+   "vormen": [
+    "synchronisatie"
+   ],
+   "zinnen": [
+    {
+     "zin": "Oude kaarten: synchronisatie-issues voorkomen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "voorkomen": {
+   "count": 1,
+   "vormen": [
+    "voorkomen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Oude kaarten: synchronisatie-issues voorkomen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "schelen": {
+   "count": 1,
+   "vormen": [
+    "Scheelt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Scheelt zo 3 uur per week.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "zo": {
+   "count": 1,
+   "vormen": [
+    "zo"
+   ],
+   "zinnen": [
+    {
+     "zin": "Scheelt zo 3 uur per week.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "uur": {
+   "count": 2,
+   "vormen": [
+    "uur"
+   ],
+   "zinnen": [
+    {
+     "zin": "Scheelt zo 3 uur per week.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "58 bugs gesloten, waarvan 21 meer dan 1 uur werk waren.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "kwaliteit": {
+   "count": 2,
+   "vormen": [
+    "Kwaliteit",
+    "kwaliteit"
+   ],
+   "zinnen": [
+    {
+     "zin": "Kwaliteit wint weer van kwantiteit.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Het wat: Tech Lead — technische koers, kwaliteit en haalbaarheid, per domein.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "winnen": {
+   "count": 2,
+   "vormen": [
+    "wint"
+   ],
+   "zinnen": [
+    {
+     "zin": "Kwaliteit wint weer van kwantiteit.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Maar de potentiële winst die blijft liggen wint geen schoonheidsprijs, en de verwachting verschuift met of zonder ons.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "weer": {
+   "count": 1,
+   "vormen": [
+    "weer"
+   ],
+   "zinnen": [
+    {
+     "zin": "Kwaliteit wint weer van kwantiteit.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "kwantiteit": {
+   "count": 1,
+   "vormen": [
+    "kwantiteit"
+   ],
+   "zinnen": [
+    {
+     "zin": "Kwaliteit wint weer van kwantiteit.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "steeds": {
+   "count": 1,
+   "vormen": [
+    "Steeds"
+   ],
+   "zinnen": [
+    {
+     "zin": "Steeds minder tickets.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "sluiten": {
+   "count": 1,
+   "vormen": [
+    "gesloten"
+   ],
+   "zinnen": [
+    {
+     "zin": "58 bugs gesloten, waarvan 21 meer dan 1 uur werk waren.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "werk": {
+   "count": 6,
+   "vormen": [
+    "werk",
+    "Werk"
+   ],
+   "zinnen": [
+    {
+     "zin": "58 bugs gesloten, waarvan 21 meer dan 1 uur werk waren.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Dat is letterlijk zijn werk.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "De opdracht: de afdeling door de AI-leercurve trekken, werkend in bestaande teams aan bestaand werk.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Al het werk komt uit de waardestroombacklogs.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Werk gaat in kleine, heldere blokken.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Landen gaat vóór nieuw, half werk laten liggen is de duurste move die er is.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "proberen": {
+   "count": 1,
+   "vormen": [
+    "proberen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Laten we proberen de toekomst te voorspellen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "toekomst": {
+   "count": 1,
+   "vormen": [
+    "toekomst"
+   ],
+   "zinnen": [
+    {
+     "zin": "Laten we proberen de toekomst te voorspellen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "voorspellen": {
+   "count": 1,
+   "vormen": [
+    "voorspellen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Laten we proberen de toekomst te voorspellen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "regel": {
+   "count": 1,
+   "vormen": [
+    "regel"
+   ],
+   "zinnen": [
+    {
+     "zin": "Jullie kennen mijn regel: dialoog, niet monoloog.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "dialoog": {
+   "count": 1,
+   "vormen": [
+    "dialoog"
+   ],
+   "zinnen": [
+    {
+     "zin": "Jullie kennen mijn regel: dialoog, niet monoloog.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "monoloog": {
+   "count": 2,
+   "vormen": [
+    "monoloog"
+   ],
+   "zinnen": [
+    {
+     "zin": "Jullie kennen mijn regel: dialoog, niet monoloog.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Vandaag: monoloog.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "lang": {
+   "count": 2,
+   "vormen": [
+    "lang"
+   ],
+   "zinnen": [
+    {
+     "zin": "Over AI is lang en vaak gesproken.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "In elk team zit iemand die dit al lang wil.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vaak": {
+   "count": 1,
+   "vormen": [
+    "vaak"
+   ],
+   "zinnen": [
+    {
+     "zin": "Over AI is lang en vaak gesproken.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "spreken": {
+   "count": 1,
+   "vormen": [
+    "gesproken"
+   ],
+   "zinnen": [
+    {
+     "zin": "Over AI is lang en vaak gesproken.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "stem": {
+   "count": 1,
+   "vormen": [
+    "stemmen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Alle stemmen zijn gehoord, en ze waren waardevol.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "horen": {
+   "count": 2,
+   "vormen": [
+    "gehoord",
+    "horen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Alle stemmen zijn gehoord, en ze waren waardevol.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Eerst horen hoe jullie werken en waar het schuurt.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "waardevol": {
+   "count": 1,
+   "vormen": [
+    "waardevol"
+   ],
+   "zinnen": [
+    {
+     "zin": "Alle stemmen zijn gehoord, en ze waren waardevol.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "consensus": {
+   "count": 1,
+   "vormen": [
+    "consensus"
+   ],
+   "zinnen": [
+    {
+     "zin": "Maar een consensus kwam er niet, en die komt er ook niet vanzelf.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vanzelf": {
+   "count": 1,
+   "vormen": [
+    "vanzelf"
+   ],
+   "zinnen": [
+    {
+     "zin": "Maar een consensus kwam er niet, en die komt er ook niet vanzelf.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "besluiten": {
+   "count": 1,
+   "vormen": [
+    "besloten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dus heb ik besloten, passend bij mijn rol en mijn visie.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "passend": {
+   "count": 1,
+   "vormen": [
+    "passend"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dus heb ik besloten, passend bij mijn rol en mijn visie.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "rol": {
+   "count": 2,
+   "vormen": [
+    "rol"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dus heb ik besloten, passend bij mijn rol en mijn visie.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Lead = operationele rol, geen laag in het functiehuis.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "visie": {
+   "count": 1,
+   "vormen": [
+    "visie"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dus heb ik besloten, passend bij mijn rol en mijn visie.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "doen": {
+   "count": 3,
+   "vormen": [
+    "doe",
+    "doen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dat doe ik hier zelden, en juist dat zegt hoe belangrijk dit is.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Herschrijven doen we niet: terug naar plan mode.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Herschrijven doen we niet.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "zelden": {
+   "count": 1,
+   "vormen": [
+    "zelden"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dat doe ik hier zelden, en juist dat zegt hoe belangrijk dit is.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "juist": {
+   "count": 1,
+   "vormen": [
+    "juist"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dat doe ik hier zelden, en juist dat zegt hoe belangrijk dit is.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "zeggen": {
+   "count": 1,
+   "vormen": [
+    "zegt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dat doe ik hier zelden, en juist dat zegt hoe belangrijk dit is.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "belangrijk": {
+   "count": 1,
+   "vormen": [
+    "belangrijk"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dat doe ik hier zelden, en juist dat zegt hoe belangrijk dit is.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "besluit": {
+   "count": 2,
+   "vormen": [
+    "besluit",
+    "guild-besluit"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het besluit staat.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "AI-first wordt pas de standaard via een guild-besluit op gemeten bewijs.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "staan": {
+   "count": 2,
+   "vormen": [
+    "staat",
+    "staan"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het besluit staat.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Meld wie vooraan wil staan.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bewegen": {
+   "count": 1,
+   "vormen": [
+    "bewegen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Nu bewegen we.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "noemen": {
+   "count": 1,
+   "vormen": [
+    "noemen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Sommigen noemen het broken.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "eromheen lopen": {
+   "count": 1,
+   "vormen": [
+    "lopen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Sommigen lopen er met een boog omheen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "boog": {
+   "count": 1,
+   "vormen": [
+    "boog"
+   ],
+   "zinnen": [
+    {
+     "zin": "Sommigen lopen er met een boog omheen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "zweren": {
+   "count": 1,
+   "vormen": [
+    "zweren"
+   ],
+   "zinnen": [
+    {
+     "zin": "Sommigen zweren bij hun oude build.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "prima": {
+   "count": 1,
+   "vormen": [
+    "prima"
+   ],
+   "zinnen": [
+    {
+     "zin": "Allemaal prima.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "potentieel": {
+   "count": 1,
+   "vormen": [
+    "potentiële"
+   ],
+   "zinnen": [
+    {
+     "zin": "Maar de potentiële winst die blijft liggen wint geen schoonheidsprijs, en de verwachting verschuift met of zonder ons.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "winst": {
+   "count": 1,
+   "vormen": [
+    "winst"
+   ],
+   "zinnen": [
+    {
+     "zin": "Maar de potentiële winst die blijft liggen wint geen schoonheidsprijs, en de verwachting verschuift met of zonder ons.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "schoonheidsprijs": {
+   "count": 1,
+   "vormen": [
+    "schoonheidsprijs"
+   ],
+   "zinnen": [
+    {
+     "zin": "Maar de potentiële winst die blijft liggen wint geen schoonheidsprijs, en de verwachting verschuift met of zonder ons.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verwachting": {
+   "count": 1,
+   "vormen": [
+    "verwachting"
+   ],
+   "zinnen": [
+    {
+     "zin": "Maar de potentiële winst die blijft liggen wint geen schoonheidsprijs, en de verwachting verschuift met of zonder ons.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verschuiven": {
+   "count": 1,
+   "vormen": [
+    "verschuift"
+   ],
+   "zinnen": [
+    {
+     "zin": "Maar de potentiële winst die blijft liggen wint geen schoonheidsprijs, en de verwachting verschuift met of zonder ons.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "oppakken": {
+   "count": 1,
+   "vormen": [
+    "pakken"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dus pakken wij het op en bepalen we met focus hoe we het op onze manier kunnen gebruiken.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "manier": {
+   "count": 1,
+   "vormen": [
+    "manier"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dus pakken wij het op en bepalen we met focus hoe we het op onze manier kunnen gebruiken.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "opdracht": {
+   "count": 2,
+   "vormen": [
+    "opdracht"
+   ],
+   "zinnen": [
+    {
+     "zin": "Zijn eerste opdracht: een luisterronde langs jullie.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "De opdracht: de afdeling door de AI-leercurve trekken, werkend in bestaande teams aan bestaand werk.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "luisterronde": {
+   "count": 1,
+   "vormen": [
+    "luisterronde"
+   ],
+   "zinnen": [
+    {
+     "zin": "Zijn eerste opdracht: een luisterronde langs jullie.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "eerst": {
+   "count": 2,
+   "vormen": [
+    "Eerst",
+    "eerst"
+   ],
+   "zinnen": [
+    {
+     "zin": "Eerst horen hoe jullie werken en waar het schuurt.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Welk team is er klaar voor, welk team heeft eerst iets anders nodig.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "werken": {
+   "count": 2,
+   "vormen": [
+    "werken",
+    "werkend"
+   ],
+   "zinnen": [
+    {
+     "zin": "Eerst horen hoe jullie werken en waar het schuurt.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "De opdracht: de afdeling door de AI-leercurve trekken, werkend in bestaande teams aan bestaand werk.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "schuren": {
+   "count": 1,
+   "vormen": [
+    "schuurt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Eerst horen hoe jullie werken en waar het schuurt.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "daarna": {
+   "count": 1,
+   "vormen": [
+    "daarna"
+   ],
+   "zinnen": [
+    {
+     "zin": "Pas daarna, en in overleg, de eerste story in het eerste team.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "overleg": {
+   "count": 1,
+   "vormen": [
+    "overleg"
+   ],
+   "zinnen": [
+    {
+     "zin": "Pas daarna, en in overleg, de eerste story in het eerste team.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "team": {
+   "count": 11,
+   "vormen": [
+    "team",
+    "teams"
+   ],
+   "zinnen": [
+    {
+     "zin": "Pas daarna, en in overleg, de eerste story in het eerste team.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "De opdracht: de afdeling door de AI-leercurve trekken, werkend in bestaande teams aan bestaand werk.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Coaching in de teams.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Welk team wanneer aan de beurt is, bepalen jullie mee.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Elk team houdt zijn eigen tempo.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "En we meten teams, nooit personen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Vragen uit je team gaan naar jou of naar hem.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Jullie kennen je teams.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Welk team is er klaar voor, welk team heeft eerst iets anders nodig.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "In elk team zit iemand die dit al lang wil.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "kritisch": {
+   "count": 1,
+   "vormen": [
+    "Kritische"
+   ],
+   "zinnen": [
+    {
+     "zin": "Kritische vragen zijn welkom.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "welkom": {
+   "count": 1,
+   "vormen": [
+    "welkom"
+   ],
+   "zinnen": [
+    {
+     "zin": "Kritische vragen zijn welkom.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "letterlijk": {
+   "count": 1,
+   "vormen": [
+    "letterlijk"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dat is letterlijk zijn werk.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "operationeel": {
+   "count": 1,
+   "vormen": [
+    "operationele"
+   ],
+   "zinnen": [
+    {
+     "zin": "Lead = operationele rol, geen laag in het functiehuis.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "laag": {
+   "count": 1,
+   "vormen": [
+    "laag"
+   ],
+   "zinnen": [
+    {
+     "zin": "Lead = operationele rol, geen laag in het functiehuis.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "functiehuis": {
+   "count": 1,
+   "vormen": [
+    "functiehuis"
+   ],
+   "zinnen": [
+    {
+     "zin": "Lead = operationele rol, geen laag in het functiehuis.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "koers": {
+   "count": 1,
+   "vormen": [
+    "koers"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het wat: Tech Lead — technische koers, kwaliteit en haalbaarheid, per domein.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "haalbaarheid": {
+   "count": 1,
+   "vormen": [
+    "haalbaarheid"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het wat: Tech Lead — technische koers, kwaliteit en haalbaarheid, per domein.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "domein": {
+   "count": 2,
+   "vormen": [
+    "domein",
+    "domeinen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het wat: Tech Lead — technische koers, kwaliteit en haalbaarheid, per domein.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Het hoe: AI Development Lead — de methode: AI-first bouwen als standaard werkwijze, over alle domeinen heen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "mens": {
+   "count": 1,
+   "vormen": [
+    "mensen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het wie: People Lead — de mensen: gesprekscyclus, verzuim, ontwikkeling, per people group.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "gesprekscyclus": {
+   "count": 1,
+   "vormen": [
+    "gesprekscyclus"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het wie: People Lead — de mensen: gesprekscyclus, verzuim, ontwikkeling, per people group.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verzuim": {
+   "count": 1,
+   "vormen": [
+    "verzuim"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het wie: People Lead — de mensen: gesprekscyclus, verzuim, ontwikkeling, per people group.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "methode": {
+   "count": 3,
+   "vormen": [
+    "methode"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het hoe: AI Development Lead — de methode: AI-first bouwen als standaard werkwijze, over alle domeinen heen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Eigenaar van de methode.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Gezag komt uit de methode en het bewijs, niet uit een organigram.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bouwen": {
+   "count": 3,
+   "vormen": [
+    "bouwen",
+    "gebouwd",
+    "bouwt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het hoe: AI Development Lead — de methode: AI-first bouwen als standaard werkwijze, over alle domeinen heen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Het plan staat vast voordat er gebouwd wordt.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "AI bouwt binnen het plan.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "werkwijze": {
+   "count": 1,
+   "vormen": [
+    "werkwijze"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het hoe: AI Development Lead — de methode: AI-first bouwen als standaard werkwijze, over alle domeinen heen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "afdeling": {
+   "count": 1,
+   "vormen": [
+    "afdeling"
+   ],
+   "zinnen": [
+    {
+     "zin": "De opdracht: de afdeling door de AI-leercurve trekken, werkend in bestaande teams aan bestaand werk.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "leercurve": {
+   "count": 1,
+   "vormen": [
+    "AI-leercurve"
+   ],
+   "zinnen": [
+    {
+     "zin": "De opdracht: de afdeling door de AI-leercurve trekken, werkend in bestaande teams aan bestaand werk.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "trekken": {
+   "count": 1,
+   "vormen": [
+    "trekken"
+   ],
+   "zinnen": [
+    {
+     "zin": "De opdracht: de afdeling door de AI-leercurve trekken, werkend in bestaande teams aan bestaand werk.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bestaand": {
+   "count": 2,
+   "vormen": [
+    "bestaande",
+    "bestaand"
+   ],
+   "zinnen": [
+    {
+     "zin": "De opdracht: de afdeling door de AI-leercurve trekken, werkend in bestaande teams aan bestaand werk.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "eigenaar": {
+   "count": 1,
+   "vormen": [
+    "Eigenaar"
+   ],
+   "zinnen": [
+    {
+     "zin": "Eigenaar van de methode.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "herschrijven": {
+   "count": 2,
+   "vormen": [
+    "Herschrijven"
+   ],
+   "zinnen": [
+    {
+     "zin": "Herschrijven doen we niet: terug naar plan mode.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Herschrijven doen we niet.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "terug": {
+   "count": 2,
+   "vormen": [
+    "terug"
+   ],
+   "zinnen": [
+    {
+     "zin": "Herschrijven doen we niet: terug naar plan mode.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Loopt het anders, dan terug naar plan mode.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "plan": {
+   "count": 4,
+   "vormen": [
+    "plan"
+   ],
+   "zinnen": [
+    {
+     "zin": "Herschrijven doen we niet: terug naar plan mode.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Het plan staat vast voordat er gebouwd wordt.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "AI bouwt binnen het plan.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Loopt het anders, dan terug naar plan mode.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "af": {
+   "count": 1,
+   "vormen": [
+    "af"
+   ],
+   "zinnen": [
+    {
+     "zin": "En af is af: landen gaat vóór nieuw.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "landen": {
+   "count": 2,
+   "vormen": [
+    "landen",
+    "Landen"
+   ],
+   "zinnen": [
+    {
+     "zin": "En af is af: landen gaat vóór nieuw.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Landen gaat vóór nieuw, half werk laten liggen is de duurste move die er is.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "voorgaan": {
+   "count": 2,
+   "vormen": [
+    "gaat"
+   ],
+   "zinnen": [
+    {
+     "zin": "En af is af: landen gaat vóór nieuw.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Landen gaat vóór nieuw, half werk laten liggen is de duurste move die er is.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "meewerken": {
+   "count": 1,
+   "vormen": [
+    "Meewerken"
+   ],
+   "zinnen": [
+    {
+     "zin": "Meewerken aan stories uit jullie eigen backlog, binnen jullie sprints.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "eigen": {
+   "count": 3,
+   "vormen": [
+    "eigen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Meewerken aan stories uit jullie eigen backlog, binnen jullie sprints.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Elk team houdt zijn eigen tempo.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Er is geen aparte speeltuin met eigen prioriteiten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "volgorde": {
+   "count": 2,
+   "vormen": [
+    "Volgorde",
+    "volgorde"
+   ],
+   "zinnen": [
+    {
+     "zin": "Volgorde en tempo samen met jullie.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Denk mee over de volgorde.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "tempo": {
+   "count": 2,
+   "vormen": [
+    "tempo"
+   ],
+   "zinnen": [
+    {
+     "zin": "Volgorde en tempo samen met jullie.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Elk team houdt zijn eigen tempo.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "samen": {
+   "count": 1,
+   "vormen": [
+    "samen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Volgorde en tempo samen met jullie.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "beurt": {
+   "count": 1,
+   "vormen": [
+    "beurt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Welk team wanneer aan de beurt is, bepalen jullie mee.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "meebepalen": {
+   "count": 1,
+   "vormen": [
+    "bepalen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Welk team wanneer aan de beurt is, bepalen jullie mee.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "houden": {
+   "count": 1,
+   "vormen": [
+    "houdt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Elk team houdt zijn eigen tempo.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "hiërarchie": {
+   "count": 1,
+   "vormen": [
+    "hiërarchie"
+   ],
+   "zinnen": [
+    {
+     "zin": "Geen hiërarchie over engineers.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "aansturen": {
+   "count": 1,
+   "vormen": [
+    "stuurt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Hij stuurt niemand aan.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "gezag": {
+   "count": 1,
+   "vormen": [
+    "Gezag"
+   ],
+   "zinnen": [
+    {
+     "zin": "Gezag komt uit de methode en het bewijs, niet uit een organigram.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bewijs": {
+   "count": 2,
+   "vormen": [
+    "bewijs"
+   ],
+   "zinnen": [
+    {
+     "zin": "Gezag komt uit de methode en het bewijs, niet uit een organigram.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "AI-first wordt pas de standaard via een guild-besluit op gemeten bewijs.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "organigram": {
+   "count": 1,
+   "vormen": [
+    "organigram"
+   ],
+   "zinnen": [
+    {
+     "zin": "Gezag komt uit de methode en het bewijs, niet uit een organigram.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "lijn": {
+   "count": 1,
+   "vormen": [
+    "lijn"
+   ],
+   "zinnen": [
+    {
+     "zin": "Geen AI-lab naast de lijn.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "apart": {
+   "count": 1,
+   "vormen": [
+    "aparte"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is geen aparte speeltuin met eigen prioriteiten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "speeltuin": {
+   "count": 1,
+   "vormen": [
+    "speeltuin"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is geen aparte speeltuin met eigen prioriteiten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "prioriteit": {
+   "count": 1,
+   "vormen": [
+    "prioriteiten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er is geen aparte speeltuin met eigen prioriteiten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "selectiecommissie": {
+   "count": 1,
+   "vormen": [
+    "selectiecommissie"
+   ],
+   "zinnen": [
+    {
+     "zin": "Geen selectiecommissie.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "meedoen": {
+   "count": 1,
+   "vormen": [
+    "doen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Niemand bepaalt wie mee mag doen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "leerpad": {
+   "count": 1,
+   "vormen": [
+    "leerpad"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het leerpad staat open voor iedereen die wil.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "openstaan": {
+   "count": 1,
+   "vormen": [
+    "staat"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het leerpad staat open voor iedereen die wil.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "decreet": {
+   "count": 1,
+   "vormen": [
+    "decreet"
+   ],
+   "zinnen": [
+    {
+     "zin": "Geen decreet, geen scorebord.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "scorebord": {
+   "count": 1,
+   "vormen": [
+    "scorebord"
+   ],
+   "zinnen": [
+    {
+     "zin": "Geen decreet, geen scorebord.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "meten": {
+   "count": 2,
+   "vormen": [
+    "gemeten",
+    "meten"
+   ],
+   "zinnen": [
+    {
+     "zin": "AI-first wordt pas de standaard via een guild-besluit op gemeten bewijs.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "En we meten teams, nooit personen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "nooit": {
+   "count": 1,
+   "vormen": [
+    "nooit"
+   ],
+   "zinnen": [
+    {
+     "zin": "En we meten teams, nooit personen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "persoon": {
+   "count": 1,
+   "vormen": [
+    "personen"
+   ],
+   "zinnen": [
+    {
+     "zin": "En we meten teams, nooit personen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "beheersen": {
+   "count": 1,
+   "vormen": [
+    "beheerst"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wie ze alle drie beheerst, speelt het wapen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "spelen": {
+   "count": 2,
+   "vormen": [
+    "speelt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wie ze alle drie beheerst, speelt het wapen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Wie er een overslaat, speelt zichzelf.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "wapen": {
+   "count": 1,
+   "vormen": [
+    "wapen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wie ze alle drie beheerst, speelt het wapen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "overslaan": {
+   "count": 1,
+   "vormen": [
+    "overslaat"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wie er een overslaat, speelt zichzelf.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "gaan": {
+   "count": 3,
+   "vormen": [
+    "gaat",
+    "gaan"
+   ],
+   "zinnen": [
+    {
+     "zin": "Werk gaat in kleine, heldere blokken.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "De kwaliteitslag: elke move gaat langs tests, review en meting.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Vragen uit je team gaan naar jou of naar hem.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "klein": {
+   "count": 1,
+   "vormen": [
+    "kleine"
+   ],
+   "zinnen": [
+    {
+     "zin": "Werk gaat in kleine, heldere blokken.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "helder": {
+   "count": 1,
+   "vormen": [
+    "heldere"
+   ],
+   "zinnen": [
+    {
+     "zin": "Werk gaat in kleine, heldere blokken.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "blok": {
+   "count": 1,
+   "vormen": [
+    "blokken"
+   ],
+   "zinnen": [
+    {
+     "zin": "Werk gaat in kleine, heldere blokken.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vaststaan": {
+   "count": 1,
+   "vormen": [
+    "staat"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het plan staat vast voordat er gebouwd wordt.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "lopen": {
+   "count": 1,
+   "vormen": [
+    "Loopt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Loopt het anders, dan terug naar plan mode.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "anders": {
+   "count": 2,
+   "vormen": [
+    "anders"
+   ],
+   "zinnen": [
+    {
+     "zin": "Loopt het anders, dan terug naar plan mode.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Welk team is er klaar voor, welk team heeft eerst iets anders nodig.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "afronden": {
+   "count": 1,
+   "vormen": [
+    "Afronden"
+   ],
+   "zinnen": [
+    {
+     "zin": "Afronden.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "half": {
+   "count": 1,
+   "vormen": [
+    "half"
+   ],
+   "zinnen": [
+    {
+     "zin": "Landen gaat vóór nieuw, half werk laten liggen is de duurste move die er is.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "duur": {
+   "count": 1,
+   "vormen": [
+    "duurste"
+   ],
+   "zinnen": [
+    {
+     "zin": "Landen gaat vóór nieuw, half werk laten liggen is de duurste move die er is.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "kwaliteitslag": {
+   "count": 1,
+   "vormen": [
+    "kwaliteitslag"
+   ],
+   "zinnen": [
+    {
+     "zin": "De kwaliteitslag: elke move gaat langs tests, review en meting.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "meting": {
+   "count": 1,
+   "vormen": [
+    "meting"
+   ],
+   "zinnen": [
+    {
+     "zin": "De kwaliteitslag: elke move gaat langs tests, review en meting.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "draaien": {
+   "count": 1,
+   "vormen": [
+    "draaide"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een gate die niet draaide is geen pass.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "routeren": {
+   "count": 1,
+   "vormen": [
+    "Routeer"
+   ],
+   "zinnen": [
+    {
+     "zin": "Routeer de vragen.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "smeulen": {
+   "count": 1,
+   "vormen": [
+    "smeulen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Niet laten smeulen bij de koffieautomaat.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "koffieautomaat": {
+   "count": 1,
+   "vormen": [
+    "koffieautomaat"
+   ],
+   "zinnen": [
+    {
+     "zin": "Niet laten smeulen bij de koffieautomaat.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "meedenken": {
+   "count": 1,
+   "vormen": [
+    "Denk"
+   ],
+   "zinnen": [
+    {
+     "zin": "Denk mee over de volgorde.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "klaar": {
+   "count": 1,
+   "vormen": [
+    "klaar"
+   ],
+   "zinnen": [
+    {
+     "zin": "Welk team is er klaar voor, welk team heeft eerst iets anders nodig.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "nodig": {
+   "count": 1,
+   "vormen": [
+    "nodig"
+   ],
+   "zinnen": [
+    {
+     "zin": "Welk team is er klaar voor, welk team heeft eerst iets anders nodig.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "melden": {
+   "count": 1,
+   "vormen": [
+    "Meld"
+   ],
+   "zinnen": [
+    {
+     "zin": "Meld wie vooraan wil staan.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vooraan": {
+   "count": 1,
+   "vormen": [
+    "vooraan"
+   ],
+   "zinnen": [
+    {
+     "zin": "Meld wie vooraan wil staan.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "zitten": {
+   "count": 1,
+   "vormen": [
+    "zit"
+   ],
+   "zinnen": [
+    {
+     "zin": "In elk team zit iemand die dit al lang wil.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "naam": {
+   "count": 1,
+   "vormen": [
+    "naam"
+   ],
+   "zinnen": [
+    {
+     "zin": "Die naam wil ik weten.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "beantwoorden": {
+   "count": 2,
+   "vormen": [
+    "beantwoorden",
+    "beantwoord"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wat ik kan beantwoorden, beantwoord ik.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "doorkomen": {
+   "count": 1,
+   "vormen": [
+    "Kom"
+   ],
+   "zinnen": [
+    {
+     "zin": "Kom maar door.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "detail": {
+   "count": 1,
+   "vormen": [
+    "Details"
+   ],
+   "zinnen": [
+    {
+     "zin": "Details over wat Bas gaat vinden weet ik niet.",
+     "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
    "status": "nieuw"
