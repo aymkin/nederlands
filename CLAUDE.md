@@ -197,14 +197,19 @@ has its own learner (`link/` Alex, `link_plus/` Yulia).
 `check_recycling.py` gates style rule 4 on a finished deck: every example must
 reuse 2-4 words from that index, at least one from an earlier thema. It folds
 Dutch inflection crudely (doubled letters collapsed, infinitive `-en` dropped,
-prefix match) and ignores rule 3's discourse markers plus closed-class words, so
-its count is a floor — read a flagged example before rewriting it. Exit 1 means
-at least one card recycles too little.
+prefix match; `gaan`, `staan`, `doen`, `zien` match `ga`/`gaat` exactly) and
+ignores rule 3's discourse markers plus closed-class words. Articles and markers
+leave the example before matching, so they earn nothing through another entry
+either (`het` ~ `heten`, `hoor` ~ `horen`) — and the verb in `ik hoor` goes with
+them. The count is a floor — read a flagged example before rewriting it. Exit 1
+means at least one card recycles too little.
 
 ```bash
 python3 scripts/build_vocab_index.py --course link_plus
 python3 scripts/check_recycling.py link/thema_13/taak_1/woordenlijst_thema13_taak1_anki.txt
 ```
+
+Checks: `python3 scripts/test_check_recycling.py`
 
 ### anki_vandaag.py — Anki → Fluent Bridge (frequentie)
 

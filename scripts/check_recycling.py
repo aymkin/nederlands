@@ -12,13 +12,16 @@ What counts as a recycled word:
   - NOT one of rule 3's ten discourse markers: those are mandated separately,
     so counting them would let a card pass on a word it had to contain anyway
   - NOT a closed-class function word (pronouns, articles, basic copulas)
+  - NOT an article or marker in the example, whatever entry it resembles: het
+    would pass for heten, hoor for horen (the verb in `ik hoor` goes too)
 
 Matching folds Dutch inflection the cheap way: doubled letters are collapsed
 and the infinitive's -en is dropped, then an example token counts when it
 starts with that stem (passen ~ past, maken ~ maakt, gemakkelijk ~
-gemakkelijker, bon ~ bonnen). Stem changes it cannot see stay missed
-(reizen ~ reis, invriezen ~ vries ... in), so the count remains a floor — read
-a reported example before rewriting it.
+gemakkelijker, bon ~ bonnen). An infinitive in -aan/-oen/-ien also matches its
+present stem exactly (staan ~ sta, staat; doen ~ doet; zien ~ ziet). Stem
+changes it cannot see stay missed (reizen ~ reis, invriezen ~ vries ... in),
+so the count remains a floor — read a reported example before rewriting it.
 
 Exit 1 when a card carries fewer than --min recycled words or none from an
 earlier thema. Cards above --max are reported as warnings, not failures.
@@ -50,6 +53,10 @@ FUNCTION_WORDS = {
     "niets", "maar", "want", "ook", "nu", "ja", "wat", "waar", "meer", "heel",
     "al", "er", "daar", "alle", "allemaal", "iedereen", "hetzelfde", "anders",
 }
+
+# Example words that earn no credit through any entry. As tokens, the article
+# het would reach heten (stem het) and the marker hoor horen (stem hor).
+UNCREDITED = {"de", "het", "een"} | MARKERS
 
 
 def find_index(deck: Path) -> Path:
@@ -126,7 +133,10 @@ def stem(entry: str) -> str:
 
 
 def tokenize(text: str) -> set[str]:
-    return {fold(t) for t in re.findall(r"[a-zà-ÿ']+", text.lower())}
+    """Fold the example's words, UNCREDITED ones dropped first: once folded,
+    the article het and heet (hot, is called) are the same token."""
+    words = re.findall(r"[a-zà-ÿ']+", text.lower())
+    return {fold(w) for w in words if w not in UNCREDITED}
 
 
 def matched_tokens(entry: str, tokens: set[str]) -> set[str]:
@@ -134,19 +144,30 @@ def matched_tokens(entry: str, tokens: set[str]) -> set[str]:
 
     A token counts when it starts with the entry's stem and is at most three
     letters longer, so `pas` reaches `past` and `paste` but not `paspoort`. A
-    multiword entry needs every part present and accounts for all of them.
+    multiword entry needs every part present and accounts for all of them,
+    UNCREDITED parts aside: tokenize() never yields those.
+
+    An infinitive in -aan/-oen/-ien conjugates on itself minus the -n (gaan:
+    ik ga, hij gaat) and matches those two forms exactly — the three-letter
+    window on `ga` would take `gauw` and `gast`, on `vanda` `vandaag`.
     """
     parts = entry.split()
     if len(parts) > 1:
         hits = set()
         for p in parts:
+            if p in UNCREDITED:
+                continue
             hit = matched_tokens(p, tokens)
             if not hit:
                 return set()
             hits |= hit
         return hits
     s = stem(entry)
-    return {t for t in tokens if t.startswith(s) and len(t) <= len(s) + 3}
+    hits = {t for t in tokens if t.startswith(s) and len(t) <= len(s) + 3}
+    if entry.endswith(("aan", "oen", "ien")):
+        short = fold(entry[:-1])
+        hits |= tokens & {short, short + "t"}
+    return hits
 
 
 def main() -> int:
