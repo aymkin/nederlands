@@ -1,0 +1,27 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 9::taak_3
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+waar	66	Is dat verhaal over de buren waar?	правда (о словах)	Эта история про соседей — правда?	[sound:linkplus_t9_waar.mp3]	link::thema9::taak3::A2
+noemen	212	Hoe noem je dit in het Nederlands?	называть	Как это называют по-нидерландски?	[sound:linkplus_t9_noemen.mp3]	link::thema9::taak3::A2
+het boek	306	Ik koop een boek voor de vakantie.	книга	Я покупаю книгу на отпуск.	[sound:linkplus_t9_boek.mp3]	link::thema9::taak3::A2
+het aantal	370	Ik heb nog een aantal vragen.	ряд (некоторое число)	У меня есть ещё ряд вопросов.	[sound:linkplus_t9_aantal.mp3]	link::thema9::taak3::A2
+verdienen	396	Ik verdien niet veel geld.	зарабатывать	Я зарабатываю не очень много денег.	[sound:linkplus_t9_verdienen.mp3]	link::thema9::taak3::A2
+bekijken	434	Ik wil het eerst even goed bekijken.	рассмотреть (внимательно)	Я хочу сначала хорошенько это рассмотреть.	[sound:linkplus_t9_bekijken.mp3]	link::thema9::taak3::A2
+letten op	583	Morgen let ik op de poes.	присмотреть (за чем-то)	Завтра я присматриваю за кошкой.	[sound:linkplus_t9_letten_op.mp3]	link::thema9::taak3::A2
+nogal	745	Het is nogal druk in de winkel.	довольно-таки	В магазине довольно-таки людно.	[sound:linkplus_t9_nogal.mp3]	link::thema9::taak3::A2
+twijfelen	866	Ik twijfel nog, het is duur.	сомневаться	Я ещё сомневаюсь — это дорого.	[sound:linkplus_t9_twijfelen.mp3]	link::thema9::taak3::A2
+de beslissing	871	Nou moet ik een beslissing nemen.	решение (выбор)	Ну вот, теперь мне нужно принять решение.	[sound:linkplus_t9_beslissing.mp3]	link::thema9::taak3::A2
+gaaf	1238	Wat een gave nieuwe telefoon!	крутой, классный (разг.)	Какой крутой новый телефон!	[sound:linkplus_t9_gaaf.mp3]	link::thema9::taak3::A2
+de vinger	1571	Ik heb pijn aan mijn vinger.	палец	У меня болит палец.	[sound:linkplus_t9_vinger.mp3]	link::thema9::taak3::A2
+minstens	1726	Het duurt minstens een uur, hoor.	как минимум	Это займёт как минимум час, имей в виду.	[sound:linkplus_t9_minstens.mp3]	link::thema9::taak3::A2
+de kwaliteit	1827	Deze jas is van goede kwaliteit.	качество	Эта куртка хорошего качества.	[sound:linkplus_t9_kwaliteit.mp3]	link::thema9::taak3::A2
+betrouwbaar	2239	Mijn oude auto is best betrouwbaar.	надёжный	Моя старая машина вполне надёжная.	[sound:linkplus_t9_betrouwbaar.mp3]	link::thema9::taak3::A2
+de laptop	2257	Ik werk op mijn laptop.	ноутбук	Я работаю на своём ноутбуке.	[sound:linkplus_t9_laptop.mp3]	link::thema9::taak3::A2
+de rotzooi	2622	Die goedkope tas is echt rotzooi.	хлам, барахло (разг.)	Эта дешёвая сумка — правда барахло.	[sound:linkplus_t9_rotzooi.mp3]	link::thema9::taak3::A2
+het argument	3186	Ik snap jouw argument wel.	аргумент, довод	Твой аргумент я вполне понимаю.	[sound:linkplus_t9_argument.mp3]	link::thema9::taak3::A2
+de beoordeling	4491	Deze winkel heeft goede beoordelingen.	отзыв, оценка	У этого магазина хорошие отзывы.	[sound:linkplus_t9_beoordeling.mp3]	link::thema9::taak3::A2
+de opruiming	8000+	Bij de opruiming is alles lekker goedkoop.	распродажа	На распродаже всё приятно дёшево.	[sound:linkplus_t9_opruiming.mp3]	link::thema9::taak3::A2
+stukgaan	8000+	Het mooie glas is stukgegaan.	разбиться (сломаться)	Красивый стакан разбился.	[sound:linkplus_t9_stukgaan.mp3]	link::thema9::taak3::A2

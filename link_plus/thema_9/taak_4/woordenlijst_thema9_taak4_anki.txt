@@ -1,0 +1,32 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 9::taak_4
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+juist	258	Vul het juiste adres in.	правильный, верный	Впиши правильный адрес.	[sound:linkplus_t9_juist.mp3]	link::thema9::taak4::A2
+leggen	327	Leg de sleutel maar op de tafel.	класть, положить	Положи ключ на стол.	[sound:linkplus_t9_leggen.mp3]	link::thema9::taak4::A2
+ontvangen	608	De buurvrouw ontvangt mijn pakket.	принимать, получать (офиц.)	Соседка принимает мою посылку.	[sound:linkplus_t9_ontvangen.mp3]	link::thema9::taak4::A2
+het totaal	618	Kijk, het totaal staat hier.	итог, общая сумма	Смотри, итог указан здесь.	[sound:linkplus_t9_totaal.mp3]	link::thema9::taak4::A2
+het artikel	638	Ik heb drie artikelen besteld.	товар	Я заказала три товара.	[sound:linkplus_t9_artikel.mp3]	link::thema9::taak4::A2
+de reden	734	Ik heb echt een goede reden.	причина	У меня правда есть веская причина.	[sound:linkplus_t9_reden.mp3]	link::thema9::taak4::A2
+de maat	741	Welke maat heeft u nodig?	размер (одежды)	Какой размер вам нужен?	[sound:linkplus_t9_maat.mp3]	link::thema9::taak4::A2
+verkeerd	782	Het adres op de doos is verkeerd.	неправильный, не тот	Адрес на коробке неправильный.	[sound:linkplus_t9_verkeerd.mp3]	link::thema9::taak4::A2
+de locatie	970	Deze locatie is vlakbij het station.	пункт (приёма, выдачи)	Этот пункт выдачи — рядом с вокзалом.	[sound:linkplus_t9_locatie.mp3]	link::thema9::taak4::A2
+vervolgens	1081	Eerst koken we, vervolgens eten we.	затем (после этого)	Сначала мы готовим, затем едим.	[sound:linkplus_t9_vervolgens.mp3]	link::thema9::taak4::A2
+de stap	1094	Ik doe het stap voor stap.	шаг	Я делаю это шаг за шагом.	[sound:linkplus_t9_stap.mp3]	link::thema9::taak4::A2
+de order	1794	Wanneer komt mijn order eigenlijk?	заказ	Когда же вообще придёт мой заказ?	[sound:linkplus_t9_order.mp3]	link::thema9::taak4::A2
+het pakket	2417	Het pakket is te zwaar voor mij.	посылка	Посылка для меня слишком тяжёлая.	[sound:linkplus_t9_pakket.mp3]	link::thema9::taak4::A2
+klikken	2458	Klik hier voor meer informatie.	кликнуть, нажать	Кликни здесь, чтобы узнать подробнее.	[sound:linkplus_t9_klikken.mp3]	link::thema9::taak4::A2
+de sok	2984	Waar is mijn andere sok nou?	носок	Ну где же мой второй носок?	[sound:linkplus_t9_sok.mp3]	link::thema9::taak4::A2
+het wachtwoord	3298	Mijn wachtwoord klopt weer niet.	пароль	Мой пароль опять не подходит.	[sound:linkplus_t9_wachtwoord.mp3]	link::thema9::taak4::A2
+afgeven	3570	Je kunt de doos hier gewoon afgeven.	сдать (посылку)	Коробку можно просто сдать здесь.	[sound:linkplus_t9_afgeven.mp3]	link::thema9::taak4::A2
+verzenden	3638	We verzenden alles vandaag nog.	выслать (заказ, посылку)	Мы вышлем всё ещё сегодня.	[sound:linkplus_t9_verzenden.mp3]	link::thema9::taak4::A2
+plakken	4287	Ik plak een kaart op de koelkast.	клеить, наклеить	Я наклеиваю открытку на холодильник.	[sound:linkplus_t9_plakken.mp3]	link::thema9::taak4::A2
+de sticker	6439	Er zit een sticker op mijn fiets.	наклейка	На моём велосипеде наклейка.	[sound:linkplus_t9_sticker.mp3]	link::thema9::taak4::A2
+inloggen	7058	Log eerst even in met je e-mailadres.	залогиниться (войти в аккаунт)	Сначала быстренько залогинься со своим имейлом.	[sound:linkplus_t9_inloggen.mp3]	link::thema9::taak4::A2
+de webwinkel	8000+	Ik koop veel bij webwinkels.	интернет-магазин	Я много покупаю в интернет-магазинах.	[sound:linkplus_t9_webwinkel.mp3]	link::thema9::taak4::A2
+dichtmaken	8000+	Maak de zak wel goed dicht.	закрыть (коробку, пакет)	Только хорошо закрой пакет.	[sound:linkplus_t9_dichtmaken.mp3]	link::thema9::taak4::A2
+het verzendbewijs	8000+	Zonder verzendbewijs krijg je niks.	квитанция об отправке	Без квитанции об отправке ты ничего не получишь.	[sound:linkplus_t9_verzendbewijs.mp3]	link::thema9::taak4::A2
+over ... heen	8000+	Doe een jas over je trui heen.	поверх (чего-то)	Надень куртку поверх свитера.	[sound:linkplus_t9_over_heen.mp3]	link::thema9::taak4::A2
+retour	8000+	Bij deze winkel is retour gratis, hoor.	возврат (товара)	В этом магазине возврат бесплатный, не волнуйся.	[sound:linkplus_t9_retour.mp3]	link::thema9::taak4::A2

@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 8::taak_1
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+het leven	93	Het leven in Nederland is echt duur.	жизнь	Жизнь в Нидерландах правда дорогая.	[sound:linkplus_t8_leven.mp3]	link::thema8::taak1::A2
+sinds	284	We wonen hier sinds januari.	с (какого-то момента)	Мы живём здесь с января.	[sound:linkplus_t8_sinds.mp3]	link::thema8::taak1::A2
+hetzelfde	392	Voor mij hetzelfde, graag.	то же самое	Мне то же самое, пожалуйста.	[sound:linkplus_t8_hetzelfde.mp3]	link::thema8::taak1::A2
+de rest	441	De rest bewaar ik wel voor morgen.	остальное, остаток	Остальное я, пожалуй, оставлю на завтра.	[sound:linkplus_t8_rest.mp3]	link::thema8::taak1::A2
+eerlijk	464	Eerlijk gezegd ben ik een beetje moe.	честно; честный	Честно говоря, я немного устала.	[sound:linkplus_t8_eerlijk.mp3]	link::thema8::taak1::A2
+de muziek	474	Ik luister graag naar muziek.	музыка	Я люблю слушать музыку.	[sound:linkplus_t8_muziek.mp3]	link::thema8::taak1::A2
+boos	547	Ben je nog steeds boos op me?	сердитый	Ты всё ещё на меня сердишься?	[sound:linkplus_t8_boos.mp3]	link::thema8::taak1::A2
+het geluk	569	Wat een geluk met het weer vandaag!	удача, везение	Как нам сегодня повезло с погодой!	[sound:linkplus_t8_geluk.mp3]	link::thema8::taak1::A2
+serieus	593	Serieus? Is de winkel nou al dicht?	серьёзно; серьёзный	Серьёзно? Магазин что, уже закрыт?	[sound:linkplus_t8_serieus.mp3]	link::thema8::taak1::A2
+roken	783	Op het balkon mag je wel roken.	курить	На балконе курить можно.	[sound:linkplus_t8_roken.mp3]	link::thema8::taak1::A2
+schoon	863	De keuken is weer schoon, lekker!	чистый	Кухня снова чистая, красота!	[sound:linkplus_t8_schoon.mp3]	link::thema8::taak1::A2
+de omgeving	925	De omgeving is hier echt mooi.	местность вокруг, окружение	Местность здесь очень красивая.	[sound:linkplus_t8_omgeving.mp3]	link::thema8::taak1::A2
+de ruzie	1045	De buren hebben vaak ruzie.	ссора	Соседи часто ссорятся.	[sound:linkplus_t8_ruzie.mp3]	link::thema8::taak1::A2
+vies	1653	De wc is alweer vies!	грязный	Туалет опять грязный!	[sound:linkplus_t8_vies.mp3]	link::thema8::taak1::A2
+verdelen	1659	We verdelen de taken in huis.	распределять (делить между)	Мы распределяем обязанности по дому.	[sound:linkplus_t8_verdelen.mp3]	link::thema8::taak1::A2
+oplossen	1694	Kun je dit probleem even oplossen?	решить (проблему)	Можешь быстренько решить эту проблему?	[sound:linkplus_t8_oplossen.mp3]	link::thema8::taak1::A2
+de bewoner	1953	Alle bewoners krijgen een nieuwe sleutel.	жилец, житель	Все жильцы получат новый ключ.	[sound:linkplus_t8_bewoner.mp3]	link::thema8::taak1::A2
+ideaal	2048	Dit appartement is gewoon ideaal voor ons.	идеальный	Эта квартира для нас просто идеальна.	[sound:linkplus_t8_ideaal.mp3]	link::thema8::taak1::A2
+de gewoonte	2420	Koffie na het eten is m'n gewoonte.	привычка	Кофе после еды — моя привычка.	[sound:linkplus_t8_gewoonte.mp3]	link::thema8::taak1::A2
+weleens	2518	Heb je weleens Nederlandse stamppot gegeten?	когда-нибудь (хоть раз)	Ты когда-нибудь пробовала нидерландский стамппот?	[sound:linkplus_t8_weleens.mp3]	link::thema8::taak1::A2
+opschieten met	2627	Ik kan goed met de buren opschieten.	ладить (с кем-то)	Я хорошо лажу с соседями.	[sound:linkplus_t8_opschieten_met.mp3]	link::thema8::taak1::A2
+uitgaan	2713	Zullen we zaterdag uitgaan?	сходить куда-нибудь (развлечься)	Сходим куда-нибудь в субботу?	[sound:linkplus_t8_uitgaan.mp3]	link::thema8::taak1::A2
+overdag	3155	Overdag is het hier rustig, 's nachts niet.	в дневное время (не ночью)	Днём здесь тихо, а ночью — нет.	[sound:linkplus_t8_overdag.mp3]	link::thema8::taak1::A2
+het huishouden	4187	Ik doe het huishouden in het weekend.	домашнее хозяйство	Домашними делами я занимаюсь в выходные.	[sound:linkplus_t8_huishouden.mp3]	link::thema8::taak1::A2
+de afwas	8000+	Wie doet vanavond eigenlijk de afwas?	мытьё посуды	Кстати, кто сегодня вечером моет посуду?	[sound:linkplus_t8_afwas.mp3]	link::thema8::taak1::A2

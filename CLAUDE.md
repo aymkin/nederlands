@@ -328,18 +328,20 @@ python3 scripts/fluent_rebuild_queue.py --apply
 **Profile:** `alex` — media at
 `~/Library/Application Support/Anki2/alex/collection.media/`. Scripts take it
 from `ANKI_PROFILE` in `scripts/anki_utils.py` and never guess; the other
-profile, `iuliia`, is Yulia's.
+profile, `iuliia`, is Yulia's. The Anki MCP and ad-hoc AnkiConnect calls write
+to whichever profile is open, so check `getActiveProfile` before any write.
 
 ### Anki File Formats
 
 Files ending in `_anki.txt` use tab-separated format with header directives:
 
-| Format                      | Header                                         | Fields                                                |
-| --------------------------- | ---------------------------------------------- | ----------------------------------------------------- |
-| Vocabulary with audio       | `#separator:tab` `#html:true` `#tags column:5` | Dutch \| Russian \| Notes \| Audio \| Tags            |
-| Sentence-only               | `#separator:tab` `#html:false`                 | Dutch \| Russian                                      |
-| Sentence cards with audio   | `#separator:tab` `#html:true` `#tags column:4` | Dutch \| Russian \| Audio \| Tags                     |
-| Construction (multisensory) | `#separator:tab` `#html:true` `#tags column:6` | Russian \| Dutch \| Context \| Image \| Audio \| Tags |
+| Format                        | Header                                              | Fields                                                                        |
+| ----------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Vocabulary with audio         | `#separator:tab` `#html:true` `#tags column:5`      | Dutch \| Russian \| Notes \| Audio \| Tags                                    |
+| Sentence-only                 | `#separator:tab` `#html:false`                      | Dutch \| Russian                                                              |
+| Sentence cards with audio     | `#separator:tab` `#html:true` `#tags column:4`      | Dutch \| Russian \| Audio \| Tags                                             |
+| Construction (multisensory)   | `#separator:tab` `#html:true` `#tags column:6`      | Russian \| Dutch \| Context \| Image \| Audio \| Tags                         |
+| Link+ RU→NL (thema 8+, Yulia) | `#notetype:LINK plus NL` `#deck:…` `#tags column:7` | Word \| Rank \| Example \| Translation \| TranslationExample \| Audio \| Tags |
 
 **Tag structures:**
 

@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 8::taak_2
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+iemand	121	Iemand heeft mijn sleutel gevonden!	кто-то, кто-нибудь	Кто-то нашёл мой ключ!	[sound:linkplus_t8_iemand.mp3]	link::thema8::taak2::A2
+gebeuren	149	Wat gebeurt er vandaag in de buurt?	происходить, случаться	Что сегодня происходит в районе?	[sound:linkplus_t8_gebeuren.mp3]	link::thema8::taak2::A2
+vanaf	302	Vanaf maandag werk ik weer.	начиная с	Начиная с понедельника я снова работаю.	[sound:linkplus_t8_vanaf.mp3]	link::thema8::taak2::A2
+precies	304	Precies! Dat zeg ik toch steeds.	именно; ровно (о времени)	Именно! Я же всё время это говорю.	[sound:linkplus_t8_precies.mp3]	link::thema8::taak2::A2
+hoeven	312	Je hoeft niet goed Nederlands te spreken.	не обязательно (с отрицанием)	Не обязательно хорошо говорить по-нидерландски.	[sound:linkplus_t8_hoeven.mp3]	link::thema8::taak2::A2
+de groep	380	Onze groep is klein, maar gezellig.	группа	Наша группа маленькая, но дружная.	[sound:linkplus_t8_groep.mp3]	link::thema8::taak2::A2
+de krant	880	In de krant staat een leuk verhaal.	газета	В газете интересная история.	[sound:linkplus_t8_krant.mp3]	link::thema8::taak2::A2
+de taal	889	Nederlands is echt een moeilijke taal.	язык	Нидерландский — правда трудный язык.	[sound:linkplus_t8_taal.mp3]	link::thema8::taak2::A2
+organiseren	901	We organiseren een feestje voor de buren.	организовывать	Мы организуем праздник для соседей.	[sound:linkplus_t8_organiseren.mp3]	link::thema8::taak2::A2
+het onderwerp	1156	Het onderwerp van vandaag is eten.	тема (разговора)	Тема на сегодня — еда.	[sound:linkplus_t8_onderwerp.mp3]	link::thema8::taak2::A2
+de activiteit	1223	Welke activiteiten zijn er eigenlijk zaterdag?	мероприятие, занятие	А какие вообще мероприятия в субботу?	[sound:linkplus_t8_activiteit.mp3]	link::thema8::taak2::A2
+oefenen	1438	Ik oefen iedere dag even Nederlands.	практиковаться, тренироваться	Каждый день я немного практикуюсь в нидерландском.	[sound:linkplus_t8_oefenen.mp3]	link::thema8::taak2::A2
+de vrijwilliger	1822	Ik wil wel vrijwilliger worden.	волонтёр	Я не против стать волонтёром.	[sound:linkplus_t8_vrijwilliger.mp3]	link::thema8::taak2::A2
+de bibliotheek	1837	In de bibliotheek is het lekker rustig.	библиотека	В библиотеке приятно тихо.	[sound:linkplus_t8_bibliotheek.mp3]	link::thema8::taak2::A2
+voorbereiden	2111	Ik bereid mijn vragen voor.	подготовить (заранее)	Я заранее готовлю свои вопросы.	[sound:linkplus_t8_voorbereiden.mp3]	link::thema8::taak2::A2
+de ingang	2174	De ingang is links, naast de winkel.	вход	Вход слева, рядом с магазином.	[sound:linkplus_t8_ingang.mp3]	link::thema8::taak2::A2
+het spelletje	2311	Vanavond doen we een spelletje.	игра (настольная)	Сегодня вечером мы играем в настольную игру.	[sound:linkplus_t8_spelletje.mp3]	link::thema8::taak2::A2
+de deelnemer	2705	Hoeveel deelnemers komen er vanavond?	участник	Сколько участников придёт сегодня вечером?	[sound:linkplus_t8_deelnemer.mp3]	link::thema8::taak2::A2
+zich aanmelden	3270	Je kunt je gewoon via internet aanmelden.	записаться, зарегистрироваться	Записаться можно просто через интернет.	[sound:linkplus_t8_zich_aanmelden.mp3]	link::thema8::taak2::A2
+verschillen	6851	De huizen hier verschillen best veel.	отличаться	Дома здесь довольно сильно отличаются.	[sound:linkplus_t8_verschillen.mp3]	link::thema8::taak2::A2
+de begane grond	8000+	Ik woon op de begane grond.	первый этаж (на уровне улицы)	Я живу на первом этаже.	[sound:linkplus_t8_begane_grond.mp3]	link::thema8::taak2::A2
+de medewerkster	8000+	De medewerkster helpt me met het formulier.	сотрудница	Сотрудница помогает мне с анкетой.	[sound:linkplus_t8_medewerkster.mp3]	link::thema8::taak2::A2
+de taalcoach	8000+	Mijn taalcoach is heel geduldig.	языковой наставник	Мой языковой наставник очень терпеливый.	[sound:linkplus_t8_taalcoach.mp3]	link::thema8::taak2::A2
+het buurtcentrum	8000+	Het buurtcentrum is vlakbij mijn huis.	районный центр досуга	Районный центр досуга — рядом с моим домом.	[sound:linkplus_t8_buurtcentrum.mp3]	link::thema8::taak2::A2
+het taalcafé	8000+	Ga je vrijdag mee naar het taalcafé?	языковое кафе (разговорный клуб)	Пойдёшь со мной в пятницу в языковое кафе?	[sound:linkplus_t8_taalcafe.mp3]	link::thema8::taak2::A2

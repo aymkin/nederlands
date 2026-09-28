@@ -1,0 +1,32 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 9::taak_2
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+houden	74	Mag ik de tas eigenlijk houden?	оставить себе	А сумку мне вообще можно оставить себе?	[sound:linkplus_t9_houden.mp3]	link::thema9::taak2::A2
+de tijd	100	Ik heb vandaag echt geen tijd.	время	У меня сегодня правда нет времени.	[sound:linkplus_t9_tijd.mp3]	link::thema9::taak2::A2
+binnen	160	Ik bel je binnen een uur terug.	в течение (срока)	Я перезвоню тебе в течение часа.	[sound:linkplus_t9_binnen.mp3]	link::thema9::taak2::A2
+algemeen	973	Hier vind je algemene informatie.	общий	Здесь ты найдёшь общую информацию.	[sound:linkplus_t9_algemeen.mp3]	link::thema9::taak2::A2
+gelden	1057	Deze prijs geldt alleen vandaag.	действовать (о правиле, гарантии)	Эта цена действует только сегодня.	[sound:linkplus_t9_gelden.mp3]	link::thema9::taak2::A2
+het product	1431	Dit product is nieuw in de winkel.	продукт	Этот продукт — новинка в магазине.	[sound:linkplus_t9_product.mp3]	link::thema9::taak2::A2
+namelijk	1433	Ik blijf thuis, ik ben namelijk moe.	видишь ли (объясняет причину)	Я останусь дома — видишь ли, я устала.	[sound:linkplus_t9_namelijk.mp3]	link::thema9::taak2::A2
+origineel	1504	Ik heb de originele verpakking nog.	оригинальный (не копия)	У меня ещё есть оригинальная упаковка.	[sound:linkplus_t9_origineel.mp3]	link::thema9::taak2::A2
+de voorwaarde	1682	Welke voorwaarden zijn er voor de huur?	условие	Какие условия аренды?	[sound:linkplus_t9_voorwaarde.mp3]	link::thema9::taak2::A2
+ruilen	1941	Ik wil deze jas graag ruilen.	обменять	Я бы хотела обменять эту куртку.	[sound:linkplus_t9_ruilen.mp3]	link::thema9::taak2::A2
+de aanbieding	3395	Deze kaas is in de aanbieding.	акция, спецпредложение	Этот сыр сейчас по акции.	[sound:linkplus_t9_aanbieding.mp3]	link::thema9::taak2::A2
+de garantie	3724	Op deze fiets zit een jaar garantie.	гарантия	На этот велосипед — год гарантии.	[sound:linkplus_t9_garantie.mp3]	link::thema9::taak2::A2
+contant	4009	Kan ik hier ook gewoon contant betalen?	наличными	Здесь можно просто заплатить наличными?	[sound:linkplus_t9_contant.mp3]	link::thema9::taak2::A2
+de aankoop	4330	Mijn aankoop is net bezorgd.	покупка (купленная вещь)	Мою покупку только что доставили.	[sound:linkplus_t9_aankoop.mp3]	link::thema9::taak2::A2
+terugkrijgen	5167	Wanneer krijg ik het terug?	получить обратно	Когда я получу это обратно?	[sound:linkplus_t9_terugkrijgen.mp3]	link::thema9::taak2::A2
+de reparatie	5270	De reparatie duurt best lang.	ремонт (вещи)	Ремонт длится довольно долго.	[sound:linkplus_t9_reparatie.mp3]	link::thema9::taak2::A2
+terugsturen	5502	Ik stuur de schoenen wel terug.	отправить обратно	Ладно, я отправлю туфли обратно.	[sound:linkplus_t9_terugsturen.mp3]	link::thema9::taak2::A2
+telefonisch	6061	Je kunt telefonisch een afspraak maken.	по телефону	Договориться о встрече можно по телефону.	[sound:linkplus_t9_telefonisch.mp3]	link::thema9::taak2::A2
+bepaald	8000+	Op bepaalde dagen is de winkel dicht.	определённый	В определённые дни магазин закрыт.	[sound:linkplus_t9_bepaald.mp3]	link::thema9::taak2::A2
+de kassabon	8000+	Bewaar de kassabon altijd goed, hoor.	чек (из кассы)	Всегда храни чек, слышишь?	[sound:linkplus_t9_kassabon.mp3]	link::thema9::taak2::A2
+de klantenservice	8000+	De klantenservice is 's avonds gesloten.	служба поддержки клиентов	Вечером служба поддержки клиентов не работает.	[sound:linkplus_t9_klantenservice.mp3]	link::thema9::taak2::A2
+de pinpas	8000+	Ik ben mijn pinpas kwijt.	банковская карта	Я потеряла свою банковскую карту.	[sound:linkplus_t9_pinpas.mp3]	link::thema9::taak2::A2
+de tegoedbon	8000+	Ik krijg geen geld, maar een tegoedbon.	ваучер (вместо возврата денег)	Мне дают не деньги, а ваучер.	[sound:linkplus_t9_tegoedbon.mp3]	link::thema9::taak2::A2
+het bankafschrift	8000+	Het geld staat toch op mijn bankafschrift.	банковская выписка	Деньги же есть в моей банковской выписке.	[sound:linkplus_t9_bankafschrift.mp3]	link::thema9::taak2::A2
+kapotgaan	8000+	Nou is mijn telefoon alweer kapotgegaan!	сломаться	Ну вот, мой телефон опять сломался!	[sound:linkplus_t9_kapotgaan.mp3]	link::thema9::taak2::A2
+terugstorten	8000+	Wij storten het geld terug.	вернуть деньги на счёт	Мы вернём деньги на ваш счёт.	[sound:linkplus_t9_terugstorten.mp3]	link::thema9::taak2::A2

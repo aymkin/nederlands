@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 8::taak_3
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+elk	174	Elke ochtend drink ik koffie.	каждый (≈ ieder)	Каждое утро я пью кофе.	[sound:linkplus_t8_elk.mp3]	link::thema8::taak3::A2
+missen	262	Ik mis mijn vrienden heel erg.	скучать (по кому-то)	Я очень скучаю по своим друзьям.	[sound:linkplus_t8_missen.mp3]	link::thema8::taak3::A2
+de film	316	Hoe laat begint de film eigenlijk?	фильм	А во сколько вообще начинается фильм?	[sound:linkplus_t8_film.mp3]	link::thema8::taak3::A2
+spelen	318	Kinderen spelen hier graag buiten.	играть	Дети здесь любят играть на улице.	[sound:linkplus_t8_spelen.mp3]	link::thema8::taak3::A2
+zoveel	354	Waarom is er nou zoveel lawaai?	столько, так много	Ну почему здесь столько шума?	[sound:linkplus_t8_zoveel.mp3]	link::thema8::taak3::A2
+het gebouw	553	In dit gebouw wonen veel studenten.	здание	В этом здании живёт много студентов.	[sound:linkplus_t8_gebouw.mp3]	link::thema8::taak3::A2
+de gang	645	Mijn fiets staat gewoon in de gang.	коридор	Мой велосипед просто стоит в коридоре.	[sound:linkplus_t8_gang.mp3]	link::thema8::taak3::A2
+de boom	719	In onze tuin staat een oude boom.	дерево	В нашем саду растёт старое дерево.	[sound:linkplus_t8_boom.mp3]	link::thema8::taak3::A2
+groen	738	Mijn buurt is lekker groen.	зелёный	Мой район приятно зелёный.	[sound:linkplus_t8_groen.mp3]	link::thema8::taak3::A2
+het park	779	Ik loop graag in het park.	парк	Я люблю гулять в парке.	[sound:linkplus_t8_park.mp3]	link::thema8::taak3::A2
+tevreden	1437	Ik ben heel tevreden met mijn huis.	довольный	Я очень довольна своим домом.	[sound:linkplus_t8_tevreden.mp3]	link::thema8::taak3::A2
+regelmatig	1651	Ik sport regelmatig, dat is gezond.	регулярно	Я регулярно занимаюсь спортом — это полезно.	[sound:linkplus_t8_regelmatig.mp3]	link::thema8::taak3::A2
+het café	1926	In het café is het altijd gezellig.	кафе, бар	В кафе всегда уютно.	[sound:linkplus_t8_cafe.mp3]	link::thema8::taak3::A2
+het verkeer	2029	Het verkeer is 's ochtends erg druk.	дорожное движение	Утром движение очень плотное.	[sound:linkplus_t8_verkeer.mp3]	link::thema8::taak3::A2
+het buitenland	2221	Mijn vriendin woont in het buitenland.	заграница	Моя подруга живёт за границей.	[sound:linkplus_t8_buitenland.mp3]	link::thema8::taak3::A2
+de metro	2585	De metro is echt snel en goedkoop.	метро	Метро — это правда быстро и дёшево.	[sound:linkplus_t8_metro.mp3]	link::thema8::taak3::A2
+kletsen	2792	Na de les kletsen we nog even.	болтать	После урока мы ещё немного болтаем.	[sound:linkplus_t8_kletsen.mp3]	link::thema8::taak3::A2
+de parkeerplaats	3126	Er is hier geen parkeerplaats.	парковочное место	Здесь нет парковочного места.	[sound:linkplus_t8_parkeerplaats.mp3]	link::thema8::taak3::A2
+de bioscoop	3577	De bioscoop is in het centrum.	кинотеатр	Кинотеатр находится в центре.	[sound:linkplus_t8_bioscoop.mp3]	link::thema8::taak3::A2
+voetballen	5507	Wie wil er vanmiddag voetballen?	играть в футбол (одним словом)	Кто хочет сегодня днём поиграть в футбол?	[sound:linkplus_t8_voetballen.mp3]	link::thema8::taak3::A2
+de struik	5780	De poes zit onder de struik.	куст	Кошка сидит под кустом.	[sound:linkplus_t8_struik.mp3]	link::thema8::taak3::A2
+de lift	6160	Ik neem toch maar de lift.	лифт	Поеду-ка я всё-таки на лифте.	[sound:linkplus_t8_lift.mp3]	link::thema8::taak3::A2
+de speeltuin	7939	Op zaterdag is de speeltuin altijd vol.	детская площадка	По субботам на детской площадке всегда полно народу.	[sound:linkplus_t8_speeltuin.mp3]	link::thema8::taak3::A2
+het grasveld	8000+	Op het grasveld zitten veel mensen.	лужайка, газон	На лужайке сидит много людей.	[sound:linkplus_t8_grasveld.mp3]	link::thema8::taak3::A2
+het openbaar vervoer	8000+	Het openbaar vervoer is hier best goed.	общественный транспорт (полное название)	Общественный транспорт здесь вполне хороший.	[sound:linkplus_t8_openbaar_vervoer.mp3]	link::thema8::taak3::A2

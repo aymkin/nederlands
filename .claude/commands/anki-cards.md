@@ -63,6 +63,27 @@ Header, exactly — literal tabs, never spaces:
 #tags column:5
 ```
 
+**Exception — `link_plus/` from thema 8 on** (Yulia, since 2026-09-28): cards
+are Kern-style RU → NL (`frequentie/README.md`), note type `LINK plus NL` in her
+Anki profile `iuliia`, one deck per taak `LINK plus::thema {N}::taak_{K}`, seven
+columns:
+
+```
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema {N}::taak_{K}
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+```
+
+`Translation` holds 1–2 meanings and the example shows the first one. These
+decks are built by `private/link_plus/bouw_kaarten.py` (`lint` → `tsv` → `audio`
+→ `notes` → `verify`) from `private/link_plus/kaarten.txt`, not by hand:
+`check_recycling.py` reads the example from column 2, which here is `Rank`, so
+`tsv` gates a 5-column projection instead. Thema 1–7 stay NL → RU
+`LINK Vocabulary` — do not migrate them.
+
 Tags, as they exist on disk rather than as the directory names suggest:
 
 | Course       | Tag                               |

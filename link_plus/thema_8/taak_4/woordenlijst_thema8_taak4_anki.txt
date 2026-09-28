@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 8::taak_4
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+alleen laten	62	Ik laat de poes niet graag alleen.	оставить одного	Я не люблю оставлять кошку одну.	[sound:linkplus_t8_alleen_laten.mp3]	link::thema8::taak4::A2
+bang	325	Ik ben echt bang in het donker.	испуганный (кто боится)	Мне правда страшно в темноте.	[sound:linkplus_t8_bang.mp3]	link::thema8::taak4::A2
+waarschijnlijk	390	Ik kom waarschijnlijk wat later, hoor.	вероятно	Я, вероятно, приду чуть позже, хорошо?	[sound:linkplus_t8_waarschijnlijk.mp3]	link::thema8::taak4::A2
+de hond	477	Mijn buren hebben een grote hond.	собака	У моих соседей большая собака.	[sound:linkplus_t8_hond.mp3]	link::thema8::taak4::A2
+de schuld	491	Het is mijn schuld, het spijt me.	вина	Это моя вина, мне жаль.	[sound:linkplus_t8_schuld.mp3]	link::thema8::taak4::A2
+de situatie	640	Ik vind de situatie eigenlijk erg vervelend.	ситуация	Вообще-то эта ситуация мне очень неприятна.	[sound:linkplus_t8_situatie.mp3]	link::thema8::taak4::A2
+zomaar	682	Je mag hier toch niet zomaar parkeren!	просто так	Здесь же нельзя просто так парковаться!	[sound:linkplus_t8_zomaar.mp3]	link::thema8::taak4::A2
+veroorzaken	830	Het ongeluk heeft een file veroorzaakt.	вызывать, причинять	Авария вызвала пробку.	[sound:linkplus_t8_veroorzaken.mp3]	link::thema8::taak4::A2
+de oplossing	921	We zoeken samen naar een oplossing.	решение проблемы	Мы вместе ищем решение.	[sound:linkplus_t8_oplossing.mp3]	link::thema8::taak4::A2
+het geluid	967	Ik hoor een geluid in de keuken.	звук	Я слышу какой-то звук на кухне.	[sound:linkplus_t8_geluid.mp3]	link::thema8::taak4::A2
+de trap	1033	Er liggen alweer spullen op de trap.	лестница	На лестнице опять лежат вещи.	[sound:linkplus_t8_trap.mp3]	link::thema8::taak4::A2
+wennen	1092	Aan het weer moet je wennen.	привыкать	К погоде нужно привыкнуть.	[sound:linkplus_t8_wennen.mp3]	link::thema8::taak4::A2
+het gedrag	1110	Ik snap zijn gedrag gewoon niet.	поведение	Я просто не понимаю его поведения.	[sound:linkplus_t8_gedrag.mp3]	link::thema8::taak4::A2
+ineens	1226	Ineens is het licht uit.	вдруг	Вдруг погас свет.	[sound:linkplus_t8_ineens.mp3]	link::thema8::taak4::A2
+klagen	1312	De buren klagen over het lawaai.	жаловаться	Соседи жалуются на шум.	[sound:linkplus_t8_klagen.mp3]	link::thema8::taak4::A2
+zielig	2035	Wat zielig, de poes is ziek.	бедненький, жалкий	Бедненькая, кошка заболела.	[sound:linkplus_t8_zielig.mp3]	link::thema8::taak4::A2
+stinken	2551	Het stinkt hier, doe het raam open!	вонять	Здесь воняет, открой окно!	[sound:linkplus_t8_stinken.mp3]	link::thema8::taak4::A2
+de buurman	3310	Mijn buurman helpt me best vaak.	сосед	Мой сосед довольно часто мне помогает.	[sound:linkplus_t8_buurman.mp3]	link::thema8::taak4::A2
+het huisdier	3330	In deze flat mogen geen huisdieren.	домашнее животное	В этом доме нельзя держать домашних животных.	[sound:linkplus_t8_huisdier.mp3]	link::thema8::taak4::A2
+de overlast	6627	Die feestjes geven veel overlast.	неудобства (от шума, соседей)	Эти вечеринки доставляют много неудобств.	[sound:linkplus_t8_overlast.mp3]	link::thema8::taak4::A2
+blaffen	8000+	Die hond blaft altijd 's nachts.	лаять	Эта собака всегда лает по ночам.	[sound:linkplus_t8_blaffen.mp3]	link::thema8::taak4::A2
+de vuilniszak	8000+	Zet de vuilniszak maar buiten.	мешок для мусора	Выставь мешок для мусора на улицу.	[sound:linkplus_t8_vuilniszak.mp3]	link::thema8::taak4::A2
+de woningbouwvereniging	8000+	Ik bel morgen de woningbouwvereniging.	жилищная корпорация (социальное жильё)	Завтра я позвоню в жилищную корпорацию.	[sound:linkplus_t8_woningbouwvereniging.mp3]	link::thema8::taak4::A2
+overleggen	8000+	Ik overleg het eerst met een collega.	обсуждать, советоваться	Сначала я обсужу это с коллегой.	[sound:linkplus_t8_overleggen.mp3]	link::thema8::taak4::A2
+uitlaten	8000+	Ik moet de hond nog even uitlaten.	выгуливать (собаку)	Мне ещё надо быстренько выгулять собаку.	[sound:linkplus_t8_uitlaten.mp3]	link::thema8::taak4::A2

@@ -1,0 +1,32 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 9::taak_1
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+niets	138	Ik heb vandaag toch niets gekocht.	ничего (нейтр.)	Я же сегодня ничего не купила.	[sound:linkplus_t9_niets.mp3]	link::thema9::taak1::A2
+bedoelen	232	Nee, ik bedoel de grote tas.	иметь в виду	Нет, я имею в виду большую сумку.	[sound:linkplus_t9_bedoelen.mp3]	link::thema9::taak1::A2
+dragen	343	Ik draag gewoon graag zwarte kleren.	носить (одежду)	Я просто люблю носить чёрную одежду.	[sound:linkplus_t9_dragen.mp3]	link::thema9::taak1::A2
+prachtig	381	Het weer is vandaag prachtig.	великолепный, чудесный	Погода сегодня великолепная.	[sound:linkplus_t9_prachtig.mp3]	link::thema9::taak1::A2
+het pak	467	Hij komt eigenlijk altijd in pak.	костюм	Вообще-то он всегда приходит в костюме.	[sound:linkplus_t9_pak.mp3]	link::thema9::taak1::A2
+rood	480	Stop, het licht is rood!	красный	Стой, горит красный!	[sound:linkplus_t9_rood.mp3]	link::thema9::taak1::A2
+trouwen	632	Ze gaan in de zomer trouwen.	пожениться	Летом они поженятся.	[sound:linkplus_t9_trouwen.mp3]	link::thema9::taak1::A2
+de schoen	771	Ik heb nieuwe schoenen nodig.	туфля, ботинок	Мне нужны новые туфли.	[sound:linkplus_t9_schoen.mp3]	link::thema9::taak1::A2
+nadenken	911	Ik moet er nog over nadenken.	обдумать (подумать над чем-то)	Мне ещё нужно это обдумать.	[sound:linkplus_t9_nadenken.mp3]	link::thema9::taak1::A2
+de mening	959	Ik wil graag jouw mening horen.	мнение	Я бы хотела услышать твоё мнение.	[sound:linkplus_t9_mening.mp3]	link::thema9::taak1::A2
+de kaart	981	Ik stuur je een kaart.	открытка	Я отправлю тебе открытку.	[sound:linkplus_t9_kaart.mp3]	link::thema9::taak1::A2
+de broek	1046	Mijn broek is te lang.	брюки	Мои брюки слишком длинные.	[sound:linkplus_t9_broek.mp3]	link::thema9::taak1::A2
+aandoen	1345	Welke kleren doe je vandaag aan?	надеть (одежду)	Какую одежду ты сегодня наденешь?	[sound:linkplus_t9_aandoen.mp3]	link::thema9::taak1::A2
+de jurk	1354	Mooie jurk! Is hij nieuw?	платье	Красивое платье! Оно новое?	[sound:linkplus_t9_jurk.mp3]	link::thema9::taak1::A2
+lelijk	1592	Die lamp vind ik echt lelijk.	некрасивый, уродливый	Эта лампа, по-моему, правда некрасивая.	[sound:linkplus_t9_lelijk.mp3]	link::thema9::taak1::A2
+de bruiloft	1634	Zaterdag ga ik naar een bruiloft.	свадьба	В субботу я иду на свадьбу.	[sound:linkplus_t9_bruiloft.mp3]	link::thema9::taak1::A2
+roze	2151	Het meisje wil een roze fiets.	розовый	Девочка хочет розовый велосипед.	[sound:linkplus_t9_roze.mp3]	link::thema9::taak1::A2
+geel	2232	Ik heb een gele jas.	жёлтый	У меня жёлтая куртка.	[sound:linkplus_t9_geel.mp3]	link::thema9::taak1::A2
+aantrekken	2853	Ik trek even mijn schoenen aan.	обуть, натянуть (обувь, куртку)	Сейчас, я только обуюсь.	[sound:linkplus_t9_aantrekken.mp3]	link::thema9::taak1::A2
+de trui	3056	Neem wel een warme trui mee.	свитер	Только возьми с собой тёплый свитер.	[sound:linkplus_t9_trui.mp3]	link::thema9::taak1::A2
+het overhemd	5795	Het overhemd ligt in de kast.	рубашка (мужская)	Рубашка лежит в шкафу.	[sound:linkplus_t9_overhemd.mp3]	link::thema9::taak1::A2
+de blouse	7599	Ik zoek een witte blouse.	блузка	Я ищу белую блузку.	[sound:linkplus_t9_blouse.mp3]	link::thema9::taak1::A2
+de spijkerbroek	7993	Een spijkerbroek is altijd goed, hoor.	джинсы	Джинсы — это всегда хорошо, поверь.	[sound:linkplus_t9_spijkerbroek.mp3]	link::thema9::taak1::A2
+benieuwd	8000+	Ik ben benieuwd naar je verhaal.	интересно (хочется узнать)	Мне интересно послушать твою историю.	[sound:linkplus_t9_benieuwd.mp3]	link::thema9::taak1::A2
+lievelings-	8000+	Blauw is mijn lievelingskleur.	любимый (в начале слова)	Синий — мой любимый цвет.	[sound:linkplus_t9_lievelings.mp3]	link::thema9::taak1::A2
+uitgeven	8000+	Ik geef best veel geld uit.	тратить (деньги)	Я трачу довольно много денег.	[sound:linkplus_t9_uitgeven.mp3]	link::thema9::taak1::A2
