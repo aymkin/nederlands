@@ -1,0 +1,11 @@
+#separator:tab
+#html:true
+#notetype:Frequentie NL
+#deck:Frequentie::Werk
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+pas	3	AI-first wordt pas de standaard via een guild-besluit.	только тогда (не раньше, о времени)	AI-first станет стандартом только через решение гильдии.	[sound:werk_pas.mp3]	frequentie::werk frequentie::werk::dag2026-09-28
+bepalen	3	Niemand bepaalt wie mee mag doen.	определять (решать, кто или что)	Никто не определяет, кому можно участвовать.	[sound:werk_bepalen.mp3]	frequentie::werk frequentie::werk::dag2026-09-28
+de ontwikkeling	2	Doorkijk naar nieuwe ontwikkelingen	развитие (мн. ч. — новые тенденции)	Взгляд на новые тенденции	[sound:werk_ontwikkeling.mp3]	frequentie::werk frequentie::werk::dag2026-09-28
+instellen	2	Je kunt de Authenticator nu opnieuw instellen.	настраивать (приложение, уведомление)	Теперь ты можешь заново настроить Authenticator.	[sound:werk_instellen.mp3]	frequentie::werk frequentie::werk::dag2026-09-28
+afgelopen	2	Zij hebben in de afgelopen periode storingen gezien.	прошедший (о недавнем времени)	За последнее время они видели сбои.	[sound:werk_afgelopen.mp3]	frequentie::werk frequentie::werk::dag2026-09-28

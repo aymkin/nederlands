@@ -1,10 +1,12 @@
 {
- "laatste_run": "2026-09-24",
+ "laatste_run": "2026-09-28",
  "verwerkt": [
   "mail/2026-09-22_reispas-vertraging.md",
   "mail/2026-09-23_kennissessie-looncomponenten.md",
   "mail/2026-09-24_gemiste-uitcheck.md",
-  "mail/2026-09-24_it-all-hands.md"
+  "mail/2026-09-24_it-all-hands.md",
+  "mail/2026-09-28_authenticator-reset.md",
+  "mail/2026-09-28_tickets-reispunten.md"
  ],
  "lemmas": {
   "goedemiddag": {
@@ -31,7 +33,8 @@
      "bron": "mail/2026-09-22_reispas-vertraging.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-09-28"
   },
   "vrijdag": {
    "count": 1,
@@ -1140,7 +1143,8 @@
      "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-09-28"
   },
   "medewerker": {
    "count": 2,
@@ -1493,7 +1497,7 @@
      "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "ritgegevens": {
    "count": 1,
@@ -1752,17 +1756,23 @@
    "status": "nieuw"
   },
   "instellen": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "in te stellen"
+    "in te stellen",
+    "instellen"
    ],
    "zinnen": [
     {
      "zin": "Indien de rit nog niet zichtbaar is, adviseren wij je om een e-mailalert in te stellen.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Je kunt deze nu opnieuw instellen door de instructies in het inlogscherm te volgen.",
+     "bron": "mail/2026-09-28_authenticator-reset.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-09-28"
   },
   "ontvangen": {
    "count": 1,
@@ -1796,7 +1806,7 @@
      "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "bericht": {
    "count": 1,
@@ -1844,7 +1854,8 @@
      "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-09-28"
   },
   "blokkeren": {
    "count": 1,
@@ -2018,7 +2029,7 @@
      "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "omgeving": {
    "count": 2,
@@ -2356,7 +2367,7 @@
      "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "vervoermiddel": {
    "count": 2,
@@ -2428,7 +2439,7 @@
    "status": "nieuw"
   },
   "nu": {
-   "count": 3,
+   "count": 4,
    "vormen": [
     "nu",
     "Nu"
@@ -2445,6 +2456,10 @@
     {
      "zin": "Nu bewegen we.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Je kunt deze nu opnieuw instellen door de instructies in het inlogscherm te volgen.",
+     "bron": "mail/2026-09-28_authenticator-reset.md"
     }
    ],
    "status": "bekend"
@@ -2469,7 +2484,8 @@
      "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-09-28"
   },
   "modaliteit": {
    "count": 1,
@@ -3640,7 +3656,7 @@
    "status": "nieuw"
   },
   "team": {
-   "count": 11,
+   "count": 13,
    "vormen": [
     "team",
     "teams"
@@ -3685,6 +3701,14 @@
     {
      "zin": "In elk team zit iemand die dit al lang wil.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "@Sanne Vos deze mag naar @Daan de Wit van team Frontend.",
+     "bron": "mail/2026-09-28_tickets-reispunten.md"
+    },
+    {
+     "zin": "@Sanne Vos die mag naar @Daan de Wit van team Frontend.",
+     "bron": "mail/2026-09-28_tickets-reispunten.md"
     }
    ],
    "status": "bekend"
@@ -3869,7 +3893,7 @@
      "bron": "mail/2026-09-24_it-all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "bouwen": {
    "count": 3,
@@ -4848,6 +4872,136 @@
     {
      "zin": "Details over wat Bas gaat vinden weet ik niet.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verzoek": {
+   "count": 1,
+   "vormen": [
+    "verzoek"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je verzoek om de Authenticator te resetten is goedgekeurd.",
+     "bron": "mail/2026-09-28_authenticator-reset.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "resetten": {
+   "count": 1,
+   "vormen": [
+    "resetten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je verzoek om de Authenticator te resetten is goedgekeurd.",
+     "bron": "mail/2026-09-28_authenticator-reset.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "goedkeuren": {
+   "count": 1,
+   "vormen": [
+    "goedgekeurd"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je verzoek om de Authenticator te resetten is goedgekeurd.",
+     "bron": "mail/2026-09-28_authenticator-reset.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "opnieuw": {
+   "count": 1,
+   "vormen": [
+    "opnieuw"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je kunt deze nu opnieuw instellen door de instructies in het inlogscherm te volgen.",
+     "bron": "mail/2026-09-28_authenticator-reset.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "instructie": {
+   "count": 1,
+   "vormen": [
+    "instructies"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je kunt deze nu opnieuw instellen door de instructies in het inlogscherm te volgen.",
+     "bron": "mail/2026-09-28_authenticator-reset.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "inlogscherm": {
+   "count": 1,
+   "vormen": [
+    "inlogscherm"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je kunt deze nu opnieuw instellen door de instructies in het inlogscherm te volgen.",
+     "bron": "mail/2026-09-28_authenticator-reset.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "volgen": {
+   "count": 1,
+   "vormen": [
+    "volgen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je kunt deze nu opnieuw instellen door de instructies in het inlogscherm te volgen.",
+     "bron": "mail/2026-09-28_authenticator-reset.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verwijderen": {
+   "count": 1,
+   "vormen": [
+    "Verwijderen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Verwijderen Reispunten-ID's",
+     "bron": "mail/2026-09-28_tickets-reispunten.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "app": {
+   "count": 1,
+   "vormen": [
+    "app"
+   ],
+   "zinnen": [
+    {
+     "zin": "Reispunten is een app die wordt onderhouden door Frontend.",
+     "bron": "mail/2026-09-28_tickets-reispunten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "onderhouden": {
+   "count": 1,
+   "vormen": [
+    "onderhouden"
+   ],
+   "zinnen": [
+    {
+     "zin": "Reispunten is een app die wordt onderhouden door Frontend.",
+     "bron": "mail/2026-09-28_tickets-reispunten.md"
     }
    ],
    "status": "nieuw"
