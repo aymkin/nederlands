@@ -15,6 +15,7 @@ import re
 import shutil
 import sys
 import urllib.request
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
@@ -121,7 +122,7 @@ DUBBEL = "cannot create note because it is a duplicate"
 
 
 class KaartFout(ValueError):
-    """Партия нарушает Twenty Rules — импорт не начат."""
+    """Партия нарушает Twenty Rules или повторяет первое поле — импорт не начат."""
 
 
 class AnkiFout(RuntimeError):
@@ -173,6 +174,10 @@ def import_tsv(path: Path, profile: str = ANKI_PROFILE) -> tuple[int, list[str]]
     type) пропускаются — так повторный импорт безопасен. Возвращает
     (добавлено, пропущенные).
 
+    Повтор первого поля внутри партии — `KaartFout` ещё до Anki: в Twenty
+    Rules второй перевод затёр бы первый, а canAdd сверяет заметку только с
+    коллекцией — addNotes упал бы на втором экземпляре и откатил всю партию.
+
     Первый вызов — `eis_profiel`. Дубль — только отказ `DUBBEL`; любой
     другой отказ Anki (нет note type, пустое поле) — `AnkiFout` до записи.
     Колода создаётся последней и только когда есть что добавить (инцидент
@@ -201,6 +206,9 @@ def import_tsv(path: Path, profile: str = ANKI_PROFILE) -> tuple[int, list[str]]
         }
         for r in rows
     ]
+    aantal = Counter(n["fields"][columns[0]] for n in notes)
+    if herhaald := [w for w, k in aantal.items() if w and k > 1]:
+        raise KaartFout(f"{columns[0]} повторяется в партии: {', '.join(herhaald)}")
     eis_profiel(profile)
     if head["notetype"] == FREQUENTIE:
         ids = ankiconnect("findNotes", query=f'"note:{FREQUENTIE}"')

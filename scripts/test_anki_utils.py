@@ -155,6 +155,18 @@ def test_dubbel_overgeslagen():
     assert [[n["fields"]["Word"] for n in ns] for ns in toegevoegd] == [["bepalen"]]
 
 
+def test_dubbel_binnen_partij():
+    """Word дважды в партии: canAdd пропустил бы оба — отказ до первого вызова."""
+    herhaling = "pas\tшаг\tfrequentie::werk\nbepalen\tрешать\tfrequentie::werk\n"
+    with nep_anki() as log:
+        try:
+            importeer(TSV + herhaling)
+            assert False, "expected KaartFout"
+        except au.KaartFout as e:
+            assert str(e) == "Word повторяется в партии: pas, bepalen"
+    assert log == []
+
+
 def test_nieuwe_deck_na_controle():
     """Колоды ещё нет: canAdd — на существующей, createDeck — перед addNotes."""
     with nep_anki(decks=("Default",)) as log:
