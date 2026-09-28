@@ -241,12 +241,18 @@ def cmd_kaarten(args) -> int:
         print(f"🔊 {len(items)} mp3 → {media}")
 
     if args.anki:
-        from anki_utils import KaartFout, import_tsv
+        from anki_utils import AnkiFout, KaartFout, import_tsv
 
         try:
             added, skipped = import_tsv(out)
         except KaartFout as e:
             print(f"❌ Twenty Rules, импорт не начат — поправь {out.name}:\n{e}")
+            return 1
+        except AnkiFout as e:
+            print(
+                f"❌ Anki, импорт не начат:\n{e}\n"
+                f"   повтор: python3 scripts/anki_utils.py import {out.relative_to(ROOT)}"
+            )
             return 1
         print(f"📥 Anki: +{added}" + (f", уже были: {', '.join(skipped)}" if skipped else ""))
     return 0

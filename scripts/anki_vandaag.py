@@ -29,7 +29,7 @@ import tempfile
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from anki_utils import ANKI_BASE_PATHS, find_anki_profiles  # same dir
+from anki_utils import ANKI_BASE_PATHS, ANKI_PROFILE, find_anki_profiles  # same dir
 
 ROLLOVER_HOURS = 4
 DEFAULT_NOTETYPE = "Frequentie NL"
@@ -43,21 +43,20 @@ def clean(field: str) -> str:
     return html.unescape(field).replace("\xa0", " ").strip()
 
 
-def collection_path(profile: str | None) -> Path:
+def collection_path(profile: str) -> Path:
     # find_anki_profiles returns each profile's collection.media dir.
     profiles = [m.parent for base in ANKI_BASE_PATHS for m in find_anki_profiles(base)]
     if not profiles:
         sys.exit("Anki profile not found (see anki_utils.find_anki_profiles)")
-    if profile:
-        match = [p for p in profiles if p.name == profile]
-        if not match:
-            sys.exit(f"profile {profile!r} not among {[p.name for p in profiles]}")
-        return match[0] / "collection.anki2"
-    return profiles[0] / "collection.anki2"
+    match = [p for p in profiles if p.name == profile]
+    if not match:
+        sys.exit(f"profile {profile!r} not among {[p.name for p in profiles]}")
+    return match[0] / "collection.anki2"
 
 
 def day_bounds_ms(day: date) -> tuple[int, int]:
-    start = datetime(day.year, day.month, day.day, ROLLOVER_HOURS)
+    # Naive on purpose: local 04:00 → 04:00, so a DST day spans 23 or 25 hours.
+    start = datetime(day.year, day.month, day.day, ROLLOVER_HOURS)  # noqa: DTZ001
     end = start + timedelta(days=1)
     return int(start.timestamp() * 1000), int(end.timestamp() * 1000)
 
@@ -98,7 +97,7 @@ def introduced_on(col: Path, day: date, notetypes: list[str] | None):
             """,
             (lo, hi),
         ).fetchall()
-        fields = {}
+        fields: dict[int, list[str]] = {}
         for ntid, ord_, name in con.execute(
             "SELECT ntid, ord, name FROM fields ORDER BY ntid, ord"
         ):
@@ -143,11 +142,12 @@ def main() -> int:
     ap.add_argument("--notetype", action="append",
                     help=f"note type(s) to include (default: {DEFAULT_NOTETYPE!r})")
     ap.add_argument("--all", action="store_true", help="every note type")
-    ap.add_argument("--profile", help="Anki profile name (default: first found)")
+    ap.add_argument("--profile", default=ANKI_PROFILE,
+                    help=f"Anki profile name (default: {ANKI_PROFILE})")
     ap.add_argument("--out", type=Path, help="also write the markdown here")
     args = ap.parse_args()
 
-    now = datetime.now() - timedelta(hours=ROLLOVER_HOURS)
+    now = datetime.now().astimezone() - timedelta(hours=ROLLOVER_HOURS)
     day = args.date or now.date()
     notetypes = None if args.all else (args.notetype or [DEFAULT_NOTETYPE])
 

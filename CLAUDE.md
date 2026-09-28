@@ -270,6 +270,12 @@ Fluent не настраивается — **расписание и объём 
 AnkiConnect (`anki_utils.import_tsv`; любой `_anki.txt` с директивами:
 `python3 scripts/anki_utils.py import FILE`).
 
+Импорт и `lint` работают только с профилем `alex` (`ANKI_PROFILE`): первый вызов
+— `getActiveProfile`, открыт другой профиль — отказ до первой записи, повтор
+после переключения. «Уже были» — только настоящие дубли; любой другой отказ Anki
+(нет note type, пустое поле) — отказ с его текстом. Колода создаётся последней и
+только если есть что добавить; `--audio` кладёт mp3 в media того же профиля.
+
 Для note type «Frequentie NL» импорт сперва гоняет Twenty Rules по всей
 коллекции: не больше двух значений в `Translation`, первое значение не совпадает
 с чужим. Нарушение — отказ без записи. `python3 scripts/anki_utils.py lint` — та
@@ -317,7 +323,9 @@ python3 scripts/fluent_rebuild_queue.py --apply
 ## Anki Integration
 
 **Profile:** `alex` — media at
-`~/Library/Application Support/Anki2/alex/collection.media/`
+`~/Library/Application Support/Anki2/alex/collection.media/`. Scripts take it
+from `ANKI_PROFILE` in `scripts/anki_utils.py` and never guess; the other
+profile, `iuliia`, is Yulia's.
 
 ### Anki File Formats
 

@@ -221,17 +221,19 @@ done
 
 ## 8. Anki profile selection
 
-| Axis             | Behavior                                                                                                                               | Guard                                                                            |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Profiles on disk | TWO: `alex` and `iuliia` under `~/Library/Application Support/Anki2/`                                                                  | none                                                                             |
-| Selection        | `anki_utils.find_anki_media_folder()` returns `profiles[0]` from **unsorted** `iterdir()` with a printed warning (anki_utils.py:54-57) | currently lands on `alex` by luck; **no `--profile` override exists** (open gap) |
+| Axis                 | Behavior                                                                                                      | Guard                                                                                                         |
+| -------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Profiles on disk     | TWO: `alex` and `iuliia` under `~/Library/Application Support/Anki2/`                                         | none                                                                                                          |
+| Target (all scripts) | `ANKI_PROFILE = "alex"` in `scripts/anki_utils.py` (since 2026-09-28)                                         | `import_tsv`, `lint` and `find_anki_media_folder` take `profile=`; `anki_vandaag.py --profile` defaults to it |
+| Notes (AnkiConnect)  | `import_tsv` and `lint` call `getActiveProfile` first; another profile open → `AnkiFout`, nothing written     | AnkiConnect writes into whichever profile is OPEN in Anki, so this check is the only guard                    |
+| Media (filesystem)   | `find_anki_media_folder()` returns `<Anki2>/alex/collection.media`, else `None` and prints the profiles found | no fallback to another profile                                                                                |
 
-If a script copies media, read its output for the
-`⚠️ Найдено N профилей, использую: <name>` line and confirm it picked the
-intended profile.
+Until 2026-09-28 the media picker returned `profiles[0]` from an unsorted
+`iterdir()`, and the importer wrote to whatever profile was open. Audio and
+notes split across profiles that day (`tasks/lessons.md`).
 
 Re-verify: `ls ~/Library/Application\ Support/Anki2/` and
-`grep -n "profiles\[0\]" scripts/anki_utils.py`
+`grep -n "ANKI_PROFILE" scripts/anki_utils.py scripts/anki_vandaag.py`
 
 ## How to add a new config axis (checklist)
 
@@ -273,5 +275,5 @@ if any fails or disagrees, update the table before relying on it.
 | prettier + ignores                  | `cat .prettierrc .prettierignore`                                                                                                       |
 | pages.yml exclusion                 | `grep -n "rm -f\|path:" .github/workflows/pages.yml`                                                                                    |
 | LaunchAgent schedules/paths         | PlistBuddy loop in section 7                                                                                                            |
-| Anki profiles + picker              | `ls ~/Library/Application\ Support/Anki2/; grep -n "profiles\[0\]" scripts/anki_utils.py`                                               |
+| Anki profiles + pinned target       | `ls ~/Library/Application\ Support/Anki2/; grep -n ANKI_PROFILE scripts/anki_utils.py scripts/anki_vandaag.py`                          |
 | importer tests count                | `python3 scripts/test_fluent_import.py`                                                                                                 |

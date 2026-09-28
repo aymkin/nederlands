@@ -16,6 +16,7 @@ import shutil
 import sys
 import urllib.request
 from pathlib import Path
+from typing import Any
 
 # Базовые пути к Anki2 (кроссплатформенно)
 ANKI_BASE_PATHS = [
@@ -27,10 +28,13 @@ ANKI_BASE_PATHS = [
 # Системные папки Anki (не профили)
 ANKI_SYSTEM_DIRS = {"addons21", "logs", "crash_reports"}
 
+# Профиль, в котором живут колоды репо (CLAUDE.md, «Anki Integration»)
+ANKI_PROFILE = "alex"
+
 
 def find_anki_profiles(base_path: Path) -> list[Path]:
     """Находит все профили пользователей в директории Anki2."""
-    profiles = []
+    profiles: list[Path] = []
 
     if not base_path.exists():
         return profiles
@@ -48,22 +52,20 @@ def find_anki_profiles(base_path: Path) -> list[Path]:
     return profiles
 
 
-def find_anki_media_folder() -> Path | None:
+def find_anki_media_folder(profile: str = ANKI_PROFILE) -> Path | None:
     """
-    Ищет Anki media folder на текущей машине.
-    Если профиль один — использует его автоматически.
+    Ищет collection.media профиля `profile` — того же, куда пишет import_tsv.
+    Не первый найденный: при двух профилях порядок iterdir() случаен, и аудио
+    ушло в один профиль, а заметки — в другой (2026-09-28).
     """
     for base_path in ANKI_BASE_PATHS:
-        profiles = find_anki_profiles(base_path)
+        media = base_path / profile / "collection.media"
+        if media.is_dir():
+            return media
 
-        if len(profiles) == 1:
-            # Один профиль — используем его
-            return profiles[0]
-        elif len(profiles) > 1:
-            # Несколько профилей — используем первый, но предупреждаем
-            print(f"   ⚠️  Найдено {len(profiles)} профилей, использую: {profiles[0].parent.name}")
-            return profiles[0]
-
+    names = [m.parent.name for base in ANKI_BASE_PATHS for m in find_anki_profiles(base)]
+    if names:
+        print(f"   ⚠️  Профиля {profile} нет, есть: {', '.join(names)}")
     return None
 
 
@@ -114,10 +116,16 @@ def ankiconnect(action: str, **params):
 
 FREQUENTIE = "Frequentie NL"
 MAX_BETEKENISSEN = 2
+# Единственный отказ canAdd, который значит «уже есть» (AnkiConnect createNote)
+DUBBEL = "cannot create note because it is a duplicate"
 
 
 class KaartFout(ValueError):
     """Партия нарушает Twenty Rules — импорт не начат."""
+
+
+class AnkiFout(RuntimeError):
+    """Чужой профиль, нет заметок или note type, отказ canAdd — до первой записи."""
 
 
 def betekenissen(translation: str) -> list[str]:
@@ -133,7 +141,8 @@ def twenty_rules(nieuw: dict[str, str], bestaand: dict[str, str]) -> list[str]:
     (интерференция): первое значение — это ключ на лицевой стороне RU → NL,
     и если он совпал с другим словом, верны оба ответа, а Anki засчитает
     ошибку. Возвращает список нарушений, пустой — можно импортировать."""
-    fouten, sleutels = [], {}
+    fouten: list[str] = []
+    sleutels: dict[str, str] = {}
     for word, tr in bestaand.items():
         if b := betekenissen(tr):
             sleutels.setdefault(b[0], word)
@@ -149,16 +158,32 @@ def twenty_rules(nieuw: dict[str, str], bestaand: dict[str, str]) -> list[str]:
     return fouten
 
 
-def import_tsv(path: Path) -> tuple[int, list[str]]:
+def eis_profiel(profile: str) -> None:
+    """AnkiConnect работает с профилем, открытым в Anki: в чужом проверки идут
+    вхолостую, а запись уходит не в ту коллекцию. Поэтому это первый вызов."""
+    actief = ankiconnect("getActiveProfile")
+    if actief != profile:
+        nu = f"открыт профиль {actief}" if actief else "не открыт ни один профиль"
+        raise AnkiFout(f"в Anki {nu}, нужен {profile} — переключи профиль и запусти снова")
+
+
+def import_tsv(path: Path, profile: str = ANKI_PROFILE) -> tuple[int, list[str]]:
     """Импорт _anki.txt по его директивам #notetype / #deck / #columns /
-    #tags column. Дубли (первое поле уже есть у этого note type) пропускаются —
-    так повторный импорт безопасен. Возвращает (добавлено, пропущенные).
+    #tags column в профиль `profile`. Дубли (первое поле уже есть у этого note
+    type) пропускаются — так повторный импорт безопасен. Возвращает
+    (добавлено, пропущенные).
+
+    Первый вызов — `eis_profiel`. Дубль — только отказ `DUBBEL`; любой
+    другой отказ Anki (нет note type, пустое поле) — `AnkiFout` до записи.
+    Колода создаётся последней и только когда есть что добавить (инцидент
+    2026-09-28, `tasks/lessons.md`).
 
     Для «Frequentie NL» сперва `twenty_rules` против всей коллекции этого
     типа; нарушение — `KaartFout`, в Anki ничего не пишется. Проверять до
     импорта обязательно: повторный импорт заметку с тем же Word пропускает,
     так что исправленный перевод туда уже не попадёт."""
-    head, rows = {}, []
+    head: dict[str, str] = {}
+    rows: list[list[str]] = []
     for line in path.read_text(encoding="utf-8").splitlines():
         if line.startswith("#"):
             key, _, val = line[1:].partition(":")
@@ -167,7 +192,7 @@ def import_tsv(path: Path) -> tuple[int, list[str]]:
             rows.append(line.split("\t"))
     columns = head["columns"].split("\t")
     tags_col = int(head["tags column"]) - 1
-    notes = [
+    notes: list[dict[str, Any]] = [
         {
             "deckName": head["deck"],
             "modelName": head["notetype"],
@@ -176,6 +201,7 @@ def import_tsv(path: Path) -> tuple[int, list[str]]:
         }
         for r in rows
     ]
+    eis_profiel(profile)
     if head["notetype"] == FREQUENTIE:
         ids = ankiconnect("findNotes", query=f'"note:{FREQUENTIE}"')
         bestaand = {
@@ -185,18 +211,41 @@ def import_tsv(path: Path) -> tuple[int, list[str]]:
         nieuw = {n["fields"]["Word"]: n["fields"]["Translation"] for n in notes}
         if fouten := twenty_rules(nieuw, bestaand):
             raise KaartFout("\n".join(fouten))
-    ankiconnect("createDeck", deck=head["deck"])
-    ok = ankiconnect("canAddNotesWithErrorDetail", notes=notes)
-    fresh = [n for n, o in zip(notes, ok) if o["canAdd"]]
-    skipped = [n["fields"][columns[0]] for n, o in zip(notes, ok) if not o["canAdd"]]
+    # Новую колоду canAdd не проверит: AnkiConnect ищет колоду раньше дубля. Дубль
+    # же он ищет по note type во всей коллекции, а не в колоде (пока у заметок нет
+    # options.duplicateScope), — поэтому проверяем на любой существующей колоде.
+    decks = ankiconnect("deckNames")
+    proef = head["deck"] if head["deck"] in decks else decks[0]
+    ok = ankiconnect(
+        "canAddNotesWithErrorDetail", notes=[{**n, "deckName": proef} for n in notes]
+    )
+    fresh: list[dict[str, Any]] = []
+    skipped: list[str] = []
+    weigering: dict[str, list[str]] = {}
+    for i, (n, o) in enumerate(zip(notes, ok), 1):
+        word = n["fields"][columns[0]] or f"заметка {i}"
+        if o["canAdd"]:
+            fresh.append(n)
+        elif o["error"] == DUBBEL:
+            skipped.append(word)
+        else:
+            weigering.setdefault(o["error"], []).append(word)
+    if weigering:
+        raise AnkiFout("\n".join(f"{e} — {', '.join(w)}" for e, w in weigering.items()))
     if fresh:
+        ankiconnect("createDeck", deck=head["deck"])
         ankiconnect("addNotes", notes=fresh)
     return len(fresh), skipped
 
 
-def lint() -> list[str]:
-    """twenty_rules по всей коллекции «Frequentie NL» — после ручной правки."""
+def lint(profile: str = ANKI_PROFILE) -> list[str]:
+    """twenty_rules по всей коллекции «Frequentie NL» — после ручной правки.
+    Ноль заметок — отказ, а не «нарушений нет»: так выглядит и чужой профиль,
+    и переименованный note type."""
+    eis_profiel(profile)
     ids = ankiconnect("findNotes", query=f'"note:{FREQUENTIE}"')
+    if not ids:
+        raise AnkiFout(f"в профиле {profile} нет заметок «{FREQUENTIE}» — проверять нечего")
     alle = {
         n["fields"]["Word"]["value"]: n["fields"]["Translation"]["value"]
         for n in ankiconnect("notesInfo", notes=ids)
@@ -206,7 +255,10 @@ def lint() -> list[str]:
 
 if __name__ == "__main__":
     if sys.argv[1:] == ["lint"]:
-        fouten = lint()
+        try:
+            fouten = lint()
+        except AnkiFout as e:
+            sys.exit(f"❌ Anki, проверка не начата:\n{e}")
         print("\n".join(fouten) or "✅ Twenty Rules: нарушений нет")
         sys.exit(1 if fouten else 0)
     if len(sys.argv) != 3 or sys.argv[1] != "import":
@@ -215,4 +267,6 @@ if __name__ == "__main__":
         added, skipped = import_tsv(Path(sys.argv[2]))
     except KaartFout as e:
         sys.exit(f"❌ Twenty Rules, импорт не начат:\n{e}")
+    except AnkiFout as e:
+        sys.exit(f"❌ Anki, импорт не начат:\n{e}")
     print(f"✅ добавлено {added}" + (f", уже были: {', '.join(skipped)}" if skipped else ""))

@@ -45,7 +45,7 @@ CACHE=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1)
 | 11  | `update-db.py` exits 1 or 2                                | Fluent DB  |
 | 12  | `ModuleNotFoundError: No module named 'whisper'`           | Env        |
 | 13  | Reader crashes FileNotFoundError despite WHISPER_AVAILABLE | Env        |
-| 14  | Anki media lands in the wrong profile                      | Env        |
+| 14  | Anki notes or media land in the wrong profile              | Env        |
 | 15  | `pnpm run format:check` exits 1 "randomly"                 | Tooling    |
 | 16  | `--update-anki` destroyed columns in an anki file          | TTS        |
 | 17  | TTS audio silently missing paragraphs                      | TTS        |
@@ -247,19 +247,24 @@ Contract (verified in `$CACHE/.claude/hooks/update-db.py`, 2026-07-09):
 - **First check:** `which whisper`. Missing → install via
   `pipx install openai-whisper`, or use `--no-align` (accepting trap 1).
 
-### 14. Anki media copied to the wrong profile
+### 14. Anki notes or media land in the wrong profile
 
 - **First check:** there are TWO profiles —
-  `ls ~/Library/Application\ Support/Anki2/` → `alex`, `iuliia`.
-  `anki_utils.find_anki_media_folder()` picks `profiles[0]` from an UNSORTED
-  `iterdir()` and only prints a warning
-  (`Найдено N профилей, использую: <name>`). There is no `--profile` flag.
-- **Discriminating experiment:** after any `--copy-to-anki` run, confirm where
-  files landed:
+  `ls ~/Library/Application\ Support/Anki2/` → `alex`, `iuliia`. AnkiConnect
+  writes into whichever profile is OPEN in Anki; the media scripts write
+  wherever `find_anki_media_folder()` points. Since 2026-09-28 both follow
+  `ANKI_PROFILE = "alex"` in `scripts/anki_utils.py`.
+- **Old-bug signature** (2026-09-28, `tasks/lessons.md`): empty `Frequentie`
+  decks in `iuliia`; `📥 Anki: +0, уже были: …` for words that are in no
+  collection (the real error was `model was not found`); mp3s in `alex` while
+  the notes went elsewhere.
+- **Now:** `❌ Anki, импорт не начат: в Anki открыт профиль iuliia, нужен alex`
+  means the guard worked and nothing was written. Alex switches the profile in
+  Anki, then reruns `python3 scripts/anki_utils.py import <file>`.
+  `werk_woorden.py` prints the exact command.
+- **Discriminating experiment:** `python3 scripts/test_anki_utils.py`
+  (`test_verkeerd_profiel` replays the incident). After a media run:
   `ls -t ~/Library/Application\ Support/Anki2/alex/collection.media | head`.
-- **Fix/workaround:** read the script's warning line every run. Currently it
-  picks `alex` by filesystem luck; if it ever picks `iuliia`, move the files
-  manually and file the missing `--profile` flag as a change-control item.
 
 ### 15. `pnpm run format:check` exits 1 but tracked files are clean
 
@@ -366,7 +371,8 @@ All claims verified 2026-07-09 against disk/git. Re-verify before trusting:
 - WHISPER_AVAILABLE logic: `sed -n '24,34p' scripts/story_reader.py`
 - TTS `...` drop + in-place rewrite:
   `grep -n '"\.\.\." in para\|def update_anki_file' scripts/text_to_speech.py`
-- Profile roulette: `grep -n 'profiles\[0\]' scripts/anki_utils.py`;
+- Pinned profile:
+  `grep -n ANKI_PROFILE scripts/anki_utils.py scripts/anki_vandaag.py`;
   `ls ~/Library/Application\ Support/Anki2/`
 - review_history split + counts: python probe in trap 9 (numbers are volatile —
   225 was the 2026-07-09 value)

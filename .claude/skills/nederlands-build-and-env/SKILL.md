@@ -154,12 +154,13 @@ repo's `--copy-to-anki` flows:
 ~/Library/Application Support/Anki2/alex/collection.media/   (~10,000 files)
 ```
 
-**Trap:** `scripts/anki_utils.py::find_anki_media_folder()` picks `profiles[0]`
-from an **unsorted** `Path.iterdir()` and only prints a warning when multiple
-profiles exist. It currently lands on `alex` by filesystem luck; there is no
-`--profile` override. On a fresh machine, verify which profile it picks before
-trusting `--copy-to-anki` (see checklist). If it picks `iuliia`, copy media
-manually instead of patching without change control.
+**The profile is pinned:** every script targets `ANKI_PROFILE = "alex"` in
+`scripts/anki_utils.py`, so a fresh machine needs an Anki profile named exactly
+`alex`. Without it, `find_anki_media_folder()` returns `None` and prints the
+profiles it found. `anki_utils.py import` refuses unless `alex` is the profile
+open in Anki. Until 2026-09-28 the media picker took `profiles[0]` from an
+unsorted `Path.iterdir()`, which let audio and notes end up in different
+profiles.
 
 ## Step 5 — Fluent plugin (fork + marketplace + cache)
 
@@ -273,9 +274,8 @@ machine. Re-verify drift-prone items with:
   `python3 -c "import sysconfig,os; print(os.path.exists(os.path.join(sysconfig.get_path('stdlib'), 'EXTERNALLY-MANAGED')))"`
 - Parkiet venv contents:
   `scripts/.venv/bin/pip list | grep -Ei "torch|transformers"`
-- Anki profiles + picker behavior:
-  `ls "$HOME/Library/Application Support/Anki2/"` and
-  `grep -n "profiles\[0\]" scripts/anki_utils.py`
+- Anki profiles + pinned target: `ls "$HOME/Library/Application Support/Anki2/"`
+  and `grep -n ANKI_PROFILE scripts/anki_utils.py`
 - Fluent remotes / cache version / clone drift: the three git commands in Step 5
   plus `ls ~/.claude/plugins/cache/aymkin/fluent/`
 - LaunchAgents:
