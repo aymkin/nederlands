@@ -14,6 +14,7 @@ import json
 import re
 import shutil
 import sys
+import urllib.error
 import urllib.request
 from collections import Counter
 from pathlib import Path
@@ -108,8 +109,11 @@ ANKICONNECT = "http://127.0.0.1:8765"
 def ankiconnect(action: str, **params):
     """Вызов AnkiConnect; Anki должен быть запущен с этим аддоном."""
     body = json.dumps({"action": action, "version": 6, "params": params}).encode()
-    with urllib.request.urlopen(ANKICONNECT, body, timeout=10) as r:
-        reply = json.load(r)
+    try:
+        with urllib.request.urlopen(ANKICONNECT, body, timeout=10) as r:
+            reply = json.load(r)
+    except urllib.error.URLError as e:
+        raise AnkiFout(f"AnkiConnect {ANKICONNECT} не отвечает ({e.reason}) — запусти Anki") from e
     if reply["error"]:
         raise RuntimeError(f"AnkiConnect {action}: {reply['error']}")
     return reply["result"]
@@ -126,7 +130,8 @@ class KaartFout(ValueError):
 
 
 class AnkiFout(RuntimeError):
-    """Чужой профиль, нет заметок или note type, отказ canAdd — до первой записи."""
+    """Anki не запущен, чужой профиль, нет заметок или note type, отказ canAdd —
+    до первой записи."""
 
 
 def betekenissen(translation: str) -> list[str]:

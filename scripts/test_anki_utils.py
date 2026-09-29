@@ -127,6 +127,18 @@ def test_verkeerd_profiel():
     assert acties(log) == ["getActiveProfile"]
 
 
+def test_anki_niet_gestart():
+    """2026-09-29: Anki закрыт — AnkiFout с подсказкой, а не traceback URLError."""
+    echt, au.ANKICONNECT = au.ANKICONNECT, "http://127.0.0.1:9"
+    try:
+        au.ankiconnect("getActiveProfile")
+        assert False, "expected AnkiFout"
+    except au.AnkiFout as e:
+        assert "запусти Anki" in str(e)
+    finally:
+        au.ANKICONNECT = echt
+
+
 def test_geen_profiel_open():
     with nep_anki(profiel=None) as log:
         try:
