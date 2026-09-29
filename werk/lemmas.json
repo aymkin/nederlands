@@ -1,12 +1,16 @@
 {
- "laatste_run": "2026-09-28",
+ "laatste_run": "2026-09-29",
  "verwerkt": [
   "mail/2026-09-22_reispas-vertraging.md",
   "mail/2026-09-23_kennissessie-looncomponenten.md",
   "mail/2026-09-24_gemiste-uitcheck.md",
   "mail/2026-09-24_it-all-hands.md",
   "mail/2026-09-28_authenticator-reset.md",
-  "mail/2026-09-28_tickets-reispunten.md"
+  "mail/2026-09-28_evenementen.md",
+  "mail/2026-09-28_tickets-reispunten.md",
+  "mail/2026-09-29_kennissessie-verzet.md",
+  "mail/2026-09-29_openstaande-ritten.md",
+  "mail/2026-09-29_verlofaanvraag.md"
  ],
  "lemmas": {
   "goedemiddag": {
@@ -158,7 +162,7 @@
    "status": "nieuw"
   },
   "periode": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "periode"
    ],
@@ -166,6 +170,10 @@
     {
      "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
      "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Controleer en bevestig ze zodat al je declaraties voor deze periode worden verwerkt.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
    "status": "kern"
@@ -184,20 +192,25 @@
    "status": "nieuw"
   },
   "zien": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "gezien"
+    "gezien",
+    "zie"
    ],
    "zinnen": [
     {
      "zin": "Er is afgelopen vrijdag bekend geworden dat Kaartnet bij RegioRail heeft aangegeven dat zij de migratie van de oude OV-chipkaarten naar de Reispas met 3 maanden gaan vertragen, dit omdat zij in de afgelopen periode storingen met de Reispas hebben gezien en zij dit met de aantallen van RegioRail niet aandurfden.",
      "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "In het onderstaande overzicht zie je de actuele status van jouw verlofuren.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "aantal": {
-   "count": 2,
+   "count": 3,
    "vormen": [
     "aantallen"
    ],
@@ -209,6 +222,10 @@
     {
      "zin": "Vandaag nog heeft Kaartnet in een meeting aangegeven dat onze aantallen voor hen geen probleem zijn.",
      "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Voor ons heel belangrijk: beantwoord deze door te accepteren of te weigeren, dan weten wij waar we rekening mee moeten houden qua aantallen.",
+     "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
    "status": "kern"
@@ -296,17 +313,22 @@
    "status": "nieuw"
   },
   "tijdlijn": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "tijdlijnen"
+    "tijdlijnen",
+    "tijdlijn"
    ],
    "zinnen": [
     {
      "zin": "Deze vertraging heeft GEEN impact op de tijdlijnen van het Reispas-project voor ons; wij liggen op schema om in december op productie te gaan testen, mits wij de overeenkomsten met de vervoerder rond hebben.",
      "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "In teams van maximaal zes personen raad je hits en plaats je ze op de juiste plek in de tijdlijn.",
+     "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "project": {
    "count": 1,
@@ -473,7 +495,7 @@
    "status": "nieuw"
   },
   "vraag": {
-   "count": 6,
+   "count": 7,
    "vormen": [
     "vragen",
     "Vragen"
@@ -502,12 +524,16 @@
     {
      "zin": "Vragen uit je team gaan naar jou of naar hem.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
    "status": "bekend"
   },
   "contact": {
-   "count": 3,
+   "count": 4,
    "vormen": [
     "contact"
    ],
@@ -523,12 +549,16 @@
     {
      "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
    "status": "bekend"
   },
   "opnemen": {
-   "count": 3,
+   "count": 4,
    "vormen": [
     "opnemen",
     "Neem … op",
@@ -546,6 +576,10 @@
     {
      "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
    "status": "kaart",
@@ -639,7 +673,7 @@
    "status": "nieuw"
   },
   "sessie": {
-   "count": 2,
+   "count": 3,
    "vormen": [
     "sessie"
    ],
@@ -651,9 +685,13 @@
     {
      "zin": "Heb je het al gebruikt, maar heb je nog vragen, neem die mee naar de sessie.",
      "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "De sessie van 8 oktober wordt verzet naar 29 oktober.",
+     "bron": "mail/2026-09-29_kennissessie-verzet.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "november": {
    "count": 1,
@@ -786,7 +824,7 @@
    "status": "nieuw"
   },
   "weten": {
-   "count": 3,
+   "count": 5,
    "vormen": [
     "weten",
     "weet"
@@ -803,6 +841,14 @@
     {
      "zin": "Details over wat Bas gaat vinden weet ik niet.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Wat het menu gaat worden weten we nog niet precies.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "Voor ons heel belangrijk: beantwoord deze door te accepteren of te weigeren, dan weten wij waar we rekening mee moeten houden qua aantallen.",
+     "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
    "status": "bekend"
@@ -938,7 +984,7 @@
    "status": "nieuw"
   },
   "vooraf": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "vooraf"
    ],
@@ -946,9 +992,14 @@
     {
      "zin": "Je mag ze ook vooraf stellen, dan verwerk ik ze erin zodat iedereen er iets aan heeft.",
      "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Transacties die zijn gemaakt bij onze mobiliteitspartners zullen na 10 dagen automatisch bevestigd worden op de door jouw werkgever vooraf ingestelde reisdoelen.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-09-29"
   },
   "stellen": {
    "count": 1,
@@ -964,14 +1015,19 @@
    "status": "nieuw"
   },
   "verwerken": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "verwerk"
+    "verwerk",
+    "verwerkt"
    ],
    "zinnen": [
     {
      "zin": "Je mag ze ook vooraf stellen, dan verwerk ik ze erin zodat iedereen er iets aan heeft.",
      "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Controleer en bevestig ze zodat al je declaraties voor deze periode worden verwerkt.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
    "status": "nieuw"
@@ -1147,7 +1203,7 @@
    "kaart_dag": "2026-09-28"
   },
   "medewerker": {
-   "count": 2,
+   "count": 3,
    "vormen": [
     "medewerker"
    ],
@@ -1159,6 +1215,10 @@
     {
      "zin": "Standaard vervoermiddel instelbaar per medewerker.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Beste medewerker,",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
    "status": "kern"
@@ -1483,7 +1543,7 @@
    "status": "nieuw"
   },
   "volgend": {
-   "count": 2,
+   "count": 3,
    "vormen": [
     "volgende"
    ],
@@ -1495,6 +1555,10 @@
     {
      "zin": "Die komen volgende week.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "De tijd heeft me ingehaald, volgende week is de audit en daarvoor heb ik meer tijd nodig dan gedacht.",
+     "bron": "mail/2026-09-29_kennissessie-verzet.md"
     }
    ],
    "status": "bekend"
@@ -1526,7 +1590,7 @@
    "status": "nieuw"
   },
   "rekening": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "rekening"
    ],
@@ -1534,6 +1598,10 @@
     {
      "zin": "De vervoerder heeft het instaptarief in rekening gebracht.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Voor ons heel belangrijk: beantwoord deze door te accepteren of te weigeren, dan weten wij waar we rekening mee moeten houden qua aantallen.",
+     "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
    "status": "nieuw"
@@ -1626,9 +1694,10 @@
    "status": "nieuw"
   },
   "rit": {
-   "count": 4,
+   "count": 7,
    "vormen": [
-    "rit"
+    "rit",
+    "ritten"
    ],
    "zinnen": [
     {
@@ -1646,6 +1715,18 @@
     {
      "zin": "Let op: is jouw pas geblokkeerd, bijvoorbeeld omdat je deze tijdens de rit bent verloren?",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Je hebt openstaande ritten",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Je hebt nog ritten of transacties openstaan in je Reiskompas-account.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Heb je hulp nodig bij het bevestigen van een rit?",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
    "status": "kaart",
@@ -1700,7 +1781,7 @@
    "status": "nieuw"
   },
   "dag": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "dagen"
    ],
@@ -1708,6 +1789,10 @@
     {
      "zin": "Meestal is de rit zichtbaar binnen 10 dagen.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Transacties die zijn gemaakt bij onze mobiliteitspartners zullen na 10 dagen automatisch bevestigd worden op de door jouw werkgever vooraf ingestelde reisdoelen.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
    "status": "nieuw"
@@ -1756,10 +1841,11 @@
    "status": "nieuw"
   },
   "instellen": {
-   "count": 2,
+   "count": 3,
    "vormen": [
     "in te stellen",
-    "instellen"
+    "instellen",
+    "ingestelde"
    ],
    "zinnen": [
     {
@@ -1769,6 +1855,10 @@
     {
      "zin": "Je kunt deze nu opnieuw instellen door de instructies in het inlogscherm te volgen.",
      "bron": "mail/2026-09-28_authenticator-reset.md"
+    },
+    {
+     "zin": "Transacties die zijn gemaakt bij onze mobiliteitspartners zullen na 10 dagen automatisch bevestigd worden op de door jouw werkgever vooraf ingestelde reisdoelen.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
    "status": "kaart",
@@ -1788,7 +1878,7 @@
    "status": "nieuw"
   },
   "automatisch": {
-   "count": 3,
+   "count": 5,
    "vormen": [
     "automatisch"
    ],
@@ -1804,6 +1894,14 @@
     {
      "zin": "Deze instelling heeft voorrang op het algoritme dat nu bepaalt welke modaliteit en welk vervoermiddel gebruikt worden bij het automatisch aanmaken van woon-werkritten.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Transacties die zijn gemaakt bij onze mobiliteitspartners zullen na 10 dagen automatisch bevestigd worden op de door jouw werkgever vooraf ingestelde reisdoelen.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Handmatig ingevoerde transacties en GPS-registraties worden nooit automatisch bevestigd.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
    "status": "bekend"
@@ -1884,7 +1982,7 @@
    "status": "kern"
   },
   "klantenservice": {
-   "count": 2,
+   "count": 3,
    "vormen": [
     "klantenservice"
    ],
@@ -1896,9 +1994,13 @@
     {
      "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "lukken": {
    "count": 1,
@@ -2014,10 +2116,11 @@
    "status": "kern"
   },
   "transactie": {
-   "count": 3,
+   "count": 7,
    "vormen": [
     "transactie",
-    "Transacties"
+    "Transacties",
+    "transacties"
    ],
    "zinnen": [
     {
@@ -2027,6 +2130,22 @@
     {
      "zin": "Transacties in 20 seconden in je app.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Je hebt nog ritten of transacties openstaan in je Reiskompas-account.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Je vindt je transacties in de Reiskompas-portal of via de app onder Overzicht.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Transacties die zijn gemaakt bij onze mobiliteitspartners zullen na 10 dagen automatisch bevestigd worden op de door jouw werkgever vooraf ingestelde reisdoelen.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Handmatig ingevoerde transacties en GPS-registraties worden nooit automatisch bevestigd.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
    "status": "bekend"
@@ -2123,20 +2242,30 @@
    "status": "kern"
   },
   "opmerking": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "opmerkingen"
+    "opmerkingen",
+    "Opmerking"
    ],
    "zinnen": [
     {
      "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Opmerking manager: op verzoek afgekeurd.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    },
+    {
+     "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-09-29"
   },
   "gerust": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "gerust"
    ],
@@ -2144,6 +2273,10 @@
     {
      "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
    "status": "nieuw"
@@ -2188,7 +2321,7 @@
    "status": "nieuw"
   },
   "moment": {
-   "count": 1,
+   "count": 3,
    "vormen": [
     "moment"
    ],
@@ -2196,9 +2329,13 @@
     {
      "zin": "Een sidequest is een uitdaging die spontaan spawnt, meestal op het moment dat je koffie wilde halen.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Op dit moment heb je 61,75 verlofuren over.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "koffie": {
    "count": 1,
@@ -2309,14 +2446,19 @@
    "status": "nieuw"
   },
   "maken": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "maakt"
+    "maakt",
+    "gemaakt"
    ],
    "zinnen": [
     {
      "zin": "Een sidequest is als de saus op je frikandel, het maakt het leven net wat specialer.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Transacties die zijn gemaakt bij onze mobiliteitspartners zullen na 10 dagen automatisch bevestigd worden op de door jouw werkgever vooraf ingestelde reisdoelen.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
    "status": "nieuw"
@@ -2540,10 +2682,11 @@
    "status": "nieuw"
   },
   "vinden": {
-   "count": 2,
+   "count": 3,
    "vormen": [
     "gevonden",
-    "vinden"
+    "vinden",
+    "vindt"
    ],
    "zinnen": [
     {
@@ -2553,9 +2696,13 @@
     {
      "zin": "Details over wat Bas gaat vinden weet ik niet.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Je vindt je transacties in de Reiskompas-portal of via de app onder Overzicht.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "fixen": {
    "count": 1,
@@ -2571,7 +2718,7 @@
    "status": "nieuw"
   },
   "blijven": {
-   "count": 2,
+   "count": 3,
    "vormen": [
     "blijft"
    ],
@@ -2583,9 +2730,13 @@
     {
      "zin": "Maar de potentiële winst die blijft liggen wint geen schoonheidsprijs, en de verwachting verschuift met of zonder ons.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Die van 14 oktober blijft gewoon staan.",
+     "bron": "mail/2026-09-29_kennissessie-verzet.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "mensenwerk": {
    "count": 1,
@@ -2783,7 +2934,7 @@
    "status": "nieuw"
   },
   "week": {
-   "count": 3,
+   "count": 4,
    "vormen": [
     "weken",
     "week"
@@ -2800,12 +2951,16 @@
     {
      "zin": "Die komen volgende week.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "De tijd heeft me ingehaald, volgende week is de audit en daarvoor heb ik meer tijd nodig dan gedacht.",
+     "bron": "mail/2026-09-29_kennissessie-verzet.md"
     }
    ],
    "status": "bekend"
   },
   "tijd": {
-   "count": 1,
+   "count": 3,
    "vormen": [
     "tijd"
    ],
@@ -2813,9 +2968,13 @@
     {
      "zin": "Kaartnet-tickets van 64 naar 31, in twee weken tijd.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "De tijd heeft me ingehaald, volgende week is de audit en daarvoor heb ik meer tijd nodig dan gedacht.",
+     "bron": "mail/2026-09-29_kennissessie-verzet.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "kaart": {
    "count": 1,
@@ -2918,9 +3077,10 @@
    "status": "nieuw"
   },
   "winnen": {
-   "count": 2,
+   "count": 3,
    "vormen": [
-    "wint"
+    "wint",
+    "winnende"
    ],
    "zinnen": [
     {
@@ -2930,6 +3090,10 @@
     {
      "zin": "Maar de potentiële winst die blijft liggen wint geen schoonheidsprijs, en de verwachting verschuift met of zonder ons.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Natuurlijk met snacks, een drankje, óók lekker avondeten en prijzen voor het winnende team.",
+     "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
    "status": "kern"
@@ -3307,14 +3471,19 @@
    "status": "nieuw"
   },
   "juist": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "juist"
+    "juist",
+    "juiste"
    ],
    "zinnen": [
     {
      "zin": "Dat doe ik hier zelden, en juist dat zegt hoe belangrijk dit is.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "In teams van maximaal zes personen raad je hits en plaats je ze op de juiste plek in de tijdlijn.",
+     "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
    "status": "nieuw"
@@ -3333,7 +3502,7 @@
    "status": "nieuw"
   },
   "belangrijk": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "belangrijk"
    ],
@@ -3341,6 +3510,10 @@
     {
      "zin": "Dat doe ik hier zelden, en juist dat zegt hoe belangrijk dit is.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Voor ons heel belangrijk: beantwoord deze door te accepteren of te weigeren, dan weten wij waar we rekening mee moeten houden qua aantallen.",
+     "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
    "status": "nieuw"
@@ -3364,7 +3537,7 @@
    "status": "kern"
   },
   "staan": {
-   "count": 2,
+   "count": 4,
    "vormen": [
     "staat",
     "staan"
@@ -3377,9 +3550,17 @@
     {
      "zin": "Meld wie vooraan wil staan.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Er staan dit jaar nog twee leuke evenementen op de planning!",
+     "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "Die van 14 oktober blijft gewoon staan.",
+     "bron": "mail/2026-09-29_kennissessie-verzet.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "bewegen": {
    "count": 1,
@@ -3599,10 +3780,11 @@
    "status": "nieuw"
   },
   "werken": {
-   "count": 2,
+   "count": 3,
    "vormen": [
     "werken",
-    "werkend"
+    "werkend",
+    "werkt"
    ],
    "zinnen": [
     {
@@ -3612,9 +3794,13 @@
     {
      "zin": "De opdracht: de afdeling door de AI-leercurve trekken, werkend in bestaande teams aan bestaand werk.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "In onze FAQ lees je stap voor stap hoe het werkt.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "schuren": {
    "count": 1,
@@ -3656,7 +3842,7 @@
    "status": "nieuw"
   },
   "team": {
-   "count": 13,
+   "count": 15,
    "vormen": [
     "team",
     "teams"
@@ -3709,6 +3895,14 @@
     {
      "zin": "@Sanne Vos die mag naar @Daan de Wit van team Frontend.",
      "bron": "mail/2026-09-28_tickets-reispunten.md"
+    },
+    {
+     "zin": "Natuurlijk met snacks, een drankje, óók lekker avondeten en prijzen voor het winnende team.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "In teams van maximaal zes personen raad je hits en plaats je ze op de juiste plek in de tijdlijn.",
+     "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
    "status": "bekend"
@@ -4213,14 +4407,19 @@
    "status": "nieuw"
   },
   "houden": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "houdt"
+    "houdt",
+    "houden"
    ],
    "zinnen": [
     {
      "zin": "Elk team houdt zijn eigen tempo.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Voor ons heel belangrijk: beantwoord deze door te accepteren of te weigeren, dan weten wij waar we rekening mee moeten houden qua aantallen.",
+     "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
    "status": "nieuw"
@@ -4360,14 +4559,19 @@
    "status": "nieuw"
   },
   "meedoen": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "doen"
+    "doen",
+    "meedoen"
    ],
    "zinnen": [
     {
      "zin": "Niemand bepaalt wie mee mag doen.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Muziekkennis is niet nodig, iedereen kan meedoen.",
+     "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
    "status": "nieuw"
@@ -4386,17 +4590,28 @@
    "status": "nieuw"
   },
   "openstaan": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "staat"
+    "staat",
+    "openstaande",
+    "openstaan"
    ],
    "zinnen": [
     {
      "zin": "Het leerpad staat open voor iedereen die wil.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Je hebt openstaande ritten",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Je hebt nog ritten of transacties openstaan in je Reiskompas-account.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-09-29"
   },
   "decreet": {
    "count": 1,
@@ -4456,7 +4671,7 @@
    "status": "nieuw"
   },
   "persoon": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "personen"
    ],
@@ -4464,6 +4679,10 @@
     {
      "zin": "En we meten teams, nooit personen.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "In teams van maximaal zes personen raad je hits en plaats je ze op de juiste plek in de tijdlijn.",
+     "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
    "status": "nieuw"
@@ -4772,7 +4991,7 @@
    "status": "nieuw"
   },
   "nodig": {
-   "count": 1,
+   "count": 5,
    "vormen": [
     "nodig"
    ],
@@ -4780,9 +4999,25 @@
     {
      "zin": "Welk team is er klaar voor, welk team heeft eerst iets anders nodig.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Muziekkennis is niet nodig, want iedereen herkent wel een paar grote hits (of niet).",
+     "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "Muziekkennis is niet nodig, iedereen kan meedoen.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "De tijd heeft me ingehaald, volgende week is de audit en daarvoor heb ik meer tijd nodig dan gedacht.",
+     "bron": "mail/2026-09-29_kennissessie-verzet.md"
+    },
+    {
+     "zin": "Heb je hulp nodig bij het bevestigen van een rit?",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "melden": {
    "count": 1,
@@ -4837,7 +5072,7 @@
    "status": "nieuw"
   },
   "beantwoorden": {
-   "count": 2,
+   "count": 3,
    "vormen": [
     "beantwoorden",
     "beantwoord"
@@ -4846,9 +5081,13 @@
     {
      "zin": "Wat ik kan beantwoorden, beantwoord ik.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Voor ons heel belangrijk: beantwoord deze door te accepteren of te weigeren, dan weten wij waar we rekening mee moeten houden qua aantallen.",
+     "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "doorkomen": {
    "count": 1,
@@ -4864,20 +5103,25 @@
    "status": "nieuw"
   },
   "detail": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "Details"
+    "Details",
+    "details"
    ],
    "zinnen": [
     {
      "zin": "Details over wat Bas gaat vinden weet ik niet.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Meer details volgen binnenkort.",
+     "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
    "status": "nieuw"
   },
   "verzoek": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "verzoek"
    ],
@@ -4885,6 +5129,10 @@
     {
      "zin": "Je verzoek om de Authenticator te resetten is goedgekeurd.",
      "bron": "mail/2026-09-28_authenticator-reset.md"
+    },
+    {
+     "zin": "Opmerking manager: op verzoek afgekeurd.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
     }
    ],
    "status": "kern"
@@ -4903,7 +5151,7 @@
    "status": "nieuw"
   },
   "goedkeuren": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "goedgekeurd"
    ],
@@ -4911,6 +5159,10 @@
     {
      "zin": "Je verzoek om de Authenticator te resetten is goedgekeurd.",
      "bron": "mail/2026-09-28_authenticator-reset.md"
+    },
+    {
+     "zin": "De verlofaanvraag die je op 25 september hebt ingediend is goedgekeurd.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
     }
    ],
    "status": "nieuw"
@@ -4955,7 +5207,7 @@
    "status": "nieuw"
   },
   "volgen": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "volgen"
    ],
@@ -4963,6 +5215,10 @@
     {
      "zin": "Je kunt deze nu opnieuw instellen door de instructies in het inlogscherm te volgen.",
      "bron": "mail/2026-09-28_authenticator-reset.md"
+    },
+    {
+     "zin": "Meer details volgen binnenkort.",
+     "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
    "status": "nieuw"
@@ -4981,7 +5237,7 @@
    "status": "kern"
   },
   "app": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "app"
    ],
@@ -4989,6 +5245,10 @@
     {
      "zin": "Reispunten is een app die wordt onderhouden door Frontend.",
      "bron": "mail/2026-09-28_tickets-reispunten.md"
+    },
+    {
+     "zin": "Je vindt je transacties in de Reiskompas-portal of via de app onder Overzicht.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
    "status": "nieuw"
@@ -5005,6 +5265,1101 @@
     }
    ],
    "status": "nieuw"
+  },
+  "collega": {
+   "count": 1,
+   "vormen": [
+    "collega's"
+   ],
+   "zinnen": [
+    {
+     "zin": "Hoi collega's!",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "jaar": {
+   "count": 1,
+   "vormen": [
+    "jaar"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er staan dit jaar nog twee leuke evenementen op de planning!",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "leuk": {
+   "count": 1,
+   "vormen": [
+    "leuke"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er staan dit jaar nog twee leuke evenementen op de planning!",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "evenement": {
+   "count": 1,
+   "vormen": [
+    "evenementen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er staan dit jaar nog twee leuke evenementen op de planning!",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "planning": {
+   "count": 1,
+   "vormen": [
+    "planning"
+   ],
+   "zinnen": [
+    {
+     "zin": "Er staan dit jaar nog twee leuke evenementen op de planning!",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "muzikaal": {
+   "count": 1,
+   "vormen": [
+    "muzikale"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een muzikale avond: een hitquiz-teambattle met presentator en DJ.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "avond": {
+   "count": 1,
+   "vormen": [
+    "avond"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een muzikale avond: een hitquiz-teambattle met presentator en DJ.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "presentator": {
+   "count": 2,
+   "vormen": [
+    "presentator"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een muzikale avond: een hitquiz-teambattle met presentator en DJ.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "Uitnodiging Hitquiz: een interactieve muziekshow met presentator en DJ.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "muziekkennis": {
+   "count": 2,
+   "vormen": [
+    "Muziekkennis"
+   ],
+   "zinnen": [
+    {
+     "zin": "Muziekkennis is niet nodig, want iedereen herkent wel een paar grote hits (of niet).",
+     "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "Muziekkennis is niet nodig, iedereen kan meedoen.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "herkennen": {
+   "count": 1,
+   "vormen": [
+    "herkent"
+   ],
+   "zinnen": [
+    {
+     "zin": "Muziekkennis is niet nodig, want iedereen herkent wel een paar grote hits (of niet).",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "groot": {
+   "count": 1,
+   "vormen": [
+    "grote"
+   ],
+   "zinnen": [
+    {
+     "zin": "Muziekkennis is niet nodig, want iedereen herkent wel een paar grote hits (of niet).",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "hit": {
+   "count": 2,
+   "vormen": [
+    "hits"
+   ],
+   "zinnen": [
+    {
+     "zin": "Muziekkennis is niet nodig, want iedereen herkent wel een paar grote hits (of niet).",
+     "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "In teams van maximaal zes personen raad je hits en plaats je ze op de juiste plek in de tijdlijn.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "natuurlijk": {
+   "count": 1,
+   "vormen": [
+    "Natuurlijk"
+   ],
+   "zinnen": [
+    {
+     "zin": "Natuurlijk met snacks, een drankje, óók lekker avondeten en prijzen voor het winnende team.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "snack": {
+   "count": 1,
+   "vormen": [
+    "snacks"
+   ],
+   "zinnen": [
+    {
+     "zin": "Natuurlijk met snacks, een drankje, óók lekker avondeten en prijzen voor het winnende team.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "drankje": {
+   "count": 1,
+   "vormen": [
+    "drankje"
+   ],
+   "zinnen": [
+    {
+     "zin": "Natuurlijk met snacks, een drankje, óók lekker avondeten en prijzen voor het winnende team.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "lekker": {
+   "count": 2,
+   "vormen": [
+    "lekker"
+   ],
+   "zinnen": [
+    {
+     "zin": "Natuurlijk met snacks, een drankje, óók lekker avondeten en prijzen voor het winnende team.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "Maar het is lekker en het wordt gezellig.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "avondeten": {
+   "count": 1,
+   "vormen": [
+    "avondeten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Natuurlijk met snacks, een drankje, óók lekker avondeten en prijzen voor het winnende team.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "prijs": {
+   "count": 1,
+   "vormen": [
+    "prijzen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Natuurlijk met snacks, een drankje, óók lekker avondeten en prijzen voor het winnende team.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "kerstdiner": {
+   "count": 1,
+   "vormen": [
+    "Kerstdiner"
+   ],
+   "zinnen": [
+    {
+     "zin": "18 december: Kerstdiner",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "menu": {
+   "count": 1,
+   "vormen": [
+    "menu"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wat het menu gaat worden weten we nog niet precies.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "precies": {
+   "count": 1,
+   "vormen": [
+    "precies"
+   ],
+   "zinnen": [
+    {
+     "zin": "Wat het menu gaat worden weten we nog niet precies.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "gezellig": {
+   "count": 1,
+   "vormen": [
+    "gezellig"
+   ],
+   "zinnen": [
+    {
+     "zin": "Maar het is lekker en het wordt gezellig.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vroeg": {
+   "count": 1,
+   "vormen": [
+    "vroeg"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het is nog vroeg, maar dan kan je de data alvast in je agenda zetten.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "datum": {
+   "count": 2,
+   "vormen": [
+    "data"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het is nog vroeg, maar dan kan je de data alvast in je agenda zetten.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "We delen straks de data ook via Teams.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "alvast": {
+   "count": 1,
+   "vormen": [
+    "alvast"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het is nog vroeg, maar dan kan je de data alvast in je agenda zetten.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "agenda": {
+   "count": 1,
+   "vormen": [
+    "agenda"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het is nog vroeg, maar dan kan je de data alvast in je agenda zetten.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "zetten": {
+   "count": 1,
+   "vormen": [
+    "zetten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het is nog vroeg, maar dan kan je de data alvast in je agenda zetten.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "binnenkort": {
+   "count": 1,
+   "vormen": [
+    "binnenkort"
+   ],
+   "zinnen": [
+    {
+     "zin": "Meer details volgen binnenkort.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "delen": {
+   "count": 1,
+   "vormen": [
+    "delen"
+   ],
+   "zinnen": [
+    {
+     "zin": "We delen straks de data ook via Teams.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "straks": {
+   "count": 1,
+   "vormen": [
+    "straks"
+   ],
+   "zinnen": [
+    {
+     "zin": "We delen straks de data ook via Teams.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "accepteren": {
+   "count": 1,
+   "vormen": [
+    "accepteren"
+   ],
+   "zinnen": [
+    {
+     "zin": "Voor ons heel belangrijk: beantwoord deze door te accepteren of te weigeren, dan weten wij waar we rekening mee moeten houden qua aantallen.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "weigeren": {
+   "count": 1,
+   "vormen": [
+    "weigeren"
+   ],
+   "zinnen": [
+    {
+     "zin": "Voor ons heel belangrijk: beantwoord deze door te accepteren of te weigeren, dan weten wij waar we rekening mee moeten houden qua aantallen.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "interactief": {
+   "count": 1,
+   "vormen": [
+    "interactieve"
+   ],
+   "zinnen": [
+    {
+     "zin": "Uitnodiging Hitquiz: een interactieve muziekshow met presentator en DJ.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "muziekshow": {
+   "count": 1,
+   "vormen": [
+    "muziekshow"
+   ],
+   "zinnen": [
+    {
+     "zin": "Uitnodiging Hitquiz: een interactieve muziekshow met presentator en DJ.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "maximaal": {
+   "count": 1,
+   "vormen": [
+    "maximaal"
+   ],
+   "zinnen": [
+    {
+     "zin": "In teams van maximaal zes personen raad je hits en plaats je ze op de juiste plek in de tijdlijn.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "raden": {
+   "count": 1,
+   "vormen": [
+    "raad"
+   ],
+   "zinnen": [
+    {
+     "zin": "In teams van maximaal zes personen raad je hits en plaats je ze op de juiste plek in de tijdlijn.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "plaatsen": {
+   "count": 1,
+   "vormen": [
+    "plaats"
+   ],
+   "zinnen": [
+    {
+     "zin": "In teams van maximaal zes personen raad je hits en plaats je ze op de juiste plek in de tijdlijn.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "plek": {
+   "count": 1,
+   "vormen": [
+    "plek"
+   ],
+   "zinnen": [
+    {
+     "zin": "In teams van maximaal zes personen raad je hits en plaats je ze op de juiste plek in de tijdlijn.",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "borrelen": {
+   "count": 1,
+   "vormen": [
+    "borrelen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Uitnodiging Kerstdiner: borrelen en eten!",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "eten": {
+   "count": 1,
+   "vormen": [
+    "eten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Uitnodiging Kerstdiner: borrelen en eten!",
+     "bron": "mail/2026-09-28_evenementen.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "inhalen": {
+   "count": 1,
+   "vormen": [
+    "ingehaald"
+   ],
+   "zinnen": [
+    {
+     "zin": "De tijd heeft me ingehaald, volgende week is de audit en daarvoor heb ik meer tijd nodig dan gedacht.",
+     "bron": "mail/2026-09-29_kennissessie-verzet.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "denken": {
+   "count": 1,
+   "vormen": [
+    "gedacht"
+   ],
+   "zinnen": [
+    {
+     "zin": "De tijd heeft me ingehaald, volgende week is de audit en daarvoor heb ik meer tijd nodig dan gedacht.",
+     "bron": "mail/2026-09-29_kennissessie-verzet.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verzetten": {
+   "count": 1,
+   "vormen": [
+    "verzet"
+   ],
+   "zinnen": [
+    {
+     "zin": "De sessie van 8 oktober wordt verzet naar 29 oktober.",
+     "bron": "mail/2026-09-29_kennissessie-verzet.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "gewoon": {
+   "count": 1,
+   "vormen": [
+    "gewoon"
+   ],
+   "zinnen": [
+    {
+     "zin": "Die van 14 oktober blijft gewoon staan.",
+     "bron": "mail/2026-09-29_kennissessie-verzet.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verlofaanvraag": {
+   "count": 2,
+   "vormen": [
+    "verlofaanvraag"
+   ],
+   "zinnen": [
+    {
+     "zin": "De verlofaanvraag die je op 25 september hebt ingediend is niet akkoord bevonden.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    },
+    {
+     "zin": "De verlofaanvraag die je op 25 september hebt ingediend is goedgekeurd.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "indienen": {
+   "count": 2,
+   "vormen": [
+    "ingediend"
+   ],
+   "zinnen": [
+    {
+     "zin": "De verlofaanvraag die je op 25 september hebt ingediend is niet akkoord bevonden.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    },
+    {
+     "zin": "De verlofaanvraag die je op 25 september hebt ingediend is goedgekeurd.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "akkoord": {
+   "count": 1,
+   "vormen": [
+    "akkoord"
+   ],
+   "zinnen": [
+    {
+     "zin": "De verlofaanvraag die je op 25 september hebt ingediend is niet akkoord bevonden.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "bevinden": {
+   "count": 1,
+   "vormen": [
+    "bevonden"
+   ],
+   "zinnen": [
+    {
+     "zin": "De verlofaanvraag die je op 25 september hebt ingediend is niet akkoord bevonden.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "onderstaand": {
+   "count": 2,
+   "vormen": [
+    "onderstaande"
+   ],
+   "zinnen": [
+    {
+     "zin": "In het onderstaande overzicht zie je de actuele status van jouw verlofuren.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "overzicht": {
+   "count": 3,
+   "vormen": [
+    "overzicht",
+    "Overzicht"
+   ],
+   "zinnen": [
+    {
+     "zin": "In het onderstaande overzicht zie je de actuele status van jouw verlofuren.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    },
+    {
+     "zin": "Je vindt je transacties in de Reiskompas-portal of via de app onder Overzicht.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "kaart",
+   "kaart_dag": "2026-09-29"
+  },
+  "actueel": {
+   "count": 2,
+   "vormen": [
+    "actuele"
+   ],
+   "zinnen": [
+    {
+     "zin": "In het onderstaande overzicht zie je de actuele status van jouw verlofuren.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "status": {
+   "count": 2,
+   "vormen": [
+    "status"
+   ],
+   "zinnen": [
+    {
+     "zin": "In het onderstaande overzicht zie je de actuele status van jouw verlofuren.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verlofuur": {
+   "count": 8,
+   "vormen": [
+    "verlofuren"
+   ],
+   "zinnen": [
+    {
+     "zin": "In het onderstaande overzicht zie je de actuele status van jouw verlofuren.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    },
+    {
+     "zin": "Op dit moment heb je 61,75 verlofuren over.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    },
+    {
+     "zin": "Samenvatting verlofstatus: verlofuren in behandeling 16,00, restsaldo verlofuren 61,75.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    },
+    {
+     "zin": "Samenvatting verlofstatus: verlofuren in behandeling 0,00, restsaldo verlofuren 61,75.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "kaart",
+   "kaart_dag": "2026-09-29"
+  },
+  "overhebben": {
+   "count": 2,
+   "vormen": [
+    "heb … over"
+   ],
+   "zinnen": [
+    {
+     "zin": "Op dit moment heb je 61,75 verlofuren over.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "manager": {
+   "count": 1,
+   "vormen": [
+    "manager"
+   ],
+   "zinnen": [
+    {
+     "zin": "Opmerking manager: op verzoek afgekeurd.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "afkeuren": {
+   "count": 1,
+   "vormen": [
+    "afgekeurd"
+   ],
+   "zinnen": [
+    {
+     "zin": "Opmerking manager: op verzoek afgekeurd.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "samenvatting": {
+   "count": 2,
+   "vormen": [
+    "Samenvatting"
+   ],
+   "zinnen": [
+    {
+     "zin": "Samenvatting verlofstatus: verlofuren in behandeling 16,00, restsaldo verlofuren 61,75.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    },
+    {
+     "zin": "Samenvatting verlofstatus: verlofuren in behandeling 0,00, restsaldo verlofuren 61,75.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verlofstatus": {
+   "count": 2,
+   "vormen": [
+    "verlofstatus"
+   ],
+   "zinnen": [
+    {
+     "zin": "Samenvatting verlofstatus: verlofuren in behandeling 16,00, restsaldo verlofuren 61,75.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    },
+    {
+     "zin": "Samenvatting verlofstatus: verlofuren in behandeling 0,00, restsaldo verlofuren 61,75.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "behandeling": {
+   "count": 2,
+   "vormen": [
+    "behandeling"
+   ],
+   "zinnen": [
+    {
+     "zin": "Samenvatting verlofstatus: verlofuren in behandeling 16,00, restsaldo verlofuren 61,75.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    },
+    {
+     "zin": "Samenvatting verlofstatus: verlofuren in behandeling 0,00, restsaldo verlofuren 61,75.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "restsaldo": {
+   "count": 2,
+   "vormen": [
+    "restsaldo"
+   ],
+   "zinnen": [
+    {
+     "zin": "Samenvatting verlofstatus: verlofuren in behandeling 16,00, restsaldo verlofuren 61,75.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    },
+    {
+     "zin": "Samenvatting verlofstatus: verlofuren in behandeling 0,00, restsaldo verlofuren 61,75.",
+     "bron": "mail/2026-09-29_verlofaanvraag.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "account": {
+   "count": 1,
+   "vormen": [
+    "Reiskompas-account"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je hebt nog ritten of transacties openstaan in je Reiskompas-account.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "controleren": {
+   "count": 1,
+   "vormen": [
+    "Controleer"
+   ],
+   "zinnen": [
+    {
+     "zin": "Controleer en bevestig ze zodat al je declaraties voor deze periode worden verwerkt.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bevestigen": {
+   "count": 5,
+   "vormen": [
+    "bevestig",
+    "bevestigd",
+    "bevestigen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Controleer en bevestig ze zodat al je declaraties voor deze periode worden verwerkt.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Transacties die zijn gemaakt bij onze mobiliteitspartners zullen na 10 dagen automatisch bevestigd worden op de door jouw werkgever vooraf ingestelde reisdoelen.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Handmatig ingevoerde transacties en GPS-registraties worden nooit automatisch bevestigd.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Die moet je altijd zelf bevestigen.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Heb je hulp nodig bij het bevestigen van een rit?",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "declaratie": {
+   "count": 1,
+   "vormen": [
+    "declaraties"
+   ],
+   "zinnen": [
+    {
+     "zin": "Controleer en bevestig ze zodat al je declaraties voor deze periode worden verwerkt.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "portal": {
+   "count": 1,
+   "vormen": [
+    "Reiskompas-portal"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je vindt je transacties in de Reiskompas-portal of via de app onder Overzicht.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "openen": {
+   "count": 1,
+   "vormen": [
+    "openen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je kunt ze ook openen via het meldingenoverzicht (takenknop rechtsboven).",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "meldingenoverzicht": {
+   "count": 1,
+   "vormen": [
+    "meldingenoverzicht"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je kunt ze ook openen via het meldingenoverzicht (takenknop rechtsboven).",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "takenknop": {
+   "count": 1,
+   "vormen": [
+    "takenknop"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je kunt ze ook openen via het meldingenoverzicht (takenknop rechtsboven).",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "rechtsboven": {
+   "count": 1,
+   "vormen": [
+    "rechtsboven"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je kunt ze ook openen via het meldingenoverzicht (takenknop rechtsboven).",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "mobiliteitspartner": {
+   "count": 1,
+   "vormen": [
+    "mobiliteitspartners"
+   ],
+   "zinnen": [
+    {
+     "zin": "Transacties die zijn gemaakt bij onze mobiliteitspartners zullen na 10 dagen automatisch bevestigd worden op de door jouw werkgever vooraf ingestelde reisdoelen.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "werkgever": {
+   "count": 1,
+   "vormen": [
+    "werkgever"
+   ],
+   "zinnen": [
+    {
+     "zin": "Transacties die zijn gemaakt bij onze mobiliteitspartners zullen na 10 dagen automatisch bevestigd worden op de door jouw werkgever vooraf ingestelde reisdoelen.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "reisdoel": {
+   "count": 1,
+   "vormen": [
+    "reisdoelen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Transacties die zijn gemaakt bij onze mobiliteitspartners zullen na 10 dagen automatisch bevestigd worden op de door jouw werkgever vooraf ingestelde reisdoelen.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "handmatig": {
+   "count": 1,
+   "vormen": [
+    "Handmatig"
+   ],
+   "zinnen": [
+    {
+     "zin": "Handmatig ingevoerde transacties en GPS-registraties worden nooit automatisch bevestigd.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "invoeren": {
+   "count": 1,
+   "vormen": [
+    "ingevoerde"
+   ],
+   "zinnen": [
+    {
+     "zin": "Handmatig ingevoerde transacties en GPS-registraties worden nooit automatisch bevestigd.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "registratie": {
+   "count": 1,
+   "vormen": [
+    "GPS-registraties"
+   ],
+   "zinnen": [
+    {
+     "zin": "Handmatig ingevoerde transacties en GPS-registraties worden nooit automatisch bevestigd.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "hulp": {
+   "count": 1,
+   "vormen": [
+    "hulp"
+   ],
+   "zinnen": [
+    {
+     "zin": "Heb je hulp nodig bij het bevestigen van een rit?",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "lezen": {
+   "count": 1,
+   "vormen": [
+    "lees"
+   ],
+   "zinnen": [
+    {
+     "zin": "In onze FAQ lees je stap voor stap hoe het werkt.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "stap": {
+   "count": 2,
+   "vormen": [
+    "stap"
+   ],
+   "zinnen": [
+    {
+     "zin": "In onze FAQ lees je stap voor stap hoe het werkt.",
+     "bron": "mail/2026-09-29_openstaande-ritten.md"
+    }
+   ],
+   "status": "kern"
   }
  }
 }
