@@ -1,5 +1,5 @@
 {
- "laatste_run": "2026-09-29",
+ "laatste_run": "2026-09-30",
  "verwerkt": [
   "mail/2026-09-22_reispas-vertraging.md",
   "mail/2026-09-23_kennissessie-looncomponenten.md",
@@ -10,7 +10,9 @@
   "mail/2026-09-28_tickets-reispunten.md",
   "mail/2026-09-29_kennissessie-verzet.md",
   "mail/2026-09-29_openstaande-ritten.md",
-  "mail/2026-09-29_verlofaanvraag.md"
+  "mail/2026-09-29_verlofaanvraag.md",
+  "mail/2026-09-30_all-hands.md",
+  "mail/2026-09-30_gdpr-verwijderverzoek.md"
  ],
  "lemmas": {
   "goedemiddag": {
@@ -261,17 +263,22 @@
    "status": "bekend"
   },
   "meeting": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "meeting"
+    "meeting",
+    "meetings"
    ],
    "zinnen": [
     {
      "zin": "Vandaag nog heeft Kaartnet in een meeting aangegeven dat onze aantallen voor hen geen probleem zijn.",
      "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Waarom niet meer lange meetings op zo'n dag!",
+     "bron": "mail/2026-09-30_all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "probleem": {
    "count": 1,
@@ -495,10 +502,11 @@
    "status": "nieuw"
   },
   "vraag": {
-   "count": 7,
+   "count": 8,
    "vormen": [
     "vragen",
-    "Vragen"
+    "Vragen",
+    "vraag"
    ],
    "zinnen": [
     {
@@ -528,6 +536,10 @@
     {
      "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
      "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Meteen een vraag in het verlengde hiervan, is er een endpoint om de gebruiker en zijn data in de Kaartnet DB te laten verwijderen?",
+     "bron": "mail/2026-09-30_gdpr-verwijderverzoek.md"
     }
    ],
    "status": "bekend"
@@ -1030,7 +1042,8 @@
      "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-09-30"
   },
   "inhoud": {
    "count": 1,
@@ -1304,7 +1317,7 @@
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kern"
   },
   "volledig": {
    "count": 2,
@@ -1604,7 +1617,8 @@
      "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-09-30"
   },
   "brengen": {
    "count": 1,
@@ -1795,7 +1809,7 @@
      "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "indien": {
    "count": 2,
@@ -2279,10 +2293,11 @@
      "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-09-30"
   },
   "tribune": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "tribune"
    ],
@@ -2290,9 +2305,14 @@
     {
      "zin": "Alle nerds op een tribune.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Alleen op de tribune mee te krijgen, geen online aanwezigheid mogelijk.",
+     "bron": "mail/2026-09-30_all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-09-30"
   },
   "uitdaging": {
    "count": 1,
@@ -2461,7 +2481,7 @@
      "bron": "mail/2026-09-29_openstaande-ritten.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "leven": {
    "count": 1,
@@ -3267,9 +3287,10 @@
    "status": "nieuw"
   },
   "lang": {
-   "count": 2,
+   "count": 3,
    "vormen": [
-    "lang"
+    "lang",
+    "lange"
    ],
    "zinnen": [
     {
@@ -3279,9 +3300,13 @@
     {
      "zin": "In elk team zit iemand die dit al lang wil.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Waarom niet meer lange meetings op zo'n dag!",
+     "bron": "mail/2026-09-30_all-hands.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "vaak": {
    "count": 1,
@@ -3486,7 +3511,8 @@
      "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-09-30"
   },
   "zeggen": {
    "count": 1,
@@ -3516,7 +3542,7 @@
      "bron": "mail/2026-09-28_evenementen.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "besluit": {
    "count": 2,
@@ -5224,14 +5250,19 @@
    "status": "nieuw"
   },
   "verwijderen": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "Verwijderen"
+    "Verwijderen",
+    "verwijderen"
    ],
    "zinnen": [
     {
      "zin": "Verwijderen Reispunten-ID's",
      "bron": "mail/2026-09-28_tickets-reispunten.md"
+    },
+    {
+     "zin": "Meteen een vraag in het verlengde hiervan, is er een endpoint om de gebruiker en zijn data in de Kaartnet DB te laten verwijderen?",
+     "bron": "mail/2026-09-30_gdpr-verwijderverzoek.md"
     }
    ],
    "status": "kern"
@@ -6360,6 +6391,123 @@
     }
    ],
    "status": "kern"
+  },
+  "plenair": {
+   "count": 1,
+   "vormen": [
+    "plenaire"
+   ],
+   "zinnen": [
+    {
+     "zin": "Ja, op de dag dat we ook een plenaire hebben.",
+     "bron": "mail/2026-09-30_all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "meekrijgen": {
+   "count": 1,
+   "vormen": [
+    "mee te krijgen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Alleen op de tribune mee te krijgen, geen online aanwezigheid mogelijk.",
+     "bron": "mail/2026-09-30_all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "aanwezigheid": {
+   "count": 1,
+   "vormen": [
+    "aanwezigheid"
+   ],
+   "zinnen": [
+    {
+     "zin": "Alleen op de tribune mee te krijgen, geen online aanwezigheid mogelijk.",
+     "bron": "mail/2026-09-30_all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "boeken": {
+   "count": 1,
+   "vormen": [
+    "boeken"
+   ],
+   "zinnen": [
+    {
+     "zin": "Nu met time-code bij het boeken al!",
+     "bron": "mail/2026-09-30_all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "idee": {
+   "count": 1,
+   "vormen": [
+    "idee"
+   ],
+   "zinnen": [
+    {
+     "zin": "Zelfde idee als altijd.",
+     "bron": "mail/2026-09-30_all-hands.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verlengde": {
+   "count": 1,
+   "vormen": [
+    "verlengde"
+   ],
+   "zinnen": [
+    {
+     "zin": "Meteen een vraag in het verlengde hiervan, is er een endpoint om de gebruiker en zijn data in de Kaartnet DB te laten verwijderen?",
+     "bron": "mail/2026-09-30_gdpr-verwijderverzoek.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "endpoint": {
+   "count": 1,
+   "vormen": [
+    "endpoint"
+   ],
+   "zinnen": [
+    {
+     "zin": "Meteen een vraag in het verlengde hiervan, is er een endpoint om de gebruiker en zijn data in de Kaartnet DB te laten verwijderen?",
+     "bron": "mail/2026-09-30_gdpr-verwijderverzoek.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "gebruiker": {
+   "count": 1,
+   "vormen": [
+    "gebruiker"
+   ],
+   "zinnen": [
+    {
+     "zin": "Meteen een vraag in het verlengde hiervan, is er een endpoint om de gebruiker en zijn data in de Kaartnet DB te laten verwijderen?",
+     "bron": "mail/2026-09-30_gdpr-verwijderverzoek.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "data": {
+   "count": 1,
+   "vormen": [
+    "data"
+   ],
+   "zinnen": [
+    {
+     "zin": "Meteen een vraag in het verlengde hiervan, is er een endpoint om de gebruiker en zijn data in de Kaartnet DB te laten verwijderen?",
+     "bron": "mail/2026-09-30_gdpr-verwijderverzoek.md"
+    }
+   ],
+   "status": "nieuw"
   }
  }
 }
