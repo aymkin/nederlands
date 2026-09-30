@@ -4,8 +4,8 @@
 #deck:Frequentie::Werk
 #columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
 #tags column:7
-verwerken	2	Bevestig ze, zodat al je declaraties worden verwerkt.	обрабатывать (заявку, данные)	Подтвердите их, чтобы все ваши декларации были обработаны.	[sound:werk_verwerken.mp3]	frequentie::werk frequentie::werk::dag2026-09-30
+verwerken	2	Bevestig ze, zodat al je declaraties worden verwerkt.	оформлять (декларацию, заявку)	Подтвердите их, чтобы все ваши декларации были оформлены.	[sound:werk_verwerken.mp3]	frequentie::werk frequentie::werk::dag2026-09-30
 rekening houden met	2	Dan weten wij waar we rekening mee moeten houden.	учитывать, принимать во внимание	Тогда мы будем знать, что нужно учитывать.	[sound:werk_rekening.mp3]	frequentie::werk frequentie::werk::dag2026-09-30
 gerust	2	Neem gerust contact op met onze klantenservice.	смело, не стесняясь (в просьбе)	Смело обращайтесь в нашу службу поддержки.	[sound:werk_gerust.mp3]	frequentie::werk frequentie::werk::dag2026-09-30
 de tribune	2	Het is alleen op de tribune mee te krijgen.	трибуна, зрительские ряды	Это можно застать только вживую, в зале.	[sound:werk_tribune.mp3]	frequentie::werk frequentie::werk::dag2026-09-30
-juist	2	Dat doe ik zelden, en juist dat zegt hoe belangrijk dit is.	именно, как раз; правильный	Я делаю это редко, и именно это говорит о том, насколько это важно.	[sound:werk_juist.mp3]	frequentie::werk frequentie::werk::dag2026-09-30
+juist	2	Dat doe ik zelden, en juist dat zegt hoe belangrijk dit is.	именно, как раз	Я делаю это редко, и именно это говорит о том, насколько это важно.	[sound:werk_juist.mp3]	frequentie::werk frequentie::werk::dag2026-09-30
