@@ -1,5 +1,5 @@
 {
- "laatste_run": "2026-09-30",
+ "laatste_run": "2026-10-02",
  "verwerkt": [
   "mail/2026-09-22_reispas-vertraging.md",
   "mail/2026-09-23_kennissessie-looncomponenten.md",
@@ -12,7 +12,11 @@
   "mail/2026-09-29_openstaande-ritten.md",
   "mail/2026-09-29_verlofaanvraag.md",
   "mail/2026-09-30_all-hands.md",
-  "mail/2026-09-30_gdpr-verwijderverzoek.md"
+  "mail/2026-09-30_gdpr-verwijderverzoek.md",
+  "mail/2026-09-30_idee-waardeproces.md",
+  "mail/2026-09-30_or-stemronde.md",
+  "mail/2026-10-02_huisregels-kantoor.md",
+  "mail/2026-10-02_verbouwing-klimaatsysteem.md"
  ],
  "lemmas": {
   "goedemiddag": {
@@ -502,7 +506,7 @@
    "status": "nieuw"
   },
   "vraag": {
-   "count": 8,
+   "count": 10,
    "vormen": [
     "vragen",
     "Vragen",
@@ -540,6 +544,14 @@
     {
      "zin": "Meteen een vraag in het verlengde hiervan, is er een endpoint om de gebruiker en zijn data in de Kaartnet DB te laten verwijderen?",
      "bron": "mail/2026-09-30_gdpr-verwijderverzoek.md"
+    },
+    {
+     "zin": "Heb je een snelle vraag?",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    },
+    {
+     "zin": "Zijn er nog vragen, neem dan gerust contact met mij op.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
     }
    ],
    "status": "bekend"
@@ -628,7 +640,7 @@
    "status": "nieuw"
   },
   "vast": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "vaste"
    ],
@@ -636,6 +648,10 @@
     {
      "zin": "NB: vrijdagmiddag is mijn vaste vrije dagdeel.",
      "bron": "mail/2026-09-22_reispas-vertraging.md"
+    },
+    {
+     "zin": "Op een paar vaste momenten kijkt een kleine groep collega's kritisch mee.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "nieuw"
@@ -797,14 +813,19 @@
    "status": "nieuw"
   },
   "voelen": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "voel"
+    "voel",
+    "voelen"
    ],
    "zinnen": [
     {
      "zin": "Komt deze alsnog beter uit, voel je vrij om dan te switchen en de andere alsnog af te wijzen.",
      "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Dat gaat over de sfeer, maar ook over een opgeruimd kantoor, rekening houden met elkaar en je daar allemaal een stukje verantwoordelijk voor voelen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "nieuw"
@@ -905,10 +926,11 @@
    "kaart_dag": "2026-09-24"
   },
   "gebruiken": {
-   "count": 4,
+   "count": 7,
    "vormen": [
     "gebruikt",
-    "gebruiken"
+    "gebruiken",
+    "gebruikte"
    ],
    "zinnen": [
     {
@@ -926,6 +948,18 @@
     {
      "zin": "Dus pakken wij het op en bepalen we met focus hoe we het op onze manier kunnen gebruiken.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Ruim je gebruikte vaat aan het eind van de dag op.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "In de pantry's zetten we een speciale spray klaar die je daarvoor kunt gebruiken.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Breng na de lunch al het gebruikte servies naar de spoelkeuken en zet het in de juiste bak, zodat het facilitaire team het kan schoonmaken.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "kern"
@@ -957,14 +991,24 @@
    "status": "nieuw"
   },
   "zorgen": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "zorg"
+    "zorg",
+    "zorgen",
+    "Zorg"
    ],
    "zinnen": [
     {
      "zin": "Wil je weten wat flexibele looncomponenten zijn, hoe je deze gebruikt en welke vervolgstappen we nog moeten nemen, zorg dan dat je erbij bent.",
      "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "In Oslo, Praag en Wenen zorgen we dat de stoelen weer compleet zijn.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Zorg ervoor dat de jerrycans leeg zijn en de airco's uitstaan.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
     }
    ],
    "status": "nieuw"
@@ -983,14 +1027,23 @@
    "status": "nieuw"
   },
   "meenemen": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "neem … mee"
+    "neem … mee",
+    "Neem … mee"
    ],
    "zinnen": [
     {
      "zin": "Heb je het al gebruikt, maar heb je nog vragen, neem die mee naar de sessie.",
      "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Neem je eigen servies weer mee en ruim het op.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Neem je een stoel mee naar een andere ruimte, zet hem dan na afloop weer terug.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "nieuw"
@@ -1111,9 +1164,10 @@
    "status": "nieuw"
   },
   "kennen": {
-   "count": 3,
+   "count": 4,
    "vormen": [
-    "kennen"
+    "kennen",
+    "kende"
    ],
    "zinnen": [
     {
@@ -1127,6 +1181,10 @@
     {
      "zin": "Jullie kennen je teams.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Dat willen we graag met je delen, ook als je dit proces nog niet kende.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "bekend"
@@ -1145,7 +1203,7 @@
    "status": "nieuw"
   },
   "gebeuren": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "gebeuren"
    ],
@@ -1153,6 +1211,10 @@
     {
      "zin": "Wat moet er nog gebeuren",
      "bron": "mail/2026-09-23_kennissessie-looncomponenten.md"
+    },
+    {
+     "zin": "Koffie knoeien kan natuurlijk iedereen gebeuren, dat is niet erg.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "nieuw"
@@ -1171,7 +1233,7 @@
    "status": "nieuw"
   },
   "nieuw": {
-   "count": 4,
+   "count": 8,
    "vormen": [
     "nieuwe",
     "nieuw"
@@ -1192,6 +1254,22 @@
     {
      "zin": "Landen gaat vóór nieuw, half werk laten liggen is de duurste move die er is.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "We hebben recent een nieuwe manier ingevoerd om te bepalen welke ideeën we als bedrijf oppakken, en die heeft gisteren zijn eerste resultaten opgeleverd.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Omdat dat misschien niet voor iedereen even duidelijk is (we hebben er de afgelopen tijd ook veel nieuwe collega's bij gekregen), zetten we de huisregels hieronder nog even op een rij.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Spreekkamer Oslo op de 5e verdieping heeft onlangs nieuwe meubels gekregen en is daardoor weer echt representatief.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Dan de langverwachte update… op maandag 16 november worden de nieuwe koelinstallaties op het dak geïnstalleerd!",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
     }
    ],
    "status": "bekend"
@@ -1307,7 +1385,7 @@
    "status": "nieuw"
   },
   "helaas": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "helaas"
    ],
@@ -1315,6 +1393,10 @@
     {
      "zin": "Volgens de gegevens van de vervoerder is je reis helaas niet volledig geregistreerd: er ontbreekt een in- of uitcheck.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "We zien helaas veel vlekken op het tapijt.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "kern"
@@ -1500,14 +1582,19 @@
    "status": "kern"
   },
   "rekenen": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "rekent"
+    "rekent",
+    "rekenen"
    ],
    "zinnen": [
     {
      "zin": "In zulke gevallen rekent de vervoerder (ongeacht de oorzaak) het volledige instaptarief.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Het is voor het facilitaire team en de schoonmaak niet te doen om alles bij te houden, dus we rekenen op ieders hulp.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "nieuw"
@@ -1556,7 +1643,7 @@
    "status": "nieuw"
   },
   "volgend": {
-   "count": 3,
+   "count": 5,
    "vormen": [
     "volgende"
    ],
@@ -1572,6 +1659,14 @@
     {
      "zin": "De tijd heeft me ingehaald, volgende week is de audit en daarvoor heb ik meer tijd nodig dan gedacht.",
      "bron": "mail/2026-09-29_kennissessie-verzet.md"
+    },
+    {
+     "zin": "Alleen ideeën die dat overtuigend kunnen laten zien, gaan door naar de volgende stap.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "De mobiele airco's worden volgende week opgehaald.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "bekend"
@@ -1621,14 +1716,19 @@
    "kaart_dag": "2026-09-30"
   },
   "brengen": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "gebracht"
+    "gebracht",
+    "Breng"
    ],
    "zinnen": [
     {
      "zin": "De vervoerder heeft het instaptarief in rekening gebracht.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Breng na de lunch al het gebruikte servies naar de spoelkeuken en zet het in de juiste bak, zodat het facilitaire team het kan schoonmaken.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "nieuw"
@@ -1673,10 +1773,11 @@
    "kaart_dag": "2026-09-24"
   },
   "vragen": {
-   "count": 3,
+   "count": 5,
    "vormen": [
     "vragen",
-    "gevraagd"
+    "gevraagd",
+    "Vraag"
    ],
    "zinnen": [
     {
@@ -1690,6 +1791,14 @@
     {
      "zin": "Heb je reeds restitutie gevraagd?",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Vraag het gerust aan Sander of Femke.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Vraag het gewoon even.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "bekend"
@@ -1892,7 +2001,7 @@
    "status": "nieuw"
   },
   "automatisch": {
-   "count": 5,
+   "count": 6,
    "vormen": [
     "automatisch"
    ],
@@ -1916,6 +2025,10 @@
     {
      "zin": "Handmatig ingevoerde transacties en GPS-registraties worden nooit automatisch bevestigd.",
      "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Een tool om cao-instellingen automatisch te configureren, bedacht en uitgewerkt door Lotte Verbeek.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "bekend"
@@ -2017,14 +2130,24 @@
    "status": "bekend"
   },
   "lukken": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "gelukt"
+    "gelukt",
+    "Lukt",
+    "lukt"
    ],
    "zinnen": [
     {
      "zin": "Is het gelukt om restitutie aan te vragen, vergeet dan niet om het restitutiebedrag op te halen bij een kaartautomaat.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "Lukt dat niet?",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Zie je iets wat niet klopt, of lukt iets niet?",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "nieuw"
@@ -2073,10 +2196,11 @@
    "status": "nieuw"
   },
   "ophalen": {
-   "count": 2,
+   "count": 4,
    "vormen": [
     "op te halen",
-    "opgehaalde"
+    "opgehaalde",
+    "opgehaald"
    ],
    "zinnen": [
     {
@@ -2086,9 +2210,18 @@
     {
      "zin": "De transactie in de Reiskompas-omgeving wordt niet aangepast, wel verschijnt het opgehaalde restitutiebedrag als nieuwe transactie in jouw Reiskompas-omgeving.",
      "bron": "mail/2026-09-24_gemiste-uitcheck.md"
+    },
+    {
+     "zin": "De mobiele airco's worden volgende week opgehaald.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Vrijdag 30 oktober worden de mobiele airco's opgehaald.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-10-02"
   },
   "kaartautomaat": {
    "count": 1,
@@ -2279,7 +2412,7 @@
    "kaart_dag": "2026-09-29"
   },
   "gerust": {
-   "count": 2,
+   "count": 6,
    "vormen": [
     "gerust"
    ],
@@ -2291,6 +2424,22 @@
     {
      "zin": "Heb je vragen of opmerkingen, neem dan gerust contact op met onze klantenservice.",
      "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Vraag het gerust aan Sander of Femke.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Loop gerust naar een van ons toe.",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    },
+    {
+     "zin": "Pak gerust, maar ook hier geldt: denk aan je collega's die op een ander moment komen en houd rekening met elkaar.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Zijn er nog vragen, neem dan gerust contact met mij op.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
     }
    ],
    "status": "kaart",
@@ -2341,9 +2490,10 @@
    "status": "nieuw"
   },
   "moment": {
-   "count": 3,
+   "count": 4,
    "vormen": [
-    "moment"
+    "moment",
+    "momenten"
    ],
    "zinnen": [
     {
@@ -2353,19 +2503,28 @@
     {
      "zin": "Op dit moment heb je 61,75 verlofuren over.",
      "bron": "mail/2026-09-29_verlofaanvraag.md"
+    },
+    {
+     "zin": "Op een paar vaste momenten kijkt een kleine groep collega's kritisch mee.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "bekend"
   },
   "koffie": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "koffie"
+    "koffie",
+    "Koffie"
    ],
    "zinnen": [
     {
      "zin": "Een sidequest is een uitdaging die spontaan spawnt, meestal op het moment dat je koffie wilde halen.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Koffie knoeien kan natuurlijk iedereen gebeuren, dat is niet erg.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "nieuw"
@@ -2497,14 +2656,19 @@
    "status": "nieuw"
   },
   "speciaal": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "specialer"
+    "specialer",
+    "speciale"
    ],
    "zinnen": [
     {
      "zin": "Een sidequest is als de saus op je frikandel, het maakt het leven net wat specialer.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "In de pantry's zetten we een speciale spray klaar die je daarvoor kunt gebruiken.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "nieuw"
@@ -2562,14 +2726,19 @@
    "status": "nieuw"
   },
   "instelling": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "instelling"
+    "instelling",
+    "cao-instellingen"
    ],
    "zinnen": [
     {
      "zin": "Deze instelling heeft voorrang op het algoritme dat nu bepaalt welke modaliteit en welk vervoermiddel gebruikt worden bij het automatisch aanmaken van woon-werkritten.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Een tool om cao-instellingen automatisch te configureren, bedacht en uitgewerkt door Lotte Verbeek.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "nieuw"
@@ -2627,7 +2796,7 @@
    "status": "bekend"
   },
   "bepalen": {
-   "count": 3,
+   "count": 5,
    "vormen": [
     "bepaalt",
     "bepalen"
@@ -2644,6 +2813,14 @@
     {
      "zin": "Niemand bepaalt wie mee mag doen.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "We hebben recent een nieuwe manier ingevoerd om te bepalen welke ideeën we als bedrijf oppakken, en die heeft gisteren zijn eerste resultaten opgeleverd.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Jouw stem bepaalt wie de komende tijd namens jullie meepraat over onderwerpen die ons allemaal raken.",
+     "bron": "mail/2026-09-30_or-stemronde.md"
     }
    ],
    "status": "kaart",
@@ -2663,14 +2840,24 @@
    "status": "nieuw"
   },
   "aanmaken": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "aanmaken"
+    "aanmaken",
+    "maak … aan",
+    "Maak … aan"
    ],
    "zinnen": [
     {
      "zin": "Deze instelling heeft voorrang op het algoritme dat nu bepaalt welke modaliteit en welk vervoermiddel gebruikt worden bij het automatisch aanmaken van woon-werkritten.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Weet je niet waar ze naartoe moeten, maak dan een ticket aan.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Maak dan een ticket aan.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "nieuw"
@@ -2702,7 +2889,7 @@
    "status": "nieuw"
   },
   "vinden": {
-   "count": 3,
+   "count": 4,
    "vormen": [
     "gevonden",
     "vinden",
@@ -2720,6 +2907,10 @@
     {
      "zin": "Je vindt je transacties in de Reiskompas-portal of via de app onder Overzicht.",
      "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "We vinden het belangrijk dat iedereen met plezier naar kantoor komt.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "bekend"
@@ -2816,7 +3007,7 @@
    "status": "kern"
   },
   "opleveren": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "opgeleverd"
    ],
@@ -2824,6 +3015,10 @@
     {
      "zin": "Repeterende facturatie: technisch opgeleverd!",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "We hebben recent een nieuwe manier ingevoerd om te bepalen welke ideeën we als bedrijf oppakken, en die heeft gisteren zijn eerste resultaten opgeleverd.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "nieuw"
@@ -2842,7 +3037,7 @@
    "status": "kern"
   },
   "ding": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "dingen"
    ],
@@ -2850,6 +3045,10 @@
     {
      "zin": "Thijs kan zelf dingen!",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Het betekent dat we veel meer onze tijd en energie willen besteden aan de dingen die er echt toe doen - in plaats van aan alles tegelijk een beetje.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "nieuw"
@@ -2907,14 +3106,19 @@
    "status": "nieuw"
   },
   "snel": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "snel"
+    "snel",
+    "snelle"
    ],
    "zinnen": [
     {
      "zin": "Even snel, minder flaky.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Heb je een snelle vraag?",
+     "bron": "mail/2026-09-30_or-stemronde.md"
     }
    ],
    "status": "nieuw"
@@ -2937,9 +3141,10 @@
    "status": "nieuw"
   },
   "ticket": {
-   "count": 2,
+   "count": 4,
    "vormen": [
-    "tickets"
+    "tickets",
+    "ticket"
    ],
    "zinnen": [
     {
@@ -2949,9 +3154,18 @@
     {
      "zin": "Steeds minder tickets.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Weet je niet waar ze naartoe moeten, maak dan een ticket aan.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Maak dan een ticket aan.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
-   "status": "nieuw"
+   "status": "kaart",
+   "kaart_dag": "2026-10-02"
   },
   "week": {
    "count": 4,
@@ -3158,14 +3372,19 @@
    "status": "nieuw"
   },
   "sluiten": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "gesloten"
+    "gesloten",
+    "Sluit"
    ],
    "zinnen": [
     {
      "zin": "58 bugs gesloten, waarvan 21 meer dan 1 uur werk waren.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Sluit dan ook de ramen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "nieuw"
@@ -3348,7 +3567,7 @@
    "status": "kern"
   },
   "horen": {
-   "count": 2,
+   "count": 3,
    "vormen": [
     "gehoord",
     "horen"
@@ -3361,6 +3580,10 @@
     {
      "zin": "Eerst horen hoe jullie werken en waar het schuurt.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Staan er spullen die daar niet horen?",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "nieuw"
@@ -3528,7 +3751,7 @@
    "status": "nieuw"
   },
   "belangrijk": {
-   "count": 2,
+   "count": 3,
    "vormen": [
     "belangrijk"
    ],
@@ -3540,6 +3763,10 @@
     {
      "zin": "Voor ons heel belangrijk: beantwoord deze door te accepteren of te weigeren, dan weten wij waar we rekening mee moeten houden qua aantallen.",
      "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "We vinden het belangrijk dat iedereen met plezier naar kantoor komt.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "bekend"
@@ -3732,20 +3959,25 @@
    "status": "nieuw"
   },
   "oppakken": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "pakken"
+    "pakken",
+    "oppakken"
    ],
    "zinnen": [
     {
      "zin": "Dus pakken wij het op en bepalen we met focus hoe we het op onze manier kunnen gebruiken.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "We hebben recent een nieuwe manier ingevoerd om te bepalen welke ideeën we als bedrijf oppakken, en die heeft gisteren zijn eerste resultaten opgeleverd.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "nieuw"
   },
   "manier": {
-   "count": 1,
+   "count": 3,
    "vormen": [
     "manier"
    ],
@@ -3753,6 +3985,14 @@
     {
      "zin": "Dus pakken wij het op en bepalen we met focus hoe we het op onze manier kunnen gebruiken.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "We hebben recent een nieuwe manier ingevoerd om te bepalen welke ideeën we als bedrijf oppakken, en die heeft gisteren zijn eerste resultaten opgeleverd.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Een verbeterde manier om op afroep een huurauto te regelen, aangedragen door Pim Hendrikx.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "nieuw"
@@ -3868,7 +4108,7 @@
    "status": "nieuw"
   },
   "team": {
-   "count": 15,
+   "count": 17,
    "vormen": [
     "team",
     "teams"
@@ -3929,19 +4169,32 @@
     {
      "zin": "In teams van maximaal zes personen raad je hits en plaats je ze op de juiste plek in de tijdlijn.",
      "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "Het is voor het facilitaire team en de schoonmaak niet te doen om alles bij te houden, dus we rekenen op ieders hulp.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Breng na de lunch al het gebruikte servies naar de spoelkeuken en zet het in de juiste bak, zodat het facilitaire team het kan schoonmaken.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "bekend"
   },
   "kritisch": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "Kritische"
+    "Kritische",
+    "kritisch"
    ],
    "zinnen": [
     {
      "zin": "Kritische vragen zijn welkom.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Op een paar vaste momenten kijkt een kleine groep collega's kritisch mee.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "nieuw"
@@ -4116,7 +4369,7 @@
    "status": "bekend"
   },
   "bouwen": {
-   "count": 3,
+   "count": 4,
    "vormen": [
     "bouwen",
     "gebouwd",
@@ -4134,6 +4387,10 @@
     {
      "zin": "AI bouwt binnen het plan.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "En het betekent ook: hoe beter jij je idee onderbouwt, hoe groter de kans dat het ook echt gebouwd wordt.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "bekend"
@@ -4433,7 +4690,7 @@
    "status": "nieuw"
   },
   "houden": {
-   "count": 2,
+   "count": 3,
    "vormen": [
     "houdt",
     "houden"
@@ -4446,6 +4703,10 @@
     {
      "zin": "Voor ons heel belangrijk: beantwoord deze door te accepteren of te weigeren, dan weten wij waar we rekening mee moeten houden qua aantallen.",
      "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "Dat willen we graag zo houden.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "nieuw"
@@ -4792,14 +5053,23 @@
    "status": "bekend"
   },
   "klein": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "kleine"
+    "kleine",
+    "klein"
    ],
    "zinnen": [
     {
      "zin": "Werk gaat in kleine, heldere blokken.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Elk idee - groot of klein - doorloopt een aantal stappen.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Precies het soort idee dat het proces mogelijk maakt: klein beginnen, goed onderbouwen, snel groen licht.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "nieuw"
@@ -4818,14 +5088,23 @@
    "status": "nieuw"
   },
   "blok": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "blokken"
+    "blokken",
+    "blok"
    ],
    "zinnen": [
     {
      "zin": "Werk gaat in kleine, heldere blokken.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "Staat er een bij jullie blok?",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "We beginnen met het blok van Planning, Commercie en Binnendienst.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
     }
    ],
    "status": "nieuw"
@@ -4874,14 +5153,19 @@
    "status": "nieuw"
   },
   "afronden": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "Afronden"
+    "Afronden",
+    "afgerond"
    ],
    "zinnen": [
     {
      "zin": "Afronden.",
      "bron": "mail/2026-09-24_it-all-hands.md"
+    },
+    {
+     "zin": "De monteurs van Tuinstra Klimaattechniek hebben al zo veel mogelijk voorbereidende werkzaamheden uitgevoerd, zodat dit zo snel mogelijk afgerond kan worden.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
     }
    ],
    "status": "nieuw"
@@ -5017,7 +5301,7 @@
    "status": "nieuw"
   },
   "nodig": {
-   "count": 5,
+   "count": 6,
    "vormen": [
     "nodig"
    ],
@@ -5041,6 +5325,10 @@
     {
      "zin": "Heb je hulp nodig bij het bevestigen van een rit?",
      "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Heb je toch iets nodig uit de keuken?",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "bekend"
@@ -5233,9 +5521,10 @@
    "status": "nieuw"
   },
   "volgen": {
-   "count": 2,
+   "count": 3,
    "vormen": [
-    "volgen"
+    "volgen",
+    "volgt"
    ],
    "zinnen": [
     {
@@ -5245,6 +5534,10 @@
     {
      "zin": "Meer details volgen binnenkort.",
      "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "De definitieve planning van wanneer de beeldschermen worden weggehaald en weer teruggezet, volgt zo snel mogelijk.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
     }
    ],
    "status": "nieuw"
@@ -5298,7 +5591,7 @@
    "status": "nieuw"
   },
   "collega": {
-   "count": 1,
+   "count": 8,
    "vormen": [
     "collega's"
    ],
@@ -5306,9 +5599,37 @@
     {
      "zin": "Hoi collega's!",
      "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "Hi collega's,",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Op een paar vaste momenten kijkt een kleine groep collega's kritisch mee.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Beste collega's,",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Omdat dat misschien niet voor iedereen even duidelijk is (we hebben er de afgelopen tijd ook veel nieuwe collega's bij gekregen), zetten we de huisregels hieronder nog even op een rij.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Denk bij het opscheppen aan je collega's die na jou komen, zodat er voor iedereen genoeg is.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Pak gerust, maar ook hier geldt: denk aan je collega's die op een ander moment komen en houd rekening met elkaar.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Beste collega's,",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "jaar": {
    "count": 1,
@@ -5350,14 +5671,23 @@
    "status": "nieuw"
   },
   "planning": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "planning"
+    "planning",
+    "Planning"
    ],
    "zinnen": [
     {
      "zin": "Er staan dit jaar nog twee leuke evenementen op de planning!",
      "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "We beginnen met het blok van Planning, Commercie en Binnendienst.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    },
+    {
+     "zin": "De definitieve planning van wanneer de beeldschermen worden weggehaald en weer teruggezet, volgt zo snel mogelijk.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
     }
    ],
    "status": "nieuw"
@@ -5574,14 +5904,23 @@
    "status": "nieuw"
   },
   "precies": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "precies"
+    "precies",
+    "Precies"
    ],
    "zinnen": [
     {
      "zin": "Wat het menu gaat worden weten we nog niet precies.",
      "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "Precies het soort idee dat het proces mogelijk maakt: klein beginnen, goed onderbouwen, snel groen licht.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Meer weten over hoe het proces precies werkt?",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "nieuw"
@@ -5630,14 +5969,19 @@
    "status": "nieuw"
   },
   "alvast": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "alvast"
+    "alvast",
+    "Alvast"
    ],
    "zinnen": [
     {
      "zin": "Het is nog vroeg, maar dan kan je de data alvast in je agenda zetten.",
      "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "Alvast bedankt voor jullie medewerking!",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
     }
    ],
    "status": "nieuw"
@@ -5669,7 +6013,7 @@
    "status": "nieuw"
   },
   "binnenkort": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "binnenkort"
    ],
@@ -5677,19 +6021,32 @@
     {
      "zin": "Meer details volgen binnenkort.",
      "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "De materialen voor het laatste deel van de verbouwing worden binnenkort geleverd.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
     }
    ],
    "status": "nieuw"
   },
   "delen": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "delen"
+    "delen",
+    "gedeelde"
    ],
    "zinnen": [
     {
      "zin": "We delen straks de data ook via Teams.",
      "bron": "mail/2026-09-28_evenementen.md"
+    },
+    {
+     "zin": "Dat willen we graag met je delen, ook als je dit proces nog niet kende.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Het gaat om een beetje zorg voor je eigen werkplek en de gedeelde ruimtes.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "kern"
@@ -5851,14 +6208,24 @@
    "status": "nieuw"
   },
   "denken": {
-   "count": 1,
+   "count": 3,
    "vormen": [
-    "gedacht"
+    "gedacht",
+    "Denk",
+    "denk"
    ],
    "zinnen": [
     {
      "zin": "De tijd heeft me ingehaald, volgende week is de audit en daarvoor heb ik meer tijd nodig dan gedacht.",
      "bron": "mail/2026-09-29_kennissessie-verzet.md"
+    },
+    {
+     "zin": "Denk bij het opscheppen aan je collega's die na jou komen, zodat er voor iedereen genoeg is.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Pak gerust, maar ook hier geldt: denk aan je collega's die op een ander moment komen en houd rekening met elkaar.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "nieuw"
@@ -6047,7 +6414,7 @@
    "status": "nieuw"
   },
   "manager": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "manager"
    ],
@@ -6055,6 +6422,10 @@
     {
      "zin": "Opmerking manager: op verzoek afgekeurd.",
      "bron": "mail/2026-09-29_verlofaanvraag.md"
+    },
+    {
+     "zin": "Bespreek het met je manager of Business Owner - dat is de eerste stap.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "nieuw"
@@ -6328,14 +6699,19 @@
    "status": "nieuw"
   },
   "invoeren": {
-   "count": 1,
+   "count": 2,
    "vormen": [
-    "ingevoerde"
+    "ingevoerde",
+    "ingevoerd"
    ],
    "zinnen": [
     {
      "zin": "Handmatig ingevoerde transacties en GPS-registraties worden nooit automatisch bevestigd.",
      "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "We hebben recent een nieuwe manier ingevoerd om te bepalen welke ideeën we als bedrijf oppakken, en die heeft gisteren zijn eerste resultaten opgeleverd.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "nieuw"
@@ -6354,7 +6730,7 @@
    "status": "nieuw"
   },
   "hulp": {
-   "count": 1,
+   "count": 2,
    "vormen": [
     "hulp"
    ],
@@ -6362,6 +6738,10 @@
     {
      "zin": "Heb je hulp nodig bij het bevestigen van een rit?",
      "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Het is voor het facilitaire team en de schoonmaak niet te doen om alles bij te houden, dus we rekenen op ieders hulp.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
     }
    ],
    "status": "nieuw"
@@ -6380,14 +6760,27 @@
    "status": "nieuw"
   },
   "stap": {
-   "count": 2,
+   "count": 5,
    "vormen": [
-    "stap"
+    "stap",
+    "stappen"
    ],
    "zinnen": [
     {
      "zin": "In onze FAQ lees je stap voor stap hoe het werkt.",
      "bron": "mail/2026-09-29_openstaande-ritten.md"
+    },
+    {
+     "zin": "Elk idee - groot of klein - doorloopt een aantal stappen.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Alleen ideeën die dat overtuigend kunnen laten zien, gaan door naar de volgende stap.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Bespreek het met je manager of Business Owner - dat is de eerste stap.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
    "status": "kern"
@@ -6445,17 +6838,54 @@
    "status": "nieuw"
   },
   "idee": {
-   "count": 1,
+   "count": 10,
    "vormen": [
-    "idee"
+    "idee",
+    "ideeën"
    ],
    "zinnen": [
     {
      "zin": "Zelfde idee als altijd.",
      "bron": "mail/2026-09-30_all-hands.md"
+    },
+    {
+     "zin": "We hebben recent een nieuwe manier ingevoerd om te bepalen welke ideeën we als bedrijf oppakken, en die heeft gisteren zijn eerste resultaten opgeleverd.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Elk idee - groot of klein - doorloopt een aantal stappen.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Van eerste idee, via onderzoek en uitwerking, tot een onderbouwd voorstel.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Is dit idee goed doordacht, en is dit ook echt de moeite waard om onze tijd in te steken?",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Alleen ideeën die dat overtuigend kunnen laten zien, gaan door naar de volgende stap.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "En het betekent ook: hoe beter jij je idee onderbouwt, hoe groter de kans dat het ook echt gebouwd wordt.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Precies het soort idee dat het proces mogelijk maakt: klein beginnen, goed onderbouwen, snel groen licht.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Een idee dat al langer rijpte en er nu klaar voor is om verder uitgebouwd te worden.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Heb jij zelf een idee waarvan je denkt: hier zit iets in?",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
     }
    ],
-   "status": "nieuw"
+   "status": "bekend"
   },
   "verlengde": {
    "count": 1,
@@ -6505,6 +6935,2519 @@
     {
      "zin": "Meteen een vraag in het verlengde hiervan, is er een endpoint om de gebruiker en zijn data in de Kaartnet DB te laten verwijderen?",
      "bron": "mail/2026-09-30_gdpr-verwijderverzoek.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "recent": {
+   "count": 1,
+   "vormen": [
+    "recent"
+   ],
+   "zinnen": [
+    {
+     "zin": "We hebben recent een nieuwe manier ingevoerd om te bepalen welke ideeën we als bedrijf oppakken, en die heeft gisteren zijn eerste resultaten opgeleverd.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "resultaat": {
+   "count": 1,
+   "vormen": [
+    "resultaten"
+   ],
+   "zinnen": [
+    {
+     "zin": "We hebben recent een nieuwe manier ingevoerd om te bepalen welke ideeën we als bedrijf oppakken, en die heeft gisteren zijn eerste resultaten opgeleverd.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "proces": {
+   "count": 5,
+   "vormen": [
+    "proces"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dat willen we graag met je delen, ook als je dit proces nog niet kende.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "In de bijlage een eenvoudige uitwerking van dit proces.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Precies het soort idee dat het proces mogelijk maakt: klein beginnen, goed onderbouwen, snel groen licht.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Je hoeft het niet meteen perfect te hebben; het proces is er juist om je te helpen het scherp te krijgen.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Meer weten over hoe het proces precies werkt?",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "doorlopen": {
+   "count": 1,
+   "vormen": [
+    "doorloopt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Elk idee - groot of klein - doorloopt een aantal stappen.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "onderzoek": {
+   "count": 1,
+   "vormen": [
+    "onderzoek"
+   ],
+   "zinnen": [
+    {
+     "zin": "Van eerste idee, via onderzoek en uitwerking, tot een onderbouwd voorstel.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "uitwerking": {
+   "count": 2,
+   "vormen": [
+    "uitwerking"
+   ],
+   "zinnen": [
+    {
+     "zin": "Van eerste idee, via onderzoek en uitwerking, tot een onderbouwd voorstel.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "In de bijlage een eenvoudige uitwerking van dit proces.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "onderbouwen": {
+   "count": 2,
+   "vormen": [
+    "onderbouwd",
+    "onderbouwt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Van eerste idee, via onderzoek en uitwerking, tot een onderbouwd voorstel.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "En het betekent ook: hoe beter jij je idee onderbouwt, hoe groter de kans dat het ook echt gebouwd wordt.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "voorstel": {
+   "count": 2,
+   "vormen": [
+    "voorstel",
+    "voorstellen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Van eerste idee, via onderzoek en uitwerking, tot een onderbouwd voorstel.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Gisteren gingen de eerste drie voorstellen door de eerste toets, en die willen we je niet onthouden:",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "meekijken": {
+   "count": 1,
+   "vormen": [
+    "kijkt … mee"
+   ],
+   "zinnen": [
+    {
+     "zin": "Op een paar vaste momenten kijkt een kleine groep collega's kritisch mee.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "doordacht": {
+   "count": 1,
+   "vormen": [
+    "doordacht"
+   ],
+   "zinnen": [
+    {
+     "zin": "Is dit idee goed doordacht, en is dit ook echt de moeite waard om onze tijd in te steken?",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "echt": {
+   "count": 6,
+   "vormen": [
+    "echt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Is dit idee goed doordacht, en is dit ook echt de moeite waard om onze tijd in te steken?",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Het betekent dat we veel meer onze tijd en energie willen besteden aan de dingen die er echt toe doen - in plaats van aan alles tegelijk een beetje.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "En het betekent ook: hoe beter jij je idee onderbouwt, hoe groter de kans dat het ook echt gebouwd wordt.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "We gaan het eerst uitproberen bij een paar klanten om te zien hoeveel waarde het echt toevoegt.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Spreekkamer Oslo op de 5e verdieping heeft onlangs nieuwe meubels gekregen en is daardoor weer echt representatief.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Dit betekent dat we eindelijk echt profijt gaan hebben van de verbouwing van het klimaatsysteem.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "moeite": {
+   "count": 1,
+   "vormen": [
+    "moeite"
+   ],
+   "zinnen": [
+    {
+     "zin": "Is dit idee goed doordacht, en is dit ook echt de moeite waard om onze tijd in te steken?",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "overtuigend": {
+   "count": 1,
+   "vormen": [
+    "overtuigend"
+   ],
+   "zinnen": [
+    {
+     "zin": "Alleen ideeën die dat overtuigend kunnen laten zien, gaan door naar de volgende stap.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "doorgaan": {
+   "count": 1,
+   "vormen": [
+    "gaan … door"
+   ],
+   "zinnen": [
+    {
+     "zin": "Alleen ideeën die dat overtuigend kunnen laten zien, gaan door naar de volgende stap.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "laten zien": {
+   "count": 1,
+   "vormen": [
+    "laten zien"
+   ],
+   "zinnen": [
+    {
+     "zin": "Alleen ideeën die dat overtuigend kunnen laten zien, gaan door naar de volgende stap.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bijlage": {
+   "count": 1,
+   "vormen": [
+    "bijlage"
+   ],
+   "zinnen": [
+    {
+     "zin": "In de bijlage een eenvoudige uitwerking van dit proces.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "eenvoudig": {
+   "count": 1,
+   "vormen": [
+    "eenvoudige"
+   ],
+   "zinnen": [
+    {
+     "zin": "In de bijlage een eenvoudige uitwerking van dit proces.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "energie": {
+   "count": 1,
+   "vormen": [
+    "energie"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het betekent dat we veel meer onze tijd en energie willen besteden aan de dingen die er echt toe doen - in plaats van aan alles tegelijk een beetje.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "besteden": {
+   "count": 1,
+   "vormen": [
+    "besteden"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het betekent dat we veel meer onze tijd en energie willen besteden aan de dingen die er echt toe doen - in plaats van aan alles tegelijk een beetje.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "kans": {
+   "count": 1,
+   "vormen": [
+    "kans"
+   ],
+   "zinnen": [
+    {
+     "zin": "En het betekent ook: hoe beter jij je idee onderbouwt, hoe groter de kans dat het ook echt gebouwd wordt.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "toets": {
+   "count": 1,
+   "vormen": [
+    "toets"
+   ],
+   "zinnen": [
+    {
+     "zin": "Gisteren gingen de eerste drie voorstellen door de eerste toets, en die willen we je niet onthouden:",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "onthouden": {
+   "count": 1,
+   "vormen": [
+    "onthouden"
+   ],
+   "zinnen": [
+    {
+     "zin": "Gisteren gingen de eerste drie voorstellen door de eerste toets, en die willen we je niet onthouden:",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "tool": {
+   "count": 1,
+   "vormen": [
+    "tool"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een tool om cao-instellingen automatisch te configureren, bedacht en uitgewerkt door Lotte Verbeek.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "configureren": {
+   "count": 1,
+   "vormen": [
+    "configureren"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een tool om cao-instellingen automatisch te configureren, bedacht en uitgewerkt door Lotte Verbeek.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bedenken": {
+   "count": 1,
+   "vormen": [
+    "bedacht"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een tool om cao-instellingen automatisch te configureren, bedacht en uitgewerkt door Lotte Verbeek.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "uitwerken": {
+   "count": 1,
+   "vormen": [
+    "uitgewerkt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een tool om cao-instellingen automatisch te configureren, bedacht en uitgewerkt door Lotte Verbeek.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "soort": {
+   "count": 1,
+   "vormen": [
+    "soort"
+   ],
+   "zinnen": [
+    {
+     "zin": "Precies het soort idee dat het proces mogelijk maakt: klein beginnen, goed onderbouwen, snel groen licht.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "beginnen": {
+   "count": 3,
+   "vormen": [
+    "beginnen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Precies het soort idee dat het proces mogelijk maakt: klein beginnen, goed onderbouwen, snel groen licht.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Dit betekent dat we kunnen beginnen met het laatste deel.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    },
+    {
+     "zin": "We beginnen met het blok van Planning, Commercie en Binnendienst.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "rapport": {
+   "count": 1,
+   "vormen": [
+    "rapport"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een rapport dat onze klanten inzicht geeft in hun mobiliteitsimpact, opgezet door Joris Meijer.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "klant": {
+   "count": 2,
+   "vormen": [
+    "klanten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een rapport dat onze klanten inzicht geeft in hun mobiliteitsimpact, opgezet door Joris Meijer.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "We gaan het eerst uitproberen bij een paar klanten om te zien hoeveel waarde het echt toevoegt.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "inzicht": {
+   "count": 1,
+   "vormen": [
+    "inzicht"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een rapport dat onze klanten inzicht geeft in hun mobiliteitsimpact, opgezet door Joris Meijer.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "opzetten": {
+   "count": 1,
+   "vormen": [
+    "opgezet"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een rapport dat onze klanten inzicht geeft in hun mobiliteitsimpact, opgezet door Joris Meijer.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "uitproberen": {
+   "count": 1,
+   "vormen": [
+    "uitproberen"
+   ],
+   "zinnen": [
+    {
+     "zin": "We gaan het eerst uitproberen bij een paar klanten om te zien hoeveel waarde het echt toevoegt.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "waarde": {
+   "count": 1,
+   "vormen": [
+    "waarde"
+   ],
+   "zinnen": [
+    {
+     "zin": "We gaan het eerst uitproberen bij een paar klanten om te zien hoeveel waarde het echt toevoegt.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "toevoegen": {
+   "count": 1,
+   "vormen": [
+    "toevoegt"
+   ],
+   "zinnen": [
+    {
+     "zin": "We gaan het eerst uitproberen bij een paar klanten om te zien hoeveel waarde het echt toevoegt.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verbeteren": {
+   "count": 1,
+   "vormen": [
+    "verbeterde"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een verbeterde manier om op afroep een huurauto te regelen, aangedragen door Pim Hendrikx.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "afroep": {
+   "count": 1,
+   "vormen": [
+    "afroep"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een verbeterde manier om op afroep een huurauto te regelen, aangedragen door Pim Hendrikx.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "huurauto": {
+   "count": 1,
+   "vormen": [
+    "huurauto"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een verbeterde manier om op afroep een huurauto te regelen, aangedragen door Pim Hendrikx.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "regelen": {
+   "count": 1,
+   "vormen": [
+    "regelen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een verbeterde manier om op afroep een huurauto te regelen, aangedragen door Pim Hendrikx.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "aandragen": {
+   "count": 1,
+   "vormen": [
+    "aangedragen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een verbeterde manier om op afroep een huurauto te regelen, aangedragen door Pim Hendrikx.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "rijpen": {
+   "count": 1,
+   "vormen": [
+    "rijpte"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een idee dat al langer rijpte en er nu klaar voor is om verder uitgebouwd te worden.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "uitbouwen": {
+   "count": 1,
+   "vormen": [
+    "uitgebouwd"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een idee dat al langer rijpte en er nu klaar voor is om verder uitgebouwd te worden.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bespreken": {
+   "count": 2,
+   "vormen": [
+    "Bespreek"
+   ],
+   "zinnen": [
+    {
+     "zin": "Bespreek het met je manager of Business Owner - dat is de eerste stap.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Bespreek dit dan eerst met je leidinggevende.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "meteen": {
+   "count": 3,
+   "vormen": [
+    "meteen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je hoeft het niet meteen perfect te hebben; het proces is er juist om je te helpen het scherp te krijgen.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    },
+    {
+     "zin": "Ruim het dan wel meteen op met keukenpapier, want dan krijg je het er nog goed uit.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Ruim je kopje meteen zelf op in het daarvoor bestemde rek.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "scherp": {
+   "count": 1,
+   "vormen": [
+    "scherp"
+   ],
+   "zinnen": [
+    {
+     "zin": "Je hoeft het niet meteen perfect te hebben; het proces is er juist om je te helpen het scherp te krijgen.",
+     "bron": "mail/2026-09-30_idee-waardeproces.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "laatst": {
+   "count": 5,
+   "vormen": [
+    "laatste"
+   ],
+   "zinnen": [
+    {
+     "zin": "Vandaag, woensdag 14 oktober, is de laatste dag om te stemmen voor de Ondernemingsraad.",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    },
+    {
+     "zin": "Ben je de laatste?",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "De materialen voor het laatste deel van de verbouwing worden binnenkort geleverd.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    },
+    {
+     "zin": "Dit betekent dat we kunnen beginnen met het laatste deel.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    },
+    {
+     "zin": "Daarna is de Klantenservice, als laatste, aan de beurt.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "bekend"
+  },
+  "stemmen": {
+   "count": 4,
+   "vormen": [
+    "stemmen",
+    "gestemd",
+    "Stemmen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Vandaag, woensdag 14 oktober, is de laatste dag om te stemmen voor de Ondernemingsraad.",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    },
+    {
+     "zin": "Heb je nog niet gestemd?",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    },
+    {
+     "zin": "Stemmen duurt maar een paar minuten en gaat via het Stemportaal.",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    },
+    {
+     "zin": "Heb je al gestemd?",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    }
+   ],
+   "status": "kaart",
+   "kaart_dag": "2026-10-02"
+  },
+  "ondernemingsraad": {
+   "count": 1,
+   "vormen": [
+    "Ondernemingsraad"
+   ],
+   "zinnen": [
+    {
+     "zin": "Vandaag, woensdag 14 oktober, is de laatste dag om te stemmen voor de Ondernemingsraad.",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "minuut": {
+   "count": 1,
+   "vormen": [
+    "minuten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Stemmen duurt maar een paar minuten en gaat via het Stemportaal.",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "stemportaal": {
+   "count": 1,
+   "vormen": [
+    "Stemportaal"
+   ],
+   "zinnen": [
+    {
+     "zin": "Stemmen duurt maar een paar minuten en gaat via het Stemportaal.",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "meepraten": {
+   "count": 1,
+   "vormen": [
+    "meepraat"
+   ],
+   "zinnen": [
+    {
+     "zin": "Jouw stem bepaalt wie de komende tijd namens jullie meepraat over onderwerpen die ons allemaal raken.",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "onderwerp": {
+   "count": 1,
+   "vormen": [
+    "onderwerpen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Jouw stem bepaalt wie de komende tijd namens jullie meepraat over onderwerpen die ons allemaal raken.",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "raken": {
+   "count": 1,
+   "vormen": [
+    "raken"
+   ],
+   "zinnen": [
+    {
+     "zin": "Jouw stem bepaalt wie de komende tijd namens jullie meepraat over onderwerpen die ons allemaal raken.",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "uitgebreid": {
+   "count": 1,
+   "vormen": [
+    "uitgebreiders"
+   ],
+   "zinnen": [
+    {
+     "zin": "Voor iets uitgebreiders mail je naar de OR.",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "mailen": {
+   "count": 1,
+   "vormen": [
+    "mail"
+   ],
+   "zinnen": [
+    {
+     "zin": "Voor iets uitgebreiders mail je naar de OR.",
+     "bron": "mail/2026-09-30_or-stemronde.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "plezier": {
+   "count": 1,
+   "vormen": [
+    "plezier"
+   ],
+   "zinnen": [
+    {
+     "zin": "We vinden het belangrijk dat iedereen met plezier naar kantoor komt.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "kantoor": {
+   "count": 6,
+   "vormen": [
+    "kantoor"
+   ],
+   "zinnen": [
+    {
+     "zin": "We vinden het belangrijk dat iedereen met plezier naar kantoor komt.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Dat gaat over de sfeer, maar ook over een opgeruimd kantoor, rekening houden met elkaar en je daar allemaal een stukje verantwoordelijk voor voelen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "We ontvangen steeds vaker bezoek op kantoor, en ons kantoor is ook ons visitekaartje.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Laten we als een goed huisvader met ons kantoor omgaan.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Als we het met z'n allen bijhouden, blijft ons kantoor een plek waar we graag samenwerken en waar we onze gasten met trots ontvangen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "kaart",
+   "kaart_dag": "2026-10-02"
+  },
+  "fijn": {
+   "count": 1,
+   "vormen": [
+    "fijne"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een fijne werkomgeving maken we samen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "werkomgeving": {
+   "count": 1,
+   "vormen": [
+    "werkomgeving"
+   ],
+   "zinnen": [
+    {
+     "zin": "Een fijne werkomgeving maken we samen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "sfeer": {
+   "count": 1,
+   "vormen": [
+    "sfeer"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dat gaat over de sfeer, maar ook over een opgeruimd kantoor, rekening houden met elkaar en je daar allemaal een stukje verantwoordelijk voor voelen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "opgeruimd": {
+   "count": 2,
+   "vormen": [
+    "opgeruimd"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dat gaat over de sfeer, maar ook over een opgeruimd kantoor, rekening houden met elkaar en je daar allemaal een stukje verantwoordelijk voor voelen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Clean desk: laat je bureau aan het eind van de dag leeg en opgeruimd achter.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "stuk": {
+   "count": 1,
+   "vormen": [
+    "stukje"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dat gaat over de sfeer, maar ook over een opgeruimd kantoor, rekening houden met elkaar en je daar allemaal een stukje verantwoordelijk voor voelen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verantwoordelijk": {
+   "count": 1,
+   "vormen": [
+    "verantwoordelijk"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dat gaat over de sfeer, maar ook over een opgeruimd kantoor, rekening houden met elkaar en je daar allemaal een stukje verantwoordelijk voor voelen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "rekening houden": {
+   "count": 2,
+   "vormen": [
+    "rekening houden",
+    "houd rekening"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dat gaat over de sfeer, maar ook over een opgeruimd kantoor, rekening houden met elkaar en je daar allemaal een stukje verantwoordelijk voor voelen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Pak gerust, maar ook hier geldt: denk aan je collega's die op een ander moment komen en houd rekening met elkaar.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "intern": {
+   "count": 1,
+   "vormen": [
+    "intern"
+   ],
+   "zinnen": [
+    {
+     "zin": "We hebben intern een aantal afspraken over hoe we met ons pand en de faciliteiten omgaan.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "afspraak": {
+   "count": 1,
+   "vormen": [
+    "afspraken"
+   ],
+   "zinnen": [
+    {
+     "zin": "We hebben intern een aantal afspraken over hoe we met ons pand en de faciliteiten omgaan.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "pand": {
+   "count": 1,
+   "vormen": [
+    "pand"
+   ],
+   "zinnen": [
+    {
+     "zin": "We hebben intern een aantal afspraken over hoe we met ons pand en de faciliteiten omgaan.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "faciliteit": {
+   "count": 1,
+   "vormen": [
+    "faciliteiten"
+   ],
+   "zinnen": [
+    {
+     "zin": "We hebben intern een aantal afspraken over hoe we met ons pand en de faciliteiten omgaan.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "omgaan": {
+   "count": 1,
+   "vormen": [
+    "omgaan"
+   ],
+   "zinnen": [
+    {
+     "zin": "We hebben intern een aantal afspraken over hoe we met ons pand en de faciliteiten omgaan.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "duidelijk": {
+   "count": 1,
+   "vormen": [
+    "duidelijk"
+   ],
+   "zinnen": [
+    {
+     "zin": "Omdat dat misschien niet voor iedereen even duidelijk is (we hebben er de afgelopen tijd ook veel nieuwe collega's bij gekregen), zetten we de huisregels hieronder nog even op een rij.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "huisregel": {
+   "count": 1,
+   "vormen": [
+    "huisregels"
+   ],
+   "zinnen": [
+    {
+     "zin": "Omdat dat misschien niet voor iedereen even duidelijk is (we hebben er de afgelopen tijd ook veel nieuwe collega's bij gekregen), zetten we de huisregels hieronder nog even op een rij.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bezoek": {
+   "count": 1,
+   "vormen": [
+    "bezoek"
+   ],
+   "zinnen": [
+    {
+     "zin": "We ontvangen steeds vaker bezoek op kantoor, en ons kantoor is ook ons visitekaartje.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "visitekaartje": {
+   "count": 1,
+   "vormen": [
+    "visitekaartje"
+   ],
+   "zinnen": [
+    {
+     "zin": "We ontvangen steeds vaker bezoek op kantoor, en ons kantoor is ook ons visitekaartje.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "spreekkamer": {
+   "count": 1,
+   "vormen": [
+    "Spreekkamer"
+   ],
+   "zinnen": [
+    {
+     "zin": "Spreekkamer Oslo op de 5e verdieping heeft onlangs nieuwe meubels gekregen en is daardoor weer echt representatief.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "verdieping": {
+   "count": 1,
+   "vormen": [
+    "verdieping"
+   ],
+   "zinnen": [
+    {
+     "zin": "Spreekkamer Oslo op de 5e verdieping heeft onlangs nieuwe meubels gekregen en is daardoor weer echt representatief.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "meubel": {
+   "count": 1,
+   "vormen": [
+    "meubels"
+   ],
+   "zinnen": [
+    {
+     "zin": "Spreekkamer Oslo op de 5e verdieping heeft onlangs nieuwe meubels gekregen en is daardoor weer echt representatief.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "representatief": {
+   "count": 1,
+   "vormen": [
+    "representatief"
+   ],
+   "zinnen": [
+    {
+     "zin": "Spreekkamer Oslo op de 5e verdieping heeft onlangs nieuwe meubels gekregen en is daardoor weer echt representatief.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "geleidelijk": {
+   "count": 1,
+   "vormen": [
+    "geleidelijk"
+   ],
+   "zinnen": [
+    {
+     "zin": "De komende tijd doen we dit geleidelijk ook met een aantal andere vergaderruimtes.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vergaderruimte": {
+   "count": 1,
+   "vormen": [
+    "vergaderruimtes"
+   ],
+   "zinnen": [
+    {
+     "zin": "De komende tijd doen we dit geleidelijk ook met een aantal andere vergaderruimtes.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "ronde": {
+   "count": 1,
+   "vormen": [
+    "ronde"
+   ],
+   "zinnen": [
+    {
+     "zin": "Daarnaast maken we op dit moment een extra ronde om alles weer schoon en netjes te krijgen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "schoon": {
+   "count": 1,
+   "vormen": [
+    "schoon"
+   ],
+   "zinnen": [
+    {
+     "zin": "Daarnaast maken we op dit moment een extra ronde om alles weer schoon en netjes te krijgen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "netjes": {
+   "count": 1,
+   "vormen": [
+    "netjes"
+   ],
+   "zinnen": [
+    {
+     "zin": "Daarnaast maken we op dit moment een extra ronde om alles weer schoon en netjes te krijgen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "facilitair": {
+   "count": 2,
+   "vormen": [
+    "facilitaire"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het is voor het facilitaire team en de schoonmaak niet te doen om alles bij te houden, dus we rekenen op ieders hulp.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Breng na de lunch al het gebruikte servies naar de spoelkeuken en zet het in de juiste bak, zodat het facilitaire team het kan schoonmaken.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "schoonmaak": {
+   "count": 1,
+   "vormen": [
+    "schoonmaak"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het is voor het facilitaire team en de schoonmaak niet te doen om alles bij te houden, dus we rekenen op ieders hulp.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bijhouden": {
+   "count": 2,
+   "vormen": [
+    "bij te houden",
+    "bijhouden"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het is voor het facilitaire team en de schoonmaak niet te doen om alles bij te houden, dus we rekenen op ieders hulp.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Als we het met z'n allen bijhouden, blijft ons kantoor een plek waar we graag samenwerken en waar we onze gasten met trots ontvangen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "huisvader": {
+   "count": 1,
+   "vormen": [
+    "huisvader"
+   ],
+   "zinnen": [
+    {
+     "zin": "Laten we als een goed huisvader met ons kantoor omgaan.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bureau": {
+   "count": 2,
+   "vormen": [
+    "bureau"
+   ],
+   "zinnen": [
+    {
+     "zin": "Clean desk: laat je bureau aan het eind van de dag leeg en opgeruimd achter.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Zet je bureau na gebruik terug op 75 cm hoogte (geheugenstand 2).",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "eind": {
+   "count": 2,
+   "vormen": [
+    "eind"
+   ],
+   "zinnen": [
+    {
+     "zin": "Clean desk: laat je bureau aan het eind van de dag leeg en opgeruimd achter.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Ruim je gebruikte vaat aan het eind van de dag op.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "leeg": {
+   "count": 2,
+   "vormen": [
+    "leeg"
+   ],
+   "zinnen": [
+    {
+     "zin": "Clean desk: laat je bureau aan het eind van de dag leeg en opgeruimd achter.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Zorg ervoor dat de jerrycans leeg zijn en de airco's uitstaan.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "achterlaten": {
+   "count": 1,
+   "vormen": [
+    "laat … achter"
+   ],
+   "zinnen": [
+    {
+     "zin": "Clean desk: laat je bureau aan het eind van de dag leeg en opgeruimd achter.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "gebruik": {
+   "count": 1,
+   "vormen": [
+    "gebruik"
+   ],
+   "zinnen": [
+    {
+     "zin": "Zet je bureau na gebruik terug op 75 cm hoogte (geheugenstand 2).",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "hoogte": {
+   "count": 1,
+   "vormen": [
+    "hoogte"
+   ],
+   "zinnen": [
+    {
+     "zin": "Zet je bureau na gebruik terug op 75 cm hoogte (geheugenstand 2).",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "geheugenstand": {
+   "count": 1,
+   "vormen": [
+    "geheugenstand"
+   ],
+   "zinnen": [
+    {
+     "zin": "Zet je bureau na gebruik terug op 75 cm hoogte (geheugenstand 2).",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "terugzetten": {
+   "count": 3,
+   "vormen": [
+    "Zet … terug",
+    "zet … terug",
+    "teruggezet"
+   ],
+   "zinnen": [
+    {
+     "zin": "Zet je bureau na gebruik terug op 75 cm hoogte (geheugenstand 2).",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Neem je een stoel mee naar een andere ruimte, zet hem dan na afloop weer terug.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "De definitieve planning van wanneer de beeldschermen worden weggehaald en weer teruggezet, volgt zo snel mogelijk.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vaat": {
+   "count": 1,
+   "vormen": [
+    "vaat"
+   ],
+   "zinnen": [
+    {
+     "zin": "Ruim je gebruikte vaat aan het eind van de dag op.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "opruimen": {
+   "count": 5,
+   "vormen": [
+    "Ruim … op",
+    "ruim … op"
+   ],
+   "zinnen": [
+    {
+     "zin": "Ruim je gebruikte vaat aan het eind van de dag op.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Ruim ze op.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Ruim het dan wel meteen op met keukenpapier, want dan krijg je het er nog goed uit.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Ruim je kopje meteen zelf op in het daarvoor bestemde rek.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Neem je eigen servies weer mee en ruim het op.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "kaart",
+   "kaart_dag": "2026-10-02"
+  },
+  "kijken": {
+   "count": 1,
+   "vormen": [
+    "Kijk"
+   ],
+   "zinnen": [
+    {
+     "zin": "Kijk ook even rondom je eigen werkplek.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "rondom": {
+   "count": 1,
+   "vormen": [
+    "rondom"
+   ],
+   "zinnen": [
+    {
+     "zin": "Kijk ook even rondom je eigen werkplek.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "werkplek": {
+   "count": 2,
+   "vormen": [
+    "werkplek"
+   ],
+   "zinnen": [
+    {
+     "zin": "Kijk ook even rondom je eigen werkplek.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Het gaat om een beetje zorg voor je eigen werkplek en de gedeelde ruimtes.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "spul": {
+   "count": 1,
+   "vormen": [
+    "spullen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Staan er spullen die daar niet horen?",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "raam": {
+   "count": 1,
+   "vormen": [
+    "ramen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Sluit dan ook de ramen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "vlek": {
+   "count": 1,
+   "vormen": [
+    "vlekken"
+   ],
+   "zinnen": [
+    {
+     "zin": "We zien helaas veel vlekken op het tapijt.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "tapijt": {
+   "count": 1,
+   "vormen": [
+    "tapijt"
+   ],
+   "zinnen": [
+    {
+     "zin": "We zien helaas veel vlekken op het tapijt.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "knoeien": {
+   "count": 1,
+   "vormen": [
+    "knoeien"
+   ],
+   "zinnen": [
+    {
+     "zin": "Koffie knoeien kan natuurlijk iedereen gebeuren, dat is niet erg.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "keukenpapier": {
+   "count": 1,
+   "vormen": [
+    "keukenpapier"
+   ],
+   "zinnen": [
+    {
+     "zin": "Ruim het dan wel meteen op met keukenpapier, want dan krijg je het er nog goed uit.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "pantry": {
+   "count": 1,
+   "vormen": [
+    "pantry's"
+   ],
+   "zinnen": [
+    {
+     "zin": "In de pantry's zetten we een speciale spray klaar die je daarvoor kunt gebruiken.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "spray": {
+   "count": 1,
+   "vormen": [
+    "spray"
+   ],
+   "zinnen": [
+    {
+     "zin": "In de pantry's zetten we een speciale spray klaar die je daarvoor kunt gebruiken.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "klaarzetten": {
+   "count": 1,
+   "vormen": [
+    "zetten … klaar"
+   ],
+   "zinnen": [
+    {
+     "zin": "In de pantry's zetten we een speciale spray klaar die je daarvoor kunt gebruiken.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "kopje": {
+   "count": 1,
+   "vormen": [
+    "kopje"
+   ],
+   "zinnen": [
+    {
+     "zin": "Ruim je kopje meteen zelf op in het daarvoor bestemde rek.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bestemmen": {
+   "count": 1,
+   "vormen": [
+    "bestemde"
+   ],
+   "zinnen": [
+    {
+     "zin": "Ruim je kopje meteen zelf op in het daarvoor bestemde rek.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "rek": {
+   "count": 1,
+   "vormen": [
+    "rek"
+   ],
+   "zinnen": [
+    {
+     "zin": "Ruim je kopje meteen zelf op in het daarvoor bestemde rek.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "melding": {
+   "count": 1,
+   "vormen": [
+    "melding"
+   ],
+   "zinnen": [
+    {
+     "zin": "Krijg je een melding van het koffieapparaat?",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "koffieapparaat": {
+   "count": 1,
+   "vormen": [
+    "koffieapparaat"
+   ],
+   "zinnen": [
+    {
+     "zin": "Krijg je een melding van het koffieapparaat?",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "melk": {
+   "count": 1,
+   "vormen": [
+    "melk"
+   ],
+   "zinnen": [
+    {
+     "zin": "Vul de melk even bij of leeg de droesbak (koffieprut in de afvalbak).",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "droesbak": {
+   "count": 1,
+   "vormen": [
+    "droesbak"
+   ],
+   "zinnen": [
+    {
+     "zin": "Vul de melk even bij of leeg de droesbak (koffieprut in de afvalbak).",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "koffieprut": {
+   "count": 1,
+   "vormen": [
+    "koffieprut"
+   ],
+   "zinnen": [
+    {
+     "zin": "Vul de melk even bij of leeg de droesbak (koffieprut in de afvalbak).",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "afvalbak": {
+   "count": 1,
+   "vormen": [
+    "afvalbak"
+   ],
+   "zinnen": [
+    {
+     "zin": "Vul de melk even bij of leeg de droesbak (koffieprut in de afvalbak).",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bijvullen": {
+   "count": 2,
+   "vormen": [
+    "Vul … bij"
+   ],
+   "zinnen": [
+    {
+     "zin": "Vul de melk even bij of leeg de droesbak (koffieprut in de afvalbak).",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Vul het even bij.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "legen": {
+   "count": 1,
+   "vormen": [
+    "leeg"
+   ],
+   "zinnen": [
+    {
+     "zin": "Vul de melk even bij of leeg de droesbak (koffieprut in de afvalbak).",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "papier": {
+   "count": 1,
+   "vormen": [
+    "papier"
+   ],
+   "zinnen": [
+    {
+     "zin": "Is het papier bij de printer op?",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "printer": {
+   "count": 1,
+   "vormen": [
+    "printer"
+   ],
+   "zinnen": [
+    {
+     "zin": "Is het papier bij de printer op?",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "keukenteam": {
+   "count": 1,
+   "vormen": [
+    "keukenteam"
+   ],
+   "zinnen": [
+    {
+     "zin": "Alleen het keukenteam heeft toegang tot de keuken beneden, in verband met hygiëne.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "toegang": {
+   "count": 1,
+   "vormen": [
+    "toegang"
+   ],
+   "zinnen": [
+    {
+     "zin": "Alleen het keukenteam heeft toegang tot de keuken beneden, in verband met hygiëne.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "keuken": {
+   "count": 2,
+   "vormen": [
+    "keuken"
+   ],
+   "zinnen": [
+    {
+     "zin": "Alleen het keukenteam heeft toegang tot de keuken beneden, in verband met hygiëne.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Heb je toch iets nodig uit de keuken?",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "hygiëne": {
+   "count": 1,
+   "vormen": [
+    "hygiëne"
+   ],
+   "zinnen": [
+    {
+     "zin": "Alleen het keukenteam heeft toegang tot de keuken beneden, in verband met hygiëne.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "lunchtijd": {
+   "count": 1,
+   "vormen": [
+    "Lunchtijd"
+   ],
+   "zinnen": [
+    {
+     "zin": "Lunchtijd is tussen 12.15 en 13.45 uur.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "opscheppen": {
+   "count": 1,
+   "vormen": [
+    "opscheppen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Denk bij het opscheppen aan je collega's die na jou komen, zodat er voor iedereen genoeg is.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "lunch": {
+   "count": 1,
+   "vormen": [
+    "lunch"
+   ],
+   "zinnen": [
+    {
+     "zin": "Breng na de lunch al het gebruikte servies naar de spoelkeuken en zet het in de juiste bak, zodat het facilitaire team het kan schoonmaken.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "servies": {
+   "count": 2,
+   "vormen": [
+    "servies"
+   ],
+   "zinnen": [
+    {
+     "zin": "Breng na de lunch al het gebruikte servies naar de spoelkeuken en zet het in de juiste bak, zodat het facilitaire team het kan schoonmaken.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Neem je eigen servies weer mee en ruim het op.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "spoelkeuken": {
+   "count": 1,
+   "vormen": [
+    "spoelkeuken"
+   ],
+   "zinnen": [
+    {
+     "zin": "Breng na de lunch al het gebruikte servies naar de spoelkeuken en zet het in de juiste bak, zodat het facilitaire team het kan schoonmaken.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bak": {
+   "count": 1,
+   "vormen": [
+    "bak"
+   ],
+   "zinnen": [
+    {
+     "zin": "Breng na de lunch al het gebruikte servies naar de spoelkeuken en zet het in de juiste bak, zodat het facilitaire team het kan schoonmaken.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "schoonmaken": {
+   "count": 1,
+   "vormen": [
+    "schoonmaken"
+   ],
+   "zinnen": [
+    {
+     "zin": "Breng na de lunch al het gebruikte servies naar de spoelkeuken en zet het in de juiste bak, zodat het facilitaire team het kan schoonmaken.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "dieet": {
+   "count": 1,
+   "vormen": [
+    "dieet"
+   ],
+   "zinnen": [
+    {
+     "zin": "Heb je een speciaal dieet?",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "leidinggevende": {
+   "count": 1,
+   "vormen": [
+    "leidinggevende"
+   ],
+   "zinnen": [
+    {
+     "zin": "Bespreek dit dan eerst met je leidinggevende.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bekijken": {
+   "count": 1,
+   "vormen": [
+    "bekijken"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dan kunnen we bekijken of en wat we hierin voor je kunnen betekenen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "betekenen": {
+   "count": 1,
+   "vormen": [
+    "betekenen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dan kunnen we bekijken of en wat we hierin voor je kunnen betekenen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "snoep": {
+   "count": 1,
+   "vormen": [
+    "snoep"
+   ],
+   "zinnen": [
+    {
+     "zin": "Beneden staat snoep.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "pakken": {
+   "count": 1,
+   "vormen": [
+    "Pak"
+   ],
+   "zinnen": [
+    {
+     "zin": "Pak gerust, maar ook hier geldt: denk aan je collega's die op een ander moment komen en houd rekening met elkaar.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "stoel": {
+   "count": 1,
+   "vormen": [
+    "stoelen"
+   ],
+   "zinnen": [
+    {
+     "zin": "In Oslo, Praag en Wenen zorgen we dat de stoelen weer compleet zijn.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "compleet": {
+   "count": 1,
+   "vormen": [
+    "compleet"
+   ],
+   "zinnen": [
+    {
+     "zin": "In Oslo, Praag en Wenen zorgen we dat de stoelen weer compleet zijn.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "afloop": {
+   "count": 1,
+   "vormen": [
+    "afloop"
+   ],
+   "zinnen": [
+    {
+     "zin": "Neem je een stoel mee naar een andere ruimte, zet hem dan na afloop weer terug.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "mobiel": {
+   "count": 2,
+   "vormen": [
+    "mobiele"
+   ],
+   "zinnen": [
+    {
+     "zin": "De mobiele airco's worden volgende week opgehaald.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Vrijdag 30 oktober worden de mobiele airco's opgehaald.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "airco": {
+   "count": 3,
+   "vormen": [
+    "airco's"
+   ],
+   "zinnen": [
+    {
+     "zin": "De mobiele airco's worden volgende week opgehaald.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Vrijdag 30 oktober worden de mobiele airco's opgehaald.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    },
+    {
+     "zin": "Zorg ervoor dat de jerrycans leeg zijn en de airco's uitstaan.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "jerrycan": {
+   "count": 2,
+   "vormen": [
+    "jerrycan",
+    "jerrycans"
+   ],
+   "zinnen": [
+    {
+     "zin": "Gooi dan even de jerrycan met water leeg.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Zorg ervoor dat de jerrycans leeg zijn en de airco's uitstaan.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "water": {
+   "count": 1,
+   "vormen": [
+    "water"
+   ],
+   "zinnen": [
+    {
+     "zin": "Gooi dan even de jerrycan met water leeg.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "leeggooien": {
+   "count": 1,
+   "vormen": [
+    "Gooi … leeg"
+   ],
+   "zinnen": [
+    {
+     "zin": "Gooi dan even de jerrycan met water leeg.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "ingewikkeld": {
+   "count": 1,
+   "vormen": [
+    "ingewikkelde"
+   ],
+   "zinnen": [
+    {
+     "zin": "Natuurlijk hoef je geen ingewikkelde klussen te doen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "klus": {
+   "count": 1,
+   "vormen": [
+    "klussen"
+   ],
+   "zinnen": [
+    {
+     "zin": "Natuurlijk hoef je geen ingewikkelde klussen te doen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "zorg": {
+   "count": 1,
+   "vormen": [
+    "zorg"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het gaat om een beetje zorg voor je eigen werkplek en de gedeelde ruimtes.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "ruimte": {
+   "count": 1,
+   "vormen": [
+    "ruimtes"
+   ],
+   "zinnen": [
+    {
+     "zin": "Het gaat om een beetje zorg voor je eigen werkplek en de gedeelde ruimtes.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "samenwerken": {
+   "count": 1,
+   "vormen": [
+    "samenwerken"
+   ],
+   "zinnen": [
+    {
+     "zin": "Als we het met z'n allen bijhouden, blijft ons kantoor een plek waar we graag samenwerken en waar we onze gasten met trots ontvangen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "gast": {
+   "count": 1,
+   "vormen": [
+    "gasten"
+   ],
+   "zinnen": [
+    {
+     "zin": "Als we het met z'n allen bijhouden, blijft ons kantoor een plek waar we graag samenwerken en waar we onze gasten met trots ontvangen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "trots": {
+   "count": 1,
+   "vormen": [
+    "trots"
+   ],
+   "zinnen": [
+    {
+     "zin": "Als we het met z'n allen bijhouden, blijft ons kantoor een plek waar we graag samenwerken en waar we onze gasten met trots ontvangen.",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "medewerking": {
+   "count": 2,
+   "vormen": [
+    "medewerking"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dank voor jullie medewerking!",
+     "bron": "mail/2026-10-02_huisregels-kantoor.md"
+    },
+    {
+     "zin": "Alvast bedankt voor jullie medewerking!",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "materiaal": {
+   "count": 1,
+   "vormen": [
+    "materialen"
+   ],
+   "zinnen": [
+    {
+     "zin": "De materialen voor het laatste deel van de verbouwing worden binnenkort geleverd.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "verbouwing": {
+   "count": 2,
+   "vormen": [
+    "verbouwing"
+   ],
+   "zinnen": [
+    {
+     "zin": "De materialen voor het laatste deel van de verbouwing worden binnenkort geleverd.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    },
+    {
+     "zin": "Dit betekent dat we eindelijk echt profijt gaan hebben van de verbouwing van het klimaatsysteem.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "leveren": {
+   "count": 1,
+   "vormen": [
+    "geleverd"
+   ],
+   "zinnen": [
+    {
+     "zin": "De materialen voor het laatste deel van de verbouwing worden binnenkort geleverd.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "werkzaamheid": {
+   "count": 2,
+   "vormen": [
+    "werkzaamheden"
+   ],
+   "zinnen": [
+    {
+     "zin": "De werkzaamheden starten weer op dinsdag 3 november.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    },
+    {
+     "zin": "De monteurs van Tuinstra Klimaattechniek hebben al zo veel mogelijk voorbereidende werkzaamheden uitgevoerd, zodat dit zo snel mogelijk afgerond kan worden.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "starten": {
+   "count": 1,
+   "vormen": [
+    "starten"
+   ],
+   "zinnen": [
+    {
+     "zin": "De werkzaamheden starten weer op dinsdag 3 november.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "monteur": {
+   "count": 1,
+   "vormen": [
+    "monteurs"
+   ],
+   "zinnen": [
+    {
+     "zin": "De monteurs van Tuinstra Klimaattechniek hebben al zo veel mogelijk voorbereidende werkzaamheden uitgevoerd, zodat dit zo snel mogelijk afgerond kan worden.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "voorbereidend": {
+   "count": 1,
+   "vormen": [
+    "voorbereidende"
+   ],
+   "zinnen": [
+    {
+     "zin": "De monteurs van Tuinstra Klimaattechniek hebben al zo veel mogelijk voorbereidende werkzaamheden uitgevoerd, zodat dit zo snel mogelijk afgerond kan worden.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "uitvoeren": {
+   "count": 1,
+   "vormen": [
+    "uitgevoerd"
+   ],
+   "zinnen": [
+    {
+     "zin": "De monteurs van Tuinstra Klimaattechniek hebben al zo veel mogelijk voorbereidende werkzaamheden uitgevoerd, zodat dit zo snel mogelijk afgerond kan worden.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "kern"
+  },
+  "definitief": {
+   "count": 1,
+   "vormen": [
+    "definitieve"
+   ],
+   "zinnen": [
+    {
+     "zin": "De definitieve planning van wanneer de beeldschermen worden weggehaald en weer teruggezet, volgt zo snel mogelijk.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "beeldscherm": {
+   "count": 1,
+   "vormen": [
+    "beeldschermen"
+   ],
+   "zinnen": [
+    {
+     "zin": "De definitieve planning van wanneer de beeldschermen worden weggehaald en weer teruggezet, volgt zo snel mogelijk.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "weghalen": {
+   "count": 1,
+   "vormen": [
+    "weggehaald"
+   ],
+   "zinnen": [
+    {
+     "zin": "De definitieve planning van wanneer de beeldschermen worden weggehaald en weer teruggezet, volgt zo snel mogelijk.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "langverwacht": {
+   "count": 1,
+   "vormen": [
+    "langverwachte"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dan de langverwachte update… op maandag 16 november worden de nieuwe koelinstallaties op het dak geïnstalleerd!",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "update": {
+   "count": 1,
+   "vormen": [
+    "update"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dan de langverwachte update… op maandag 16 november worden de nieuwe koelinstallaties op het dak geïnstalleerd!",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "koelinstallatie": {
+   "count": 1,
+   "vormen": [
+    "koelinstallaties"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dan de langverwachte update… op maandag 16 november worden de nieuwe koelinstallaties op het dak geïnstalleerd!",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "dak": {
+   "count": 1,
+   "vormen": [
+    "dak"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dan de langverwachte update… op maandag 16 november worden de nieuwe koelinstallaties op het dak geïnstalleerd!",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "installeren": {
+   "count": 1,
+   "vormen": [
+    "geïnstalleerd"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dan de langverwachte update… op maandag 16 november worden de nieuwe koelinstallaties op het dak geïnstalleerd!",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "eindelijk": {
+   "count": 1,
+   "vormen": [
+    "eindelijk"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dit betekent dat we eindelijk echt profijt gaan hebben van de verbouwing van het klimaatsysteem.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "profijt": {
+   "count": 1,
+   "vormen": [
+    "profijt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dit betekent dat we eindelijk echt profijt gaan hebben van de verbouwing van het klimaatsysteem.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "klimaatsysteem": {
+   "count": 1,
+   "vormen": [
+    "klimaatsysteem"
+   ],
+   "zinnen": [
+    {
+     "zin": "Dit betekent dat we eindelijk echt profijt gaan hebben van de verbouwing van het klimaatsysteem.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "uitstaan": {
+   "count": 1,
+   "vormen": [
+    "uitstaan"
+   ],
+   "zinnen": [
+    {
+     "zin": "Zorg ervoor dat de jerrycans leeg zijn en de airco's uitstaan.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "bedanken": {
+   "count": 1,
+   "vormen": [
+    "bedankt"
+   ],
+   "zinnen": [
+    {
+     "zin": "Alvast bedankt voor jullie medewerking!",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
+    }
+   ],
+   "status": "nieuw"
+  },
+  "contact opnemen": {
+   "count": 1,
+   "vormen": [
+    "neem … contact op"
+   ],
+   "zinnen": [
+    {
+     "zin": "Zijn er nog vragen, neem dan gerust contact met mij op.",
+     "bron": "mail/2026-10-02_verbouwing-klimaatsysteem.md"
     }
    ],
    "status": "nieuw"

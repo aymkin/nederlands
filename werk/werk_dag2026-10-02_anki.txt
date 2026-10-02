@@ -1,0 +1,11 @@
+#separator:tab
+#html:true
+#notetype:Frequentie NL
+#deck:Frequentie::Werk
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+het kantoor	6	We ontvangen steeds vaker bezoek op kantoor.	офис (место работы)	Мы всё чаще принимаем гостей в офисе.	[sound:werk_kantoor.mp3]	frequentie::werk frequentie::werk::dag2026-10-02
+opruimen	5	Ruim je kopje meteen zelf op.	убирать за собой, приводить в порядок	Свою чашку сразу же убирай сам.	[sound:werk_opruimen.mp3]	frequentie::werk frequentie::werk::dag2026-10-02
+ophalen	4	De mobiele airco's worden volgende week opgehaald.	забирать (приехав за чем-то)	Мобильные кондиционеры заберут на следующей неделе.	[sound:werk_ophalen.mp3]	frequentie::werk frequentie::werk::dag2026-10-02
+het ticket	4	Weet je niet waar ze naartoe moeten, maak dan een ticket aan.	тикет, заявка (в IT-системе)	Не знаешь, куда их девать, — создай тикет.	[sound:werk_ticket.mp3]	frequentie::werk frequentie::werk::dag2026-10-02
+stemmen	4	Stemmen duurt maar een paar minuten.	голосовать (на выборах)	Голосование занимает всего пару минут.	[sound:werk_stemmen.mp3]	frequentie::werk frequentie::werk::dag2026-10-02
