@@ -10,16 +10,6 @@
           }
         ]
       }
-    ],
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/werk_woorden.py\" due"
-          }
-        ]
-      }
     ]
   }
 }

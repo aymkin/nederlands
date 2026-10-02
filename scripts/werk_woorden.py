@@ -6,7 +6,7 @@
 становятся карточками note type «Frequentie NL» (поле Rank = число встреч).
 Порядок дня — скилл `werk-woorden`.
 
-    werk_woorden.py due                   # для хука SessionStart
+    werk_woorden.py due                   # был ли прогон сегодня (ручная проверка)
     werk_woorden.py merge VOORKOMENS.json # влить леммы писем в индекс
     werk_woorden.py kies [-n 5]           # кандидаты дня, JSON в stdout
     werk_woorden.py markeer bekend LEMMA… # Alex знает — больше не предлагать
