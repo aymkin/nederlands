@@ -4,9 +4,8 @@
 Индекс `werk/lemmas.json` считает, сколько раз лемма встретилась в
 обезличенных письмах `werk/mail/`. Каждый день 5 самых частых новых лемм
 становятся карточками note type «Frequentie NL» (поле Rank = число встреч).
-Порядок дня — скилл `werk-woorden`.
+Порядок дня — подкоманды ниже, сверху вниз.
 
-    werk_woorden.py due                   # был ли прогон сегодня (ручная проверка)
     werk_woorden.py merge VOORKOMENS.json # влить леммы писем в индекс
     werk_woorden.py kies [-n 5]           # кандидаты дня, JSON в stdout
     werk_woorden.py markeer bekend LEMMA… # Alex знает — больше не предлагать
@@ -94,16 +93,6 @@ def cursus_woorden() -> dict[str, list[str]]:
                 if path.parent.name not in out.setdefault(w, []):
                     out[w].append(path.parent.name)
     return out
-
-
-def cmd_due(_args) -> int:
-    last = load()["laatste_run"]
-    if last != vandaag():
-        print(
-            f"📬 werk-woorden: сегодня прогона ещё не было (последний: {last or '—'}). "
-            "До задачи пользователя загрузи скилл werk-woorden и пройди его."
-        )
-    return 0
 
 
 def cmd_merge(args) -> int:
@@ -263,7 +252,6 @@ def main() -> int:
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
     sub = p.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("due", help="одна строка, если сегодня прогона ещё не было")
     m = sub.add_parser("merge", help="влить VOORKOMENS.json в индекс")
     m.add_argument("file")
     k = sub.add_parser("kies", help="топ новых лемм, JSON")
@@ -276,7 +264,7 @@ def main() -> int:
     c.add_argument("--audio", action="store_true", help="edge-tts → Anki media")
     c.add_argument("--anki", action="store_true", help="импорт через AnkiConnect")
     args = p.parse_args()
-    return {"due": cmd_due, "merge": cmd_merge, "kies": cmd_kies,
+    return {"merge": cmd_merge, "kies": cmd_kies,
             "markeer": cmd_markeer, "kaarten": cmd_kaarten}[args.cmd](args)
 
 
