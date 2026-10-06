@@ -60,13 +60,22 @@ def test_hoofdletters():
     assert twenty_rules({"a": "Решение"}, {"b": "решение"}) != []
 
 
+def kaart(cid, word, rank, due, deck=au.KERN):
+    """Новая карточка Kern так, как её отдаёт cardsInfo."""
+    return {"cardId": cid, "deckName": deck, "due": due,
+            "fields": {"Word": {"value": word}, "Rank": {"value": str(rank)}}}
+
+
 @contextmanager
 def nep_anki(profiel="alex", modellen=("Frequentie NL",), decks=("Frequentie::Werk",),
-             bestaand=None):
+             bestaand=None, kaarten=(), weiger=False):
     """AnkiConnect понарошку: журнал вызовов и порядок проверок createNote —
-    note type, потом колода, потом дубль. bestaand — Word → Translation."""
+    note type, потом колода, потом дубль. bestaand — Word → Translation.
+    kaarten — новые карточки для herorden; weiger — setSpecificValueOfCard
+    отвечает False, как настоящий при отказе."""
     bestaand = bestaand or {}
     decks = list(decks)
+    kaarten = {k["cardId"]: dict(k) for k in kaarten}  # RIJ общий для тестов
     log = []
 
     def kan(n):
@@ -96,6 +105,16 @@ def nep_anki(profiel="alex", modellen=("Frequentie NL",), decks=("Frequentie::We
             return 1
         if action == "addNotes":
             return list(range(len(params["notes"])))
+        if action == "findCards":
+            return list(kaarten)
+        if action == "cardsInfo":
+            return [dict(kaarten[c]) for c in params["cards"]]
+        if action == "setSpecificValueOfCard":
+            if weiger:
+                return False
+            assert params["keys"] == ["due"] and type(params["newValues"][0]) is int
+            kaarten[params["card"]]["due"] = params["newValues"][0]
+            return [True]
         raise AssertionError(f"неожиданный вызов {action}")
 
     echt, au.ankiconnect = au.ankiconnect, ankiconnect
@@ -217,6 +236,75 @@ def test_lint_leeg():
             assert False, "expected AnkiFout"
         except au.AnkiFout as e:
             assert "нет заметок" in str(e)
+
+
+RIJ = (kaart(1, "de serie", 1230, 6828), kaart(2, "de kaart", 740, 6829),
+       kaart(3, "het verzoek", 1275, 1275))
+
+
+def gezet(log):
+    return [(p["card"], p["newValues"]) for a, p in log if a == "setSpecificValueOfCard"]
+
+
+def test_herorden_rank_wordt_due():
+    """2026-10-06: позиции шли в порядке файла — 48 % пар против ранга."""
+    with nep_anki(kaarten=RIJ) as log:
+        assert au.herorden() == (3, 2)
+    assert gezet(log) == [(1, [1230]), (2, [740])]
+    zoek = next(p for a, p in log if a == "findCards")
+    assert zoek["query"] == '"deck:Frequentie::Kern" is:new'
+
+
+def test_herorden_tweede_keer_niets():
+    with nep_anki(kaarten=RIJ) as log:
+        au.herorden()
+        log.clear()
+        assert au.herorden() == (3, 0)
+    assert gezet(log) == []
+
+
+def test_herorden_droog():
+    with nep_anki(kaarten=RIJ) as log:
+        assert au.herorden(droog=True) == (3, 2)
+    assert gezet(log) == []
+
+
+def test_herorden_weigering():
+    """Отказ приходит как False без error — его надо поймать самим."""
+    with nep_anki(kaarten=RIJ, weiger=True):
+        try:
+            au.herorden()
+            assert False, "expected AnkiFout"
+        except au.AnkiFout as e:
+            assert "de serie" in str(e)
+
+
+def test_herorden_gefilterd_overgeslagen():
+    """В фильтрованной колоде due — место в ней, не позиция: не трогаем."""
+    rij = RIJ + (kaart(4, "de regio", 1248, 3, deck="Filtered Deck 1"),)
+    with nep_anki(kaarten=rij) as log:
+        assert au.herorden() == (3, 2)
+    assert 4 not in [c for c, _ in gezet(log)]
+
+
+def test_herorden_rank_geen_getal():
+    with nep_anki(kaarten=RIJ + (kaart(5, "de jeugd", "", 7),)) as log:
+        try:
+            au.herorden()
+            assert False, "expected AnkiFout"
+        except au.AnkiFout as e:
+            assert "de jeugd" in str(e)
+    assert gezet(log) == []
+
+
+def test_herorden_verkeerd_profiel():
+    with nep_anki(profiel="iuliia", kaarten=RIJ) as log:
+        try:
+            au.herorden()
+            assert False, "expected AnkiFout"
+        except au.AnkiFout:
+            pass
+    assert acties(log) == ["getActiveProfile"]
 
 
 @contextmanager

@@ -8,6 +8,7 @@ an _anki.txt TSV straight into the running Anki via AnkiConnect.
 
     python3 scripts/anki_utils.py import FILE_anki.txt
     python3 scripts/anki_utils.py lint     # Twenty Rules по всей коллекции
+    python3 scripts/anki_utils.py herorden [--droog]   # позиция новой Kern = Rank
 """
 
 import json
@@ -120,6 +121,7 @@ def ankiconnect(action: str, **params):
 
 
 FREQUENTIE = "Frequentie NL"
+KERN = "Frequentie::Kern"
 MAX_BETEKENISSEN = 2
 # Единственный отказ canAdd, который значит «уже есть» (AnkiConnect createNote)
 DUBBEL = "cannot create note because it is a duplicate"
@@ -266,7 +268,60 @@ def lint(profile: str = ANKI_PROFILE) -> list[str]:
     return twenty_rules(alle, {})
 
 
+def herorden(profile: str = ANKI_PROFILE, droog: bool = False) -> tuple[int, int]:
+    """Позиция каждой новой карточки Kern = её Rank: пресет собирает новые по
+    колоде в порядке due, так Anki вводит слова строго по рангу (решение
+    2026-10-06). Пишет только due и только там, где он ≠ Rank, — повторный
+    запуск ничего не меняет. droog — посчитать, не записывая.
+
+    `deck:` находит и карточки, временно лежащие в фильтрованной колоде; там
+    due — место в ней, а не позиция, поэтому они пропускаются.
+    setSpecificValueOfCard при отказе не ставит error, а возвращает False —
+    поэтому результат сверяется с [True], а после записи позиции читаются
+    заново. Отмены у записи нет (skip_undo_entry): перед ней — бэкап.
+
+    Возвращает (новых карточек Kern, позиций к записи или записано)."""
+    eis_profiel(profile)
+    kaarten = [
+        k for k in ankiconnect("cardsInfo", cards=ankiconnect(
+            "findCards", query=f'"deck:{KERN}" is:new'))
+        if k["deckName"] == KERN
+    ]
+    scheef = []
+    for k in kaarten:
+        rank = k["fields"]["Rank"]["value"].strip()
+        if not rank.isdigit():
+            word = k["fields"]["Word"]["value"]
+            raise AnkiFout(f"{word}: Rank «{rank}» — не число, позицию не поставить")
+        if k["due"] != int(rank):
+            scheef.append((k["cardId"], int(rank), k["fields"]["Word"]["value"]))
+    if droog or not scheef:
+        return len(kaarten), len(scheef)
+    for card, rank, word in scheef:
+        if ankiconnect("setSpecificValueOfCard", card=card, keys=["due"],
+                       newValues=[rank]) != [True]:
+            raise AnkiFout(f"{word}: позиция {rank} не записана")
+    ids = [card for card, _, _ in scheef]
+    blijft = [k["fields"]["Word"]["value"]
+              for k in ankiconnect("cardsInfo", cards=ids)
+              if k["due"] != int(k["fields"]["Rank"]["value"])]
+    if blijft:
+        raise AnkiFout(f"после записи due ≠ Rank: {', '.join(blijft)}")
+    return len(kaarten), len(scheef)
+
+
 if __name__ == "__main__":
+    if sys.argv[1:2] == ["herorden"] and set(sys.argv[2:]) <= {"--droog"}:
+        droog = "--droog" in sys.argv
+        try:
+            nieuw, scheef = herorden(droog=droog)
+        except AnkiFout as e:
+            sys.exit(f"❌ Anki, позиции не тронуты или тронуты не все:\n{e}")
+        if droog:
+            print(f"новых Kern: {nieuw}, due ≠ Rank у {scheef} — запись без --droog")
+        else:
+            print(f"✅ новых Kern: {nieuw}, позиция = Rank выставлена у {scheef}")
+        sys.exit(0)
     if sys.argv[1:] == ["lint"]:
         try:
             fouten = lint()
@@ -275,7 +330,7 @@ if __name__ == "__main__":
         print("\n".join(fouten) or "✅ Twenty Rules: нарушений нет")
         sys.exit(1 if fouten else 0)
     if len(sys.argv) != 3 or sys.argv[1] != "import":
-        sys.exit("usage: anki_utils.py import FILE_anki.txt | anki_utils.py lint")
+        sys.exit("usage: anki_utils.py import FILE_anki.txt | lint | herorden [--droog]")
     try:
         added, skipped = import_tsv(Path(sys.argv[2]))
     except KaartFout as e:
