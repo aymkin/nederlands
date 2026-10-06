@@ -14,15 +14,13 @@ Werk, Reading). Граница — первый ранг без карточки
 i+1: каждое слово примера, кроме цели, известно — все его прочтения раньше цели в
 списке (в блоке 1–150 — любые ≤ 150) или помечены uit.
 """
-import html
 import json
-import re
 import sys
 from collections import Counter, namedtuple
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from anki_utils import ANKI_PROFILE, FREQUENTIE, KERN, lees_tsv  # same dir
+from anki_utils import ANKI_PROFILE, FREQUENTIE, KERN, TOKEN, lees_tsv, tekst  # same dir
 from anki_vandaag import clean, collection_path, kopie
 
 REPO = Path(__file__).resolve().parent.parent
@@ -31,7 +29,6 @@ TABELLEN = (REPO / "frequentie" / "lijst_besluiten.tsv", PILOT / "lijst_besluite
 WEG = {"de", "het", "zich"}            # снимаются с Word до сопоставления
 HORIZON = 2500                         # горизонт таблицы решений
 BLOK = 150                             # ранги 1–150 — один блок разгона
-TOKEN = re.compile(r"[a-zà-ÿ]+(?:'[a-z]+)?")   # как consensus_rank.words(): им собран vormen.json
 # words() пишет 'n/'m/'k/'s как n/m/k/s. В примере это клитики, а в vormen.json —
 # обрывки субтитров со своими ключами.
 KLITIEK = {"n": ["een"], "m": ["hem"], "k": ["ik"], "s": ["de"], "da's": ["dat", "zijn"]}
@@ -147,7 +144,7 @@ def lijst_rapport(lijst, uit, vormen, notes):
 def tokens(example):
     """[(форма, имя ли)] — формы consensus_rank.words(). Имя — с заглавной не в начале
     предложения."""
-    s = html.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"\[sound:[^\]]+\]", "", example)))
+    s = tekst(example)
     out = []
     for m in TOKEN.finditer(s.lower()):
         voor = s[:m.start()].rstrip(OPEN)

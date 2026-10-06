@@ -11,15 +11,19 @@ an _anki.txt TSV straight into the running Anki via AnkiConnect.
     python3 scripts/anki_utils.py herorden [--droog]   # позиция новой Kern = Rank
 """
 
+import html
 import json
 import re
 import shutil
 import sys
 import urllib.error
 import urllib.request
-from collections import Counter
+from collections import Counter, defaultdict
+from itertools import combinations
 from pathlib import Path
 from typing import Any
+
+from check_recycling import FUNCTION_WORDS, UNCREDITED  # same dir
 
 # Базовые пути к Anki2 (кроссплатформенно)
 ANKI_BASE_PATHS = [
@@ -166,6 +170,66 @@ def twenty_rules(nieuw: dict[str, str], bestaand: dict[str, str]) -> list[str]:
     return fouten
 
 
+TOKEN = re.compile(r"[a-zà-ÿ]+(?:'[a-z]+)?")   # как consensus_rank.words(): им собран vormen.json
+# Слова, которые ситуацию примера не задают (D6). check_recycling держит служебные
+# слова леммами (zijn) — здесь сравниваются формы (is), поэтому добавлены формы
+# вспомогательных глаголов, предлоги, союзы и остальные местоимения.
+LEEG = FUNCTION_WORDS | UNCREDITED | {
+    "ik", "u", "jullie", "mijn", "m'n", "z'n", "zich", "zichzelf", "men", "iets", "iemand",
+    "niemand", "alles", "elk", "elke", "ieder", "iedere", "welk", "welke", "wie", "hoe",
+    "geen", "veel", "zo'n", "zulke", "ander", "andere",
+    "aan", "bij", "door", "in", "met", "na", "naar", "om", "op", "over", "per", "sinds",
+    "te", "tegen", "tijdens", "tot", "tussen", "uit", "van", "vanaf", "via", "voor", "zonder",
+    "als", "dan", "dus", "of", "omdat", "toen", "terwijl", "zodat", "zoals",
+    "ben", "bent", "is", "was", "waren", "geweest", "heb", "hebt", "heeft", "had", "hadden",
+    "gehad", "word", "wordt", "werd", "werden", "geworden", "zal", "zult", "zullen", "zou",
+    "zouden", "kan", "kun", "kunt", "kunnen", "kon", "konden", "moet", "moeten", "moest",
+    "moesten", "wil", "wilt", "willen", "wilde", "wilden", "mag", "mogen", "mocht", "ga",
+    "gaat", "gaan", "ging", "gingen", "nog", "zo", "hier", "erg", "zeer",
+}
+
+
+def tekst(veld: str) -> str:
+    """Поле без [sound:…], тегов и HTML-сущностей."""
+    return html.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"\[sound:[^\]]+\]", "", veld)))
+
+
+def woorden(veld: str) -> set[str]:
+    return set(TOKEN.findall(tekst(veld).lower()))
+
+
+def synoniemen(nieuw: dict[str, tuple[str, str]],
+               bestaand: dict[str, tuple[str, str]]) -> list[str]:
+    """Word → (Translation, Example) новой партии против уже лежащих в Anki.
+
+    Синонимы — заметки с общим значением (betekenissen). У каждого своя ситуация
+    (D6, продолжение правила 10): примеры пары не делят ни одного слова, кроме
+    самих целей и LEEG. Проверяются пары с новой заметкой; lint передаёт всё
+    как новое. Возвращает список нарушений."""
+    alle = {**bestaand, **nieuw}
+    per_betekenis: dict[str, set[str]] = defaultdict(set)
+    for word, (tr, _) in alle.items():
+        for b in betekenissen(tr):
+            per_betekenis[b].add(word)
+    paren: dict[tuple[str, str], set[str]] = defaultdict(set)
+    for b, words in per_betekenis.items():
+        for x, y in combinations(sorted(words), 2):
+            if x in nieuw or y in nieuw:
+                paren[x, y].add(b)
+    fouten: list[str] = []
+    for (x, y), gemeen in sorted(paren.items()):
+        gedeeld = (woorden(alle[x][1]) & woorden(alle[y][1])) - LEEG - woorden(x) - woorden(y)
+        if gedeeld:
+            fouten.append(f"{x} / {y}: синонимы («{', '.join(sorted(gemeen))}»), в примерах "
+                          f"общее {', '.join(sorted(gedeeld))} (правило 10: у синонимов своя "
+                          f"ситуация)")
+    return fouten
+
+
+def vertalingen(notes: dict[str, tuple[str, str]]) -> dict[str, str]:
+    return {word: tr for word, (tr, _) in notes.items()}
+
+
 def eis_profiel(profile: str) -> None:
     """AnkiConnect работает с профилем, открытым в Anki: в чужом проверки идут
     вхолостую, а запись уходит не в ту коллекцию. Поэтому это первый вызов."""
@@ -214,10 +278,10 @@ def import_tsv(path: Path, profile: str = ANKI_PROFILE) -> tuple[int, list[str]]
     Колода создаётся последней и только когда есть что добавить (инцидент
     2026-09-28, `tasks/lessons.md`).
 
-    Для «Frequentie NL» сперва `twenty_rules` против всей коллекции этого
-    типа; нарушение — `KaartFout`, в Anki ничего не пишется. Проверять до
-    импорта обязательно: повторный импорт заметку с тем же Word пропускает,
-    так что исправленный перевод туда уже не попадёт."""
+    Для «Frequentie NL» сперва `twenty_rules` и `synoniemen` против всей
+    коллекции этого типа; нарушение — `KaartFout`, в Anki ничего не пишется.
+    Проверять до импорта обязательно: повторный импорт заметку с тем же Word
+    пропускает, так что исправленный перевод туда уже не попадёт."""
     head, notes = lees_tsv(path)
     eerste = head["columns"].split("\t")[0]
     aantal = Counter(n["fields"][eerste] for n in notes)
@@ -227,11 +291,14 @@ def import_tsv(path: Path, profile: str = ANKI_PROFILE) -> tuple[int, list[str]]
     if head["notetype"] == FREQUENTIE:
         ids = ankiconnect("findNotes", query=f'"note:{FREQUENTIE}"')
         bestaand = {
-            n["fields"]["Word"]["value"]: n["fields"]["Translation"]["value"]
+            n["fields"]["Word"]["value"]: (
+                n["fields"]["Translation"]["value"], n["fields"]["Example"]["value"])
             for n in ankiconnect("notesInfo", notes=ids)
         }
-        nieuw = {n["fields"]["Word"]: n["fields"]["Translation"] for n in notes}
-        if fouten := twenty_rules(nieuw, bestaand):
+        nieuw = {n["fields"]["Word"]: (n["fields"]["Translation"], n["fields"].get("Example", ""))
+                 for n in notes}
+        if fouten := twenty_rules(vertalingen(nieuw), vertalingen(bestaand)) + synoniemen(
+                nieuw, bestaand):
             raise KaartFout("\n".join(fouten))
     # Новую колоду canAdd не проверит: AnkiConnect ищет колоду раньше дубля. Дубль
     # же он ищет по note type во всей коллекции, а не в колоде (пока у заметок нет
@@ -261,7 +328,7 @@ def import_tsv(path: Path, profile: str = ANKI_PROFILE) -> tuple[int, list[str]]
 
 
 def lint(profile: str = ANKI_PROFILE) -> list[str]:
-    """twenty_rules по всей коллекции «Frequentie NL» — после ручной правки.
+    """twenty_rules и synoniemen по всей коллекции «Frequentie NL» — после ручной правки.
     Ноль заметок — отказ, а не «нарушений нет»: так выглядит и чужой профиль,
     и переименованный note type."""
     eis_profiel(profile)
@@ -269,10 +336,11 @@ def lint(profile: str = ANKI_PROFILE) -> list[str]:
     if not ids:
         raise AnkiFout(f"в профиле {profile} нет заметок «{FREQUENTIE}» — проверять нечего")
     alle = {
-        n["fields"]["Word"]["value"]: n["fields"]["Translation"]["value"]
+        n["fields"]["Word"]["value"]: (
+            n["fields"]["Translation"]["value"], n["fields"]["Example"]["value"])
         for n in ankiconnect("notesInfo", notes=ids)
     }
-    return twenty_rules(alle, {})
+    return twenty_rules(vertalingen(alle), {}) + synoniemen(alle, {})
 
 
 def herorden(profile: str = ANKI_PROFILE, droog: bool = False) -> tuple[int, int]:
@@ -334,7 +402,7 @@ if __name__ == "__main__":
             fouten = lint()
         except AnkiFout as e:
             sys.exit(f"❌ Anki, проверка не начата:\n{e}")
-        print("\n".join(fouten) or "✅ Twenty Rules: нарушений нет")
+        print("\n".join(fouten) or "✅ Twenty Rules и синонимы: нарушений нет")
         sys.exit(1 if fouten else 0)
     if len(sys.argv) != 3 or sys.argv[1] != "import":
         sys.exit("usage: anki_utils.py import FILE_anki.txt | lint | herorden [--droog]")

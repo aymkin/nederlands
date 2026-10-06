@@ -15,7 +15,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import anki_utils as au
-from anki_utils import betekenissen, twenty_rules
+from anki_utils import betekenissen, synoniemen, twenty_rules
 
 TSV = (
     "#separator:tab\n#html:true\n#notetype:Frequentie NL\n#deck:Frequentie::Werk\n"
@@ -60,6 +60,39 @@ def test_hoofdletters():
     assert twenty_rules({"a": "Решение"}, {"b": "решение"}) != []
 
 
+NOGAL = {"nogal": ("довольно-таки, изрядно", "Het is vandaag nogal koud.")}
+
+
+def test_synoniemen_zelfde_situatie():
+    # D6: у синонимов своя ситуация. Общее значение «изрядно», в примерах — koud.
+    fouten = synoniemen({"behoorlijk": ("порядочно, изрядно", "Het is behoorlijk koud buiten.")},
+                        NOGAL)
+    assert fouten == ["behoorlijk / nogal: синонимы («изрядно»), в примерах общее koud "
+                      "(правило 10: у синонимов своя ситуация)"]
+
+
+def test_synoniemen_geen_gemeen_betekenis():
+    # ineens делит с nogal «koud», но не значение — не синонимы.
+    assert synoniemen({"ineens": ("вдруг, внезапно", "Het is ineens koud.")}, NOGAL) == []
+
+
+def test_synoniemen_lidwoord_en_is_tellen_niet():
+    assert synoniemen({"behoorlijk": ("порядочно, изрядно", "Het is behoorlijk warm.")},
+                      NOGAL) == []
+
+
+def test_synoniemen_doelen_tellen_niet():
+    assert synoniemen({"behoorlijk": ("изрядно", "Behoorlijk of nogal?")},
+                      {"nogal": ("изрядно", "Nogal of behoorlijk?")}) == []
+
+
+def test_synoniemen_alleen_paren_met_nieuw():
+    # Импорт другой партии не падает на паре, которая уже лежит в Anki.
+    bestaand = {**NOGAL, "behoorlijk": ("порядочно, изрядно", "Het is behoorlijk koud.")}
+    assert synoniemen({"de wens": ("желание", "Mijn wens is een fiets.")}, bestaand) == []
+    assert len(synoniemen(bestaand, {})) == 1                     # lint видит её
+
+
 def kaart(cid, word, rank, due, deck=au.KERN):
     """Новая карточка Kern так, как её отдаёт cardsInfo."""
     return {"cardId": cid, "deckName": deck, "due": due,
@@ -68,12 +101,14 @@ def kaart(cid, word, rank, due, deck=au.KERN):
 
 @contextmanager
 def nep_anki(profiel="alex", modellen=("Frequentie NL",), decks=("Frequentie::Werk",),
-             bestaand=None, kaarten=(), weiger=False):
+             bestaand=None, kaarten=(), weiger=False, voorbeelden=None):
     """AnkiConnect понарошку: журнал вызовов и порядок проверок createNote —
-    note type, потом колода, потом дубль. bestaand — Word → Translation.
+    note type, потом колода, потом дубль. bestaand — Word → Translation,
+    voorbeelden — Word → Example (notesInfo, как настоящий, отдаёт все поля).
     kaarten — новые карточки для herorden; weiger — setSpecificValueOfCard
     отвечает False, как настоящий при отказе."""
     bestaand = bestaand or {}
+    voorbeelden = voorbeelden or {}
     decks = list(decks)
     kaarten = {k["cardId"]: dict(k) for k in kaarten}  # RIJ общий для тестов
     log = []
@@ -94,7 +129,8 @@ def nep_anki(profiel="alex", modellen=("Frequentie NL",), decks=("Frequentie::We
         if action == "findNotes":
             return list(bestaand)
         if action == "notesInfo":
-            return [{"fields": {"Word": {"value": w}, "Translation": {"value": t}}}
+            return [{"fields": {"Word": {"value": w}, "Translation": {"value": t},
+                                "Example": {"value": voorbeelden.get(w, "")}}}
                     for w, t in bestaand.items()]
         if action == "deckNames":
             return list(decks)
@@ -216,6 +252,33 @@ def test_nieuwe_deck_alles_dubbel():
                   bestaand={"pas": "пропуск", "bepalen": "определять"}) as log:
         assert importeer() == (0, ["pas", "bepalen"])
     assert not {"createDeck", "addNotes"} & set(acties(log))
+
+
+SYNONIEM_TSV = (
+    "#separator:tab\n#html:true\n#notetype:Frequentie NL\n#deck:Frequentie::Werk\n"
+    "#columns:Word\tExample\tTranslation\tTags\n#tags column:4\n"
+    "behoorlijk\tHet is behoorlijk koud buiten.\tпорядочно, изрядно\tfrequentie\n"
+)
+
+
+def test_import_weigert_synoniem_zelfde_situatie():
+    with nep_anki(bestaand={"nogal": NOGAL["nogal"][0]},
+                  voorbeelden={"nogal": NOGAL["nogal"][1]}) as log:
+        try:
+            importeer(SYNONIEM_TSV)
+        except au.KaartFout as e:
+            assert "behoorlijk / nogal" in str(e) and "koud" in str(e)
+        else:
+            raise AssertionError("синоним с той же ситуацией прошёл")
+    assert "addNotes" not in acties(log)
+
+
+def test_lint_noemt_synoniemen():
+    with nep_anki(bestaand={"nogal": NOGAL["nogal"][0], "behoorlijk": "порядочно, изрядно"},
+                  voorbeelden={"nogal": NOGAL["nogal"][1],
+                               "behoorlijk": "Het is behoorlijk koud buiten."}):
+        assert au.lint() == ["behoorlijk / nogal: синонимы («изрядно»), в примерах общее "
+                             "koud (правило 10: у синонимов своя ситуация)"]
 
 
 def test_lint_verkeerd_profiel():
