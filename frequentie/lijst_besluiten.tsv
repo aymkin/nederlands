@@ -79,7 +79,7 @@ lezing		stop	WW:stoppen		перевёртыш: инфинитив stoppen отд
 lezing		stoppen	N:stop		«de stop» (остановка) — сущ., не глагол stoppen
 blijft		open			пометка SPEC — от теггера
 blijft	zoek	zoeken			«op zoek naar» — оборот глагола zoeken
-lezing		pas	BW:pas#2 WW:passen	pas²	«pas» (только, лишь) — ключ pas у карточки Werk (пропуск); «ik pas» — форма passen
+lezing		pas	WW:passen N:pas#2	de pas²	«de pas» (пропуск, карта) — другое слово, чем «pas» (только тогда, карточка Werk); «ik pas» — форма passen
 lezing		pak	WW:pakken		перевёртыш: инфинитив pakken отдан ключу pak
 lezing		pakken	N:pak		«het pak» (костюм, пакет) — сущ., не глагол pakken
 blijft		juist			наречие и прилагательное — одно слово (верный, как раз)
@@ -611,3 +611,5 @@ uit		slet			мат
 uit		tiet			мат
 uit		klote			мат
 uit		godverdomme			мат
+remap	pasje	pas	pas#2		«het pasje» — уменьшительное от «de pas» (пропуск, карта)
+remap		ritten	rit		simplemma: rit → ritten; «de rit» — карточка Werk

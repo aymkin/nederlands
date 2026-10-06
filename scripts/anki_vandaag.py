@@ -26,6 +26,7 @@ import shutil
 import sqlite3
 import sys
 import tempfile
+from contextlib import contextmanager
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
@@ -61,11 +62,10 @@ def day_bounds_ms(day: date) -> tuple[int, int]:
     return int(start.timestamp() * 1000), int(end.timestamp() * 1000)
 
 
-def introduced_on(col: Path, day: date, notetypes: list[str] | None):
-    """Notes whose cards had their first-ever review inside `day`.
-
-    Returns (notetype_name, field_names, field_values) per note.
-    """
+@contextmanager
+def kopie(col: Path):
+    """A read-only connection to a snapshot of the collection; the copy is deleted
+    on exit. Never touches the original."""
     with tempfile.TemporaryDirectory() as tmp:
         copy = Path(tmp) / "col.anki2"
         shutil.copy2(col, copy)  # Anki may hold the original open/locked
@@ -83,6 +83,18 @@ def introduced_on(col: Path, day: date, notetypes: list[str] | None):
         con.create_collation(
             "unicase", lambda a, b: (a.lower() > b.lower()) - (a.lower() < b.lower())
         )
+        try:
+            yield con
+        finally:
+            con.close()
+
+
+def introduced_on(col: Path, day: date, notetypes: list[str] | None):
+    """Notes whose cards had their first-ever review inside `day`.
+
+    Returns (notetype_name, field_names, field_values) per note.
+    """
+    with kopie(col) as con:
         lo, hi = day_bounds_ms(day)
         rows = con.execute(
             """
@@ -102,7 +114,6 @@ def introduced_on(col: Path, day: date, notetypes: list[str] | None):
             "SELECT ntid, ord, name FROM fields ORDER BY ntid, ord"
         ):
             fields.setdefault(ntid, []).append(name)
-        con.close()
     out = []
     for ntid, name, flds in rows:
         if notetypes and name not in notetypes:
