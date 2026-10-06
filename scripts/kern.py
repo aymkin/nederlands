@@ -3,10 +3,12 @@
 
     python3 scripts/kern.py lijst                           # Word → ключ списка, дубли, граница
     python3 scripts/kern.py check frequentie/kern_*_anki.txt  # примеры по i+1
+    python3 scripts/kern.py rank frequentie/kern_*_anki.txt   # колонка Rank := ранг списка
 
 Список (lijst_v2.json) и карту форм (vormen.json) собирает
 private/frequentie_pilot/consensus_rank.py с обеими таблицами решений; kern.py их
-только читает. Коллекцию Anki — с копии (anki_vandaag.kopie), без записи.
+только читает. Коллекцию Anki — с копии (anki_vandaag.kopie), без записи; в Anki
+Rank переносит anki_utils.py update.
 
 Карточка у ключа есть, если его даёт Word любой заметки «Frequentie NL» (Kern,
 Werk, Reading). Граница — первый ранг без карточки и без пометки uit.
@@ -202,16 +204,50 @@ def voorbeeld(word, example, rang, sleutels, uit, vormen):
     return Oordeel(r, fout, let_op, samengesteld, onbekend, doel)
 
 
+def kern_tsv(p):
+    """lees_tsv партии Kern. Файл другой колоды — стоп: у Werk и Reading нет ранга в списке."""
+    head, notes = lees_tsv(p)
+    if head.get("deck") != KERN:
+        sys.exit(f"{p}: колода {head.get('deck')} — kern.py только для {KERN}")
+    return head, notes
+
+
 def kern_voorbeelden(paden):
-    """[(файл, Word, Example)] партий Kern. Файл другой колоды — стоп: у Werk и Reading
-    нет ранга в списке."""
-    out = []
+    """[(файл, Word, Example)] партий Kern."""
+    return [(p.name, n["fields"]["Word"], n["fields"]["Example"])
+            for p in map(Path, paden) for n in kern_tsv(p)[1]]
+
+
+def herrang(paden, lijst, vormen):
+    """Колонка Rank партий Kern := ранг Word в списке (D2: позиция в Anki = ранг).
+    Word вне списка — стоп до записи, ни один файл не тронут. Остальные байты файла
+    не меняются. ([(файл, Word, было, стало)], строк всего)."""
+    rang = {k: i for i, k in enumerate(lijst, 1)}
+    sleutels = {k.lower(): k for k in lijst}
+    teksten, anders, buiten, n = {}, [], [], 0
     for p in map(Path, paden):
-        head, notes = lees_tsv(p)
-        if head.get("deck") != KERN:
-            sys.exit(f"{p}: колода {head.get('deck')} — check только для {KERN}")
-        out += [(p.name, n["fields"]["Word"], n["fields"]["Example"]) for n in notes]
-    return out
+        kolommen = kern_tsv(p)[0]["columns"].split("\t")
+        w, r = kolommen.index("Word"), kolommen.index("Rank")
+        regels = p.read_text(encoding="utf-8").splitlines(keepends=True)
+        for i, regel in enumerate(regels):
+            kaal = regel.rstrip("\r\n")
+            if regel.startswith("#") or not kaal.strip():
+                continue
+            n += 1
+            velden = kaal.split("\t")
+            k = sleutel(velden[w], sleutels, vormen)
+            if k is None:
+                buiten.append(f"{p.name}: {velden[w]}")
+            elif velden[r] != str(rang[k]):
+                anders.append((p.name, velden[w], velden[r], rang[k]))
+                velden[r] = str(rang[k])
+                regels[i] = "\t".join(velden) + regel[len(kaal):]
+        teksten[p] = "".join(regels)
+    if buiten:
+        sys.exit("Word не сопоставлен со списком, файлы не тронуты: " + ", ".join(buiten))
+    for p, inhoud in teksten.items():
+        p.write_text(inhoud, encoding="utf-8")
+    return anders, n
 
 
 def check_rapport(lijst, uit, vormen, notes):
@@ -259,8 +295,14 @@ def main():
         out, fout = lijst_rapport(*laad(), notities())
     elif cmd == "check" and paden:
         out, fout = check_rapport(*laad(), kern_voorbeelden(paden))
+    elif cmd == "rank" and paden:
+        lijst, _, vormen = laad()
+        anders, n = herrang(paden, lijst, vormen)
+        anders.sort(key=lambda t: -abs(int(t[2]) - t[3]) if t[2].isdigit() else -10**9)
+        out, fout = [f"Rank: изменён у {len(anders)} из {n} строк; сильнее всего: " + ", ".join(
+            f"{word} {was}→{nu}" for _, word, was, nu in anders[:12])], False
     else:
-        sys.exit("usage: kern.py lijst | kern.py check FILE...")
+        sys.exit("usage: kern.py lijst | kern.py check FILE... | kern.py rank FILE...")
     print("\n".join(out))
     sys.exit(1 if fout else 0)
 

@@ -7,8 +7,11 @@ copying audio files into Anki's collection.media directory, and importing
 an _anki.txt TSV straight into the running Anki via AnkiConnect.
 
     python3 scripts/anki_utils.py import FILE_anki.txt
+    python3 scripts/anki_utils.py update FILE_anki.txt... [--droog]   # поля заметок := файл
     python3 scripts/anki_utils.py lint     # Twenty Rules по всей коллекции
     python3 scripts/anki_utils.py herorden [--droog]   # позиция новой Kern = Rank
+
+После import и update партии Kern запускается herorden.
 """
 
 import html
@@ -230,6 +233,26 @@ def vertalingen(notes: dict[str, tuple[str, str]]) -> dict[str, str]:
     return {word: tr for word, (tr, _) in notes.items()}
 
 
+def paar(velden: dict[str, str]) -> tuple[str, str]:
+    """(Translation, Example) — то, что проверяют ворота."""
+    return velden["Translation"], velden.get("Example", "")
+
+
+def keur(deck: str, nieuw: dict[str, tuple[str, str]], bestaand: dict[str, tuple[str, str]],
+         bron: str) -> list[str]:
+    """Ворота записи «Frequentie NL»: twenty_rules и synoniemen против коллекции, у Kern
+    ещё i+1 (kern.py check; у Werk и Reading ранга в списке нет). nieuw и bestaand —
+    Word → (Translation, Example). Возвращает нарушения."""
+    fouten = twenty_rules(vertalingen(nieuw), vertalingen(bestaand)) + synoniemen(nieuw, bestaand)
+    if deck == KERN and nieuw:
+        import kern  # kern.py импортирует anki_utils: наверху был бы цикл
+        out, fout = kern.check_rapport(*kern.laad(),
+                                       [(bron, w, ex) for w, (_, ex) in nieuw.items()])
+        if fout:
+            fouten += out
+    return fouten
+
+
 def eis_profiel(profile: str) -> None:
     """AnkiConnect работает с профилем, открытым в Anki: в чужом проверки идут
     вхолостую, а запись уходит не в ту коллекцию. Поэтому это первый вызов."""
@@ -237,6 +260,14 @@ def eis_profiel(profile: str) -> None:
     if actief != profile:
         nu = f"открыт профиль {actief}" if actief else "не открыт ни один профиль"
         raise AnkiFout(f"в Anki {nu}, нужен {profile} — переключи профиль и запусти снова")
+
+
+def in_anki(notetype: str, eerste: str = "Word") -> dict[str, tuple[Any, dict[str, str]]]:
+    """{первое поле: (noteId, {поле: значение})} всех заметок типа."""
+    ids = ankiconnect("findNotes", query=f'"note:{notetype}"')
+    return {n["fields"][eerste]["value"]:
+            (n["noteId"], {f: v["value"] for f, v in n["fields"].items()})
+            for n in ankiconnect("notesInfo", notes=ids)}
 
 
 def lees_tsv(path: Path) -> tuple[dict[str, str], list[dict[str, Any]]]:
@@ -278,10 +309,10 @@ def import_tsv(path: Path, profile: str = ANKI_PROFILE) -> tuple[int, list[str]]
     Колода создаётся последней и только когда есть что добавить (инцидент
     2026-09-28, `tasks/lessons.md`).
 
-    Для «Frequentie NL» сперва `twenty_rules` и `synoniemen` против всей
-    коллекции этого типа; нарушение — `KaartFout`, в Anki ничего не пишется.
-    Проверять до импорта обязательно: повторный импорт заметку с тем же Word
-    пропускает, так что исправленный перевод туда уже не попадёт."""
+    Для «Frequentie NL» сперва ворота `keur` против всей коллекции этого типа;
+    нарушение — `KaartFout`, в Anki ничего не пишется. Проверять до импорта
+    обязательно: повторный импорт заметку с тем же Word пропускает — исправить её
+    можно только через `update`."""
     head, notes = lees_tsv(path)
     eerste = head["columns"].split("\t")[0]
     aantal = Counter(n["fields"][eerste] for n in notes)
@@ -289,16 +320,9 @@ def import_tsv(path: Path, profile: str = ANKI_PROFILE) -> tuple[int, list[str]]
         raise KaartFout(f"{eerste} повторяется в партии: {', '.join(herhaald)}")
     eis_profiel(profile)
     if head["notetype"] == FREQUENTIE:
-        ids = ankiconnect("findNotes", query=f'"note:{FREQUENTIE}"')
-        bestaand = {
-            n["fields"]["Word"]["value"]: (
-                n["fields"]["Translation"]["value"], n["fields"]["Example"]["value"])
-            for n in ankiconnect("notesInfo", notes=ids)
-        }
-        nieuw = {n["fields"]["Word"]: (n["fields"]["Translation"], n["fields"].get("Example", ""))
-                 for n in notes}
-        if fouten := twenty_rules(vertalingen(nieuw), vertalingen(bestaand)) + synoniemen(
-                nieuw, bestaand):
+        bestaand = {w: paar(v) for w, (_, v) in in_anki(FREQUENTIE).items()}
+        nieuw = {n["fields"]["Word"]: paar(n["fields"]) for n in notes}
+        if fouten := keur(head["deck"], nieuw, bestaand, path.name):
             raise KaartFout("\n".join(fouten))
     # Новую колоду canAdd не проверит: AnkiConnect ищет колоду раньше дубля. Дубль
     # же он ищет по note type во всей коллекции, а не в колоде (пока у заметок нет
@@ -332,15 +356,56 @@ def lint(profile: str = ANKI_PROFILE) -> list[str]:
     Ноль заметок — отказ, а не «нарушений нет»: так выглядит и чужой профиль,
     и переименованный note type."""
     eis_profiel(profile)
-    ids = ankiconnect("findNotes", query=f'"note:{FREQUENTIE}"')
-    if not ids:
+    alle = {w: paar(v) for w, (_, v) in in_anki(FREQUENTIE).items()}
+    if not alle:
         raise AnkiFout(f"в профиле {profile} нет заметок «{FREQUENTIE}» — проверять нечего")
-    alle = {
-        n["fields"]["Word"]["value"]: (
-            n["fields"]["Translation"]["value"], n["fields"]["Example"]["value"])
-        for n in ankiconnect("notesInfo", notes=ids)
-    }
     return twenty_rules(vertalingen(alle), {}) + synoniemen(alle, {})
+
+
+def update(path: Path, profile: str = ANKI_PROFILE, droog: bool = False) -> dict[str, list[str]]:
+    """Поля уже импортированных заметок := поля файла: повторный import такую заметку
+    пропускает (урок 2026-09-24). Заметка ищется по первому полю; пишутся только
+    отличающиеся поля, теги не трогаются. До записи: заметки нет в Anki — `AnkiFout`;
+    изменённые Translation и Example «Frequentie NL» проходят ворота импорта
+    (`keur`) — `KaartFout`. droog — посчитать, не записывая.
+
+    Запись затирает и правку, сделанную руками в Anki, — поэтому сперва droog: он
+    называет каждое поле, которое изменится. updateNoteFields молча не пишет
+    заметку, открытую в браузере Anki, — после записи поля читаются заново.
+
+    Возвращает {поле: [первое поле заметки]} изменённого."""
+    head, notes = lees_tsv(path)
+    eerste = head["columns"].split("\t")[0]
+    eis_profiel(profile)
+    anki = in_anki(head["notetype"], eerste)
+    if ontbreekt := [n["fields"][eerste] for n in notes if n["fields"][eerste] not in anki]:
+        raise AnkiFout(f"нет в Anki: {', '.join(ontbreekt)} — новые заметки добавляет import")
+    wijzig: dict[str, tuple[Any, dict[str, str]]] = {}
+    for n in notes:
+        nid, oud = anki[n["fields"][eerste]]
+        if diff := {f: v for f, v in n["fields"].items() if oud[f] != v}:
+            wijzig[n["fields"][eerste]] = (nid, diff)
+    if head["notetype"] == FREQUENTIE:
+        bestaand = {w: paar(v) for w, (_, v) in anki.items()}
+        nieuw = {w: paar({**anki[w][1], **diff}) for w, (_, diff) in wijzig.items()
+                 if diff.keys() & {"Translation", "Example"}}
+        if fouten := keur(head["deck"], nieuw, bestaand, path.name):
+            raise KaartFout("\n".join(fouten))
+    per_veld: dict[str, list[str]] = defaultdict(list)
+    for w, (_, diff) in wijzig.items():
+        for f in diff:
+            per_veld[f].append(w)
+    if droog or not wijzig:
+        return dict(per_veld)
+    for nid, diff in wijzig.values():
+        ankiconnect("updateNoteFields", note={"id": nid, "fields": diff})
+    na = {n["noteId"]: n["fields"] for n in ankiconnect(
+        "notesInfo", notes=[nid for nid, _ in wijzig.values()])}
+    if blijft := [w for w, (nid, diff) in wijzig.items()
+                  if any(na[nid][f]["value"] != v for f, v in diff.items())]:
+        raise AnkiFout(f"после записи поле не то: {', '.join(blijft)} — закрой браузер Anki "
+                       f"и запусти снова")
+    return dict(per_veld)
 
 
 def herorden(profile: str = ANKI_PROFILE, droog: bool = False) -> tuple[int, int]:
@@ -385,6 +450,19 @@ def herorden(profile: str = ANKI_PROFILE, droog: bool = False) -> tuple[int, int
     return len(kaarten), len(scheef)
 
 
+def posities_kern(paden: list[Path]) -> None:
+    """После записи партии Kern — herorden: новая карточка встаёт на свой Rank, а не
+    в конец очереди, куда её ставит addNotes."""
+    if KERN not in {lees_tsv(p)[0]["deck"] for p in paden}:
+        return
+    try:
+        nieuw, gezet = herorden()
+    except AnkiFout as e:
+        sys.exit(f"❌ заметки записаны, а позиции новых Kern — не все:\n{e}\n"
+                 f"повтор: python3 scripts/anki_utils.py herorden")
+    print(f"✅ новых Kern: {nieuw}, позиция = Rank выставлена у {gezet}")
+
+
 if __name__ == "__main__":
     if sys.argv[1:2] == ["herorden"] and set(sys.argv[2:]) <= {"--droog"}:
         droog = "--droog" in sys.argv
@@ -404,12 +482,31 @@ if __name__ == "__main__":
             sys.exit(f"❌ Anki, проверка не начата:\n{e}")
         print("\n".join(fouten) or "✅ Twenty Rules и синонимы: нарушений нет")
         sys.exit(1 if fouten else 0)
+    if sys.argv[1:2] == ["update"] and (paden := [Path(a) for a in sys.argv[2:] if a != "--droog"]):
+        droog = "--droog" in sys.argv
+        for p in paden:
+            try:
+                per_veld = update(p, droog=droog)
+            except KaartFout as e:
+                sys.exit(f"❌ Проверки карточек, {p.name} не записан:\n{e}")
+            except AnkiFout as e:
+                sys.exit(f"❌ Anki, {p.name}:\n{e}")
+            print(f"{p.name}: " + ("; ".join(
+                f"{f} {len(ws)} ({', '.join(ws[:6])}{', …' if len(ws) > 6 else ''})"
+                for f, ws in per_veld.items()) or "без изменений"))
+        if droog:
+            print("запись — без --droog")
+        else:
+            posities_kern(paden)
+        sys.exit(0)
     if len(sys.argv) != 3 or sys.argv[1] != "import":
-        sys.exit("usage: anki_utils.py import FILE_anki.txt | lint | herorden [--droog]")
+        sys.exit("usage: anki_utils.py import FILE_anki.txt | update FILE_anki.txt... [--droog]"
+                 " | lint | herorden [--droog]")
     try:
         added, skipped = import_tsv(Path(sys.argv[2]))
     except KaartFout as e:
-        sys.exit(f"❌ Twenty Rules, импорт не начат:\n{e}")
+        sys.exit(f"❌ Проверки карточек, импорт не начат:\n{e}")
     except AnkiFout as e:
         sys.exit(f"❌ Anki, импорт не начат:\n{e}")
     print(f"✅ добавлено {added}" + (f", уже были: {', '.join(skipped)}" if skipped else ""))
+    posities_kern([Path(sys.argv[2])])

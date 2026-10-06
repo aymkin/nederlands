@@ -15,6 +15,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import anki_utils as au
+import kern
 from anki_utils import betekenissen, synoniemen, twenty_rules
 
 TSV = (
@@ -101,14 +102,18 @@ def kaart(cid, word, rank, due, deck=au.KERN):
 
 @contextmanager
 def nep_anki(profiel="alex", modellen=("Frequentie NL",), decks=("Frequentie::Werk",),
-             bestaand=None, kaarten=(), weiger=False, voorbeelden=None):
+             bestaand=None, kaarten=(), weiger=False, voorbeelden=None, velden=None,
+             blind=False):
     """AnkiConnect понарошку: журнал вызовов и порядок проверок createNote —
     note type, потом колода, потом дубль. bestaand — Word → Translation,
-    voorbeelden — Word → Example (notesInfo, как настоящий, отдаёт все поля).
-    kaarten — новые карточки для herorden; weiger — setSpecificValueOfCard
-    отвечает False, как настоящий при отказе."""
+    voorbeelden — Word → Example, velden — Word → прочие поля (notesInfo, как
+    настоящий, отдаёт все поля; noteId здесь — сам Word). kaarten — новые
+    карточки для herorden; weiger — setSpecificValueOfCard отвечает False, как
+    настоящий при отказе; blind — updateNoteFields не пишет, как настоящий, когда
+    заметка открыта в браузере Anki."""
     bestaand = bestaand or {}
-    voorbeelden = voorbeelden or {}
+    notities = {w: {"Word": w, "Translation": t, "Example": (voorbeelden or {}).get(w, ""),
+                    **(velden or {}).get(w, {})} for w, t in bestaand.items()}
     decks = list(decks)
     kaarten = {k["cardId"]: dict(k) for k in kaarten}  # RIJ общий для тестов
     log = []
@@ -127,11 +132,14 @@ def nep_anki(profiel="alex", modellen=("Frequentie NL",), decks=("Frequentie::We
         if action == "getActiveProfile":
             return profiel
         if action == "findNotes":
-            return list(bestaand)
+            return list(notities)
         if action == "notesInfo":
-            return [{"fields": {"Word": {"value": w}, "Translation": {"value": t},
-                                "Example": {"value": voorbeelden.get(w, "")}}}
-                    for w, t in bestaand.items()]
+            return [{"noteId": w, "fields": {f: {"value": v} for f, v in notities[w].items()}}
+                    for w in params["notes"]]
+        if action == "updateNoteFields":
+            if not blind:
+                notities[params["note"]["id"]].update(params["note"]["fields"])
+            return None
         if action == "deckNames":
             return list(decks)
         if action == "canAddNotesWithErrorDetail":
@@ -279,6 +287,120 @@ def test_lint_noemt_synoniemen():
                                "behoorlijk": "Het is behoorlijk koud buiten."}):
         assert au.lint() == ["behoorlijk / nogal: синонимы («изрядно»), в примерах общее "
                              "koud (правило 10: у синонимов своя ситуация)"]
+
+
+# i+1 понарошку (kern.laad): thuis и ziek — за блоком 1–150, omdat — в нём.
+I1 = (["ik", "blijven", "omdat", "zijn"] + [f"vul{i}" for i in range(200)] + ["thuis", "ziek"],
+      {}, {"ik": ["ik"], "blijf": ["blijven"], "thuis": ["thuis"], "omdat": ["omdat"],
+           "ziek": ["ziek"], "ben": ["zijn"]})
+OMDAT = "Ik blijf thuis omdat ik ziek ben."
+
+
+@contextmanager
+def lijst(laad=lambda: I1):
+    echt, kern.laad = kern.laad, laad
+    try:
+        yield
+    finally:
+        kern.laad = echt
+
+
+def partij(deck, rank="3", example=OMDAT):
+    return ("#separator:tab\n#html:true\n#notetype:Frequentie NL\n"
+            f"#deck:{deck}\n#columns:Word\tRank\tExample\tTranslation\tTags\n#tags column:5\n"
+            f"omdat\t{rank}\t{example}\tпотому что\tfrequentie\n")
+
+
+def test_import_kern_i1():
+    with nep_anki(decks=(au.KERN,)) as log, lijst():
+        try:
+            importeer(partij(au.KERN))
+        except au.KaartFout as e:
+            assert "thuis 205" in str(e) and "ziek 206" in str(e)
+        else:
+            raise AssertionError("пример против i+1 прошёл")
+    assert "addNotes" not in acties(log)
+
+
+def test_import_werk_zonder_i1():
+    # У Werk нет ранга в списке: i+1 только для Kern, список даже не читается.
+    def nee():
+        raise AssertionError("i+1 для Werk")
+    with nep_anki(), lijst(nee):
+        assert importeer(partij("Frequentie::Werk")) == (1, [])
+
+
+def bijwerken(tsv, droog=False):
+    with tempfile.TemporaryDirectory() as d:
+        p = Path(d) / "kern_a_anki.txt"
+        p.write_text(tsv, encoding="utf-8")
+        return au.update(p, droog=droog)
+
+
+IN_ANKI = dict(decks=(au.KERN,), bestaand={"omdat": "потому что"}, voorbeelden={"omdat": OMDAT},
+               velden={"omdat": {"Rank": "116"}})
+
+
+def geschreven(log):
+    return [p["note"] for a, p in log if a == "updateNoteFields"]
+
+
+def test_update_alleen_verschil():
+    # Пример против i+1 не менялся — меняется только Rank, ворота его не держат.
+    with nep_anki(**IN_ANKI) as log, lijst():
+        assert bijwerken(partij(au.KERN)) == {"Rank": ["omdat"]}
+    assert geschreven(log) == [{"id": "omdat", "fields": {"Rank": "3"}}]
+
+
+def test_update_droog():
+    with nep_anki(**IN_ANKI) as log, lijst():
+        assert bijwerken(partij(au.KERN), droog=True) == {"Rank": ["omdat"]}
+    assert geschreven(log) == []
+
+
+def test_update_nieuw_voorbeeld_door_poort():
+    anki = {**IN_ANKI, "voorbeelden": {"omdat": "Ik blijf omdat ik ben."}}
+    with nep_anki(**anki) as log, lijst():
+        try:
+            bijwerken(partij(au.KERN, rank="116"))
+        except au.KaartFout as e:
+            assert "thuis 205" in str(e)
+        else:
+            raise AssertionError("новый пример против i+1 записан")
+    assert geschreven(log) == []
+
+
+def test_update_niet_in_anki():
+    with nep_anki(decks=(au.KERN,)) as log:
+        try:
+            bijwerken(partij(au.KERN))
+        except au.AnkiFout as e:
+            assert "omdat" in str(e) and "import" in str(e)
+        else:
+            raise AssertionError("заметки нет, а update прошёл")
+    assert geschreven(log) == []
+
+
+def test_update_blind():
+    """Заметка открыта в браузере Anki: запись молча не легла — ловим перечтением."""
+    with nep_anki(**IN_ANKI, blind=True), lijst():
+        try:
+            bijwerken(partij(au.KERN))
+        except au.AnkiFout as e:
+            assert "omdat" in str(e) and "браузер" in str(e)
+        else:
+            raise AssertionError("незаписанное поле прошло")
+
+
+def test_update_verkeerd_profiel():
+    with nep_anki(profiel="iuliia", **IN_ANKI) as log:
+        try:
+            bijwerken(partij(au.KERN))
+        except au.AnkiFout:
+            pass
+        else:
+            raise AssertionError("чужой профиль прошёл")
+    assert acties(log) == ["getActiveProfile"]
 
 
 def test_lint_verkeerd_profiel():

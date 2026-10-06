@@ -202,18 +202,46 @@ def test_check_rapport():
     assert kern.check_rapport(CHECK_LIJST, {}, CHECK_VORMEN, notes[1:])[1] is False
 
 
-def test_check_alleen_kern():
+def test_alleen_kern():
     with tempfile.TemporaryDirectory() as d:
         p = Path(d, "werk.txt")
         p.write_text("#separator:tab\n#html:true\n#notetype:Frequentie NL\n"
-                     "#deck:Frequentie::Werk\n#columns:Word\tExample\tTags\n#tags column:3\n"
-                     "pas\tIk kom pas morgen.\t\n", encoding="utf-8")
+                     "#deck:Frequentie::Werk\n#columns:Word\tRank\tExample\tTags\n#tags column:4\n"
+                     "pas\t\tIk kom pas morgen.\t\n", encoding="utf-8")
+        for stap in (lambda: kern.kern_voorbeelden([p]), lambda: kern.herrang([p], LIJST, VORMEN)):
+            try:
+                stap()
+            except SystemExit as e:
+                assert "Frequentie::Kern" in str(e)
+            else:
+                raise AssertionError("файл Werk прошёл")
+
+
+KOP = ("#separator:tab\n#html:true\n#notetype:Frequentie NL\n#deck:Frequentie::Kern\n"
+       "#columns:Word\tRank\tExample\tTags\n#tags column:4\n")
+
+
+def test_rank_uit_lijst():
+    # D2: позиция = ранг. de kaart — ранг 5, zijn² (zijn#2) уже 6 — строка не меняется.
+    with tempfile.TemporaryDirectory() as d:
+        p = Path(d, "kern_a.txt")
+        p.write_text(KOP + "de kaart\t740\tDe kaart.\tk\nzijn²\t6\tZ'n kaart.\tk", encoding="utf-8")
+        assert kern.herrang([p], LIJST, VORMEN) == ([("kern_a.txt", "de kaart", "740", 5)], 2)
+        assert p.read_text(encoding="utf-8") == KOP + "de kaart\t5\tDe kaart.\tk\nzijn²\t6\tZ'n kaart.\tk"
+
+
+def test_rank_buiten_lijst_raakt_niets():
+    with tempfile.TemporaryDirectory() as d:
+        a, b = Path(d, "kern_a.txt"), Path(d, "kern_b.txt")
+        a.write_text(KOP + "de kaart\t740\tDe kaart.\tk\n", encoding="utf-8")
+        b.write_text(KOP + "rekening houden met\t1\tIk houd er rekening mee.\tk\n", encoding="utf-8")
         try:
-            kern.kern_voorbeelden([p])
+            kern.herrang([a, b], LIJST, VORMEN)
         except SystemExit as e:
-            assert "Frequentie::Kern" in str(e)
+            assert "rekening houden met" in str(e)
         else:
-            raise AssertionError("файл Werk прошёл")
+            raise AssertionError("Word вне списка прошёл")
+        assert "740" in a.read_text(encoding="utf-8")       # ни один файл не тронут
 
 
 def _run_all():
