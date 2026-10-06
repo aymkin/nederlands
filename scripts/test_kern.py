@@ -25,6 +25,11 @@ def test_lidwoord_eraf():
     assert kern.sleutel("de kaart", SLEUTELS, VORMEN) == "kaart"
 
 
+def test_alleen_lidwoord():
+    # Карточка блока 1–150 «de»: снимать нечего, Word — сам ключ.
+    assert kern.sleutel("de", SLEUTELS, VORMEN) == "de"
+
+
 def test_woord_is_zelf_sleutel():
     # «de hoop» — существительное hoop, хотя главное прочтение формы — hopen.
     assert kern.sleutel("de hoop", SLEUTELS, VORMEN) == "hoop"
@@ -242,6 +247,49 @@ def test_rank_buiten_lijst_raakt_niets():
         else:
             raise AssertionError("Word вне списка прошёл")
         assert "740" in a.read_text(encoding="utf-8")       # ни один файл не тронут
+
+
+KOP_A = ("#separator:tab\n#html:true\n#notetype:Frequentie NL\n#deck:Frequentie::Kern\n"
+         "#columns:Word\tRank\tExample\tAudio\tTags\n#tags column:5\n")
+
+
+def test_audio_naam():
+    # Имя — от ключа и примера: переписанный пример получает новый файл; zijn² ≠ zijn.
+    a = kern.audio_naam("zijn#2", "Z'n kaart.")
+    assert a.startswith("freq_zijn-2_") and a.endswith(".mp3")
+    assert a != kern.audio_naam("zijn#2", "Z'n hoop.") and a != kern.audio_naam("zijn", "Z'n kaart.")
+
+
+def audio_partij(d):
+    p, media = Path(d, "kern_a.txt"), Path(d, "media")
+    media.mkdir()
+    z = kern.audio_naam("zijn#2", "Z'n kaart.")
+    (media / z).write_bytes(b"mp3")
+    p.write_text(KOP_A + "de kaart\t5\tDe kaart.\t[sound:freq_kaart.mp3]\tk\n"
+                 f"zijn²\t6\tZ'n kaart.\t[sound:{z}]\tk\n", encoding="utf-8")
+    return p, media, kern.audio_naam("kaart", "De kaart.")
+
+
+def test_audio_vult_kolom_en_spreekt_wat_ontbreekt():
+    with tempfile.TemporaryDirectory() as d:
+        p, media, naam = audio_partij(d)
+        gesproken = []
+        anders, n, ontbreekt = kern.audio([p], LIJST, VORMEN, media, spreek=gesproken.extend)
+        assert (anders, n) == ([("kern_a.txt", "de kaart", "[sound:freq_kaart.mp3]",
+                                 f"[sound:{naam}]")], 2)
+        assert ontbreekt == gesproken == [("De kaart.", media / naam)]
+        assert f"de kaart\t5\tDe kaart.\t[sound:{naam}]\tk\n" in p.read_text(encoding="utf-8")
+
+
+def test_audio_droog():
+    with tempfile.TemporaryDirectory() as d:
+        p, media, naam = audio_partij(d)
+        voor = p.read_text(encoding="utf-8")
+        gesproken = []
+        anders, n, ontbreekt = kern.audio([p], LIJST, VORMEN, media, droog=True,
+                                          spreek=gesproken.extend)
+        assert len(anders) == 1 and ontbreekt == [("De kaart.", media / naam)]
+        assert gesproken == [] and p.read_text(encoding="utf-8") == voor
 
 
 def _run_all():

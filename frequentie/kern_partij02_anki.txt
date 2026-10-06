@@ -10,9 +10,9 @@ het aantal	383	Het aantal fouten is klein.	количество	Количест
 het geval	381	In dat geval bel ik je morgen.	случай	В таком случае я позвоню тебе завтра.	[sound:freq_geval.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 de vorm	624	De tafel heeft een ronde vorm.	форма	У стола круглая форма.	[sound:freq_vorm.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 het gebied	451	Hij werkt op dit gebied.	область, сфера	Он работает в этой области.	[sound:freq_gebied.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
-het beeld	514	Het beeld op mijn scherm is scherp.	изображение, образ	Изображение на моём экране чёткое.	[sound:freq_beeld.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
+het beeld	513	Het beeld op mijn scherm is scherp.	изображение, образ	Изображение на моём экране чёткое.	[sound:freq_beeld.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 de dienst	504	Ik heb morgen dienst.	служба, смена	У меня завтра смена.	[sound:freq_dienst.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
-het feit	507	Dat is een bekend feit.	факт	Это известный факт.	[sound:freq_feit.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
+het feit	506	Dat is een bekend feit.	факт	Это известный факт.	[sound:freq_feit.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 de rust	578	Na het werk zoek ik rust.	покой, отдых	После работы я ищу покоя.	[sound:freq_rust.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 de lucht	633	De lucht is vandaag blauw.	воздух; небо	Небо сегодня синее.	[sound:freq_lucht.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 de aarde	639	De aarde draait om de zon.	земля	Земля вращается вокруг Солнца.	[sound:freq_aarde.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
@@ -40,7 +40,7 @@ richten	617	Richt de camera op het bord.	направлять	Направь к�
 dienen	841	Dit formulier dient als bewijs.	служить	Этот бланк служит доказательством.	[sound:freq_dienen.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
 menen	731	Ik meen het serieus.	полагать, иметь в виду	Я говорю это серьёзно.	[sound:freq_menen.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
 overleven	780	De plant overleeft de winter.	выживать	Растение переживает зиму.	[sound:freq_overleven.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
-verenigen	812	De club verenigt veel mensen.	объединять	Клуб объединяет много людей.	[sound:freq_verenigen.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
+verenigen	810	De club verenigt veel mensen.	объединять	Клуб объединяет много людей.	[sound:freq_verenigen.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
 vangen	726	De kat vangt een muis.	ловить	Кошка ловит мышь.	[sound:freq_vangen.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
 zichzelf	511	Hij praat tegen zichzelf.	себя, сам себя	Он говорит сам с собой.	[sound:freq_zichzelf.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
 echter	779	Het werkt, echter niet altijd.	однако	Это работает, однако не всегда.	[sound:freq_echter.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
@@ -57,7 +57,7 @@ de gedachte	641	Ze delen dezelfde gedachte.	мысль	Они разделяют
 de seconde	824	Heb je een seconde?	секунда	У тебя есть секунда?	[sound:freq_seconde.mp3]	frequentie::kern::partij02 frequentie::kern::dag03
 het bezoek	704	Komt het bezoek vandaag?	визит; гости	Гости придут сегодня?	[sound:freq_bezoek.mp3]	frequentie::kern::partij02 frequentie::kern::dag03
 de brand	775	Is er brand?	пожар	Пожар?	[sound:freq_brand.mp3]	frequentie::kern::partij02 frequentie::kern::dag03
-de vlucht	811	Vertrekt de vlucht op tijd?	рейс, полёт	Рейс вылетает вовремя?	[sound:freq_vlucht.mp3]	frequentie::kern::partij02 frequentie::kern::dag03
+de vlucht	812	Vertrekt de vlucht op tijd?	рейс, полёт	Рейс вылетает вовремя?	[sound:freq_vlucht.mp3]	frequentie::kern::partij02 frequentie::kern::dag03
 de voet	668	Doet je voet pijn?	нога, ступня	У тебя болит нога?	[sound:freq_voet.mp3]	frequentie::kern::partij02 frequentie::kern::dag03
 het hotel	670	Ken je dit hotel?	отель	Ты знаешь этот отель?	[sound:freq_hotel.mp3]	frequentie::kern::partij02 frequentie::kern::dag03
 de camera	744	Werkt de camera?	камера	Камера работает?	[sound:freq_camera.mp3]	frequentie::kern::partij02 frequentie::kern::dag03
@@ -93,10 +93,10 @@ de maat	687	Welke maat heb je?	размер, мера	Какой у тебя р�
 de hoogte	782	Wat is de hoogte van de tafel?	высота	Какова высота стола?	[sound:freq_hoogte.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
 de positie	835	Wat is jouw positie in het team?	позиция, должность	Какая у тебя должность в команде?	[sound:freq_positie.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
 het midden	645	Wie zit in het midden?	середина	Кто сидит посередине?	[sound:freq_midden.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
-het einde	467	Wanneer is het einde van de les?	конец	Когда конец урока?	[sound:freq_einde.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
+het einde	466	Wanneer is het einde van de les?	конец	Когда конец урока?	[sound:freq_einde.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
 mevrouw	672	Ze is mevrouw De Vries.	госпожа	Она — госпожа Де Врис.	[sound:freq_mevrouw.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
-de dame	468	De dame wacht; ze heeft haast.	дама	Дама ждёт; она торопится.	[sound:freq_dame.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
-de patiënt	810	De patiënt wacht; hij is nerveus.	пациент	Пациент ждёт; он нервничает.	[sound:freq_patiënt.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
+de dame	467	De dame wacht; ze heeft haast.	дама	Дама ждёт; она торопится.	[sound:freq_dame.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
+de patiënt	811	De patiënt wacht; hij is nerveus.	пациент	Пациент ждёт; он нервничает.	[sound:freq_patiënt.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
 het publiek	814	Het publiek luistert stil.	публика	Публика слушает молча.	[sound:freq_publiek.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
 het volk	834	Het volk viert feest.	народ	Народ празднует.	[sound:freq_volk.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
 het dier	599	Dat dier slaapt; het is moe.	животное	То животное спит; оно устало.	[sound:freq_dier.mp3]	frequentie::kern::partij02 frequentie::kern::dag05

@@ -649,3 +649,5 @@ uit		ho			имена (Ho) и английский сленг; «ho!» (стой)
 lezing	rock	rock	SPEC:Rock		имя «Rock» — около половины формы; «de rock» (музыка) — своё слово
 uit		Rock			имя
 lezing	vlieg	vliegen	N:vlieg		«de vlieg» (муха, карточка Kern) — заметная доля формы; вторая сторона перевёртыша vlieg/vliegen
+# Инкремент 9: решения Alex.
+lezing	afgelopen	aflopen	ADJ:afgelopen		«de afgelopen week» (прошедший, карточка Werk) — своё слово; «is afgelopen» (закончился) — aflopen, своя карточка Kern (Alex 06.10); доля прилагательного — оценка теггера

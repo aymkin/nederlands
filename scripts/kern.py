@@ -4,11 +4,13 @@
     python3 scripts/kern.py lijst                           # Word → ключ списка, дубли, граница
     python3 scripts/kern.py check frequentie/kern_*_anki.txt  # примеры по i+1
     python3 scripts/kern.py rank frequentie/kern_*_anki.txt   # колонка Rank := ранг списка
+    python3 scripts/kern.py audio FILE... [--droog]          # Audio := freq_{ключ}_{sha}.mp3, озвучка
 
 Список (lijst_v2.json) и карту форм (vormen.json) собирает
 private/frequentie_pilot/consensus_rank.py с обеими таблицами решений; kern.py их
 только читает. Коллекцию Anki — с копии (anki_vandaag.kopie), без записи; в Anki
-Rank переносит anki_utils.py update.
+Rank переносит anki_utils.py update. Только audio пишет в Anki — новые mp3 в
+collection.media, поэтому его запуск — шаг записи (бэкап, «да»).
 
 Карточка у ключа есть, если его даёт Word любой заметки «Frequentie NL» (Kern,
 Werk, Reading). Граница — первый ранг без карточки и без пометки uit.
@@ -16,13 +18,15 @@ Werk, Reading). Граница — первый ранг без карточки
 i+1: каждое слово примера, кроме цели, известно — все его прочтения раньше цели в
 списке (в блоке 1–150 — любые ≤ 150) или помечены uit.
 """
+import hashlib
 import json
 import sys
 from collections import Counter, namedtuple
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from anki_utils import ANKI_PROFILE, FREQUENTIE, KERN, TOKEN, lees_tsv, tekst  # same dir
+from anki_utils import (ANKI_PROFILE, FREQUENTIE, KERN, TOKEN,  # same dir
+                        find_anki_media_folder, lees_tsv, tekst)
 from anki_vandaag import clean, collection_path, kopie
 
 REPO = Path(__file__).resolve().parent.parent
@@ -62,8 +66,10 @@ def sleutel(word, sleutels, vormen):
     sleutels — {ключ в нижнем регистре: ключ}. «²» в Word — второе прочтение (zijn²
     → zijn#2). Если Word без артикля сам — ключ списка, берётся он: «de hoop» —
     существительное hoop, хотя главное прочтение формы «hoop» — hopen. Иначе —
-    главное прочтение формы по vormen.json (afgelopen → aflopen)."""
-    toks = [t for t in clean(word).lower().split() if t not in WEG]
+    главное прочтение формы по vormen.json (gezien → zien). Word из одного de, het
+    или zich — само это слово (карточки блока 1–150)."""
+    alle = clean(word).lower().split()
+    toks = [t for t in alle if t not in WEG] or alle
     if len(toks) != 1:
         return None
     head = toks[0].replace("²", "#2")
@@ -218,16 +224,15 @@ def kern_voorbeelden(paden):
             for p in map(Path, paden) for n in kern_tsv(p)[1]]
 
 
-def herrang(paden, lijst, vormen):
-    """Колонка Rank партий Kern := ранг Word в списке (D2: позиция в Anki = ранг).
-    Word вне списка — стоп до записи, ни один файл не тронут. Остальные байты файла
-    не меняются. ([(файл, Word, было, стало)], строк всего)."""
-    rang = {k: i for i, k in enumerate(lijst, 1)}
+def herschrijf(paden, lijst, vormen, kolom, waarde, droog=False):
+    """Колонка kolom партий Kern := waarde(ключ Word, {поле: значение}). Word вне списка —
+    стоп до записи, ни один файл не тронут. Остальные байты файла не меняются; droog —
+    не пишет ничего. ([(файл, Word, было, стало)], строк всего)."""
     sleutels = {k.lower(): k for k in lijst}
     teksten, anders, buiten, n = {}, [], [], 0
     for p in map(Path, paden):
         kolommen = kern_tsv(p)[0]["columns"].split("\t")
-        w, r = kolommen.index("Word"), kolommen.index("Rank")
+        c = kolommen.index(kolom)
         regels = p.read_text(encoding="utf-8").splitlines(keepends=True)
         for i, regel in enumerate(regels):
             kaal = regel.rstrip("\r\n")
@@ -235,19 +240,66 @@ def herrang(paden, lijst, vormen):
                 continue
             n += 1
             velden = kaal.split("\t")
-            k = sleutel(velden[w], sleutels, vormen)
+            v = dict(zip(kolommen, velden))
+            k = sleutel(v["Word"], sleutels, vormen)
             if k is None:
-                buiten.append(f"{p.name}: {velden[w]}")
-            elif velden[r] != str(rang[k]):
-                anders.append((p.name, velden[w], velden[r], rang[k]))
-                velden[r] = str(rang[k])
+                buiten.append(f"{p.name}: {v['Word']}")
+            elif velden[c] != (nu := waarde(k, v)):
+                anders.append((p.name, v["Word"], velden[c], nu))
+                velden[c] = nu
                 regels[i] = "\t".join(velden) + regel[len(kaal):]
         teksten[p] = "".join(regels)
     if buiten:
         sys.exit("Word не сопоставлен со списком, файлы не тронуты: " + ", ".join(buiten))
-    for p, inhoud in teksten.items():
-        p.write_text(inhoud, encoding="utf-8")
+    if not droog:
+        for p, inhoud in teksten.items():
+            p.write_text(inhoud, encoding="utf-8")
     return anders, n
+
+
+def herrang(paden, lijst, vormen):
+    """Колонка Rank := ранг Word в списке (D2: позиция в Anki = ранг)."""
+    rang = {k: i for i, k in enumerate(lijst, 1)}
+    anders, n = herschrijf(paden, lijst, vormen, "Rank", lambda k, v: str(rang[k]))
+    return [(f, w, was, int(nu)) for f, w, was, nu in anders], n
+
+
+def audio_naam(k, example):
+    """freq_{ключ}_{sha1 примера}.mp3: у переписанного примера — новый файл, устаревший
+    mp3 под прежним именем не зазвучит; у zijn и zijn² имена разные. «#» → «-»."""
+    sha = hashlib.sha1(tekst(example).strip().encode("utf-8")).hexdigest()[:6]
+    return f"freq_{k.replace('#', '-')}_{sha}.mp3"
+
+
+def tts(items):
+    """[(текст, путь)] → mp3 голосом колоды Werk (edge-tts, text_to_speech.py). Сначала во
+    временный файл: оборванная загрузка не оставит битый mp3 под настоящим именем."""
+    import asyncio
+    import edge_tts
+    from text_to_speech import DEFAULT_RATE, VOICES
+
+    async def alle():
+        for text, path in items:
+            deel = path.with_suffix(".part")
+            await edge_tts.Communicate(text, VOICES["colette"], rate=DEFAULT_RATE).save(str(deel))
+            deel.replace(path)
+    asyncio.run(alle())
+
+
+def audio(paden, lijst, vormen, media, droog=False, spreek=tts):
+    """Колонка Audio := [sound:audio_naam]; mp3, которых нет в media, — озвучить. droog —
+    не пишет ни файлов, ни mp3. ([(файл, Word, было, стало)], строк, [(текст, путь)])."""
+    teksten = {}
+
+    def waarde(k, v):
+        naam = audio_naam(k, v["Example"])
+        teksten[naam] = tekst(v["Example"]).strip()
+        return f"[sound:{naam}]"
+    anders, n = herschrijf(paden, lijst, vormen, "Audio", waarde, droog)
+    ontbreekt = [(t, media / naam) for naam, t in teksten.items() if not (media / naam).exists()]
+    if ontbreekt and not droog:
+        spreek(ontbreekt)
+    return anders, n, ontbreekt
 
 
 def check_rapport(lijst, uit, vormen, notes):
@@ -301,8 +353,19 @@ def main():
         anders.sort(key=lambda t: -abs(int(t[2]) - t[3]) if t[2].isdigit() else -10**9)
         out, fout = [f"Rank: изменён у {len(anders)} из {n} строк; сильнее всего: " + ", ".join(
             f"{word} {was}→{nu}" for _, word, was, nu in anders[:12])], False
+    elif cmd == "audio" and (bestanden := [p for p in paden if p != "--droog"]):
+        droog = "--droog" in paden
+        lijst, _, vormen = laad()
+        if (media := find_anki_media_folder()) is None:
+            sys.exit(f"нет collection.media профиля {ANKI_PROFILE}")
+        anders, n, ontbreekt = audio(bestanden, lijst, vormen, media, droog)
+        out, fout = [f"Audio: {'изменится' if droog else 'изменено'} {len(anders)} из {n} строк; "
+                     f"mp3 нет в media — {len(ontbreekt)}"
+                     + (", озвучить — без --droog" if droog and ontbreekt
+                        else ", озвучены" if ontbreekt else "")], False
     else:
-        sys.exit("usage: kern.py lijst | kern.py check FILE... | kern.py rank FILE...")
+        sys.exit("usage: kern.py lijst | kern.py check FILE... | kern.py rank FILE... | "
+                 "kern.py audio FILE... [--droog]")
     print("\n".join(out))
     sys.exit(1 if fout else 0)
 

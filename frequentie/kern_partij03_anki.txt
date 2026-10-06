@@ -18,7 +18,7 @@ dwingen	936	Niemand dwingt je, hoor. Je mag ook thuisblijven.	заставлят
 ontslaan	948	Het bedrijf ontslaat tien mensen.	увольнять	Компания увольняет десять человек.	[sound:freq_ontslaan.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
 weigeren	962	De automaat weigert m'n pas alweer.	отказывать(ся), не принимать	Автомат опять не принимает мою карту.	[sound:freq_weigeren.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
 overtuigen	982	Je overtuigt me niet, ik neem toch de trein.	убеждать	Ты меня не убедишь, я всё равно поеду поездом.	[sound:freq_overtuigen.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
-schelen	989	Het kan me eigenlijk niet schelen.	быть важным (мне всё равно)	Мне, в общем-то, всё равно.	[sound:freq_schelen.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
+schelen	987	Het kan me eigenlijk niet schelen.	быть важным (мне всё равно)	Мне, в общем-то, всё равно.	[sound:freq_schelen.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
 accepteren	1013	De winkel accepteert geen contant geld.	принимать, соглашаться	Магазин не принимает наличные.	[sound:freq_accepteren.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
 onderweg	852	Ik ben onderweg, over tien minuten ben ik er.	в пути, по дороге	Я уже еду, через десять минут буду.	[sound:freq_onderweg.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
 alweer	1191	De trein is alweer te laat.	опять, снова (с досадой)	Поезд опять опаздывает.	[sound:freq_alweer.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
@@ -49,7 +49,7 @@ het excuus	873	Het excuus is altijd hetzelfde, hoor: de trein.	отговорк�
 het proces	1008	Het proces duurt eigenlijk langer dan we dachten.	процесс	Процесс на самом деле тянется дольше, чем мы думали.	[sound:freq_proces.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 het gedrag	1145	Het gedrag van de hond is echt veranderd.	поведение	Собака правда стала вести себя по-другому.	[sound:freq_gedrag.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 het besluit	1436	Het besluit van de gemeente staat in de brief.	постановление (офиц. решение)	Постановление гемеенте указано в письме.	[sound:freq_besluit.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
-het pad	1210	Neem gewoon het pad langs het water, dat is sneller.	тропинка, дорожка	Просто иди по тропинке вдоль воды, так быстрее.	[sound:freq_pad.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
+het pad	1211	Neem gewoon het pad langs het water, dat is sneller.	тропинка, дорожка	Просто иди по тропинке вдоль воды, так быстрее.	[sound:freq_pad.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 het goud	1118	Het goud van die ring is niet echt, zegt ze.	золото	Золото в этом кольце ненастоящее, говорит она.	[sound:freq_goud.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 de onzin	904	De onzin op internet geloof ik gewoon niet.	чушь, ерунда	В эту чушь из интернета я просто не верю.	[sound:freq_onzin.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 de angst	903	De angst voor de tandarts heb ik nog steeds.	страх	Страх перед зубным у меня так и не прошёл.	[sound:freq_angst.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
@@ -79,7 +79,7 @@ negeren	1165	Die mail negeer ik vandaag nog even, morgen kijk ik ernaar.	игн�
 optreden	1114	Onze buurman treedt volgende week op in het café.	выступать	Наш сосед на следующей неделе выступает в кафе.	[sound:freq_optreden.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
 realiseren	1201	Straks realiseer je je pas hoe leuk het was.	осознавать (zich realiseren); осуществлять	Потом ты только поймёшь, как это было здорово.	[sound:freq_realiseren.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
 verspreiden	1206	Morgen verspreidt de school de nieuwe regels via de app.	распространять	Завтра школа разошлёт новые правила через приложение.	[sound:freq_verspreiden.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
-publiceren	1211	De gemeente publiceert de plannen pas in december.	публиковать	Муниципалитет опубликует планы только в декабре.	[sound:freq_publiceren.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
+publiceren	1208	De gemeente publiceert de plannen pas in december.	публиковать	Муниципалитет опубликует планы только в декабре.	[sound:freq_publiceren.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
 werkelijk	1082	Kom je werkelijk morgen al? Wat leuk!	действительно, правда	Ты правда уже завтра приедешь? Как здорово!	[sound:freq_werkelijk.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
 terecht	1042	Je bent terecht boos, maar we lossen het morgen op.	справедливо, по праву	Ты злишься по делу, но мы завтра это решим.	[sound:freq_terecht.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
 geheel	882	Volgende maand is het huis geheel klaar, zegt de aannemer.	полностью, целиком	В следующем месяце дом будет полностью готов, говорит подрядчик.	[sound:freq_geheel.mp3]	frequentie::kern::partij03 frequentie::kern::dag09
