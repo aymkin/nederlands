@@ -613,3 +613,39 @@ uit		klote			мат
 uit		godverdomme			мат
 remap	pasje	pas	pas#2		«het pasje» — уменьшительное от «de pas» (пропуск, карта)
 remap		ritten	rit		simplemma: rit → ritten; «de rit» — карточка Werk
+# Инкремент 6, проверка i+1: ключ, которого не кормит своя форма; короткие слова, которые отсеивал plausible().
+lezing	ouder	oud	N:ouder		«de ouder» (родитель) — заметная доля формы; сравнительная «ouder» — форма oud
+lezing		besluit	WW:besluiten		«besluiten» (решать) — в основном глагол; «het besluit» — существительное
+lezing		plaats	WW:plaatsen		«plaatsen» (размещать) — глагол; мн. ч. «plaatsen» — plaats
+lezing		geld	WW:gelden		«gelden» (действовать, иметь силу) — почти всегда глагол, не мн. ч. geld
+blijft	gegeven	geven			«gegeven» — почти всегда причастие geven; ключ gegeven (данные) кормит «gegevens»
+lezing		slag	WW:slagen		«slagen» (сдать, удаться) — почти всегда глагол
+lezing		plan	WW:plannen		«plannen» (планировать) — глагол; мн. ч. «plannen» — plan
+lezing		schijn	WW:schijnen		«schijnen» (казаться, светить) — почти всегда глагол
+lezing	kost	kosten	N:kost		«de kost» (пропитание: de kost verdienen) — своё слово; «het kost» — форма kosten
+lezing		droom	WW:dromen		«dromen» (мечтать) — глагол; мн. ч. «dromen» — droom
+lezing		stem	WW:stemmen		«stemmen» (голосовать) — глагол; мн. ч. «stemmen» — stem
+lezing		keer	WW:keren		«keren» (поворачивать) — глагол; мн. ч. «keren» — keer
+lezing	wapenen	wapen	WW:wapenen		«wapenen» (вооружать) — глагол
+lezing	verdacht	verdenken	ADJ:verdacht		«verdacht» (подозрительный) — прилагательное, карточка Kern; причастие — verdenken
+remap	rotten	rot	rotten		«rotten» (гнить) — почти всегда глагол, не форма rot
+lezing	heet	heten	ADJ:heet		«heet» (горячий) — прилагательное; «ik heet» — форма heten
+remap	geel	vergelen	geel		«geel» (жёлтый) — simplemma даёт vergelen
+lezing	verdomd	verdommen	ADJ:verdomd		«verdomd» (чёртов) — прилагательное; причастие — verdommen
+remap	overwegen	overweg	overwegen		«overwegen» (обдумывать) — почти всегда глагол, не overweg
+remap	app	appen	app		«de app» — существительное; simplemma даёт глагол appen
+remap	ok	ok	oké		«ok» — написание oké
+remap	oke	oke	oké		«oke» — написание oké
+remap	okay	okay	oké		«okay» — написание oké
+remap	okee	okee	oké		«okee» — написание oké
+remap	sex	sex	seks		«sex» — написание seks
+remap	neen	neen	nee		«neen» — южное nee
+uit		shit			мат
+uit		fuck			мат
+blijft	oké	oké			«oké» — одно слово: N и ADJ — разметка теггера, не два прочтения
+blijft	west	west			«west» — одно слово; SPEC — «West-Europa» и английские вставки
+blijft	oost	oost			«oost» — одно слово; SPEC — «Oost-Europa», «Oost-Duitsland»
+uit		ho			имена (Ho) и английский сленг; «ho!» (стой) — редко
+lezing	rock	rock	SPEC:Rock		имя «Rock» — около половины формы; «de rock» (музыка) — своё слово
+uit		Rock			имя
+lezing	vlieg	vliegen	N:vlieg		«de vlieg» (муха, карточка Kern) — заметная доля формы; вторая сторона перевёртыша vlieg/vliegen

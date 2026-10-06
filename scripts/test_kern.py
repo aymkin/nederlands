@@ -96,6 +96,126 @@ def test_lijst_ouder_dan_tabel():
         assert "пересобери" in faalt(*schrijf(d, oud=True))
 
 
+# check: ключ → ранг; остальные места списка — заполнитель.
+RANGEN = {"zijn": 1, "de": 2, "ik": 3, "een": 4, "en": 5, "je": 6, "het": 7, "in": 8,
+          "hebben": 9, "op": 10, "van": 11, "hij": 12, "dat": 13, "maar": 15, "willen": 50,
+          "hun": 40, "mijn": 36, "laten": 67, "zijn#2": 71, "weten": 80, "woord": 120,
+          "omdat": 125, "mooi": 130, "blijven": 140, "wonen": 150, "wachten": 158,
+          "zitten": 160, "stoel": 170, "vergeten": 180, "plaats": 190, "laat": 198,
+          "thuis": 267, "zoon": 272, "telefoon": 300, "bellen": 110, "avond": 361,
+          "taxi": 450, "fiets": 500, "opnemen": 600, "ziek": 614, "nemen": 700,
+          "plaatsen": 743, "nacht": 90, "Jan": 960, "vannacht": 970,
+          "stappen": 400, "pen": 800}
+CHECK_LIJST = [f"vul{i}" for i in range(1, 1001)]
+for _k, _r in RANGEN.items():
+    CHECK_LIJST[_r - 1] = _k
+CHECK_VORMEN = {
+    "ik": ["ik"], "blijf": ["blijven"], "blijft": ["blijven"], "thuis": ["thuis"], "omdat": ["omdat"], "ziek": ["ziek"],
+    "ben": ["zijn"], "zit": ["zitten"], "op": ["op"], "de": ["de"], "stoel": ["stoel"],
+    "hij": ["hij"], "heeft": ["hebben"], "s": ["s"], "avonds": ["avond"], "z'n": ["zijn#2"],
+    "fiets": ["fiets"], "en": ["en"], "n": ["n"], "taxi": ["taxi"], "hun": ["hun"],
+    "zoon": ["zoon"], "woont": ["wonen"], "in": ["in"], "utrecht": ["utrecht"], "is": ["zijn"],
+    "mooi": ["mooi"], "neem": ["nemen"], "je": ["je"], "telefoon": ["telefoon"],
+    "vergeet": ["vergeten"], "het": ["het"], "laat": ["laten", "laat"], "maar": ["maar"],
+    "wachtwoord": ["wachtwoord"], "wacht": ["wachten"], "woord": ["woord"], "van": ["van"],
+    "mijn": ["mijn"], "bel": ["bellen"], "opdat": ["opdat"], "weet": ["weten"], "dat": ["dat"],
+    "wil": ["willen"], "plaatsen": ["plaats"], "jan": ["Jan"], "nacht": ["nacht"],
+    "vannacht": ["vannacht"], "stap": ["stappen", "stap"], "pen": ["pen"],
+}
+
+
+def oordeel(word, example):
+    return kern.voorbeeld(word, example, {k: i for i, k in enumerate(CHECK_LIJST, 1)},
+                          {k.lower(): k for k in CHECK_LIJST}, {"Jan": "имя"}, CHECK_VORMEN)
+
+
+def test_omdat_vangt_thuis_en_ziek():
+    # blijven (140) позже omdat (125), но в блоке 1–150 известно всё ≤ 150.
+    o = oordeel("omdat", "Ik blijf thuis omdat ik ziek ben.")
+    assert (o.rang, o.fout, o.doel) == (125, ["thuis", "ziek"], True)
+
+
+def test_na_blok_alleen_eerder():
+    assert oordeel("zitten", "Ik zit op de stoel.").fout == ["stoel"]   # 170 > 160
+
+
+def test_klitieken():
+    # vormen.json даёт «n» и «s» ключи-обрывки, в примере это 'n (een) и 's (des).
+    o = oordeel("de fiets", "Hij heeft 's avonds z'n fiets en 'n taxi.")
+    assert (o.fout, o.let_op, o.onbekend) == ([], [], [])
+
+
+def test_naam_alleen_midden_in_zin():
+    assert oordeel("de zoon", "Hun zoon woont in Utrecht.").fout == []
+    assert oordeel("de zoon", "Utrecht is mooi, zegt mijn zoon.").fout == ["utrecht"]
+
+
+def test_uit_telt_als_bekend():
+    # В начале предложения заглавная ничего не говорит, но Jan помечен uit.
+    assert oordeel("thuis", "Jan blijft thuis.").fout == []
+
+
+def test_gescheiden_scheidbaar_werkwoord():
+    # nemen (700) позже opnemen (600), но «neem … op» — сама цель.
+    o = oordeel("opnemen", "Neem je de telefoon op?")
+    assert (o.fout, o.doel) == ([], True)
+
+
+def test_stam_van_doel_is_geen_deeltje():
+    # «stap» + «pen»: основа самой цели — не частица, pen (800) не освобождается.
+    assert oordeel("stappen", "Ik stap op de pen.").fout == ["pen"]
+
+
+def test_lezing_vooruit_is_waarschuwing():
+    o = oordeel("vergeten", "Ik vergeet het, laat maar.")
+    assert (o.fout, o.let_op) == ([], [("laat", ["laat"])])   # laten 67 ✓, laat 198 > 180
+
+
+def test_samengesteld_woord():
+    # wachtwoord нет в списке — судят части.
+    o = oordeel("de telefoon", "Het wachtwoord van mijn telefoon.")
+    assert (o.fout, o.samengesteld) == ([], [("wachtwoord", "wacht", "woord")])
+    # vannacht — слово списка (970): свой ранг, хоть van и nacht известны.
+    assert oordeel("de telefoon", "Mijn telefoon is vannacht mooi.").fout == ["vannacht"]
+
+
+def test_samengesteld_delen_van_drie_letters():
+    # opdat вне списка, но «op» + «dat»: часть короче трёх букв — не составное.
+    assert oordeel("de telefoon", "Ik bel, opdat je het weet.").fout == ["opdat"]
+
+
+def test_vorm_buiten_vormen():
+    assert oordeel("de fiets", "Mijn fiets xyzzy.").onbekend == ["xyzzy"]
+
+
+def test_doel_niet_gevonden():
+    # Форма «plaatsen» в vormen.json кормит только plaats: пример цель не показывает.
+    assert oordeel("plaatsen", "Ik wil het plaatsen.").doel is False
+
+
+def test_check_rapport():
+    notes = [("kern_a.txt", "omdat", "Ik blijf thuis omdat ik ziek ben."),
+             ("kern_a.txt", "de fiets", "Hij heeft z'n fiets.")]
+    out, fout = kern.check_rapport(CHECK_LIJST, {}, CHECK_VORMEN, notes)
+    assert fout and "нарушают 1" in out[0]
+    assert any("thuis 267" in line and "ziek 614" in line for line in out)
+    assert kern.check_rapport(CHECK_LIJST, {}, CHECK_VORMEN, notes[1:])[1] is False
+
+
+def test_check_alleen_kern():
+    with tempfile.TemporaryDirectory() as d:
+        p = Path(d, "werk.txt")
+        p.write_text("#separator:tab\n#html:true\n#notetype:Frequentie NL\n"
+                     "#deck:Frequentie::Werk\n#columns:Word\tExample\tTags\n#tags column:3\n"
+                     "pas\tIk kom pas morgen.\t\n", encoding="utf-8")
+        try:
+            kern.kern_voorbeelden([p])
+        except SystemExit as e:
+            assert "Frequentie::Kern" in str(e)
+        else:
+            raise AssertionError("файл Werk прошёл")
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items())
            if k.startswith("test_") and callable(v)]

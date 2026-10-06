@@ -175,25 +175,8 @@ def eis_profiel(profile: str) -> None:
         raise AnkiFout(f"в Anki {nu}, нужен {profile} — переключи профиль и запусти снова")
 
 
-def import_tsv(path: Path, profile: str = ANKI_PROFILE) -> tuple[int, list[str]]:
-    """Импорт _anki.txt по его директивам #notetype / #deck / #columns /
-    #tags column в профиль `profile`. Дубли (первое поле уже есть у этого note
-    type) пропускаются — так повторный импорт безопасен. Возвращает
-    (добавлено, пропущенные).
-
-    Повтор первого поля внутри партии — `KaartFout` ещё до Anki: в Twenty
-    Rules второй перевод затёр бы первый, а canAdd сверяет заметку только с
-    коллекцией — addNotes упал бы на втором экземпляре и откатил всю партию.
-
-    Первый вызов — `eis_profiel`. Дубль — только отказ `DUBBEL`; любой
-    другой отказ Anki (нет note type, пустое поле) — `AnkiFout` до записи.
-    Колода создаётся последней и только когда есть что добавить (инцидент
-    2026-09-28, `tasks/lessons.md`).
-
-    Для «Frequentie NL» сперва `twenty_rules` против всей коллекции этого
-    типа; нарушение — `KaartFout`, в Anki ничего не пишется. Проверять до
-    импорта обязательно: повторный импорт заметку с тем же Word пропускает,
-    так что исправленный перевод туда уже не попадёт."""
+def lees_tsv(path: Path) -> tuple[dict[str, str], list[dict[str, Any]]]:
+    """(директивы #…, заметки в форме addNotes) файла _anki.txt."""
     head: dict[str, str] = {}
     rows: list[list[str]] = []
     for line in path.read_text(encoding="utf-8").splitlines():
@@ -213,9 +196,33 @@ def import_tsv(path: Path, profile: str = ANKI_PROFILE) -> tuple[int, list[str]]
         }
         for r in rows
     ]
-    aantal = Counter(n["fields"][columns[0]] for n in notes)
+    return head, notes
+
+
+def import_tsv(path: Path, profile: str = ANKI_PROFILE) -> tuple[int, list[str]]:
+    """Импорт _anki.txt по его директивам #notetype / #deck / #columns /
+    #tags column в профиль `profile`. Дубли (первое поле уже есть у этого note
+    type) пропускаются — так повторный импорт безопасен. Возвращает
+    (добавлено, пропущенные).
+
+    Повтор первого поля внутри партии — `KaartFout` ещё до Anki: в Twenty
+    Rules второй перевод затёр бы первый, а canAdd сверяет заметку только с
+    коллекцией — addNotes упал бы на втором экземпляре и откатил всю партию.
+
+    Первый вызов — `eis_profiel`. Дубль — только отказ `DUBBEL`; любой
+    другой отказ Anki (нет note type, пустое поле) — `AnkiFout` до записи.
+    Колода создаётся последней и только когда есть что добавить (инцидент
+    2026-09-28, `tasks/lessons.md`).
+
+    Для «Frequentie NL» сперва `twenty_rules` против всей коллекции этого
+    типа; нарушение — `KaartFout`, в Anki ничего не пишется. Проверять до
+    импорта обязательно: повторный импорт заметку с тем же Word пропускает,
+    так что исправленный перевод туда уже не попадёт."""
+    head, notes = lees_tsv(path)
+    eerste = head["columns"].split("\t")[0]
+    aantal = Counter(n["fields"][eerste] for n in notes)
     if herhaald := [w for w, k in aantal.items() if w and k > 1]:
-        raise KaartFout(f"{columns[0]} повторяется в партии: {', '.join(herhaald)}")
+        raise KaartFout(f"{eerste} повторяется в партии: {', '.join(herhaald)}")
     eis_profiel(profile)
     if head["notetype"] == FREQUENTIE:
         ids = ankiconnect("findNotes", query=f'"note:{FREQUENTIE}"')
@@ -238,7 +245,7 @@ def import_tsv(path: Path, profile: str = ANKI_PROFILE) -> tuple[int, list[str]]
     skipped: list[str] = []
     weigering: dict[str, list[str]] = {}
     for i, (n, o) in enumerate(zip(notes, ok), 1):
-        word = n["fields"][columns[0]] or f"заметка {i}"
+        word = n["fields"][eerste] or f"заметка {i}"
         if o["canAdd"]:
             fresh.append(n)
         elif o["error"] == DUBBEL:

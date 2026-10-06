@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """kern.py — колода Frequentie::Kern по списку: какие ранги уже с карточкой и где граница.
 
-    python3 scripts/kern.py lijst    # Word → ключ списка, дубли, граница
+    python3 scripts/kern.py lijst                           # Word → ключ списка, дубли, граница
+    python3 scripts/kern.py check frequentie/kern_*_anki.txt  # примеры по i+1
 
 Список (lijst_v2.json) и карту форм (vormen.json) собирает
 private/frequentie_pilot/consensus_rank.py с обеими таблицами решений; kern.py их
@@ -9,14 +10,19 @@ private/frequentie_pilot/consensus_rank.py с обеими таблицами р
 
 Карточка у ключа есть, если его даёт Word любой заметки «Frequentie NL» (Kern,
 Werk, Reading). Граница — первый ранг без карточки и без пометки uit.
+
+i+1: каждое слово примера, кроме цели, известно — все его прочтения раньше цели в
+списке (в блоке 1–150 — любые ≤ 150) или помечены uit.
 """
+import html
 import json
+import re
 import sys
-from collections import Counter
+from collections import Counter, namedtuple
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from anki_utils import ANKI_PROFILE, FREQUENTIE, KERN  # same dir
+from anki_utils import ANKI_PROFILE, FREQUENTIE, KERN, lees_tsv  # same dir
 from anki_vandaag import clean, collection_path, kopie
 
 REPO = Path(__file__).resolve().parent.parent
@@ -24,6 +30,13 @@ PILOT = REPO / "private" / "frequentie_pilot"
 TABELLEN = (REPO / "frequentie" / "lijst_besluiten.tsv", PILOT / "lijst_besluiten_prive.tsv")
 WEG = {"de", "het", "zich"}            # снимаются с Word до сопоставления
 HORIZON = 2500                         # горизонт таблицы решений
+BLOK = 150                             # ранги 1–150 — один блок разгона
+TOKEN = re.compile(r"[a-zà-ÿ]+(?:'[a-z]+)?")   # как consensus_rank.words(): им собран vormen.json
+# words() пишет 'n/'m/'k/'s как n/m/k/s. В примере это клитики, а в vormen.json —
+# обрывки субтитров со своими ключами.
+KLITIEK = {"n": ["een"], "m": ["hem"], "k": ["ik"], "s": ["de"], "da's": ["dat", "zijn"]}
+OPEN = " \"'«»„“”‘’()—–-"                  # между концом предложения и его первым словом
+Oordeel = namedtuple("Oordeel", "rang fout let_op samengesteld onbekend doel")
 
 
 def laad(pilot=PILOT, tabellen=TABELLEN):
@@ -131,10 +144,126 @@ def lijst_rapport(lijst, uit, vormen, notes):
     return out, bool(dubbel or kern_uit or kern_buiten)
 
 
+def tokens(example):
+    """[(форма, имя ли)] — формы consensus_rank.words(). Имя — с заглавной не в начале
+    предложения."""
+    s = html.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"\[sound:[^\]]+\]", "", example)))
+    out = []
+    for m in TOKEN.finditer(s.lower()):
+        voor = s[:m.start()].rstrip(OPEN)
+        out.append((m.group(), s[m.start()].isupper() and bool(voor) and voor[-1] not in ".!?…:"))
+    return out
+
+
+def splits(w, bekend):
+    """(a, b), если w — составное из двух известных слов (стык s/e/en), каждое ≥ 3 букв.
+    Делится только форма, которой нет в списке: у слова списка свой ранг (winter — не
+    win + ter, vrijdag — не vrij + dag)."""
+    for i in range(3, len(w) - 2):
+        for voeg in ("", "s", "e", "en"):
+            b = w[i + len(voeg):]
+            if w[i:].startswith(voeg) and len(b) >= 3 and bekend(w[:i]) and bekend(b):
+                return w[:i], b
+    return None
+
+
+def voorbeeld(word, example, rang, sleutels, uit, vormen):
+    """Oordeel i+1 для примера карточки Word: fout — слова без единого известного
+    прочтения, let_op — (слово, прочтения впереди), samengesteld — (слово, a, b),
+    onbekend — форм нет в vormen.json, doel — цель в примере найдена."""
+    k = sleutel(word, sleutels, vormen)
+    r = rang.get(k)
+    if r is None:
+        return Oordeel(None, [], [], [], [], False)
+    tot = BLOK if r <= BLOK else r - 1
+    bekend = lambda key: key in uit or rang.get(key, tot + 1) <= tot
+    toks = tokens(example)
+    lezingen = lambda w: KLITIEK.get(w) or vormen.get(w)
+    # Разорванный отделяемый глагол («neem … op»): частица и формы основы — тоже цель.
+    # Частица — начало цели, но не её форма: «stap» у stappen — не «stap» + «pen».
+    deeltje = next((w for w, _ in toks if k.startswith(w) and k[len(w):] in rang
+                    and k not in (lezingen(w) or [])), None)
+    basis = deeltje and k[len(deeltje):]
+    is_doel = lambda w, ks: k in ks or deeltje is not None and (w == deeltje or basis in ks)
+    vorm_bekend = lambda w: bool(ks := lezingen(w)) and (is_doel(w, ks) or all(map(bekend, ks)))
+    fout, let_op, samengesteld, onbekend, doel = [], [], [], [], False
+    for w, naam in toks:
+        if naam:
+            continue
+        ks = lezingen(w)
+        if ks is None:
+            onbekend.append(w)
+        elif is_doel(w, ks):
+            doel = True
+        elif nog := [x for x in ks if not bekend(x)]:
+            if len(nog) < len(ks):
+                let_op.append((w, nog))
+            elif not any(x in rang for x in ks) and (delen := splits(w, vorm_bekend)):
+                samengesteld.append((w, *delen))
+            else:
+                fout.append(w)
+    return Oordeel(r, fout, let_op, samengesteld, onbekend, doel)
+
+
+def kern_voorbeelden(paden):
+    """[(файл, Word, Example)] партий Kern. Файл другой колоды — стоп: у Werk и Reading
+    нет ранга в списке."""
+    out = []
+    for p in map(Path, paden):
+        head, notes = lees_tsv(p)
+        if head.get("deck") != KERN:
+            sys.exit(f"{p}: колода {head.get('deck')} — check только для {KERN}")
+        out += [(p.name, n["fields"]["Word"], n["fields"]["Example"]) for n in notes]
+    return out
+
+
+def check_rapport(lijst, uit, vormen, notes):
+    """Отчёт `check`: (строки, есть ли нарушения)."""
+    rang = {k: i for i, k in enumerate(lijst, 1)}
+    sleutels = {k.lower(): k for k in lijst}
+    oordelen = [(bron, word, example, voorbeeld(word, example, rang, sleutels, uit, vormen))
+                for bron, word, example in notes]
+
+    def toon(w):
+        ks = KLITIEK.get(w) or vormen[w]
+        return w + " " + "/".join(("" if k == w else k.replace("#2", "²") + " ")
+                                  + str(rang.get(k, "—")) for k in ks)
+
+    fout = [(b, w, e, o) for b, w, e, o in oordelen if o.fout or o.rang is None]
+    let_op = Counter((w, tuple(nog)) for *_, o in oordelen for w, nog in o.let_op)
+    samen = [(word, o) for _, word, _, o in oordelen if o.samengesteld]
+    zonder_doel = [(word, e) for _, word, e, o in oordelen if o.rang and not o.doel]
+    onbekend = sorted({w for *_, o in oordelen for w in o.onbekend})
+    out = [f"i+1: {len(notes)} примеров, нарушают {len(fout)}; часть прочтений впереди — "
+           f"{sum(let_op.values())}, составных — {sum(len(o.samengesteld) for _, o in samen)}, "
+           f"цель не найдена — {len(zonder_doel)}"]
+    for bron in dict.fromkeys(b for b, *_ in fout):
+        out.append(f"{bron}:")
+        out += [f"  {w} ({o.rang}): {e} — " + ", ".join(map(toon, o.fout)) if o.rang
+                else f"  {w}: Word не сопоставлен со списком" for b, w, e, o in fout if b == bron]
+    if let_op:
+        out.append("часть прочтений впереди (какое в примере?): " + "; ".join(
+            f"{w} → " + "/".join(k.replace("#2", "²") for k in nog) + f" ×{n}"
+            for (w, nog), n in let_op.most_common()))
+    if samen:
+        out.append("составные — проходят, прочти: " + "; ".join(
+            f"{w} = {a} + {b} ({word})" for word, o in samen for w, a, b in o.samengesteld))
+    if zonder_doel:
+        out.append("цель не найдена — прочти: " + "; ".join(f"{w}: {e}" for w, e in zonder_doel))
+    if onbekend:
+        out.append(f"нет в vormen.json: {', '.join(onbekend)} — пересобери список "
+                   f"(consensus_rank.py берёт формы из frequentie/kern_*_anki.txt)")
+    return out, bool(fout or onbekend)
+
+
 def main():
-    if sys.argv[1:] != ["lijst"]:
-        sys.exit("usage: kern.py lijst")
-    out, fout = lijst_rapport(*laad(), notities())
+    cmd, *paden = sys.argv[1:] or [""]
+    if cmd == "lijst" and not paden:
+        out, fout = lijst_rapport(*laad(), notities())
+    elif cmd == "check" and paden:
+        out, fout = check_rapport(*laad(), kern_voorbeelden(paden))
+    else:
+        sys.exit("usage: kern.py lijst | kern.py check FILE...")
     print("\n".join(out))
     sys.exit(1 if fout else 0)
 
