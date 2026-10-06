@@ -1,0 +1,613 @@
+actie	vorm	was	naar	woord	reden
+# Строка по ключу (vorm пуст) берёт все формы ключа simplemma `was`; строка по форме сильнее.
+# naar: «ключ_по_умолчанию МЕТКА:ключ …»; метка — часть речи SUBTLEX или, только для nl_50k, форма с апострофом.
+lezing		wangeloven	geloven N:geloof		simplemma: geloof → wangeloven; «ik geloof» — глагол, «het geloof» — сущ.
+remap		degeen	degene		simplemma: degene → degeen
+lezing		wacht	WW:wachten		перевёртыш: инфинитив wachten отдан ключу wacht
+lezing		wachten	N:wacht		перевёртыш: сущ. «de wacht» внутри глагола wachten
+remap	reed	reden	rijden		simplemma: reed → reden; это прошедшее от rijden
+lezing	reden	rede	reden WW:rijden		simplemma: reden → rede; «de reden» — сущ., «wij reden» — rijden
+lezing		rijen	rij WW:rijden		simplemma: rijden и rij → rijen; «ik rij» — rijden, «de rij» — сущ.
+lezing	zijn	zijn	VNW:zijn#2	zijn²	омограф: притяжательное «zijn» — другое слово
+lezing	z	z	z'n:zijn#2		в nl_50k нет апострофов: «z'n» разбит на «z» + «n»
+remap	z'n	zijn	zijn#2		simplemma: z'n → zijn (глагол)
+lezing	zo	zo	zo'n:zo'n		в nl_50k нет апострофов: «zo'n» разбит на «zo» + «n»
+remap	god	godin	god		simplemma: god → godin; God и god — одно слово
+uit		Parijs			город
+lezing		het	LID:het#2	het²	артикль «het huis» и местоимение «het is» — разные слова
+lezing		dat	VG:dat#2	dat²	союз «ik weet dat …» — другое слово, чем указательное «dat»
+lezing		een	TW:één		«een» в значении числа — это één без ударений
+remap	ene	een	één		«de ene … de andere» — форма één
+lezing		te	BW:te#2	te²	«te groot» (слишком) — другое слово, чем «te» при инфинитиве
+blijft	ten	te			слитное te + den: «ten minste», «ten slotte»
+blijft	ter	te			слитное te + der: «ter plaatse»
+lezing		maar	BW:maar#2	maar²	«kom maar» (-ка, просто) — другое слово, чем союз «maar» (но)
+lezing		als	VZ:als#2	als²	«als leraar» (в качестве) — другое слово, чем «als» (если, когда)
+blijft	ben	zijn			имя Ben — малая доля
+lezing		dan	VG:dan#2	dan²	«groter dan» (чем) — другое слово, чем «dan» (тогда)
+lezing	n	n	'n:een zo'n:n z'n:n m'n:n		в nl_50k нет апострофов: «'n» (een), «zo'n», «z'n», «m'n» дают «n»
+lezing		haar	N:haar#2	het haar²	«het haar» (волосы) — другое слово, чем «haar» (её)
+lezing		waar	ADJ:waar#2	waar²	«dat is waar» (правда) — другое слово, чем «waar» (где)
+blijft	t	het			в nl_50k «'t» превращается в «t»; simplemma уже даёт het
+lezing		al	VNW:alle		«alle mensen», «al het geld» (все) — другое слово, чем «al» (уже)
+lezing	m	m	m'n:mijn 'm:hem		в nl_50k нет апострофов: «m'n» и «'m» дают «m»
+lezing		laten	ADJ:laat		«te laat» (поздно) — прилагательное laat, не глагол laten
+blijft	s	s			обрывок «'s», «foto's», «da's» — не слово
+lezing		weg	N:weg#2 WW:wegen	de weg²	«de weg» (дорога) — другое слово, чем «weg» (прочь); «wegen» (весить) — глагол
+blijft		eens			«het eens zijn» (соглашаться) — оборот того же слова
+blijft		man			имя и английское «man» — малая доля
+blijft		toen			«toen ik …» (когда) и «toen» (тогда) — два значения одного слова
+lezing		weer	N:weer#2	het weer²	«het weer» (погода) — другое слово, чем «weer» (снова)
+lezing		leven	WW:leven#2 ADJ:leven#2	leven²	«leven» (жить) и «het leven» (жизнь) — разные слова; главное — существительное
+remap	uw	u	uw		притяжательное «uw» (ваш) — другое слово, чем «u» (вы)
+lezing	dood	dood	dood N:dood#2	de dood²	«de dood» (смерть) — другое слово, чем «dood» (мёртвый)
+lezing	wilde	willen	willen ADJ:wild		«wilde dieren» — прилагательное wild
+remap	jouw	jou	jouw		притяжательное «jouw» (твой) — другое слово, чем «jou» (тебя)
+blijft	dank	danken			«dank je» — глагол danken; сущ. «de dank» — тот же корень, малая доля
+blijft		anders			наречие «anders» (иначе) и прилагательное (другой) — одно слово
+blijft		één			«één van hen» — то же слово; eén — опечатка, eentje — уменьшительное
+remap	eerste	één	eerste		порядковое «eerste» (первый) — другое слово, чем «één»
+remap	eersten	één	eerste		форма порядкового «eerste»
+blijft	spijt	spijten			«het spijt me» и «ik heb spijt» — одно слово (сожаление)
+lezing	werk	werk	werk WW:werken		«ik werk» — форма глагола werken
+lezing	staat	staat	staan N:staat		«hij staat» — форма staan; «de staat» (государство) — сущ.
+blijft	gezien	zien			причастие zien; «gezien …» (учитывая) — малая доля
+lezing		zit	WW:zitten		перевёртыш: инфинитив zitten отдан ключу zit
+blijft		sorry			междометие — слово с карточкой; пометка SPEC — от теггера
+blijft		vast			«vast» (твёрдый) и «vast» (наверняка) — два значения одного слова
+blijft		hallo			междометие — слово с карточкой; пометка SPEC — от теггера
+lezing		vraag	WW:vragen		перевёртыш: инфинитив и «ik vraag» отданы сущ. vraag
+blijft		wanneer			вопрос «wanneer?» и союз «wanneer» — одно слово (когда)
+lezing		zorg	WW:zorgen		перевёртыш: глагол zorgen и «ik zorg» отданы сущ. zorg
+blijft		gek			«de gek» (псих) — то же слово, что «gek» (сумасшедший)
+remap	laatste	laat	laatst		«de laatste» (последний) — слово laatst, не степень laat
+remap	laatst	laat	laatst		«laatst» (недавно; последним) — своё слово, не степень laat
+blijft		enig			«de enige» и «enige tijd» — одно слово enig
+lezing		eten	N:eten#2	het eten²	«het eten» (еда) — другое слово, чем «eten» (есть)
+blijft	eet	eten			«ik eet» — форма eten; лемма SUBTLEX ошибочна
+blijft	gezegd	zeggen			причастие zeggen
+blijft	ken	kennen			«ik ken» — форма kennen; лемма SUBTLEX ошибочна
+lezing		gelijk	N:gelijk#2	gelijk²	«gelijk hebben» (быть правым) — другое значение, чем «gelijk» (равный)
+lezing		morgen	N:morgen#2	de morgen²	«de morgen» (утро) — другое слово, чем «morgen» (завтра)
+blijft		elk			«elke» — форма elk
+lezing	hoop	hopen	hopen N:hoop		«de hoop» (надежда; куча) — сущ., не глагол hopen
+remap	verdomme	verdommen	verdomme		восклицание «verdomme» — своё слово
+remap	verder	ver	verder		«verder» (дальше; кроме того) — своё слово, не степень ver
+lezing	vroeg	vroeg	vroeg WW:vragen		«hij vroeg» — прошедшее от vragen; «vroeg» (рано) — прилагательное
+remap	vroeger	vroeg	vroeger		«vroeger» (раньше, в прошлом) — своё слово, не степень vroeg
+lezing		stop	WW:stoppen		перевёртыш: инфинитив stoppen отдан ключу stop
+lezing		stoppen	N:stop		«de stop» (остановка) — сущ., не глагол stoppen
+blijft		open			пометка SPEC — от теггера
+blijft	zoek	zoeken			«op zoek naar» — оборот глагола zoeken
+lezing		pas	BW:pas#2 WW:passen	pas²	«pas» (только, лишь) — ключ pas у карточки Werk (пропуск); «ik pas» — форма passen
+lezing		pak	WW:pakken		перевёртыш: инфинитив pakken отдан ключу pak
+lezing		pakken	N:pak		«het pak» (костюм, пакет) — сущ., не глагол pakken
+blijft		juist			наречие и прилагательное — одно слово (верный, как раз)
+lezing		gebruik	WW:gebruiken		перевёртыш: инфинитив gebruiken и «ik gebruik» отданы сущ. gebruik
+blijft		welk			«welke» — форма welk
+remap		agente	agent		simplemma: agent → agente; это одно слово
+blijft		vrij			«vrij» (свободный) и «vrij» (довольно) — два значения одного слова
+blijft		eerder			«eerder» (раньше; скорее) — одно слово
+lezing	mis	missen	mis WW:missen		«het gaat mis» (не так) — своё слово; «ik mis je» — форма missen
+lezing		bel	WW:bellen		перевёртыш: инфинитив bellen отдан ключу bel
+blijft	ie	hij			разговорное «ie» = hij
+lezing	doden	doden	doden ADJ:dood N:dood		«de doden» (мёртвые) — от dood; «doden» (убивать) — глагол
+remap	dode	doden	dood		«de dode», «dode mensen» — форма dood
+lezing		spel	WW:spelen		перевёртыш: инфинитив spelen отдан ключу spel
+lezing		druk	N:druk#2 WW:drukken	de druk²	«de druk» (давление) — другое слово, чем «druk» (занятой); «drukken» — глагол
+lezing		schatten	N:schat		«de schat» (сокровище; милый) — сущ., не глагол schatten
+remap	wees	wijzen	zijn		«wees stil» — повелительное от zijn
+lezing		loop	WW:lopen		перевёртыш: инфинитив lopen отдан ключу loop
+lezing		stel	WW:stellen		перевёртыш: инфинитив stellen отдан ключу stel
+lezing		stellen	N:stel		«het stel» (пара) — сущ., не глагол stellen
+lezing		begin	WW:beginnen		«ik begin» — форма beginnen; «het begin» — сущ.
+lezing		leer	WW:leren		перевёртыш: инфинитив leren отдан ключу leer; «leren jas» остаётся у leer (кожа)
+blijft		fout			«fout» (неверный) и «de fout» (ошибка) — одно слово
+blijft		alstublieft			пометка WW — от теггера
+lezing		val	WW:vallen SPEC:Val		перевёртыш: инфинитив vallen отдан ключу val; Val — имя
+uit		Val			имя
+remap	vals	val	vals		«vals» (фальшивый) — своё слово
+lezing		zet	WW:zetten		перевёртыш: инфинитив zetten отдан ключу zet
+lezing		vertrouwen	N:vertrouwen#2	het vertrouwen²	«het vertrouwen» (доверие) — другое слово, чем «vertrouwen» (доверять, карточка Kern)
+blijft	anderen	ander			«anderen» (другие) — форма ander
+lezing		recht	ADJ:recht#2	recht²	«recht» (прямой) — другое слово, чем «het recht» (право, карточка Kern)
+remap	tweede	twee	tweede		порядковое «tweede» — другое слово, чем «twee»
+uit		klootzak			мат
+remap		venten	vent		simplemma: vent → venten; «de vent» (парень) — сущ.
+lezing	haat	haten	haten N:haat		«de haat» (ненависть) — сущ., не глагол haten
+blijft	minder	weinig			«minder» — степень weinig
+remap		pappen	pap		simplemma: pap → pappen; «pap» (папа; каша) — сущ.
+blijft		hoi			междометие — слово с карточкой; пометка SPEC — от теггера
+uit		jack			имя Jack; «het jack» (куртка) — малая доля
+uit		miss			английское «Miss»
+blijft		kwaad			«kwaad» (злой, сердитый) и «het kwaad» (зло) — одно слово
+blijft		miljoen			существительное и числительное — одно слово
+lezing		enkel	N:enkel#2 VNW:enkel	de enkel²	«de enkel» (лодыжка) — другое слово, чем «enkel» (только); «geen enkel» — то же enkel
+remap	enkele	enkel	enkele		«enkele dagen» (несколько) — другое слово, чем «enkel» (только)
+lezing		licht	ADJ:licht#2	licht²	«licht» (лёгкий, светлый) — другое слово, чем «het licht» (свет)
+blijft	geworden	worden			причастие worden
+blijft	konden	kunnen			прошедшее kunnen
+lezing		trouw	WW:trouwen ADJ:trouw		перевёртыш: инфинитив trouwen отдан ключу trouw; «trouw» (верный) и «de trouw» (верность) — одно слово
+remap	verkeerd	verkeren	verkeerd		«verkeerd» (неправильный) — своё слово, не причастие verkeren
+lezing		stappen	N:stap		«de stap» (шаг, карточка Kern) — сущ., не глагол stappen
+lezing		stap	WW:stappen		перевёртыш: инфинитив stappen (карточка Kern) отдан ключу stap
+blijft		heer			«de Heer» (Господь) — то же слово; пометка SPEC — от теггера
+uit		jezus			имя; восклицание «Jezus!»
+lezing	acht	achten	acht WW:achten		«acht» (восемь) — числительное, не глагол achten
+remap	he	hebben	he		междометие «he» (эй) и английское «he» — не hebben
+uit		he			междометие и английская вставка
+uit		charlie			имя
+uit		michael			имя
+uit		frank			имя
+uit		george			имя
+uit		david			имя
+uit		peter			имя
+uit		james			имя
+uit		henry			имя
+uit		harry			имя
+uit		danny			имя
+uit		jimmy			имя
+uit		sarah			имя
+uit		tommy			имя
+uit		Bob			имя
+uit		richard			имя
+uit		billy			имя
+uit		steve			имя
+uit		mark			имя; «de mark» (марка) — малая доля
+uit		johnny			имя
+uit		bobby			имя
+uit		londen			город
+blijft		amerika			страна, часть света — карточка по D7
+blijft		geheim			«het geheim» (тайна) и «geheim» (тайный) — одно слово
+blijft		sommig			«sommige», «sommigen» — формы sommig
+lezing		lijk	WW:lijken		перевёртыш: инфинитив lijken (карточка Kern) отдан ключу lijk (труп)
+lezing		lijken	N:lijk		«het lijk» (труп) — сущ., не глагол lijken
+lezing		stuur	WW:sturen		перевёртыш: инфинитив sturen отдан ключу stuur (руль)
+blijft		idioot			«de idioot» и «idioot» (идиотский) — одно слово
+blijft	foto's	foto			в nl_50k «foto's» = «foto» + «s»: уже у foto
+lezing	slaap	slapen	slapen N:slaap		«de slaap» (сон) — сущ.; «ik slaap» — форма slapen
+blijft	goeie	goed			разговорная форма goed
+blijft	da's	da's			«da's» = dat is — клитика, не слово списка
+blijft		zolang			союз и наречие — одно слово (пока)
+remap		verlieven	verliefd		«verliefd» (влюблённый) — своё слово; глагол verlieven редок
+blijft	gedacht	denken			причастие denken; лемма SUBTLEX ошибочна
+blijft	let	letten			«let op» — форма letten; лемма SUBTLEX ошибочна
+lezing	namen	nemen	naam WW:nemen		«de namen» — мн. ч. naam; «zij namen» — прошедшее от nemen
+lezing		voorstel	WW:voorstellen		перевёртыш: инфинитив voorstellen отдан ключу voorstel
+lezing		deel	WW:delen		перевёртыш: инфинитив delen (карточка Kern) и «ik deel» отданы сущ. deel
+lezing		trek	WW:trekken		перевёртыш: инфинитив trekken отдан ключу trek
+remap		boten	boot		simplemma: boot → boten
+blijft		gedachte			«gedachten» — мн. ч. gedachte; лемма SUBTLEX ошибочна
+blijft	geraakt	raken			причастие raken
+lezing		regel	WW:regelen		«ik regel het» — форма regelen; «de regel» (правило) — сущ.
+lezing		vlieg	WW:vliegen		перевёртыш: инфинитив vliegen отдан ключу vlieg (муха, карточка Kern)
+lezing	red	redden	redden SPEC:Red		Red — имя и английское «red»
+uit		Red			имя и английское «red»
+lezing		kaarten	N:kaart		перевёртыш: «de kaart» (карточка Kern) отдана ключу kaarten
+lezing		hoeve	WW:hoeven		перевёртыш: инфинитив hoeven (карточка Kern) отдан ключу hoeve (хутор)
+blijft		midden			«het midden» (карточка Kern) и «midden in» — одно слово
+blijft		Amerikaans			«amerikaanse» — форма Amerikaans
+lezing	rot	rotten	rotten ADJ:rot N:rot		«rot» (гнилой, паршивый) — прилагательное; «rot op» — форма rotten
+remap	rots	rot	rots		«de rots» (скала) — своё слово, не rot
+remap		lessen	les		simplemma: les → lessen
+lezing	verdachte	verdacht	verdacht N:verdachte		«de verdachte» (подозреваемый) — другое слово, чем «verdacht» (подозрительный, карточка Kern)
+blijft		verdachte			«verdachten» — мн. ч. verdachte
+lezing		uitleg	WW:uitleggen		перевёртыш: инфинитив uitleggen отдан ключу uitleg
+lezing		waag	N:wagen		«de wagen» (машина, повозка) — сущ.; «wagen» (осмелиться) остаётся у waag
+remap	keus	keu	keuze		«keus» — вариант «keuze» (выбор, карточка Kern)
+blijft		zulk			«zulke» — форма zulk
+lezing	gevallen	vallen	vallen N:geval		«de gevallen» — мн. ч. geval; «gevallen» — причастие vallen
+lezing		ren	WW:rennen		перевёртыш: инфинитив rennen (карточка Kern) отдан ключу ren
+remap	allen	al	alle		«allen» (все) — форма alle
+lezing		onderzoek	WW:onderzoeken		перевёртыш: инфинитив onderzoeken (карточка Kern) и «ik onderzoek» отданы сущ. onderzoek
+blijft		verschillend			«verschillende» (разные) — форма verschillend
+lezing	sla	slaan	slaan N:sla		«de sla» (салат) — другое слово; «ik sla» — форма slaan
+uit		lullen			мат
+lezing	bezorgd	bezorgen	bezorgd WW:bezorgen		«bezorgd» (обеспокоенный) — своё слово; «bezorgd» (доставлен) — причастие bezorgen (карточка Kern)
+lezing		getuigen	N:getuige		«de getuigen» — мн. ч. getuige (свидетель); «getuigen» (свидетельствовать) — глагол
+blijft		been			«benen» — мн. ч. been (нога)
+remap	links	link	links		«links» (слева) — своё слово, не «de link»
+remap	linker	link	links		«linker» (левый) — к links
+lezing	bereid	bereiden	bereid WW:bereiden		«bereid» (готовый) — своё слово; «bereid» (приготовлен) — причастие bereiden
+lezing		verlies	WW:verliezen		«ik verlies» — форма verliezen (карточка Kern); «het verlies» (потеря) — сущ.
+lezing		liften	N:lift		«de lift» — сущ., не глагол liften
+blijft		teveel			«teveel» (слишком много) — одно слово
+remap		monsteren	monster		simplemma: monster → monsteren
+blijft		spoor			«sporen» — мн. ч. spoor; лемма SUBTLEX ошибочна
+lezing		knappen	ADJ:knap		«knap» (умный, красивый) — прилагательное, не глагол knappen
+remap	gevoelens	gevoelen	gevoel		«gevoelens» — мн. ч. gevoel (чувство)
+remap	gevoeld	gevoelen	voelen		«gevoeld» — причастие voelen
+lezing		hang	WW:hangen		перевёртыш: инфинитив hangen отдан ключу hang
+remap	kat	kater	kat		simplemma: kat → kater; «de kater» (кот; похмелье) — другое слово
+blijft	gevangen	vangen			причастие vangen (пойманный, в плену)
+remap	gevangene	vangen	gevangene		«de gevangene» (заключённый) — сущ.
+remap	gevangenen	vangen	gevangene		мн. ч. gevangene
+remap		kogelen	kogel		simplemma: kogel → kogelen
+remap		ouwe	oud		разговорное «ouwe» = oude
+lezing		testen	N:test		«de test» — сущ., не глагол testen
+lezing		test	WW:testen		перевёртыш: инфинитив testen отдан ключу test
+lezing		teken	WW:tekenen		перевёртыш: инфинитив tekenen и «ik teken» отданы сущ. teken
+blijft	vele	veel			«vele» — форма veel
+remap		eikelen	eikel		simplemma: eikel → eikelen
+uit		eikel			ругательство (козёл); «eikel» (жёлудь) — малая доля
+lezing		vier	WW:vieren		перевёртыш: глагол vieren (праздновать, карточка Kern) отдан числу vier
+blijft		vermist			«vermist» (пропавший без вести) — своё слово
+lezing		wensen	N:wens		«de wens» (желание, карточка Kern) — сущ., не глагол wensen
+lezing		wens	WW:wensen		перевёртыш: инфинитив wensen отдан ключу wens
+lezing	geweten	verwijten	weten N:geweten		«geweten» — причастие weten; «het geweten» (совесть) — сущ.; к verwijten не относится
+lezing		heiligen	ADJ:heilig N:heilig		«heilige» (святой) — прилагательное heilig, не глагол heiligen
+lezing	ware	zijn	zijn ADJ:waar#2		«de ware liefde» (настоящий) — от waar²; «als het ware» — от zijn
+lezing	vertrek	vertrekken	vertrekken N:vertrek		«het vertrek» (отъезд) — сущ.; «ik vertrek» — форма vertrekken
+uit		eddie			имя
+uit		chris			имя
+uit		martin			имя
+uit		thomas			имя
+uit		kevin			имя
+uit		rachel			имя
+uit		Charles			имя
+uit		walter			имя
+uit		brian			имя
+uit		daniel			имя
+uit		Robert			имя
+uit		scott			имя
+uit		Lee			имя
+uit		jason			имя
+uit		william			имя
+uit		grace			имя
+uit		arthur			имя
+uit		annie			имя
+uit		clark			имя
+uit		simon			имя
+uit		jerry			имя
+uit		kelly			имя
+uit		alice			имя
+uit		taylor			имя
+uit		louis			имя
+uit		smith			имя
+uit		jackson			имя
+uit		jones			имя
+uit		roger			имя
+uit		jesse			имя
+uit		carter			имя
+uit		christus			имя
+uit		maria			имя
+uit		washington			город
+uit		street			английская вставка
+uit		city			английская вставка
+uit		captain			английская вставка
+uit		lady			английская вставка
+uit		high			английская вставка; «high» (под кайфом) — малая доля
+uit		big			английская вставка
+blijft		uur			«uren» — мн. ч. uur; лемма SUBTLEX ошибочна
+lezing		kost	WW:kosten		перевёртыш: инфинитив kosten отдан ключу kost; «de kosten» (расходы) — мн. ч. kost
+lezing	mist	misten	missen N:mist		«hij mist» — форма missen; «de mist» (туман) — другое слово
+blijft	auto's	auto			в nl_50k «auto's» = «auto» + «s»: уже у auto
+lezing	twijfel	twijfelen	twijfelen N:twijfel		«de twijfel» (сомнение) — сущ.; «ik twijfel» — форма twijfelen
+remap		flessen	fles		simplemma: fles → flessen
+lezing		dollen	ADJ:dol		«dol op» (без ума от) — прилагательное, не глагол dollen
+remap		taxiën	taxi		simplemma: taxi → taxiën
+lezing	bezit	bezitten	bezitten N:bezit		«het bezit» (имущество) — сущ.; «ik bezit» — форма bezitten (карточка Kern)
+lezing		ontbijten	N:ontbijt		«het ontbijt» (завтрак) — сущ., не глагол ontbijten
+blijft	vaker	vaak			степень vaak
+blijft		akkoord			«akkoord» (согласен, карточка Kern) и «het akkoord» (соглашение) — одно слово
+lezing		toon	WW:tonen SPEC:Toon		перевёртыш: инфинитив tonen и «ik toon» отданы сущ. toon; Toon — имя
+blijft		raar			«rare» — форма raar
+lezing		aanval	WW:aanvallen		перевёртыш: инфинитив aanvallen отдан ключу aanval
+lezing		zak	WW:zakken		«zakken» (провалиться, опуститься) — глагол; «de zakken» — мн. ч. zak
+blijft	ergste	erg			степень erg
+blijft		engels			язык — карточка по D7
+lezing	start	starten	starten N:start		«de start» (старт) — сущ.; «ik start» — форма starten
+lezing		kus	WW:kussen		перевёртыш: инфинитив kussen отдан ключу kus; «de kussen» — мн. ч. kus
+lezing	kus	kussen	kussen N:kus		«de kus» (поцелуй) — сущ., не глагол kussen
+remap	kussens	kussen	kussen#2	het kussen²	«de kussens» — мн. ч. «het kussen» (подушка), другое слово
+lezing		daten	N:date		«de date» (свидание) — сущ., не глагол daten
+lezing	wezen	zijn	zijn N:wezen		«het wezen» (существо) — сущ.; «wezen» — старая форма zijn
+remap		roep	roepen		simplemma: roepen → roep; это глагол roepen (карточка Kern)
+lezing	rook	roken	roken N:rook		«de rook» (дым) — сущ.; «ik rook» — форма roken
+lezing		stranden	N:strand		«het strand» (пляж) — сущ., не глагол stranden
+lezing		rust	WW:rusten		перевёртыш: инфинитив rusten и «ik rust» отданы сущ. rust (карточка Kern)
+lezing		voer	WW:voeren		перевёртыш: инфинитив voeren (карточка Kern) отдан ключу voer (корм)
+lezing	bad	bidden	bad WW:bidden		«het bad» (ванна) — сущ.; «bad» — прошедшее от bidden
+blijft		geïnteresseerd			«geïnteresseerd» (заинтересованный) — своё слово
+remap		duivelin	duivel		simplemma: duivel → duivelin
+remap	ballen	ballen	bal		«ballen» — мн. ч. bal (мяч, карточка Kern)
+remap	loog	logen	liegen		«hij loog» — прошедшее от liegen
+uit		release			мусор субтитров (титры релиза)
+blijft		Engeland			страна — карточка по D7
+lezing		vang	WW:vangen		перевёртыш: инфинитив vangen (карточка Kern) отдан ключу vang
+lezing		steek	WW:steken		перевёртыш: инфинитив steken отдан ключу steek
+lezing		visse	N:vis WW:vissen		«de vissen» — мн. ч. vis (карточка Kern); «vissen» (рыбачить) — глагол
+remap	matt	matten	Matt		имя Matt, не matten
+uit		Matt			имя
+lezing		verkoop	WW:verkopen		«ik verkoop» — форма verkopen; «de verkoop» (продажа) — сущ.
+lezing	gaven	gave	geven N:gave		«zij gaven» — прошедшее от geven; «de gaven» — мн. ч. gave (дар)
+lezing		vlucht	WW:vluchten		перевёртыш: инфинитив vluchten и «ik vlucht» отданы сущ. vlucht (карточка Kern)
+blijft		Frankrijk			страна — карточка по D7
+remap	gedragen	verdragen	gedragen		«zich gedragen» (вести себя) и «gedragen» (ношеный) — не verdragen
+remap	las	lassen	lezen		«hij las» — прошедшее от lezen
+remap		tuinen	tuin		simplemma: tuin → tuinen
+blijft		vrijdag			день недели — слово с карточкой; пометка SPEC — от теггера
+blijft	verboden	verbieden			причастие verbieden (запрещено)
+lezing	war	war	war SPEC:War		английское «war» — вставка; «in de war» (в замешательстве) — своё слово
+uit		War			английская вставка
+remap	warren	war	Warren		имя Warren
+uit		Warren			имя
+blijft	dichterbij	dichtbij			степень dichtbij
+blijft		opzij			пометка SPEC — от теггера
+blijft		sms			«sms» (эсэмэска) — своё слово; лемма SUBTLEX ошибочна
+remap		internetten	internet		simplemma: internet → internetten
+lezing		vloeren	N:vloer		«de vloer» (пол) — сущ., не глагол vloeren
+remap		borsten	borst		simplemma: borst → borsten
+lezing		schreeuw	WW:schreeuwen		перевёртыш: инфинитив schreeuwen отдан ключу schreeuw
+lezing	bepaald	bepalen	bepaald WW:bepalen		«bepaald» (определённый) — своё слово; «bepaald» (определено) — причастие bepalen
+lezing	bepaalde	bepalen	bepalen ADJ:bepaald		«bepaalde mensen» (определённые) — от bepaald
+blijft		heus			наречие и прилагательное — одно слово (настоящий; правда)
+lezing		raad	WW:raden		перевёртыш: инфинитив raden отдан ключу raad (совет)
+remap		bekken	bek		simplemma: bek → bekken
+blijft		Amerikaan			национальность — карточка по D7
+remap		kankeren	kanker		simplemma: kanker → kankeren; «de kanker» (рак) — слово
+blijft	des	de			родительный артикль «des», «des te» — форма de
+blijft		mexico			страна — карточка по D7
+lezing	bak	bakken	bakken N:bak		«de bak» (ящик, лоток) — сущ., не глагол bakken
+lezing		vorm	WW:vormen		перевёртыш: инфинитив vormen (карточка Kern) отдан сущ. vorm (карточка Kern)
+remap	reet	rijten	reet		грубое «reet» (задница) — не глагол rijten
+uit		reet			мат
+lezing	streek	strijken	streek WW:strijken		«de streek» (местность; проделка) — сущ.; «streek» — прошедшее от strijken
+blijft		zaterdag			день недели — слово с карточкой; пометка SPEC — от теггера
+blijft	gewend	wennen			причастие wennen (привыкший)
+blijft	verbonden	verbinden			причастие verbinden (карточка Kern); лемма SUBTLEX ошибочна
+lezing		klussen	N:klus		«de klus» (работа, задание) — сущ., не глагол klussen
+uit		lul			мат
+uit		Toon			имя
+remap	heilige	heiligen	heilig		«heilige» — форма heilig (святой)
+uit		chicago			город
+blijft	kaarten	kaart			«kaarten» — мн. ч. kaart; «kaarten» (играть в карты) — малая доля
+uit		helen			имя Helen; глагол helen (исцелять) — малая доля
+lezing		dans	WW:dansen		«ik dans» — форма dansen; «de dans» (танец) — сущ.
+lezing	stal	stallen	stal WW:stelen		«de stal» (конюшня) — сущ.; «hij stal» — прошедшее от stelen
+lezing		stromen	N:stroom		«de stroom» (ток, поток) — сущ., не глагол stromen
+blijft		wauw			междометие «wauw» — одно слово; части речи — от теггера
+uit		vincent			имя
+uit		robin			имя
+uit		patrick			имя
+uit		julia			имя
+uit		victor			имя
+uit		elizabeth			имя
+uit		tim			имя
+uit		Kim			имя
+uit		laura			имя
+uit		lucas			имя
+uit		johnson			имя
+uit		Hitler			имя
+uit		black			английская вставка
+uit		my			английская вставка
+uit		house			английская вставка
+uit		texas			штат — как город (D7)
+blijft		Europa			часть света — карточка по D7
+remap		vingeren	vinger		simplemma: vinger → vingeren
+blijft		zondag			день недели — слово с карточкой; пометка SPEC — от теггера
+blijft		maandag			день недели — слово с карточкой; пометка SPEC — от теггера
+remap		Fransman	Frans		simplemma: franse → Fransman; «franse» — форма Frans (французский)
+blijft		Duitser			национальность — карточка по D7
+remap		stond	staan		simplemma: stonden → stond; это прошедшее от staan
+remap	zonde	zenden	zonde		«de zonde» (грех; «zonde!» — жаль) — сущ., не глагол zenden
+remap		naken	naakt		simplemma: naakt → naken; «naakt» (голый) — прилагательное
+blijft		opgewonden			«opgewonden» (взволнованный) — своё слово
+remap		tongen	tong		simplemma: tong → tongen
+lezing		ruilen	N:ruil		«de ruil» (обмен) — сущ., не глагол ruilen
+blijft	d'r	er			«d'r» = haar/er — клитика, не слово списка
+remap		liefste	lief		«liefste» (самый милый; дорогая) — степень lief
+lezing		graaf	WW:graven		«graven» (копать) — глагол; «de graaf» (граф) — сущ.
+blijft	staten	staat			«staten» — мн. ч. staat; «Verenigde Staten» — то же слово
+lezing		verloofde	WW:verloven		«de verloofde» (жених, невеста) — сущ.; «verloofde zich» — прошедшее от verloven
+remap		potten	pot		simplemma: pot → potten
+remap		netje	netjes		simplemma: netjes → netje; «netjes» (аккуратно) — своё слово
+remap		dievegge	dief		simplemma: dief → dievegge; это одно слово
+lezing		geuren	N:geur		«de geur» (запах) — сущ., не глагол geuren
+remap	beer	varken	beer		«de beer» (медведь) — своё слово, не varken
+remap		stenen	steen		«stenen» — мн. ч. steen (камень)
+blijft		Brits			«britse» — форма Brits
+lezing		huren	N:huur		«de huur» (аренда) — сущ., не глагол huren
+remap		huur	huren		simplemma: huren → huur; это глагол huren
+blijft		online			заимствование «online» — слово с карточкой
+lezing		klop	WW:kloppen		перевёртыш: инфинитив kloppen отдан ключу klop
+remap	vierde	vieren	vierde		порядковое «vierde» (четвёртый) — не глагол vieren
+lezing		schrik	WW:schrikken		перевёртыш: инфинитив schrikken отдан ключу schrik
+blijft		april			месяц — слово с карточкой; пометка SPEC — от теггера
+blijft		mars			«de mars» (марш), планета Марс — слово с карточкой
+lezing	verzet	verzetten	verzetten N:verzet		«het verzet» (сопротивление) — сущ.; «verzet» — форма verzetten
+remap		wolvin	wolf		simplemma: wolf → wolvin; это одно слово
+blijft		advocaat			«advocaten» — мн. ч. advocaat; лемма SUBTLEX ошибочна
+lezing		wijze	WW:wijzen		перевёртыш: инфинитив wijzen отдан ключу wijze (способ, карточка Kern)
+blijft		china			страна — карточка по D7
+blijft		geheel			«geheel» (целиком, карточка Kern) и «het geheel» (целое) — одно слово
+remap	leden	lijden	lid		«de leden» — мн. ч. lid (член, карточка Kern)
+lezing	gok	gokken	gokken N:gok		«de gok» (догадка, риск) — сущ.; «ik gok» — форма gokken
+lezing		rui	WW:ruiken		перевёртыш: инфинитив ruiken (карточка Kern) отдан ключу rui
+blijft		Duitsland			страна — карточка по D7
+lezing		tel	WW:tellen		перевёртыш: инфинитив tellen отдан ключу tel
+remap	degenen	degeen	degene		«degenen» — мн. ч. degene
+lezing	schoten	schot	schieten N:schot		«zij schoten» — прошедшее от schieten; «de schoten» — мн. ч. schot
+remap		kisten	kist		simplemma: kist → kisten
+remap		was	wassen		simplemma: wassen → was; это глагол wassen (мыть)
+lezing		douchen	N:douche		«de douche» (душ) — сущ., не глагол douchen
+blijft	zwijg	zwijgen			«zwijg!» — форма zwijgen (карточка Kern); пометка SPEC — от теггера
+lezing	gave	gaaf	gave ADJ:gaaf		«de gave» (дар) — сущ.; «gave» (классный) — форма gaaf
+remap	data	datum	data		«data» (данные) — своё слово, не мн. ч. datum
+remap		spelletje	spel		уменьшительное от spel
+lezing		wedde	WW:wedden		перевёртыш: инфинитив wedden отдан ключу wedde
+remap	gods	God	god		«gods» (Gods wil) — родительный от god
+remap	media	medium	media		«de media» (СМИ) — своё слово
+remap	sprake	spraak	sprake		«er is sprake van» — оборот, своё слово, не spraak (речь)
+remap		hekelen	hekel		simplemma: hekel → hekelen; «een hekel hebben aan» — сущ.
+lezing		besef	WW:beseffen		«ik besef», «beseffen» — глагол beseffen; «het besef» (осознание) — сущ.
+lezing		lunch	WW:lunchen		«lunchen» (обедать) — глагол; «de lunch» — сущ.
+blijft	hielden	houden			прошедшее houden; лемма SUBTLEX ошибочна
+blijft		Frans			язык — карточка по D7; имя Frans — малая доля
+blijft	botten	bot			«botten» — мн. ч. bot (кость)
+remap		poppen	pop		simplemma: pop → poppen
+remap		koude	koud		«koude» — форма koud; «de koude» (холод) — то же слово
+blijft	verbaasd	verbazen			причастие verbazen (удивлённый)
+remap	at	atten	eten		«hij at» — прошедшее от eten
+remap	wijst	wijs	wijzen		«hij wijst» — форма wijzen
+blijft		afrika			часть света — карточка по D7
+lezing		eisen	N:eis		«de eisen» — мн. ч. eis (требование); «eisen» (требовать) — глагол, карточка Kern
+lezing		vloeken	N:vloek		«de vloek» (проклятие) — сущ., не глагол vloeken
+blijft		hersenen			«hersens» — вариант hersenen (карточка Kern)
+lezing	lagen	lage	liggen N:laag		«zij lagen» — прошедшее от liggen; «de lagen» — мн. ч. laag (слой)
+lezing		brand	WW:branden		перевёртыш: инфинитив branden отдан ключу brand (пожар, карточка Kern)
+lezing		merk	WW:merken		перевёртыш: инфинитив merken отдан ключу merk (марка)
+lezing		fietsen	N:fiets		«de fiets» (велосипед) — сущ., не глагол fietsen
+lezing		fiets	WW:fietsen		перевёртыш: инфинитив fietsen отдан ключу fiets
+lezing		vochten	N:vocht WW:vechten		«het vocht» (влага) — сущ.; «hij vocht» — прошедшее от vechten
+remap		amenen	amen		simplemma: amen → amenen
+remap	makker	mak	makker		«de makker» (приятель) — сущ., не mak
+remap		spionne	spion		simplemma: spion → spionne; это одно слово
+remap	wond	wonden	wond		«de wond» (рана) — сущ.
+blijft		dinsdag			день недели — слово с карточкой; пометка SPEC — от теггера
+lezing	dek	dekken	dekken N:dek		«het dek» (палуба; одеяло) — сущ.; «ik dek» — форма dekken
+blijft	camera's	camera			в nl_50k «camera's» = «camera» + «s»: уже у camera
+blijft		vet			«het vet» (жир) и «vet» (жирный; классный) — одно слово
+lezing		sneeuwen	N:sneeuw		«de sneeuw» (снег) — сущ., не глагол sneeuwen
+lezing		tippen	N:tip		«de tip» (совет) — сущ., не глагол tippen
+lezing		tip	WW:tippen		перевёртыш: инфинитив tippen отдан ключу tip
+lezing		golfen	N:golf SPEC:golf		«de golf» (волна; гольф) — сущ., не глагол golfen
+remap		gecontroleerd	controleren		«gecontroleerd» — причастие controleren
+lezing		overval	WW:overvallen		перевёртыш: инфинитив overvallen отдан ключу overval
+lezing		kruisen	N:kruis SPEC:kruis		«het kruis» (крест) — сущ., не глагол kruisen
+lezing		drogen	ADJ:droog		«droog» (сухой) — прилагательное, не глагол drogen
+blijft		Chinees			«chinese» — форма Chinees
+lezing		aanpak	WW:aanpakken		перевёртыш: инфинитив aanpakken отдан ключу aanpak (карточка Kern)
+lezing		stressen	N:stress		«de stress» — сущ., не глагол stressen
+remap		tranen	traan		«tranen» — мн. ч. traan (слеза)
+blijft		groots			«groots» (грандиозный) — своё слово; «grootst» — малая доля
+lezing	proef	proeven	proeven N:proef		«de proef» (проба, опыт) — сущ.; «ik proef» — форма proeven
+lezing		proef	WW:proeven		перевёртыш: инфинитив proeven отдан ключу proef
+lezing	vat	vatten	vatten N:vat		«het vat» (бочка) — сущ.; «vat» — форма vatten
+remap		chinezen	Chinees		simplemma: chinees → chinezen; это Chinees (китайский, китаец)
+lezing		trap	WW:trappen		«trappen» (пинать) — глагол; «de trappen» — мн. ч. trap
+lezing	beet	bijten	bijten N:beet ADJ:beet		«de beet» (укус), «beet hebben» — сущ.; «hij beet» — прошедшее от bijten
+lezing		ruil	WW:ruilen		перевёртыш: инфинитив ruilen отдан ключу ruil
+lezing	pest	pesten	pesten N:pest		«de pest» (чума) — сущ.; «ik pest» — форма pesten
+lezing		hollen	N:hol ADJ:hol		«het hol» (нора), «hol» (полый) — не глагол hollen (бежать)
+lezing		glimlachen	N:glimlach SPEC:glimlach		«de glimlach» (улыбка) — сущ., не глагол glimlachen
+lezing		knuffelen	N:knuffel		«de knuffel» (объятие; мягкая игрушка) — сущ., не глагол knuffelen
+blijft		plastic			«plastic» (пластик; пластиковый) — одно слово
+lezing	schakel	schakelen	schakelen N:schakel		«de schakel» (звено) — сущ.; «ik schakel» — форма schakelen
+lezing		straf	WW:straffen		перевёртыш: инфинитив straffen отдан ключу straf (наказание, карточка Kern)
+blijft	verspreid	verspreiden			причастие verspreiden (карточка Kern)
+remap		benieuwen	benieuwd		«benieuwd» (любопытно) — своё слово; глагол benieuwen редок
+lezing		verven	N:verf		«de verf» (краска) — сущ., не глагол verven
+blijft	toegestaan	toestaan			причастие toestaan (разрешено)
+lezing		lade	WW:laden		«laden» (грузить, заряжать) — глагол; «de lade» (ящик) — сущ.
+remap		volwassene	volwassen		«de volwassenen» (взрослые) — от volwassen (карточка Kern)
+lezing		misbruiken	N:misbruik		«het misbruik» (злоупотребление) — сущ., не глагол misbruiken
+lezing	schop	schoppen	schoppen N:schop		«de schop» (пинок; лопата) — сущ.; «ik schop» — форма schoppen
+lezing		bouw	WW:bouwen		«ik bouw» — форма bouwen; «de bouw» (стройка) — сущ.
+lezing		ruim	WW:ruimen		«ruimen» (убирать) — глагол; «ruim» (просторный) — прилагательное
+remap	ned	Nederland	Ned		«ned» — пометка субтитров NED и имя Ned, не Nederland
+uit		Ned			мусор субтитров и имя
+blijft	overdreven	overdrijven			причастие overdrijven (преувеличенный)
+remap	secretaresse	secretaris	secretaresse		«de secretaresse» (секретарша) — своё слово, не «de secretaris» (секретарь организации)
+lezing		oproep	WW:oproepen		перевёртыш: инфинитив oproepen отдан ключу oproep (карточка Kern)
+lezing	bond	binden	bond SPEC:Bond WW:binden		«de bond» (союз) — сущ.; Bond — имя; «bond» — прошедшее от binden
+uit		Bond			имя
+lezing		verdrag	WW:verdragen		перевёртыш: инфинитив verdragen (карточка Kern) отдан ключу verdrag (договор)
+remap	vrouwtje	vrouwe	vrouw		уменьшительное от vrouw
+lezing		voortduren	ADJ:voortdurend		«voortdurend» (постоянно) — своё слово; глагол voortduren редок
+lezing		klap	WW:klappen		«klappen» (хлопать) — глагол; «de klappen» — мн. ч. klap
+remap	dale	dalen	Dale		имя Dale, не dalen
+uit		Dale			имя
+lezing		luiden	ADJ:luid		«luid» (громкий) — прилагательное, не глагол luiden
+lezing		gebed	WW:bidden		«gebeden» — причастие bidden; «de gebeden» — мн. ч. gebed (молитва)
+blijft		ronde			«rondje» — уменьшительное от ronde (карточка Kern)
+remap	maten	mate	maat		«de maten» — мн. ч. maat (карточка Kern)
+blijft		noord			«noord» (север) — слово; пометка SPEC — от «Noord-…» в названиях
+blijft		zuid			«zuid» (юг) — слово; пометка SPEC — от «Zuid-…» в названиях
+blijft	beperkt	beperken			причастие beperken (ограниченный, карточка Kern)
+lezing	slaag	slagen	slagen N:slaag		«een pak slaag» (взбучка) — сущ.; «ik slaag» — форма slagen (карточка Kern)
+lezing	steeg	stijgen	stijgen N:steeg		«de steeg» (переулок) — сущ.; «steeg» — прошедшее от stijgen
+lezing	koppel	koppelen	koppelen N:koppel SPEC:koppel		«het koppel» (пара) — сущ.; «ik koppel» — форма koppelen
+lezing		eis	WW:eisen		«ik eis» — форма eisen (карточка Kern); «de eis» (требование) — сущ.
+blijft		dergelijk			«dergelijke», «dergelijks» — формы dergelijk
+remap	merkte	opmerken	merken		«merkte» — прошедшее от merken, не opmerken
+lezing		boeten	N:boete		«de boete» (штраф) — сущ., не глагол boeten
+lezing		bestuur	WW:besturen		«besturen» (управлять) — глагол; «het bestuur» (правление, карточка Kern) — сущ.
+blijft		complex			«complex» (сложный) и «het complex» (комплекс) — одно слово
+lezing	bezeten	bezitten	bezeten WW:bezitten		«bezeten» (одержимый) — своё слово; «bezeten» — причастие bezitten
+lezing	polen	pool	Polen N:pool		«Polen» (Польша) — страна; «de polen» — мн. ч. pool
+blijft		metaal			«metalen» — прилагательное и мн. ч. от metaal
+lezing	vermaak	vermaken	vermaken N:vermaak		«het vermaak» (развлечение) — сущ.; «ik vermaak» — форма vermaken
+lezing	geslacht	slachten	geslacht WW:slachten		«het geslacht» (пол; род) — сущ.; «geslacht» — причастие slachten
+uit		steven			имя Steven, Stevens
+lezing		overleg	WW:overleggen		перевёртыш: инфинитив overleggen отдан ключу overleg
+lezing		smaken	N:smaak		«de smaken» — мн. ч. smaak (вкус); «smaken» — глагол
+remap	run	runnen	run		«run» — английская вставка («Run!»), не runnen
+uit		run			английская вставка
+lezing		ontwerp	WW:ontwerpen		перевёртыш: инфинитив ontwerpen отдан ключу ontwerp
+uit		facebook			название компании
+blijft	uitgebreid	uitbreiden			причастие uitbreiden (расширенный, подробный)
+lezing	mail	mailen	mailen N:mail SPEC:mail		«de mail» (почта, письмо) — сущ.; «ik mail» — форма mailen
+lezing		inhoud	WW:inhouden		перевёртыш: инфинитив inhouden отдан ключу inhoud
+lezing		verwijt	WW:verwijten		перевёртыш: инфинитив verwijten (карточка Kern) отдан ключу verwijt (упрёк)
+lezing		verwijten	N:verwijt		«het verwijt» (упрёк) — сущ., не глагол verwijten
+remap		cijferen	cijfer		simplemma: cijfer → cijferen; «het cijfer» — карточка Kern
+lezing		aanvraag	WW:aanvragen		перевёртыш: инфинитив aanvragen отдан ключу aanvraag
+lezing		bijdrage	WW:bijdragen		перевёртыш: инфинитив bijdragen отдан ключу bijdrage
+lezing		zweer	WW:zweren		перевёртыш: инфинитив zweren (клясться) отдан ключу zweer (язва)
+lezing		pik	WW:pikken		перевёртыш: инфинитив pikken отдан ключу pik
+lezing	pik	pikken	pikken N:pik		«de pik» — мат; «ik pik» — форма pikken
+uit		pik			мат
+lezing		kleed	WW:kleden		перевёртыш: инфинитив kleden отдан ключу kleed
+lezing		kleden	N:kleed		«het kleed» (ковёр; платье) — сущ., не глагол kleden
+uit		nathan			имя
+uit		linda			имя
+uit		californië			штат — как город (D7)
+lezing		boeren	N:boer SPEC:boer		«de boer» (крестьянин) — сущ., не глагол boeren (рыгать)
+lezing	bediende	bedienen	bediende WW:bedienen		«de bediende» (слуга) — сущ.; «bediende» — прошедшее от bedienen
+lezing		glimlach	WW:glimlachen		перевёртыш: инфинитив glimlachen отдан ключу glimlach
+remap	velden	vellen	veld		«de velden» — мн. ч. veld (поле, карточка Kern)
+lezing		vellen	N:vel		«het vel» (кожа; лист) — сущ., не глагол vellen
+lezing		vel	WW:vellen		перевёртыш: инфинитив vellen отдан ключу vel
+lezing		klikken	N:klik		«de klik» (щелчок) — сущ., не глагол klikken
+lezing		klik	WW:klikken		перевёртыш: инфинитив klikken отдан ключу klik
+remap	nl	Nederland	nl		«nl» — пометка субтитров, не Nederland
+uit		nl			мусор субтитров
+remap		werkneemster	werknemer		simplemma: werknemer → werkneemster; это одно слово
+remap		stort	storten		simplemma: storten → stort
+lezing		groeten	N:groet		«de groet» (привет) — сущ., не глагол groeten
+lezing		groet	WW:groeten		перевёртыш: инфинитив groeten отдан ключу groet
+remap		span	spannen		simplemma: spannen → span
+lezing		schokken	N:schok		«de schok» (шок) — сущ., не глагол schokken
+lezing		schok	WW:schokken		перевёртыш: инфинитив schokken отдан ключу schok
+blijft	gespannen	spannen			причастие spannen (напряжённый)
+uit		amsterdam			город
+uit		berlijn			город
+uit		Jan			имя
+uit		eva			имя
+uit		charlotte			имя
+uit		amanda			имя
+uit		marcus			имя
+uit		julie			имя
+uit		carlos			имя
+uit		claire			имя
+uit		emily			имя
+uit		jacob			имя
+uit		Albert			имя
+uit		Alexander			имя
+uit		oscar			имя
+uit		world			английская вставка
+uit		green			английская вставка
+uit		white			английская вставка
+uit		boy			английская вставка
+uit		happy			английская вставка
+uit		international			английская вставка
+uit		star			английская вставка
+uit		twitter			название компании
+uit		neuken			мат
+uit		kut			мат
+uit		hoer			мат
+uit		slet			мат
+uit		tiet			мат
+uit		klote			мат
+uit		godverdomme			мат
