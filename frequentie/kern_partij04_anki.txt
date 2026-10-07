@@ -61,7 +61,7 @@ onthouden	1464	Kun jij de code onthouden? Hij is 4815.	запоминать, п�
 oefenen	1503	Morgen ga ik de woorden nog een keer oefenen.	упражняться, тренировать	Завтра я ещё раз потренирую слова.	[sound:freq_oefenen_8c258f.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 duiken	1526	In Egypte kun je prachtig duiken.	нырять	В Египте можно чудесно нырять.	[sound:freq_duiken_492307.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 delen	533	Je moet leren delen.	делить(ся)	Тебе нужно научиться делиться.	[sound:freq_delen_f82629.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
-opzoeken	1580	Ik ga dat woord even opzoeken.	искать (в словаре, в интернете); навещать	Сейчас посмотрю это слово.	[sound:freq_opzoeken_9c7fd7.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
+opzoeken	1580	Ik ga dat woord even opzoeken.	посмотреть (в словаре, в интернете); навестить	Сейчас посмотрю это слово.	[sound:freq_opzoeken_9c7fd7.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 ruiken	1185	Kun je het ruiken? De koffie is bijna klaar!	чувствовать запах; пахнуть	Чувствуешь запах? Кофе почти готов!	[sound:freq_ruiken_b8e444.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 verzorgen	1612	Wie gaat de kat verzorgen als we op vakantie zijn?	ухаживать, заботиться	Кто будет ухаживать за кошкой, пока мы в отпуске?	[sound:freq_verzorgen_c65821.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 waarderen	1248	Dat moet je waarderen, hoor!	ценить, оценивать	Это надо ценить!	[sound:freq_waarderen_b26b97.mp3]	frequentie::kern::partij04 frequentie::kern::dag14

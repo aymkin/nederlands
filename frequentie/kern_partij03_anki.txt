@@ -53,7 +53,7 @@ het pad	1212	Neem gewoon het pad langs het water, dat is sneller.	тропинк
 het goud	1117	Het goud van die ring is niet echt, zegt ze.	золото	Золото в этом кольце ненастоящее, говорит она.	[sound:freq_goud_f6b70d.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 de onzin	906	Wat een onzin! Wie zegt dat?	чушь, ерунда	Что за чушь! Кто это сказал?	[sound:freq_onzin_3a5fd3.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 de angst	904	Mijn angst voor honden is nog steeds niet weg.	страх	Мой страх перед собаками так и не прошёл.	[sound:freq_angst_ae5311.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
-de wijze	1397	De wijze waarop je het uitlegt, is heel duidelijk.	способ, манера	То, как ты это объясняешь, очень понятно.	[sound:freq_wijze_13f37c.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
+de wijze	1397	De wijze waarop je het uitlegt, is heel duidelijk.	образ (действий)	То, как ты это объясняешь, очень понятно.	[sound:freq_wijze_13f37c.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 de kennis	872	De kennis in het team is groot, maar de tijd is kort.	знания	Знаний в команде много, а времени мало.	[sound:freq_kennis_007acf.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 de waarde	1031	De waarde van het huis is veel hoger dan vorig jaar.	стоимость, ценность	Стоимость дома намного выше, чем в прошлом году.	[sound:freq_waarde_804538.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 de post	1037	Heb je de post al gezien? Er is een brief voor je.	почта (письма)	Ты уже смотрел почту? Там тебе письмо.	[sound:freq_post_624e17.mp3]	frequentie::kern::partij03 frequentie::kern::dag08

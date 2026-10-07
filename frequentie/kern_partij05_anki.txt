@@ -143,7 +143,7 @@ lang	138	Hoe lang blijf je?	долго; длинный	Как долго ты п
 uw	139	Is dit uw huis?	ваш (вежливо)	Это ваш дом?	[sound:freq_uw_edb48e.mp3]	frequentie::kern::partij05
 nodig	140	Ik heb je nodig.	нужен	Ты мне нужен.	[sound:freq_nodig_22d903.mp3]	frequentie::kern::partij05
 helpen	141	Kun je me even helpen?	помогать	Можешь мне помочь?	[sound:freq_helpen_5e4aaf.mp3]	frequentie::kern::partij05
-af	142	Is het al af?	готово (закончено)	Уже готово?	[sound:freq_af_a46f16.mp3]	frequentie::kern::partij05
+af	142	Is het al af?	доделано (закончено)	Уже доделано?	[sound:freq_af_a46f16.mp3]	frequentie::kern::partij05
 niets	143	Ik zie niets.	ничего	Я ничего не вижу.	[sound:freq_niets_468c86.mp3]	frequentie::kern::partij05
 mooi	144	Wat mooi!	красивый; прекрасно	Как красиво!	[sound:freq_mooi_56fa65.mp3]	frequentie::kern::partij05
 vertellen	145	Vertel eens!	рассказывать	Ну, рассказывай!	[sound:freq_vertellen_5a5b4a.mp3]	frequentie::kern::partij05
