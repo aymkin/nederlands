@@ -14,12 +14,12 @@ verschijnen	929	Je naam verschijnt nu op de lijst.	появляться	Твоё
 ontwikkelen	943	Ons team ontwikkelt een nieuw programma.	разрабатывать, развивать	Наша команда разрабатывает новую программу.	[sound:freq_ontwikkelen_fa71eb.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
 waarschuwen	942	Ik heb je gewaarschuwd!	предупреждать	Я же тебя предупреждал!	[sound:freq_waarschuwen_118661.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
 ontstaan	940	Hoe is het idee ontstaan?	возникать, появляться	Как возникла эта идея?	[sound:freq_ontstaan_d11bb7.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
-dwingen	938	Niemand dwingt je, hoor. Je mag ook thuis blijven.	заставлять, принуждать	Тебя никто не заставляет, правда. Можешь и дома остаться.	[sound:freq_dwingen_6d4724.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
+dwingen	938	Niemand dwingt je, hoor. Je hoeft niet mee te gaan.	заставлять, принуждать	Тебя никто не заставляет, правда. Можешь с нами не идти.	[sound:freq_dwingen_51e6f8.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
 ontslaan	951	Het bedrijf ontslaat tien mensen.	увольнять	Компания увольняет десять человек.	[sound:freq_ontslaan_ebf36e.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
 weigeren	963	Hij weigert te praten.	отказывать(ся), не принимать	Он отказывается разговаривать.	[sound:freq_weigeren_848599.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
 overtuigen	981	Je overtuigt me niet, ik neem toch de trein.	убеждать	Ты меня не убедишь, я всё равно поеду поездом.	[sound:freq_overtuigen_4b2fc2.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
 schelen	987	Het kan me eigenlijk niet schelen.	быть важным (мне всё равно)	Мне, в общем-то, всё равно.	[sound:freq_schelen_771d29.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
-accepteren	1013	Deze winkel accepteert alleen kaarten.	принимать, соглашаться	Этот магазин принимает только карты.	[sound:freq_accepteren_4a498c.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
+accepteren	1013	Ik accepteer je excuses.	принимать, соглашаться	Я принимаю твои извинения.	[sound:freq_accepteren_567acb.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
 onderweg	852	Ik ben onderweg, over tien minuten ben ik er.	в пути, по дороге	Я уже еду, через десять минут буду.	[sound:freq_onderweg_c0d0aa.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
 alweer	1192	De trein is alweer te laat.	опять, снова (с досадой)	Поезд опять опаздывает.	[sound:freq_alweer_193eb1.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
 hopelijk	1080	Hopelijk is de trein niet te laat.	надеюсь, будем надеяться	Надеюсь, поезд не опоздает.	[sound:freq_hopelijk_1e9c19.mp3]	frequentie::kern::partij03 frequentie::kern::dag06
@@ -28,12 +28,12 @@ de vertaling	850	Heb je de vertalingen al naar de klant gestuurd?	перевод
 de mogelijkheid	865	Zijn er nog andere mogelijkheden voor vanavond?	возможность, вариант	А на сегодняшний вечер есть ещё какие-то варианты?	[sound:freq_mogelijkheid_696dd7.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
 de opdracht	905	Krijg je eigenlijk veel opdrachten van je baas?	задание, поручение	А начальник тебе вообще много заданий даёт?	[sound:freq_opdracht_06aefd.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
 de beslissing	903	Neem je zo'n beslissing altijd alleen?	решение	Ты такое решение всегда принимаешь в одиночку?	[sound:freq_beslissing_99cc41.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
-de afstand	935	Loop je echt zo'n afstand elke dag?	расстояние	Ты правда каждый день проходишь такое расстояние?	[sound:freq_afstand_de257a.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
+de afstand	935	Loop je echt elke dag zo'n afstand?	расстояние	Ты правда каждый день проходишь такое расстояние?	[sound:freq_afstand_f5e635.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
 de ronde	934	Doen we nog twee rondes, of ga je naar huis?	раунд, круг	Ещё два раунда — или ты домой?	[sound:freq_ronde_afcb81.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
 de leider	939	Wie is de leider van jullie team?	руководитель, лидер	Кто руководитель вашей команды?	[sound:freq_leider_7215de.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
 de burger	955	De politie moet de burgers beschermen.	гражданин, житель	Полиция должна защищать граждан.	[sound:freq_burger_c1f36b.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
 de held	957	Vind jij de dokters ook helden?	герой	Ты тоже считаешь врачей героями?	[sound:freq_held_ce53a7.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
-de verklaring	979	Heb je een verklaring voor dit probleem?	заявление; объяснение	У тебя есть объяснение этой проблемы?	[sound:freq_verklaring_39f22a.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
+de verklaring	979	Je moet deze verklaring nog tekenen.	заявление; объяснение	Тебе ещё нужно подписать это заявление.	[sound:freq_verklaring_db7f8c.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
 de vogel	982	Hoor je die vogels ook 's ochtends?	птица	Ты тоже слышишь по утрам этих птиц?	[sound:freq_vogel_bd0444.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
 de vlieg	4296	Zitten er nou weer vliegen in de keuken?	муха	Что, на кухне опять мухи?	[sound:freq_vlieg_54ae15.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
 de kerel	1002	Hij is echt een aardige kerel.	парень, мужик (разг.)	Он правда славный парень.	[sound:freq_kerel_905bb2.mp3]	frequentie::kern::partij03 frequentie::kern::dag07
@@ -52,10 +52,10 @@ het besluit	1436	Het besluit van de gemeente staat in de brief.	постанов
 het pad	1212	Neem gewoon het pad langs het water, dat is sneller.	тропинка, дорожка	Просто иди по тропинке вдоль воды, так быстрее.	[sound:freq_pad_32a0bd.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 het goud	1117	Het goud van die ring is niet echt, zegt ze.	золото	Золото в этом кольце ненастоящее, говорит она.	[sound:freq_goud_f6b70d.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 de onzin	906	Wat een onzin! Wie zegt dat?	чушь, ерунда	Что за чушь! Кто это сказал?	[sound:freq_onzin_3a5fd3.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
-de angst	904	De angst voor honden heb ik nog steeds.	страх	Страх перед собаками у меня так и не прошёл.	[sound:freq_angst_9d9ef5.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
+de angst	904	Mijn angst voor honden is nog steeds niet weg.	страх	Мой страх перед собаками так и не прошёл.	[sound:freq_angst_ae5311.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 de wijze	1397	De wijze waarop je het uitlegt, is heel duidelijk.	способ, манера	То, как ты это объясняешь, очень понятно.	[sound:freq_wijze_13f37c.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 de kennis	872	De kennis in het team is groot, maar de tijd is kort.	знания	Знаний в команде много, а времени мало.	[sound:freq_kennis_007acf.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
-de waarde	1031	De waarde van het huis is veel hoger dan vorig jaar.	стоимость, ценность	Дом стоит намного больше, чем в прошлом году.	[sound:freq_waarde_804538.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
+de waarde	1031	De waarde van het huis is veel hoger dan vorig jaar.	стоимость, ценность	Стоимость дома намного выше, чем в прошлом году.	[sound:freq_waarde_804538.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 de post	1037	Heb je de post al gezien? Er is een brief voor je.	почта (письма)	Ты уже смотрел почту? Там тебе письмо.	[sound:freq_post_624e17.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 de indruk	1033	De eerste indruk was best goed, toch?	впечатление	Первое впечатление было вполне неплохое, да?	[sound:freq_indruk_a658aa.mp3]	frequentie::kern::partij03 frequentie::kern::dag08
 de leiding	1071	Zij heeft de leiding over het project, ik help alleen.	руководство	Проектом руководит она, я только помогаю.	[sound:freq_leiding_176f5d.mp3]	frequentie::kern::partij03 frequentie::kern::dag08

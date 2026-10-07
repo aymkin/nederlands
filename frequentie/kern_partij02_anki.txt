@@ -10,7 +10,7 @@ het aantal	382	Het aantal auto's in de stad wordt steeds groter.	количес�
 het geval	381	In dat geval bel ik je morgen.	случай	В таком случае я позвоню тебе завтра.	[sound:freq_geval_85cd70.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 de vorm	624	Zo'n vorm heb ik nog nooit gezien.	форма	Такой формы я ещё никогда не видел.	[sound:freq_vorm_d9eb69.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 het gebied	451	Hij werkt op dit gebied.	область, сфера	Он работает в этой области.	[sound:freq_gebied_00a889.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
-het beeld	512	Het beeld is niet goed, ik zie bijna niets.	изображение, образ	Изображение плохое, я почти ничего не вижу.	[sound:freq_beeld_380904.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
+het beeld	512	Ik hoor je wel, maar ik krijg geen beeld.	изображение, образ	Я тебя слышу, но изображения нет.	[sound:freq_beeld_5eae92.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 de dienst	503	Ik heb morgen dienst.	служба, смена	У меня завтра смена.	[sound:freq_dienst_4d70be.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 het feit	506	Dat is een bekend feit.	факт	Это известный факт.	[sound:freq_feit_b7cd49.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 de rust	578	Na het werk zoek ik rust.	покой, отдых	После работы я ищу покоя.	[sound:freq_rust_c29c67.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
@@ -26,12 +26,12 @@ duizend	794	Er waren wel duizend mensen op het feest.	тысяча	На праз
 vanuit	490	Ik werk vanuit huis.	из, изнутри	Я работаю из дома.	[sound:freq_vanuit_bbd5aa.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 gebruiken	152	Mag ik dit even gebruiken?	использовать	Можно я ненадолго этим воспользуюсь?	[sound:freq_gebruiken_d8f001.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
 bestaan	311	Dat probleem bestaat niet meer.	существовать	Этой проблемы больше нет.	[sound:freq_bestaan_0e5be3.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
-leiden	353	Hij leidt de school al vijf jaar.	вести, руководить	Он руководит школой уже пять лет.	[sound:freq_leiden_62cfab.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
+leiden	353	Dat leidt tot problemen.	вести, руководить	Это ведёт к проблемам.	[sound:freq_leiden_7461f0.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
 winnen	293	Win je vaak?	выигрывать	Ты часто выигрываешь?	[sound:freq_winnen_6adc92.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
 beschermen	434	Ouders willen hun kinderen beschermen.	защищать	Родители хотят защищать своих детей.	[sound:freq_beschermen_483c2c.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
 verdwijnen	472	Mijn telefoon verdwijnt altijd.	исчезать	Мой телефон вечно исчезает.	[sound:freq_verdwijnen_b634e6.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
-stappen	570	Ik stap in de auto.	шагать, ступать	Я сажусь в машину.	[sound:freq_stappen_a43354.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
-verlaten	494	Verlaat je het werk om vijf uur?	покидать, уходить	Ты уходишь с работы в пять?	[sound:freq_verlaten_d97305.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
+stappen	570	Ze stapte de kamer in.	шагать, ступать	Она шагнула в комнату.	[sound:freq_stappen_730d38.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
+verlaten	494	Hij heeft het land verlaten.	покидать, уходить	Он покинул страну.	[sound:freq_verlaten_3de19f.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
 blijken	516	Dat blijkt niet waar.	оказываться	Это оказывается неправдой.	[sound:freq_blijken_d9da4e.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
 breken	526	Hij heeft zijn arm gebroken.	ломать, биться	Он сломал руку.	[sound:freq_breken_1781a4.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
 voorkomen	677	We willen fouten voorkomen.	предотвращать	Мы хотим предотвратить ошибки.	[sound:freq_voorkomen_07eb73.mp3]	frequentie::kern::partij02 frequentie::kern::dag02
@@ -77,7 +77,7 @@ blijkbaar	765	Hij is blijkbaar ziek.	по-видимому	Он, по-видим
 openen	631	Mag ik de deur openen?	открывать	Можно мне открыть дверь?	[sound:freq_openen_60af7f.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
 plaatsen	589	Ik wil de foto hier plaatsen.	размещать, ставить	Я хочу разместить фото здесь.	[sound:freq_plaatsen_eddecd.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
 verwijderen	808	Mag ik deze foto verwijderen?	удалять	Можно мне удалить эту фотографию?	[sound:freq_verwijderen_03c2dc.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
-behandelen	717	Welke dokter behandelt je?	обрабатывать; лечить	Какой врач тебя лечит?	[sound:freq_behandelen_e2e7b6.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
+behandelen	717	We behandelen uw vraag binnen een week.	обрабатывать; лечить	Мы обработаем ваш запрос в течение недели.	[sound:freq_behandelen_5eadaa.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
 verklaren	748	Hij wil niets verklaren.	объяснять, заявлять	Он ничего не хочет объяснять.	[sound:freq_verklaren_87bdda.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
 besluiten	613	We willen morgen besluiten.	решать	Мы хотим решить завтра.	[sound:freq_besluiten_e93f4d.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
 bezorgen	1307	Ze bezorgen het eten binnen een half uur.	доставлять	Еду доставят в течение получаса.	[sound:freq_bezorgen_a971ab.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
@@ -101,6 +101,6 @@ het publiek	817	Het publiek luistert stil.	публика	Публика слу�
 het volk	835	Het volk wil een nieuwe koning.	народ	Народ хочет нового короля.	[sound:freq_volk_267e2b.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
 het dier	600	Welk dier vind je het mooist?	животное	Какое животное ты считаешь самым красивым?	[sound:freq_dier_0a55b7.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
 het paard	740	Kun je op een paard rijden?	лошадь	Ты умеешь ездить на лошади?	[sound:freq_paard_fbfd68.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
-de geest	769	Zijn geest is nog heel sterk.	дух; ум	Его ум всё ещё очень крепок.	[sound:freq_geest_4e86de.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
+de geest	769	Zijn geest is nog heel sterk.	дух; ум	Он всё ещё очень крепок духом.	[sound:freq_geest_4e86de.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
 het lied	844	Ze zingt een mooi lied.	песня	Она поёт красивую песню.	[sound:freq_lied_29fb7a.mp3]	frequentie::kern::partij02 frequentie::kern::dag05
 de grap	680	Hij maakt vaak een grap.	шутка	Он часто шутит.	[sound:freq_grap_fb6d8d.mp3]	frequentie::kern::partij02 frequentie::kern::dag05

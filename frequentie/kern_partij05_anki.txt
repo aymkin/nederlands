@@ -63,11 +63,11 @@ of	56	Ja of nee?	или; ли	Да или нет?	[sound:freq_of_a09995.mp3]	fre
 wel	57	Ik kan het wel!	всё-таки (вопреки «не»)	А вот и могу!	[sound:freq_wel_10e9ec.mp3]	frequentie::kern::partij05
 door	58	Het komt door jou!	из-за; через	Это из-за тебя!	[sound:freq_door_8b8430.mp3]	frequentie::kern::partij05
 hier	59	Ik ben hier!	здесь; сюда	Я здесь!	[sound:freq_hier_cad094.mp3]	frequentie::kern::partij05
-maken	60	Wie heeft dit gemaakt?	сделать (изготовить); чинить	Кто это сделал?	[sound:freq_maken_ff2f8f.mp3]	frequentie::kern::partij05
+maken	60	Wie heeft dit gemaakt?	изготовить (сделать вещь); чинить	Кто это смастерил?	[sound:freq_maken_ff2f8f.mp3]	frequentie::kern::partij05
 nu	61	Nu niet!	сейчас	Не сейчас!	[sound:freq_nu_12fc44.mp3]	frequentie::kern::partij05
 haar	62	Dat is haar man.	её	Это её муж.	[sound:freq_haar_233f5a.mp3]	frequentie::kern::partij05
 deze	63	Deze vrouw werkt hier.	этот/эта/эти	Эта женщина здесь работает.	[sound:freq_deze_9de2a3.mp3]	frequentie::kern::partij05
-maar²	64	Kom maar!	-ка (смягчает просьбу); просто	Иди-ка сюда!	[sound:freq_maar-2_690edf.mp3]	frequentie::kern::partij05
+maar²	64	Kom maar!	давай (смелей); просто	Иди, не бойся!	[sound:freq_maar-2_690edf.mp3]	frequentie::kern::partij05
 jij	65	En jij?	«ты» с ударением	А ты?	[sound:freq_jij_3583c3.mp3]	frequentie::kern::partij05
 hoe	66	Hoe gaat het?	как? (вопрос)	Как дела?	[sound:freq_hoe_2c152d.mp3]	frequentie::kern::partij05
 laten	67	Laat me even kijken.	позволять; оставлять	Дай-ка мне посмотреть.	[sound:freq_laten_5ff59b.mp3]	frequentie::kern::partij05
@@ -78,7 +78,7 @@ zijn²	71	Zijn vrouw werkt in Utrecht.	его (чей?)	Его жена рабо
 al	72	Ben je er al?	уже	Ты уже на месте?	[sound:freq_al_5685bb.mp3]	frequentie::kern::partij05
 waar	73	Waar ben je?	где	Где ты?	[sound:freq_waar_79076c.mp3]	frequentie::kern::partij05
 ja	74	Ja, dat is goed.	да	Да, хорошо.	[sound:freq_ja_800f15.mp3]	frequentie::kern::partij05
-mij	75	Wie, mij?	«меня/мне» с ударением	Кого, меня?	[sound:freq_mij_bc39da.mp3]	frequentie::kern::partij05
+mij	75	Niet hem, mij!	«меня/мне» с ударением	Не его, а меня!	[sound:freq_mij_cdb402.mp3]	frequentie::kern::partij05
 geven	76	Wat geef je hem?	давать	Что ты ему дашь?	[sound:freq_geven_2840be.mp3]	frequentie::kern::partij05
 houden	77	Ik hou van je.	любить (кого-то); держать	Я тебя люблю.	[sound:freq_houden_ede379.mp3]	frequentie::kern::partij05
 heel	78	Het is heel mooi hier!	очень; целый	Здесь очень красиво!	[sound:freq_heel_a1695a.mp3]	frequentie::kern::partij05
@@ -113,7 +113,7 @@ groot	106	Wat is hij groot geworden!	большой	Какой он стал б�
 mee	107	Ga je mee?	с собой (вместе)	Пойдёшь со мной?	[sound:freq_mee_23c20c.mp3]	frequentie::kern::partij05
 alles	108	Alles goed?	всё	Всё хорошо?	[sound:freq_alles_7e2209.mp3]	frequentie::kern::partij05
 twee	109	Hij komt over twee dagen.	два	Он придёт через два дня.	[sound:freq_twee_9a3942.mp3]	frequentie::kern::partij05
-weer	110	Daar is hij weer!	снова	Вот он снова!	[sound:freq_weer_2392b1.mp3]	frequentie::kern::partij05
+weer	110	Het gaat weer goed met me.	снова	У меня снова всё хорошо.	[sound:freq_weer_f3009d.mp3]	frequentie::kern::partij05
 te²	111	Dat is te veel!	слишком	Это слишком много!	[sound:freq_te-2_dfec86.mp3]	frequentie::kern::partij05
 mogen	112	Mag ik?	можно (разрешено)	Можно?	[sound:freq_mogen_18bc2b.mp3]	frequentie::kern::partij05
 horen	113	Hoor je me?	слышать	Ты меня слышишь?	[sound:freq_horen_e9d839.mp3]	frequentie::kern::partij05
@@ -141,14 +141,14 @@ zoals	136	Zoals je wilt.	как (подобно)	Как хочешь.	[sound:fre
 zij	137	Zij? Nee, hij!	«она/они» с ударением	Она? Нет, он!	[sound:freq_zij_6e472c.mp3]	frequentie::kern::partij05
 lang	138	Hoe lang blijf je?	долго; длинный	Как долго ты пробудешь?	[sound:freq_lang_51871e.mp3]	frequentie::kern::partij05
 uw	139	Is dit uw huis?	ваш (вежливо)	Это ваш дом?	[sound:freq_uw_edb48e.mp3]	frequentie::kern::partij05
-nodig	140	Ik heb je nodig.	нужный	Ты мне нужен.	[sound:freq_nodig_22d903.mp3]	frequentie::kern::partij05
+nodig	140	Ik heb je nodig.	нужен	Ты мне нужен.	[sound:freq_nodig_22d903.mp3]	frequentie::kern::partij05
 helpen	141	Kun je me even helpen?	помогать	Можешь мне помочь?	[sound:freq_helpen_5e4aaf.mp3]	frequentie::kern::partij05
 af	142	Is het al af?	готово (закончено)	Уже готово?	[sound:freq_af_a46f16.mp3]	frequentie::kern::partij05
 niets	143	Ik zie niets.	ничего	Я ничего не вижу.	[sound:freq_niets_468c86.mp3]	frequentie::kern::partij05
 mooi	144	Wat mooi!	красивый; прекрасно	Как красиво!	[sound:freq_mooi_56fa65.mp3]	frequentie::kern::partij05
 vertellen	145	Vertel eens!	рассказывать	Ну, рассказывай!	[sound:freq_vertellen_5a5b4a.mp3]	frequentie::kern::partij05
 de keer	146	Nog één keer!	раз	Ещё один раз!	[sound:freq_keer_0fc88a.mp3]	frequentie::kern::partij05
-onder	147	Dat blijft onder ons.	среди; под	Это останется между нами.	[sound:freq_onder_9ee2ec.mp3]	frequentie::kern::partij05
+onder	147	Je moet weer eens onder de mensen komen.	среди; под	Тебе надо снова бывать среди людей.	[sound:freq_onder_25ff97.mp3]	frequentie::kern::partij05
 volgen	148	Volg mij!	следовать (за)	Следуй за мной!	[sound:freq_volgen_a0935b.mp3]	frequentie::kern::partij05
-het huis	149	Ik ga naar huis.	дом	Я иду домой.	[sound:freq_huis_ff02b9.mp3]	frequentie::kern::partij05
+het huis	149	Het huis is van Sanne.	дом	Дом принадлежит Санне.	[sound:freq_huis_584553.mp3]	frequentie::kern::partij05
 erg	150	Dat is niet erg.	страшный; очень	Ничего страшного.	[sound:freq_erg_43163b.mp3]	frequentie::kern::partij05

@@ -24,7 +24,7 @@ de overwinning	1514	Gefeliciteerd met jullie overwinning!	победа	Позд�
 de echtgenoot	1468	Mevrouw, komt uw echtgenoot ook?	супруг, муж (офиц.)	Госпожа, ваш муж тоже придёт?	[sound:freq_echtgenoot_d76131.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de behoefte	1593	Onze klanten hebben behoefte aan meer informatie.	потребность (нуждаться в)	Нашим клиентам нужно больше информации.	[sound:freq_behoefte_fc9328.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de wens	1279	Wat is jouw grootste wens voor dit jaar?	желание, пожелание	Какое твоё самое большое желание на этот год?	[sound:freq_wens_88f824.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
-het verzoek	1319	Ik heb een verzoek: kun je wat zachter praten?	просьба, запрос (офиц.)	У меня просьба: можешь говорить потише?	[sound:freq_verzoek_4f5171.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
+het verzoek	1319	Ik heb een verzoek aan u: wilt u hier niet roken?	просьба, запрос (офиц.)	У меня к вам просьба: не курите здесь, пожалуйста.	[sound:freq_verzoek_b4e7fe.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
 het voedsel	1322	Ons voedsel komt vaak van heel ver.	пища, продукты питания	Наша еда часто приезжает очень издалека.	[sound:freq_voedsel_e03fb0.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
 het veld	1157	Het veld is vandaag gesloten, we spelen binnen.	поле	Поле сегодня закрыто, играем в зале.	[sound:freq_veld_e60034.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
 het bestuur	1621	Ons bestuur beslist dat pas in maart.	правление, руководство	Наше правление решит это только в марте.	[sound:freq_bestuur_93201c.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
@@ -89,10 +89,10 @@ ineens	1269	Ineens doet mijn computer het niet meer.	вдруг, внезапн�
 behoorlijk	1285	Gedraag je een beetje behoorlijk!	приличный, нормальный (о зарплате, поведении)	Веди себя хоть немного прилично!	[sound:freq_behoorlijk_f7379b.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 akkoord	1289	Ik ga niet akkoord met dit plan.	согласен (akkoord gaan met — соглашаться с)	Я не согласен с этим планом.	[sound:freq_akkoord_2df723.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 financieel	1303	Financieel is het dit jaar niet makkelijk.	финансовый; в финансовом плане	В финансовом плане в этом году нелегко.	[sound:freq_financieel_35da72.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
-technisch	1314	Ik ben niet zo technisch: kun jij de computer even maken?	технический; разбирающийся в технике	Я не очень разбираюсь в технике: можешь починить компьютер?	[sound:freq_technisch_af7c55.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
+technisch	1314	We hebben een technisch probleem.	технический; разбирающийся в технике	У нас техническая проблема.	[sound:freq_technisch_81a95c.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 de vis	914	Ik eet geen vis, ik vind het niet lekker.	рыба	Я не ем рыбу, мне она не нравится.	[sound:freq_vis_198021.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 volwassen	893	Doe niet zo dom, je bent toch volwassen!	взрослый	Не глупи, ты же взрослый!	[sound:freq_volwassen_33d51e.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
-wellicht	1381	Wellicht komt hij vandaag niet.	возможно, пожалуй (офиц.)	Возможно, он сегодня не придёт.	[sound:freq_wellicht_d84306.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
+wellicht	1381	Wellicht kunt u het later nog eens proberen.	возможно, пожалуй (офиц.)	Возможно, вам стоит попробовать ещё раз позже.	[sound:freq_wellicht_8cb263.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 uitstekend	1390	Het eten was niet duur, maar wel uitstekend.	отличный, превосходный	Еда была недорогой, но отличной.	[sound:freq_uitstekend_caadc6.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 het wonder	1395	Geen wonder dat je moe bent, je werkt te veel!	чудо (geen wonder — неудивительно)	Неудивительно, что ты устал: ты слишком много работаешь!	[sound:freq_wonder_8c6402.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 momenteel	1399	Ik ben momenteel niet op kantoor.	в данный момент, сейчас	Я сейчас не в офисе.	[sound:freq_momenteel_fce402.mp3]	frequentie::kern::partij04 frequentie::kern::dag15

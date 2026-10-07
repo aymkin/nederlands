@@ -17,7 +17,7 @@ de zoon	291	Hun zoon werkt in Utrecht.	сын	Их сын работает в У
 hoeven	281	Je hoeft niet te komen.	быть нужным (в отрицании: не надо)	Тебе не нужно приходить.	[sound:freq_hoeven_cb97c6.mp3]	frequentie::kern::0001-0100
 alsof	364	Hij doet alsof hij alles weet.	как будто	Он делает вид, будто всё знает.	[sound:freq_alsof_bc8243.mp3]	frequentie::kern::0001-0100
 raken	306	Je raakt me toch niet!	попасть, задеть	Ты в меня всё равно не попадёшь!	[sound:freq_raken_1b03f2.mp3]	frequentie::kern::0001-0100
-verliezen	285	Ik heb veel geld verloren.	проигрывать; терять	Я потерял много денег.	[sound:freq_verliezen_2dc412.mp3]	frequentie::kern::0001-0100
+verliezen	285	We hebben weer verloren!	проигрывать; терять	Мы опять проиграли!	[sound:freq_verliezen_7b8ec7.mp3]	frequentie::kern::0001-0100
 de orde	342	Alles is in orde.	порядок	Всё в порядке.	[sound:freq_orde_6bfcf2.mp3]	frequentie::kern::0001-0100
 de minuut	304	Wacht een minuut.	минута	Подожди минуту.	[sound:freq_minuut_3f7f7d.mp3]	frequentie::kern::0001-0100
 de kans	299	Je krijgt nog een kans.	шанс, возможность	Ты получишь ещё один шанс.	[sound:freq_kans_94f320.mp3]	frequentie::kern::0001-0100
