@@ -61,14 +61,27 @@ def laad(pilot=PILOT, tabellen=TABELLEN):
     return data["consensus"], data["uit"], vormen
 
 
+class Sleutels(dict):
+    """{ключ в нижнем регистре: ключ} для sleutel; exact — все ключи списка как есть.
+
+    В списке бывают ключи, равные без регистра: имя Val (uit) и слово val. Выигрывает
+    лучший ранг — словарь собирается с конца списка; последний ключ, как раньше,
+    сажал «de val» на имя."""
+
+    def __init__(self, lijst):
+        super().__init__((k.lower(), k) for k in reversed(lijst))
+        self.exact = frozenset(lijst)
+
+
 def sleutel(word, sleutels, vormen):
     """Ключ списка для Word или None (оборот, слова нет в списке).
 
-    sleutels — {ключ в нижнем регистре: ключ}. «²» в Word — второе прочтение (zijn²
+    sleutels — Sleutels(lijst). «²» в Word — второе прочтение (zijn²
     → zijn#2). Если Word без артикля сам — ключ списка, берётся он: «de hoop» —
     существительное hoop, хотя главное прочтение формы «hoop» — hopen. Иначе —
-    главное прочтение формы по vormen.json (gezien → zien). Word из одного de, het
-    или zich — само это слово (карточки блока 1–150)."""
+    главное прочтение формы по vormen.json (gezien → zien): оно уже ключ списка, и
+    близнец без регистра его не подменяет; чего в списке нет — ищется без регистра.
+    Word из одного de, het или zich — само это слово (карточки блока 1–150)."""
     alle = clean(word).lower().split()
     toks = [t for t in alle if t not in WEG] or alle
     if len(toks) != 1:
@@ -77,7 +90,9 @@ def sleutel(word, sleutels, vormen):
     if head in sleutels:
         return sleutels[head]
     main = (vormen.get(head) or [None])[0]
-    return sleutels.get(main.lower()) if main and "#" not in head else None
+    if not main or "#" in head:
+        return None
+    return main if main in sleutels.exact else sleutels.get(main.lower())
 
 
 def grens(lijst, gedekt, uit):
@@ -106,11 +121,11 @@ def notities(profile=ANKI_PROFILE):
 
 def lijst_rapport(lijst, uit, vormen, notes):
     """Отчёт `lijst`: (строки, есть ли нарушения)."""
-    sleutels = {k.lower(): k for k in lijst}
+    per_klein = Sleutels(lijst)
     rang = {k: i for i, k in enumerate(lijst, 1)}
     per_sleutel, buiten = {}, []
     for deck, word, rank in notes:
-        k = sleutel(word, sleutels, vormen)
+        k = sleutel(word, per_klein, vormen)
         if k is None:
             buiten.append((deck, word))
         else:
@@ -229,7 +244,7 @@ def herschrijf(paden, lijst, vormen, kolom, waarde, droog=False):
     """Колонка kolom партий Kern := waarde(ключ Word, {поле: значение}). Word вне списка —
     стоп до записи, ни один файл не тронут. Остальные байты файла не меняются; droog —
     не пишет ничего. ([(файл, Word, было, стало)], строк всего)."""
-    sleutels = {k.lower(): k for k in lijst}
+    per_klein = Sleutels(lijst)
     teksten, anders, buiten, n = {}, [], [], 0
     for p in map(Path, paden):
         kolommen = kern_tsv(p)[0]["columns"].split("\t")
@@ -242,7 +257,7 @@ def herschrijf(paden, lijst, vormen, kolom, waarde, droog=False):
             n += 1
             velden = kaal.split("\t")
             v = dict(zip(kolommen, velden))
-            k = sleutel(v["Word"], sleutels, vormen)
+            k = sleutel(v["Word"], per_klein, vormen)
             if k is None:
                 buiten.append(f"{p.name}: {v['Word']}")
             elif velden[c] != (nu := waarde(k, v)):
@@ -306,8 +321,8 @@ def audio(paden, lijst, vormen, media, droog=False, spreek=tts):
 def check_rapport(lijst, uit, vormen, notes):
     """Отчёт `check`: (строки, есть ли нарушения)."""
     rang = {k: i for i, k in enumerate(lijst, 1)}
-    sleutels = {k.lower(): k for k in lijst}
-    oordelen = [(bron, word, example, voorbeeld(word, example, rang, sleutels, uit, vormen))
+    per_klein = Sleutels(lijst)
+    oordelen = [(bron, word, example, voorbeeld(word, example, rang, per_klein, uit, vormen))
                 for bron, word, example in notes]
 
     def toon(w):

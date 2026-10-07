@@ -16,7 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import kern
 
 LIJST = ["zijn", "de", "hopen", "hoop", "kaart", "zijn#2", "Frankrijk", "aflopen", "jack"]
-SLEUTELS = {k.lower(): k for k in LIJST}
+SLEUTELS = kern.Sleutels(LIJST)
 VORMEN = {"kaart": ["kaart"], "hoop": ["hopen", "hoop"], "afgelopen": ["aflopen"],
           "zijn": ["zijn", "zijn#2"], "bevinden": ["bevinden"]}
 
@@ -52,6 +52,36 @@ def test_buiten_lijst():
     assert kern.sleutel("rekening houden met", SLEUTELS, VORMEN) is None
     assert kern.sleutel("de looncomponent", SLEUTELS, VORMEN) is None
     assert kern.sleutel("zich bevinden", SLEUTELS, VORMEN) is None  # bevinden нет в списке
+
+
+# Ключи, равные без регистра: имя Val (uit) и слово val, язык Engels и разорванный
+# simplemma engels. Карточка должна сесть на лучший ранг, а не на последний в списке.
+TWEELING = ["val", "Engels", "kaart", "Turks", "engels", "Val", "turks", "Frank"]
+
+
+def test_hoofdletters_beste_rang():
+    s = kern.Sleutels(TWEELING)
+    assert kern.sleutel("de val", s, {}) == "val"
+    assert kern.sleutel("het Engels", s, {}) == "Engels"
+    assert kern.sleutel("engels", s, {}) == "Engels"
+
+
+def test_vorm_houdt_exacte_sleutel():
+    # главное прочтение из vormen.json — уже ключ списка, близнец его не подменяет;
+    # чего в списке нет, ищется без регистра
+    s = kern.Sleutels(TWEELING)
+    assert kern.sleutel("franken", s, {"franken": ["Frank"]}) == "Frank"
+    assert kern.sleutel("turkse", s, {"turkse": ["turks"]}) == "turks"
+    assert kern.sleutel("britse", s, {"britse": ["brits"]}) is None
+    assert kern.sleutel("Engelse", kern.Sleutels(["Engels"]), {"engelse": ["engels"]}) == "Engels"
+
+
+def test_lijst_rapport_hoofdletters():
+    notes = [("Frequentie::Kern", "de val", "1")]
+    out, fout = kern.lijst_rapport(["val", "Val", "kaart"], {"Val": "имя"}, {}, notes)
+    tekst = "\n".join(out)
+    assert "граница: ранг 3 (kaart)" in tekst, tekst
+    assert "Kern на ключе uit: 0" in tekst, tekst
 
 
 def test_grens():
