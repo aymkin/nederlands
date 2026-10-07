@@ -84,12 +84,17 @@ Roadmap overview: `daily/roadmap_maart_2026.md`
 
 > **Detailed docs:** `scripts/README.md`
 
-Four scripts share `anki_utils.py` (Anki profile detection + media copying):
+Five scripts share `anki_utils.py` — Anki profile detection and media copying,
+plus the AnkiConnect writers (`import`, `update`, `lint`, `herorden`) and the
+gates of note type «Frequentie NL»:
 
 ```
 audio_to_anki.py ──┐
-                   ├─→ anki_utils.py (find profiles, validate, copy to media)
-text_to_speech.py ─┘
+text_to_speech.py ─┤
+werk_woorden.py ───┼─→ anki_utils.py (profiles, media, import/update/lint/
+anki_vandaag.py ───┤                  herorden, gates keur())
+kern.py ───────────┘   kern.py also imports anki_vandaag (collection copy);
+                       keur() imports kern for the i+1 gate of Kern
 
 story_reader.py ──────┐ standalone readers
 multivoice_reader.py ─┘ (edge-tts Python API + WordBoundary timings;
@@ -309,9 +314,10 @@ Fluent не настраивается — **расписание и объём 
 Для note type «Frequentie NL» импорт сперва гоняет Twenty Rules по всей
 коллекции: не больше двух значений в `Translation`, первое значение не совпадает
 с чужим, у синонимов в примерах нет общих слов (у Kern ещё i+1, см. `kern.py`).
-Нарушение — отказ без записи. `python3 scripts/anki_utils.py lint` — та же
-проверка после ручной правки; тесты `python3 scripts/test_anki_utils.py`. Ручной
-чек-лист — скилл `anki-twenty-rules`; полный текст правил — MCP-промпт
+Нарушение — отказ без записи. `python3 scripts/anki_utils.py lint` — Twenty
+Rules и синонимы после ручной правки (i+1 — `kern.py check`); тесты
+`python3 scripts/test_anki_utils.py`. Ручной чек-лист — скилл
+`anki-twenty-rules`; полный текст правил — MCP-промпт
 `/mcp__anki__twenty_rules`, его запускает Alex (Claude вызвать не может).
 
 ### fluent_import.py — Curriculum → Fluent Bridge
@@ -363,14 +369,14 @@ to whichever profile is open, so check `getActiveProfile` before any write.
 
 Files ending in `_anki.txt` use tab-separated format with header directives:
 
-| Format                        | Header                                                           | Fields                                                                        |
-| ----------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| Vocabulary with audio         | `#separator:tab` `#html:true` `#tags column:5`                   | Dutch \| Russian \| Notes \| Audio \| Tags                                    |
-| Sentence-only                 | `#separator:tab` `#html:false`                                   | Dutch \| Russian                                                              |
-| Sentence cards with audio     | `#separator:tab` `#html:true` `#tags column:4`                   | Dutch \| Russian \| Audio \| Tags                                             |
-| Construction (multisensory)   | `#separator:tab` `#html:true` `#tags column:6`                   | Russian \| Dutch \| Context \| Image \| Audio \| Tags                         |
-| Link+ RU→NL (thema 8+, Yulia) | `#notetype:LINK plus NL` `#deck:…` `#tags column:7`              | Word \| Rank \| Example \| Translation \| TranslationExample \| Audio \| Tags |
-| Frequentie NL (Kern, Werk)    | `#notetype:Frequentie NL` `#deck:Frequentie::…` `#tags column:7` | the same 7 columns; spec — `frequentie/README.md`                             |
+| Format                              | Header                                                           | Fields                                                                        |
+| ----------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Vocabulary with audio               | `#separator:tab` `#html:true` `#tags column:5`                   | Dutch \| Russian \| Notes \| Audio \| Tags                                    |
+| Sentence-only                       | `#separator:tab` `#html:false`                                   | Dutch \| Russian                                                              |
+| Sentence cards with audio           | `#separator:tab` `#html:true` `#tags column:4`                   | Dutch \| Russian \| Audio \| Tags                                             |
+| Construction (multisensory)         | `#separator:tab` `#html:true` `#tags column:6`                   | Russian \| Dutch \| Context \| Image \| Audio \| Tags                         |
+| Link+ RU→NL (thema 8+, Yulia)       | `#notetype:LINK plus NL` `#deck:…` `#tags column:7`              | Word \| Rank \| Example \| Translation \| TranslationExample \| Audio \| Tags |
+| Frequentie NL (Kern, Werk, Reading) | `#notetype:Frequentie NL` `#deck:Frequentie::…` `#tags column:7` | the same 7 columns; spec — `frequentie/README.md`                             |
 
 **Tag structures:**
 
