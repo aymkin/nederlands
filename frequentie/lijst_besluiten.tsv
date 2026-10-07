@@ -193,7 +193,7 @@ remap		lessen	les		simplemma: les → lessen
 lezing	verdachte	verdacht	verdacht N:verdachte		«de verdachte» (подозреваемый) — другое слово, чем «verdacht» (подозрительный, карточка Kern)
 blijft		verdachte			«verdachten» — мн. ч. verdachte
 lezing		uitleg	WW:uitleggen		перевёртыш: инфинитив uitleggen отдан ключу uitleg
-lezing		waag	N:wagen		«de wagen» (машина, повозка) — сущ.; «wagen» (осмелиться) остаётся у waag
+lezing		waag	wagen#2 N:wagen	wagen²	форма «wagen»: «de wagen» (машина, повозка) — сущ.; инфинитив «wagen» (осмелиться) — глагол wagen², своё слово
 remap	keus	keu	keuze		«keus» — вариант «keuze» (выбор, карточка Kern)
 blijft		zulk			«zulke» — форма zulk
 lezing	gevallen	vallen	vallen N:geval		«de gevallen» — мн. ч. geval; «gevallen» — причастие vallen
@@ -295,7 +295,7 @@ blijft		raar			«rare» — форма raar
 lezing		aanval	WW:aanvallen		перевёртыш: инфинитив aanvallen отдан ключу aanval
 lezing		zak	WW:zakken		«zakken» (провалиться, опуститься) — глагол; «de zakken» — мн. ч. zak
 blijft	ergste	erg			степень erg
-blijft		engels			язык — карточка по D7
+remap		engels	Engels		«engels», «engelse» — одно слово, язык Engels (D7); simplemma пишет лемму то со строчной, то с заглавной
 lezing	start	starten	starten N:start		«de start» (старт) — сущ.; «ik start» — форма starten
 lezing		kus	WW:kussen		перевёртыш: инфинитив kussen отдан ключу kus; «de kussen» — мн. ч. kus
 lezing	kus	kussen	kussen N:kus		«de kus» (поцелуй) — сущ., не глагол kussen
@@ -406,7 +406,7 @@ remap		dievegge	dief		simplemma: dief → dievegge; это одно слово
 lezing		geuren	N:geur		«de geur» (запах) — сущ., не глагол geuren
 remap	beer	varken	beer		«de beer» (медведь) — своё слово, не varken
 remap		stenen	steen		«stenen» — мн. ч. steen (камень)
-blijft		Brits			«britse» — форма Brits
+blijft		Brits			«britse» — форма Brits; «brits» — remap ниже (ревью 07.10)
 lezing		huren	N:huur		«de huur» (аренда) — сущ., не глагол huren
 remap		huur	huren		simplemma: huren → huur; это глагол huren
 blijft		online			заимствование «online» — слово с карточкой
@@ -651,3 +651,18 @@ uit		Rock			имя
 lezing	vlieg	vliegen	N:vlieg		«de vlieg» (муха, карточка Kern) — заметная доля формы; вторая сторона перевёртыша vlieg/vliegen
 # Инкремент 9: решения Alex.
 lezing	afgelopen	aflopen	ADJ:afgelopen		«de afgelopen week» (прошедший, карточка Werk) — своё слово; «is afgelopen» (закончился) — aflopen, своя карточка Kern (Alex 06.10); доля прилагательного — оценка теггера
+# Ревью 07.10: ключи, равные без регистра (сборка падает на такой паре без uit), и глагол wagen².
+remap	engels	engels	Engels		форма «engels» — язык Engels: SPEC в SUBTLEX — то же слово
+remap		nederlands	Nederlands		одно слово с Nederlands: simplemma пишет лемму то со строчной, то с заглавной
+remap		brits	Brits		одно слово с Brits: simplemma пишет лемму то со строчной, то с заглавной
+remap		afrikaans	Afrikaans		одно слово с Afrikaans: simplemma пишет лемму то со строчной, то с заглавной
+remap		turks	Turks		одно слово с Turks: simplemma пишет лемму то со строчной, то с заглавной
+remap		aziatisch	Aziatisch		одно слово с Aziatisch: simplemma пишет лемму то со строчной, то с заглавной
+remap		australisch	Australisch		одно слово с Australisch: simplemma пишет лемму то со строчной, то с заглавной
+remap		portugees	Portugees		одно слово с Portugees: simplemma пишет лемму то со строчной, то с заглавной
+remap		vietnamees	Vietnamees		одно слово с Vietnamees: simplemma пишет лемму то со строчной, то с заглавной
+remap		albanees	Albanees		одно слово с Albanees: simplemma пишет лемму то со строчной, то с заглавной
+remap		Westers	westers		одно слово с westers (пишется со строчной): simplemma даёт «westerse» лемму с заглавной
+lezing		wagen	WW:wagen#2		личные формы «waagt», «waagde» — глагол wagen²; «de wagens», «het wagentje» — сущ. wagen
+remap	waag	wagen	wagen#2		форма «waag» — глагол wagen² («ik waag het»)
+remap		gewagen	wagen#2		«gewaagd» — причастие wagen²; ключ gewagen — ошибка simplemma
