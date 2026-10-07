@@ -54,7 +54,7 @@ daily/              # Daily practice and study planning
   archive/          #   Old daily practice files (pre-maart_2026)
   dutch_stories/    #   Dutch story subtitles and transcripts
   frequentie_2026/  #   Frequency-core plan 14.09–13.12.2026 (single plan.md, no templates)
-frequentie/         # Frequency-core Anki deck for Alex (note type "Frequentie NL", RU→NL) + README
+frequentie/         # Frequency-core Anki deck for Alex (note type "Frequentie NL", RU→NL), README, lijst_besluiten.tsv (rank-list decisions)
 werk/               # Work-mail lemmas for Alex: anonymised mail/, lemmas.json index, daily Frequentie::Werk decks
 grammatica/         # Alex's grammar track (leading since 2026-09-16): regels/ = Link+ rule extracts + README
 other/              # Learning methodology notes and analysis
@@ -223,6 +223,28 @@ python3 scripts/anki_vandaag.py --out private/frequentie/vandaag.md
 python3 scripts/anki_vandaag.py --date 2026-06-30 --notetype "LINK Vocabulary"
 ```
 
+### kern.py — Frequentie::Kern по частотному списку
+
+Партии Kern идут по рангу подряд от 1, пример — по i+1. Список (`lijst_v2.json`,
+`vormen.json`) собирает приватный `private/frequentie_pilot/consensus_rank.py` с
+таблицей решений `frequentie/lijst_besluiten.tsv` (омографы, исключения);
+`kern.py` его только читает, коллекцию — с копии.
+
+```bash
+python3 scripts/kern.py lijst                             # Word → ключ, дубли, граница
+python3 scripts/kern.py check frequentie/kern_*_anki.txt  # примеры по i+1
+python3 scripts/kern.py rank FILE...                      # Rank := ранг в списке
+python3 scripts/kern.py audio FILE... [--droog]           # Audio := freq_{ключ}_{sha}.mp3, озвучка в media
+python3 scripts/anki_utils.py update FILE... [--droog]    # поля импортированных заметок := файл
+python3 scripts/anki_utils.py herorden [--droog]          # позиция новой Kern = Rank
+```
+
+`audio`, `update` и `herorden` без `--droog` пишут в Anki: перед каждым — бэкап
+и «да» Alex. `setDueDate` не трогать — он делает новую карточку повторением.
+Ворота `import` и `update` — Twenty Rules, синонимы (своя ситуация в примере), у
+Kern ещё i+1. Поток партии и почему так — `frequentie/README.md`. Тесты:
+`python3 scripts/test_kern.py`, `python3 scripts/test_anki_utils.py`.
+
 ### frequentie_fluent.py — Fluent под частотный план
 
 Разделение труда: **Anki держит слова, Fluent — предложения** на этих словах
@@ -286,9 +308,10 @@ Fluent не настраивается — **расписание и объём 
 
 Для note type «Frequentie NL» импорт сперва гоняет Twenty Rules по всей
 коллекции: не больше двух значений в `Translation`, первое значение не совпадает
-с чужим. Нарушение — отказ без записи. `python3 scripts/anki_utils.py lint` — та
-же проверка после ручной правки; тесты `python3 scripts/test_anki_utils.py`.
-Ручной чек-лист — скилл `anki-twenty-rules`; полный текст правил — MCP-промпт
+с чужим, у синонимов в примерах нет общих слов (у Kern ещё i+1, см. `kern.py`).
+Нарушение — отказ без записи. `python3 scripts/anki_utils.py lint` — та же
+проверка после ручной правки; тесты `python3 scripts/test_anki_utils.py`. Ручной
+чек-лист — скилл `anki-twenty-rules`; полный текст правил — MCP-промпт
 `/mcp__anki__twenty_rules`, его запускает Alex (Claude вызвать не может).
 
 ### fluent_import.py — Curriculum → Fluent Bridge
@@ -340,13 +363,14 @@ to whichever profile is open, so check `getActiveProfile` before any write.
 
 Files ending in `_anki.txt` use tab-separated format with header directives:
 
-| Format                        | Header                                              | Fields                                                                        |
-| ----------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------- |
-| Vocabulary with audio         | `#separator:tab` `#html:true` `#tags column:5`      | Dutch \| Russian \| Notes \| Audio \| Tags                                    |
-| Sentence-only                 | `#separator:tab` `#html:false`                      | Dutch \| Russian                                                              |
-| Sentence cards with audio     | `#separator:tab` `#html:true` `#tags column:4`      | Dutch \| Russian \| Audio \| Tags                                             |
-| Construction (multisensory)   | `#separator:tab` `#html:true` `#tags column:6`      | Russian \| Dutch \| Context \| Image \| Audio \| Tags                         |
-| Link+ RU→NL (thema 8+, Yulia) | `#notetype:LINK plus NL` `#deck:…` `#tags column:7` | Word \| Rank \| Example \| Translation \| TranslationExample \| Audio \| Tags |
+| Format                        | Header                                                           | Fields                                                                        |
+| ----------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Vocabulary with audio         | `#separator:tab` `#html:true` `#tags column:5`                   | Dutch \| Russian \| Notes \| Audio \| Tags                                    |
+| Sentence-only                 | `#separator:tab` `#html:false`                                   | Dutch \| Russian                                                              |
+| Sentence cards with audio     | `#separator:tab` `#html:true` `#tags column:4`                   | Dutch \| Russian \| Audio \| Tags                                             |
+| Construction (multisensory)   | `#separator:tab` `#html:true` `#tags column:6`                   | Russian \| Dutch \| Context \| Image \| Audio \| Tags                         |
+| Link+ RU→NL (thema 8+, Yulia) | `#notetype:LINK plus NL` `#deck:…` `#tags column:7`              | Word \| Rank \| Example \| Translation \| TranslationExample \| Audio \| Tags |
+| Frequentie NL (Kern, Werk)    | `#notetype:Frequentie NL` `#deck:Frequentie::…` `#tags column:7` | the same 7 columns; spec — `frequentie/README.md`                             |
 
 **Tag structures:**
 
