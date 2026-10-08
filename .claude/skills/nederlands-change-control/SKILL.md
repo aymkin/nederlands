@@ -128,13 +128,16 @@ Sequence: edit grammatica md → THEN
 snapshots to `.backups/` BEFORE writing. If you write to fluent-data by any path
 that does not appear in this table, stop — you are off-process.
 
-| Writer                                    | Backup dir pattern                       |
-| ----------------------------------------- | ---------------------------------------- |
-| `scripts/fluent_import.py` (`write_sr`)   | `pre-import-<YYYY-MM-DD-HHMMSS>/`        |
-| plugin hook `update-db.py` (`backup_all`) | `pre-update-session-NNN/`                |
-| plugin hook `migrate_to_fsrs.py`          | `pre-migrate-fsrs-<ISO timestamp>/`      |
-| plugin hook `session-end.py` (daily)      | `<YYYYMMDD>/`                            |
-| plugin hook `precompact-backup.sh`        | `precompact/` (overwritten each compact) |
+| Writer                                    | Backup dir pattern                            |
+| ----------------------------------------- | --------------------------------------------- |
+| `scripts/fluent_import.py` (`write_sr`)   | `pre-import-<YYYY-MM-DD-HHMMSS>/`             |
+| `scripts/frequentie_fluent.py` (`save`)   | `pre-frequentie-<mode>-<timestamp>/`          |
+| `scripts/grammatica_fluent.py` (`save`)   | `pre-frequentie-grammatica[-sk]-<timestamp>/` |
+| `scripts/fluent_rebuild_queue.py --apply` | `pre-rebuild-<YYYY-MM-DD-HHMMSS>/`            |
+| plugin hook `update-db.py` (`backup_all`) | `pre-update-session-NNN/`                     |
+| plugin hook `migrate_to_fsrs.py`          | `pre-migrate-fsrs-<ISO timestamp>/`           |
+| plugin hook `session-end.py` (daily)      | `<YYYYMMDD>/`                                 |
+| plugin hook `precompact-backup.sh`        | `precompact/` (overwritten each compact)      |
 
 Incident: `a88b1ff` (2026-06-26) — the importer originally used date-only backup
 names, so a second import the same day silently overwrote the first backup, and

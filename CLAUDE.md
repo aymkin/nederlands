@@ -56,7 +56,7 @@ daily/              # Daily practice and study planning
   frequentie_2026/  #   Frequency-core plan 14.09–13.12.2026 (single plan.md, no templates)
 frequentie/         # Frequency-core Anki deck for Alex (note type "Frequentie NL", RU→NL), README, lijst_besluiten.tsv (rank-list decisions)
 werk/               # Work-mail lemmas for Alex: anonymised mail/, lemmas.json index, daily Frequentie::Werk decks
-grammatica/         # Alex's grammar track (leading since 2026-09-16): regels/ = Link+ rule extracts + README
+grammatica/         # Alex's grammar track (leading since 2026-09-16): regels/ = Link+ rule extracts, skelet/ = subject frames, README
 other/              # Learning methodology notes and analysis
   language_learning_methods/  # Evgeniy 6-step, Alisher immersion, comparisons
 scripts/            # Automation utilities (audio_to_anki.py, text_to_speech.py, etc.)
@@ -101,7 +101,9 @@ multivoice_reader.py ─┘ (edge-tts Python API + WordBoundary timings;
                         multivoice_reader imports align_timings from story_reader)
 
 fluent_rebuild_queue.py ─→ fluent_import.py (imports rebuild_queue — one
-                           implementation of the bucket rules, not a copy)
+                        │  implementation of the bucket rules, not a copy)
+                        └→ grammatica_fluent.py (imports prioriteit — rule
+                           priorities per day)
 ```
 
 ### audio_to_anki.py — Audio to Anki Sentence Cards
@@ -270,8 +272,8 @@ python3 scripts/frequentie_fluent.py --zinnen … --dry-run       # отчёт �
 удалял и правила, молча. Проверки: `python3 scripts/test_frequentie_fluent.py`.
 
 Предложения дня заводятся с приоритетом `critical`: `read-db.py --review`
-сортирует по приоритету и режет по `daily_limits.review_items_per_day`, поэтому
-всё, что ниже среза, не подаётся вообще. Бэкап в
+сортирует по приоритету, затем по самой старой дате, и режет по потолку сессии
+(10 заданий), поэтому всё, что ниже среза, ждёт следующих раундов. Бэкап в
 `.backups/pre-frequentie-<режим>-<timestamp>/` перед каждой записью.
 
 ### grammatica_fluent.py — грамматический трек в Fluent
@@ -284,13 +286,20 @@ python3 scripts/frequentie_fluent.py --zinnen … --dry-run       # отчёт �
 ```bash
 python3 scripts/grammatica_fluent.py --regels grammatica/regels --per-dag 2 --dry-run
 python3 scripts/grammatica_fluent.py --regels grammatica/regels --per-dag 2
+python3 scripts/grammatica_fluent.py --regels grammatica/skelet --per-dag 1 --dry-run
 ```
 
+Профиль выбирается по имени папки (`PROFIELEN`): `regels` — правила Link+
+(`gram_lp_N.M`), `skelet` — рамки подлежащего (`gram_sk_N.M`, `content` ведёт к
+рецепту `SKELET.md` в скилле `nederlands-fluent-sessie`). Обе нумерации — `N.M`,
+поэтому префикс обязателен: под `gram_lp_` рамки 1.1–1.9 молча пропустились бы
+как уже заведённые.
+
 Fluent не настраивается — **расписание и объём живут в базе**: `--per-dag`
-раскладывает `due_date` по рабочим дням (воскресенье пропускается),
-`rebuild_queue` бакетит по `due_date`, `daily_limits` режет по объёму. Правка
-скилла в кэше плагина запрещена: её затрёт пересборка, и она обязана идти через
-форк. Идемпотентно — уже заведённое правило не трогается.
+раскладывает `due_date` по рабочим дням (воскресенье пропускается), приоритет
+дня ставит проход в `fluent_rebuild_queue.py`, раунд режет потолок сессии.
+Правка скилла в кэше плагина запрещена: её затрёт пересборка, и она обязана идти
+через форк. Идемпотентно — уже заведённое правило не трогается.
 
 Проверки парсера: `python3 scripts/test_grammatica_fluent.py`. Главная из них —
 инвариантность к переносу строк: поля правила читаются до следующей метки, а не
@@ -349,7 +358,7 @@ python3 scripts/fluent_import.py --course link --advance # advance + import next
 - Advancement threshold: ≥ 80% of the unit's cards at `mastery_level ≥ 3` AND
   zero "red" cards (`consecutive_incorrect ≥ 2`).
 
-### fluent_rebuild_queue.py — Ребилд бакетов очереди
+### fluent_rebuild_queue.py — приоритеты правил и бакеты очереди
 
 Гонять **в начале** сессии, следом за `anki_vandaag.py`:
 
@@ -357,13 +366,19 @@ python3 scripts/fluent_import.py --course link --advance # advance + import next
 python3 scripts/fluent_rebuild_queue.py --apply
 ```
 
-Закрывает лаг: `read-db.py --review` подаёт сохранённый `review_queue.today`, а
-перестраивает бакеты только `update-db.py` — в конце сессии. Поэтому без ребилда
-карточка, назначенная на сегодня, приходит послезавтра.
+Главное — приоритеты карточек правил (`gram_lp_*`, `gram_sk_*`; функция
+`grammatica_fluent.prioriteit`). `read-db.py --review` берёт в раунд срочные
+карточки по `priority`, затем по самой старой дате, и режет по потолку сессии.
+Правило с `high` тонет за просроченными карточками: из 32 правил Link+,
+заведённых так 2026-09-16, к 2026-10-08 ни разу не подали 20. А `critical` сам
+не снимается. Поэтому на день и на профиль — одно новое правило и один повтор
+проваленного, остальные — `high` (освоенные — `low`). Заодно пересобираются
+бакеты `review_queue` для сводок: подачу Fluent 0.6.0+ берёт прямо из карточек.
 
-Расписание FSRS не трогает — только `review_queue` и `metadata`, так что запрет
-на ручную правку `spaced-repetition.json` здесь не нарушен. Сухой прогон по
-умолчанию. Проверки: `python3 scripts/test_fluent_rebuild_queue.py`.
+Расписание FSRS не трогает — только `priority`, `review_queue` и `metadata`.
+Сухой прогон по умолчанию, бэкап — `.backups/pre-rebuild-<timestamp>/`.
+Проверки: `python3 scripts/test_fluent_rebuild_queue.py`, сам проход —
+`python3 scripts/test_grammatica_fluent.py`.
 
 ## Anki Integration
 

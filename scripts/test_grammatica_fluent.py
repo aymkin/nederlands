@@ -199,6 +199,61 @@ def test_lp_ongewijzigd() -> list[str]:
     return fouten
 
 
+def kaart(iid: str, due: str, reviews: int = 0, quality: int = 3, mastery: int = 0,
+          prio: str = "high", eerste: str | None = None) -> dict:
+    cat = "grammatica_sk_kaders" if "_sk_" in iid else (
+        "grammatica_lp_thema04" if iid.startswith("gram_lp_7") else "grammatica_lp_thema01")
+    it = {"id": iid, "type": "grammar_rule", "due_date": due, "total_reviews": reviews,
+          "last_quality": quality, "mastery_level": mastery, "priority": prio,
+          "category": cat}
+    if eerste:
+        it["review_history"] = [{"date": eerste, "quality": quality}]
+    return it
+
+
+def test_prioriteit() -> list[str]:
+    """One intro a day per profile, one retry, the rest high or low; idempotent;
+    cards that are not rules keep their priority."""
+    gisteren, morgen = "2026-10-07", "2026-10-09"
+    items = {k["id"]: k for k in (
+        kaart("gram_sk_1.1", VANDAAG), kaart("gram_sk_1.2", gisteren),
+        kaart("gram_sk_1.3", VANDAAG),
+        kaart("gram_sk_1.4", gisteren, reviews=2, quality=1),
+        kaart("gram_sk_1.5", VANDAAG, reviews=1, quality=2),
+        kaart("gram_sk_1.6", VANDAAG, reviews=6, quality=5, mastery=3),
+        kaart("gram_sk_1.7", morgen),
+        kaart("gram_lp_1.1", gisteren), kaart("gram_lp_7.1", VANDAAG),
+        kaart("gram_lp_7.2", VANDAAG, reviews=2, quality=4, prio="critical"))}
+    items["freq_zin_x"] = {"id": "freq_zin_x", "type": "grammar_rule",
+                           "due_date": VANDAAG, "priority": "critical"}
+    items["grammar_y"] = {"id": "grammar_y", "type": "error_pattern",
+                          "due_date": VANDAAG, "priority": "high"}
+    sr = {"items": items}
+    grammatica_fluent.prioriteit(sr, VANDAAG)
+    verwacht = {"gram_sk_1.1": "critical",   # intro: first never-reviewed due frame
+                "gram_sk_1.2": "high", "gram_sk_1.3": "high",   # one intro, not a pile
+                "gram_sk_1.4": "critical",   # retry: oldest failed due card
+                "gram_sk_1.5": "high",       # second failure waits
+                "gram_sk_1.6": "low",        # mastered
+                "gram_sk_1.7": "high",       # not due yet
+                "gram_lp_7.1": "critical",   # VOORRANG leads the Link+ intro
+                "gram_lp_1.1": "high",
+                "gram_lp_7.2": "high",       # the eternal critical is lifted
+                "freq_zin_x": "critical", "grammar_y": "high"}   # not rule cards
+    fouten = [f"{k}: {items[k]['priority']}, ожидалось {v}"
+              for k, v in verwacht.items() if items[k]["priority"] != v]
+    if grammatica_fluent.prioriteit(sr, VANDAAG):
+        fouten.append("повторный проход что-то поменял")
+    # a frame first reviewed today means today's intro already happened
+    sr2 = {"items": {k["id"]: k for k in (
+        kaart("gram_sk_1.1", morgen, reviews=1, quality=4, eerste=VANDAAG),
+        kaart("gram_sk_1.2", VANDAAG))}}
+    grammatica_fluent.prioriteit(sr2, VANDAAG)
+    if sr2["items"]["gram_sk_1.2"]["priority"] != "high":
+        fouten.append("второе введение за день")
+    return fouten
+
+
 def test_onbekende_map(tmp: Path) -> list[str]:
     """An unknown folder stops the run before any data is read."""
     onbekend = tmp / "onbekend"
@@ -231,6 +286,7 @@ def main() -> int:
                      ("у рамок ≥ 2 примеров", test_skelet_voorbeelden),
                      ("рамки не задевают gram_lp_*", test_skelet_prefix),
                      ("Link+ без изменений", test_lp_ongewijzigd),
+                     ("приоритеты правил на день", test_prioriteit),
                      ("неизвестная папка — отказ", lambda: test_onbekende_map(tmp))):
         fouten = fn()
         print(f"{'✓' if not fouten else '✗'} {naam}"
