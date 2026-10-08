@@ -15,7 +15,7 @@ gebeuren	159	Wat is er gebeurd?	случаться	Что случилось?	[s
 drie	160	Het is al drie uur!	три	Уже три часа!	[sound:freq_drie_52911e.mp3]	frequentie::kern::partij06
 nou	161	Nou, en?	ну	Ну и что?	[sound:freq_nou_df774a.mp3]	frequentie::kern::partij06
 kennen	162	Ken je hem?	быть знакомым; знать (кого-то)	Ты с ним знаком?	[sound:freq_kennen_576a8c.mp3]	frequentie::kern::partij06
-iedereen	163	Iedereen weet dat.	все люди, каждый	Это все знают.	[sound:freq_iedereen_cdf044.mp3]	frequentie::kern::partij06
+iedereen	163	Iedereen weet dat.	все люди, каждый	Все это знают.	[sound:freq_iedereen_cdf044.mp3]	frequentie::kern::partij06
 liggen	164	Waar ligt het?	лежать	Где это лежит?	[sound:freq_liggen_96d8aa.mp3]	frequentie::kern::partij06
 allemaal	165	Komen jullie allemaal?	все до одного; всё это	Вы все придёте?	[sound:freq_allemaal_8f8a44.mp3]	frequentie::kern::partij06
 wachten	166	Kun je even wachten?	ждать	Можешь немного подождать?	[sound:freq_wachten_0f5406.mp3]	frequentie::kern::partij06
@@ -31,7 +31,7 @@ zonder	176	Ik kan niet zonder jou.	без	Я не могу без тебя.	[sou
 anders	177	Het kan ook anders.	иначе; по-другому	Можно и иначе.	[sound:freq_anders_c276f2.mp3]	frequentie::kern::partij06
 klein	178	Het huis is te klein.	маленький	Дом слишком маленький.	[sound:freq_klein_22056a.mp3]	frequentie::kern::partij06
 steeds	179	Waarom kijk je steeds naar me?	всё время; всё (+ сравн.)	Почему ты всё время на меня смотришь?	[sound:freq_steeds_40259d.mp3]	frequentie::kern::partij06
-halen	180	Zal ik iets halen?	сходить за (чем-то); забрать	Сходить за чем-нибудь?	[sound:freq_halen_3a0751.mp3]	frequentie::kern::partij06
+halen	180	Zal ik iets halen?	сходить за (чем-то); забрать	Мне сходить за чем-нибудь?	[sound:freq_halen_3a0751.mp3]	frequentie::kern::partij06
 elkaar	181	We kennen elkaar al lang.	друг друга	Мы давно знаем друг друга.	[sound:freq_elkaar_a2306f.mp3]	frequentie::kern::partij06
 het ding	182	Wat is dat voor een ding?	вещь, штука	Что это за вещь?	[sound:freq_ding_5fc1b5.mp3]	frequentie::kern::partij06
 jouw	183	Is dat jouw kind?	твой (с ударением)	Это твой ребёнок?	[sound:freq_jouw_2f6c03.mp3]	frequentie::kern::partij06
@@ -57,7 +57,7 @@ de week	203	Hoe was je week?	неделя	Как прошла твоя неде�
 de plaats	204	Ga maar op mijn plaats zitten.	место	Садись на моё место.	[sound:freq_plaats_e4579d.mp3]	frequentie::kern::partij06
 de vader	205	Mijn vader werkt hier ook.	отец	Мой отец тоже здесь работает.	[sound:freq_vader_22b65e.mp3]	frequentie::kern::partij06
 samen	207	Zullen we samen gaan?	вместе	Пойдём вместе?	[sound:freq_samen_3efc54.mp3]	frequentie::kern::partij06
-want	208	We gaan naar huis, want het is al laat.	так как (порядок слов прямой)	Идём домой — уже поздно.	[sound:freq_want_2c5b1f.mp3]	frequentie::kern::partij06
+want	208	We gaan naar huis, want het is al laat.	так как (порядок слов прямой)	Мы идём домой, так как уже поздно.	[sound:freq_want_2c5b1f.mp3]	frequentie::kern::partij06
 tussen	209	Dit blijft tussen ons.	между	Это останется между нами.	[sound:freq_tussen_ac551d.mp3]	frequentie::kern::partij06
 spreken	210	Met wie spreek ik?	говорить (на языке; по телефону)	С кем я говорю?	[sound:freq_spreken_aff72c.mp3]	frequentie::kern::partij06
 de jongen	211	Het is een jongen!	мальчик; парень	Это мальчик!	[sound:freq_jongen_357e80.mp3]	frequentie::kern::partij06
@@ -67,7 +67,7 @@ zorgen	214	Ik zorg wel voor alles.	заботиться	Я обо всём по�
 geloven	215	Ik geloof je niet.	верить	Я тебе не верю.	[sound:freq_geloven_042277.mp3]	frequentie::kern::partij06
 vast	216	Hij komt vast te laat.	наверняка; твёрдый	Он наверняка опоздает.	[sound:freq_vast_d09b1b.mp3]	frequentie::kern::partij06
 helemaal	218	Ik ben helemaal alleen.	совсем; совершенно	Я совсем один.	[sound:freq_helemaal_e870df.mp3]	frequentie::kern::partij06
-niks	220	Wat doe je? – Niks.	да ничего (разг. niets)	Что делаешь? — Да ничего.	[sound:freq_niks_a155a1.mp3]	frequentie::kern::partij06
+niks	220	Wat doe je? – Niks.	да ничего (разг. niets)	Что ты делаешь? — Да ничего.	[sound:freq_niks_a155a1.mp3]	frequentie::kern::partij06
 danken	221	Dat heb ik aan jou te danken.	быть обязанным (te … hebben aan)	Этим я обязан тебе.	[sound:freq_danken_3d68f6.mp3]	frequentie::kern::partij06
 achter	222	Hij staat achter je.	за, позади	Он стоит позади тебя.	[sound:freq_achter_54e5f2.mp3]	frequentie::kern::partij06
 stellen	223	Stel dat hij niet komt, wat dan?	допустим (… dat …); задавать (вопрос)	Допустим, он не придёт — что тогда?	[sound:freq_stellen_da5b57.mp3]	frequentie::kern::partij06
@@ -77,7 +77,7 @@ zelfs	226	Zelfs mijn vader weet het.	даже	Даже мой отец это з
 klaar	227	Ben je klaar?	готов (к чему-то); закончил	Ты готов?	[sound:freq_klaar_01b9ac.mp3]	frequentie::kern::partij06
 weinig	228	Ik heb weinig tijd.	мало	У меня мало времени.	[sound:freq_weinig_d9f91d.mp3]	frequentie::kern::partij06
 genoeg	229	Heb je genoeg geld?	достаточно; хватит	У тебя достаточно денег?	[sound:freq_genoeg_aca4b5.mp3]	frequentie::kern::partij06
-vandaag	230	Ik kan vandaag niet.	сегодня	Сегодня я не могу.	[sound:freq_vandaag_512693.mp3]	frequentie::kern::partij06
+vandaag	230	Ik kan vandaag niet.	сегодня	Я сегодня не могу.	[sound:freq_vandaag_512693.mp3]	frequentie::kern::partij06
 eten	231	Wat eten we vandaag?	есть (кушать); еда	Что мы сегодня будем есть?	[sound:freq_eten_e43d30.mp3]	frequentie::kern::partij06
 bedanken	232	Ik wil je bedanken.	благодарить	Я хочу тебя поблагодарить.	[sound:freq_bedanken_427e36.mp3]	frequentie::kern::partij06
 het land	234	Het is een mooi land.	страна	Это красивая страна.	[sound:freq_land_167bd6.mp3]	frequentie::kern::partij06
@@ -92,11 +92,11 @@ belangrijk	242	Dit is heel belangrijk.	важный	Это очень важно
 zo'n	243	Ik wil ook zo'n auto!	такой (+ сущ.)	Я тоже хочу такую машину!	[sound:freq_zo'n_35fcd4.mp3]	frequentie::kern::partij06
 niemand	244	Niemand weet het.	никто	Никто не знает.	[sound:freq_niemand_a71cab.mp3]	frequentie::kern::partij06
 enig	245	Je bent de enige die het weet.	единственный; некоторый	Ты единственный, кто это знает.	[sound:freq_enig_41b1f2.mp3]	frequentie::kern::partij06
-de foto	246	Mag ik een foto maken?	фото	Можно сделать фото?	[sound:freq_foto_f342f0.mp3]	frequentie::kern::partij06
+de foto	246	Mag ik een foto maken?	фото	Можно мне сделать фото?	[sound:freq_foto_f342f0.mp3]	frequentie::kern::partij06
 leven²	247	Leeft hij nog?	жить	Он ещё жив?	[sound:freq_leven-2_1eae0d.mp3]	frequentie::kern::partij06
 leren	248	Ik moet nog veel leren.	учиться; учить	Мне ещё многому надо научиться.	[sound:freq_leren_5a8bdd.mp3]	frequentie::kern::partij06
 volgens	249	Volgens mij weet hij het al.	по-моему (… mij); согласно	По-моему, он уже знает.	[sound:freq_volgens_c0b976.mp3]	frequentie::kern::partij06
-verder	250	Ik kan niet verder.	дальше	Дальше я не могу.	[sound:freq_verder_e9255e.mp3]	frequentie::kern::partij06
+verder	250	Ik kan niet verder.	дальше	Я не могу дальше.	[sound:freq_verder_e9255e.mp3]	frequentie::kern::partij06
 de familie	251	Heb je hier familie?	родственники, родня	У тебя здесь есть родственники?	[sound:freq_familie_dffb4e.mp3]	frequentie::kern::partij06
 bedoelen	252	Wat bedoel je?	иметь в виду	Что ты имеешь в виду?	[sound:freq_bedoelen_181009.mp3]	frequentie::kern::partij06
 welk	253	Welke dag is het vandaag?	какой? (вопрос)	Какой сегодня день?	[sound:freq_welk_632ad9.mp3]	frequentie::kern::partij06
