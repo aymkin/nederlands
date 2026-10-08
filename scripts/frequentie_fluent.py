@@ -8,7 +8,8 @@ buys nothing (Mondria & Wiersma 2004).
 
 Two modes:
 
-    --reset              keep only error_pattern items, wipe their history,
+    --reset              keep error_pattern items with their history wiped,
+                         keep the rule cards gram_lp_*/gram_sk_* untouched,
                          drop everything else (Link vocab/grammar backlog)
     --zinnen DAGFILE     seed today's sentences from the "## Zinnen" section
                          of private/frequentie/vandaag.md
@@ -44,6 +45,12 @@ HISTORY_DEFAULTS = {
     "total_reviews": 0, "review_history": [],
 }
 
+# The grammar track's rule cards (grammatica_fluent.py): each one's
+# review_history is the denominator of "how often wrong", so a reset leaves
+# them as they are. Matched by id, not type — the Link backlog and the daily
+# sentences are grammar_rule too. Not imported: grammatica_fluent imports us.
+RULE_PREFIXES = ("gram_lp_", "gram_sk_")
+
 
 def load() -> dict:
     return json.loads(SR_PATH.read_text(encoding="utf-8"))
@@ -78,15 +85,18 @@ def rebuild_queue(sr: dict, today: str) -> None:
 
 def do_reset(sr: dict, today: str) -> dict:
     items = sr.get("items", {})
-    kept, dropped = {}, {}
+    kept, dropped, untouched = {}, {}, 0
     for iid, it in items.items():
-        if it.get("type") == "error_pattern":
+        if iid.startswith(RULE_PREFIXES):
+            kept[iid] = it
+            untouched += 1
+        elif it.get("type") == "error_pattern":
             it = {**it, **HISTORY_DEFAULTS, "due_date": today, "last_reviewed": today}
             kept[iid] = it
         else:
             dropped[it.get("type", "?")] = dropped.get(it.get("type", "?"), 0) + 1
     sr["items"] = kept
-    return {"kept": len(kept), "dropped": dropped}
+    return {"kept": len(kept), "untouched": untouched, "dropped": dropped}
 
 
 def parse_zinnen(path: Path) -> list[tuple[str, str, str]]:
@@ -142,7 +152,8 @@ def do_zinnen(sr: dict, zinnen: list, today: str) -> dict:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--reset", action="store_true",
-                    help="drop everything except error_pattern items")
+                    help="wipe error_pattern history, keep gram_lp_*/gram_sk_* "
+                         "as is, drop the rest")
     ap.add_argument("--zinnen", type=Path,
                     help="day file with a '## Zinnen' section")
     ap.add_argument("--dry-run", action="store_true", help="report, write nothing")
