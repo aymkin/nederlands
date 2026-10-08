@@ -258,10 +258,16 @@ Kern ещё i+1. Поток партии и почему так — `frequentie/
 плюс собственные ошибки Alex. Одно слово в одном SRS, не в двух.
 
 ```bash
-python3 scripts/frequentie_fluent.py --reset                    # только error_pattern, история обнулена
+python3 scripts/frequentie_fluent.py --reset                    # error_pattern с нуля, правила как есть
 python3 scripts/frequentie_fluent.py --zinnen private/frequentie/vandaag.md
 python3 scripts/frequentie_fluent.py --zinnen … --dry-run       # отчёт без записи
 ```
+
+`--reset` обнуляет историю `error_pattern` и удаляет остальное (бэклог Link,
+фразы `freq_zin_*`), но карточки правил `gram_lp_*` / `gram_sk_*` оставляет как
+есть: их `review_history` — знаменатель «ошибся N раз из скольких». Граница —
+префикс id, не тип: бэклог и фразы тоже `grammar_rule`. До правки 2026-10-08
+удалял и правила, молча. Проверки: `python3 scripts/test_frequentie_fluent.py`.
 
 Предложения дня заводятся с приоритетом `critical`: `read-db.py --review`
 сортирует по приоритету и режет по `daily_limits.review_items_per_day`, поэтому
