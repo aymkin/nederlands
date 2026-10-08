@@ -24,17 +24,18 @@ curriculum → `fluent-backlog-campaign`; before any state-mutating change →
 
 ## Path anatomy
 
-| Thing                | Path                                                         |
-| -------------------- | ------------------------------------------------------------ |
-| Repo root            | `/Users/Alex.Naymkin/Projects/nederlands`                    |
-| Fluent runtime hooks | `~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/` |
-| Fluent data (6 DBs)  | `~/.claude/fluent-data/`                                     |
-| Backups              | `~/.claude/fluent-data/.backups/`                            |
-| Session results      | `~/.claude/fluent-data/results/fluent-*-session-NNN.md`      |
+| Thing                | Path                                                             |
+| -------------------- | ---------------------------------------------------------------- |
+| Repo root            | `/Users/Alex.Naymkin/Projects/nederlands`                        |
+| Fluent runtime hooks | `~/.claude/plugins/cache/aymkin/fluent/<version>/.claude/hooks/` |
+| Fluent data (6 DBs)  | `~/.claude/fluent-data/`                                         |
+| Backups              | `~/.claude/fluent-data/.backups/`                                |
+| Session results      | `~/.claude/fluent-data/results/fluent-*-session-NNN.md`          |
 
-The version in the cache path is a pin: a plugin bump moves it. Nothing outside
-the repo may name it — the one thing that did, the optimizer plist, broke
-silently for nine weeks (archaeology 12). Resolve dynamically when scripting:
+The version in the cache path moves with every release, and old version
+directories stay on disk, so a named version keeps running stale code without an
+error. Nothing may name it, skill text included — the optimizer plist did and
+broke silently for nine weeks (archaeology 12). Resolve it:
 
 ```bash
 FLUENT_HOOKS=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V \
@@ -281,8 +282,10 @@ it also rewrites `skills.lock`. KNOWN unrelated red entries appear on every run
 — do not chase them: `[autoresearch] fatal: couldn't find remote ref main` and
 `[claude-plugins-official] fatal: not a git repository (or any of the parent directories): .git`
 (both verified recurring throughout the log). Occasional
-`ssh_dispatch_run_fatal ... Operation timed out` = transient network. Red worth
-chasing: a FAILED pull of the `m98` (Fluent) repo.
+`ssh_dispatch_run_fatal ... Operation timed out` = transient network. Fluent
+never appears in this log: its marketplace is the fork directory, not a clone
+under `marketplaces/`, so the job does not touch it — a Fluent change needs a
+release (`nederlands-change-control`).
 
 **dotfiles-sync** — green in `sync.log`:
 `Syncing from ~/.claude/ to repo... Done!` followed by an

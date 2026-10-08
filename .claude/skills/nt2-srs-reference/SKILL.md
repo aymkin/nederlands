@@ -343,10 +343,11 @@ processes must be light and course-anchored (see `nederlands-change-control`).
 
 ## Provenance and maintenance
 
-All facts re-verified 2026-07-09 against disk. Cache path below means the Fluent
-runtime: `~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/` (a version
-bump changes it — re-resolve with
-`ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1`).
+All facts re-verified 2026-07-09 against disk. `<cache>` below means the Fluent
+runtime hooks dir: the directory
+`ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1` prints, plus
+`.claude/hooks/` — never a fixed version, since every release adds a directory
+and the old ones stay on disk.
 
 | Claim                                           | Re-verify with                                                                                                                                                                                |
 | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

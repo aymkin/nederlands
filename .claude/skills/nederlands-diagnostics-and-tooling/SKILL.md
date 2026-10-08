@@ -246,8 +246,9 @@ python3 -c "import json,pathlib;d=json.loads((pathlib.Path.home()/'.claude/fluen
 python3 scripts/fluent_import.py --course link --check --thema 13
 
 # what would the next session actually serve? prints: cap, served, due
-FLUENT_ROOT="$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1)"
-python3 "${FLUENT_ROOT}.claude/hooks/read-db.py" --review | python3 -c "import json,sys;d=json.load(sys.stdin);c=d['computed'];print(c['session_cap'],len(d['databases']['spaced_repetition']['review_queue']['today']),c['due_reviews_count'])"
+# resolve the plugin root — never a fixed version, old ones stay on disk
+FLUENT=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1)
+python3 "${FLUENT}.claude/hooks/read-db.py" --review | python3 -c "import json,sys;d=json.load(sys.stdin);c=d['computed'];print(c['session_cap'],len(d['databases']['spaced_repetition']['review_queue']['today']),c['due_reviews_count'])"
 ```
 
 Trap inside that `--review` payload (verified 2026-10-08, Fluent 0.7.1): the
@@ -275,12 +276,10 @@ Re-verify drift-prone claims:
 - Two-review_history-keys trap still holds (optimizer counts per-item):
   `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py | grep -n "review_history"`
 - Queue rebuilt only on import/update (staleness message stays true):
-  `grep -n "review_queue" ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/update-db.py`
+  `grep -n "review_queue" "$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1).claude/hooks/update-db.py"`
 - Session cap still 10, `review_items_per_day` still unread (expect
   `SESSION_CAP = 10`, then `0`):
   `H="$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1).claude/hooks"; grep -n "SESSION_CAP =" "$H/session_cap.py"; grep -c review_items_per_day "$H/read-db.py"`
-- Plugin cache path version (`0.3.0` hardcoded above) —
-  `ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1`
 - Anki header formats still match conventions:
   `head -5 link/thema_13/taak_1/woordenlijst_thema13_taak1_anki.txt`
 - Index builder still writes `woordenlijst_index.txt` and still lacks link_plus:
