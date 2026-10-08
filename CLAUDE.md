@@ -218,10 +218,12 @@ Checks: `python3 scripts/test_check_recycling.py`
 
 ### anki_vandaag.py — Anki → Fluent Bridge (frequentie)
 
-Prints the words whose Anki cards got their **first** review on a given day
-(default today, Anki's 04:00 rollover respected). Reads a copy of
-`collection.anki2`, never writes. Stdlib only. Feeds the "Frequentie bridge"
-rule in Tutor Mode; deck spec and daily cycle in `frequentie/README.md`.
+Prints the day's words in three tiers: **new** (first review that day),
+**repeated** (reviewed that day, seen earlier), else the **last 20** reviewed
+with their dates. Default today, Anki's 04:00 rollover respected; the first line
+states how fresh the collection is. Reads a copy of `collection.anki2` (closed
+Anki is fine), never writes. Stdlib only. Feeds the "Frequentie bridge" rule in
+Tutor Mode; deck spec and daily cycle in `frequentie/README.md`.
 
 ```bash
 python3 scripts/anki_vandaag.py --out private/frequentie/vandaag.md
