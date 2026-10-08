@@ -25,9 +25,9 @@ interpretation, use `nederlands-diagnostics-and-tooling`; for the operational
 restore runbook, use `nederlands-run-and-operate`.
 
 Paths used below: nederlands repo = `~/Projects/nederlands`; Fluent fork dev
-clone = `~/Projects/fluent`; Fluent runtime cache =
-`~/.claude/plugins/cache/aymkin/fluent/0.4.0/`; live data =
-`~/.claude/fluent-data/`.
+clone = `~/Projects/fluent`; Fluent runtime cache = the directory
+`ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1` prints (never a
+fixed version — old ones stay on disk); live data = `~/.claude/fluent-data/`.
 
 ---
 
@@ -183,7 +183,7 @@ fresh from disk, so nothing needs to round-trip through the payload.
 **Measure it yourself (read-only):**
 
 ```bash
-C=~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/read-db.py
+C=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1).claude/hooks/read-db.py
 python3 $C | wc -c            # full dump
 python3 $C --review | wc -c   # review payload
 ```
@@ -371,21 +371,21 @@ All facts verified 2026-07-10 against the repo, the fork, and live data.
 Volatile numbers (review counts, payload bytes, backup dir census, HEADs) WILL
 drift — re-verify before quoting:
 
-| Claim                                    | Re-verify with                                                                                                                                                                                                  |
-| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| crosscheck test shape, tolerances        | `cat ~/Projects/fluent/tests/test_fsrs_crosscheck.py`                                                                                                                                                           |
-| py-fsrs pin 6.3.1 in dev venv            | `~/Projects/fluent/.devvenv/bin/pip show fsrs`                                                                                                                                                                  |
-| DEFAULT_W = 21 floats, extraction cmd    | head of `~/Projects/fluent/.claude/hooks/fsrs.py`                                                                                                                                                               |
-| optimizer guards 400 / 50 / 21 (retired) | `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py \| grep -n "MIN_TOTAL\|MIN_NEW\|EXPECTED"`                                                                                            |
-| live per-item review count (225)         | python snippet in Recipe 2                                                                                                                                                                                      |
-| optimizer no-op log line (historical)    | `head -2 ~/.claude/logs/fluent-fsrs-optimize.log`                                                                                                                                                               |
-| payload commits + byte counts            | `git -C ~/Projects/fluent show 281c2a4 13fd374 18d55c0 --stat`                                                                                                                                                  |
-| live payload bytes (298,697 / 35,282)    | `wc -c` commands in Recipe 3                                                                                                                                                                                    |
-| clone vs marketplace vs cache drift      | `git -C ~/Projects/fluent log -1; git -C ~/.claude/plugins/marketplaces/aymkin log -1; diff -q ~/Projects/fluent/.claude/hooks/read-db.py ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/read-db.py` |
-| importer tests pass (25)                 | `python3 ~/Projects/nederlands/scripts/test_fluent_import.py`                                                                                                                                                   |
-| item_id construction lines               | `grep -n "item_id" ~/Projects/nederlands/scripts/fluent_import.py`                                                                                                                                              |
-| 285/285 alignment + drift story          | `git -C ~/Projects/nederlands show e6f41db --stat`                                                                                                                                                              |
-| turbo 0-overlaps, 124 sentences          | `git -C ~/Projects/nederlands log -1 1c88339`                                                                                                                                                                   |
-| whisper model `base` hardcoded           | `grep -n '"base"' ~/Projects/nederlands/scripts/audio_to_anki.py`                                                                                                                                               |
-| day-1 tiers (NPOkennis <10%, Peppa 90%+) | `git -C ~/Projects/nederlands log -1 4774cb5`                                                                                                                                                                   |
-| backup census (71 dirs; 6 JSONs each)    | `ls ~/.claude/fluent-data/.backups/ \| wc -l; ls ~/.claude/fluent-data/.backups/ \| sed 's/[0-9].*//' \| sort \| uniq -c`                                                                                       |
+| Claim                                    | Re-verify with                                                                                                                                                                                                                                                                         |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| crosscheck test shape, tolerances        | `cat ~/Projects/fluent/tests/test_fsrs_crosscheck.py`                                                                                                                                                                                                                                  |
+| py-fsrs pin 6.3.1 in dev venv            | `~/Projects/fluent/.devvenv/bin/pip show fsrs`                                                                                                                                                                                                                                         |
+| DEFAULT_W = 21 floats, extraction cmd    | head of `~/Projects/fluent/.claude/hooks/fsrs.py`                                                                                                                                                                                                                                      |
+| optimizer guards 400 / 50 / 21 (retired) | `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py \| grep -n "MIN_TOTAL\|MIN_NEW\|EXPECTED"`                                                                                                                                                                   |
+| live per-item review count (225)         | python snippet in Recipe 2                                                                                                                                                                                                                                                             |
+| optimizer no-op log line (historical)    | `head -2 ~/.claude/logs/fluent-fsrs-optimize.log`                                                                                                                                                                                                                                      |
+| payload commits + byte counts            | `git -C ~/Projects/fluent show 281c2a4 13fd374 18d55c0 --stat`                                                                                                                                                                                                                         |
+| live payload bytes (298,697 / 35,282)    | `wc -c` commands in Recipe 3                                                                                                                                                                                                                                                           |
+| fork vs cache drift                      | `jq -r '.plugins["fluent@aymkin"][0].gitCommitSha' ~/.claude/plugins/installed_plugins.json; git -C ~/Projects/fluent rev-parse HEAD; diff -q ~/Projects/fluent/.claude/hooks/read-db.py "$(ls -d ~/.claude/plugins/cache/*/fluent/*/ \| sort -V \| tail -1).claude/hooks/read-db.py"` |
+| importer tests pass (25)                 | `python3 ~/Projects/nederlands/scripts/test_fluent_import.py`                                                                                                                                                                                                                          |
+| item_id construction lines               | `grep -n "item_id" ~/Projects/nederlands/scripts/fluent_import.py`                                                                                                                                                                                                                     |
+| 285/285 alignment + drift story          | `git -C ~/Projects/nederlands show e6f41db --stat`                                                                                                                                                                                                                                     |
+| turbo 0-overlaps, 124 sentences          | `git -C ~/Projects/nederlands log -1 1c88339`                                                                                                                                                                                                                                          |
+| whisper model `base` hardcoded           | `grep -n '"base"' ~/Projects/nederlands/scripts/audio_to_anki.py`                                                                                                                                                                                                                      |
+| day-1 tiers (NPOkennis <10%, Peppa 90%+) | `git -C ~/Projects/nederlands log -1 4774cb5`                                                                                                                                                                                                                                          |
+| backup census (71 dirs; 6 JSONs each)    | `ls ~/.claude/fluent-data/.backups/ \| wc -l; ls ~/.claude/fluent-data/.backups/ \| sed 's/[0-9].*//' \| sort \| uniq -c`                                                                                                                                                              |

@@ -162,57 +162,53 @@ open in Anki. Until 2026-09-28 the media picker took `profiles[0]` from an
 unsorted `Path.iterdir()`, which let audio and notes end up in different
 profiles.
 
-## Step 5 — Fluent plugin (fork + marketplace + cache)
+## Step 5 — Fluent plugin (fork + cache)
 
 Fluent is a Claude Code plugin, forked `m98/fluent` → `aymkin/fluent`; the fork
-is the source of truth. Four locations matter:
+is the source of truth and, as a `directory` source, the marketplace `aymkin`
+itself. Three locations matter:
 
-| Location                                       | Role                                                                              |
-| ---------------------------------------------- | --------------------------------------------------------------------------------- |
-| `~/Projects/fluent`                            | dev clone of the fork (origin = `aymkin/fluent`) — source of truth for FSRS code  |
-| `~/.claude/plugins/marketplaces/aymkin/`       | marketplace clone — the **fork `aymkin/fluent`** (repointed 2026-07-11), has FSRS |
-| `~/.claude/plugins/cache/aymkin/fluent/0.4.0/` | **the runtime** — Claude Code executes hooks from HERE (has FSRS)                 |
-| `~/.claude/fluent-data/`                       | 6 learner JSON DBs + `.backups/` + `results/`                                     |
+| Location                                           | Role                                                                                    |
+| -------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `~/Projects/fluent`                                | the fork (origin = `aymkin/fluent`) and the marketplace — source of truth for FSRS code |
+| `~/.claude/plugins/cache/aymkin/fluent/<version>/` | **the runtime** — Claude Code executes hooks from HERE (has FSRS)                       |
+| `~/.claude/fluent-data/`                           | 6 learner JSON DBs + `.backups/` + `results/`                                           |
 
-Verify the remotes (verified 2026-07-11):
+Verify the wiring (verified 2026-10-08):
 
 ```bash
-git -C ~/.claude/plugins/marketplaces/aymkin remote -v
-# actual: origin  https://github.com/aymkin/fluent.git  <-- the fork (repointed 2026-07-11)
+jq -c '.aymkin.source' ~/.claude/plugins/known_marketplaces.json
+# actual: {"source":"directory","path":"/Users/Alex.Naymkin/Projects/fluent"}
 git -C ~/Projects/fluent remote -v
 # actual: origin  https://github.com/aymkin/fluent.git  <-- the fork
 ```
 
-The FSRS hook `fsrs.py` exists in the fork dev clone, the marketplace clone, AND
-the runtime cache. (`migrate_to_fsrs.py` and `optimize_weights.py` were also
-FSRS hooks; both were deleted in fork `09618f3`, 2026-08-17 — the migration was
-one-shot and already run, the optimizer is retired.) A fresh plugin install now
-pulls the fork, so the old SM-2-reversion danger is resolved at the source. See
-`nederlands-architecture-contract` §3 for the remaining open point (the cache
-lags the fork on two files; the fork→cache sync is still manual but no longer
-dangerous).
+The FSRS hook `fsrs.py` exists in the fork AND the runtime cache.
+(`migrate_to_fsrs.py` and `optimize_weights.py` were also FSRS hooks; both were
+deleted in fork `09618f3`, 2026-08-17 — the migration was one-shot and already
+run, the optimizer is retired.) A plugin install or update copies the fork
+directory, so a rebuild can no longer revert the scheduler to SM-2.
 
 Traps:
 
-- **Claude executes the CACHE copy**, not the marketplace clone and not
-  `~/Projects/fluent`. Hook edits must reach
-  `~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/` or they do
-  nothing. The clone→cache sync procedure is **undocumented — known weak point**
-  (see `nederlands-architecture-contract`).
+- **Claude executes the CACHE copy**, not `~/Projects/fluent`. A hook edit
+  reaches `~/.claude/plugins/cache/aymkin/fluent/<version>/.claude/hooks/` only
+  through a release — version bump, release commit,
+  `claude plugin update fluent@aymkin`, restart; the steps are in
+  `nederlands-change-control` (Fluent change flow).
 - A version bump 0.3.0→x changes the cache path AND silently breaks the
   optimizer LaunchAgent, whose plist **hardcoded** a cache path (job retired
   2026-09-16, script deleted in fork `09618f3` — see
   `nederlands-change-control`).
-- Post-repoint (2026-07-11) the marketplace clone and dev clone both track the
-  fork; after the same-day `read-db.py` sync the cache matches the fork on all
-  live hooks (only the dead `migrate_to_fsrs.py` still differs). Before the
-  repoint they diverged (marketplace on upstream `86fb80f` vs fork `4205bf1`).
-  Never assume they match — check live:
+- A fork commit without a release is not live, and every release leaves the
+  previous version directories in the cache. Never assume the runtime matches
+  the fork — compare the installed commit with the fork's HEAD:
 
 ```bash
 git -C ~/Projects/fluent fetch && git -C ~/Projects/fluent status
-git -C ~/.claude/plugins/marketplaces/aymkin log -1 --format="%h %s"
-git -C ~/Projects/fluent log -1 --format="%h %s"
+jq -r '.plugins["fluent@aymkin"][0] | .version, .gitCommitSha' \
+  ~/.claude/plugins/installed_plugins.json
+git -C ~/Projects/fluent log -1 --format="%H %s"
 ```
 
 ## Step 6 — LaunchAgents (from the claude-dotfiles repo)
@@ -235,24 +231,24 @@ LaunchAgents). Details are that repo's own README/CLAUDE.md territory.
 
 ## Verification checklist — run all, compare outputs
 
-| Command                                                  | Expected (2026-07-09 baseline)                                                                         |
-| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| `python3 --version`                                      | `Python 3.14.5` (Homebrew; `which python3` → `/opt/homebrew/bin/python3`)                              |
-| `ffmpeg -version \| head -1`                             | `ffmpeg version 8.1.1 ...`                                                                             |
-| `edge-tts --version`                                     | `edge-tts 7.2.7`                                                                                       |
-| `python3 -c "import edge_tts; print('ok')"`              | `ok`                                                                                                   |
-| `which whisper`                                          | `/Users/<you>/.local/bin/whisper`                                                                      |
-| `whisper --help \| head -1`                              | `usage: whisper [-h] [--model MODEL] ...`                                                              |
-| `python3 -c "import whisper"`                            | **ModuleNotFoundError — this is the CORRECT state**                                                    |
-| `pipx list \| grep whisper`                              | `package openai-whisper 20250625 ...`                                                                  |
-| `pnpm --version`                                         | `10.29.2` (any 10.x fine)                                                                              |
-| `node_modules/.bin/prettier --version`                   | `3.8.1` (any ^3.7.4)                                                                                   |
-| `python3 scripts/test_fluent_import.py \| tail -1`       | `25 passed` (scripts/README.md says 21 — README is stale)                                              |
-| `python3 scripts/audio_to_anki.py --help`                | usage text, exit 0 (stdlib import check)                                                               |
-| `ls "$HOME/Library/Application Support/Anki2/"`          | contains `alex` and `iuliia`                                                                           |
-| `git -C ~/.claude/plugins/marketplaces/aymkin remote -v` | origin = `aymkin/fluent` (the fork, repointed 2026-07-11 — has FSRS); dev fork is `~/Projects/fluent`  |
-| `ls ~/.claude/plugins/cache/aymkin/fluent/`              | `0.4.0` — the runtime version; nothing outside the repo may hardcode it                                |
-| `launchctl list \| grep aymkin`                          | two entries (`claude-plugin-update`, `claude-dotfiles-sync`); the optimizer job was retired 2026-09-16 |
+| Command                                                           | Expected (2026-07-09 baseline)                                                                                                                   |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `python3 --version`                                               | `Python 3.14.5` (Homebrew; `which python3` → `/opt/homebrew/bin/python3`)                                                                        |
+| `ffmpeg -version \| head -1`                                      | `ffmpeg version 8.1.1 ...`                                                                                                                       |
+| `edge-tts --version`                                              | `edge-tts 7.2.7`                                                                                                                                 |
+| `python3 -c "import edge_tts; print('ok')"`                       | `ok`                                                                                                                                             |
+| `which whisper`                                                   | `/Users/<you>/.local/bin/whisper`                                                                                                                |
+| `whisper --help \| head -1`                                       | `usage: whisper [-h] [--model MODEL] ...`                                                                                                        |
+| `python3 -c "import whisper"`                                     | **ModuleNotFoundError — this is the CORRECT state**                                                                                              |
+| `pipx list \| grep whisper`                                       | `package openai-whisper 20250625 ...`                                                                                                            |
+| `pnpm --version`                                                  | `10.29.2` (any 10.x fine)                                                                                                                        |
+| `node_modules/.bin/prettier --version`                            | `3.8.1` (any ^3.7.4)                                                                                                                             |
+| `python3 scripts/test_fluent_import.py \| tail -1`                | `25 passed` (scripts/README.md says 21 — README is stale)                                                                                        |
+| `python3 scripts/audio_to_anki.py --help`                         | usage text, exit 0 (stdlib import check)                                                                                                         |
+| `ls "$HOME/Library/Application Support/Anki2/"`                   | contains `alex` and `iuliia`                                                                                                                     |
+| `jq '.aymkin.source' ~/.claude/plugins/known_marketplaces.json`   | `directory` → `~/Projects/fluent`: the fork is the marketplace, no clone under `marketplaces/`                                                   |
+| `ls -d ~/.claude/plugins/cache/*/fluent/*/ \| sort -V \| tail -1` | the runtime — equals `installPath` in `~/.claude/plugins/installed_plugins.json`; older version dirs stay beside it, so nothing may hardcode one |
+| `launchctl list \| grep aymkin`                                   | two entries (`claude-plugin-update`, `claude-dotfiles-sync`); the optimizer job was retired 2026-09-16                                           |
 
 Note on `pnpm run format:check`: it currently exits 1 on untracked scratch files
 — a non-zero exit does NOT prove your environment is broken. Scope prettier

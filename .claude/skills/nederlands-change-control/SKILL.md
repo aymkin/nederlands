@@ -43,7 +43,7 @@ Consequences:
 | ----------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **content**       | `link/`, `link_plus/`, `de_opmaat/`, `other/`, `daily/` md + `_anki.txt` | Voldemort grep (below); Anki TSV format check (literal TABs, `#html:true` with `[sound:]`); no renames of existing files; Prettier on md only                                                       |
 | **scripts**       | `scripts/*.py`                                                           | `python3 scripts/test_fluent_import.py` → expect **25 passed**; touching `grammatica_fluent.py` or the rule extracts also needs `python3 scripts/test_grammatica_fluent.py` → expect **всё зелено** |
-| **fluent-plugin** | fork `~/Projects/fluent`, cache hooks                                    | NOT this repo — see multi-repo flow below; never edit cache without syncing the fork first                                                                                                          |
+| **fluent-plugin** | fork `~/Projects/fluent`                                                 | NOT this repo — edit the fork, then release (Fluent change flow below); every release rebuilds the cache from the fork                                                                              |
 | **docs**          | `docs/superpowers/`, `CLAUDE.md`, READMEs, `.claude/skills/`             | 80-col proseWrap; where CLAUDE.md is documented-stale, correct it or note it — never propagate the stale claim                                                                                      |
 | **config**        | `curriculum.json`, `.prettierrc`, `package.json`, `pages.yml`            | curriculum.json: exactly ONE unit `status: "active"` (importer raises ValueError otherwise); pages.yml changes alter public exposure — owner sign-off                                               |
 
@@ -191,47 +191,63 @@ the next label instead of to end of line. `scripts/test_grammatica_fluent.py`
 pins the property: every field of every rule identical when the source is
 rewrapped at 60, 80, 120 and one-line widths.
 
-## Fluent multi-repo change flow
+## Fluent change flow: fork, then release
 
-Fluent is a forked Claude Code plugin. Three code locations + one data dir:
+Fluent is a forked Claude Code plugin. Two code locations + one data dir:
 
-| Location                                       | Role                                                                                                                             |
-| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `~/Projects/fluent`                            | dev clone of the fork — **where you edit** (origin = `aymkin/fluent`, upstream = `m98/fluent`)                                   |
-| `~/.claude/plugins/marketplaces/aymkin/`       | marketplace clone — **source of truth on rebuild**, `git pull`ed daily at 09:03 by LaunchAgent `com.aymkin.claude-plugin-update` |
-| `~/.claude/plugins/cache/aymkin/fluent/0.4.0/` | **the runtime** — Claude Code executes hooks and reads skills from HERE                                                          |
-| `~/.claude/fluent-data/`                       | learner data (see backup table above)                                                                                            |
+| Location                                           | Role                                                                                                                      |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `~/Projects/fluent`                                | the fork — **where you edit** — and the marketplace `aymkin` itself (origin = `aymkin/fluent`, upstream = `m98/fluent`)   |
+| `~/.claude/plugins/cache/aymkin/fluent/<version>/` | **the runtime** — Claude Code executes hooks and reads skills from HERE; one directory per release, old ones stay on disk |
+| `~/.claude/fluent-data/`                           | learner data (see backup table above)                                                                                     |
 
-As of 2026-09-16 (verify live):
+A change reaches the runtime only through a **release** (the fork's
+`tasks/lessons.md`, entry 2026-10-06; release commits `9120373`, `3ffc74d`):
 
-- The marketplace key is **`aymkin`**, not `m98`. It was `m98` until the fork
-  became its own marketplace (2026-07-15, fluent commit `3c1c6b0`); the rename
-  moved both the clone path and the cache path, and the plugin id is now
-  `fluent@aymkin`. Anything still naming `m98` is pre-rename.
+1. Edit, test and commit in `~/Projects/fluent`.
+2. Bump the version in all three fields — `version` in
+   `.claude-plugin/plugin.json`, both `metadata.version` and
+   `plugins[0].version` in `.claude-plugin/marketplace.json` — and cut
+   `## [Unreleased]` in `CHANGELOG.md` to `## [X.Y.Z] — YYYY-MM-DD`.
+3. Commit that as `chore(release): X.Y.Z` and leave the tree clean:
+   `git -C ~/Projects/fluent status --short` prints nothing. The update copies
+   the working directory, untracked files included (the 0.7.1 cache holds the
+   fork's git-excluded `.claude/worktrees/` and `.devvenv/`), so an uncommitted
+   edit would ship under the release commit's sha.
+4. `claude plugin update fluent@aymkin --scope user` builds
+   `cache/aymkin/fluent/X.Y.Z/` from the fork directory.
+5. The owner restarts the app; the update applies only after a restart.
+6. Run every behaviour gate twice: against the fork and against the new cache
+   directory.
+
+Push is not part of a release — the marketplace is the local directory — and,
+like every push, waits for the owner's explicit yes.
+
+Verify live (verified 2026-10-08):
 
 ```bash
-git -C ~/.claude/plugins/marketplaces/aymkin remote -v
-git -C ~/.claude/plugins/marketplaces/aymkin log -1 --format='%h %ad %s' --date=short
-git -C ~/Projects/fluent log -1 --format='%h %ad %s' --date=short
-diff -rq ~/Projects/fluent/.claude/skills \
-  ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/skills
+jq '.aymkin.source' ~/.claude/plugins/known_marketplaces.json  # directory: ~/Projects/fluent
+jq -r '.plugins["fluent@aymkin"][0] | .version, .gitCommitSha' \
+  ~/.claude/plugins/installed_plugins.json
+git -C ~/Projects/fluent rev-parse HEAD  # equals gitCommitSha once released
+FLUENT=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1)
+diff -rq -x worktrees -x __pycache__ ~/Projects/fluent/.claude "${FLUENT}.claude"
+# expected: no output
 ```
 
-- **Three layers, not two — and the clone is the one that wins.** The cache is
-  materialized from the marketplace clone, so an edit synced fork→cache lives
-  only until the next rebuild (`/plugin update`, reinstall, version bump), which
-  silently restores whatever the clone holds. A fork commit that is not pushed
-  is therefore a temporary edit: the session runs on it today and reverts later,
-  with no error. Verified 2026-09-16 while auditing the session skills — the
-  cache carried the new text while the clone still held the old.
-- Change order for ANY edit under `.claude/` in the fork: edit in
-  `~/Projects/fluent` → commit → **push** → `git -C …/marketplaces/aymkin pull`
-  → copy the changed files into the cache → verify fork == clone == cache per
-  file → only then run a Fluent session. Skipping the push or the clone pull is
-  what makes the edit temporary.
+- **Edit the fork, never the cache.** Every release rebuilds the cache from the
+  fork, so a cache edit is silently lost. There is no marketplace clone any more
+  — `~/.claude/plugins/marketplaces/aymkin/` does not exist — and the daily
+  09:03 job `com.aymkin.claude-plugin-update` pulls only git clones under
+  `~/.claude/plugins/marketplaces/` and `~/.claude/skills/`, so nothing updates
+  Fluent on its own.
+- The marketplace key is **`aymkin`**; it was `m98` until the fork became its
+  own marketplace (2026-07-15, fluent commit `3c1c6b0`). The plugin id is
+  `fluent@aymkin`. Outside history, anything naming `m98` as a marketplace is
+  pre-rename.
 - Upstream `m98` fixes are **not auto-tracked**. Merge them by hand —
   `git -C ~/Projects/fluent fetch upstream && git merge upstream/main` — then
-  push.
+  release.
 - **Two rules the optimizer zombie produced** (the incident itself is
   `nederlands-failure-archaeology` 12 — a weekly LaunchAgent that failed nine
   Sundays into a log nobody read):
@@ -239,9 +255,10 @@ diff -rq ~/Projects/fluent/.claude/skills \
     repo — `launchctl list`, `~/Library/LaunchAgents`, crontab. The deletion
     commit that started it claimed "no hook, no cron, no skill", which was true
     of the repository and false of the machine.
-  - Anything outside the repo that points into `~/.claude/plugins/cache/` must
-    resolve the path, never name it. Both the version and the marketplace key
-    have moved once already.
+  - Anything that points into `~/.claude/plugins/cache/` — a plist, a script, a
+    skill — must resolve the path, never name it. Old version directories stay
+    on disk, so a named version runs old code without an error: on 2026-10-08,
+    22 skill lines still named `0.4.0` while 0.7.1 was live.
 
 ## The uncommitted working tree (as of 2026-07-09)
 
@@ -281,22 +298,21 @@ or discard) — never mixed with real changes.
 All claims verified 2026-07-09 against the working tree and live machine.
 Re-verify before relying:
 
-| Claim                              | Command                                                                                                                                                       |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Pages deploys whole repo on push   | `cat .github/workflows/pages.yml`                                                                                                                             |
-| /commit format + confirmation step | `cat .claude/commands/commit.md`                                                                                                                              |
-| Voldemort scrub incident           | `git show 5be6931 --stat`                                                                                                                                     |
-| Importer backup hardening          | `git show a88b1ff --stat`                                                                                                                                     |
-| fsrs_difficulty collision          | `git show 350de1a --stat; git -C ~/Projects/fluent show 44fb945 --stat`                                                                                       |
-| link/→link_plus rename             | `git show 78f07e9 --stat`                                                                                                                                     |
-| html:true unification              | `git show 8cd356c --stat`                                                                                                                                     |
-| Positional grammar item_id         | `grep -n 'gram_' scripts/fluent_import.py`                                                                                                                    |
-| write_sr backup + atomic tmp       | `sed -n '237,246p' scripts/fluent_import.py`                                                                                                                  |
-| Backup dir patterns on disk        | `ls ~/.claude/fluent-data/.backups/ \| sort -u`                                                                                                               |
-| Marketplace clone remote/HEAD      | `git -C ~/.claude/plugins/marketplaces/aymkin remote -v && git -C ~/.claude/plugins/marketplaces/aymkin log -1`                                               |
-| Fork↔clone↔cache drift             | `diff -rq ~/Projects/fluent/.claude ~/.claude/plugins/marketplaces/aymkin/.claude` and the same against `~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude` |
-| Optimizer job stays retired        | `launchctl list \| grep fluent-fsrs` — expect no output; `ls -a ~/Library/LaunchAgents \| grep fsrs` shows only the renamed backups                           |
-| Working-tree census (volatile)     | `git status --porcelain \| awk '{print $1}' \| sort \| uniq -c`                                                                                               |
-| Test count (25, README stale)      | `python3 scripts/test_fluent_import.py`                                                                                                                       |
-| One active curriculum unit         | `python3 -c "import json;print([u['id'] for u in json.load(open('link/curriculum.json'))['units'] if u['status']=='active'])"`                                |
-| Dead study plans exist             | `ls daily/maart_2026 daily/april_2026; git show e379c80 --stat`                                                                                               |
+| Claim                              | Command                                                                                                                             |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Pages deploys whole repo on push   | `cat .github/workflows/pages.yml`                                                                                                   |
+| /commit format + confirmation step | `cat .claude/commands/commit.md`                                                                                                    |
+| Voldemort scrub incident           | `git show 5be6931 --stat`                                                                                                           |
+| Importer backup hardening          | `git show a88b1ff --stat`                                                                                                           |
+| fsrs_difficulty collision          | `git show 350de1a --stat; git -C ~/Projects/fluent show 44fb945 --stat`                                                             |
+| link/→link_plus rename             | `git show 78f07e9 --stat`                                                                                                           |
+| html:true unification              | `git show 8cd356c --stat`                                                                                                           |
+| Positional grammar item_id         | `grep -n 'gram_' scripts/fluent_import.py`                                                                                          |
+| write_sr backup + atomic tmp       | `sed -n '237,246p' scripts/fluent_import.py`                                                                                        |
+| Backup dir patterns on disk        | `ls ~/.claude/fluent-data/.backups/ \| sort -u`                                                                                     |
+| Fluent topology + release state    | the `bash` block in "Fluent change flow" above                                                                                      |
+| Optimizer job stays retired        | `launchctl list \| grep fluent-fsrs` — expect no output; `ls -a ~/Library/LaunchAgents \| grep fsrs` shows only the renamed backups |
+| Working-tree census (volatile)     | `git status --porcelain \| awk '{print $1}' \| sort \| uniq -c`                                                                     |
+| Test count (25, README stale)      | `python3 scripts/test_fluent_import.py`                                                                                             |
+| One active curriculum unit         | `python3 -c "import json;print([u['id'] for u in json.load(open('link/curriculum.json'))['units'] if u['status']=='active'])"`      |
+| Dead study plans exist             | `ls daily/maart_2026 daily/april_2026; git show e379c80 --stat`                                                                     |
