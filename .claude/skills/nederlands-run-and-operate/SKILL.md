@@ -110,7 +110,9 @@ Operational rules:
               .backups/pre-update-<session_id>/, writes all 6
               atomically (tmp+fsync+replace), rebuilds review_queue
             exit 1: validation error — disk untouched
-            exit 2: load/update/save exception — disk untouched
+            exit 2: load/update exception — disk untouched;
+              save exception — some DBs may already be written:
+              restore them from that backup
 ```
 
 ### read-db.py --review payload (verified live 2026-10-08, Fluent 0.7.1)
@@ -145,27 +147,42 @@ saving, the skill offers another round, which is a fresh session.
 stop at `computed.session_cap` only by prompt, and `update-db.py` accepts any
 number of results.
 
-### update-db.py payload contract (verified against main(), 628 lines)
+### update-db.py payload contract (verified against main(), 647 lines — Fluent 0.7.2, 2026-10-08)
 
 Required: `session_id`, `date` — missing either → stderr
-`[Fluent] Error: Missing required field '...'`, exit 1, disk untouched. All
-other fields optional. Key optional arrays:
+`[Fluent] Error: Missing required field '...'`, exit 1, disk untouched. Also
+refused with exit 1 before any DB is written:
 
-| Field              | Per-entry requirement                                                                     |
-| ------------------ | ----------------------------------------------------------------------------------------- |
-| `review_results[]` | `item_id` + `quality` (0-5); `score` optional — omit it, historical scores are unreliable |
-| `errors[]`         | `pattern_id` (plus category/your_answer/correct_answer)                                   |
-| `new_vocabulary[]` | `item_id` (plus content/answer/category)                                                  |
-| `milestones[]`     | bare string OR `{"milestone": "...", "date": "..."}`                                      |
+- input that is not valid JSON;
+- a `date` other than today's local date (`date +%F`) — a resumed session still
+  carries the day it started. A past day needs `"allow_backdate": true` and must
+  not precede the last recorded session; a future day is never accepted (fork
+  `db1b965`);
+- a `session_id` already in `session-log.json` — a rerun would count the session
+  twice; take `computed.next_session_id` from read-db.py (fork `97609ad`).
+
+All other fields optional. Key optional arrays:
+
+| Field              | Per-entry requirement                                                                                         |
+| ------------------ | ------------------------------------------------------------------------------------------------------------- |
+| `review_results[]` | `item_id` + `quality` (0-5); `score` optional — omit it, historical scores are unreliable                     |
+| `errors[]`         | `pattern_id` (plus category/your_answer/correct_answer); `category` from the canon below, else exit 1         |
+| `new_vocabulary[]` | `item_id` (plus content/answer/category)                                                                      |
+| `milestones[]`     | non-empty strings; the `{"milestone": "...", "date": "..."}` object form exits 1 (fork `83f920d`, 2026-08-17) |
+
+`errors[].category` canon (fork `c8acf1d`): `grammar`, `formal_informal`,
+`vocabulary`, `spelling`, `prepositions`, `articles`, `missing`, `structure`,
+`comprehension`, `inference`, `other`. An error without the key counts as
+`other`.
 
 Canonical example payload:
 `$FLUENT_HOOKS/../references/db-updater-payload.example.json`.
 
 Success output (exit 0) starts
 `[Fluent] ✅ Updated 6 databases for session session-NNN` followed by
-streak/accuracy/SR summary lines. FSRS-6 is the live scheduler inside
-update-db.py (`fsrs.schedule(...)`); `calculate_sm2` still exists in the file as
-a rollback path only. Never hand-edit `spaced-repetition.json` — the queue is
+streak/accuracy/SR summary lines. FSRS-6 is the only scheduler in update-db.py
+(`fsrs.schedule(...)`); the SM-2 fallback `calculate_sm2` was deleted in fork
+`cfaed98` (2026-07-15). Never hand-edit `spaced-repetition.json` — the queue is
 rebuilt on every update-db.py call.
 
 ## Reading the DBs safely
@@ -367,7 +384,8 @@ URLs — never rename without checking inbound links.
 
 ## Provenance and maintenance
 
-Verified 2026-07-09. One re-check command per drift-prone claim:
+Verified 2026-07-09; the update-db.py contract again on 2026-10-08 against
+Fluent 0.7.2. One re-check command per drift-prone claim:
 
 - Importer modes/flags: `python3 scripts/fluent_import.py --course link --check`
   and read `scripts/fluent_import.py` `main()`.
@@ -377,7 +395,9 @@ Verified 2026-07-09. One re-check command per drift-prone claim:
   2026-10-08):
   `python3 $FLUENT_HOOKS/read-db.py --review | python3 -c "import json,sys; d=json.load(sys.stdin); c=d['computed']; print(c['session_cap'], len(d['databases']['spaced_repetition']['review_queue']['today']), c['due_reviews_count'])"`.
 - update-db.py contract/exit codes:
-  `sed -n '547,628p' $FLUENT_HOOKS/update-db.py`.
+  `sed -n '525,647p' $FLUENT_HOOKS/update-db.py` (`main()`) and
+  `sed -n '66,142p' $FLUENT_HOOKS/update-db.py` (the validators it calls) — line
+  numbers of Fluent 0.7.2, 2026-10-08.
 - Backup dir census: `ls ~/.claude/fluent-data/.backups/ | wc -l` and
   `ls ~/.claude/fluent-data/.backups/<newest>/`.
 - LaunchAgent schedules/paths:
