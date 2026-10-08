@@ -127,9 +127,9 @@ actually says. A formal example fits only when the word itself is formal
    from `werken`, `een kop thee`). Sparingly — one per example at most.
 6. **Unique situations**: each card gets its own scenario and its own sentence
    pattern
-7. **Translation captures tone**, not literal meaning:
-   - Good: "Я сейчас дико занят, извини" for "Ik heb het nu even heel druk"
-   - Bad: "Я сейчас имею это очень занято"
+7. **Translation: literal while it sounds Russian.** Before writing a Russian
+   example, load the `anki-twenty-rules` skill: its section "Русский пример:
+   баланс между калькой и смыслом" holds the rule and worked pairs.
 
 ### Say this instead
 
@@ -167,13 +167,14 @@ changes like `reizen` ~ `reis`), so read a flagged example before trusting the
 number.
 
 Load the `anki-twenty-rules` skill and walk its manual checklist (minimum
-information, interference between synonyms, one sense per card). If Alex asks
-for the full rules text, suggest he run `/mcp__anki__twenty_rules` — it is an
-MCP prompt, Claude cannot invoke it.
+information, interference between synonyms, one sense per card, the Russian
+example's skeleton). If Alex asks for the full rules text, suggest he run
+`/mcp__anki__twenty_rules` — it is an MCP prompt, Claude cannot invoke it.
 
 Then confirm each of these holds:
 
 - [ ] Every word from the Step 3 source list has a card
 - [ ] Every Dutch noun carries its article (`het stokbrood`, `de buurt`)
 - [ ] Every style rule above applied — register, markers in ~50-60% of examples,
-      no repeated scenario, translations carry tone
+      no repeated scenario, every Russian example passes the skeleton check in
+      `anki-twenty-rules`
