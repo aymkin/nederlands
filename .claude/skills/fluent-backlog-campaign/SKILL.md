@@ -5,9 +5,10 @@ description:
   gate seems unreachable — hundreds of cards in review_queue.today,
   fluent_import.py --check prints "⏳ продолжай" at 0% mastery, curriculum.json
   says thema_4 active while real study is thema 13, or someone proposes
-  deferring due_dates, raising review_items_per_day, hand-editing mastery_level,
-  or repointing/advancing the curriculum. Also for planning promotion
-  (--advance) after a gate passes.
+  deferring due_dates, raising the review cap (SESSION_CAP, or the no longer
+  read review_items_per_day), hand-editing mastery_level, or
+  repointing/advancing the curriculum. Also for planning promotion (--advance)
+  after a gate passes.
 ---
 
 # Fluent backlog campaign — drain the queue, reach the gate
@@ -35,7 +36,7 @@ FSRS/mastery theory, use `nt2-srs-reference`.
 | `review_queue.today` (stale snapshot)  | 335                                                               |
 | Recomputed `due_date <= today`         | 347                                                               |
 | Due per prefix                         | t12: 157, t13: 139, t4: 36, error-pattern: 12, legacy `vocab_`: 3 |
-| Daily cap `review_items_per_day`       | 30 (live; code default 20)                                        |
+| Daily cap `review_items_per_day`       | 30 (unread since Fluent 0.6.0: a round is `SESSION_CAP` = 10)     |
 | Mastery histogram                      | L0: 361, L1: 19, L2: 21, L3: 7                                    |
 | mastery≥3 INSIDE any course unit       | 0 (the 7 are legacy/error items)                                  |
 | Red cards (`consecutive_incorrect>=2`) | 3, all error-pattern ids, none inside a unit                      |
@@ -61,11 +62,12 @@ what Alex studies, mastery≥3 is 0 in every unit, and 347 due cards swamp a
    would import thema_5..12 grammar clozes nobody studies, growing the backlog
    by hundreds of cards. Repoint by manifest edit instead (Phase 1).
 3. **Never burn the queue by feeding `update-db.py` fabricated
-   `review_results`.** The 30/day cap is enforced server-side only in the
-   `read-db.py --review` serving path; `update-db.py` accepts any number of
-   results. Bypassing `/fluent-review` fakes `review_history`, which poisons the
-   training data for any future weight optimizer (the retired one trained from
-   per-item history; archaeology 12).
+   `review_results`.** The session cap (`SESSION_CAP` = 10 a round; nothing caps
+   the day) is enforced server-side only in the `read-db.py --review` serving
+   path; `update-db.py` accepts any number of results. Bypassing
+   `/fluent-review` fakes `review_history`, which poisons the training data for
+   any future weight optimizer (the retired one trained from per-item history;
+   archaeology 12).
 4. **Never "fix" `fluent_import.py` to write through `update-db.py` or to touch
    DBs other than spaced-repetition.json.** Two-owner invariant; going through
    the updater falsely increments sessions/streak. See
@@ -94,7 +96,7 @@ Expected shape (numbers WILL drift; these are the 2026-07-10 values):
   ...
   recomputed due<=today from items: 347
   !! queue.today (335) != recomputed due (347) — queue is STALE ...
-[daily_limits] review_items_per_day = 30 ...
+[session cap] SESSION_CAP = 10 ...      (since 2026-10-08; was [daily_limits])
 [mastery histogram]
   level 0: 361 ... level 3: 7
 [red cards] consecutive_incorrect>=2: 3  -> grammar_bijzin_en_conjunct, ...
@@ -204,23 +206,26 @@ Choose how to handle the ~347 due cards. Options ranked; each carries its theory
 obligation. Recommended combination: **(a) + (d), adding (b) only if two weeks
 of (a) show the non-active backlog is drowning t13.**
 
-### (a) Daily `/fluent-review` cadence at cap 30 — RANK 1, zero risk
+### (a) Daily `/fluent-review` rounds — RANK 1, zero risk
 
-The naive burn-down `347 / 30 ≈ 12 days` is wrong. The real formula:
+The naive burn-down `347 / 30 ≈ 12 days` (three 10-item rounds a day) is wrong.
+The real formula:
 
 ```
 days ≈ D / (c·f_out − inflow)
   D      = recomputed due today (347)
-  c      = reviews actually done per day (cap 30; HISTORY says ~10.7)
+  c      = reviews actually done per day (10 a round, no daily cap;
+           HISTORY says ~10.7 a session)
   f_out  = fraction rescheduled beyond tomorrow. Failures (quality<3)
            return ~next day; even correct-but-Hard first reviews get a
            1-day interval. At lifetime accuracy 0.698, f_out ≈ 0.6–0.8.
   inflow = cards newly coming due (12 tomorrow + 15 this week now)
 ```
 
-At a genuine 30/day: roughly 15–20 review days. At the historical ~11 per
-session: 45+ days. The cap is not the bottleneck — session cadence and size are.
-This option needs no data edit and cannot corrupt anything.
+At three rounds a day (30): roughly 15–20 review days. At one round a day (~10;
+history says ~11 per session): 45+ days. The cap is not the bottleneck — the
+number of rounds a day is. This option needs no data edit and cannot corrupt
+anything.
 
 ### (b) Defer stale non-active dues — RANK 2, data edit, obligations
 
@@ -252,23 +257,25 @@ Obligations (non-negotiable):
 - A deferral is a postponement, not a deletion: +14d means t12 floods back in
   two weeks. If t12 is truly abandoned material, prefer +90d and revisit.
 
-### (c) Raise the cap `review_items_per_day` — RANK 3, usually wrong
+### (c) Raise the cap — RANK 3, usually wrong
 
 Theory obligation (see `nt2-srs-reference`): in FSRS, retention degrades because
 postponed reviews lower retrievability below target — the damage comes from
-reviews NOT DONE, not from the cap number. Raising the cap only helps if the
-learner genuinely does more quality reviews per day; the measured history (~10.7
-reviews/session, 21 sessions ever) says the binding constraint is human time,
-not the 30 limit. Raising it also enlarges each session's payload. Only
-justified if sessions reliably exhaust 30 and the learner asks for more. Config
-location: `spaced-repetition.json → daily_limits.review_items_per_day` (see
-`nederlands-config-and-flags`; it is a data-file edit — backup + change-control
-apply).
+reviews NOT DONE, not from the cap number. More reviews a day need no config:
+after saving, `/fluent-review` offers another round, which is a fresh session.
+The measured history (~10.7 reviews/session, 21 sessions ever) says the binding
+constraint is human time, not the cap. The round size is `SESSION_CAP` = 10 in
+the fork's `.claude/hooks/session_cap.py`, set by the learner on 2026-10-06
+because long sessions put them off starting one. Raising it is a plugin change
+(fork commit + release, `nederlands-change-control`) and also enlarges each
+session's payload; justified only if the learner asks for longer rounds.
+`spaced-repetition.json → daily_limits.review_items_per_day` is no longer read
+(Fluent 0.6.0) — editing it changes nothing (see `nederlands-config-and-flags`).
 
 ### (d) Freeze new imports until the gate — RANK 1 companion, free
 
 Do not run `--thema N` focus imports or `--advance` while the today-bucket is
-triple the cap. Every import seeds cards due TOMORROW
+above ~90 (triple the old 30/day cap). Every import seeds cards due TOMORROW
 (`new_sr_item: due_date = today+1`), i.e. straight into the backlog. Exception:
 the idempotent re-import of the active unit in Phase 1 (adds 0). Unfreeze when
 recomputed due < ~50.
@@ -373,8 +380,8 @@ All numbers date-stamped 2026-07-10 and VOLATILE. Re-verify with:
   `active_unit`, `advance`, `new_sr_item`).
 - Mastery ladder + quality/rating map:
   `grep -n -A6 mastery_level ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/update-db.py`
-- Cap serving path:
-  `grep -n review_items_per_day ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/read-db.py`
+- Cap serving path (re-verified 2026-10-08, Fluent 0.7.1):
+  `H="$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1).claude/hooks"; grep -n SESSION_CAP "$H/session_cap.py" "$H/read-db.py"`
 - Interval table: re-simulate by importing `fsrs` from the cache hooks dir and
   calling `fsrs.schedule(state, rating, date, None)` in a loop (weights None =
   DEFAULT_W; if `metadata.weights` is no longer null, re-simulate with the live

@@ -3,11 +3,12 @@ name: nederlands-config-and-flags
 description:
   Use when you need to know any configuration value, CLI flag, default, guard,
   or live setting in this repo — curriculum.json fields, fluent_import.py flags,
-  MASTERY_THRESHOLD, spaced-repetition.json metadata, review_items_per_day,
-  optimizer guards (400/50), DEFAULT_W, script flags (audio_to_anki,
-  text_to_speech, story_reader, build_vocab_index), prettier config, pages.yml
-  exclusions, LaunchAgent schedules, or Anki profile selection — or when adding
-  a new config axis.
+  MASTERY_THRESHOLD, spaced-repetition.json metadata, the session cap
+  (SESSION_CAP; review_items_per_day is no longer read), optimizer guards
+  (400/50), DEFAULT_W, script flags (audio_to_anki, text_to_speech,
+  story_reader, build_vocab_index), prettier config, pages.yml exclusions,
+  LaunchAgent schedules, or Anki profile selection — or when adding a new config
+  axis.
 ---
 
 # nederlands-config-and-flags
@@ -83,23 +84,23 @@ print('active:',[x['id'] for x in u if x['status']=='active'])"
 Re-verify: `python3 scripts/fluent_import.py --help` and
 `grep -n MASTERY_THRESHOLD scripts/fluent_import.py`
 
-## 3. spaced-repetition.json metadata + daily limit
+## 3. spaced-repetition.json metadata + session cap
 
 File: `~/.claude/fluent-data/spaced-repetition.json`. Live values below verified
 2026-07-09; this is the most volatile axis in the repo.
 
-| Key                                 | Default (code)                 | Live (2026-07-09)           | Guard / note                                                                                                                                                                     |
-| ----------------------------------- | ------------------------------ | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `metadata.scheduler`                | —                              | `"fsrs-6"`                  | **authoritative** scheduler switch                                                                                                                                               |
-| `metadata.algorithm`                | —                              | `"FSRS-6"`                  | informational only; was stale `"SM-2"` earlier — trust `scheduler`                                                                                                               |
-| `metadata.target_retention`         | 0.9                            | `0.9`                       | consumed by fsrs.py interval calc                                                                                                                                                |
-| `metadata.weights`                  | `null` → DEFAULT_W             | `null`                      | permanently null — the optimizer that wrote it is retired (archaeology 12)                                                                                                       |
-| `metadata.last_optimized`           | `null`                         | `null`                      | never fired, and now cannot                                                                                                                                                      |
-| `metadata.reviews_at_last_optimize` | 0                              | `0`                         | written by update-db.py, read by nobody                                                                                                                                          |
-| `metadata.total_items_tracked`      | —                              | `408`                       | volatile                                                                                                                                                                         |
-| `algorithm_notes` block             | —                              | SM-2 prose/formula          | **stale legacy text — ignore**                                                                                                                                                   |
-| `daily_limits.review_items_per_day` | `20` (read-db.py:105 fallback) | `30`                        | **prompt-enforced only** — the cap is applied by read-db.py `--review` slicing + plugin SKILL.md prompts, no python hard stop; bypassing the fluent-review flow bypasses the cap |
-| top-level `review_history`          | `[]`                           | `[]` (legacy, always empty) | real reviews live per-item in `items[*].review_history`                                                                                                                          |
+| Key                                 | Default (code)                   | Live (2026-07-09)           | Guard / note                                                                                                                                                                                                      |
+| ----------------------------------- | -------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `metadata.scheduler`                | —                                | `"fsrs-6"`                  | **authoritative** scheduler switch                                                                                                                                                                                |
+| `metadata.algorithm`                | —                                | `"FSRS-6"`                  | informational only; was stale `"SM-2"` earlier — trust `scheduler`                                                                                                                                                |
+| `metadata.target_retention`         | 0.9                              | `0.9`                       | consumed by fsrs.py interval calc                                                                                                                                                                                 |
+| `metadata.weights`                  | `null` → DEFAULT_W               | `null`                      | permanently null — the optimizer that wrote it is retired (archaeology 12)                                                                                                                                        |
+| `metadata.last_optimized`           | `null`                           | `null`                      | never fired, and now cannot                                                                                                                                                                                       |
+| `metadata.reviews_at_last_optimize` | 0                                | `0`                         | written by update-db.py, read by nobody                                                                                                                                                                           |
+| `metadata.total_items_tracked`      | —                                | `408`                       | volatile                                                                                                                                                                                                          |
+| `algorithm_notes` block             | —                                | SM-2 prose/formula          | **stale legacy text — ignore**                                                                                                                                                                                    |
+| `daily_limits.review_items_per_day` | none — unread since Fluent 0.6.0 | `30` (`45` on 2026-10-08)   | **dead field** — the `/fluent-review` round is `SESSION_CAP` = 10 (`<CACHE>/.claude/hooks/session_cap.py`, cut in `read-db.py --review`, published as `computed.session_cap`); editing this value changes nothing |
+| top-level `review_history`          | `[]`                             | `[]` (legacy, always empty) | real reviews live per-item in `items[*].review_history`                                                                                                                                                           |
 
 Re-verify:
 
@@ -108,7 +109,9 @@ python3 -c "import json;d=json.load(open('$HOME/.claude/fluent-data/spaced-repet
 print(d['metadata'],d['daily_limits'])"
 ```
 
-Code default: `grep -n review_items_per_day "$CACHE/.claude/hooks/read-db.py"`
+Session cap: `grep -n "SESSION_CAP =" "$CACHE/.claude/hooks/session_cap.py"`;
+`grep -c review_items_per_day "$CACHE/.claude/hooks/read-db.py"` prints `0` —
+the field is dead.
 
 ## 4. Optimizer guards + fsrs.py constants
 
@@ -244,8 +247,9 @@ Re-verify: `ls ~/Library/Application\ Support/Anki2/` and
    → argparse flag with an explicit `default=` and `choices=` where the value
    set is closed.
 3. Make the code default match the documented default; if the live JSON value
-   may diverge (like review_items_per_day 30 vs 20), read it with a
-   `.get(key, DEFAULT)` fallback, never crash on absence.
+   may diverge (as `review_items_per_day` did — 20 in code, 30 live — until
+   Fluent 0.6.0 stopped reading it), read it with a `.get(key, DEFAULT)`
+   fallback, never crash on absence.
 4. Guard it: validate early with a descriptive exception (model:
    `active_unit()`'s ValueError), and keep write paths
    backup-then-atomic-replace (model: fluent_import.py `write_sr`).
@@ -258,22 +262,23 @@ Re-verify: `ls ~/Library/Application\ Support/Anki2/` and
 
 ## Provenance and maintenance
 
-All values verified 2026-07-09 directly against disk. One drift probe per axis;
-if any fails or disagrees, update the table before relying on it.
+All values verified 2026-07-09 directly against disk, the session-cap rows on
+2026-10-08 (Fluent 0.7.1). One drift probe per axis; if any fails or disagrees,
+update the table before relying on it.
 
-| Claim                               | Re-verify                                                                                                                               |
-| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| one-active invariant + live pointer | `python3 -c "import json;print([u['id'] for u in json.load(open('link/curriculum.json'))['units'] if u['status']=='active'])"`          |
-| importer flag set                   | `python3 scripts/fluent_import.py --help`                                                                                               |
-| MASTERY_THRESHOLD 0.80              | `grep -n MASTERY_THRESHOLD scripts/fluent_import.py`                                                                                    |
-| SR metadata + live daily limit      | `python3 -c "import json;d=json.load(open('$HOME/.claude/fluent-data/spaced-repetition.json'));print(d['metadata'],d['daily_limits'])"` |
-| daily-limit code default 20         | `grep -n review_items_per_day "$CACHE/.claude/hooks/read-db.py"`                                                                        |
-| optimizer guards 400/50 (retired)   | `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py \| grep -n "MIN_TOTAL\|MIN_NEW"`                              |
-| DEFAULT_W has 21 floats             | ast probe in section 4                                                                                                                  |
-| script flags/defaults               | `python3 scripts/<script>.py --help` for each                                                                                           |
-| whisper model hardcode              | `grep -n '"base"' scripts/audio_to_anki.py`                                                                                             |
-| prettier + ignores                  | `cat .prettierrc .prettierignore`                                                                                                       |
-| pages.yml exclusion                 | `grep -n "rm -f\|path:" .github/workflows/pages.yml`                                                                                    |
-| LaunchAgent schedules/paths         | PlistBuddy loop in section 7                                                                                                            |
-| Anki profiles + pinned target       | `ls ~/Library/Application\ Support/Anki2/; grep -n ANKI_PROFILE scripts/anki_utils.py scripts/anki_vandaag.py`                          |
-| importer tests count                | `python3 scripts/test_fluent_import.py`                                                                                                 |
+| Claim                                         | Re-verify                                                                                                                                    |
+| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| one-active invariant + live pointer           | `python3 -c "import json;print([u['id'] for u in json.load(open('link/curriculum.json'))['units'] if u['status']=='active'])"`               |
+| importer flag set                             | `python3 scripts/fluent_import.py --help`                                                                                                    |
+| MASTERY_THRESHOLD 0.80                        | `grep -n MASTERY_THRESHOLD scripts/fluent_import.py`                                                                                         |
+| SR metadata + the dead `daily_limits`         | `python3 -c "import json;d=json.load(open('$HOME/.claude/fluent-data/spaced-repetition.json'));print(d['metadata'],d['daily_limits'])"`      |
+| session cap 10; `review_items_per_day` unread | `grep -n "SESSION_CAP =" "$CACHE/.claude/hooks/session_cap.py"; grep -c review_items_per_day "$CACHE/.claude/hooks/read-db.py"` (expect `0`) |
+| optimizer guards 400/50 (retired)             | `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py \| grep -n "MIN_TOTAL\|MIN_NEW"`                                   |
+| DEFAULT_W has 21 floats                       | ast probe in section 4                                                                                                                       |
+| script flags/defaults                         | `python3 scripts/<script>.py --help` for each                                                                                                |
+| whisper model hardcode                        | `grep -n '"base"' scripts/audio_to_anki.py`                                                                                                  |
+| prettier + ignores                            | `cat .prettierrc .prettierignore`                                                                                                            |
+| pages.yml exclusion                           | `grep -n "rm -f\|path:" .github/workflows/pages.yml`                                                                                         |
+| LaunchAgent schedules/paths                   | PlistBuddy loop in section 7                                                                                                                 |
+| Anki profiles + pinned target                 | `ls ~/Library/Application\ Support/Anki2/; grep -n ANKI_PROFILE scripts/anki_utils.py scripts/anki_vandaag.py`                               |
+| importer tests count                          | `python3 scripts/test_fluent_import.py`                                                                                                      |

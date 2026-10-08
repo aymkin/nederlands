@@ -191,16 +191,22 @@ fitting them on a few hundred reviews overfits into scheduling worse than
 new, and why any revival needs the same guard. Read it if you revive one:
 `git show 09618f3^:.claude/hooks/optimize_weights.py`.
 
-## 7. Daily review cap — code trims, prompts enforce
+## 7. Session cap — code cuts the review round, nothing caps the day
 
-`read-db.py --review` sorts today's queue by priority (critical<high<medium<low)
-and slices to `spaced-repetition.json.daily_limits.review_items_per_day` (code
-default 20; LIVE value 30 as of 2026-07-09). That trims the PAYLOAD — but
-nothing in python rejects extra reviews: `update-db.py` accepts any
-`review_results[]`. The cap is enforced only by the plugin skills' prompts.
-**Known weakness:** any flow that bypasses the fluent-review skill bypasses the
-cap. Note `daily_limits` lives inside spaced-repetition.json itself, not
-learner-profile.json.
+Since Fluent 0.6.0 (fork `69c8da0`, 2026-10-06) a session holds at most
+`SESSION_CAP` graded exercises: `10`, defined in `.claude/hooks/session_cap.py`
+and published as `computed.session_cap`. `read-db.py --review` builds the round
+from every item with `due_date <= today` — not from the saved
+`review_queue.today` — sorts it by priority (critical<high<medium<low), then by
+the oldest `due_date`, and cuts it to `SESSION_CAP`. That trims the PAYLOAD —
+but nothing in python rejects extra reviews: `update-db.py` accepts any
+`review_results[]`. `/fluent-learn`, `/fluent-vocab` and `/fluent-speaking` read
+the full DB (plain `read-db.py`) and stop at `computed.session_cap` only by
+prompt. Nothing caps the day: after saving, `/fluent-review` offers another
+round, which is a fresh session. **Known weakness:** any flow that bypasses
+`read-db.py --review` bypasses the cap. `daily_limits.review_items_per_day`
+(still 45 in spaced-repetition.json on 2026-10-08) is read by nothing — editing
+it changes nothing.
 
 ## 8. Backup-everything-before-write contract
 
@@ -257,7 +263,9 @@ kills story reading; everything else is offline.
    dangerous (both sides carry FSRS), but reconcile with the §3 `diff -rq` after
    any hook edit.
 2. Optimizer plist hardcodes cache version `0.3.0` — breaks on version bump.
-3. Daily review cap is prompt-enforced only (§7).
+3. The session cap is cut in code only on the `/fluent-review` path; the other
+   practice skills honour it by prompt, `update-db.py` accepts any count, and
+   nothing caps the day (§7; re-verified 2026-10-08, Fluent 0.7.1).
 4. `build_vocab_index.py` has no `link_plus` support (choices are
    `link|de_opmaat|both`); `link_plus/woordenlijst_index.txt` is a stale
    pre-rename snapshot.
@@ -299,10 +307,11 @@ print(d["metadata"].get("scheduler"), d["metadata"].get("weights"),
       {k: len(v) for k, v in d["review_queue"].items()})
 EOF
 
-CACHE=~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks
+CACHE="$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1).claude/hooks"
 git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py \
   | grep -n "MIN_TOTAL\|MIN_NEW"   # optimizer guards (script retired)
 grep -n "fsrs_difficulty" "$CACHE/update-db.py"             # field mapping
+grep -n "SESSION_CAP" "$CACHE/session_cap.py" "$CACHE/read-db.py"  # §7 cap
 grep -n "0.3.0\|Weekday" \
   ~/Library/LaunchAgents/com.aymkin.fluent-fsrs-optimize.plist  # hardcode
 grep -n jsdelivr read.html                                  # the CDN dep

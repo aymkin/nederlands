@@ -267,11 +267,13 @@ total > 0  AND  (count of mastery_level ≥ 3) / total ≥ 0.80
 ```
 
 Arithmetic reality check (as of 2026-07-09): 408 items, 225 lifetime reviews,
-only 7 items at mastery ≥ 3, review queue today = 335 with a live daily cap of
-30 (`daily_limits.review_items_per_day`; code default is 20). Each card needs
-≥4-5 successful reviews to reach level 3, so at current cadence the gate is
-months away — that deadlock is exactly what `fluent-backlog-campaign` addresses.
-Re-probe, don't trust these numbers:
+only 7 items at mastery ≥ 3, review queue today = 335 with a daily cap of 30 at
+the time (`daily_limits.review_items_per_day`, unread since Fluent 0.6.0 — a
+`/fluent-review` round is now `SESSION_CAP` = 10 and nothing caps the day; see
+`nederlands-architecture-contract` §7). Each card needs ≥4-5 successful reviews
+to reach level 3, so at current cadence the gate is months away — that deadlock
+is exactly what `fluent-backlog-campaign` addresses. Re-probe, don't trust these
+numbers:
 
 ```
 python3 -c "
@@ -281,7 +283,7 @@ sr=json.load(open(os.path.expanduser(
 it=sr['items']; print(len(it),
  sum(len(i.get('review_history',[])) for i in it.values()),
  sum(1 for i in it.values() if i.get('mastery_level',0)>=3),
- {k:len(v) for k,v in sr['review_queue'].items()}, sr['daily_limits'])"
+ {k:len(v) for k,v in sr['review_queue'].items()})"
 ```
 
 (Per-item `review_history` is the real review log; the TOP-LEVEL
@@ -346,20 +348,21 @@ runtime: `~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks/` (a version
 bump changes it — re-resolve with
 `ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1`).
 
-| Claim                                           | Re-verify with                                                                                                                                 |
-| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| FSRS formulas, DEFAULT_W, TARGET_RETENTION 0.9  | `sed -n '24,75p' <cache>/fsrs.py`                                                                                                              |
-| score→rating thresholds in update-db            | `grep -n 'rating = 1 if' <cache>/update-db.py`                                                                                                 |
-| mastery thresholds (5/3 jump, 2/1/q4 increment) | `sed -n '399,421p' <cache>/update-db.py`                                                                                                       |
-| seeding formulas (max(interval,0.5), EF map)    | `sed -n '25,37p' <cache>/migrate_to_fsrs.py`                                                                                                   |
-| optimizer guards 400/50 + quality-only rating   | `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py \| sed -n '14,33p'` (retired 2026-09-16)                             |
-| gate 0.80 + red-card rule                       | `grep -n 'MASTERY_THRESHOLD\|red' scripts/fluent_import.py`                                                                                    |
-| live SR counts / queue / limits / metadata      | python probe in Part B above                                                                                                                   |
-| calculate_sm2 still dead code                   | `grep -rn calculate_sm2 <cache>/*.py` (definition only = dead)                                                                                 |
-| link/ thema range, curriculum active unit       | `ls link/`; `python3 -c "import json;c=json.load(open('link/curriculum.json'));print([u['id'] for u in c['units'] if u['status']=='active'])"` |
-| Positie table / inversie wording                | `sed -n '111,126p' link/thema_13/grammatica_thema13_gas_water_elektriciteit.md`                                                                |
-| tier percentages                                | `sed -n '130,140p' daily/roadmap_maart_2026.md`                                                                                                |
-| method-consensus quotes                         | `grep -rn 'регулярность > интенсивность\|Словосочетания' other/language_learning_methods/`                                                     |
+| Claim                                           | Re-verify with                                                                                                                                                                                |
+| ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| FSRS formulas, DEFAULT_W, TARGET_RETENTION 0.9  | `sed -n '24,75p' <cache>/fsrs.py`                                                                                                                                                             |
+| score→rating thresholds in update-db            | `grep -n 'rating = 1 if' <cache>/update-db.py`                                                                                                                                                |
+| mastery thresholds (5/3 jump, 2/1/q4 increment) | `sed -n '399,421p' <cache>/update-db.py`                                                                                                                                                      |
+| seeding formulas (max(interval,0.5), EF map)    | `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/migrate_to_fsrs.py \| sed -n '25,37p'` (retired 2026-08-17)                                                                             |
+| optimizer guards 400/50 + quality-only rating   | `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py \| sed -n '14,33p'` (retired 2026-09-16)                                                                            |
+| gate 0.80 + red-card rule                       | `grep -n 'MASTERY_THRESHOLD\|red' scripts/fluent_import.py`                                                                                                                                   |
+| live SR counts / queue                          | python probe in Part B above                                                                                                                                                                  |
+| session cap 10; `review_items_per_day` unread   | `H="$(ls -d ~/.claude/plugins/cache/*/fluent/*/ \| sort -V \| tail -1).claude/hooks"; grep -n "SESSION_CAP =" "$H/session_cap.py"; grep -c review_items_per_day "$H/read-db.py"` (expect `0`) |
+| calculate_sm2 still dead code                   | `grep -rn calculate_sm2 <cache>/*.py` (definition only = dead)                                                                                                                                |
+| link/ thema range, curriculum active unit       | `ls link/`; `python3 -c "import json;c=json.load(open('link/curriculum.json'));print([u['id'] for u in c['units'] if u['status']=='active'])"`                                                |
+| Positie table / inversie wording                | `sed -n '111,126p' link/thema_13/grammatica_thema13_gas_water_elektriciteit.md`                                                                                                               |
+| tier percentages                                | `sed -n '130,140p' daily/roadmap_maart_2026.md`                                                                                                                                               |
+| method-consensus quotes                         | `grep -rn 'регулярность > интенсивность\|Словосочетания' other/language_learning_methods/`                                                                                                    |
 
 Volatile items (WILL drift): item/review/mastery counts, queue sizes,
 `weights: null`, the `algorithm` metadata string, curriculum active unit
