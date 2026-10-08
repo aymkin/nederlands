@@ -10,10 +10,15 @@ Rules are staged `--per-dag` per working day (Sunday off, like the frequency
 deck). Fluent needs no configuration for this: read-db.py serves items by
 due_date and cuts each round at SESSION_CAP, so the schedule lives in the data.
 
+Two rule sources, picked by the folder name (PROFIELEN): `grammatica/regels`
+holds the Link+ extracts (`gram_lp_N.M`), `grammatica/skelet` the subject frames
+from the nl_thinking research (`gram_sk_N.M`).
+
 Only Python 3 stdlib. Reuses the backup/queue helpers of frequentie_fluent.py.
 
     python3 scripts/grammatica_fluent.py --regels grammatica/regels --dry-run
     python3 scripts/grammatica_fluent.py --regels grammatica/regels --per-dag 2
+    python3 scripts/grammatica_fluent.py --regels grammatica/skelet --per-dag 1
 """
 from __future__ import annotations
 
@@ -160,15 +165,36 @@ def sorteer(rules: list[dict], voorrang: list[str] = VOORRANG) -> list[dict]:
     return sorted(rules, key=key)
 
 
-def do_regels(sr: dict, rules: list[dict], today: str, per_dag: int) -> dict:
+# Rule sources, keyed by folder name. Both number their rules N.M, so the id
+# prefix is what keeps them apart: filed as `gram_lp_`, frames 1.1–1.9 would be
+# skipped as "already imported" and 1.10–1.11 would take ids Link+ reserves.
+# Frames enter as "high" whatever their due date — the daily priority pass in
+# fluent_rebuild_queue.py introduces them one a day.
+PROFIELEN = {
+    "regels": {"prefix": "lp", "glob": "thema_*.md", "voorrang": VOORRANG,
+               "a2": A2_REGELS, "categorie": "grammatica_lp_thema{thema}",
+               "recept": "", "critical_op_dag": True, "backup": "grammatica"},
+    "skelet": {"prefix": "sk", "glob": "kaders*.md", "voorrang": [],
+               "a2": None, "categorie": "grammatica_sk_kaders",
+               "recept": " | Рецепт: .claude/skills/nederlands-fluent-sessie/SKELET.md",
+               "critical_op_dag": False, "backup": "grammatica-sk"},
+}
+
+
+def item_id(profiel: dict, rid: str) -> str:
+    return f"gram_{profiel['prefix']}_{rid}"
+
+
+def do_regels(sr: dict, rules: list[dict], today: str, per_dag: int,
+              profiel: dict = PROFIELEN["regels"]) -> dict:
     items = sr.setdefault("items", {})
-    rules = sorteer(rules)
-    nieuw = [r for r in rules if f"gram_lp_{r['id']}" not in items]
+    rules = sorteer(rules, profiel["voorrang"])
+    nieuw = [r for r in rules if item_id(profiel, r["id"]) not in items]
     dagen = werkdagen(date.fromisoformat(today), -(-len(nieuw) // per_dag))
     plan, added = [], 0
     for n, r in enumerate(nieuw):
         due = dagen[n // per_dag].isoformat()
-        iid = f"gram_lp_{r['id']}"
+        iid = item_id(profiel, r["id"])
         inhoud = f"{r['id']} · {r['title']}"
         if r["regel"]:
             inhoud += f" — {r['regel']}"
@@ -176,13 +202,15 @@ def do_regels(sr: dict, rules: list[dict], today: str, per_dag: int) -> dict:
             inhoud += f" | RU: {r['russisch']}"
         if r["valkuil"]:
             inhoud += f" | Частая ошибка: {r['valkuil']}"
+        inhoud += profiel["recept"]
+        a2 = profiel["a2"] is None or r["id"] in profiel["a2"]
         items[iid] = {
             "id": iid,
             "type": "grammar_rule",
             "content": inhoud,
             "answer": " · ".join(r["voorbeelden"]) or r["regel"],
-            "category": f"grammatica_lp_thema{r['thema']}",
-            "difficulty": "A2" if r["id"] in A2_REGELS else "A1",
+            "category": profiel["categorie"].format(thema=r["thema"]),
+            "difficulty": "A2" if a2 else "A1",
             "bron": r["bron"],
             "created_date": today,
             "due_date": due,
@@ -200,7 +228,8 @@ def do_regels(sr: dict, rules: list[dict], today: str, per_dag: int) -> dict:
             # Same reason as the daily sentences: read-db sorts by priority and
             # then cuts each round at SESSION_CAP: a rule below the cut is not
             # served. Only the rules actually due today get "critical".
-            "priority": "critical" if due <= today else "high",
+            "priority": ("critical" if profiel["critical_op_dag"] and due <= today
+                         else "high"),
         }
         plan.append((due, r["id"], r["title"]))
         added += 1
@@ -210,22 +239,27 @@ def do_regels(sr: dict, rules: list[dict], today: str, per_dag: int) -> dict:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--regels", type=Path, required=True,
-                    help="directory with thema_NN_*.md rule extracts")
+                    help="rules folder: grammatica/regels (Link+) or "
+                         "grammatica/skelet (frames)")
     ap.add_argument("--per-dag", type=int, default=2,
                     help="new rules per working day (default: 2)")
     ap.add_argument("--dry-run", action="store_true", help="report, write nothing")
     args = ap.parse_args()
 
-    bestanden = sorted(args.regels.glob("thema_*.md"))
+    profiel = PROFIELEN.get(args.regels.resolve().name)
+    if profiel is None:
+        sys.exit(f"unknown rules folder {args.regels.name!r}: "
+                 f"expected one of {sorted(PROFIELEN)}")
+    bestanden = sorted(args.regels.glob(profiel["glob"]))
     if not bestanden:
-        sys.exit(f"no thema_*.md in {args.regels}")
+        sys.exit(f"no {profiel['glob']} in {args.regels}")
     rules = [r for f in bestanden for r in parse_regels(f)]
     if not rules:
         sys.exit("no rules parsed — check the '### N.M · Title' heading format")
 
     today = date.today().isoformat()
     sr = load()
-    res = do_regels(sr, rules, today, args.per_dag)
+    res = do_regels(sr, rules, today, args.per_dag, profiel)
 
     print(f"файлов: {len(bestanden)}  правил разобрано: {len(rules)}")
     print(f"новых: {res['added']}  уже в базе: {res['skipped']}")
@@ -240,7 +274,7 @@ def main() -> int:
         print("\n--dry-run: ничего не записано")
         return 0
     rebuild_queue(sr, today)
-    backup = save(sr, "grammatica")
+    backup = save(sr, profiel["backup"])
     print(f"\nзаписано. бэкап: {backup}")
     return 0
 
