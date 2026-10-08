@@ -113,31 +113,37 @@ Operational rules:
             exit 2: load/update/save exception — disk untouched
 ```
 
-### read-db.py --review payload (verified live 2026-07-09)
+### read-db.py --review payload (verified live 2026-10-08, Fluent 0.7.1)
 
 ```bash
 python3 $FLUENT_HOOKS/read-db.py --review > /tmp/payload.json
 ```
 
-Live run: exit 0, payload 35 KB. What `--review` does server-side:
+Live run: exit 0, payload 12.5 KB. What `--review` does server-side:
 
-- Sorts `review_queue.today` by priority (critical→high→medium→low), slices to
-  `daily_limits.review_items_per_day` (live value 30; code default 20). Live:
-  today queue 335 → payload queue and `items` = 30.
-- `computed.due_review_items` is NOT trimmed — it listed all 335 due ids. Use
-  `computed.due_reviews_count` for the true backlog,
-  `computed.review_queue_trimmed_to` (30) for the session size.
-- Empties `mastery_db`, `progress_db`, `session_log` in the payload and filters
-  `mistakes_db.error_patterns` to patterns referenced by the capped queue.
+- Builds one round from every item with `due_date <= today` — not from the saved
+  `review_queue.today`, which goes stale between sessions — sorted by priority
+  (critical→high→medium→low), then by the oldest `due_date`, and cut to
+  `SESSION_CAP` (10, `$FLUENT_HOOKS/session_cap.py`). Live: 90 due → payload
+  queue and `items` = 10. `daily_limits.review_items_per_day` (45 in the data)
+  is not read.
+- `computed.due_reviews_count` is NOT trimmed (90) — the true backlog;
+  `computed.session_cap` (10) is the round size.
+- Empties `mastery_db`, `progress_db`, `session_log` in the payload, trims
+  `learner_profile` to name + streak, drops per-item `review_history`, and
+  filters `mistakes_db.error_patterns` to patterns referenced by the round.
   On-disk files are NOT modified.
-- Other `computed` keys: `today`, `next_session_id` (live: session-022),
-  `streak_active`, `days_since_last_session`.
+- `computed` has exactly five keys: `today`, `due_reviews_count`,
+  `next_session_id` (live: session-033), `streak_active`, `session_cap`.
 
 Exit codes: 0 = all 6 files loaded; 1 = some missing (`_warnings` lists them); 2
 = critical error.
 
-**The 30/day cap is enforced ONLY by the plugin skill prompts, not by python.**
-Any session that bypasses `/fluent-review` bypasses the cap.
+**Nothing caps the day.** Python cuts only the `/fluent-review` round; after
+saving, the skill offers another round, which is a fresh session.
+`/fluent-learn`, `/fluent-vocab` and `/fluent-speaking` read the full DB and
+stop at `computed.session_cap` only by prompt, and `update-db.py` accepts any
+number of results.
 
 ### update-db.py payload contract (verified against main(), 628 lines)
 
@@ -176,15 +182,16 @@ import json, pathlib
 sr = json.loads((pathlib.Path.home()
     / ".claude/fluent-data/spaced-repetition.json").read_text())
 print({k: len(v) for k, v in sr["review_queue"].items()})
-print("items:", len(sr["items"]), "| limits:", sr["daily_limits"])
+print("items:", len(sr["items"]))
 print("scheduler:", sr["metadata"].get("scheduler"))
 EOF
 ```
 
 Live 2026-07-09: queue
 `{'today': 335, 'tomorrow': 12, 'this_week': 15, 'later': 46}`, 408 items,
-`review_items_per_day: 30`, scheduler `fsrs-6` (metadata `algorithm` also read
-`FSRS-6` on this date). Real review history lives per-item in
+scheduler `fsrs-6` (metadata `algorithm` also read `FSRS-6` on this date). The
+file still carries `daily_limits`, but nothing reads it since Fluent 0.6.0 — the
+round size is the plugin's `SESSION_CAP`. Real review history lives per-item in
 `items[*].review_history`; the top-level `review_history` list is empty legacy —
 never count from it.
 
@@ -364,10 +371,11 @@ Verified 2026-07-09. One re-check command per drift-prone claim:
 
 - Importer modes/flags: `python3 scripts/fluent_import.py --course link --check`
   and read `scripts/fluent_import.py` `main()`.
-- Queue/limits/scheduler live values: the python3 probe in "Reading the DBs
-  safely" above.
-- `--review` cap and trimming:
-  `python3 $FLUENT_HOOKS/read-db.py --review | python3 -c "import json,sys; d=json.load(sys.stdin); \ print(d['computed']['review_queue_trimmed_to'])"`.
+- Queue/scheduler live values: the python3 probe in "Reading the DBs safely"
+  above.
+- `--review` round size vs backlog — prints cap, served, due (`10 10 90` on
+  2026-10-08):
+  `python3 $FLUENT_HOOKS/read-db.py --review | python3 -c "import json,sys; d=json.load(sys.stdin); c=d['computed']; print(c['session_cap'], len(d['databases']['spaced_repetition']['review_queue']['today']), c['due_reviews_count'])"`.
 - update-db.py contract/exit codes:
   `sed -n '547,628p' $FLUENT_HOOKS/update-db.py`.
 - Backup dir census: `ls ~/.claude/fluent-data/.backups/ | wc -l` and

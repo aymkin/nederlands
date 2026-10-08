@@ -164,16 +164,17 @@ bytes first, find what dominates, cut the dominant term, measure again. Never
 optimize on vibes.
 
 **Worked example — read-db.py `--review` payload** (fork commits 281c2a4,
-13fd374, 18d55c0; CHANGELOG: "Payload for a 369-item queue capped at 30: 444KB →
-43KB (-90.3%)"):
+13fd374, 18d55c0, 69c8da0; CHANGELOG: "Payload for a 369-item queue capped at
+30: 444KB → 43KB (-90.3%)"):
 
-| Step     | Change                                                                                | Measured effect                                  |
-| -------- | ------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| baseline | full 6-DB dump, `indent=2`                                                            | ~444 KB into model context to use 30 records     |
-| 281c2a4  | compact JSON separators                                                               | −35% on every /fluent-\* call, content-identical |
-| 281c2a4  | `--review`: sort by priority, cap at `review_items_per_day`, trim items to capped set | −81.5% vs baseline                               |
-| 13fd374  | empty mastery_db/progress_db/session_log; narrow mistakes_db to referenced patterns   | 82,393 → 43,000 B (−47.8% more; −90.3% total)    |
-| 18d55c0  | drop `due_review_items`, trim learner_profile + per-item review_history               | 35.0 KB → 22.9 KB                                |
+| Step     | Change                                                                                                                               | Measured effect                                                           |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| baseline | full 6-DB dump, `indent=2`                                                                                                           | ~444 KB into model context to use 30 records                              |
+| 281c2a4  | compact JSON separators                                                                                                              | −35% on every /fluent-\* call, content-identical                          |
+| 281c2a4  | `--review`: sort by priority, cap at `review_items_per_day`, trim items to capped set                                                | −81.5% vs baseline                                                        |
+| 13fd374  | empty mastery_db/progress_db/session_log; narrow mistakes_db to referenced patterns                                                  | 82,393 → 43,000 B (−47.8% more; −90.3% total)                             |
+| 18d55c0  | drop `due_review_items`, trim learner_profile + per-item review_history                                                              | 35.0 KB → 22.9 KB                                                         |
+| 69c8da0  | `--review`: one round of live due items (priority, then oldest due) cut to `SESSION_CAP` = 10; `review_items_per_day` no longer read | 48,285 → 12,532 B, 45 → 10 records (2026-10-08 data, 0.5.0 vs 0.7.1 hook) |
 
 Each commit message states the byte counts BEFORE and AFTER — that is the house
 style for perf work. The safety argument for dropping data was also explicit:

@@ -60,11 +60,6 @@ Real output (live data, 2026-07-10, abridged):
   recomputed due<=today from items: 347
   !! queue.today (335) != recomputed due (347) — queue is STALE [...]
 
-[daily_limits] review_items_per_day = 30 (code default is 20 if key
-  missing; cap is PROMPT-enforced only)
-[burn-down] 347 due / 30 per day = 12 review days minimum;
-  plus 27 more coming due within 7 days -> ~13 days
-
 [prefix census]  (voc = vocabulary, gram = grammar cloze)
   error-pattern/other        39  (39 -)
   link_t12_                 157  (57 gram + 100 voc)
@@ -85,6 +80,18 @@ Real output (live data, 2026-07-10, abridged):
 [reviews] 225 per-item reviews recorded
 ```
 
+Between `[queue buckets]` and `[prefix census]` the script prints the session
+cap and a burn-down in `/fluent-review` rounds. Fluent 0.6.0 (2026-10-06)
+replaced the daily cap with `SESSION_CAP`, which the script reads from the
+plugin since 2026-10-08. Live run that day:
+
+```text
+[session cap] SESSION_CAP = 10 (fluent 0.7.1) — one /fluent-review round; nothing caps the day
+  daily_limits.review_items_per_day = 45 is still in the data, unread since Fluent 0.6.0
+[burn-down] 90 due / 10 per round = 9 /fluent-review rounds;
+  plus 2 more coming due within 7 days -> ~10 rounds (optimistic: ignores lapses re-entering the queue)
+```
+
 ### Interpretation
 
 | Signal                         | Green                 | Red / act on it                                                                                                                                                                |
@@ -92,7 +99,7 @@ Real output (live data, 2026-07-10, abridged):
 | `scheduler`                    | `fsrs-6`              | anything else → scheduler regressed; see `nederlands-failure-archaeology`                                                                                                      |
 | `weights`                      | `None`, permanently   | a 21-float list means something revived weight fitting — nothing in the plugin writes this any more (archaeology 12)                                                           |
 | queue.today vs recomputed due  | equal                 | mismatch = queue stale. NORMAL: it is rebuilt only by `fluent_import.py` and `update-db.py`, not nightly. Trust the recomputed number; a session or import refreshes the queue |
-| burn-down days                 | ≤ 3                   | ≥ 10 = structural backlog → `fluent-backlog-campaign`                                                                                                                          |
+| burn-down rounds               | ≤ 9                   | ≥ 30 = structural backlog → `fluent-backlog-campaign` (the same backlog sizes as the old ≤ 3 / ≥ 10 days at 30 a day)                                                          |
 | top-level review_history       | 0                     | non-zero = something wrote the legacy key; stop and investigate before trusting any review counts                                                                              |
 | per-item review_history sum    | growing over sessions | frozen while sessions increase = `update-db.py` payloads lack `review_results` — see `nederlands-debugging-playbook`                                                           |
 | red cards                      | 0                     | any → these block `--advance`; drill them first in the next session                                                                                                            |
@@ -238,24 +245,27 @@ python3 -c "import json,pathlib;d=json.loads((pathlib.Path.home()/'.claude/fluen
 # is the mastery gate mathematically movable this week?
 python3 scripts/fluent_import.py --course link --check --thema 13
 
-# what would the next session actually serve (capped, read-only)?
+# what would the next session actually serve? prints: cap, served, due
 # resolve the plugin root — never a fixed version, old ones stay on disk
 FLUENT=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1)
-python3 "${FLUENT}.claude/hooks/read-db.py" --review | python3 -c "import json,sys;d=json.load(sys.stdin);print(d['computed']['review_queue_trimmed_to'])"
+python3 "${FLUENT}.claude/hooks/read-db.py" --review | python3 -c "import json,sys;d=json.load(sys.stdin);c=d['computed'];print(c['session_cap'],len(d['databases']['spaced_repetition']['review_queue']['today']),c['due_reviews_count'])"
 ```
 
-Trap inside that `--review` payload (verified 2026-07-10): the capped session
-view lives in `computed.review_queue_trimmed_to` (=30) and in
-`databases.spaced_repetition.review_queue.today`; `computed.due_review_items`
-stays UNCAPPED (=347) even in `--review` mode. Top-level output keys are
-`databases` and `computed`, and DB names use underscores (`spaced_repetition`)
-while filenames use hyphens.
+Trap inside that `--review` payload (verified 2026-10-08, Fluent 0.7.1): the
+round lives in `databases.spaced_repetition.review_queue.today` — 10 ids, cut to
+`computed.session_cap` — while `computed.due_reviews_count` stays UNCAPPED (=90)
+even in `--review` mode. `computed` has exactly five keys (`today`,
+`due_reviews_count`, `next_session_id`, `streak_active`, `session_cap`);
+`review_queue_trimmed_to` and `due_review_items` are gone. Top-level output keys
+are `databases` and `computed`, and DB names use underscores
+(`spaced_repetition`) while filenames use hyphens.
 
 ## Provenance and maintenance
 
 Live numbers above are a 2026-07-10 snapshot (408 items, 335/347 due, 225
-reviews, 21 sessions, 7 items at mastery≥3, 3 red cards, cap 30). They age daily
-— rerun `fluent_health.py`, never quote this file's numbers.
+reviews, 21 sessions, 7 items at mastery≥3, 3 red cards); the cap section and
+the `--review` trap are from 2026-10-08 (90 due, round of 10). They age daily —
+rerun `fluent_health.py`, never quote this file's numbers.
 
 Re-verify drift-prone claims:
 
@@ -267,8 +277,9 @@ Re-verify drift-prone claims:
   `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py | grep -n "review_history"`
 - Queue rebuilt only on import/update (staleness message stays true):
   `grep -n "review_queue" "$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1).claude/hooks/update-db.py"`
-- Daily-cap code default still 20:
-  `grep -n "review_items_per_day" "$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1).claude/hooks/read-db.py"`
+- Session cap still 10, `review_items_per_day` still unread (expect
+  `SESSION_CAP = 10`, then `0`):
+  `H="$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1).claude/hooks"; grep -n "SESSION_CAP =" "$H/session_cap.py"; grep -c review_items_per_day "$H/read-db.py"`
 - Anki header formats still match conventions:
   `head -5 link/thema_13/taak_1/woordenlijst_thema13_taak1_anki.txt`
 - Index builder still writes `woordenlijst_index.txt` and still lacks link_plus:

@@ -4,12 +4,14 @@
 Read-only. Stdlib only. Reads:
   ~/.claude/fluent-data/spaced-repetition.json
   ~/.claude/fluent-data/session-log.json
+  SESSION_CAP in the highest cached Fluent plugin's
+    .claude/hooks/session_cap.py (parsed, never imported)
 
 Reports: item count, queue bucket sizes (with staleness check against
 recomputed due dates), per-prefix census (voc/gram split), mastery
 histogram, red cards, the two-review_history-keys trap (top-level legacy
-list vs per-item sum), daily_limits, scheduler metadata, days since last
-session, and a backlog burn-down estimate at the current daily cap.
+list vs per-item sum), the session cap, scheduler metadata, days since
+last session, and a backlog burn-down estimate in /fluent-review rounds.
 
 Usage:
     python3 fluent_health.py [--data-dir DIR]
@@ -17,6 +19,7 @@ Usage:
 Exit code 0 always (it is a dashboard, not a gate).
 """
 import argparse
+import ast
 import collections
 import json
 import math
@@ -34,6 +37,26 @@ def classify(item_id: str):
     if item_id.startswith("vocab_"):
         return "vocab_* (legacy)", "voc"
     return "error-pattern/other", "-"
+
+
+def session_cap():
+    """(SESSION_CAP, plugin version) from the highest cached Fluent plugin.
+
+    Fluent 0.6.0 replaced daily_limits.review_items_per_day with this
+    constant; an older plugin has no session_cap.py and yields (None, ver).
+    """
+    roots = [p for p in Path.home().glob(".claude/plugins/cache/*/fluent/*")
+             if p.is_dir()]
+    if not roots:
+        return None, None
+    root = max(roots, key=lambda p: [int(n) for n in re.findall(r"\d+", p.name)])
+    path = root / ".claude" / "hooks" / "session_cap.py"
+    if path.exists():
+        for node in ast.parse(path.read_text("utf-8")).body:
+            if isinstance(node, ast.Assign) and any(
+                    getattr(t, "id", None) == "SESSION_CAP" for t in node.targets):
+                return ast.literal_eval(node.value), root.name
+    return None, root.name
 
 
 def main():
@@ -81,17 +104,24 @@ def main():
               f"({actually_due}) — queue is STALE (rebuilt only on "
               "import/update, not nightly)")
 
-    # --- daily limits & burn-down ---
-    cap = sr.get("daily_limits", {}).get("review_items_per_day", 20)
-    print(f"\n[daily_limits] review_items_per_day = {cap} "
-          "(code default is 20 if key missing; cap is PROMPT-enforced only)")
-    if cap > 0:
-        base_days = math.ceil(actually_due / cap)
+    # --- session cap & burn-down ---
+    cap, version = session_cap()
+    if cap:
+        print(f"\n[session cap] SESSION_CAP = {cap} (fluent {version}) — one "
+              "/fluent-review round; nothing caps the day")
+    else:
+        where = f"fluent {version}" if version else "no Fluent plugin cached"
+        print(f"\n[session cap] not found ({where}) — no burn-down estimate")
+    unread = sr.get("daily_limits", {}).get("review_items_per_day")
+    if unread is not None:
+        print(f"  daily_limits.review_items_per_day = {unread} is still in "
+              "the data, unread since Fluent 0.6.0")
+    if cap:
         inflow = len(q.get("tomorrow", [])) + len(q.get("this_week", []))
-        print(f"[burn-down] {actually_due} due / {cap} per day = "
-              f"{base_days} review days minimum;")
+        print(f"[burn-down] {actually_due} due / {cap} per round = "
+              f"{math.ceil(actually_due / cap)} /fluent-review rounds;")
         print(f"  plus {inflow} more coming due within 7 days -> "
-              f"~{math.ceil((actually_due + inflow) / cap)} days "
+              f"~{math.ceil((actually_due + inflow) / cap)} rounds "
               "(optimistic: ignores lapses re-entering the queue)")
 
     # --- prefix census ---
