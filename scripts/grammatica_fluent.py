@@ -185,6 +185,57 @@ def item_id(profiel: dict, rid: str) -> str:
     return f"gram_{profiel['prefix']}_{rid}"
 
 
+THEMA_CAT_RE = re.compile(r"thema(\d+)$")
+
+
+def prioriteit(sr: dict, today: str) -> list[tuple[str, str, str]]:
+    """Today's priorities for rule cards, so that read-db serves them.
+
+    read-db.py sorts the due round by priority, then by the oldest due date, and
+    cuts it at the session cap. A rule staged "high" sinks behind every older
+    "high" card: of the 32 Link+ rules staged that way on 2026-09-16, 20 had
+    not been served once by 2026-10-08. And "critical", once set, never expires
+    — update-db.py keeps it. So the priority is recomputed daily, per profile:
+
+    - intro: the first never-reviewed due rule in course order, one a day — a
+      rule first reviewed today counts, so a second session adds none;
+    - retry: the longest-overdue due rule whose last answer failed (≤ 2);
+    - the rest: "high", or "low" once mastered (mastery_level ≥ 3).
+
+    Returns (item id, old priority, new priority) for each change.
+    """
+    items = sr.get("items", {})
+    wijzigingen = []
+    for profiel in PROFIELEN.values():
+        kop = item_id(profiel, "")
+        regels = {iid: it for iid, it in items.items()
+                  if iid.startswith(kop) and it.get("type") == "grammar_rule"}
+        if not regels:
+            continue
+        pseudo = [{"id": iid[len(kop):], "iid": iid,
+                   "thema": (THEMA_CAT_RE.search(it.get("category", "")) or [None, "00"])[1]}
+                  for iid, it in regels.items()]
+        volgorde = [p["iid"] for p in sorteer(pseudo, profiel["voorrang"])]
+        due = [iid for iid in volgorde if regels[iid].get("due_date", "9999-12-31") <= today]
+        al_vandaag = any((it.get("review_history") or [{}])[0].get("date") == today
+                         for it in regels.values())
+        intro = None if al_vandaag else next(
+            (iid for iid in due if regels[iid].get("total_reviews", 0) == 0), None)
+        mislukt = [iid for iid in due if regels[iid].get("total_reviews", 0) > 0
+                   and regels[iid].get("last_quality", 3) <= 2]
+        retry = min(mislukt, key=lambda iid: (regels[iid]["due_date"], volgorde.index(iid)),
+                    default=None)
+        critical = {intro, retry} - {None}
+        for iid in volgorde:
+            it = regels[iid]
+            nieuw = ("critical" if iid in critical
+                     else "low" if it.get("mastery_level", 0) >= 3 else "high")
+            if it.get("priority") != nieuw:
+                wijzigingen.append((iid, it.get("priority"), nieuw))
+                it["priority"] = nieuw
+    return wijzigingen
+
+
 def do_regels(sr: dict, rules: list[dict], today: str, per_dag: int,
               profiel: dict = PROFIELEN["regels"]) -> dict:
     items = sr.setdefault("items", {})

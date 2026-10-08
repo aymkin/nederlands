@@ -104,6 +104,43 @@ def test_missing_file_exits_2():
         assert run(d).returncode == 2
 
 
+def regel(due, reviews=0, quality=3, prio="high", cat="grammatica_sk_kaders"):
+    return {"type": "grammar_rule", "due_date": due, "total_reviews": reviews,
+            "last_quality": quality, "mastery_level": 0, "priority": prio,
+            "category": cat}
+
+
+PRIO_ITEMS = {
+    "gram_sk_1.1": regel(TODAY),
+    "gram_sk_1.2": regel(TODAY),
+    "gram_lp_7.1": regel(TODAY, 3, 4, "critical", "grammatica_lp_thema04"),
+    "grammar_x": {"type": "error_pattern", "due_date": TODAY, "priority": "high"},
+}
+
+
+def test_prioriteit_on_apply():
+    """Одно новое правило дня — critical, вечный critical снят, остальное не тронуто."""
+    with tempfile.TemporaryDirectory() as d:
+        p = setup(d, PRIO_ITEMS)
+        r = run(d, "--apply")
+        assert r.returncode == 0, r.stderr
+        out = json.loads(p.read_text())["items"]
+        assert out["gram_sk_1.1"]["priority"] == "critical"
+        assert out["gram_sk_1.2"]["priority"] == "high"
+        assert out["gram_lp_7.1"]["priority"] == "high"
+        assert out["grammar_x"]["priority"] == "high"
+        assert "приоритеты правил" in r.stdout
+
+
+def test_prioriteit_dry_run_writes_nothing():
+    with tempfile.TemporaryDirectory() as d:
+        p = setup(d, PRIO_ITEMS)
+        before = p.read_text()
+        r = run(d)
+        assert "gram_sk_1.1" in r.stdout and "сухой прогон" in r.stdout
+        assert p.read_text() == before
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items())
            if k.startswith("test_") and callable(v)]
