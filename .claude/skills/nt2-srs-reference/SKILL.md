@@ -130,12 +130,12 @@ vocab lists and Anki cards includes its lidwoord — `het stokbrood`,
 SM-2 (SuperMemo-2, 1987): each card carries `easiness_factor` (EF, start 2.5,
 floor 1.3), `interval_days`, `repetitions`. Quality ≥3 = success: interval goes
 1 → 6 → ceil(interval × EF); quality <3 resets repetitions and interval to 1. EF
-updates by `EF + (0.1 − (5−q)(0.08 + (5−q)·0.02))`. This exact code survives as
-`calculate_sm2()` in update-db.py (defined ~line 149) — retained as a rollback
-path but **never called** as of 2026-07-09 (verify:
-`grep -n calculate_sm2 <cache>/.claude/hooks/*.py` shows only the definition).
-The plugin skill `fluent-sm2-calculator` still describes SM-2 — treat it as
-stale for scheduling math (its quality scale, below, is still right).
+updates by `EF + (0.1 − (5−q)(0.08 + (5−q)·0.02))`. This exact code lived on as
+`calculate_sm2()` in update-db.py, never called after the switch to FSRS, until
+fork `cfaed98` deleted it (2026-07-15): `grep -rn calculate_sm2 <cache>/*.py`
+prints nothing in any release from 0.4.0 to 0.7.2. The plugin skill
+`fluent-sm2-calculator` still describes SM-2 — treat it as stale for scheduling
+math (its quality scale, below, is still right).
 
 ### FSRS-6: the S/D/R model
 
@@ -148,11 +148,11 @@ FSRS models each card with three quantities:
 - **R — retrievability**: predicted recall probability, a function of elapsed
   time t and S.
 
-Implementation: `<cache>/.claude/hooks/fsrs.py` (169 lines, stdlib-only), ported
-from py-fsrs pinned at 6.3.1. `DEFAULT_W` = 21 floats `w[0..20]` (w[0..3] =
-0.212, 1.2931, 2.3065, 8.2956 are the initial stabilities per first rating;
-w[20] = 0.1542 sets the forgetting-curve decay). NEVER hand-edit DEFAULT_W — it
-was extracted programmatically from the pinned package.
+Implementation: `<cache>/fsrs.py` (168 lines, stdlib-only, byte-identical in
+0.4.0–0.7.2), ported from py-fsrs pinned at 6.3.1. `DEFAULT_W` = 21 floats
+`w[0..20]` (w[0..3] = 0.212, 1.2931, 2.3065, 8.2956 are the initial stabilities
+per first rating; w[20] = 0.1542 sets the forgetting-curve decay). NEVER
+hand-edit DEFAULT_W — it was extracted programmatically from the pinned package.
 
 Formula shapes (all verified against fsrs.py 2026-07-09):
 
@@ -191,10 +191,10 @@ carry `quality` (0-5, SM-2-era scale; semantics per the fluent-sm2-calculator
 skill: `quality = floor(score/2)`, score 0-10). Two independent mappings exist —
 they agree, but live in different files:
 
-| Place                  | Mapping (verified 2026-07-09)                                                                               |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------- |
-| update-db.py ~386      | `score = review.get("score", quality*2)`; rating = 1 if score≤4, 2 if ≤6, 3 if ≤8, else 4                   |
-| optimize_weights.py:19 | rating from `quality` ONLY: q<3→1, q=3→2, q=4→3, else 4. Ignores `score` — historical score is unreliably 0 |
+| Place                         | Mapping (verified 2026-07-09)                                                                               |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| update-db.py ~392-393 (0.7.2) | `score = review.get("score", quality*2)`; rating = 1 if score≤4, 2 if ≤6, 3 if ≤8, else 4                   |
+| optimize_weights.py:19        | rating from `quality` ONLY: q<3→1, q=3→2, q=4→3, else 4. Ignores `score` — historical score is unreliably 0 |
 
 In quality terms (default score path): q≤2 → Again, 3 → Hard, 4 → Good, 5 →
 Easy.
@@ -235,7 +235,7 @@ numeric difficulty lives in `fsrs_difficulty`. Overwriting `difficulty` with the
 float was a real bug caught in review (nederlands 350de1a, fork 44fb945). Any
 code touching FSRS difficulty must use `fsrs_difficulty`.
 
-### mastery_level 0-5 state machine (update-db.py ~399-421)
+### mastery_level 0-5 state machine (update-db.py ~405-427, Fluent 0.7.2)
 
 Runs on every `review_results[]` entry, after FSRS scheduling. Counters:
 
@@ -343,8 +343,9 @@ processes must be light and course-anchored (see `nederlands-change-control`).
 
 ## Provenance and maintenance
 
-All facts re-verified 2026-07-09 against disk. `<cache>` below means the Fluent
-runtime hooks dir: the directory
+All facts re-verified 2026-07-09 against disk; line numbers into the plugin
+again on 2026-10-08 against Fluent 0.7.2. `<cache>` in this file means the
+Fluent runtime hooks dir: the directory
 `ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1` prints, plus
 `.claude/hooks/` — never a fixed version, since every release adds a directory
 and the old ones stay on disk.
@@ -353,13 +354,13 @@ and the old ones stay on disk.
 | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | FSRS formulas, DEFAULT_W, TARGET_RETENTION 0.9  | `sed -n '24,75p' <cache>/fsrs.py`                                                                                                                                                             |
 | score→rating thresholds in update-db            | `grep -n 'rating = 1 if' <cache>/update-db.py`                                                                                                                                                |
-| mastery thresholds (5/3 jump, 2/1/q4 increment) | `sed -n '399,421p' <cache>/update-db.py`                                                                                                                                                      |
+| mastery thresholds (5/3 jump, 2/1/q4 increment) | `sed -n '415,420p' <cache>/update-db.py` (Fluent 0.7.2)                                                                                                                                       |
 | seeding formulas (max(interval,0.5), EF map)    | `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/migrate_to_fsrs.py \| sed -n '25,37p'` (retired 2026-08-17)                                                                             |
 | optimizer guards 400/50 + quality-only rating   | `git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py \| sed -n '14,33p'` (retired 2026-09-16)                                                                            |
 | gate 0.80 + red-card rule                       | `grep -n 'MASTERY_THRESHOLD\|red' scripts/fluent_import.py`                                                                                                                                   |
 | live SR counts / queue                          | python probe in Part B above                                                                                                                                                                  |
 | session cap 10; `review_items_per_day` unread   | `H="$(ls -d ~/.claude/plugins/cache/*/fluent/*/ \| sort -V \| tail -1).claude/hooks"; grep -n "SESSION_CAP =" "$H/session_cap.py"; grep -c review_items_per_day "$H/read-db.py"` (expect `0`) |
-| calculate_sm2 still dead code                   | `grep -rn calculate_sm2 <cache>/*.py` (definition only = dead)                                                                                                                                |
+| calculate_sm2 deleted (fork cfaed98)            | `grep -rn calculate_sm2 <cache>/*.py` prints nothing; `git -C ~/Projects/fluent show --stat cfaed98`                                                                                          |
 | link/ thema range, curriculum active unit       | `ls link/`; `python3 -c "import json;c=json.load(open('link/curriculum.json'));print([u['id'] for u in c['units'] if u['status']=='active'])"`                                                |
 | Positie table / inversie wording                | `sed -n '111,126p' link/thema_13/grammatica_thema13_gas_water_elektriciteit.md`                                                                                                               |
 | tier percentages                                | `sed -n '130,140p' daily/roadmap_maart_2026.md`                                                                                                                                               |

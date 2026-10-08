@@ -7,8 +7,8 @@ the error-pattern database never had — "failed 7 times" means nothing without
 "attempted N times", and per-rule items give us N for free.
 
 Rules are staged `--per-dag` per working day (Sunday off, like the frequency
-deck). Fluent needs no configuration for this: read-db.py buckets by due_date
-and caps by daily_limits, so the schedule lives in the data.
+deck). Fluent needs no configuration for this: read-db.py serves items by
+due_date and cuts each round at SESSION_CAP, so the schedule lives in the data.
 
 Only Python 3 stdlib. Reuses the backup/queue helpers of frequentie_fluent.py.
 
@@ -198,7 +198,7 @@ def do_regels(sr: dict, rules: list[dict], today: str, per_dag: int) -> dict:
             "mastery_level": 0,
             "total_reviews": 0,
             # Same reason as the daily sentences: read-db sorts by priority and
-            # then cuts at daily_limits, so a rule below the cut is never
+            # then cuts each round at SESSION_CAP: a rule below the cut is not
             # served. Only the rules actually due today get "critical".
             "priority": "critical" if due <= today else "high",
         }
