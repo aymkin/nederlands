@@ -4,10 +4,10 @@ description: >-
   Use when deciding whether a design change to this repo or the Fluent ecosystem
   is safe — e.g. tempted to make fluent_import.py call update-db.py, to
   hand-edit DEFAULT_W in fsrs.py, to write item.difficulty, to add pip deps to
-  runtime hooks, to bump the plugin version past 0.3.0, to renumber grammar
-  modules, or when hitting "expected exactly 1 active unit", fsrs_difficulty vs
-  difficulty confusion, or asking why the importer "bypasses" the DB updater.
-  Also the index of known-weak points.
+  runtime hooks, to bump the plugin version, to renumber grammar modules, or
+  when hitting "expected exactly 1 active unit", fsrs_difficulty vs difficulty
+  confusion, or asking why the importer "bypasses" the DB updater. Also the
+  index of known-weak points.
 ---
 
 # Architecture contract — nederlands + Fluent
@@ -63,68 +63,54 @@ Corollary: `fsrs.py` is a hand-port of py-fsrs pinned at 6.3.1. `DEFAULT_W` (21
 floats) was extracted programmatically from the pinned package — never hand-edit
 it; the file header gives the extraction command.
 
-## 3. Fork-based plugin distribution — four locations
+## 3. Fork-based plugin distribution — three locations
 
 Fluent is forked `m98/fluent` → `aymkin/fluent`; the **fork is the source of
-truth** for all FSRS code. Upstream `m98/fluent` has no FSRS scheduler. On
-2026-07-11 the marketplace was **repointed from upstream to the fork**
-(`known_marketplaces.json` key `m98` → `source.repo` = `aymkin/fluent`), so the
-daily 09:03 `git pull` now tracks the fork and materializes FSRS instead of
-clobbering it.
+truth** for all FSRS code. Upstream `m98/fluent` has no FSRS scheduler. The fork
+directory is also the marketplace: `known_marketplaces.json` maps `aymkin` to
+`~/Projects/fluent` as a `directory` source, so no clone and no daily pull sit
+between the fork and the runtime.
 
-| Location                                       | Role                     | Authoritative for           |
-| ---------------------------------------------- | ------------------------ | --------------------------- |
-| `~/Projects/fluent`                            | dev clone of the fork    | new code, commits           |
-| `~/.claude/plugins/marketplaces/aymkin/`       | marketplace clone (fork) | what the daily pull updates |
-| `~/.claude/plugins/cache/aymkin/fluent/0.4.0/` | **the runtime**          | what actually executes      |
-| `~/.claude/fluent-data/`                       | data dir (6 JSONs)       | learner state               |
+| Location                                           | Role               | Authoritative for           |
+| -------------------------------------------------- | ------------------ | --------------------------- |
+| `~/Projects/fluent`                                | fork + marketplace | new code, commits, releases |
+| `~/.claude/plugins/cache/aymkin/fluent/<version>/` | **the runtime**    | what actually executes      |
+| `~/.claude/fluent-data/`                           | data dir (6 JSONs) | learner state               |
 
-**The topology has a deliberate quirk — verify it, never assume** (repointed and
-verified 2026-07-11):
+**Verify the topology, never assume it** (verified 2026-10-08):
 
-- The marketplace clone's `origin` is now the **fork `aymkin/fluent`** (HEAD
-  `4205bf1`), not upstream; its `.claude/hooks/` now carries `fsrs.py`,
-  `migrate_to_fsrs.py`, and `optimize_weights.py`. Before the 2026-07-11 repoint
-  it tracked upstream `m98/fluent` (HEAD `86fb80f`) with no FSRS hooks, so a
-  cache rebuild from it would silently revert the scheduler to SM-2 — that
-  danger is now **resolved at the source**. Config backup:
-  `~/.claude/known_marketplaces.json.pre-fork-20260711-222851`.
-- The marketplace key was renamed `m98` → `aymkin` when the fork became its own
-  marketplace (2026-07-15, fluent `3c1c6b0`). That moved the clone path, the
-  cache path (`cache/aymkin/fluent/0.4.0`) and the plugin id (`fluent@aymkin`) —
-  and broke the optimizer plist, which named the old one (archaeology 12).
-- The dev clone (`~/Projects/fluent`, origin = `aymkin/fluent`, upstream =
-  `m98/fluent`, HEAD `4205bf1`) is unchanged; it and the **cache** both contain
-  the FSRS hooks.
-- Claude Code executes hooks from the CACHE. Editing a clone changes nothing
-  until synced to the cache.
-- **Remaining open point (no longer dangerous):** `read-db.py` was synced
-  fork→cache on 2026-07-11 (review payload 40,953→27,581 B; per-item
-  `review_history` no longer shipped to the prompt). The only remaining
-  cache↔fork drift is `migrate_to_fsrs.py` — a one-time migration script, dead
-  in normal ops. The fork→cache sync is still a manual, undocumented copy, but
-  both sides carry FSRS, so a rebuild materializes FSRS rather than wiping it.
-  After any hook edit, run the `diff -rq` below and reconcile.
-- **New tradeoff:** upstream `m98` updates are no longer auto-tracked. Merge
-  upstream fixes into the fork by hand —
+- Claude Code executes hooks from the CACHE. A fork commit reaches it only
+  through a release — version bump, release commit,
+  `claude plugin update fluent@aymkin`, restart; the steps are in
+  `nederlands-change-control` (Fluent change flow). An edit made in the cache is
+  lost at the next release.
+- History: on 2026-07-11 the marketplace was repointed from upstream to the
+  fork, which ended the risk that a rebuild reverts the scheduler to SM-2; on
+  2026-07-15 its key was renamed `m98` → `aymkin` (fluent `3c1c6b0`), which
+  moved the cache path and the plugin id (`fluent@aymkin`) and broke the
+  optimizer plist (archaeology 12). The marketplace clone both steps acted on no
+  longer exists.
+- **Tradeoff:** upstream `m98` updates are not auto-tracked. Merge upstream
+  fixes into the fork by hand —
   `git -C ~/Projects/fluent fetch upstream && git merge upstream/main` — then
-  push.
+  release.
 
 Verify live before trusting any of the above:
 
 ```bash
-git -C ~/.claude/plugins/marketplaces/aymkin remote -v      # origin = aymkin/fluent (repointed 2026-07-11)
-git -C ~/Projects/fluent log -1 --format=%h              # fork dev clone
-git -C ~/.claude/plugins/marketplaces/aymkin log -1 --format=%h
-ls ~/.claude/plugins/marketplaces/aymkin/.claude/hooks/fsrs.py   # clone now HAS FSRS
-diff -rq ~/Projects/fluent/.claude/hooks \
-  ~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks
-# expected: only migrate_to_fsrs.py differs (dead one-time script); read-db.py + fsrs.py match (synced 2026-07-11)
+jq '.aymkin.source' ~/.claude/plugins/known_marketplaces.json  # directory: ~/Projects/fluent
+jq -r '.plugins["fluent@aymkin"][0].gitCommitSha' ~/.claude/plugins/installed_plugins.json
+git -C ~/Projects/fluent rev-parse HEAD  # same sha = the fork is released
+FLUENT=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1)
+diff -rq -x __pycache__ ~/Projects/fluent/.claude/hooks "${FLUENT}.claude/hooks"
+# expected: no output
 ```
 
-A version bump changes the cache path, so nothing outside the repo may name it.
-The one thing that did — the optimizer plist — broke silently and stayed broken
-for nine weeks (archaeology 12). Resolve the path instead:
+A version bump changes the cache path, so nothing may name it — skill text
+included. Old version directories stay on disk, so a named path keeps running
+stale code without an error: the optimizer plist broke silently for nine weeks
+(archaeology 12), and on 2026-10-08 22 skill lines still pointed at `0.4.0`.
+Resolve the path instead:
 `ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1`.
 
 ## 4. item_id idempotency schemes (and their asymmetry)
@@ -249,27 +235,19 @@ kills story reading; everything else is offline.
 
 ## Known-weak points (open, verified 2026-07-09)
 
-1. The SM-2-reversion danger is **resolved** (2026-07-11 marketplace repoint to
-   the fork — §3): the marketplace clone now carries the FSRS hooks. Remaining:
-   after the 2026-07-11 `read-db.py` sync the only cache↔fork drift is
-   `migrate_to_fsrs.py` (a dead one-time script; `read-db.py` + `fsrs.py` now
-   match), and the fork→cache sync is still manual/undocumented — no longer
-   dangerous (both sides carry FSRS), but reconcile with the §3 `diff -rq` after
-   any hook edit.
-2. Optimizer plist hardcodes cache version `0.3.0` — breaks on version bump.
-3. Daily review cap is prompt-enforced only (§7).
-4. `build_vocab_index.py` has no `link_plus` support (choices are
+1. Daily review cap is prompt-enforced only (§7).
+2. `build_vocab_index.py` has no `link_plus` support (choices are
    `link|de_opmaat|both`); `link_plus/woordenlijst_index.txt` is a stale
    pre-rename snapshot.
-5. CLAUDE.md drift: calls the abandoned maart*2026 plan "active"; claims `link/`
+3. CLAUDE.md drift: calls the abandoned maart*2026 plan "active"; claims `link/`
    task dirs are `{N}*{task*name}`— disk reality is plain`taak_N`(verified`ls
    link/thema_8`); understates `.prettierignore`(it also ignores`\*\*/verhaal*_.md`, `_\_reader.html`).
-6. `scripts/README.md` says "21 passed" for the importer tests; running
+4. `scripts/README.md` says "21 passed" for the importer tests; running
    `python3 scripts/test_fluent_import.py` gives **25 passed** (verified
    2026-07-09). The README is stale — do not delete tests to match it.
-7. `package.json` name is `de_opmaat` with a stale description — don't trust its
+5. `package.json` name is `de_opmaat` with a stale description — don't trust its
    repository URLs.
-8. Plugin skill `fluent-sm2-calculator` still documents SM-2 while the runtime
+6. Plugin skill `fluent-sm2-calculator` still documents SM-2 while the runtime
    scheduler is FSRS-6 (live since 2026-07-04) — it is partially stale; trust
    `fsrs.py` and `metadata.scheduler`.
 
@@ -279,7 +257,7 @@ Verified 2026-07-09 against disk and live data. Re-verify before relying on:
 
 - Importer writes only SR / skips existing ids: read `scripts/fluent_import.py`
   (`write_sr`, `add_items`, `rebuild_queue`).
-- Clone/cache/marketplace heads: §3 commands.
+- Fork/cache release state: §3 commands.
 - Pages deploy scope: read `.github/workflows/pages.yml` (`path: .`).
 - Test count: `python3 scripts/test_fluent_import.py` (tempdir-isolated, safe).
 - The rest:
@@ -299,11 +277,9 @@ print(d["metadata"].get("scheduler"), d["metadata"].get("weights"),
       {k: len(v) for k, v in d["review_queue"].items()})
 EOF
 
-CACHE=~/.claude/plugins/cache/aymkin/fluent/0.4.0/.claude/hooks
+CACHE=$(ls -d ~/.claude/plugins/cache/*/fluent/*/ | sort -V | tail -1).claude/hooks
 git -C ~/Projects/fluent show 09618f3^:.claude/hooks/optimize_weights.py \
   | grep -n "MIN_TOTAL\|MIN_NEW"   # optimizer guards (script retired)
 grep -n "fsrs_difficulty" "$CACHE/update-db.py"             # field mapping
-grep -n "0.3.0\|Weekday" \
-  ~/Library/LaunchAgents/com.aymkin.fluent-fsrs-optimize.plist  # hardcode
 grep -n jsdelivr read.html                                  # the CDN dep
 ```

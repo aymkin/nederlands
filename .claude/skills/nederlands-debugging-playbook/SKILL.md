@@ -338,10 +338,9 @@ Contract (verified in `$CACHE/.claude/hooks/update-db.py`, 2026-07-09):
 
 - **Root cause:** Claude Code executes hooks from the CACHE
   (`~/.claude/plugins/cache/aymkin/fluent/<version>/.claude/hooks/`), not from
-  the dev clone (`~/Projects/fluent`) or the marketplace clone
-  (`~/.claude/plugins/marketplaces/aymkin`). Editing a clone changes nothing at
-  runtime until synced to the cache. The clone→cache sync procedure is
-  UNDOCUMENTED (known weak point) — verify state, don't assume.
+  the fork (`~/Projects/fluent`, which is also the marketplace). A fork edit
+  changes nothing at runtime until a release copies it into the cache; a release
+  without a restart looks the same, because the update applies only after one.
 - **Discriminating experiment:** diff the file you edited against the runtime
   copy:
 
@@ -350,15 +349,15 @@ Contract (verified in `$CACHE/.claude/hooks/update-db.py`, 2026-07-09):
       "$CACHE/.claude/hooks/update-db.py"
   ```
 
-  As of 2026-07-09 `update-db.py` DIFFERED between the marketplace clone and the
-  cache — direction unverified; verify live before copying either way, and check
-  clone sync too:
-  `git -C ~/Projects/fluent fetch && git -C ~/Projects/fluent status` vs
-  `git -C ~/.claude/plugins/marketplaces/aymkin log -1`.
+  A difference means the edit is not released yet. Then compare the installed
+  commit with the fork's:
+  `jq -r '.plugins["fluent@aymkin"][0].gitCommitSha' ~/.claude/plugins/installed_plugins.json`
+  vs `git -C ~/Projects/fluent rev-parse HEAD`.
 
-- **Fix:** land the change in the fork (`aymkin/fluent`) first, then sync to
-  cache; raw cache edits get silently clobbered by plugin updates. Route via
-  `nederlands-change-control`.
+- **Fix:** release from the fork — version bump, release commit,
+  `claude plugin update fluent@aymkin --scope user`, restart
+  (`nederlands-change-control`, Fluent change flow). A raw cache edit is
+  overwritten by the next release.
 
 ## Provenance and maintenance
 

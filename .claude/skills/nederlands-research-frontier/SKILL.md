@@ -102,9 +102,9 @@ not a quality check.
 
    With the optimizer retired there is no Sunday run to inspect after the fact,
    which removes the manual route and leaves the better one: build the held-out
-   gate **into** any restored optimizer before scheduling it at all. That still
-   touches the plugin clone→cache→push chain, a documented weak point
-   (`nederlands-architecture-contract`), so it goes through change control.
+   gate **into** any restored optimizer before scheduling it at all. That is a
+   plugin change, so it ships as a fork commit plus a release and goes through
+   `nederlands-change-control`.
 
 3. **Document adopt/reject as a dated experiment.** Pre-register the prediction
    ("fitted will/will not beat DEFAULT_W held-out log-loss") before the guard
