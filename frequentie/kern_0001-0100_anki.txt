@@ -21,7 +21,7 @@ verliezen	285	We hebben weer verloren!	проигрывать; терять	Мы
 de orde	342	Alles is in orde.	порядок	Всё в порядке.	[sound:freq_orde_6bfcf2.mp3]	frequentie::kern::0001-0100
 de minuut	304	Wacht een minuut.	минута	Подожди минуту.	[sound:freq_minuut_3f7f7d.mp3]	frequentie::kern::0001-0100
 de kans	299	Je krijgt nog een kans.	шанс, возможность	Ты получишь ещё один шанс.	[sound:freq_kans_94f320.mp3]	frequentie::kern::0001-0100
-slaan	356	Je mag niemand slaan.	бить, ударять	Нельзя никого бить.	[sound:freq_slaan_b643e1.mp3]	frequentie::kern::0001-0100
+slaan	356	Je mag niemand slaan.	бить, ударять	Тебе нельзя никого бить.	[sound:freq_slaan_b643e1.mp3]	frequentie::kern::0001-0100
 soms	296	Soms werk ik thuis.	иногда	Иногда я работаю дома.	[sound:freq_soms_96b0c1.mp3]	frequentie::kern::0001-0100
 vallen	198	Kijk uit, je gaat vallen!	падать	Осторожно, ты упадёшь!	[sound:freq_vallen_bc803c.mp3]	frequentie::kern::0001-0100
 vertrouwen	657	Ik vertrouw je.	доверять	Я тебе доверяю.	[sound:freq_vertrouwen_7d3df6.mp3]	frequentie::kern::0001-0100

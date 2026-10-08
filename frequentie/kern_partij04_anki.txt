@@ -19,12 +19,12 @@ de carrière	1434	Haar carrière gaat snel omhoog.	карьера	Её карь�
 de kust	1435	Hun huis staat vlak bij de kust.	побережье, берег (моря)	Их дом стоит прямо у побережья.	[sound:freq_kust_cbc481.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de behandeling	1440	Haar behandeling in het ziekenhuis duurt zes weken.	лечение; обращение (с кем-то)	Её лечение в больнице длится шесть недель.	[sound:freq_behandeling_a593df.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de kwestie	1473	Het is een kwestie van tijd: jullie baby slaapt straks vast beter.	вопрос, дело (дело в)	Это вопрос времени: ваш малыш скоро наверняка будет спать лучше.	[sound:freq_kwestie_2b23a2.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
-de huid	1490	Mijn huid wordt rood in de zon.	кожа	На солнце моя кожа краснеет.	[sound:freq_huid_834f32.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
+de huid	1490	Mijn huid wordt rood in de zon.	кожа	Моя кожа краснеет на солнце.	[sound:freq_huid_834f32.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de overwinning	1514	Gefeliciteerd met jullie overwinning!	победа	Поздравляю с вашей победой!	[sound:freq_overwinning_7f4a25.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de echtgenoot	1468	Mevrouw, komt uw echtgenoot ook?	супруг, муж (офиц.)	Госпожа, ваш муж тоже придёт?	[sound:freq_echtgenoot_d76131.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de behoefte	1593	Onze klanten hebben behoefte aan meer informatie.	потребность (нуждаться в)	Нашим клиентам нужно больше информации.	[sound:freq_behoefte_fc9328.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
 de wens	1279	Wat is jouw grootste wens voor dit jaar?	желание, пожелание	Какое твоё самое большое желание на этот год?	[sound:freq_wens_88f824.mp3]	frequentie::kern::partij04 frequentie::kern::dag11
-het verzoek	1319	Ik heb een verzoek aan u: wilt u hier niet roken?	просьба, запрос (офиц.)	У меня к вам просьба: не курите здесь, пожалуйста.	[sound:freq_verzoek_b4e7fe.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
+het verzoek	1319	Ik heb een verzoek aan u: wilt u hier niet roken?	просьба, запрос (офиц.)	У меня к вам просьба: не могли бы вы здесь не курить?	[sound:freq_verzoek_b4e7fe.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
 het voedsel	1322	Ons voedsel komt vaak van heel ver.	пища, продукты питания	Наша еда часто приезжает очень издалека.	[sound:freq_voedsel_e03fb0.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
 het veld	1157	Het veld is vandaag gesloten, we spelen binnen.	поле	Поле сегодня закрыто, играем в зале.	[sound:freq_veld_e60034.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
 het bestuur	1621	Ons bestuur beslist dat pas in maart.	правление, руководство	Наше правление решит это только в марте.	[sound:freq_bestuur_93201c.mp3]	frequentie::kern::partij04 frequentie::kern::dag12
@@ -59,12 +59,12 @@ vertalen	1441	Kun je deze brief van de gemeente even vertalen?	переводи�
 duwen	1465	Kun jij even duwen? De auto is stuk.	толкать	Можешь подтолкнуть? Машина сломалась.	[sound:freq_duwen_4eda2f.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 onthouden	1464	Kun jij de code onthouden? Hij is 4815.	запоминать, помнить	Можешь запомнить код? Он 4815.	[sound:freq_onthouden_f78ea9.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 oefenen	1503	Morgen ga ik de woorden nog een keer oefenen.	упражняться, тренировать	Завтра я ещё раз потренирую слова.	[sound:freq_oefenen_8c258f.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
-duiken	1526	In Egypte kun je prachtig duiken.	нырять	В Египте можно чудесно нырять.	[sound:freq_duiken_492307.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
+duiken	1526	In Egypte kun je prachtig duiken.	нырять	В Египте ты можешь чудесно нырять.	[sound:freq_duiken_492307.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 delen	533	Je moet leren delen.	делить(ся)	Тебе нужно научиться делиться.	[sound:freq_delen_f82629.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
-opzoeken	1580	Ik ga dat woord even opzoeken.	посмотреть (в словаре, в интернете); навестить	Сейчас посмотрю это слово.	[sound:freq_opzoeken_9c7fd7.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
+opzoeken	1580	Ik ga dat woord even opzoeken.	посмотреть (в словаре, в интернете); навестить	Я сейчас посмотрю это слово.	[sound:freq_opzoeken_9c7fd7.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 ruiken	1185	Kun je het ruiken? De koffie is bijna klaar!	чувствовать запах; пахнуть	Чувствуешь запах? Кофе почти готов!	[sound:freq_ruiken_b8e444.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
 verzorgen	1612	Wie gaat de kat verzorgen als we op vakantie zijn?	ухаживать, заботиться	Кто будет ухаживать за кошкой, пока мы в отпуске?	[sound:freq_verzorgen_c65821.mp3]	frequentie::kern::partij04 frequentie::kern::dag13
-waarderen	1248	Dat moet je waarderen, hoor!	ценить, оценивать	Это надо ценить!	[sound:freq_waarderen_b26b97.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
+waarderen	1248	Dat moet je waarderen, hoor!	ценить, оценивать	Это тебе надо ценить!	[sound:freq_waarderen_b26b97.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 creëren	1250	We willen meer ruimte voor kinderen creëren.	создавать	Мы хотим создать больше места для детей.	[sound:freq_creëren_049683.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 overkomen	1291	Ik wil aardig overkomen bij de nieuwe klant.	производить впечатление; случаться (с кем-то)	Я хочу произвести на нового клиента приятное впечатление.	[sound:freq_overkomen_1eb37a.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 vormen	768	Jullie moeten groepen van drie vormen.	образовывать, формировать	Вам нужно разбиться на группы по трое.	[sound:freq_vormen_7788e2.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
@@ -81,7 +81,7 @@ voorzien	1513	We moeten alle kamers van nieuwe ramen voorzien.	снабжать 
 beweren	1546	Wil je echt beweren dat jij altijd op tijd bent?	утверждать	Ты правда хочешь утверждать, что ты всегда вовремя?	[sound:freq_beweren_3dc966.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 verdragen	4142	Ik moet dat lawaai de hele dag verdragen.	терпеть, переносить	Мне приходится терпеть этот шум весь день.	[sound:freq_verdragen_d584e1.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 aangeven	1572	Je moet je nieuwe adres bij de gemeente aangeven.	заявлять, сообщать (офиц.)	Ты должен сообщить новый адрес в гемеенте.	[sound:freq_aangeven_2a467e.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
-handelen	1596	Bij brand moet je snel handelen.	действовать; торговать	При пожаре нужно действовать быстро.	[sound:freq_handelen_2b52e6.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
+handelen	1596	Bij brand moet je snel handelen.	действовать; торговать	При пожаре тебе нужно действовать быстро.	[sound:freq_handelen_2b52e6.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 verzekeren	1616	Je moet je auto echt goed verzekeren.	страховать; уверять	Тебе правда нужно хорошо застраховать машину.	[sound:freq_verzekeren_4e512f.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 verhogen	1626	De eigenaar wil de prijs in januari verhogen.	повышать	Владелец хочет повысить цену в январе.	[sound:freq_verhogen_be1cc7.mp3]	frequentie::kern::partij04 frequentie::kern::dag14
 voormalig	1242	Mijn voormalige collega werkt nu niet meer in Hilversum.	бывший	Мой бывший коллега больше не работает в Хилверсюме.	[sound:freq_voormalig_15d46f.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
@@ -92,7 +92,7 @@ financieel	1303	Financieel is het dit jaar niet makkelijk.	финансовый;
 technisch	1314	We hebben een technisch probleem.	технический; разбирающийся в технике	У нас техническая проблема.	[sound:freq_technisch_81a95c.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 de vis	914	Ik eet geen vis, ik vind het niet lekker.	рыба	Я не ем рыбу, мне она не нравится.	[sound:freq_vis_198021.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 volwassen	893	Doe niet zo dom, je bent toch volwassen!	взрослый	Не глупи, ты же взрослый!	[sound:freq_volwassen_33d51e.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
-wellicht	1381	Wellicht kunt u het later nog eens proberen.	возможно, пожалуй (офиц.)	Возможно, вам стоит попробовать ещё раз позже.	[sound:freq_wellicht_8cb263.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
+wellicht	1381	Wellicht kunt u het later nog eens proberen.	возможно, пожалуй (офиц.)	Возможно, вы сможете попробовать ещё раз позже.	[sound:freq_wellicht_8cb263.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 uitstekend	1390	Het eten was niet duur, maar wel uitstekend.	отличный, превосходный	Еда была недорогой, но отличной.	[sound:freq_uitstekend_caadc6.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 het wonder	1395	Geen wonder dat je moe bent, je werkt te veel!	чудо (geen wonder — неудивительно)	Неудивительно, что ты устал: ты слишком много работаешь!	[sound:freq_wonder_8c6402.mp3]	frequentie::kern::partij04 frequentie::kern::dag15
 momenteel	1399	Ik ben momenteel niet op kantoor.	в данный момент, сейчас	Я сейчас не в офисе.	[sound:freq_momenteel_fce402.mp3]	frequentie::kern::partij04 frequentie::kern::dag15

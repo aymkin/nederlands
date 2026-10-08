@@ -6,11 +6,11 @@
 #tags column:7
 het lichaam	390	Water is goed voor je lichaam.	тело	Вода полезна для тела.	[sound:freq_lichaam_4afb6b.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 de stem	492	Ik hoor je stem niet goed.	голос	Я плохо слышу твой голос.	[sound:freq_stem_894df1.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
-het aantal	382	Het aantal auto's in de stad wordt steeds groter.	количество	Количество машин в городе всё растёт.	[sound:freq_aantal_c08101.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
+het aantal	382	Het aantal auto's in de stad wordt steeds groter.	количество	Количество машин в городе становится больше.	[sound:freq_aantal_c08101.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 het geval	381	In dat geval bel ik je morgen.	случай	В таком случае я позвоню тебе завтра.	[sound:freq_geval_85cd70.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 de vorm	624	Zo'n vorm heb ik nog nooit gezien.	форма	Такой формы я ещё никогда не видел.	[sound:freq_vorm_d9eb69.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 het gebied	451	Hij werkt op dit gebied.	область, сфера	Он работает в этой области.	[sound:freq_gebied_00a889.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
-het beeld	512	Ik hoor je wel, maar ik krijg geen beeld.	изображение, образ	Я тебя слышу, но изображения нет.	[sound:freq_beeld_5eae92.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
+het beeld	512	Ik hoor je wel, maar ik krijg geen beeld.	изображение, образ	Я тебя слышу, но у меня нет изображения.	[sound:freq_beeld_5eae92.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 de dienst	503	Ik heb morgen dienst.	служба, смена	У меня завтра смена.	[sound:freq_dienst_4d70be.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 het feit	506	Dat is een bekend feit.	факт	Это известный факт.	[sound:freq_feit_b7cd49.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
 de rust	578	Na het werk zoek ik rust.	покой, отдых	После работы я ищу покоя.	[sound:freq_rust_c29c67.mp3]	frequentie::kern::partij02 frequentie::kern::dag01
@@ -80,7 +80,7 @@ verwijderen	808	Mag ik deze foto verwijderen?	удалять	Можно мне �
 behandelen	717	We behandelen uw vraag binnen een week.	обрабатывать; лечить	Мы обработаем ваш запрос в течение недели.	[sound:freq_behandelen_5eadaa.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
 verklaren	748	Hij wil niets verklaren.	объяснять, заявлять	Он ничего не хочет объяснять.	[sound:freq_verklaren_87bdda.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
 besluiten	613	We willen morgen besluiten.	решать	Мы хотим решить завтра.	[sound:freq_besluiten_e93f4d.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
-bezorgen	1307	Ze bezorgen het eten binnen een half uur.	доставлять	Еду доставят в течение получаса.	[sound:freq_bezorgen_a971ab.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
+bezorgen	1307	Ze bezorgen het eten binnen een half uur.	доставлять	Они доставят еду в течение получаса.	[sound:freq_bezorgen_a971ab.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
 verbergen	774	Ik wil niets verbergen.	прятать, скрывать	Я ничего не хочу скрывать.	[sound:freq_verbergen_099192.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
 groeien	764	Het bedrijf wil snel groeien.	расти	Компания хочет быстро расти.	[sound:freq_groeien_2df3f4.mp3]	frequentie::kern::partij02 frequentie::kern::dag04
 springen	761	Mag ik in het water springen?	прыгать	Можно мне прыгнуть в воду?	[sound:freq_springen_ce720f.mp3]	frequentie::kern::partij02 frequentie::kern::dag04

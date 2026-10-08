@@ -5,7 +5,7 @@
 #columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
 #tags column:7
 het verlofuur	8	Op dit moment heb je 61,75 verlofuren over.	час отпуска (учёт отпуска в часах)	Сейчас у тебя осталось 61,75 часа отпуска.	[sound:werk_verlofuur.mp3]	frequentie::werk frequentie::werk::dag2026-09-29
-de opmerking	3	Heb je vragen of opmerkingen, neem dan gerust contact op.	замечание, комментарий	Если есть вопросы или замечания, смело обращайся.	[sound:werk_opmerking.mp3]	frequentie::werk frequentie::werk::dag2026-09-29
+de opmerking	3	Heb je vragen of opmerkingen, neem dan gerust contact op.	замечание, комментарий	Если у тебя есть вопросы или замечания, смело обращайся.	[sound:werk_opmerking.mp3]	frequentie::werk frequentie::werk::dag2026-09-29
 openstaan	3	Je hebt nog ritten of transacties openstaan.	быть незакрытым, висеть (о счёте, задаче)	У тебя ещё есть незакрытые поездки или транзакции.	[sound:werk_openstaan.mp3]	frequentie::werk frequentie::werk::dag2026-09-29
 het overzicht	3	In het onderstaande overzicht zie je de actuele status.	сводка, обзор	В сводке ниже ты видишь актуальный статус.	[sound:werk_overzicht.mp3]	frequentie::werk frequentie::werk::dag2026-09-29
-vooraf	2	Je mag je vragen ook vooraf stellen.	заранее, предварительно	Вопросы можно задать и заранее.	[sound:werk_vooraf.mp3]	frequentie::werk frequentie::werk::dag2026-09-29
+vooraf	2	Je mag je vragen ook vooraf stellen.	заранее, предварительно	Ты можешь также задать вопросы заранее.	[sound:werk_vooraf.mp3]	frequentie::werk frequentie::werk::dag2026-09-29

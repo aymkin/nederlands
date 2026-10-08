@@ -29,7 +29,7 @@ we	22	We zijn er!	мы	Мы пришли!	[sound:freq_we_af1a92.mp3]	frequentie:
 die	23	Die wil ik!	тот/та/те; который	Вон тот хочу!	[sound:freq_die_771e93.mp3]	frequentie::kern::partij05
 kunnen	24	Kan ik iets doen?	мочь; уметь	Я могу что-нибудь сделать?	[sound:freq_kunnen_2911bb.mp3]	frequentie::kern::partij05
 er	25	Er is nog tijd.	имеется (вводное «есть»)	Время ещё есть.	[sound:freq_er_92b02e.mp3]	frequentie::kern::partij05
-gaan	26	Ik ga even kijken.	идти	Пойду посмотрю.	[sound:freq_gaan_fb5ec7.mp3]	frequentie::kern::partij05
+gaan	26	Ik ga even kijken.	идти	Я пойду посмотрю.	[sound:freq_gaan_fb5ec7.mp3]	frequentie::kern::partij05
 als	27	Als je wilt, kom ik.	если; когда (в будущем)	Если хочешь, я приду.	[sound:freq_als_df95a3.mp3]	frequentie::kern::partij05
 om	28	Ik kom om je te helpen.	чтобы; в (о часе)	Я пришёл, чтобы тебе помочь.	[sound:freq_om_5f711e.mp3]	frequentie::kern::partij05
 aan	29	Geef het maar aan mij.	кому-то (отдать, сказать)	Отдай это мне.	[sound:freq_aan_7d0e77.mp3]	frequentie::kern::partij05
@@ -41,7 +41,7 @@ dit	34	Dit is mijn huis!	вот это	Вот мой дом!	[sound:freq_dit_b95
 naar	35	Ik ga naar Sanne.	к (куда)	Я иду к Санне.	[sound:freq_naar_0d3d7b.mp3]	frequentie::kern::partij05
 mijn	36	Dat is mijn kind!	мой	Это мой ребёнок!	[sound:freq_mijn_7bc5bc.mp3]	frequentie::kern::partij05
 willen	37	Ik wil alles!	хотеть	Я хочу всё!	[sound:freq_willen_0e984e.mp3]	frequentie::kern::partij05
-moeten	38	Ik moet nu gaan.	должен; надо	Я должен уже идти.	[sound:freq_moeten_0fdbe6.mp3]	frequentie::kern::partij05
+moeten	38	Ik moet nu gaan.	должен; надо	Я должен сейчас идти.	[sound:freq_moeten_0fdbe6.mp3]	frequentie::kern::partij05
 goed	39	Het gaat goed met me.	хорошо; хороший	У меня всё хорошо.	[sound:freq_goed_9fcd3b.mp3]	frequentie::kern::partij05
 veel	40	Hij werkt veel.	много	Он много работает.	[sound:freq_veel_83c220.mp3]	frequentie::kern::partij05
 me	41	Hij ziet me niet.	меня; мне	Он меня не видит.	[sound:freq_me_53b768.mp3]	frequentie::kern::partij05
@@ -72,7 +72,7 @@ jij	65	En jij?	«ты» с ударением	А ты?	[sound:freq_jij_3583c3.mp
 hoe	66	Hoe gaat het?	как? (вопрос)	Как дела?	[sound:freq_hoe_2c152d.mp3]	frequentie::kern::partij05
 laten	67	Laat me even kijken.	позволять; оставлять	Дай-ка мне посмотреть.	[sound:freq_laten_5ff59b.mp3]	frequentie::kern::partij05
 vinden	68	Ik kan het niet vinden!	находить; считать (по-моему)	Я не могу это найти!	[sound:freq_vinden_4be23b.mp3]	frequentie::kern::partij05
-denken	69	Ik denk het niet.	думать	Не думаю.	[sound:freq_denken_008c0e.mp3]	frequentie::kern::partij05
+denken	69	Ik denk het niet.	думать	Я так не думаю.	[sound:freq_denken_008c0e.mp3]	frequentie::kern::partij05
 hem	70	Zeg het maar tegen hem.	ему; его	Скажи ему.	[sound:freq_hem_740131.mp3]	frequentie::kern::partij05
 zijn²	71	Zijn vrouw werkt in Utrecht.	его (чей?)	Его жена работает в Утрехте.	[sound:freq_zijn-2_21a24e.mp3]	frequentie::kern::partij05
 al	72	Ben je er al?	уже	Ты уже на месте?	[sound:freq_al_5685bb.mp3]	frequentie::kern::partij05
@@ -115,7 +115,7 @@ alles	108	Alles goed?	всё	Всё хорошо?	[sound:freq_alles_7e2209.mp3]	
 twee	109	Hij komt over twee dagen.	два	Он придёт через два дня.	[sound:freq_twee_9a3942.mp3]	frequentie::kern::partij05
 weer	110	Het gaat weer goed met me.	снова	У меня снова всё хорошо.	[sound:freq_weer_f3009d.mp3]	frequentie::kern::partij05
 te²	111	Dat is te veel!	слишком	Это слишком много!	[sound:freq_te-2_dfec86.mp3]	frequentie::kern::partij05
-mogen	112	Mag ik?	можно (разрешено)	Можно?	[sound:freq_mogen_18bc2b.mp3]	frequentie::kern::partij05
+mogen	112	Mag ik?	можно (разрешено)	Можно мне?	[sound:freq_mogen_18bc2b.mp3]	frequentie::kern::partij05
 horen	113	Hoor je me?	слышать	Ты меня слышишь?	[sound:freq_horen_e9d839.mp3]	frequentie::kern::partij05
 toen	114	Toen was ik nog een kind.	тогда (в прошлом); когда (в прошлом)	Тогда я был ещё ребёнком.	[sound:freq_toen_49f0dc.mp3]	frequentie::kern::partij05
 zich	115	Hij heeft niets bij zich.	себе; себя	У него ничего нет при себе.	[sound:freq_zich_4c5020.mp3]	frequentie::kern::partij05
