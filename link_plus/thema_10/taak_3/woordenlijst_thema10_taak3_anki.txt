@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 10::taak_3
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+toen	108	Toen woonden we nog in Oekraïne.	тогда (в прошлом), когда	Тогда мы ещё жили в Украине.	[sound:linkplus_t10_toen.mp3]	link::thema10::taak3::A2
+de weg	111	Weet jij eigenlijk de weg naar het station?	дорога	Ты вообще знаешь дорогу до вокзала?	[sound:linkplus_t10_weg.mp3]	link::thema10::taak3::A2
+hopen	196	Ik hoop dat het morgen mooi weer is.	надеяться	Я надеюсь, что завтра будет хорошая погода.	[sound:linkplus_t10_hopen.mp3]	link::thema10::taak3::A2
+hard	350	De muziek van de buren is te hard.	громко; быстро (о езде)	Музыка соседей слишком громкая.	[sound:linkplus_t10_hard.mp3]	link::thema10::taak3::A2
+vorig	433	Vorige week was ik echt ziek.	прошлый	На прошлой неделе я правда болела.	[sound:linkplus_t10_vorig.mp3]	link::thema10::taak3::A2
+het einde	455	Het einde van de film was best mooi.	конец	Конец фильма был довольно красивый.	[sound:linkplus_t10_einde.mp3]	link::thema10::taak3::A2
+de actie	623	Wij organiseren een actie in de buurt.	кампания, акция (протеста)	Мы организуем кампанию в районе.	[sound:linkplus_t10_actie.mp3]	link::thema10::taak3::A2
+de kilometer	832	Mijn werk is maar 3 kilometer van huis.	километр	Моя работа всего в 3 километрах от дома.	[sound:linkplus_t10_kilometer.mp3]	link::thema10::taak3::A2
+kapot	928	De lift in onze flat is kapot.	сломанный	Лифт в нашем доме сломан.	[sound:linkplus_t10_kapot.mp3]	link::thema10::taak3::A2
+de radio	932	In de auto luister ik naar de radio.	радио	В машине я слушаю радио.	[sound:linkplus_t10_radio.mp3]	link::thema10::taak3::A2
+langzaam	1030	Rijd hier even langzaam, er spelen kinderen.	медленно	Езжай здесь медленно, тут играют дети.	[sound:linkplus_t10_langzaam.mp3]	link::thema10::taak3::A2
+zwanger	1031	Mijn zus is zwanger, ik ben zo blij!	беременная	Моя сестра беременна, я так рада!	[sound:linkplus_t10_zwanger.mp3]	link::thema10::taak3::A2
+de snelheid	1565	Let wel op de snelheid bij de school!	скорость	Следи за скоростью у школы!	[sound:linkplus_t10_snelheid.mp3]	link::thema10::taak3::A2
+de wijk	1568	Wij wonen in een rustige wijk.	микрорайон	Мы живём в спокойном микрорайоне.	[sound:linkplus_t10_wijk.mp3]	link::thema10::taak3::A2
+repareren	2137	Mijn buurman kan gewoon alles repareren.	чинить, ремонтировать	Мой сосед может просто всё починить.	[sound:linkplus_t10_repareren.mp3]	link::thema10::taak3::A2
+de handtekening	2373	Hier graag uw handtekening.	подпись	Здесь, пожалуйста, Вашу подпись.	[sound:linkplus_t10_handtekening.mp3]	link::thema10::taak3::A2
+de overkant	3464	Mijn vriendin woont gewoon aan de overkant.	противоположная сторона	Моя подруга просто живёт на противоположной стороне.	[sound:linkplus_t10_overkant.mp3]	link::thema10::taak3::A2
+neerzetten	3573	Zet je tas maar even hier neer.	поставить, опустить	Поставь свою сумку вот сюда.	[sound:linkplus_t10_neerzetten.mp3]	link::thema10::taak3::A2
+de verlichting	4031	In onze straat is de verlichting slecht.	освещение	На нашей улице плохое освещение.	[sound:linkplus_t10_verlichting.mp3]	link::thema10::taak3::A2
+de basisschool	4632	Mijn zoon zit op de basisschool.	начальная школа	Мой сын ходит в начальную школу.	[sound:linkplus_t10_basisschool.mp3]	link::thema10::taak3::A2
+het kruispunt	6639	Bij dit kruispunt gebeuren echt veel ongelukken.	перекрёсток	На этом перекрёстке происходит правда много аварий.	[sound:linkplus_t10_kruispunt.mp3]	link::thema10::taak3::A2
+oversteken	7259	Ik steek de straat over naar de bakker.	переходить (улицу)	Я перехожу улицу к булочной.	[sound:linkplus_t10_oversteken.mp3]	link::thema10::taak3::A2
+een heleboel	8000+	Ik heb nog een heleboel werk, hoor.	куча, очень много	У меня ещё куча работы.	[sound:linkplus_t10_een_heleboel.mp3]	link::thema10::taak3::A2

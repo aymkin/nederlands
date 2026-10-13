@@ -1,0 +1,32 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 10::taak_1
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+de politie	248	Bel snel de politie, alsjeblieft!	полиция	Звони скорее в полицию, пожалуйста!	[sound:linkplus_t10_politie.mp3]	link::thema10::taak1::A2
+veranderen	256	Mijn leven is echt veranderd.	меняться, изменить	Моя жизнь правда изменилась.	[sound:linkplus_t10_veranderen.mp3]	link::thema10::taak1::A2
+veilig	362	Is deze buurt wel veilig voor kinderen?	безопасный	Этот район вообще безопасный для детей?	[sound:linkplus_t10_veilig.mp3]	link::thema10::taak1::A2
+dezelfde	400	We wonen in dezelfde straat.	тот же самый	Мы живём на той же самой улице.	[sound:linkplus_t10_dezelfde.mp3]	link::thema10::taak1::A2
+de regel	502	In Nederland zijn de regels best streng.	правило	В Нидерландах правила довольно строгие.	[sound:linkplus_t10_regel.mp3]	link::thema10::taak1::A2
+beloven	545	Ik beloof het, ik bel je morgen.	обещать	Я обещаю, я позвоню тебе завтра.	[sound:linkplus_t10_beloven.mp3]	link::thema10::taak1::A2
+de baas	611	Mijn baas is vandaag erg boos.	начальник	Мой начальник сегодня очень сердитый.	[sound:linkplus_t10_baas.mp3]	link::thema10::taak1::A2
+gevaarlijk	671	Fietsen in het donker is gevaarlijk.	опасный	Ездить на велосипеде в темноте опасно.	[sound:linkplus_t10_gevaarlijk.mp3]	link::thema10::taak1::A2
+onderweg	826	Ik ben al onderweg naar huis.	в пути, по дороге	Я уже в пути домой.	[sound:linkplus_t10_onderweg.mp3]	link::thema10::taak1::A2
+de agent	985	Vraag die agent even om hulp.	полицейский	Попроси того полицейского о помощи.	[sound:linkplus_t10_agent.mp3]	link::thema10::taak1::A2
+tegenwoordig	1022	Tegenwoordig betaal je bijna overal met pin.	в наше время, теперь	В наше время ты почти везде платишь картой.	[sound:linkplus_t10_tegenwoordig.mp3]	link::thema10::taak1::A2
+belachelijk	1087	Die prijs vind ik echt belachelijk.	смехотворный, нелепый	Эту цену я считаю просто смехотворной.	[sound:linkplus_t10_belachelijk.mp3]	link::thema10::taak1::A2
+de haast	1372	Geen haast hoor, we hebben tijd genoeg.	спешка	Без спешки, у нас достаточно времени.	[sound:linkplus_t10_haast.mp3]	link::thema10::taak1::A2
+de uitzondering	2303	Vandaag maak ik wel een uitzondering.	исключение	Сегодня я всё-таки сделаю исключение.	[sound:linkplus_t10_uitzondering.mp3]	link::thema10::taak1::A2
+de helm	3226	Draag je eigenlijk een helm op de fiets?	шлем	Ты вообще-то носишь шлем на велосипеде?	[sound:linkplus_t10_helm.mp3]	link::thema10::taak1::A2
+aanrijden	4797	Een auto heeft me bijna aangereden!	наехать, сбить (машиной)	Машина чуть не наехала на меня!	[sound:linkplus_t10_aanrijden.mp3]	link::thema10::taak1::A2
+de stoep	4933	Fiets toch niet op de stoep!	тротуар	Не езди же на велосипеде по тротуару!	[sound:linkplus_t10_stoep.mp3]	link::thema10::taak1::A2
+onveilig	6421	Die oude trap is echt onveilig.	небезопасный	Эта старая лестница правда небезопасная.	[sound:linkplus_t10_onveilig.mp3]	link::thema10::taak1::A2
+uitkijken	6708	Kijk uit voor de hond van de buren!	быть осторожным	Будь осторожна с собакой соседей!	[sound:linkplus_t10_uitkijken.mp3]	link::thema10::taak1::A2
+de boete	7567	Ik heb een boete voor parkeren gekregen.	штраф	Я получила штраф за парковку.	[sound:linkplus_t10_boete.mp3]	link::thema10::taak1::A2
+de fietser	8000+	Die fietser rijdt gewoon door rood!	велосипедист	Тот велосипедист просто едет на красный!	[sound:linkplus_t10_fietser.mp3]	link::thema10::taak1::A2
+de voetganger	8000+	Stop, er loopt een voetganger!	пешеход	Стоп, там идёт пешеход!	[sound:linkplus_t10_voetganger.mp3]	link::thema10::taak1::A2
+het fietspad	8000+	Op het fietspad mag je niet lopen.	велодорожка	По велодорожке тебе нельзя ходить.	[sound:linkplus_t10_fietspad.mp3]	link::thema10::taak1::A2
+het identiteitsbewijs	8000+	Mag ik uw identiteitsbewijs even zien?	удостоверение личности	Можно мне посмотреть Ваше удостоверение личности?	[sound:linkplus_t10_identiteitsbewijs.mp3]	link::thema10::taak1::A2
+het stoplicht	8000+	Wacht even, het stoplicht is rood.	светофор	Подожди, светофор красный.	[sound:linkplus_t10_stoplicht.mp3]	link::thema10::taak1::A2
+het zebrapad	8000+	De kinderen lopen over het zebrapad.	пешеходный переход	Дети идут по пешеходному переходу.	[sound:linkplus_t10_zebrapad.mp3]	link::thema10::taak1::A2

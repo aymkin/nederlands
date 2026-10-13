@@ -1,0 +1,32 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 10::taak_2
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+de hand	180	Ik heb echt pijn in mijn hand.	кисть руки, рука	У меня правда болит кисть руки.	[sound:linkplus_t10_hand.mp3]	link::thema10::taak2::A2
+vallen	244	Mijn dochter is van de trap gevallen.	падать, упасть	Моя дочь упала с лестницы.	[sound:linkplus_t10_vallen.mp3]	link::thema10::taak2::A2
+fout	394	Er ging iets fout met de wasmachine.	не так, с ошибкой	Что-то пошло не так со стиральной машиной.	[sound:linkplus_t10_fout.mp3]	link::thema10::taak2::A2
+de arm	457	Ze houdt het kind op haar arm.	рука	Она держит ребёнка на руке.	[sound:linkplus_t10_arm.mp3]	link::thema10::taak2::A2
+breken	517	Bij het voetbal heeft hij zijn knie gebroken.	сломать, разбить	На футболе он сломал колено.	[sound:linkplus_t10_breken.mp3]	link::thema10::taak2::A2
+overlijden	543	Haar vader is in januari overleden.	умереть, скончаться	Её отец умер в январе.	[sound:linkplus_t10_overlijden.mp3]	link::thema10::taak2::A2
+de brand	637	Help, er is brand in de keuken!	пожар	Помогите, на кухне пожар!	[sound:linkplus_t10_brand.mp3]	link::thema10::taak2::A2
+voorkomen	649	Zo voorkom je problemen.	предотвратить, не допустить	Так ты предотвратишь проблемы.	[sound:linkplus_t10_voorkomen.mp3]	link::thema10::taak2::A2
+het been	681	Na het sporten zijn mijn benen moe.	нога	После спорта у меня устали ноги.	[sound:linkplus_t10_been.mp3]	link::thema10::taak2::A2
+gewond	855	Bij het ongeluk is één man gewond.	раненый	При аварии один мужчина ранен.	[sound:linkplus_t10_gewond.mp3]	link::thema10::taak2::A2
+verbranden	1262	Pas wel op dat je je niet verbrandt!	обжечься, сгореть	Смотри, не обожгись!	[sound:linkplus_t10_verbranden.mp3]	link::thema10::taak2::A2
+weggaan	1274	Ik ga nu weg, tot morgen!	уходить, уйти	Я сейчас ухожу, до завтра!	[sound:linkplus_t10_weggaan.mp3]	link::thema10::taak2::A2
+het mes	1287	Pak even een mes voor het brood.	нож	Возьми-ка нож для хлеба.	[sound:linkplus_t10_mes.mp3]	link::thema10::taak2::A2
+dagelijks	1336	Ik fiets gewoon dagelijks naar mijn werk.	ежедневно, ежедневный	Я просто ежедневно езжу на велосипеде на работу.	[sound:linkplus_t10_dagelijks.mp3]	link::thema10::taak2::A2
+snijden	1356	Kun je de groente even snijden?	резать, порезать	Ты можешь порезать овощи?	[sound:linkplus_t10_snijden.mp3]	link::thema10::taak2::A2
+douchen	1483	Ik douche meestal 's ochtends.	принимать душ	Я обычно принимаю душ утром.	[sound:linkplus_t10_douchen.mp3]	link::thema10::taak2::A2
+ondertussen	1515	Ga maar zitten, ondertussen maak ik thee.	тем временем	Садись, тем временем я сделаю чай.	[sound:linkplus_t10_ondertussen.mp3]	link::thema10::taak2::A2
+de oorzaak	1700	Weet jij de oorzaak van de file?	причина случившегося	Ты знаешь причину пробки?	[sound:linkplus_t10_oorzaak.mp3]	link::thema10::taak2::A2
+de televisie	1882	's Avonds kijken we best vaak televisie.	телевизор	По вечерам мы довольно часто смотрим телевизор.	[sound:linkplus_t10_televisie.mp3]	link::thema10::taak2::A2
+schrikken	1931	Ik schrok echt van het lawaai buiten.	пугаться, испугаться	Я правда испугалась шума на улице.	[sound:linkplus_t10_schrikken.mp3]	link::thema10::taak2::A2
+heet	2217	De koffie is nog veel te heet, hoor.	горячий	Кофе ещё слишком горячий.	[sound:linkplus_t10_heet.mp3]	link::thema10::taak2::A2
+de pan	2789	Er zit nog lekker soep in de pan.	кастрюля, сковородка	В кастрюле ещё есть вкусный суп.	[sound:linkplus_t10_pan.mp3]	link::thema10::taak2::A2
+uitzetten	2799	Zet je het licht even uit?	выключить	Ты выключишь свет?	[sound:linkplus_t10_uitzetten.mp3]	link::thema10::taak2::A2
+onhandig	5947	Nou, ik ben vandaag zo onhandig!	неуклюжий, неудобный	Ну, я сегодня такая неуклюжая!	[sound:linkplus_t10_onhandig.mp3]	link::thema10::taak2::A2
+het fornuis	8000+	Het fornuis in onze keuken is al oud.	кухонная плита	Плита на нашей кухне уже старая.	[sound:linkplus_t10_fornuis.mp3]	link::thema10::taak2::A2
+het schoonmaakmiddel	8000+	Zet het schoonmaakmiddel hoog in de kast.	чистящее средство	Поставь чистящее средство высоко в шкаф.	[sound:linkplus_t10_schoonmaakmiddel.mp3]	link::thema10::taak2::A2

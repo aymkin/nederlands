@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 10::taak_4
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+het team	367	Ik werk eigenlijk in een klein team.	команда	Я вообще-то работаю в маленькой команде.	[sound:linkplus_t10_team.mp3]	link::thema10::taak4::A2
+vertrouwen	384	Ik vertrouw mijn buren helemaal.	доверять	Я доверяю своим соседям полностью.	[sound:linkplus_t10_vertrouwen.mp3]	link::thema10::taak4::A2
+daarna	408	Eerst lekker koffie, daarna gaan we werken.	после этого, потом	Сначала кофе, после этого пойдём работать.	[sound:linkplus_t10_daarna.mp3]	link::thema10::taak4::A2
+de deur	410	Doe de deur even dicht, het is koud.	дверь	Закрой дверь, холодно.	[sound:linkplus_t10_deur.mp3]	link::thema10::taak4::A2
+meteen	445	Ik bel je meteen terug, hoor.	сразу же, немедленно	Я сразу же тебе перезвоню.	[sound:linkplus_t10_meteen.mp3]	link::thema10::taak4::A2
+vreemd	516	Doe nooit open voor een vreemde man.	чужой, незнакомый	Никогда не открывай чужому мужчине.	[sound:linkplus_t10_vreemd.mp3]	link::thema10::taak4::A2
+stelen	580	Nou, iemand heeft mijn telefoon gestolen!	красть, украсть	Ну вот, кто-то украл мой телефон!	[sound:linkplus_t10_stelen.mp3]	link::thema10::taak4::A2
+melden	662	Je kunt dit bij de politie melden.	сообщить (о чём-то), заявить	Ты можешь сообщить об этом в полицию.	[sound:linkplus_t10_melden.mp3]	link::thema10::taak4::A2
+het slot	888	Mijn fiets staat gewoon altijd op slot.	замок	Мой велосипед просто всегда на замке.	[sound:linkplus_t10_slot.mp3]	link::thema10::taak4::A2
+waarschuwen	915	Waarschuw me wel als je later komt.	предупредить	Предупреди меня, если ты придёшь позже.	[sound:linkplus_t10_waarschuwen.mp3]	link::thema10::taak4::A2
+de veiligheid	945	Veiligheid in de wijk is best belangrijk.	безопасность	Безопасность в микрорайоне довольно важна.	[sound:linkplus_t10_veiligheid.mp3]	link::thema10::taak4::A2
+de pagina	1148	Vul op pagina 2 je adres in.	страница	Впиши на странице 2 свой адрес.	[sound:linkplus_t10_pagina.mp3]	link::thema10::taak4::A2
+het geweld	1203	Geweld is gewoon nooit normaal.	насилие	Насилие — это просто никогда не нормально.	[sound:linkplus_t10_geweld.mp3]	link::thema10::taak4::A2
+de getuige	1264	De politie zoekt een getuige van het ongeluk.	свидетель	Полиция ищет свидетеля аварии.	[sound:linkplus_t10_getuige.mp3]	link::thema10::taak4::A2
+de ambulance	1963	De ambulance komt over 5 minuten.	скорая помощь	Скорая помощь приедет через 5 минут.	[sound:linkplus_t10_ambulance.mp3]	link::thema10::taak4::A2
+de melding	2346	Ik wil graag een melding doen.	заявление (о происшествии)	Я хотела бы подать заявление.	[sound:linkplus_t10_melding.mp3]	link::thema10::taak4::A2
+de brandweer	3736	Gelukkig was de brandweer er heel snel.	пожарные, пожарная служба	К счастью, пожарные были там очень быстро.	[sound:linkplus_t10_brandweer.mp3]	link::thema10::taak4::A2
+de dief	4072	De dief heeft mijn tas gepakt.	вор	Вор схватил мою сумку.	[sound:linkplus_t10_dief.mp3]	link::thema10::taak4::A2
+het noodgeval	4097	Bel alleen 112 bij een noodgeval.	чрезвычайная ситуация	Звони на 112 только при чрезвычайной ситуации.	[sound:linkplus_t10_noodgeval.mp3]	link::thema10::taak4::A2
+de inbreker	5454	Een inbreker kwam via het raam binnen.	взломщик	Взломщик вошёл через окно.	[sound:linkplus_t10_inbreker.mp3]	link::thema10::taak4::A2
+de jongere	8000+	Voor jongeren is er een nieuw buurtcentrum.	подросток, молодой человек	Для подростков есть новый районный центр.	[sound:linkplus_t10_jongere.mp3]	link::thema10::taak4::A2
+het alarmnummer	8000+	Weet jij het alarmnummer in Nederland?	номер экстренного вызова	Ты знаешь номер экстренного вызова в Нидерландах?	[sound:linkplus_t10_alarmnummer.mp3]	link::thema10::taak4::A2
+het politiebureau	8000+	Waar is het politiebureau hier in de buurt?	полицейский участок	Где здесь поблизости полицейский участок?	[sound:linkplus_t10_politiebureau.mp3]	link::thema10::taak4::A2
+om ... heen	8000+	We lopen even om het park heen.	вокруг	Мы пройдёмся вокруг парка.	[sound:linkplus_t10_om_heen.mp3]	link::thema10::taak4::A2

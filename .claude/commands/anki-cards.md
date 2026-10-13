@@ -84,6 +84,14 @@ decks are built by `private/link_plus/bouw_kaarten.py` (`lint` → `tsv` → `au
 `tsv` gates a 5-column projection instead. Thema 1–7 stay NL → RU
 `LINK Vocabulary` — do not migrate them.
 
+Examples follow Alex's Kern rules (since 2026-10-13): at most 8 words, and
+**i+1** — besides the target, only words Yulia already has: her index for
+earlier themas, earlier taken of this thema, the 150 most frequent words and
+closed-class words. Rule 5 below does not apply here, and words from later taken
+of the same thema stay out. `tsv` checks it (`i+1: x/y примеров чисто`); a flag
+on a form of the target itself (`gesneden`) is the checker missing a strong
+participle — rewrite the example rather than the gate.
+
 Tags, as they exist on disk rather than as the directory names suggest:
 
 | Course       | Tag                               |
@@ -124,7 +132,8 @@ actually says. A formal example fits only when the word itself is formal
    block being learned today
 5. **Natural expansion**: let context carry frequent words missing from the
    lists but obvious from known ones (kapot, vies, de lift, geverfd, `het werk`
-   from `werken`, `een kop thee`). Sparingly — one per example at most.
+   from `werken`, `een kop thee`). Sparingly — one per example at most. Not for
+   `link_plus/` from thema 8 on: there the example is i+1 (above).
 6. **Unique situations**: each card gets its own scenario and its own sentence
    pattern
 7. **Translation: literal while it sounds Russian.** Before writing a Russian
