@@ -1,0 +1,12 @@
+#separator:tab
+#html:true
+#notetype:Frequentie NL
+#deck:Frequentie::Reading
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+helaas		Helaas kan ik je niet van het station halen.	к сожалению	К сожалению, я не смогу забрать тебя с вокзала.	[sound:reading_helaas.mp3]	frequentie::reading frequentie::reading::sanne-mail
+meestal		Ik koop meestal een stukje oude kaas.	обычно	Обычно я покупаю кусочек выдержанного сыра.	[sound:reading_meestal.mp3]	frequentie::reading frequentie::reading::sanne-mail
+verkopen		Daar verkopen ze verse kaas.	продавать	Там продают свежий сыр.	[sound:reading_verkopen.mp3]	frequentie::reading frequentie::reading::sanne-mail
+de boterham		Eet dus eerst een boterham.	бутерброд	Так что сначала съешь бутерброд.	[sound:reading_boterham.mp3]	frequentie::reading frequentie::reading::sanne-mail
+het zaad		Ik koop een brood met zaden.	семечко, семя	Я куплю хлеб с семечками.	[sound:reading_zaad.mp3]	frequentie::reading frequentie::reading::sanne-mail
+laat maar weten		Laat maar weten als je liever met de bus komt.	дай знать, скажи	Дай знать, если тебе удобнее на автобусе.	[sound:reading_laat_maar_weten.mp3]	frequentie::reading frequentie::reading::sanne-mail
