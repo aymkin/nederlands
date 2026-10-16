@@ -22,7 +22,6 @@ Stdlib; `--audio` требует edge-tts, `--anki` — запущенный Ank
 """
 
 import argparse
-import asyncio
 import datetime as dt
 import json
 import sys
@@ -178,14 +177,11 @@ def cmd_markeer(args) -> int:
     return 0
 
 
-async def synth(items: list[tuple[str, Path]]) -> None:
+async def synth(text: str, path: Path) -> None:
     import edge_tts
     from text_to_speech import DEFAULT_RATE, VOICES
 
-    for text, path in items:
-        await edge_tts.Communicate(text, VOICES["colette"], rate=DEFAULT_RATE).save(
-            str(path)
-        )
+    await edge_tts.Communicate(text, VOICES["colette"], rate=DEFAULT_RATE).save(str(path))
 
 
 def cmd_kaarten(args) -> int:
@@ -216,7 +212,8 @@ def cmd_kaarten(args) -> int:
     print(f"✅ {len(rows)} карточек → {out.relative_to(ROOT)}")
 
     if args.audio:
-        from anki_utils import find_anki_media_folder, validate_anki_media
+        from anki_utils import (AudioFout, find_anki_media_folder, mp3_naar_media,
+                                validate_anki_media)
 
         media = validate_anki_media(find_anki_media_folder())
         if media is None:
@@ -226,7 +223,15 @@ def cmd_kaarten(args) -> int:
             (k["zin"], media / f"werk_{kaal(k['lemma']).replace(' ', '_')}.mp3")
             for k in kaarten
         ]
-        asyncio.run(synth(items))
+        try:
+            mp3_naar_media(items, synth)
+        except AudioFout as e:
+            print(
+                f"❌ аудио не создано, media не тронута, импорт не начат:\n   {e}\n"
+                f"   повтор: python3 scripts/werk_woorden.py kaarten {args.file} --audio"
+                + (" --anki" if args.anki else "")
+            )
+            return 1
         print(f"🔊 {len(items)} mp3 → {media}")
 
     if args.anki:

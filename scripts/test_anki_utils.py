@@ -519,6 +519,166 @@ def test_media_alleen_iuliia():
     assert "есть: iuliia" in out.getvalue()
 
 
+OUD = b"ID3 werkend mp3 " * 1400          # ~22 КБ, как настоящий werk_*.mp3
+NIEUW = b"ID3 nieuw mp3 " * 1000          # ~14 КБ
+
+
+@contextmanager
+def vervang(mod, **nieuw):
+    echt = {k: getattr(mod, k) for k in nieuw}
+    for k, v in nieuw.items():
+        setattr(mod, k, v)
+    try:
+        yield
+    finally:
+        for k, v in echt.items():
+            setattr(mod, k, v)
+
+
+@contextmanager
+def media_met(bestaand):
+    with tempfile.TemporaryDirectory() as d:
+        media = Path(d) / "collection.media"
+        media.mkdir()
+        for naam, inhoud in bestaand.items():
+            (media / naam).write_bytes(inhoud)
+        yield media
+
+
+def inhoud(media):
+    return {p.name: p.read_bytes() for p in media.iterdir()}
+
+
+async def edge_403(text, path):
+    """Как edge-tts 7.2.7 2026-10-16: save() открывает файл, потом 403."""
+    path.write_bytes(b"")
+    raise RuntimeError("403, message='Invalid response status'")
+
+
+async def spreekt_goed(text, path):
+    path.write_bytes(NIEUW)
+
+
+def test_mp3_synthese_faalt_media_heel():
+    """2026-10-16: 403 при синтезе оставил пустой werk_stemmen.mp3 поверх рабочего."""
+    with media_met({"werk_stemmen.mp3": OUD}) as media:
+        try:
+            au.mp3_naar_media([("Stemmen kan tot 21 uur.", media / "werk_stemmen.mp3")],
+                              edge_403)
+            assert False, "expected AudioFout"
+        except au.AudioFout as e:
+            assert "werk_stemmen.mp3" in str(e) and "403" in str(e)
+        assert inhoud(media) == {"werk_stemmen.mp3": OUD}
+
+
+def test_mp3_tweede_faalt_eerste_blijft():
+    """Партия целиком: упал второй — первый, уже озвученный, в media не попал."""
+    async def tweede_faalt(text, path):
+        await (edge_403 if text == "b" else spreekt_goed)(text, path)
+
+    with media_met({"werk_a.mp3": OUD}) as media, vervang(au, duur=lambda p: 2.0):
+        try:
+            au.mp3_naar_media([("a", media / "werk_a.mp3"), ("b", media / "werk_b.mp3")],
+                              tweede_faalt)
+            assert False, "expected AudioFout"
+        except au.AudioFout as e:
+            assert str(e).startswith("werk_b.mp3: синтез упал")
+        assert inhoud(media) == {"werk_a.mp3": OUD}
+
+
+def test_mp3_te_klein():
+    async def stomp(text, path):
+        path.write_bytes(b"ID3" * 30)
+
+    with media_met({"werk_x.mp3": OUD}) as media:
+        try:
+            au.mp3_naar_media([("x", media / "werk_x.mp3")], stomp)
+            assert False, "expected AudioFout"
+        except au.AudioFout as e:
+            assert str(e) == "werk_x.mp3: 90 байт — нужно больше 5120"
+        assert inhoud(media) == {"werk_x.mp3": OUD}
+
+
+def test_mp3_niets_geschreven():
+    """spreek вернулся без ошибки, а файла нет — брак, не FileNotFoundError."""
+    async def stil(text, path):
+        pass
+
+    with media_met({}) as media:
+        try:
+            au.mp3_naar_media([("x", media / "werk_x.mp3")], stil)
+            assert False, "expected AudioFout"
+        except au.AudioFout as e:
+            assert "0 байт" in str(e)
+        assert inhoud(media) == {}
+
+
+def test_mp3_te_kort():
+    with media_met({"werk_x.mp3": OUD}) as media, vervang(au, duur=lambda p: 0.4):
+        try:
+            au.mp3_naar_media([("x", media / "werk_x.mp3")], spreekt_goed)
+            assert False, "expected AudioFout"
+        except au.AudioFout as e:
+            assert "0.40 с" in str(e)
+        assert inhoud(media) == {"werk_x.mp3": OUD}
+
+
+def test_mp3_goed_vervangt_zonder_resten():
+    with media_met({"werk_x.mp3": OUD}) as media, vervang(au, duur=lambda p: 2.0):
+        au.mp3_naar_media([("x", media / "werk_x.mp3"), ("y", media / "werk_y.mp3")],
+                          spreekt_goed)
+        assert inhoud(media) == {"werk_x.mp3": NIEUW, "werk_y.mp3": NIEUW}
+
+
+def test_duur_ffprobe():
+    """Настоящий ffprobe: 2 с тишины — около 2.0, мусор — 0.0. Без ffmpeg — пропуск."""
+    if not (au.shutil.which("ffmpeg") and au.shutil.which("ffprobe")):
+        print("    (нет ffmpeg/ffprobe — test_duur_ffprobe пропущен)")
+        return
+    with tempfile.TemporaryDirectory() as d:
+        stil, rommel = Path(d) / "stil.mp3", Path(d) / "rommel.mp3"
+        au.subprocess.run(["ffmpeg", "-v", "error", "-f", "lavfi", "-i",
+                           "anullsrc=r=24000:cl=mono", "-t", "2", "-b:a", "48k", str(stil)],
+                          check=True)
+        rommel.write_bytes(NIEUW)
+        assert 1.9 < au.duur(stil) < 2.1
+        assert au.duur(rommel) == 0.0
+        assert au.keur_mp3(rommel).endswith("нужно длиннее 1 с")
+
+
+def test_werk_kaarten_audio_faalt():
+    """kaarten --audio --anki при 403: код 1, сообщение, media как была, импорта нет."""
+    import argparse
+    import json
+
+    import werk_woorden as ww
+
+    def import_tsv(path):
+        raise AssertionError("импорт после упавшего аудио")
+
+    with tempfile.TemporaryDirectory() as d, media_met({"werk_stemmen.mp3": OUD}) as media:
+        root = Path(d)
+        (root / "werk").mkdir()
+        index = root / "werk" / "lemmas.json"
+        index.write_text(json.dumps({"laatste_run": None, "verwerkt": [], "lemmas": {
+            "stemmen": {"count": 3, "vormen": [], "zinnen": [], "status": "nieuw"}}}),
+            encoding="utf-8")
+        kaarten = root / "kaarten.json"
+        kaarten.write_text(json.dumps([{
+            "lemma": "stemmen", "word": "stemmen", "zin": "Je kunt tot 21 uur stemmen.",
+            "vertaling": "голосовать", "zin_vertaling": "Голосовать можно до 21 часа."}]),
+            encoding="utf-8")
+        args = argparse.Namespace(file=str(kaarten), audio=True, anki=True)
+        with vervang(ww, ROOT=root, WERK=root / "werk", INDEX=index, synth=edge_403), \
+                vervang(au, find_anki_media_folder=lambda: media, import_tsv=import_tsv), \
+                redirect_stdout(io.StringIO()) as out:
+            rc = ww.cmd_kaarten(args)
+        assert rc == 1
+        assert "media не тронута, импорт не начат" in out.getvalue()
+        assert "werk_stemmen.mp3: синтез упал — RuntimeError: 403" in out.getvalue()
+        assert inhoud(media) == {"werk_stemmen.mp3": OUD}
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items())
            if k.startswith("test_") and callable(v)]

@@ -14,11 +14,15 @@ an _anki.txt TSV straight into the running Anki via AnkiConnect.
 После import и update партии Kern запускается herorden.
 """
 
+import asyncio
 import html
 import json
+import os
 import re
 import shutil
+import subprocess
 import sys
+import tempfile
 import urllib.error
 import urllib.request
 from collections import Counter, defaultdict
@@ -109,6 +113,65 @@ def copy_to_anki_media(source_dir: Path, media_path: Path, prefix: str) -> int:
         shutil.copy2(audio_file, dest_file)
         copied += 1
     return copied
+
+
+# Самый короткий рабочий mp3 в media на 2026-10-16 — 11 КБ и 1,87 с (freq_dan_*).
+MP3_MIN_BYTES = 5 * 1024
+MP3_MIN_SEC = 1.0
+
+
+class AudioFout(RuntimeError):
+    """Синтез упал или mp3 не прошёл keur_mp3 — в media ничего не записано."""
+
+
+def duur(path: Path) -> float | None:
+    """Длительность mp3 по ffprobe; None — ffprobe нет, судим по размеру. Нечитаемый
+    файл — 0.0, то есть брак."""
+    if (ffprobe := shutil.which("ffprobe")) is None:
+        return None
+    r = subprocess.run([ffprobe, "-v", "error", "-show_entries", "format=duration",
+                        "-of", "csv=p=0", str(path)], capture_output=True, text=True)
+    try:
+        return float(r.stdout)
+    except ValueError:
+        return 0.0
+
+
+def keur_mp3(path: Path) -> str | None:
+    """Почему mp3 не годится в media, или None: больше 5 КБ и длиннее 1 с."""
+    n = path.stat().st_size if path.exists() else 0
+    if n <= MP3_MIN_BYTES:
+        return f"{n} байт — нужно больше {MP3_MIN_BYTES}"
+    if (s := duur(path)) is not None and s <= MP3_MIN_SEC:
+        return f"{s:.2f} с — нужно длиннее {MP3_MIN_SEC:g} с"
+    return None
+
+
+def mp3_naar_media(items: list[tuple[str, Path]], spreek) -> None:
+    """[(текст, путь в media)] → mp3 через `await spreek(текст, путь)`. Озвучка идёт во
+    временную папку, каждый файл — через keur_mp3; в media партия переезжает, только
+    когда годны все, каждый файл — копией рядом и os.replace. Иначе AudioFout, и media
+    как была: edge-tts открывает файл до загрузки, и 2026-10-16 его 403 при записи прямо
+    в media оставил пустой werk_stemmen.mp3 поверх рабочего."""
+    with tempfile.TemporaryDirectory() as tmp:
+        klaar = []
+
+        async def alle():
+            for text, doel in items:
+                deel = Path(tmp) / doel.name
+                try:
+                    await spreek(text, deel)
+                except Exception as e:
+                    raise AudioFout(f"{doel.name}: синтез упал — {type(e).__name__}: {e}") from e
+                if fout := keur_mp3(deel):
+                    raise AudioFout(f"{doel.name}: {fout}")
+                klaar.append((deel, doel))
+
+        asyncio.run(alle())
+        for deel, doel in klaar:
+            part = doel.with_name(f".{doel.name}.part")
+            shutil.copyfile(deel, part)
+            os.replace(part, doel)
 
 
 ANKICONNECT = "http://127.0.0.1:8765"

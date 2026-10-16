@@ -37,6 +37,14 @@ edge-tts 7.2.7 получил 403 (Microsoft сменил `Sec-MS-GEC-Version`, 
 `werk_woorden.py kaarten --audio` синтезирует прямо в media — упавший синтез
 оставит там пустой файл тем же способом.
 
+**Исправлено** в тот же день: `anki_utils.mp3_naar_media` озвучивает партию во
+временную папку, проверяет каждый файл (> 5 КБ, > 1 с) и только потом переносит
+в media; иначе — `AudioFout`, код 1, media как была
+(`test_mp3_synthese_faalt_media_heel`, `test_werk_kaarten_audio_faalt`).
+`kern.py tts` перезаписи не делает (озвучивает только отсутствующие имена), но
+при сбое оставляет в media 0-байтный `.part`; `bouw_kaarten.py audio` падает до
+`storeMediaFile`, но без проверки размера и с 0-байтным файлом в `.bouw/`.
+
 ## 2026-10-13 — колоды Link+ thema 10 для Юли
 
 ### Карточки Юли — по правилам Kern Alex: короткие, i+1, переиспользование
