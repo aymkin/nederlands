@@ -26,8 +26,8 @@ from collections import Counter, namedtuple
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from anki_utils import (ANKI_PROFILE, FREQUENTIE, KERN, TOKEN,  # same dir
-                        find_anki_media_folder, lees_tsv, tekst)
+from anki_utils import (ANKI_PROFILE, FREQUENTIE, KERN, TOKEN, AudioFout,  # same dir
+                        find_anki_media_folder, lees_tsv, mp3_naar_media, tekst)
 from anki_vandaag import clean, collection_path, kopie
 
 REPO = Path(__file__).resolve().parent.parent
@@ -287,19 +287,19 @@ def audio_naam(k, example):
     return f"freq_{k.replace('#', '-')}_{sha}.mp3"
 
 
-def tts(items):
-    """[(текст, путь)] → mp3 голосом колоды Werk (edge-tts, text_to_speech.py). Сначала во
-    временный файл: оборванная загрузка не оставит битый mp3 под настоящим именем."""
-    import asyncio
+async def synth(text, path):
+    """Один mp3 голосом колоды Werk (edge-tts, text_to_speech.py)."""
     import edge_tts
     from text_to_speech import DEFAULT_RATE, VOICES
 
-    async def alle():
-        for text, path in items:
-            deel = path.with_suffix(".part")
-            await edge_tts.Communicate(text, VOICES["colette"], rate=DEFAULT_RATE).save(str(deel))
-            deel.replace(path)
-    asyncio.run(alle())
+    await edge_tts.Communicate(text, VOICES["colette"], rate=DEFAULT_RATE).save(str(path))
+
+
+def tts(items):
+    """[(текст, путь в media)] → mp3 через anki_utils.mp3_naar_media: партия озвучивается
+    во временную папку и переезжает в media, только если годен каждый файл; иначе
+    AudioFout, и в media ни нового mp3, ни .part."""
+    mp3_naar_media(items, synth)
 
 
 def audio(paden, lijst, vormen, media, droog=False, spreek=tts):
@@ -374,7 +374,12 @@ def main():
         lijst, _, vormen = laad()
         if (media := find_anki_media_folder()) is None:
             sys.exit(f"нет collection.media профиля {ANKI_PROFILE}")
-        anders, n, ontbreekt = audio(bestanden, lijst, vormen, media, droog)
+        try:
+            anders, n, ontbreekt = audio(bestanden, lijst, vormen, media, droog)
+        except AudioFout as e:
+            sys.exit(f"❌ аудио не создано, media не тронута:\n   {e}\n"
+                     f"   колонка Audio в файлах уже ссылается на эти mp3 — до update повтори:\n"
+                     f"   python3 scripts/kern.py audio {' '.join(bestanden)}")
         out, fout = [f"Audio: {'изменится' if droog else 'изменено'} {len(anders)} из {n} строк; "
                      f"mp3 нет в media — {len(ontbreekt)}"
                      + (", озвучить — без --droog" if droog and ontbreekt

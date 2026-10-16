@@ -193,9 +193,11 @@ venv пилота. Сборка падает и на двух ключах, ра
 3. `kern.py rank FILE` — колонка Rank := ранг в списке.
 4. `kern.py audio FILE --droog` — сколько строк получит новое имя и скольких mp3
    нет в media. Затем бэкап Anki и «да» — и `kern.py audio FILE`: колонка Audio
-   и озвучка недостающих mp3 (edge-tts, голос колоды Werk) прямо в
-   `collection.media`. Пакет `edge-tts` стоит у системного `python3`, не в venv
-   пилота.
+   и озвучка недостающих mp3 (edge-tts, голос колоды Werk) в `collection.media`
+   через `anki_utils.mp3_naar_media` — сперва во временную папку, в media только
+   если каждый mp3 больше 5 КБ и длиннее 1 с. Упал синтез — код 1, media не
+   тронута, но колонка Audio уже переписана: шаг 5 — только после удачного
+   повтора. Пакет `edge-tts` стоит у системного `python3`, не в venv пилота.
 5. `anki_utils.py import FILE` — ворота (ниже), запись, `herorden`.
 
 Правка уже импортированной заметки — в файле; затем `kern.py audio FILE --droog`

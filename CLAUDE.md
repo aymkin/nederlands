@@ -250,9 +250,13 @@ python3 scripts/anki_utils.py herorden [--droog]          # позиция но�
 
 `audio`, `update` и `herorden` без `--droog` пишут в Anki: перед каждым — бэкап
 и «да» Alex. `setDueDate` не трогать — он делает новую карточку повторением.
-Ворота `import` и `update` — Twenty Rules, синонимы (своя ситуация в примере), у
-Kern ещё i+1. Поток партии и почему так — `frequentie/README.md`. Тесты:
-`python3 scripts/test_kern.py`, `python3 scripts/test_anki_utils.py`.
+Озвучка `audio` — через тот же `anki_utils.mp3_naar_media`, что у Werk: упал
+синтез или mp3 бракованный — код 1, в media ни нового mp3, ни `.part`, но
+колонка Audio в файлах уже переписана, поэтому `update` — только после удачного
+повтора `audio`. Ворота `import` и `update` — Twenty Rules, синонимы (своя
+ситуация в примере), у Kern ещё i+1. Поток партии и почему так —
+`frequentie/README.md`. Тесты: `python3 scripts/test_kern.py`,
+`python3 scripts/test_anki_utils.py`.
 
 ### frequentie_fluent.py — Fluent под частотный план
 

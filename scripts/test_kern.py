@@ -322,6 +322,53 @@ def test_audio_droog():
         assert gesproken == [] and p.read_text(encoding="utf-8") == voor
 
 
+async def edge_403(text, path):
+    """Как edge-tts 7.2.7 2026-10-16: save() открывает файл, потом 403."""
+    path.write_bytes(b"")
+    raise RuntimeError("403")
+
+
+def media_inhoud(media):
+    return {f.name: f.read_bytes() for f in media.iterdir()}
+
+
+def test_audio_403_media_schoon():
+    # Прежний tts писал в media/<имя>.part — на 403 там оставался файл в 0 байт.
+    with tempfile.TemporaryDirectory() as d:
+        p, media, naam = audio_partij(d)
+        voor = media_inhoud(media)
+        echt, kern.synth = kern.synth, edge_403
+        try:
+            kern.audio([p], LIJST, VORMEN, media)
+            assert False, "expected AudioFout"
+        except kern.AudioFout as e:
+            assert str(e) == f"{naam}: синтез упал — RuntimeError: 403"
+        finally:
+            kern.synth = echt
+        assert media_inhoud(media) == voor
+
+
+def test_main_audio_403():
+    # main: AudioFout → sys.exit с текстом (код 1, без трейсбека), media как была.
+    with tempfile.TemporaryDirectory() as d:
+        p, media, naam = audio_partij(d)
+        voor = media_inhoud(media)
+        echt = kern.synth, kern.laad, kern.find_anki_media_folder, sys.argv
+        kern.synth, kern.laad = edge_403, lambda: (LIJST, {}, VORMEN)
+        kern.find_anki_media_folder, sys.argv = lambda: media, ["kern.py", "audio", str(p)]
+        try:
+            kern.main()
+            assert False, "expected SystemExit"
+        except SystemExit as e:
+            assert isinstance(e.code, str), e.code
+            assert e.code.startswith("❌ аудио не создано, media не тронута:\n"
+                                     f"   {naam}: синтез упал — RuntimeError: 403\n")
+            assert e.code.endswith(f"python3 scripts/kern.py audio {p}")
+        finally:
+            kern.synth, kern.laad, kern.find_anki_media_folder, sys.argv = echt
+        assert media_inhoud(media) == voor
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items())
            if k.startswith("test_") and callable(v)]
