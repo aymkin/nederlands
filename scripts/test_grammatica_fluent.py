@@ -181,15 +181,16 @@ def test_skelet_prefix() -> list[str]:
 
 
 def test_lp_ongewijzigd() -> list[str]:
-    """Link+ output is what it was before the profiles: golden check on 7.1."""
+    """Link+ output is what it was before the profiles: golden check on 7.1.
+    New Link+ cards are locked — the grammar route opens them with a series."""
     sr = {"items": {}}
     do_regels(sr, regels_van(REGELS), VANDAAG, 2)
     it = sr["items"].get("gram_lp_7.1")
     if it is None:
         return ["gram_lp_7.1 не создан"]
     verwacht = {"category": "grammatica_lp_thema04", "difficulty": "A2",
-                "bron": "regels/thema_04_lekker.md#7.1", "priority": "critical",
-                "due_date": VANDAAG}
+                "bron": "regels/thema_04_lekker.md#7.1", "priority": "high",
+                "due_date": grammatica_fluent.OP_SLOT}
     fouten = [f"gram_lp_7.1.{k}: {it.get(k)!r}, ожидалось {v!r}"
               for k, v in verwacht.items() if it.get(k) != v]
     if "SKELET" in it["content"]:
@@ -212,8 +213,9 @@ def kaart(iid: str, due: str, reviews: int = 0, quality: int = 3, mastery: int =
 
 
 def test_prioriteit() -> list[str]:
-    """One intro a day per profile, one retry, the rest high or low; idempotent;
-    cards that are not rules keep their priority."""
+    """Frames: one intro a day. Link+: no intro — the grammar route introduces
+    the next rule with a series. Both: one retry, the rest high or low;
+    idempotent; cards that are not rules keep their priority."""
     gisteren, morgen = "2026-10-07", "2026-10-09"
     items = {k["id"]: k for k in (
         kaart("gram_sk_1.1", VANDAAG), kaart("gram_sk_1.2", gisteren),
@@ -236,7 +238,7 @@ def test_prioriteit() -> list[str]:
                 "gram_sk_1.5": "high",       # second failure waits
                 "gram_sk_1.6": "low",        # mastered
                 "gram_sk_1.7": "high",       # not due yet
-                "gram_lp_7.1": "critical",   # VOORRANG leads the Link+ intro
+                "gram_lp_7.1": "high",       # Link+: the route introduces, not the pass
                 "gram_lp_1.1": "high",
                 "gram_lp_7.2": "high",       # the eternal critical is lifted
                 "freq_zin_x": "critical", "grammar_y": "high"}   # not rule cards
@@ -251,6 +253,61 @@ def test_prioriteit() -> list[str]:
     grammatica_fluent.prioriteit(sr2, VANDAAG)
     if sr2["items"]["gram_sk_1.2"]["priority"] != "high":
         fouten.append("второе введение за день")
+    return fouten
+
+
+def serie(iid: str, *reeks: tuple[str, int]) -> dict:
+    """A Link+ rule card whose history holds (date, score) rows, in that order."""
+    it = kaart(iid, VANDAAG, reviews=len(reeks))
+    it["review_history"] = [{"date": d, "quality": min(5, s // 2), "score": s}
+                            for d, s in reeks]
+    return it
+
+
+def test_beheerst() -> list[str]:
+    """Mastered = the last two series on different days both score ≥ 7."""
+    gevallen = {
+        "twee dagen 7 en 9": (serie("gram_lp_1.1", ("2026-10-01", 7), ("2026-10-02", 9)), True),
+        "6 op de laatste dag": (serie("gram_lp_1.1", ("2026-10-01", 8), ("2026-10-02", 6)), False),
+        "één serie": (serie("gram_lp_1.1", ("2026-10-02", 10)), False),
+        # two series on one day are one day: the later one counts
+        "twee op één dag": (serie("gram_lp_1.1", ("2026-10-02", 9), ("2026-10-02", 8)), False),
+        "laatste van de dag telt": (serie("gram_lp_1.1", ("2026-10-01", 9),
+                                          ("2026-10-02", 5), ("2026-10-02", 8)), True),
+        # score 0 is a row from before scores were logged: no series
+        "score 0 telt niet": (serie("gram_lp_1.1", ("2026-09-21", 0), ("2026-10-02", 10)), False),
+        "oud falen, twee goede": (serie("gram_lp_1.1", ("2026-09-30", 4),
+                                        ("2026-10-01", 7), ("2026-10-02", 7)), True),
+        "geen geschiedenis": (kaart("gram_lp_1.1", VANDAAG), False),
+    }
+    return [f"{naam}: {not ok}, ожидалось {ok}"
+            for naam, (it, ok) in gevallen.items()
+            if grammatica_fluent.beheerst(it) != ok]
+
+
+def test_pad() -> list[str]:
+    """The current rule is the first unmastered one in course order; the next
+    is the unmastered one after it, the rule that opens once the current one
+    is mastered; frames and other cards are not on the path."""
+    goed = (("2026-10-01", 8), ("2026-10-02", 9))
+    items = {k["id"]: k for k in (
+        serie("gram_lp_7.1", *goed), serie("gram_lp_7.2", *goed),
+        serie("gram_lp_1.1", ("2026-10-02", 10)),            # one series: current
+        serie("gram_lp_1.2", *goed),                          # mastered ahead: skipped
+        kaart("gram_lp_1.3", "2099-12-31"),                   # next
+        kaart("gram_sk_1.1", VANDAAG))}
+    items["grammar_y"] = {"id": "grammar_y", "type": "error_pattern"}
+    pad = grammatica_fluent.pad({"items": items})
+    fouten = []
+    if pad["huidig"] != "gram_lp_1.1":
+        fouten.append(f"huidig {pad['huidig']}, ожидалось gram_lp_1.1")
+    if pad["volgende"] != "gram_lp_1.3":
+        fouten.append(f"volgende {pad['volgende']}, ожидалось gram_lp_1.3 (следующее неусвоенное)")
+    if (pad["beheerst"], pad["totaal"]) != (3, 5):
+        fouten.append(f"beheerst/totaal {pad['beheerst']}/{pad['totaal']}, ожидалось 3/5")
+    klaar = grammatica_fluent.pad({"items": {"gram_lp_7.1": serie("gram_lp_7.1", *goed)}})
+    if klaar["huidig"] is not None or klaar["volgende"] is not None:
+        fouten.append("всё усвоено, а huidig/volgende не None")
     return fouten
 
 
@@ -287,6 +344,8 @@ def main() -> int:
                      ("рамки не задевают gram_lp_*", test_skelet_prefix),
                      ("Link+ без изменений", test_lp_ongewijzigd),
                      ("приоритеты правил на день", test_prioriteit),
+                     ("усвоено: две серии ≥ 7 в разные дни", test_beheerst),
+                     ("маршрут: текущее и следующее правило", test_pad),
                      ("неизвестная папка — отказ", lambda: test_onbekende_map(tmp))):
         fouten = fn()
         print(f"{'✓' if not fouten else '✗'} {naam}"

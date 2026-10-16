@@ -169,16 +169,24 @@ def sorteer(rules: list[dict], voorrang: list[str] = VOORRANG) -> list[dict]:
 # prefix is what keeps them apart: filed as `gram_lp_`, frames 1.1–1.9 would be
 # skipped as "already imported" and 1.10–1.11 would take ids Link+ reserves.
 # Frames enter as "high" whatever their due date — the daily priority pass in
-# fluent_rebuild_queue.py introduces them one a day.
+# fluent_rebuild_queue.py introduces them one a day. Link+ rules follow the
+# grammar route (`pad`): a new card enters locked, and the session opens the
+# current rule with its first series — see pad().
 PROFIELEN = {
     "regels": {"prefix": "lp", "glob": "thema_*.md", "voorrang": VOORRANG,
                "a2": A2_REGELS, "categorie": "grammatica_lp_thema{thema}",
-               "recept": "", "critical_op_dag": True, "backup": "grammatica"},
+               "recept": "", "critical_op_dag": True, "backup": "grammatica",
+               "pad": True},
     "skelet": {"prefix": "sk", "glob": "kaders*.md", "voorrang": [],
                "a2": None, "categorie": "grammatica_sk_kaders",
                "recept": " | Рецепт: .claude/skills/nederlands-fluent-sessie/SKELET.md",
-               "critical_op_dag": False, "backup": "grammatica-sk"},
+               "critical_op_dag": False, "backup": "grammatica-sk", "pad": False},
 }
+
+# Due date of a locked card: never served by read-db. Its first series is a
+# review of a card that is not due, which FSRS accepts and then schedules —
+# so no one has to rewrite due_date to unlock it.
+OP_SLOT = "2099-12-31"
 
 
 def item_id(profiel: dict, rid: str) -> str:
@@ -186,6 +194,49 @@ def item_id(profiel: dict, rid: str) -> str:
 
 
 THEMA_CAT_RE = re.compile(r"thema(\d+)$")
+
+
+def regel_kaarten(items: dict, profiel: dict) -> dict:
+    """The profile's rule cards, keyed by item id, in course order."""
+    kop = item_id(profiel, "")
+    regels = {iid: it for iid, it in items.items()
+              if iid.startswith(kop) and it.get("type") == "grammar_rule"}
+    pseudo = [{"id": iid[len(kop):], "iid": iid,
+               "thema": (THEMA_CAT_RE.search(it.get("category", "")) or [None, "00"])[1]}
+              for iid, it in regels.items()]
+    return {p["iid"]: regels[p["iid"]] for p in sorteer(pseudo, profiel["voorrang"])}
+
+
+# A series is ~5 drills on one rule in one session, logged as one review whose
+# score is the series result 0–10. Rows with score 0 predate score logging
+# (before 2026-10): their result is unknown, so they are not series.
+BEHEERST_SCORE = 7
+
+
+def series(item: dict) -> list[tuple[str, int]]:
+    """(date, score) per day with a series, the day's last series, oldest first."""
+    per_dag = {}
+    for h in item.get("review_history") or []:
+        if (h.get("score") or 0) > 0:
+            per_dag[h["date"]] = h["score"]
+    return sorted(per_dag.items())
+
+
+def beheerst(item: dict) -> bool:
+    """Mastered: the last two series, on different days, both score ≥ 7."""
+    laatste = series(item)[-2:]
+    return len(laatste) == 2 and all(s >= BEHEERST_SCORE for _, s in laatste)
+
+
+def pad(sr: dict, profiel: dict = PROFIELEN["regels"]) -> dict:
+    """The grammar route: the current rule is the first unmastered one in course
+    order, and the next rule opens only once it is mastered."""
+    kaarten = regel_kaarten(sr.get("items", {}), profiel)
+    open_ = [iid for iid, it in kaarten.items() if not beheerst(it)]
+    return {"huidig": open_[0] if open_ else None,
+            "volgende": open_[1] if len(open_) > 1 else None,
+            "beheerst": len(kaarten) - len(open_), "totaal": len(kaarten),
+            "kaarten": kaarten}
 
 
 def prioriteit(sr: dict, today: str) -> list[tuple[str, str, str]]:
@@ -197,8 +248,10 @@ def prioriteit(sr: dict, today: str) -> list[tuple[str, str, str]]:
     not been served once by 2026-10-08. And "critical", once set, never expires
     — update-db.py keeps it. So the priority is recomputed daily, per profile:
 
-    - intro: the first never-reviewed due rule in course order, one a day — a
-      rule first reviewed today counts, so a second session adds none;
+    - intro (frames only): the first never-reviewed due rule in course order,
+      one a day — a rule first reviewed today counts, so a second session adds
+      none. Link+ rules have no intro here: the grammar route (pad) opens the
+      next rule only once the current one is mastered;
     - retry: the longest-overdue due rule whose last answer failed (≤ 2);
     - the rest: "high", or "low" once mastered (mastery_level ≥ 3).
 
@@ -207,19 +260,14 @@ def prioriteit(sr: dict, today: str) -> list[tuple[str, str, str]]:
     items = sr.get("items", {})
     wijzigingen = []
     for profiel in PROFIELEN.values():
-        kop = item_id(profiel, "")
-        regels = {iid: it for iid, it in items.items()
-                  if iid.startswith(kop) and it.get("type") == "grammar_rule"}
+        regels = regel_kaarten(items, profiel)
         if not regels:
             continue
-        pseudo = [{"id": iid[len(kop):], "iid": iid,
-                   "thema": (THEMA_CAT_RE.search(it.get("category", "")) or [None, "00"])[1]}
-                  for iid, it in regels.items()]
-        volgorde = [p["iid"] for p in sorteer(pseudo, profiel["voorrang"])]
+        volgorde = list(regels)
         due = [iid for iid in volgorde if regels[iid].get("due_date", "9999-12-31") <= today]
         al_vandaag = any((it.get("review_history") or [{}])[0].get("date") == today
                          for it in regels.values())
-        intro = None if al_vandaag else next(
+        intro = None if profiel["pad"] or al_vandaag else next(
             (iid for iid in due if regels[iid].get("total_reviews", 0) == 0), None)
         mislukt = [iid for iid in due if regels[iid].get("total_reviews", 0) > 0
                    and regels[iid].get("last_quality", 3) <= 2]
@@ -244,7 +292,7 @@ def do_regels(sr: dict, rules: list[dict], today: str, per_dag: int,
     dagen = werkdagen(date.fromisoformat(today), -(-len(nieuw) // per_dag))
     plan, added = [], 0
     for n, r in enumerate(nieuw):
-        due = dagen[n // per_dag].isoformat()
+        due = OP_SLOT if profiel["pad"] else dagen[n // per_dag].isoformat()
         iid = item_id(profiel, r["id"])
         inhoud = f"{r['id']} · {r['title']}"
         if r["regel"]:
@@ -287,15 +335,37 @@ def do_regels(sr: dict, rules: list[dict], today: str, per_dag: int,
     return {"added": added, "skipped": len(rules) - len(nieuw), "plan": plan}
 
 
+def toon_pad(p: dict) -> int:
+    print(f"маршрут Link+: усвоено {p['beheerst']} из {p['totaal']} "
+          f"(усвоено = две серии ≥ {BEHEERST_SCORE}/10 в разные дни)")
+    if p["huidig"] is None:
+        print("все правила усвоены")
+        return 0
+    it = p["kaarten"][p["huidig"]]
+    reeks = ", ".join(f"{d} {s}/10" for d, s in series(it)) or "серий ещё нет"
+    print(f"\nтекущее: {p['huidig']}  (повторений: {it.get('total_reviews', 0)}; "
+          f"серии: {reeks})")
+    print(f"  content: {it.get('content', '')}")
+    print(f"  answer:  {it.get('answer', '')}")
+    print(f"следующее: {p['volgende'] or '—'}")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    ap.add_argument("--regels", type=Path, required=True,
-                    help="rules folder: grammatica/regels (Link+) or "
-                         "grammatica/skelet (frames)")
+    modus = ap.add_mutually_exclusive_group(required=True)
+    modus.add_argument("--regels", type=Path,
+                       help="rules folder: grammatica/regels (Link+) or "
+                            "grammatica/skelet (frames)")
+    modus.add_argument("--pad", action="store_true",
+                       help="show the grammar route: current and next rule (reads only)")
     ap.add_argument("--per-dag", type=int, default=2,
                     help="new rules per working day (default: 2)")
     ap.add_argument("--dry-run", action="store_true", help="report, write nothing")
     args = ap.parse_args()
+
+    if args.pad:
+        return toon_pad(pad(load()))
 
     profiel = PROFIELEN.get(args.regels.resolve().name)
     if profiel is None:
@@ -314,7 +384,11 @@ def main() -> int:
 
     print(f"файлов: {len(bestanden)}  правил разобрано: {len(rules)}")
     print(f"новых: {res['added']}  уже в базе: {res['skipped']}")
-    if res["plan"]:
+    if res["plan"] and profiel["pad"]:
+        print(f"\nна замке до своей очереди в маршруте ({OP_SLOT}), по порядку:")
+        for _, rid, title in res["plan"]:
+            print(f"  {rid:5} {title}")
+    elif res["plan"]:
         print(f"\nграфик ({args.per_dag}/рабочий день, воскресенье пропускается):")
         huidige = None
         for due, rid, title in res["plan"]:
