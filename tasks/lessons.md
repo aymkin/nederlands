@@ -43,9 +43,11 @@ edge-tts 7.2.7 получил 403 (Microsoft сменил `Sec-MS-GEC-Version`, 
 (`test_mp3_synthese_faalt_media_heel`, `test_werk_kaarten_audio_faalt`).
 `kern.py tts` перезаписи не делал (озвучивает только отсутствующие имена), но
 при сбое оставлял в media 0-байтный `.part` — переведён на тот же шлюз
-(`test_audio_403_media_schoon`, `test_main_audio_403`); `bouw_kaarten.py audio`
-падает до `storeMediaFile`, но без проверки размера и с 0-байтным файлом в
-`.bouw/`.
+(`test_audio_403_media_schoon`, `test_main_audio_403`). `bouw_kaarten.py audio`
+на 403 падал трейсбеком до `storeMediaFile`, но оставлял в `.bouw/` полпартии с
+0-байтным mp3 и размер не проверял — тоже переведён на шлюз с `.bouw/` вместо
+media: сбой — код 1, `storeMediaFile` не вызывается (стенд на подставном
+edge-tts и AnkiConnect; файл в `private/`, тестов в репо нет).
 
 ## 2026-10-13 — колоды Link+ thema 10 для Юли
 
