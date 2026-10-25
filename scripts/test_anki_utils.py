@@ -96,8 +96,14 @@ def test_synoniemen_alleen_paren_met_nieuw():
 
 def kaart(cid, word, rank, due, deck=au.KERN):
     """Новая карточка Kern так, как её отдаёт cardsInfo."""
-    return {"cardId": cid, "deckName": deck, "due": due,
+    return {"cardId": cid, "deckName": deck, "modelName": au.FREQUENTIE, "due": due,
             "fields": {"Word": {"value": word}, "Rank": {"value": str(rank)}}}
+
+
+# Новая Basic в Kern, как её положил Anki MCP из сессии fluent (2026-10-23): ни Word, ни Rank.
+BASIC = {"cardId": 6, "deckName": au.KERN, "modelName": "Basic", "due": 6895,
+         "fields": {"Front": {"value": "de of het?<br>___ brief"},
+                    "Back": {"value": "<b>de brief</b>"}}}
 
 
 @contextmanager
@@ -470,6 +476,27 @@ def test_herorden_gefilterd_overgeslagen():
     with nep_anki(kaarten=rij) as log:
         assert au.herorden() == (3, 2)
     assert 4 not in [c for c, _ in gezet(log)]
+
+
+def test_herorden_vreemd_type_overgeslagen():
+    """2026-10-23: в Kern легли новые Basic из сессии fluent — без Rank, herorden падал
+    с KeyError. Чужой тип пропускается, и предупреждение называет, сколько их."""
+    with nep_anki(kaarten=RIJ + (BASIC,)) as log, redirect_stdout(io.StringIO()) as out:
+        assert au.herorden() == (3, 2)
+    assert 6 not in [c for c, _ in gezet(log)]
+    assert "новых в Kern не «Frequentie NL»: 1" in out.getvalue()
+
+
+def test_posities_kern_vreemd_type():
+    """Импорт партии Kern при чужой новой заметке в колоде. До правки import записал бы
+    партию и упал бы в posities_kern: KeyError проходит мимо `except AnkiFout`."""
+    with tempfile.TemporaryDirectory() as d, nep_anki(kaarten=RIJ + (BASIC,)) as log, \
+            redirect_stdout(io.StringIO()) as out:
+        p = Path(d) / "kern_a_anki.txt"
+        p.write_text(partij(au.KERN), encoding="utf-8")
+        au.posities_kern([p])
+    assert gezet(log) == [(1, [1230]), (2, [740])]
+    assert "✅ новых Kern: 3, позиция = Rank выставлена у 2" in out.getvalue()
 
 
 def test_herorden_rank_geen_getal():
