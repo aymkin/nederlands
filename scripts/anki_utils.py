@@ -478,18 +478,26 @@ def herorden(profile: str = ANKI_PROFILE, droog: bool = False) -> tuple[int, int
     запуск ничего не меняет. droog — посчитать, не записывая.
 
     `deck:` находит и карточки, временно лежащие в фильтрованной колоде; там
-    due — место в ней, а не позиция, поэтому они пропускаются.
+    due — место в ней, а не позиция, поэтому они пропускаются. Пропускаются и
+    заметки не «Frequentie NL»: Rank у них нет, а KeyError прошёл бы мимо
+    `except AnkiFout` в posities_kern уже после записи партии (2026-10-23 сессия
+    fluent положила в Kern через Anki MCP пять Basic). Их число — в предупреждении.
     setSpecificValueOfCard при отказе не ставит error, а возвращает False —
     поэтому результат сверяется с [True], а после записи позиции читаются
     заново. Отмены у записи нет (skip_undo_entry): перед ней — бэкап.
 
     Возвращает (новых карточек Kern, позиций к записи или записано)."""
     eis_profiel(profile)
-    kaarten = [
+    nieuw = [
         k for k in ankiconnect("cardsInfo", cards=ankiconnect(
             "findCards", query=f'"deck:{KERN}" is:new'))
         if k["deckName"] == KERN
     ]
+    kaarten = [k for k in nieuw if k["modelName"] == FREQUENTIE]
+    if vreemd := len(nieuw) - len(kaarten):
+        print(f'⚠️  новых в Kern не «{FREQUENTIE}»: {vreemd} — пропущены, Rank у них нет. '
+              f'Kern ведёт пайплайн, заметкам сессий fluent место в колоде Fluent; '
+              f'найти в Anki: "deck:{KERN}" -"note:{FREQUENTIE}"')
     scheef = []
     for k in kaarten:
         rank = k["fields"]["Rank"]["value"].strip()
