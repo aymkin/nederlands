@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 11::taak_1
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+als	26	Als ik moe ben, ga ik gewoon slapen.	если; когда	Если я устаю, я просто иду спать.	[sound:linkplus_t11_als.mp3]	link::thema11::taak1::A2
+omdat	116	Ik blijf thuis, omdat ik ziek ben.	потому что (глагол в конец)	Я остаюсь дома, потому что я больна.	[sound:linkplus_t11_omdat.mp3]	link::thema11::taak1::A2
+gelijk	277	Wacht even, ik kom gelijk!	сию минуту (разг.)	Подожди минутку, я сию минуту приду!	[sound:linkplus_t11_gelijk.mp3]	link::thema11::taak1::A2
+speciaal	472	Ik heb dit echt speciaal voor je gemaakt.	специально; особый	Я правда сделала это специально для тебя.	[sound:linkplus_t11_speciaal.mp3]	link::thema11::taak1::A2
+de wedstrijd	533	Heb je de wedstrijd op televisie gezien?	матч; соревнование	Ты видела матч по телевизору?	[sound:linkplus_t11_wedstrijd.mp3]	link::thema11::taak1::A2
+heerlijk	592	Wat een heerlijk weer vandaag!	восхитительный; чудесный	Какая восхитительная погода сегодня!	[sound:linkplus_t11_heerlijk.mp3]	link::thema11::taak1::A2
+het plezier	595	Ik heb echt veel plezier in m'n werk.	удовольствие; веселье	Я правда получаю много удовольствия от своей работы.	[sound:linkplus_t11_plezier.mp3]	link::thema11::taak1::A2
+lastig	769	Dat is echt lastig, want ik werk dan.	сложный; неудобный	Это правда сложно, потому что я тогда работаю.	[sound:linkplus_t11_lastig.mp3]	link::thema11::taak1::A2
+binnenkort	1201	Binnenkort gaan we waarschijnlijk verhuizen.	в скором времени; скоро	В скором времени мы, вероятно, будем переезжать.	[sound:linkplus_t11_binnenkort.mp3]	link::thema11::taak1::A2
+behoorlijk	1239	Mijn week is echt behoorlijk druk.	изрядно; приличный	Моя неделя правда изрядно загружена.	[sound:linkplus_t11_behoorlijk.mp3]	link::thema11::taak1::A2
+zwemmen	1254	Kun je eigenlijk goed zwemmen?	плавать	Ты, кстати, хорошо умеешь плавать?	[sound:linkplus_t11_zwemmen.mp3]	link::thema11::taak1::A2
+het veld	1322	Veel kinderen spelen lekker op het veld.	площадка; поле	Много детей с удовольствием играют на площадке.	[sound:linkplus_t11_veld.mp3]	link::thema11::taak1::A2
+wandelen	1455	Zullen we zaterdag gaan wandelen?	гулять; ходить пешком	Давай погуляем в субботу?	[sound:linkplus_t11_wandelen.mp3]	link::thema11::taak1::A2
+de training	1478	Ik ben echt moe van de training.	тренировка	Я правда устала от тренировки.	[sound:linkplus_t11_training.mp3]	link::thema11::taak1::A2
+voorlopig	1524	We hebben voorlopig genoeg koffie.	пока что; временно	У нас пока что достаточно кофе.	[sound:linkplus_t11_voorlopig.mp3]	link::thema11::taak1::A2
+trainen	1637	Ik train elke dinsdag met m'n team.	тренироваться; тренировать	Я тренируюсь каждый вторник со своей командой.	[sound:linkplus_t11_trainen.mp3]	link::thema11::taak1::A2
+het zwembad	1770	Het zwembad is vandaag gewoon gesloten.	бассейн	Бассейн сегодня просто закрыт.	[sound:linkplus_t11_zwembad.mp3]	link::thema11::taak1::A2
+de volwassene	1936	Hier mogen alleen volwassenen komen.	взрослый (человек)	Сюда могут приходить только взрослые.	[sound:linkplus_t11_volwassene.mp3]	link::thema11::taak1::A2
+meegaan	2144	Ga je vrijdag mee naar het feestje?	пойти вместе с кем-то	Ты пойдёшь в пятницу с нами на вечеринку?	[sound:linkplus_t11_meegaan.mp3]	link::thema11::taak1::A2
+de agenda	2196	Ik zet het even in m'n agenda.	ежедневник; повестка дня	Я занесу это в свой ежедневник.	[sound:linkplus_t11_agenda.mp3]	link::thema11::taak1::A2
+sowieso	2901	Ik kom sowieso morgen even langs.	в любом случае; всё равно	Я в любом случае завтра на минутку зайду.	[sound:linkplus_t11_sowieso.mp3]	link::thema11::taak1::A2
+het strand	5421	Het strand is niet ver van hier.	пляж	Пляж недалеко отсюда.	[sound:linkplus_t11_strand.mp3]	link::thema11::taak1::A2
+de sauna	7863	Na het werk gaan we naar de sauna.	сауна	После работы мы идём в сауну.	[sound:linkplus_t11_sauna.mp3]	link::thema11::taak1::A2
+de hockey	8000+	Mijn zus speelt best vaak hockey.	хоккей (на траве)	Моя сестра довольно часто играет в хоккей.	[sound:linkplus_t11_hockey.mp3]	link::thema11::taak1::A2

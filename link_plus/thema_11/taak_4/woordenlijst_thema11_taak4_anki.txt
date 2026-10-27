@@ -1,0 +1,35 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 11::taak_4
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+het bedrijf	403	Ik werk bij een best groot bedrijf.	компания; предприятие	Я работаю в довольно большой компании.	[sound:linkplus_t11_bedrijf.mp3]	link::thema11::taak4::A2
+de oorlog	409	De film gaat over de oorlog.	война	Фильм рассказывает о войне.	[sound:linkplus_t11_oorlog.mp3]	link::thema11::taak4::A2
+het slachtoffer	518	Het slachtoffer ligt in het ziekenhuis.	пострадавший; жертва	Пострадавший лежит в больнице.	[sound:linkplus_t11_slachtoffer.mp3]	link::thema11::taak4::A2
+de koning	542	De koning werkt in Den Haag.	король	Король работает в Гааге.	[sound:linkplus_t11_koning.mp3]	link::thema11::taak4::A2
+stil	563	Wees stil, ze slaapt nog.	тихо; тихий	Тише, она ещё спит.	[sound:linkplus_t11_stil.mp3]	link::thema11::taak4::A2
+het midden	617	Er staat gewoon een boom in het midden.	середина; центр	Посередине просто стоит дерево.	[sound:linkplus_t11_midden.mp3]	link::thema11::taak4::A2
+behalve	651	Ik eet eigenlijk alles, behalve vis.	кроме	Я вообще-то ем всё, кроме рыбы.	[sound:linkplus_t11_behalve.mp3]	link::thema11::taak4::A2
+officieel	685	Het nieuws is nog niet officieel, hoor.	официальный	Новость пока ещё не официальная.	[sound:linkplus_t11_officieel.mp3]	link::thema11::taak4::A2
+het respect	831	Ik heb veel respect voor je baas.	уважение	Я очень уважаю твоего начальника.	[sound:linkplus_t11_respect.mp3]	link::thema11::taak4::A2
+de datum	1078	Welke datum is het vandaag eigenlijk?	число; дата	Какое сегодня, кстати, число?	[sound:linkplus_t11_datum.mp3]	link::thema11::taak4::A2
+het optreden	1136	Ik heb je optreden gezien, echt mooi!	выступление	Я видела твоё выступление, правда красиво!	[sound:linkplus_t11_optreden.mp3]	link::thema11::taak4::A2
+de regio	1248	Wij wonen in een best rustige regio.	регион	Мы живём в довольно тихом регионе.	[sound:linkplus_t11_regio.mp3]	link::thema11::taak4::A2
+het noorden	1339	Mijn familie woont in het noorden.	север	Моя семья живёт на севере.	[sound:linkplus_t11_noorden.mp3]	link::thema11::taak4::A2
+het zuiden	1412	In de zomer gaan we naar het zuiden.	юг	Летом мы едем на юг.	[sound:linkplus_t11_zuiden.mp3]	link::thema11::taak4::A2
+Europees	1502	Nederland is een Europees land.	европейский	Нидерланды — европейская страна.	[sound:linkplus_t11_Europees.mp3]	link::thema11::taak4::A2
+de traditie	1961	In Nederland is dat een mooie traditie, hoor.	традиция	В Нидерландах это красивая традиция.	[sound:linkplus_t11_traditie.mp3]	link::thema11::taak4::A2
+oranje	2229	Ik heb een oranje jas gekocht.	оранжевый	Я купила оранжевую куртку.	[sound:linkplus_t11_oranje.mp3]	link::thema11::taak4::A2
+christelijk	2962	Zij gaat naar een christelijke school.	христианский	Она ходит в христианскую школу.	[sound:linkplus_t11_christelijk.mp3]	link::thema11::taak4::A2
+aflopen	3437	De vergadering loopt altijd laat af.	заканчиваться; истекать (о сроке)	Собрание всегда заканчивается поздно.	[sound:linkplus_t11_aflopen.mp3]	link::thema11::taak4::A2
+het voorjaar	5199	In het voorjaar fiets ik naar m'n werk.	весна	Весной я езжу на работу на велосипеде.	[sound:linkplus_t11_voorjaar.mp3]	link::thema11::taak4::A2
+herdenken	6946	Elk jaar herdenken we deze dag.	чтить память; отмечать (памятную дату)	Каждый год мы чтим память этого дня.	[sound:linkplus_t11_herdenken.mp3]	link::thema11::taak4::A2
+Hemelvaart	8000+	Met Hemelvaart ben ik vrij.	Вознесение (праздник)	В Вознесение у меня выходной.	[sound:linkplus_t11_Hemelvaart.mp3]	link::thema11::taak4::A2
+Kerstmis	8000+	Heel mijn familie komt met Kerstmis.	Рождество	Вся моя семья приезжает на Рождество.	[sound:linkplus_t11_Kerstmis.mp3]	link::thema11::taak4::A2
+Koningsdag	8000+	Op Koningsdag is er een grote markt.	День короля	В День короля бывает большой рынок.	[sound:linkplus_t11_Koningsdag.mp3]	link::thema11::taak4::A2
+Pasen	8000+	Pasen valt dit jaar in april.	Пасха	Пасха выпадает в этом году на апрель.	[sound:linkplus_t11_Pasen.mp3]	link::thema11::taak4::A2
+Pinksteren	8000+	Zijn de winkels met Pinksteren open?	Троица; Пятидесятница	Магазины на Троицу открыты?	[sound:linkplus_t11_Pinksteren.mp3]	link::thema11::taak4::A2
+de scholier	8000+	Elke scholier krijgt gewoon een gratis boek.	школьник; школьница	Каждый школьник просто получает бесплатную книгу.	[sound:linkplus_t11_scholier.mp3]	link::thema11::taak4::A2
+enzovoorts	8000+	We hebben brood, kaas, melk, enzovoorts.	и так далее	У нас есть хлеб, сыр, молоко и так далее.	[sound:linkplus_t11_enzovoorts.mp3]	link::thema11::taak4::A2
+oud en nieuw	8000+	Wat doen jullie met oud en nieuw?	Новый год (канун)	Что вы делаете на Новый год?	[sound:linkplus_t11_oud_en_nieuw.mp3]	link::thema11::taak4::A2

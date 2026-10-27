@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 11::taak_3
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+de dienst	494	Ik heb vandaag een vroege dienst.	смена (на работе); служба	У меня сегодня ранняя смена.	[sound:linkplus_t11_dienst.mp3]	link::thema11::taak3::A2
+hoezo	989	Hoezo? Ik heb helemaal niets gezegd!	как так?; почему же?	Как так? Я вообще ничего не говорила!	[sound:linkplus_t11_hoezo.mp3]	link::thema11::taak3::A2
+super	1047	De film was echt super.	супер; отличный	Фильм был правда супер.	[sound:linkplus_t11_super.mp3]	link::thema11::taak3::A2
+de oom	1095	Mijn oom komt vandaag even op bezoek.	дядя	Мой дядя сегодня ненадолго приедет в гости.	[sound:linkplus_t11_oom.mp3]	link::thema11::taak3::A2
+de bar	1158	We drinken even iets in de bar.	бар	Мы выпьем что-нибудь в баре.	[sound:linkplus_t11_bar.mp3]	link::thema11::taak3::A2
+de wind	1180	Met zoveel wind fiets ik echt niet.	ветер	При таком ветре я правда не езжу на велосипеде.	[sound:linkplus_t11_wind.mp3]	link::thema11::taak3::A2
+vieren	1219	We vieren mijn verjaardag gewoon in de tuin.	отмечать; праздновать	Мы отмечаем мой день рождения просто в саду.	[sound:linkplus_t11_vieren.mp3]	link::thema11::taak3::A2
+de beurt	1221	Meneer, bent u nu aan de beurt?	очередь; черёд	Господин, сейчас ваша очередь?	[sound:linkplus_t11_beurt.mp3]	link::thema11::taak3::A2
+de tante	1338	Mijn tante belt me elke week.	тётя	Моя тётя звонит мне каждую неделю.	[sound:linkplus_t11_tante.mp3]	link::thema11::taak3::A2
+de regen	1545	Ik hou niet van regen, ik wil zon.	дождь	Я не люблю дождь, я хочу солнце.	[sound:linkplus_t11_regen.mp3]	link::thema11::taak3::A2
+hierheen	1841	Kom even hierheen, alsjeblieft.	сюда (куда?)	Подойди сюда на минутку, пожалуйста.	[sound:linkplus_t11_hierheen.mp3]	link::thema11::taak3::A2
+de vereniging	2722	Ze werkt voor een vereniging in de buurt.	клуб; объединение	Она работает в клубе по соседству.	[sound:linkplus_t11_vereniging.mp3]	link::thema11::taak3::A2
+de tentoonstelling	3408	Hoe vond je de tentoonstelling in de stad?	выставка	Как тебе выставка в городе?	[sound:linkplus_t11_tentoonstelling.mp3]	link::thema11::taak3::A2
+de herfst	3537	In de herfst is het best vaak koud.	осень	Осенью довольно часто холодно.	[sound:linkplus_t11_herfst.mp3]	link::thema11::taak3::A2
+zonde	3699	Wat zonde, het eten is nog helemaal goed!	жалко; жаль	Как жалко, еда ещё совсем хорошая!	[sound:linkplus_t11_zonde.mp3]	link::thema11::taak3::A2
+de kantine	5152	We lunchen eigenlijk altijd in de kantine.	столовая (на работе, в школе)	Мы вообще-то всегда обедаем в столовой.	[sound:linkplus_t11_kantine.mp3]	link::thema11::taak3::A2
+het vrijwilligerswerk	7071	Ik doe vrijwilligerswerk bij de bibliotheek.	волонтёрская работа	Я занимаюсь волонтёрской работой в библиотеке.	[sound:linkplus_t11_vrijwilligerswerk.mp3]	link::thema11::taak3::A2
+overnemen	7918	Kun je dit voor me overnemen, alsjeblieft?	взять на себя; перенять	Ты можешь взять это на себя, пожалуйста?	[sound:linkplus_t11_overnemen.mp3]	link::thema11::taak3::A2
+afgesproken	8000+	Afgesproken! Dan zie ik je vrijdag.	договорились; условленный	Договорились! Тогда увидимся в пятницу.	[sound:linkplus_t11_afgesproken.mp3]	link::thema11::taak3::A2
+de bardienst	8000+	Wie doet er zaterdag bardienst?	дежурство в баре	Кто дежурит в субботу в баре?	[sound:linkplus_t11_bardienst.mp3]	link::thema11::taak3::A2
+het rooster	8000+	Staat dat al wel in het rooster?	расписание; график	Это уже вообще есть в расписании?	[sound:linkplus_t11_rooster.mp3]	link::thema11::taak3::A2
+het schoolplein	8000+	Het meisje wacht even op het schoolplein.	школьный двор	Девочка ждёт на школьном дворе.	[sound:linkplus_t11_schoolplein.mp3]	link::thema11::taak3::A2

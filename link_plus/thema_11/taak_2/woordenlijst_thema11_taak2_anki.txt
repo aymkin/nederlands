@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 11::taak_2
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+het plan	295	We hebben echt nog geen plan voor zaterdag.	план	У нас правда ещё нет плана на субботу.	[sound:linkplus_t11_plan.mp3]	link::thema11::taak2::A2
+de waarheid	511	Ik wil gewoon de waarheid weten.	истина; правда (как факт)	Я просто хочу знать истину.	[sound:linkplus_t11_waarheid.mp3]	link::thema11::taak2::A2
+ontdekken	532	Ik heb een leuk café ontdekt.	обнаружить; открыть для себя	Я обнаружила симпатичное кафе.	[sound:linkplus_t11_ontdekken.mp3]	link::thema11::taak2::A2
+liegen	660	Lieg nooit tegen je moeder, hoor.	лгать; врать	Никогда не лги маме, слышишь.	[sound:linkplus_t11_liegen.mp3]	link::thema11::taak2::A2
+bedenken	680	Ik kan zo snel echt niets bedenken.	придумать; обдумать	Я так быстро правда ничего не могу придумать.	[sound:linkplus_t11_bedenken.mp3]	link::thema11::taak2::A2
+kwaad	748	Ik ben echt kwaad op je.	зол (на кого-то); злой	Я правда зла на тебя.	[sound:linkplus_t11_kwaad.mp3]	link::thema11::taak2::A2
+de moeite	759	Dit kost me echt veel moeite.	усилие; трудность	Это стоит мне больших усилий.	[sound:linkplus_t11_moeite.mp3]	link::thema11::taak2::A2
+durven	802	Ik durf hem echt niet te bellen.	решаться; осмеливаться	Я правда не решаюсь ему позвонить.	[sound:linkplus_t11_durven.mp3]	link::thema11::taak2::A2
+het excuus	843	Dat is gewoon geen goed excuus.	оправдание	Это просто плохое оправдание.	[sound:linkplus_t11_excuus.mp3]	link::thema11::taak2::A2
+reizen	890	Wil je later echt veel reizen?	путешествовать; ездить	Ты правда хочешь потом много путешествовать?	[sound:linkplus_t11_reizen.mp3]	link::thema11::taak2::A2
+bovendien	1157	Het eten is lekker en bovendien goedkoop.	к тому же; кроме того	Еда вкусная и к тому же дешёвая.	[sound:linkplus_t11_bovendien.mp3]	link::thema11::taak2::A2
+de neef	1268	Mijn neef woont in een dorp.	двоюродный брат; племянник	Мой двоюродный брат живёт в деревне.	[sound:linkplus_t11_neef.mp3]	link::thema11::taak2::A2
+verzinnen	1290	Zij verzint altijd mooie verhalen.	выдумать; сочинить	Она всегда выдумывает красивые истории.	[sound:linkplus_t11_verzinnen.mp3]	link::thema11::taak2::A2
+de nicht	1814	Mijn nicht werkt in een winkel.	двоюродная сестра; племянница	Моя двоюродная сестра работает в магазине.	[sound:linkplus_t11_nicht.mp3]	link::thema11::taak2::A2
+de vriendschap	1988	Onze vriendschap is heel belangrijk voor me.	дружба	Наша дружба очень важна для меня.	[sound:linkplus_t11_vriendschap.mp3]	link::thema11::taak2::A2
+het examen	2522	Ik heb morgen een belangrijk examen.	экзамен	У меня завтра важный экзамен.	[sound:linkplus_t11_examen.mp3]	link::thema11::taak2::A2
+logeren	3136	Mijn vriendin komt dit weekend bij ons logeren.	гостить; ночевать у кого-то	Моя подруга приедет на эти выходные к нам погостить.	[sound:linkplus_t11_logeren.mp3]	link::thema11::taak2::A2
+egoïstisch	4358	Ze is soms best egoïstisch, vind ik.	эгоистичный	Она иногда довольно эгоистична, по-моему.	[sound:linkplus_t11_egoïstisch.mp3]	link::thema11::taak2::A2
+de zwager	6532	Mijn zwager is dokter in Utrecht.	муж сестры; зять	Муж моей сестры — врач в Утрехте.	[sound:linkplus_t11_zwager.mp3]	link::thema11::taak2::A2
+de schoonouders	8000+	Zijn schoonouders wonen in Polen.	родители жены/мужа	Родители его жены живут в Польше.	[sound:linkplus_t11_schoonouders.mp3]	link::thema11::taak2::A2
+de smoes	8000+	Je hebt altijd weer een smoes.	отговорка; отмазка (разг.)	У тебя всегда есть очередная отговорка.	[sound:linkplus_t11_smoes.mp3]	link::thema11::taak2::A2
+oppassen op	8000+	Mijn buurvrouw past vanavond even op de kinderen.	присматривать за (кем-то)	Моя соседка сегодня вечером ненадолго присматривает за детьми.	[sound:linkplus_t11_oppassen_op.mp3]	link::thema11::taak2::A2
