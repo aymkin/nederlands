@@ -84,7 +84,7 @@ Roadmap overview: `daily/roadmap_maart_2026.md`
 
 > **Detailed docs:** `scripts/README.md`
 
-Five scripts share `anki_utils.py` — Anki profile detection and media copying,
+Six scripts share `anki_utils.py` — Anki profile detection and media copying,
 plus the AnkiConnect writers (`import`, `update`, `lint`, `herorden`) and the
 gates of note type «Frequentie NL»:
 
@@ -93,6 +93,7 @@ audio_to_anki.py ──┐
 text_to_speech.py ─┤
 werk_woorden.py ───┼─→ anki_utils.py (profiles, media, import/update/lint/
 anki_vandaag.py ───┤                  herorden, gates keur())
+daily_audio.py ────┤   (daily_audio uses only keur_mp3, duur, AudioFout)
 kern.py ───────────┘   kern.py also imports anki_vandaag (collection copy);
                        keur() imports kern for the i+1 gate of Kern
 
@@ -192,6 +193,30 @@ python3 scripts/multivoice_reader.py private/verhaal.md --out ~/Desktop/verhaal
 ```
 
 Parser checks: `python3 scripts/test_multivoice_reader.py`
+
+### daily_audio.py — аудио дейли для дороги (остров «Daily»)
+
+Один mp3 из четырёх частей по парам «NL / RU»: 1 — нидерландский обычным темпом;
+2 — нидерландский → русский по предложению; 3 — нидерландский медленно; 4 —
+русская фраза → пауза, чтобы сказать самому → нидерландская фраза-проверка, весь
+текст два круга. Русский голос коротко объявляет каждую часть. Пауза ответа —
+`1,6 × длина NL-фразы + 2 с` (`--pauze-factor`). Тишину по краям каждого куска
+edge-tts (≈0,25 с в начале, ≈0,9 с в конце) скрипт срезает, иначе паузы звучали
+бы на ≈1,1 с длиннее заданных.
+
+Вход — `.txt`: блок из двух строк (NL, потом RU), блоки через пустую строку, `#`
+— комментарий. Не `.md`: Prettier склеил бы две строки пары в один абзац. Итог
+пишется через `.part` и `keur_mp3`, так что сорванный синтез не затирает рабочий
+файл. Текст уходит в Microsoft Edge TTS, как у `werk_woorden.py`: имена коллег и
+названия проектов в файл не класть. Файлы дня лежат в `private/werk/daily/`.
+
+```bash
+python3 scripts/daily_audio.py private/werk/daily/2026-10-28.txt
+python3 scripts/daily_audio.py FILE.txt --dry-run   # план без озвучки
+```
+
+Проверки: `python3 scripts/test_daily_audio.py` (одна из них строит mp3 на
+синус-тонах вместо edge-tts, нужен ffmpeg).
 
 ### build_vocab_index.py / check_recycling.py — /anki-cards toolchain
 
