@@ -27,4 +27,4 @@ de agenda	2196	Ik zet het even in m'n agenda.	ежедневник; повест
 sowieso	2901	Ik kom sowieso morgen even langs.	в любом случае; всё равно	Я в любом случае завтра на минутку зайду.	[sound:linkplus_t11_sowieso.mp3]	link::thema11::taak1::A2
 het strand	5421	Het strand is niet ver van hier.	пляж	Пляж недалеко отсюда.	[sound:linkplus_t11_strand.mp3]	link::thema11::taak1::A2
 de sauna	7863	Na het werk gaan we naar de sauna.	сауна	После работы мы идём в сауну.	[sound:linkplus_t11_sauna.mp3]	link::thema11::taak1::A2
-de hockey	8000+	Mijn zus speelt best vaak hockey.	хоккей (на траве)	Моя сестра довольно часто играет в хоккей.	[sound:linkplus_t11_hockey.mp3]	link::thema11::taak1::A2
+het hockey	8000+	Mijn zus speelt best vaak hockey.	хоккей (на траве)	Моя сестра довольно часто играет в хоккей.	[sound:linkplus_t11_hockey.mp3]	link::thema11::taak1::A2
