@@ -1,0 +1,33 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 13::taak_2
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+genieten	526	Ik geniet echt van het weer vandaag.	наслаждаться	Я правда наслаждаюсь погодой сегодня.	[sound:linkplus_t13_genieten.mp3]	link::thema13::taak2::A2
+de kosten	581	De kosten van mijn studie zijn best hoog.	расходы; затраты	Расходы на мою учёбу довольно высокие.	[sound:linkplus_t13_kosten.mp3]	link::thema13::taak2::A2
+leveren	598	Die winkel levert verse groente aan het restaurant.	поставлять; доставлять	Этот магазин поставляет свежие овощи в ресторан.	[sound:linkplus_t13_leveren.mp3]	link::thema13::taak2::A2
+steken	669	Steek de stekker in, mijn laptop is leeg.	воткнуть (вилку в розетку)	Воткни вилку, мой ноутбук разряжен.	[sound:linkplus_t13_steken.mp3]	link::thema13::taak2::A2
+plaatsen	724	Ze plaatsen een nieuwe lamp in de keuken.	установить; поставить	Они устанавливают новую лампу на кухне.	[sound:linkplus_t13_plaatsen.mp3]	link::thema13::taak2::A2
+de energie	840	Na het werk heb ik echt geen energie.	энергия	После работы у меня правда нет энергии.	[sound:linkplus_t13_energie.mp3]	link::thema13::taak2::A2
+de rekening	877	De rekening van de dokter is best hoog.	счёт за услуги	Счёт от врача довольно высокий.	[sound:linkplus_t13_rekening.mp3]	link::thema13::taak2::A2
+het dak	1061	Het dak van ons huis is best nieuw.	крыша	Крыша нашего дома довольно новая.	[sound:linkplus_t13_dak.mp3]	link::thema13::taak2::A2
+onmiddellijk	1193	Bel me onmiddellijk, het is een noodgeval!	немедленно; незамедлительно	Позвони мне немедленно, это экстренный случай!	[sound:linkplus_t13_onmiddellijk.mp3]	link::thema13::taak2::A2
+het gas	1730	Mijn buren koken altijd op gas.	газ	Мои соседи всегда готовят на газу.	[sound:linkplus_t13_gas.mp3]	link::thema13::taak2::A2
+besparen	1839	Ik wil echt geld besparen op mijn eten.	экономить	Я правда хочу экономить деньги на еде.	[sound:linkplus_t13_besparen.mp3]	link::thema13::taak2::A2
+de elektriciteit	3114	Zonder elektriciteit werkt mijn laptop gewoon niet.	электричество	Без электричества мой ноутбук просто не работает.	[sound:linkplus_t13_elektriciteit.mp3]	link::thema13::taak2::A2
+de storing	3713	Door een storing komt de trein echt later.	сбой; неполадка	Из-за сбоя поезд приходит позже.	[sound:linkplus_t13_storing.mp3]	link::thema13::taak2::A2
+achteraf	3772	Achteraf was het gewoon een goed plan.	потом; задним числом	Потом оказалось: это был просто хороший план.	[sound:linkplus_t13_achteraf.mp3]	link::thema13::taak2::A2
+de stroom	4564	De stroom valt weer uit in onze wijk.	электрический ток	В нашем районе опять пропал ток.	[sound:linkplus_t13_stroom.mp3]	link::thema13::taak2::A2
+de leverancier	4936	Onze leverancier belt me morgen terug.	поставщик	Наш поставщик завтра мне перезвонит.	[sound:linkplus_t13_leverancier.mp3]	link::thema13::taak2::A2
+de molen	4948	Bij de molen is een mooi park.	ветряная мельница; ветряк	У ветряной мельницы есть красивый парк.	[sound:linkplus_t13_molen.mp3]	link::thema13::taak2::A2
+opladen	5076	Ik moet m'n telefoon nog opladen.	заряжать; зарядить	Мне надо ещё зарядить телефон.	[sound:linkplus_t13_opladen.mp3]	link::thema13::taak2::A2
+de bankrekening	5127	Mijn bankrekening is echt bijna leeg.	банковский счёт	Мой банковский счёт правда почти пуст.	[sound:linkplus_t13_bankrekening.mp3]	link::thema13::taak2::A2
+maandelijks	5403	Ik betaal maandelijks gewoon mijn huur.	ежемесячный; ежемесячно	Я ежемесячно плачу аренду.	[sound:linkplus_t13_maandelijks.mp3]	link::thema13::taak2::A2
+de verwarming	6114	De verwarming staat altijd te hoog.	отопление	Отопление всегда выставлено слишком высоко.	[sound:linkplus_t13_verwarming.mp3]	link::thema13::taak2::A2
+de stekker	6694	Haal de stekker even uit de muur.	штепсельная вилка; вилка	Вытащи вилку из стены.	[sound:linkplus_t13_stekker.mp3]	link::thema13::taak2::A2
+het voorschot	7613	Ik betaal elke maand een voorschot.	аванс; авансовый платёж	Я каждый месяц плачу аванс.	[sound:linkplus_t13_voorschot.mp3]	link::thema13::taak2::A2
+afschrijven	8000+	De bank schrijft elke maand het bedrag af.	списать (деньги)	Банк каждый месяц списывает эту сумму.	[sound:linkplus_t13_afschrijven.mp3]	link::thema13::taak2::A2
+de douche	8000+	De douche in de badkamer is echt kapot.	душ (кабина)	Душ в ванной правда сломан.	[sound:linkplus_t13_douche.mp3]	link::thema13::taak2::A2
+het stopcontact	8000+	Waar is het stopcontact in de kamer?	розетка	Где розетка в комнате?	[sound:linkplus_t13_stopcontact.mp3]	link::thema13::taak2::A2
+het zonnepaneel	8000+	Mijn oom heeft gewoon zonnepanelen op zijn huis.	солнечная панель; солнечная батарея	У моего дяди просто солнечные панели на доме.	[sound:linkplus_t13_zonnepaneel.mp3]	link::thema13::taak2::A2

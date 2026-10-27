@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 13::taak_4
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+stuk	314	De lift in ons gebouw is al stuk.	неисправный; разбитый	Лифт в нашем здании уже неисправен.	[sound:linkplus_t13_stuk.mp3]	link::thema13::taak4::A2
+ergens	436	Ik heb m'n sleutel echt ergens laten liggen.	где-то	Я правда где-то оставила свой ключ.	[sound:linkplus_t13_ergens.mp3]	link::thema13::taak4::A2
+lukken	462	Het lukt me vandaag niet om te werken.	получиться; удаться	У меня сегодня не получается работать.	[sound:linkplus_t13_lukken.mp3]	link::thema13::taak4::A2
+draaien	471	Draai de sleutel even naar links.	поворачивать; крутить	Поверни ключ налево.	[sound:linkplus_t13_draaien.mp3]	link::thema13::taak4::A2
+gisteren	551	Gisteren was ik gewoon de hele dag thuis.	вчера	Вчера я просто весь день была дома.	[sound:linkplus_t13_gisteren.mp3]	link::thema13::taak4::A2
+het programma	657	Welk programma kies je voor de was?	программа	Какую программу ты выбираешь для стирки?	[sound:linkplus_t13_programma.mp3]	link::thema13::taak4::A2
+het type	941	Welk type telefoon heb jij eigenlijk?	модель; тип	Какая у тебя вообще модель телефона?	[sound:linkplus_t13_type.mp3]	link::thema13::taak4::A2
+nat	1493	Waarom is je jas eigenlijk zo nat?	мокрый	Почему, собственно, твоя куртка такая мокрая?	[sound:linkplus_t13_nat.mp3]	link::thema13::taak4::A2
+opzoeken	1527	Zoek het adres even op, alsjeblieft.	найти (информацию); посмотреть	Найди адрес, пожалуйста.	[sound:linkplus_t13_opzoeken.mp3]	link::thema13::taak4::A2
+het scherm	1922	Mijn telefoon heeft een best groot scherm.	экран	У моего телефона довольно большой экран.	[sound:linkplus_t13_scherm.mp3]	link::thema13::taak4::A2
+afhankelijk	2010	Mijn zus is nog afhankelijk van mijn ouders.	зависимый (от)	Моя сестра ещё зависима от моих родителей.	[sound:linkplus_t13_afhankelijk.mp3]	link::thema13::taak4::A2
+de knop	2011	Waar zit eigenlijk de knop van de lamp?	кнопка	Где, собственно, кнопка у лампы?	[sound:linkplus_t13_knop.mp3]	link::thema13::taak4::A2
+telkens	2240	Telkens als ik bel, is hij gewoon weg.	каждый раз	Каждый раз, когда я звоню, его просто нет.	[sound:linkplus_t13_telkens.mp3]	link::thema13::taak4::A2
+branden	2258	Het licht brandt nog in de keuken.	гореть	На кухне ещё горит свет.	[sound:linkplus_t13_branden.mp3]	link::thema13::taak4::A2
+het tijdstip	2754	Het tijdstip van de afspraak is veranderd.	точное время; момент	Точное время встречи изменилось.	[sound:linkplus_t13_tijdstip.mp3]	link::thema13::taak4::A2
+het kwartier	3004	Ik wacht al een kwartier op de bus.	четверть часа	Я уже четверть часа жду автобус.	[sound:linkplus_t13_kwartier.mp3]	link::thema13::taak4::A2
+lekken	3279	Het dak lekt, dus ik bel de baas.	протекать; течь	Крыша протекает, поэтому я звоню начальнику.	[sound:linkplus_t13_lekken.mp3]	link::thema13::taak4::A2
+de drukte	3473	Ik haat de drukte in de stad.	суета; оживление	Я ненавижу суету в городе.	[sound:linkplus_t13_drukte.mp3]	link::thema13::taak4::A2
+de oven	3497	De pasta ligt nog in de oven.	духовка	Паста ещё лежит в духовке.	[sound:linkplus_t13_oven.mp3]	link::thema13::taak4::A2
+de zolder	4315	Op zolder staan nog best veel spullen.	чердак	На чердаке ещё довольно много вещей.	[sound:linkplus_t13_zolder.mp3]	link::thema13::taak4::A2
+de monteur	4827	De monteur komt morgen gewoon om twee uur.	мастер; монтёр	Мастер придёт завтра в два часа.	[sound:linkplus_t13_monteur.mp3]	link::thema13::taak4::A2
+drukken	5320	Druk hier maar op, dan beginnen we.	нажимать; давить	Нажми здесь, и мы начнём.	[sound:linkplus_t13_drukken.mp3]	link::thema13::taak4::A2
+wassen	6169	Ik moet vandaag nog even mijn kleren wassen.	стирать; мыть	Мне надо ещё сегодня постирать свои вещи.	[sound:linkplus_t13_wassen.mp3]	link::thema13::taak4::A2
+bevroren	8000+	De groente is bevroren, maar nog best goed.	замороженный	Овощи заморожены, но ещё вполне хорошие.	[sound:linkplus_t13_bevroren.mp3]	link::thema13::taak4::A2
+de magnetron	8000+	Zet het eten even in de magnetron.	микроволновка	Поставь еду на минутку в микроволновку.	[sound:linkplus_t13_magnetron.mp3]	link::thema13::taak4::A2

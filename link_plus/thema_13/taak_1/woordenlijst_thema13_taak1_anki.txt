@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 13::taak_1
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+het haar	59	Mijn haar is te lang, vind je niet?	волосы	Мои волосы слишком длинные, не находишь?	[sound:linkplus_t13_haar.mp3]	link::thema13::taak1::A2
+mama	577	Mama belt me gewoon elke avond.	мама	Мама звонит мне каждый вечер.	[sound:linkplus_t13_mama.mp3]	link::thema13::taak1::A2
+raar	656	Het is raar, mijn buurman is nooit thuis.	странный	Это странно, мой сосед никогда не бывает дома.	[sound:linkplus_t13_raar.mp3]	link::thema13::taak1::A2
+lenen	1168	Kan ik je laptop even lenen?	одолжить	Можно одолжить твой ноутбук на минутку?	[sound:linkplus_t13_lenen.mp3]	link::thema13::taak1::A2
+vuil	1195	Mijn schoenen zijn echt vuil na het wandelen.	запачканный; нечистый	Мои ботинки правда запачканы после прогулки.	[sound:linkplus_t13_vuil.mp3]	link::thema13::taak1::A2
+de tand	1284	Mijn tand doet pijn, ik bel de dokter.	зуб	Мой зуб болит, я звоню врачу.	[sound:linkplus_t13_tand.mp3]	link::thema13::taak1::A2
+het bord	1383	Pak even een bord uit de kast.	тарелка	Возьми тарелку из шкафа.	[sound:linkplus_t13_bord.mp3]	link::thema13::taak1::A2
+spannend	1510	Die film in de bioscoop was echt spannend.	захватывающий; напряжённый	Тот фильм в кинотеатре был правда захватывающим.	[sound:linkplus_t13_spannend.mp3]	link::thema13::taak1::A2
+strijken	1569	Dit overhemd hoef ik echt niet te strijken.	гладить	Эту рубашку мне правда не надо гладить.	[sound:linkplus_t13_strijken.mp3]	link::thema13::taak1::A2
+het apparaat	1629	Dit apparaat gebruik ik echt bijna elke dag.	прибор; аппарат	Этот прибор я правда использую почти каждый день.	[sound:linkplus_t13_apparaat.mp3]	link::thema13::taak1::A2
+drogen	1791	In de zomer droog ik de was buiten.	сушить	Летом я сушу бельё на улице.	[sound:linkplus_t13_drogen.mp3]	link::thema13::taak1::A2
+ophangen	1801	Hang je jas maar op in de gang.	вешать; развешивать	Повесь свою куртку в коридоре.	[sound:linkplus_t13_ophangen.mp3]	link::thema13::taak1::A2
+elektrisch	2041	Mijn buurman rijdt in een elektrische auto.	электрический	Мой сосед ездит на электрической машине.	[sound:linkplus_t13_elektrisch.mp3]	link::thema13::taak1::A2
+droog	2981	Mijn jas is gelukkig weer droog.	сухой	Моя куртка, к счастью, снова сухая.	[sound:linkplus_t13_droog.mp3]	link::thema13::taak1::A2
+de tandenborstel	7932	Neem je tandenborstel mee naar het ziekenhuis.	зубная щётка	Возьми с собой зубную щётку в больницу.	[sound:linkplus_t13_tandenborstel.mp3]	link::thema13::taak1::A2
+afwassen	8000+	Wie gaat er vanavond even afwassen?	мыть посуду	Кто сегодня вечером будет мыть посуду?	[sound:linkplus_t13_afwassen.mp3]	link::thema13::taak1::A2
+de afwasmachine	8000+	De afwasmachine in mijn keuken is best nieuw.	посудомоечная машина	Посудомоечная машина на моей кухне довольно новая.	[sound:linkplus_t13_afwasmachine.mp3]	link::thema13::taak1::A2
+de droger	8000+	Mijn nieuwe droger staat gewoon naast de wasmachine.	сушильная машина	Моя новая сушильная машина просто стоит рядом со стиральной.	[sound:linkplus_t13_droger.mp3]	link::thema13::taak1::A2
+de föhn	8000+	Mijn föhn is echt kapot, helaas.	фен	Мой фен правда сломан, к сожалению.	[sound:linkplus_t13_föhn.mp3]	link::thema13::taak1::A2
+de stofzuiger	8000+	Ik pak even de stofzuiger, het is vies.	пылесос	Я беру пылесос, тут грязно.	[sound:linkplus_t13_stofzuiger.mp3]	link::thema13::taak1::A2
+het aanrecht	8000+	Leg de broodjes gewoon op het aanrecht.	кухонная столешница	Положи булочки просто на столешницу.	[sound:linkplus_t13_aanrecht.mp3]	link::thema13::taak1::A2
+het strijkijzer	8000+	Het strijkijzer is heet, kijk goed uit!	утюг	Утюг горячий, осторожно!	[sound:linkplus_t13_strijkijzer.mp3]	link::thema13::taak1::A2

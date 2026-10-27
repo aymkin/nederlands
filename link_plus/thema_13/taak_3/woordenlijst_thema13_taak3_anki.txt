@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 13::taak_3
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+bekend	345	Dit restaurant is in de stad best bekend.	известный; знакомый	Этот ресторан довольно известен в городе.	[sound:linkplus_t13_bekend.mp3]	link::thema13::taak3::A2
+verlaten	486	Ze verlaat elke ochtend vroeg het huis.	покинуть; оставить	Она каждое утро рано покидает дом.	[sound:linkplus_t13_verlaten.mp3]	link::thema13::taak3::A2
+uiteindelijk	589	Uiteindelijk kocht ik toch een nieuwe tas.	в итоге; в конечном счёте	В итоге я всё-таки купила новую сумку.	[sound:linkplus_t13_uiteindelijk.mp3]	link::thema13::taak3::A2
+controleren	847	De agent controleert mijn rijbewijs even.	проверять; контролировать	Полицейский проверяет мои права.	[sound:linkplus_t13_controleren.mp3]	link::thema13::taak3::A2
+eenvoudig	995	Dit recept voor de soep is echt eenvoudig.	простой; незамысловатый	Этот рецепт супа правда простой.	[sound:linkplus_t13_eenvoudig.mp3]	link::thema13::taak3::A2
+vervangen	1039	Ik moet de lamp even vervangen.	заменить	Мне надо заменить лампу.	[sound:linkplus_t13_vervangen.mp3]	link::thema13::taak3::A2
+merken	1074	Ik merk echt meteen dat het koud is.	заметить	Я правда сразу замечаю, что холодно.	[sound:linkplus_t13_merken.mp3]	link::thema13::taak3::A2
+vullen	1171	Ik vul het glas even met water.	наполнять; заполнять	Я наполняю стакан водой.	[sound:linkplus_t13_vullen.mp3]	link::thema13::taak3::A2
+het toilet	1385	Is het toilet in de trein gratis?	туалет	Туалет в поезде бесплатный?	[sound:linkplus_t13_toilet.mp3]	link::thema13::taak3::A2
+de temperatuur	1831	De temperatuur is vandaag lekker warm.	температура	Температура сегодня приятно тёплая.	[sound:linkplus_t13_temperatuur.mp3]	link::thema13::taak3::A2
+verstandig	2081	Dat is echt een verstandige keuze, vind ik.	разумный	Это правда разумный выбор, я считаю.	[sound:linkplus_t13_verstandig.mp3]	link::thema13::taak3::A2
+het tiental	2463	Een tiental mensen wacht buiten.	около десяти; десяток	Около десяти человек ждут на улице.	[sound:linkplus_t13_tiental.mp3]	link::thema13::taak3::A2
+de deken	2538	In de winter slaap ik onder een deken.	одеяло	Зимой я сплю под одеялом.	[sound:linkplus_t13_deken.mp3]	link::thema13::taak3::A2
+het laken	2655	Op het bed ligt een wit laken.	простыня	На кровати лежит белая простыня.	[sound:linkplus_t13_laken.mp3]	link::thema13::taak3::A2
+de rij	2905	Wij zitten gewoon in de eerste rij.	ряд мест; шеренга	Мы просто сидим в первом ряду.	[sound:linkplus_t13_rij.mp3]	link::thema13::taak3::A2
+aanzetten	3138	Zet de verwarming maar aan, het is koud.	включить	Включи отопление, холодно.	[sound:linkplus_t13_aanzetten.mp3]	link::thema13::taak3::A2
+de handdoek	3479	Neem je handdoek mee naar het zwembad.	полотенце	Возьми с собой полотенце в бассейн.	[sound:linkplus_t13_handdoek.mp3]	link::thema13::taak3::A2
+het ondergoed	3696	Ik koop gewoon nieuw ondergoed in de winkel.	нижнее бельё	Я просто покупаю новое нижнее бельё в магазине.	[sound:linkplus_t13_ondergoed.mp3]	link::thema13::taak3::A2
+duurzaam	3734	Ik wil echt duurzaam leven, voor het milieu.	экологичный; устойчивый	Я правда хочу жить экологично, ради окружающей среды.	[sound:linkplus_t13_duurzaam.mp3]	link::thema13::taak3::A2
+de pyjama	5906	Ik trek mijn pyjama aan, het is laat.	пижама	Я надеваю пижаму, уже поздно.	[sound:linkplus_t13_pyjama.mp3]	link::thema13::taak3::A2
+uitdoen	6713	Doe het licht uit, ik ga slapen.	гасить (свет)	Погаси свет, я ложусь спать.	[sound:linkplus_t13_uitdoen.mp3]	link::thema13::taak3::A2
+zuinig	6721	Een zuinige auto kost minder geld.	экономный	Экономная машина обходится дешевле.	[sound:linkplus_t13_zuinig.mp3]	link::thema13::taak3::A2
+de vriezer	6964	De vis ligt gewoon in de vriezer.	морозилка; морозильник	Рыба просто лежит в морозилке.	[sound:linkplus_t13_vriezer.mp3]	link::thema13::taak3::A2
+aanstaan	8000+	De televisie staat gewoon de hele dag aan.	быть включённым	Телевизор просто включён весь день.	[sound:linkplus_t13_aanstaan.mp3]	link::thema13::taak3::A2
+halfvol	8000+	De koelkast is halfvol, ga boodschappen doen.	наполовину полный	Холодильник наполовину полон, сходи за продуктами.	[sound:linkplus_t13_halfvol.mp3]	link::thema13::taak3::A2
