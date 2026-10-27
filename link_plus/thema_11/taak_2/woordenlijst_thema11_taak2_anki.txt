@@ -21,7 +21,7 @@ de nicht	1814	Mijn nicht werkt in een winkel.	двоюродная сестра;
 de vriendschap	1988	Onze vriendschap is heel belangrijk voor me.	дружба	Наша дружба очень важна для меня.	[sound:linkplus_t11_vriendschap.mp3]	link::thema11::taak2::A2
 het examen	2522	Ik heb morgen een belangrijk examen.	экзамен	У меня завтра важный экзамен.	[sound:linkplus_t11_examen.mp3]	link::thema11::taak2::A2
 logeren	3136	Mijn vriendin komt dit weekend bij ons logeren.	гостить; ночевать у кого-то	Моя подруга приедет на эти выходные к нам погостить.	[sound:linkplus_t11_logeren.mp3]	link::thema11::taak2::A2
-egoïstisch	4358	Ze is soms best egoïstisch, vind ik.	эгоистичный	Она иногда довольно эгоистична, по-моему.	[sound:linkplus_t11_egoïstisch.mp3]	link::thema11::taak2::A2
+egoïstisch	4358	Ze is soms best egoïstisch, vind ik.	эгоистичный	Она иногда довольно эгоистична, по-моему.	[sound:linkplus_t11_egoistisch.mp3]	link::thema11::taak2::A2
 de zwager	6532	Mijn zwager is dokter in Utrecht.	муж сестры; зять	Муж моей сестры — врач в Утрехте.	[sound:linkplus_t11_zwager.mp3]	link::thema11::taak2::A2
 de schoonouders	8000+	Zijn schoonouders wonen in Polen.	родители жены/мужа	Родители его жены живут в Польше.	[sound:linkplus_t11_schoonouders.mp3]	link::thema11::taak2::A2
 de smoes	8000+	Je hebt altijd weer een smoes.	отговорка; отмазка (разг.)	У тебя всегда есть очередная отговорка.	[sound:linkplus_t11_smoes.mp3]	link::thema11::taak2::A2

@@ -22,7 +22,7 @@ de tandenborstel	7932	Neem je tandenborstel mee naar het ziekenhuis.	зубна�
 afwassen	8000+	Wie gaat er vanavond even afwassen?	мыть посуду	Кто сегодня вечером будет мыть посуду?	[sound:linkplus_t13_afwassen.mp3]	link::thema13::taak1::A2
 de afwasmachine	8000+	De afwasmachine in mijn keuken is best nieuw.	посудомоечная машина	Посудомоечная машина на моей кухне довольно новая.	[sound:linkplus_t13_afwasmachine.mp3]	link::thema13::taak1::A2
 de droger	8000+	Mijn nieuwe droger staat gewoon naast de wasmachine.	сушильная машина	Моя новая сушильная машина просто стоит рядом со стиральной.	[sound:linkplus_t13_droger.mp3]	link::thema13::taak1::A2
-de föhn	8000+	Mijn föhn is echt kapot, helaas.	фен	Мой фен правда сломан, к сожалению.	[sound:linkplus_t13_föhn.mp3]	link::thema13::taak1::A2
+de föhn	8000+	Mijn föhn is echt kapot, helaas.	фен	Мой фен правда сломан, к сожалению.	[sound:linkplus_t13_fohn.mp3]	link::thema13::taak1::A2
 de stofzuiger	8000+	Ik pak even de stofzuiger, het is vies.	пылесос	Я беру пылесос, тут грязно.	[sound:linkplus_t13_stofzuiger.mp3]	link::thema13::taak1::A2
 het aanrecht	8000+	Leg de broodjes gewoon op het aanrecht.	кухонная столешница	Положи булочки просто на столешницу.	[sound:linkplus_t13_aanrecht.mp3]	link::thema13::taak1::A2
 het strijkijzer	8000+	Het strijkijzer is heet, kijk goed uit!	утюг	Утюг горячий, осторожно!	[sound:linkplus_t13_strijkijzer.mp3]	link::thema13::taak1::A2

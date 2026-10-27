@@ -18,18 +18,18 @@ het optreden	1136	Ik heb je optreden gezien, echt mooi!	выступление	�
 de regio	1248	Wij wonen in een best rustige regio.	регион	Мы живём в довольно тихом регионе.	[sound:linkplus_t11_regio.mp3]	link::thema11::taak4::A2
 het noorden	1339	Mijn familie woont in het noorden.	север	Моя семья живёт на севере.	[sound:linkplus_t11_noorden.mp3]	link::thema11::taak4::A2
 het zuiden	1412	In de zomer gaan we naar het zuiden.	юг	Летом мы едем на юг.	[sound:linkplus_t11_zuiden.mp3]	link::thema11::taak4::A2
-Europees	1502	Nederland is een Europees land.	европейский	Нидерланды — европейская страна.	[sound:linkplus_t11_Europees.mp3]	link::thema11::taak4::A2
+Europees	1502	Nederland is een Europees land.	европейский	Нидерланды — европейская страна.	[sound:linkplus_t11_europees.mp3]	link::thema11::taak4::A2
 de traditie	1961	In Nederland is dat een mooie traditie, hoor.	традиция	В Нидерландах это красивая традиция.	[sound:linkplus_t11_traditie.mp3]	link::thema11::taak4::A2
 oranje	2229	Ik heb een oranje jas gekocht.	оранжевый	Я купила оранжевую куртку.	[sound:linkplus_t11_oranje.mp3]	link::thema11::taak4::A2
 christelijk	2962	Zij gaat naar een christelijke school.	христианский	Она ходит в христианскую школу.	[sound:linkplus_t11_christelijk.mp3]	link::thema11::taak4::A2
 aflopen	3437	De vergadering loopt altijd laat af.	заканчиваться; истекать (о сроке)	Собрание всегда заканчивается поздно.	[sound:linkplus_t11_aflopen.mp3]	link::thema11::taak4::A2
 het voorjaar	5199	In het voorjaar fiets ik naar m'n werk.	весна	Весной я езжу на работу на велосипеде.	[sound:linkplus_t11_voorjaar.mp3]	link::thema11::taak4::A2
 herdenken	6946	Elk jaar herdenken we deze dag.	чтить память; отмечать (памятную дату)	Каждый год мы чтим память этого дня.	[sound:linkplus_t11_herdenken.mp3]	link::thema11::taak4::A2
-Hemelvaart	8000+	Met Hemelvaart ben ik vrij.	Вознесение (праздник)	В Вознесение у меня выходной.	[sound:linkplus_t11_Hemelvaart.mp3]	link::thema11::taak4::A2
-Kerstmis	8000+	Heel mijn familie komt met Kerstmis.	Рождество	Вся моя семья приезжает на Рождество.	[sound:linkplus_t11_Kerstmis.mp3]	link::thema11::taak4::A2
-Koningsdag	8000+	Op Koningsdag is er een grote markt.	День короля	В День короля бывает большой рынок.	[sound:linkplus_t11_Koningsdag.mp3]	link::thema11::taak4::A2
-Pasen	8000+	Pasen valt dit jaar in april.	Пасха	Пасха выпадает в этом году на апрель.	[sound:linkplus_t11_Pasen.mp3]	link::thema11::taak4::A2
-Pinksteren	8000+	Zijn de winkels met Pinksteren open?	Троица; Пятидесятница	Магазины на Троицу открыты?	[sound:linkplus_t11_Pinksteren.mp3]	link::thema11::taak4::A2
+Hemelvaart	8000+	Met Hemelvaart ben ik vrij.	Вознесение (праздник)	В Вознесение у меня выходной.	[sound:linkplus_t11_hemelvaart.mp3]	link::thema11::taak4::A2
+Kerstmis	8000+	Heel mijn familie komt met Kerstmis.	Рождество	Вся моя семья приезжает на Рождество.	[sound:linkplus_t11_kerstmis.mp3]	link::thema11::taak4::A2
+Koningsdag	8000+	Op Koningsdag is er een grote markt.	День короля	В День короля бывает большой рынок.	[sound:linkplus_t11_koningsdag.mp3]	link::thema11::taak4::A2
+Pasen	8000+	Pasen valt dit jaar in april.	Пасха	Пасха выпадает в этом году на апрель.	[sound:linkplus_t11_pasen.mp3]	link::thema11::taak4::A2
+Pinksteren	8000+	Zijn de winkels met Pinksteren open?	Троица; Пятидесятница	Магазины на Троицу открыты?	[sound:linkplus_t11_pinksteren.mp3]	link::thema11::taak4::A2
 de scholier	8000+	Elke scholier krijgt gewoon een gratis boek.	школьник; школьница	Каждый школьник просто получает бесплатную книгу.	[sound:linkplus_t11_scholier.mp3]	link::thema11::taak4::A2
 enzovoorts	8000+	We hebben brood, kaas, melk, enzovoorts.	и так далее	У нас есть хлеб, сыр, молоко и так далее.	[sound:linkplus_t11_enzovoorts.mp3]	link::thema11::taak4::A2
 oud en nieuw	8000+	Wat doen jullie met oud en nieuw?	Новый год (канун)	Что вы делаете на Новый год?	[sound:linkplus_t11_oud_en_nieuw.mp3]	link::thema11::taak4::A2

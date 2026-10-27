@@ -15,7 +15,7 @@ de klas	1304	De klas gaat morgen naar het strand.	класс (ученики)	К
 de leerling	1311	Die leerling is altijd heel rustig.	ученик; ученица	Этот ученик всегда очень спокойный.	[sound:linkplus_t12_leerling.mp3]	link::thema12::taak1::A2
 rennen	1389	De kinderen rennen lekker over het schoolplein.	носиться; бежать	Дети с удовольствием носятся по школьному двору.	[sound:linkplus_t12_rennen.mp3]	link::thema12::taak1::A2
 de pauze	1816	Tijdens de pauze drinken we gewoon koffie.	перемена; пауза	Во время перемены мы просто пьём кофе.	[sound:linkplus_t12_pauze.mp3]	link::thema12::taak1::A2
-Engels	1911	Mijn zus spreekt best goed Engels.	английский (язык)	Моя сестра довольно хорошо говорит на английском.	[sound:linkplus_t12_Engels.mp3]	link::thema12::taak1::A2
+Engels	1911	Mijn zus spreekt best goed Engels.	английский (язык)	Моя сестра довольно хорошо говорит на английском.	[sound:linkplus_t12_engels.mp3]	link::thema12::taak1::A2
 het vak	2016	Welk vak vind je het leukst?	предмет (в школе)	Какой предмет тебе нравится больше всего?	[sound:linkplus_t12_vak.mp3]	link::thema12::taak1::A2
 het bedrag	2140	Dit bedrag kan ik echt niet betalen.	сумма (денег)	Эту сумму я правда не могу заплатить.	[sound:linkplus_t12_bedrag.mp3]	link::thema12::taak1::A2
 het uniform	2254	Op school dragen ze een blauw uniform.	форма (одежда)	В школе они носят синюю форму.	[sound:linkplus_t12_uniform.mp3]	link::thema12::taak1::A2

@@ -14,7 +14,7 @@ positief	1119	Hij blijft positief, ook als het moeilijk is.	позитивный
 actief	1123	Mijn buurman is oud, maar nog best actief.	активный	Мой сосед уже старый, но ещё довольно активный.	[sound:linkplus_t12_actief.mp3]	link::thema12::taak3::A2
 nauwelijks	1321	Ik heb echt nauwelijks tijd voor sport.	почти не; едва	У меня правда почти нет времени на спорт.	[sound:linkplus_t12_nauwelijks.mp3]	link::thema12::taak3::A2
 ontzettend	1553	Het was ontzettend gezellig, tot snel!	ужасно; чрезвычайно	Было ужасно приятно, до скорого!	[sound:linkplus_t12_ontzettend.mp3]	link::thema12::taak3::A2
-Chinees	1743	Mijn collega leert Chinees op de universiteit.	китайский (язык)	Мой коллега учит китайский в университете.	[sound:linkplus_t12_Chinees.mp3]	link::thema12::taak3::A2
+Chinees	1743	Mijn collega leert Chinees op de universiteit.	китайский (язык)	Мой коллега учит китайский в университете.	[sound:linkplus_t12_chinees.mp3]	link::thema12::taak3::A2
 de presentatie	2686	Morgen geef ik even een presentatie op kantoor.	презентация	Завтра я проведу презентацию в офисе.	[sound:linkplus_t12_presentatie.mp3]	link::thema12::taak3::A2
 de piano	3096	Mijn buurvrouw speelt elke avond gewoon piano.	пианино; фортепиано	Моя соседка каждый вечер играет на пианино.	[sound:linkplus_t12_piano.mp3]	link::thema12::taak3::A2
 opvallen	3146	Die rode jas valt echt op.	бросаться в глаза; выделяться	Эта красная куртка прямо бросается в глаза.	[sound:linkplus_t12_opvallen.mp3]	link::thema12::taak3::A2
