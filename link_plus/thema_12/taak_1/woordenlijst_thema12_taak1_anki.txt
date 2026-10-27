@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 12::taak_1
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+eerder	315	Ik ben vandaag gewoon eerder klaar.	пораньше; ранее	Я сегодня просто закончила пораньше.	[sound:linkplus_t12_eerder.mp3]	link::thema12::taak1::A2
+bouwen	546	De buren bouwen een nieuw huis.	строить	Соседи строят новый дом.	[sound:linkplus_t12_bouwen.mp3]	link::thema12::taak1::A2
+de geschiedenis	655	Geschiedenis is voor mij echt moeilijk, helaas.	история (предмет)	История для меня правда сложная, к сожалению.	[sound:linkplus_t12_geschiedenis.mp3]	link::thema12::taak1::A2
+het rekenen	980	Met rekenen heb ik soms moeite.	арифметика; счёт	С арифметикой у меня иногда трудности.	[sound:linkplus_t12_rekenen.mp3]	link::thema12::taak1::A2
+het lokaal	1035	In welk lokaal is de les eigenlijk?	кабинет; аудитория	В каком кабинете, собственно, урок?	[sound:linkplus_t12_lokaal.mp3]	link::thema12::taak1::A2
+de meester	1145	De meester wacht buiten op ons.	учитель (в начальной школе)	Учитель ждёт нас на улице.	[sound:linkplus_t12_meester.mp3]	link::thema12::taak1::A2
+de ontwikkeling	1282	De ontwikkeling van het kind gaat snel.	развитие	Развитие ребёнка идёт быстро.	[sound:linkplus_t12_ontwikkeling.mp3]	link::thema12::taak1::A2
+de klas	1304	De klas gaat morgen naar het strand.	класс (ученики)	Класс завтра идёт на пляж.	[sound:linkplus_t12_klas.mp3]	link::thema12::taak1::A2
+de leerling	1311	Die leerling is altijd heel rustig.	ученик; ученица	Этот ученик всегда очень спокойный.	[sound:linkplus_t12_leerling.mp3]	link::thema12::taak1::A2
+rennen	1389	De kinderen rennen lekker over het schoolplein.	носиться; бежать	Дети с удовольствием носятся по школьному двору.	[sound:linkplus_t12_rennen.mp3]	link::thema12::taak1::A2
+de pauze	1816	Tijdens de pauze drinken we gewoon koffie.	перемена; пауза	Во время перемены мы просто пьём кофе.	[sound:linkplus_t12_pauze.mp3]	link::thema12::taak1::A2
+Engels	1911	Mijn zus spreekt best goed Engels.	английский (язык)	Моя сестра довольно хорошо говорит на английском.	[sound:linkplus_t12_Engels.mp3]	link::thema12::taak1::A2
+het vak	2016	Welk vak vind je het leukst?	предмет (в школе)	Какой предмет тебе нравится больше всего?	[sound:linkplus_t12_vak.mp3]	link::thema12::taak1::A2
+het bedrag	2140	Dit bedrag kan ik echt niet betalen.	сумма (денег)	Эту сумму я правда не могу заплатить.	[sound:linkplus_t12_bedrag.mp3]	link::thema12::taak1::A2
+het uniform	2254	Op school dragen ze een blauw uniform.	форма (одежда)	В школе они носят синюю форму.	[sound:linkplus_t12_uniform.mp3]	link::thema12::taak1::A2
+de prestatie	2352	Wat een prestatie, gefeliciteerd met je succes!	достижение; результат	Какое достижение, поздравляю с успехом!	[sound:linkplus_t12_prestatie.mp3]	link::thema12::taak1::A2
+de religie	2781	Religie is een belangrijk onderwerp voor haar.	религия	Религия — важная тема для неё.	[sound:linkplus_t12_religie.mp3]	link::thema12::taak1::A2
+de biologie	5828	Biologie vind ik echt heel leuk.	биология	Биология мне правда очень нравится.	[sound:linkplus_t12_biologie.mp3]	link::thema12::taak1::A2
+de aardrijkskunde	8000+	Bij aardrijkskunde leren we echt veel over Nederland.	география	На географии мы правда много узнаём о Нидерландах.	[sound:linkplus_t12_aardrijkskunde.mp3]	link::thema12::taak1::A2
+de gymnastiek	8000+	Na gymnastiek ben ik altijd moe.	физкультура; гимнастика	После физкультуры я всегда устала.	[sound:linkplus_t12_gymnastiek.mp3]	link::thema12::taak1::A2
+het schoolreisje	8000+	Morgen gaan we op schoolreisje, hoor.	школьная поездка	Завтра мы едем в школьную поездку.	[sound:linkplus_t12_schoolreisje.mp3]	link::thema12::taak1::A2
+het uitstapje	8000+	Zaterdag maken we gewoon een leuk uitstapje.	вылазка; поездка на день	В субботу мы просто устроим весёлую вылазку.	[sound:linkplus_t12_uitstapje.mp3]	link::thema12::taak1::A2
+knutselen	8000+	Ze knutselt even een kaart voor haar moeder.	мастерить поделки; рукодельничать	Она мастерит открытку для своей мамы.	[sound:linkplus_t12_knutselen.mp3]	link::thema12::taak1::A2
+omgaan met	8000+	Ik kan goed met kinderen omgaan.	обращаться с; общаться с	Я хорошо умею обращаться с детьми.	[sound:linkplus_t12_omgaan_met.mp3]	link::thema12::taak1::A2
+verplicht	8000+	Zwemmen is hier echt verplicht voor iedereen.	обязательный	Плавать здесь правда обязательно для всех.	[sound:linkplus_t12_verplicht.mp3]	link::thema12::taak1::A2

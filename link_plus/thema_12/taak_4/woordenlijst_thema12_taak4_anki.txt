@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 12::taak_4
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+bestaan	301	Bestaat die winkel nog in jouw buurt?	существовать; состоять (из)	Существует ли ещё тот магазин в твоём районе?	[sound:linkplus_t12_bestaan.mp3]	link::thema12::taak4::A2
+bereiken	507	Met hard werken bereik je echt veel.	достичь; добиться	Усердно работая, ты правда многого достигнешь.	[sound:linkplus_t12_bereiken.mp3]	link::thema12::taak4::A2
+het doel	519	Mijn doel is gewoon een goede baan.	цель	Моя цель — просто хорошая работа.	[sound:linkplus_t12_doel.mp3]	link::thema12::taak4::A2
+Duits	800	Op school leerde ik best veel Duits.	немецкий (язык)	В школе я довольно много учила немецкий.	[sound:linkplus_t12_Duits.mp3]	link::thema12::taak4::A2
+dichtbij	827	De bakker is gelukkig dichtbij.	недалеко; близко	Пекарня, к счастью, недалеко.	[sound:linkplus_t12_dichtbij.mp3]	link::thema12::taak4::A2
+gemakkelijk	979	Die route is gelukkig best gemakkelijk.	несложный; простой	Этот маршрут, к счастью, довольно несложный.	[sound:linkplus_t12_gemakkelijk.mp3]	link::thema12::taak4::A2
+de invloed	1091	Je vrienden hebben echt veel invloed op je.	влияние	Твои друзья правда оказывают на тебя большое влияние.	[sound:linkplus_t12_invloed.mp3]	link::thema12::taak4::A2
+de bedoeling	1167	Het spijt me, dat was niet mijn bedoeling.	намерение; замысел	Мне жаль, это не входило в мои намерения.	[sound:linkplus_t12_bedoeling.mp3]	link::thema12::taak4::A2
+het voordeel	1198	Het voordeel van die winkel: alles is goedkoop.	преимущество; плюс	Преимущество этого магазина: всё дёшево.	[sound:linkplus_t12_voordeel.mp3]	link::thema12::taak4::A2
+doorgaan	1301	Gaat de training morgen gewoon door?	состояться; продолжаться	Состоится ли завтра тренировка?	[sound:linkplus_t12_doorgaan.mp3]	link::thema12::taak4::A2
+onbekend	1358	Deze straat en wijk zijn onbekend voor mij.	незнакомый; неизвестный	Эта улица и район мне незнакомы.	[sound:linkplus_t12_onbekend.mp3]	link::thema12::taak4::A2
+het interview	1369	Het interview op de televisie duurt een uur.	интервью	Интервью по телевизору длится час.	[sound:linkplus_t12_interview.mp3]	link::thema12::taak4::A2
+negatief	1490	Wees niet zo negatief, het komt wel goed.	негативный; отрицательный	Не будь таким негативным, всё будет хорошо.	[sound:linkplus_t12_negatief.mp3]	link::thema12::taak4::A2
+de uitspraak	1852	Mijn uitspraak is nog niet goed genoeg.	произношение	Моё произношение пока недостаточно хорошее.	[sound:linkplus_t12_uitspraak.mp3]	link::thema12::taak4::A2
+besteden	1866	Ik besteed best veel tijd aan mijn werk.	посвящать (время); расходовать	Я посвящаю довольно много времени своей работе.	[sound:linkplus_t12_besteden.mp3]	link::thema12::taak4::A2
+uitspreken	3797	Kun je mijn achternaam even uitspreken?	произносить	Можешь произнести мою фамилию?	[sound:linkplus_t12_uitspreken.mp3]	link::thema12::taak4::A2
+de motivatie	5046	Zonder motivatie kun je gewoon niet leren.	мотивация	Без мотивации ты просто не можешь учиться.	[sound:linkplus_t12_motivatie.mp3]	link::thema12::taak4::A2
+Arabisch	8000+	Mijn buurman spreekt Arabisch en Nederlands.	арабский (язык)	Мой сосед говорит на арабском и нидерландском.	[sound:linkplus_t12_Arabisch.mp3]	link::thema12::taak4::A2
+afhangen van	8000+	Wandelen we? Het kan van het weer afhangen.	зависеть от	Гуляем? Это может зависеть от погоды.	[sound:linkplus_t12_afhangen_van.mp3]	link::thema12::taak4::A2
+de grammatica	8000+	Nederlandse grammatica vind ik soms echt lastig.	грамматика	Нидерландскую грамматику я иногда правда считаю сложной.	[sound:linkplus_t12_grammatica.mp3]	link::thema12::taak4::A2
+de klank	8000+	De klank van deze taal is echt mooi.	звучание; звук (в слове)	Звучание этого языка правда красивое.	[sound:linkplus_t12_klank.mp3]	link::thema12::taak4::A2
+de lesmethode	8000+	Deze lesmethode is echt duidelijk en gratis.	метод обучения; методика	Этот метод обучения правда понятный и бесплатный.	[sound:linkplus_t12_lesmethode.mp3]	link::thema12::taak4::A2
+de moedertaal	8000+	Met mijn vader praat ik in mijn moedertaal.	родной язык	С отцом я говорю на своём родном языке.	[sound:linkplus_t12_moedertaal.mp3]	link::thema12::taak4::A2
+het staatsexamen NT2	8000+	Volgend jaar doe ik het staatsexamen NT2.	госэкзамен NT2	В следующем году я сдаю госэкзамен NT2.	[sound:linkplus_t12_staatsexamen_NT2.mp3]	link::thema12::taak4::A2
+het taalcontact	8000+	Met mijn buren heb ik best veel taalcontact.	языковая практика; общение на языке	С моими соседями у меня довольно много языковой практики.	[sound:linkplus_t12_taalcontact.mp3]	link::thema12::taak4::A2

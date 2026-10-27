@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 12::taak_3
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+volgen	140	Ik volg een training voor mijn werk.	посещать (курс); следовать	Я посещаю тренинг для своей работы.	[sound:linkplus_t12_volgen.mp3]	link::thema12::taak3::A2
+bijzonder	606	Het was echt een bijzondere dag, bedankt!	особенный; необычный	Это был правда особенный день, спасибо!	[sound:linkplus_t12_bijzonder.mp3]	link::thema12::taak3::A2
+de aandacht	619	Geef je kind genoeg aandacht, hoor.	внимание	Уделяй своему ребёнку достаточно внимания.	[sound:linkplus_t12_aandacht.mp3]	link::thema12::taak3::A2
+de reis	663	Onze reis naar Polen duurt best lang.	путешествие; поездка	Наше путешествие в Польшу длится довольно долго.	[sound:linkplus_t12_reis.mp3]	link::thema12::taak3::A2
+trouwens	799	Hoe gaat het trouwens met je moeder?	кстати; впрочем	Как, кстати, дела у твоей мамы?	[sound:linkplus_t12_trouwens.mp3]	link::thema12::taak3::A2
+bezoeken	820	Ik bezoek morgen gewoon mijn tante in Rotterdam.	навестить; посетить	Я завтра просто навещу свою тётю в Роттердаме.	[sound:linkplus_t12_bezoeken.mp3]	link::thema12::taak3::A2
+positief	1119	Hij blijft positief, ook als het moeilijk is.	позитивный; положительный	Он остаётся позитивным, даже если трудно.	[sound:linkplus_t12_positief.mp3]	link::thema12::taak3::A2
+actief	1123	Mijn buurman is oud, maar nog best actief.	активный	Мой сосед уже старый, но ещё довольно активный.	[sound:linkplus_t12_actief.mp3]	link::thema12::taak3::A2
+nauwelijks	1321	Ik heb echt nauwelijks tijd voor sport.	почти не; едва	У меня правда почти нет времени на спорт.	[sound:linkplus_t12_nauwelijks.mp3]	link::thema12::taak3::A2
+ontzettend	1553	Het was ontzettend gezellig, tot snel!	ужасно; чрезвычайно	Было ужасно приятно, до скорого!	[sound:linkplus_t12_ontzettend.mp3]	link::thema12::taak3::A2
+Chinees	1743	Mijn collega leert Chinees op de universiteit.	китайский (язык)	Мой коллега учит китайский в университете.	[sound:linkplus_t12_Chinees.mp3]	link::thema12::taak3::A2
+de presentatie	2686	Morgen geef ik even een presentatie op kantoor.	презентация	Завтра я проведу презентацию в офисе.	[sound:linkplus_t12_presentatie.mp3]	link::thema12::taak3::A2
+de piano	3096	Mijn buurvrouw speelt elke avond gewoon piano.	пианино; фортепиано	Моя соседка каждый вечер играет на пианино.	[sound:linkplus_t12_piano.mp3]	link::thema12::taak3::A2
+opvallen	3146	Die rode jas valt echt op.	бросаться в глаза; выделяться	Эта красная куртка прямо бросается в глаза.	[sound:linkplus_t12_opvallen.mp3]	link::thema12::taak3::A2
+de campus	3581	Op de campus is een best gezellig café.	кампус	На кампусе есть довольно уютное кафе.	[sound:linkplus_t12_campus.mp3]	link::thema12::taak3::A2
+samenwerken	3601	Wij werken best goed samen met de buren.	работать вместе; сотрудничать	Мы довольно хорошо работаем вместе с соседями.	[sound:linkplus_t12_samenwerken.mp3]	link::thema12::taak3::A2
+de workshop	4496	De workshop begint morgen vroeg.	семинар; воркшоп	Семинар начинается завтра рано.	[sound:linkplus_t12_workshop.mp3]	link::thema12::taak3::A2
+presteren	5743	Onder stress kan ik echt niet goed presteren.	показывать результат; добиваться результатов	Под стрессом я правда не могу показывать хорошие результаты.	[sound:linkplus_t12_presteren.mp3]	link::thema12::taak3::A2
+de bijles	8000+	Mijn neef krijgt gewoon bijles voor Engels.	дополнительные уроки; репетиторство	Мой двоюродный брат просто берёт дополнительные уроки по английскому.	[sound:linkplus_t12_bijles.mp3]	link::thema12::taak3::A2
+de sportclub	8000+	Onze sportclub heeft eigenlijk een nieuw veld.	спортивный клуб	У нашего спортивного клуба, вообще-то, новое поле.	[sound:linkplus_t12_sportclub.mp3]	link::thema12::taak3::A2
+gemotiveerd	8000+	De studenten zijn echt gemotiveerd, ze werken hard.	мотивированный	Студенты правда мотивированы, они много работают.	[sound:linkplus_t12_gemotiveerd.mp3]	link::thema12::taak3::A2
+het bijbaantje	8000+	Mijn vriend heeft een bijbaantje bij de supermarkt.	подработка	У моего друга подработка в супермаркете.	[sound:linkplus_t12_bijbaantje.mp3]	link::thema12::taak3::A2

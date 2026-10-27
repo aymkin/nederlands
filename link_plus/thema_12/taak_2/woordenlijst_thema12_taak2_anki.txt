@@ -1,0 +1,33 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 12::taak_2
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+de toekomst	528	Ik denk eigenlijk veel aan mijn toekomst.	будущее	Я, вообще-то, много думаю о своём будущем.	[sound:linkplus_t12_toekomst.mp3]	link::thema12::taak2::A2
+de advocaat	584	Mijn buurman werkt als advocaat in Utrecht.	адвокат	Мой сосед работает адвокатом в Утрехте.	[sound:linkplus_t12_advocaat.mp3]	link::thema12::taak2::A2
+de keuze	596	Dat is een moeilijke keuze voor mijn vader.	выбор	Это трудный выбор для моего отца.	[sound:linkplus_t12_keuze.mp3]	link::thema12::taak2::A2
+interessant	628	Dat boek over de stad is best interessant.	интересный	Та книга про город довольно интересная.	[sound:linkplus_t12_interessant.mp3]	link::thema12::taak2::A2
+de universiteit	850	Mijn vriendin werkt eigenlijk op de universiteit.	университет	Моя подруга, вообще-то, работает в университете.	[sound:linkplus_t12_universiteit.mp3]	link::thema12::taak2::A2
+beslissen	886	Ik moet vandaag beslissen, helaas.	принять решение; определиться	Мне надо сегодня принять решение, к сожалению.	[sound:linkplus_t12_beslissen.mp3]	link::thema12::taak2::A2
+het niveau	1147	Mijn Nederlands is nog niet op hoog niveau.	уровень	Мой нидерландский пока не на высоком уровне.	[sound:linkplus_t12_niveau.mp3]	link::thema12::taak2::A2
+slagen	1346	Ik wil echt slagen voor mijn examen.	успешно сдать (экзамен); справиться	Я правда хочу успешно сдать свой экзамен.	[sound:linkplus_t12_slagen.mp3]	link::thema12::taak2::A2
+het beroep	1421	Dokter is echt een mooi beroep, vind ik.	профессия	Врач — правда прекрасная профессия, я считаю.	[sound:linkplus_t12_beroep.mp3]	link::thema12::taak2::A2
+het cijfer	1447	Ik krijg eigenlijk altijd een goed cijfer.	оценка (в школе)	Я, вообще-то, всегда получаю хорошую оценку.	[sound:linkplus_t12_cijfer.mp3]	link::thema12::taak2::A2
+de opleiding	1496	Mijn opleiding duurt best lang, drie jaar.	обучение (профессиональное); подготовка	Моё обучение длится довольно долго, три года.	[sound:linkplus_t12_opleiding.mp3]	link::thema12::taak2::A2
+het onderwijs	1602	Het onderwijs in Nederland is best goed.	образование (система)	Образование в Нидерландах довольно хорошее.	[sound:linkplus_t12_onderwijs.mp3]	link::thema12::taak2::A2
+middelbaar	1877	Mijn nicht zit nog op de middelbare school.	средний (о школе)	Моя двоюродная сестра ещё учится в средней школе.	[sound:linkplus_t12_middelbaar.mp3]	link::thema12::taak2::A2
+wetenschappelijk	2024	Dat nieuws komt echt uit een wetenschappelijk onderzoek.	научный	Эта новость правда пришла из научного исследования.	[sound:linkplus_t12_wetenschappelijk.mp3]	link::thema12::taak2::A2
+praktisch	2441	Dat is echt praktisch, want ik werk thuis.	практичный; практический	Это правда практично, ведь я работаю дома.	[sound:linkplus_t12_praktisch.mp3]	link::thema12::taak2::A2
+het diploma	2983	Ik wil echt graag een diploma halen.	диплом; свидетельство	Я правда очень хочу получить диплом.	[sound:linkplus_t12_diploma.mp3]	link::thema12::taak2::A2
+minimaal	3035	Hier moet je minimaal een uur wachten.	минимум; минимальный	Здесь надо ждать минимум час.	[sound:linkplus_t12_minimaal.mp3]	link::thema12::taak2::A2
+zenuwachtig	3189	Ik ben best zenuwachtig voor mijn afspraak vandaag.	взволнованный; нервный	Я довольно взволнована перед сегодняшней встречей.	[sound:linkplus_t12_zenuwachtig.mp3]	link::thema12::taak2::A2
+de geneeskunde	5027	Mijn broer studeert geneeskunde in Amsterdam.	медицина (наука)	Мой брат изучает медицину в Амстердаме.	[sound:linkplus_t12_geneeskunde.mp3]	link::thema12::taak2::A2
+inschrijven	5254	Je moet je vandaag nog inschrijven, hoor.	оформить запись; зачислиться	Тебе надо ещё сегодня оформить запись.	[sound:linkplus_t12_inschrijven.mp3]	link::thema12::taak2::A2
+theoretisch	5460	Ik vind het boek echt te theoretisch.	теоретический	Я считаю эту книгу слишком теоретической.	[sound:linkplus_t12_theoretisch.mp3]	link::thema12::taak2::A2
+de automonteur	8000+	De automonteur repareert mijn auto morgen.	автомеханик	Автомеханик завтра починит мою машину.	[sound:linkplus_t12_automonteur.mp3]	link::thema12::taak2::A2
+de elektricien	8000+	Die elektricien komt morgen bij ons langs.	электрик	Этот электрик завтра зайдёт к нам.	[sound:linkplus_t12_elektricien.mp3]	link::thema12::taak2::A2
+de fysiotherapie	8000+	Voor mijn knie heb ik fysiotherapie nodig.	физиотерапия	Для моего колена мне нужна физиотерапия.	[sound:linkplus_t12_fysiotherapie.mp3]	link::thema12::taak2::A2
+de kapper	8000+	Ik ga morgen even naar de kapper.	парикмахер	Я завтра схожу к парикмахеру.	[sound:linkplus_t12_kapper.mp3]	link::thema12::taak2::A2
+het hbo	8000+	Volgend jaar ga ik naar het hbo.	высшее профессиональное образование (hbo)	В следующем году я пойду в hbo.	[sound:linkplus_t12_hbo.mp3]	link::thema12::taak2::A2
+vroeger	8000+	Vroeger woonden we in een klein dorp.	раньше; когда-то	Раньше мы жили в маленькой деревне.	[sound:linkplus_t12_vroeger.mp3]	link::thema12::taak2::A2
