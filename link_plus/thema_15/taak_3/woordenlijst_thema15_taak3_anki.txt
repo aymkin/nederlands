@@ -1,0 +1,34 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 15::taak_3
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+vast	202	Ik heb nu een vaste baan, eindelijk!	постоянный; неотъемлемый	У меня наконец постоянная работа!	[sound:linkplus_t15_vast.mp3]	link::thema15::taak3::A2
+achter	204	Mijn fiets staat gewoon achter het huis.	за; позади	Мой велосипед просто стоит за домом.	[sound:linkplus_t15_achter.mp3]	link::thema15::taak3::A2
+betekenen	270	Weet je eigenlijk wat jarig betekent?	значить; означать	Ты вообще знаешь, что значит «jarig»?	[sound:linkplus_t15_betekenen.mp3]	link::thema15::taak3::A2
+vreselijk	701	Het eten in dat restaurant was echt vreselijk.	ужасный	Еда в том ресторане была просто ужасная.	[sound:linkplus_t15_vreselijk.mp3]	link::thema15::taak3::A2
+het bos	815	In het bos is het lekker rustig.	лес	В лесу приятно спокойно.	[sound:linkplus_t15_bos.mp3]	link::thema15::taak3::A2
+totdat	822	Ik wacht hier even, totdat jij klaar bent.	пока не	Я немного подожду здесь, пока ты не освободишься.	[sound:linkplus_t15_totdat.mp3]	link::thema15::taak3::A2
+het onderdeel	883	Dit onderdeel van het programma is best moeilijk.	часть (целого)	Эта часть программы довольно сложная.	[sound:linkplus_t15_onderdeel.mp3]	link::thema15::taak3::A2
+de beweging	894	Ik heb echt meer beweging nodig, vind ik.	движение	Мне правда нужно больше движения, по-моему.	[sound:linkplus_t15_beweging.mp3]	link::thema15::taak3::A2
+saai	1492	Het werk in dat kantoor is echt saai.	скучный	Работа в том офисе правда скучная.	[sound:linkplus_t15_saai.mp3]	link::thema15::taak3::A2
+de spier	3073	Deze spier in mijn been doet echt pijn.	мышца	Эта мышца в моей ноге правда болит.	[sound:linkplus_t15_spier.mp3]	link::thema15::taak3::A2
+de conditie	3799	Mijn conditie is echt slecht, ik moet sporten.	физическая форма	Моя форма правда плохая, мне надо заниматься спортом.	[sound:linkplus_t15_conditie.mp3]	link::thema15::taak3::A2
+de discipline	4281	Voor hardlopen heb je echt discipline nodig.	дисциплина	Для бега правда нужна дисциплина.	[sound:linkplus_t15_discipline.mp3]	link::thema15::taak3::A2
+het ballet	4621	Mijn nicht zit al jaren op ballet.	балет	Моя двоюродная сестра уже много лет занимается балетом.	[sound:linkplus_t15_ballet.mp3]	link::thema15::taak3::A2
+de sportschool	4768	Ik ga na het werk naar de sportschool.	спортзал	После работы я иду в спортзал.	[sound:linkplus_t15_sportschool.mp3]	link::thema15::taak3::A2
+sportief	4947	Mijn opa is nog heel sportief, hoor.	спортивный	Мой дедушка ещё очень спортивный.	[sound:linkplus_t15_sportief.mp3]	link::thema15::taak3::A2
+de supporter	6662	Mijn vader is een grote supporter van Ajax.	болельщик	Мой отец — большой болельщик «Аякса».	[sound:linkplus_t15_supporter.mp3]	link::thema15::taak3::A2
+het humeur	6950	Ik heb vandaag echt een slecht humeur.	настроение	У меня сегодня правда плохое настроение.	[sound:linkplus_t15_humeur.mp3]	link::thema15::taak3::A2
+ophouden	7226	Wanneer houdt de regen eindelijk op?	прекратиться; перестать	Когда же наконец прекратится дождь?	[sound:linkplus_t15_ophouden.mp3]	link::thema15::taak3::A2
+chagrijnig	7507	Mijn buurman is na het werk altijd chagrijnig.	ворчливый; угрюмый	Мой сосед после работы всегда ворчливый.	[sound:linkplus_t15_chagrijnig.mp3]	link::thema15::taak3::A2
+de ict'er	8000+	Mijn broer is eigenlijk ict'er bij de gemeente.	айтишник	Мой брат вообще-то айтишник в муниципалитете.	[sound:linkplus_t15_icter.mp3]	link::thema15::taak3::A2
+de racefiets	8000+	Mijn oom heeft echt een dure racefiets.	шоссейный велосипед	У моего дяди правда дорогой шоссейный велосипед.	[sound:linkplus_t15_racefiets.mp3]	link::thema15::taak3::A2
+de spierpijn	8000+	Na het zwemmen heb ik altijd spierpijn.	мышечная боль	После плавания у меня всегда мышечная боль.	[sound:linkplus_t15_spierpijn.mp3]	link::thema15::taak3::A2
+de teamsport	8000+	Voetbal is een leuke teamsport voor meisjes.	командный вид спорта	Футбол — классный командный вид спорта для девочек.	[sound:linkplus_t15_teamsport.mp3]	link::thema15::taak3::A2
+het judo	8000+	Die jongen doet al jaren aan judo.	дзюдо	Этот мальчик уже много лет занимается дзюдо.	[sound:linkplus_t15_judo.mp3]	link::thema15::taak3::A2
+het volleybal	8000+	Wij spelen elke week volleybal in het park.	волейбол	Мы каждую неделю играем в волейбол в парке.	[sound:linkplus_t15_volleybal.mp3]	link::thema15::taak3::A2
+relaxed	8000+	Na de sauna ben ik lekker relaxed.	расслабленный	После сауны я приятно расслаблена.	[sound:linkplus_t15_relaxed.mp3]	link::thema15::taak3::A2
+stilzitten	8000+	Kinderen kunnen soms echt niet stilzitten.	сидеть спокойно	Дети иногда правда не могут сидеть спокойно.	[sound:linkplus_t15_stilzitten.mp3]	link::thema15::taak3::A2
+turnen	8000+	Dat meisje wil graag gaan turnen.	заниматься гимнастикой	Эта девочка очень хочет заниматься гимнастикой.	[sound:linkplus_t15_turnen.mp3]	link::thema15::taak3::A2

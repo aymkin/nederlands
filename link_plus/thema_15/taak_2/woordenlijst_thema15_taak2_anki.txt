@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 15::taak_2
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+totaal	618	Dit is nu echt totaal anders dan vroeger.	совершенно; полностью	Сейчас всё правда совершенно иначе, чем раньше.	[sound:linkplus_t15_totaal.mp3]	link::thema15::taak2::A2
+fantastisch	635	Dat is echt fantastisch nieuws voor je moeder!	потрясающий	Это правда потрясающие новости для твоей мамы!	[sound:linkplus_t15_fantastisch.mp3]	link::thema15::taak2::A2
+waard	646	Die tentoonstelling is zeker de moeite waard.	стоящий	Эта выставка определённо стоит того.	[sound:linkplus_t15_waard.mp3]	link::thema15::taak2::A2
+het risico	833	Roken is echt een groot risico, vind ik.	риск	Курить — это правда большой риск, по-моему.	[sound:linkplus_t15_risico.mp3]	link::thema15::taak2::A2
+de eeuw	904	Dit huis is al bijna een eeuw oud.	век	Этому дому уже почти век.	[sound:linkplus_t15_eeuw.mp3]	link::thema15::taak2::A2
+onmogelijk	969	Het is gewoon onmogelijk om nu te komen.	невозможный	Прийти сейчас просто невозможно.	[sound:linkplus_t15_onmogelijk.mp3]	link::thema15::taak2::A2
+de kunst	1009	Mijn zoon is echt gek op kunst.	искусство	Мой сын правда помешан на искусстве.	[sound:linkplus_t15_kunst.mp3]	link::thema15::taak2::A2
+modern	1378	Mijn nieuwe keuken is best modern.	современный	Моя новая кухня довольно современная.	[sound:linkplus_t15_modern.mp3]	link::thema15::taak2::A2
+het museum	1382	Het museum is helaas op maandag gesloten.	музей	К сожалению, музей закрыт в понедельник.	[sound:linkplus_t15_museum.mp3]	link::thema15::taak2::A2
+de interesse	1398	Mijn dochter heeft echt veel interesse in muziek.	интерес	У моей дочери правда большой интерес к музыке.	[sound:linkplus_t15_interesse.mp3]	link::thema15::taak2::A2
+opeens	1533	Opeens stond mijn oma voor de deur!	внезапно; вдруг	Внезапно у двери стояла моя бабушка!	[sound:linkplus_t15_opeens.mp3]	link::thema15::taak2::A2
+het schilderij	1638	Dat schilderij in de gang is best mooi.	картина	Эта картина в коридоре довольно красивая.	[sound:linkplus_t15_schilderij.mp3]	link::thema15::taak2::A2
+doorbrengen	1733	Ik breng m'n weekend graag thuis door.	провести (время)	Свои выходные я люблю проводить дома.	[sound:linkplus_t15_doorbrengen.mp3]	link::thema15::taak2::A2
+volhouden	2831	Dat houd ik echt niet lang vol.	выдержать; не сдаваться	Это я правда долго не выдержу.	[sound:linkplus_t15_volhouden.mp3]	link::thema15::taak2::A2
+de toerist	3481	Een toerist vraagt de weg naar het station.	турист	Турист спрашивает дорогу до вокзала.	[sound:linkplus_t15_toerist.mp3]	link::thema15::taak2::A2
+raden	3802	Kun je raden hoe oud ik ben?	угадать	Можешь угадать, сколько мне лет?	[sound:linkplus_t15_raden.mp3]	link::thema15::taak2::A2
+overnachten	6249	Mijn neef komt dit weekend bij ons overnachten.	переночевать	Мой двоюродный брат переночует у нас в эти выходные.	[sound:linkplus_t15_overnachten.mp3]	link::thema15::taak2::A2
+de gracht	8000+	Ons hotel ligt aan een best mooie gracht.	канал (городской)	Наша гостиница стоит у довольно красивого канала.	[sound:linkplus_t15_gracht.mp3]	link::thema15::taak2::A2
+gewend	8000+	Ik ben nog niet gewend aan het weer.	привыкший (к чему-то)	Я ещё не привыкла к погоде.	[sound:linkplus_t15_gewend.mp3]	link::thema15::taak2::A2
+het popconcert	8000+	Wij gaan zaterdag lekker naar een popconcert.	поп-концерт	В субботу мы с удовольствием идём на поп-концерт.	[sound:linkplus_t15_popconcert.mp3]	link::thema15::taak2::A2
+meedenken	8000+	Kun je morgen even met me meedenken?	думать вместе; подумать	Можешь завтра немного подумать вместе со мной?	[sound:linkplus_t15_meedenken.mp3]	link::thema15::taak2::A2
+zo'n	8000+	Zo'n mooie jas wil ik ook!	такой (в ед. числе)	Такую красивую куртку я тоже хочу!	[sound:linkplus_t15_zon.mp3]	link::thema15::taak2::A2

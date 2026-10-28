@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 15::taak_1
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+de pas	255	Ik heb mijn pas weer thuis laten liggen.	пропуск; карта	Я опять оставила свой пропуск дома.	[sound:linkplus_t15_pas.mp3]	link::thema15::taak1::A2
+het stuk	314	Kun je dit stuk vlees even snijden?	кусок; часть	Можешь нарезать этот кусок мяса?	[sound:linkplus_t15_stuk.mp3]	link::thema15::taak1::A2
+zodat	324	Ik maak een lijst, zodat je niks vergeet.	чтобы; так что	Я составляю список, чтобы ты ничего не забыл.	[sound:linkplus_t15_zodat.mp3]	link::thema15::taak1::A2
+de mogelijkheid	829	Heb je eigenlijk nog een andere mogelijkheid?	возможность	А у тебя вообще есть ещё другая возможность?	[sound:linkplus_t15_mogelijkheid.mp3]	link::thema15::taak1::A2
+het lid	846	Ik ben al jaren lid van de sportclub.	член (организации)	Я уже много лет член спортклуба.	[sound:linkplus_t15_lid.mp3]	link::thema15::taak1::A2
+het papier	938	Leg het papier maar in de la.	бумага	Положи бумагу в ящик.	[sound:linkplus_t15_papier.mp3]	link::thema15::taak1::A2
+de toegang	1021	Heb je hier eigenlijk toegang tot internet?	доступ; вход	У тебя здесь вообще есть доступ к интернету?	[sound:linkplus_t15_toegang.mp3]	link::thema15::taak1::A2
+aanbieden	1062	Mag ik je iets te eten aanbieden?	предложить	Могу я предложить тебе что-нибудь поесть?	[sound:linkplus_t15_aanbieden.mp3]	link::thema15::taak1::A2
+verbeteren	1381	Ik wil mijn Nederlands echt graag verbeteren.	улучшить	Я правда хочу улучшить свой нидерландский.	[sound:linkplus_t15_verbeteren.mp3]	link::thema15::taak1::A2
+de medewerker	1426	Die medewerker is altijd heel vriendelijk, hoor.	сотрудник	Этот сотрудник всегда очень дружелюбный.	[sound:linkplus_t15_medewerker.mp3]	link::thema15::taak1::A2
+de verbinding	1574	De verbinding is hier zo slecht, helaas.	связь; соединение	Связь здесь такая плохая, к сожалению.	[sound:linkplus_t15_verbinding.mp3]	link::thema15::taak1::A2
+het concert	1838	Gaan we vrijdag eigenlijk naar het concert?	концерт	Мы в пятницу вообще идём на концерт?	[sound:linkplus_t15_concert.mp3]	link::thema15::taak1::A2
+digitaal	2065	Mijn treinkaartje is nu gewoon digitaal.	цифровой	Мой билет на поезд теперь просто цифровой.	[sound:linkplus_t15_digitaal.mp3]	link::thema15::taak1::A2
+het tijdschrift	2147	Dit tijdschrift ligt gewoon altijd bij de dokter.	журнал	Этот журнал просто всегда лежит у врача.	[sound:linkplus_t15_tijdschrift.mp3]	link::thema15::taak1::A2
+de collectie	2351	Mijn tante heeft een best grote collectie boeken.	коллекция	У моей тёти довольно большая коллекция книг.	[sound:linkplus_t15_collectie.mp3]	link::thema15::taak1::A2
+de termijn	2408	De termijn voor dit formulier is dinsdag, hoor.	срок	Срок подачи этой формы — вторник, имей в виду.	[sound:linkplus_t15_termijn.mp3]	link::thema15::taak1::A2
+downloaden	2439	Je kunt de lijst gewoon gratis downloaden.	скачать; загрузить	Этот список можно просто бесплатно скачать.	[sound:linkplus_t15_downloaden.mp3]	link::thema15::taak1::A2
+de cursus	2840	Ik volg echt een leuke cursus Engels.	курс	Я правда прохожу классный курс английского.	[sound:linkplus_t15_cursus.mp3]	link::thema15::taak1::A2
+de documentaire	3686	Ik ga vanavond lekker een documentaire kijken.	документальный фильм	Сегодня вечером я с удовольствием посмотрю документальный фильм.	[sound:linkplus_t15_documentaire.mp3]	link::thema15::taak1::A2
+het lidmaatschap	6625	Het lidmaatschap van het zwembad is best duur.	членство	Членство в бассейне довольно дорогое.	[sound:linkplus_t15_lidmaatschap.mp3]	link::thema15::taak1::A2
+de leestafel	8000+	In de bibliotheek staat een best grote leestafel.	стол для чтения	В библиотеке стоит довольно большой стол для чтения.	[sound:linkplus_t15_leestafel.mp3]	link::thema15::taak1::A2
+de tv-serie	8000+	Die tv-serie is echt spannend, kijk maar.	сериал	Этот сериал правда захватывающий, посмотри.	[sound:linkplus_t15_tv-serie.mp3]	link::thema15::taak1::A2
+het e-boek	8000+	Dit e-boek kost bijna niks, echt.	электронная книга	Эта электронная книга стоит почти ничего, правда.	[sound:linkplus_t15_e-boek.mp3]	link::thema15::taak1::A2
+het luisterboek	8000+	In de auto luister ik naar een luisterboek.	аудиокнига	В машине я слушаю аудиокнигу.	[sound:linkplus_t15_luisterboek.mp3]	link::thema15::taak1::A2

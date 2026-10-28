@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 15::taak_4
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+de zaak	203	Mijn buurvrouw heeft een zaak in het centrum.	дело (бизнес); магазин	У моей соседки своё дело в центре.	[sound:linkplus_t15_zaak.mp3]	link::thema15::taak4::A2
+rond	319	Onze tafel is rond en best groot.	круглый	Наш стол круглый и довольно большой.	[sound:linkplus_t15_rond.mp3]	link::thema15::taak4::A2
+recht	347	De weg naar het dorp is best recht.	ровный; прямой	Дорога до деревни довольно ровная.	[sound:linkplus_t15_recht.mp3]	link::thema15::taak4::A2
+sluiten	357	De winkel sluit vandaag echt vroeg, helaas.	закрываться; закрывать	Магазин сегодня правда рано закрывается, к сожалению.	[sound:linkplus_t15_sluiten.mp3]	link::thema15::taak4::A2
+voordat	369	Bel me even, voordat je komt.	прежде чем	Позвони мне, прежде чем придёшь.	[sound:linkplus_t15_voordat.mp3]	link::thema15::taak4::A2
+het gezicht	465	Mijn gezicht is rood na het sporten.	лицо	Моё лицо красное после занятий спортом.	[sound:linkplus_t15_gezicht.mp3]	link::thema15::taak4::A2
+groeien	731	Mijn kind groeit snel, de broek is klein.	расти	Мой ребёнок быстро растёт, брюки уже малы.	[sound:linkplus_t15_groeien.mp3]	link::thema15::taak4::A2
+overtuigen	952	Je moet me eerst echt overtuigen!	убедить	Сначала тебе надо меня по-настоящему убедить!	[sound:linkplus_t15_overtuigen.mp3]	link::thema15::taak4::A2
+de verandering	1085	Een nieuwe baan is echt een grote verandering.	изменение; перемена	Новая работа — это правда большое изменение.	[sound:linkplus_t15_verandering.mp3]	link::thema15::taak4::A2
+het model	1174	Dit model broek is echt lekker en goedkoop.	фасон; модель	Этот фасон брюк правда удобный и недорогой.	[sound:linkplus_t15_model.mp3]	link::thema15::taak4::A2
+de nek	1360	Ik heb pijn in mijn nek en rug.	шея	У меня болит шея и спина.	[sound:linkplus_t15_nek.mp3]	link::thema15::taak4::A2
+geschikt	1577	Deze kamer is best geschikt voor een kind.	подходящий	Эта комната довольно подходит для ребёнка.	[sound:linkplus_t15_geschikt.mp3]	link::thema15::taak4::A2
+de spiegel	1904	In de badkamer staat een best grote spiegel.	зеркало	В ванной стоит довольно большое зеркало.	[sound:linkplus_t15_spiegel.mp3]	link::thema15::taak4::A2
+grijs	2061	Mijn vader heeft best veel grijs haar.	седой; серый	У моего отца довольно много седых волос.	[sound:linkplus_t15_grijs.mp3]	link::thema15::taak4::A2
+de bril	2238	Ik kan zonder bril echt niks zien.	очки	Без очков я правда ничего не вижу.	[sound:linkplus_t15_bril.mp3]	link::thema15::taak4::A2
+knippen	2252	Ik moet mijn haar nog laten knippen.	стричь	Мне надо ещё постричь волосы.	[sound:linkplus_t15_knippen.mp3]	link::thema15::taak4::A2
+anderhalf	2646	De les duurt anderhalf uur, best lang.	полтора	Урок длится полтора часа, довольно долго.	[sound:linkplus_t15_anderhalf.mp3]	link::thema15::taak4::A2
+kleuren	5964	Ik wil mijn haar echt bruin kleuren.	красить; окрашивать	Я правда хочу покрасить волосы в коричневый.	[sound:linkplus_t15_kleuren.mp3]	link::thema15::taak4::A2
+knap	6328	Zijn zus is best knap, vind je niet?	симпатичный (о внешности)	Его сестра довольно симпатичная, не находишь?	[sound:linkplus_t15_knap.mp3]	link::thema15::taak4::A2
+de bovenkant	7367	De bovenkant van de kast is echt vies.	верхняя часть	Верхняя часть шкафа правда грязная.	[sound:linkplus_t15_bovenkant.mp3]	link::thema15::taak4::A2
+afdoen	8000+	Doe je jas maar af, het is warm.	снять (с себя)	Сними куртку, тут тепло.	[sound:linkplus_t15_afdoen.mp3]	link::thema15::taak4::A2
+de psycholoog	8000+	Ik heb morgen een afspraak met de psycholoog.	психолог	Завтра у меня встреча с психологом.	[sound:linkplus_t15_psycholoog.mp3]	link::thema15::taak4::A2
+de shampoo	8000+	Ik koop even nieuwe shampoo bij de drogist.	шампунь	Я быстренько куплю новый шампунь в дрогерии.	[sound:linkplus_t15_shampoo.mp3]	link::thema15::taak4::A2
+föhnen	8000+	Ik moet mijn haar nog even föhnen.	сушить феном	Мне надо ещё немного посушить волосы феном.	[sound:linkplus_t15_fohnen.mp3]	link::thema15::taak4::A2
+zich scheren	8000+	Ik moet me scheren, ik heb een baard.	бриться	Мне надо побриться, у меня борода.	[sound:linkplus_t15_zich_scheren.mp3]	link::thema15::taak4::A2
