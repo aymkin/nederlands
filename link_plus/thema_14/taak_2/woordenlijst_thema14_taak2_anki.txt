@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 14::taak_2
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+de zorg	165	Zorg voor je gezin is echt belangrijk.	забота; уход	Забота о семье правда важна.	[sound:linkplus_t14_zorg.mp3]	link::thema14::taak2::A2
+de relatie	531	Een goede relatie heeft echt vertrouwen nodig.	отношения; связь	Хорошим отношениям правда нужно доверие.	[sound:linkplus_t14_relatie.mp3]	link::thema14::taak2::A2
+het huwelijk	703	Een goed huwelijk heeft veel geduld nodig.	брак	Хорошему браку нужно много терпения.	[sound:linkplus_t14_huwelijk.mp3]	link::thema14::taak2::A2
+de partner	729	Mijn partner werkt in een ziekenhuis.	партнёр; партнёрша	Мой партнёр работает в больнице.	[sound:linkplus_t14_partner.mp3]	link::thema14::taak2::A2
+eindigen	851	Mijn les eindigt vandaag om drie uur.	кончаться; завершаться	Мой урок сегодня кончается в три часа.	[sound:linkplus_t14_eindigen.mp3]	link::thema14::taak2::A2
+scheiden	1019	Mijn buren willen scheiden, dat is jammer.	развестись; расстаться	Мои соседи хотят развестись, это жаль.	[sound:linkplus_t14_scheiden.mp3]	link::thema14::taak2::A2
+populair	1242	Die film is bij jongeren best populair.	популярный	Этот фильм довольно популярен у молодёжи.	[sound:linkplus_t14_populair.mp3]	link::thema14::taak2::A2
+de cultuur	1454	In Turkije is de cultuur echt heel anders.	культура	В Турции культура правда совсем другая.	[sound:linkplus_t14_cultuur.mp3]	link::thema14::taak2::A2
+dalen	1480	De temperatuur daalt snel in de herfst.	снижаться; падать	Температура быстро снижается осенью.	[sound:linkplus_t14_dalen.mp3]	link::thema14::taak2::A2
+de ontmoeting	1691	Onze eerste ontmoeting was best raar.	знакомство; встреча	Наше первое знакомство было довольно странным.	[sound:linkplus_t14_ontmoeting.mp3]	link::thema14::taak2::A2
+gemiddeld	1709	Ik werk gemiddeld twee dagen thuis.	в среднем; средний	В среднем я работаю дома два дня.	[sound:linkplus_t14_gemiddeld.mp3]	link::thema14::taak2::A2
+de scheiding	2171	Na de scheiding woont ze gewoon alleen.	развод	После развода она просто живёт одна.	[sound:linkplus_t14_scheiding.mp3]	link::thema14::taak2::A2
+de verwachting	2190	Mijn verwachting van het examen was laag.	ожидание	Мои ожидания от экзамена были низкими.	[sound:linkplus_t14_verwachting.mp3]	link::thema14::taak2::A2
+traditioneel	2357	Mijn ouders zijn eigenlijk best traditioneel, hoor.	традиционный	Мои родители вообще-то довольно традиционные.	[sound:linkplus_t14_traditioneel.mp3]	link::thema14::taak2::A2
+afspreken	3463	Zullen we zaterdag even afspreken in het park?	договориться (о встрече)	Давай в субботу договоримся встретиться в парке?	[sound:linkplus_t14_afspreken.mp3]	link::thema14::taak2::A2
+toenemen	4337	Het aantal studenten neemt elk jaar toe.	увеличиваться; расти	Количество студентов с каждым годом увеличивается.	[sound:linkplus_t14_toenemen.mp3]	link::thema14::taak2::A2
+alleenstaand	4663	Mijn buurvrouw is alleenstaand en heeft twee kinderen.	одинокий; живущий один	Моя соседка одинока, у неё двое детей.	[sound:linkplus_t14_alleenstaand.mp3]	link::thema14::taak2::A2
+vanzelfsprekend	4807	Een eigen huis is echt niet vanzelfsprekend.	само собой разумеющийся	Собственный дом — это правда не само собой разумеющееся.	[sound:linkplus_t14_vanzelfsprekend.mp3]	link::thema14::taak2::A2
+uitstellen	4884	Kunnen we het feestje uitstellen, alsjeblieft?	отложить	Можно отложить вечеринку, пожалуйста?	[sound:linkplus_t14_uitstellen.mp3]	link::thema14::taak2::A2
+de opvoeding	5041	Opvoeding van kinderen kost echt veel tijd.	воспитание (детей)	Воспитание детей правда занимает много времени.	[sound:linkplus_t14_opvoeding.mp3]	link::thema14::taak2::A2
+samenwonen	5656	Wij gaan volgend jaar samenwonen, eindelijk!	жить вместе; сожительствовать	В следующем году мы наконец будем жить вместе!	[sound:linkplus_t14_samenwonen.mp3]	link::thema14::taak2::A2
+gescheiden	8000+	Mijn tante is gescheiden, maar toch gelukkig.	разведённый	Моя тётя разведена, но всё равно счастлива.	[sound:linkplus_t14_gescheiden.mp3]	link::thema14::taak2::A2
+ongetrouwd	8000+	Mijn broer is nog ongetrouwd, helaas.	неженатый; незамужняя	Мой брат ещё не женат, к сожалению.	[sound:linkplus_t14_ongetrouwd.mp3]	link::thema14::taak2::A2
+verliefd	8000+	Mijn zus is echt verliefd op haar collega.	влюблённый	Моя сестра правда влюблена в свою коллегу.	[sound:linkplus_t14_verliefd.mp3]	link::thema14::taak2::A2

@@ -1,0 +1,32 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 14::taak_4
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+het oog	288	Help, ik heb iets in mijn oog!	глаз	Помогите, у меня что-то в глазу!	[sound:linkplus_t14_oog.mp3]	link::thema14::taak4::A2
+aardig	574	Je buurman is best aardig, vind ik.	любезный; приятный	Твой сосед довольно любезен, по-моему.	[sound:linkplus_t14_aardig.mp3]	link::thema14::taak4::A2
+grappig	607	Die man in de supermarkt is echt grappig.	смешной; забавный	Тот мужчина в супермаркете правда смешной.	[sound:linkplus_t14_grappig.mp3]	link::thema14::taak4::A2
+de grap	659	Mijn broer maakt elke dag dezelfde grap.	шутка	Мой брат каждый день рассказывает одну и ту же шутку.	[sound:linkplus_t14_grap.mp3]	link::thema14::taak4::A2
+herkennen	864	Ik herken haar meteen aan haar jas.	узнать (по виду); узнавать	Я сразу узнаю её по куртке.	[sound:linkplus_t14_herkennen.mp3]	link::thema14::taak4::A2
+de herinnering	1064	Dit is een mooie herinnering aan mijn vakantie.	воспоминание	Это красивое воспоминание о моём отпуске.	[sound:linkplus_t14_herinnering.mp3]	link::thema14::taak4::A2
+het oor	1140	Mijn hond heeft een vies oor, kijk maar.	ухо	У моей собаки грязное ухо, посмотри.	[sound:linkplus_t14_oor.mp3]	link::thema14::taak4::A2
+toevallig	1329	Weet je toevallig hoe laat de bus komt?	случайно	Ты случайно не знаешь, во сколько приходит автобус?	[sound:linkplus_t14_toevallig.mp3]	link::thema14::taak4::A2
+de huid	1429	Mijn huid is in de winter erg droog.	кожа	Моя кожа зимой очень сухая.	[sound:linkplus_t14_huid.mp3]	link::thema14::taak4::A2
+vrolijk	1436	Mijn oma is altijd vrolijk, ook 's ochtends.	весёлый; радостный	Моя бабушка всегда весёлая, даже по утрам.	[sound:linkplus_t14_vrolijk.mp3]	link::thema14::taak4::A2
+bruin	1647	Mijn jas is bruin, jouw jas is zwart.	коричневый	Моя куртка коричневая, твоя куртка чёрная.	[sound:linkplus_t14_bruin.mp3]	link::thema14::taak4::A2
+het karakter	1918	Jouw broer heeft best een lief karakter.	характер	У твоего брата довольно добрый характер.	[sound:linkplus_t14_karakter.mp3]	link::thema14::taak4::A2
+tegenkomen	2060	Ik kom mijn oude buurvrouw vaak tegen.	встретить (случайно)	Свою старую соседку я часто встречаю.	[sound:linkplus_t14_tegenkomen.mp3]	link::thema14::taak4::A2
+blond	2088	Mijn dochter is blond, net als haar vader.	светловолосый; белокурый	Моя дочь светловолосая, как и её отец.	[sound:linkplus_t14_blond.mp3]	link::thema14::taak4::A2
+het uiterlijk	2308	Mijn uiterlijk is voor mijn werk best belangrijk.	внешность; внешний вид	Моя внешность довольно важна для моей работы.	[sound:linkplus_t14_uiterlijk.mp3]	link::thema14::taak4::A2
+verdrietig	2467	Mijn kind is verdrietig, de poes is weg.	грустный; печальный	Мой ребёнок грустный: кошка пропала.	[sound:linkplus_t14_verdrietig.mp3]	link::thema14::taak4::A2
+de lengte	2477	Mijn lengte is eigenlijk gemiddeld, niet groot.	рост; длина	Мой рост, вообще-то, средний, не высокий.	[sound:linkplus_t14_lengte.mp3]	link::thema14::taak4::A2
+de baard	3433	Mijn oom heeft een best lange baard.	борода	У моего дяди довольно длинная борода.	[sound:linkplus_t14_baard.mp3]	link::thema14::taak4::A2
+steil	7020	Mijn haar is steil en best lang.	прямой (о волосах); крутой	Мои волосы прямые и довольно длинные.	[sound:linkplus_t14_steil.mp3]	link::thema14::taak4::A2
+ongeduldig	7440	Mijn baas is vaak best ongeduldig.	нетерпеливый	Мой начальник часто довольно нетерпелив.	[sound:linkplus_t14_ongeduldig.mp3]	link::thema14::taak4::A2
+eigenwijs	7826	Mijn zoon is soms echt eigenwijs.	упрямый; своевольный	Мой сын иногда правда упрямый.	[sound:linkplus_t14_eigenwijs.mp3]	link::thema14::taak4::A2
+de krul	8000+	Ze heeft een mooie krul in haar haar.	локон; завиток	У неё в волосах красивый локон.	[sound:linkplus_t14_krul.mp3]	link::thema14::taak4::A2
+gecondoleerd	8000+	Gecondoleerd met je oom, ik vind het jammer.	соболезную; мои соболезнования	Соболезную по поводу твоего дяди, мне жаль.	[sound:linkplus_t14_gecondoleerd.mp3]	link::thema14::taak4::A2
+lijken op	8000+	Je lijkt op je moeder, vooral je haar.	быть похожим на	Ты похожа на маму, особенно волосами.	[sound:linkplus_t14_lijken_op.mp3]	link::thema14::taak4::A2
+zich schamen	8000+	Ik schaam me echt voor mijn fout.	стыдиться; стесняться	Я правда стыжусь своей ошибки.	[sound:linkplus_t14_zich_schamen.mp3]	link::thema14::taak4::A2
+zulke	8000+	Zulke schoenen koop ik echt nooit.	такие; такой	Такие туфли я правда никогда не покупаю.	[sound:linkplus_t14_zulke.mp3]	link::thema14::taak4::A2

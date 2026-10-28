@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 14::taak_3
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+niemand	226	Echt niemand weet waar mijn sleutel is.	никто	Правда никто не знает, где мой ключ.	[sound:linkplus_t14_niemand.mp3]	link::thema14::taak3::A2
+de foto	227	Op deze foto lach ik in de tuin.	фотография; снимок	На этой фотографии я смеюсь в саду.	[sound:linkplus_t14_foto.mp3]	link::thema14::taak3::A2
+vergeten	264	Je verjaardag vergeet ik echt nooit.	забыть	Твой день рождения я правда никогда не забываю.	[sound:linkplus_t14_vergeten.mp3]	link::thema14::taak3::A2
+verwachten	386	Ik verwacht echt veel van de training.	ожидать; рассчитывать	Я правда многого жду от тренировки.	[sound:linkplus_t14_verwachten.mp3]	link::thema14::taak3::A2
+regelen	578	Dat regel ik wel, dat is geen probleem.	уладить; устроить	Это я улажу, это не проблема.	[sound:linkplus_t14_regelen.mp3]	link::thema14::taak3::A2
+de gast	582	Elke gast krijgt gewoon een glas wijn.	гость	Каждый гость просто получает бокал вина.	[sound:linkplus_t14_gast.mp3]	link::thema14::taak3::A2
+papa	710	Papa, kun je me even ophalen na school?	папа	Папа, ты можешь забрать меня после школы?	[sound:linkplus_t14_papa.mp3]	link::thema14::taak3::A2
+hopelijk	1050	Hopelijk is het morgen mooi weer.	надеюсь; будем надеяться	Надеюсь, завтра будет хорошая погода.	[sound:linkplus_t14_hopelijk.mp3]	link::thema14::taak3::A2
+de bloem	1053	Zet die bloem maar op de tafel.	цветок	Поставь этот цветок на стол.	[sound:linkplus_t14_bloem.mp3]	link::thema14::taak3::A2
+de ring	1063	Ze draagt een mooie ring van haar oma.	кольцо	Она носит красивое кольцо своей бабушки.	[sound:linkplus_t14_ring.mp3]	link::thema14::taak3::A2
+de opa	1368	Mijn opa fietst elke dag naar de markt.	дедушка	Мой дедушка каждый день ездит на рынок на велосипеде.	[sound:linkplus_t14_opa.mp3]	link::thema14::taak3::A2
+de taart	1655	Wie wil er nog een stuk taart?	торт	Кто хочет ещё кусок торта?	[sound:linkplus_t14_taart.mp3]	link::thema14::taak3::A2
+uitzoeken	1798	Ik ga morgen een jurk uitzoeken.	подобрать; выбрать	Завтра я пойду подбирать платье.	[sound:linkplus_t14_uitzoeken.mp3]	link::thema14::taak3::A2
+regenen	1964	Het regent vandaag de hele dag.	идёт дождь	Сегодня целый день идёт дождь.	[sound:linkplus_t14_regenen.mp3]	link::thema14::taak3::A2
+versturen	2625	Ik verstuur de uitnodigingen vandaag nog.	разослать; отправить	Приглашения я разошлю ещё сегодня.	[sound:linkplus_t14_versturen.mp3]	link::thema14::taak3::A2
+hartstikke	2940	Die soep was hartstikke lekker, bedankt!	жутко (разг.); очень	Этот суп был жутко вкусный, спасибо!	[sound:linkplus_t14_hartstikke.mp3]	link::thema14::taak3::A2
+nerveus	3134	Ik ben best nerveus voor de bruiloft.	нервничающий; нервный	Я довольно нервничаю перед свадьбой.	[sound:linkplus_t14_nerveus.mp3]	link::thema14::taak3::A2
+de fotograaf	3248	Mijn buurman is eigenlijk fotograaf in het centrum.	фотограф	Мой сосед вообще-то фотограф в центре.	[sound:linkplus_t14_fotograaf.mp3]	link::thema14::taak3::A2
+Azië	3508	Mijn neef woont nu gewoon in Azië.	Азия	Мой двоюродный брат теперь просто живёт в Азии.	[sound:linkplus_t14_azie.mp3]	link::thema14::taak3::A2
+het stadhuis	5168	Wij trouwen volgende week op het stadhuis.	городская ратуша; мэрия	Мы женимся на следующей неделе в городской ратуше.	[sound:linkplus_t14_stadhuis.mp3]	link::thema14::taak3::A2
+de huwelijksreis	5825	Op onze huwelijksreis gaan we naar Marokko.	свадебное путешествие	В наше свадебное путешествие мы едем в Марокко.	[sound:linkplus_t14_huwelijksreis.mp3]	link::thema14::taak3::A2
+de pech	8000+	Wat een pech, mijn fiets is kapot!	невезение; неудача	Какое невезение, мой велосипед сломан!	[sound:linkplus_t14_pech.mp3]	link::thema14::taak3::A2
+de trouwjurk	8000+	Haar trouwjurk is wit en echt mooi.	свадебное платье	Её свадебное платье белое и правда красивое.	[sound:linkplus_t14_trouwjurk.mp3]	link::thema14::taak3::A2
+het bruidsboeket	8000+	Het bruidsboeket is best mooi, roze en wit.	букет невесты	Букет невесты довольно красивый, розовый и белый.	[sound:linkplus_t14_bruidsboeket.mp3]	link::thema14::taak3::A2
+zich herinneren	8000+	Ik herinner me jouw adres niet meer.	помнить; вспоминать	Я больше не помню твой адрес.	[sound:linkplus_t14_zich_herinneren.mp3]	link::thema14::taak3::A2

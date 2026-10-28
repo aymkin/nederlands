@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 14::taak_1
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+de wereld	214	Ik wil graag de hele wereld zien.	мир (планета)	Я хочу увидеть весь мир.	[sound:linkplus_t14_wereld.mp3]	link::thema14::taak1::A2
+perfect	513	Je plan is perfect, ik doe mee!	безупречный; идеальный	Твой план безупречен, я участвую!	[sound:linkplus_t14_perfect.mp3]	link::thema14::taak1::A2
+extra	629	Mijn gezin heeft gewoon een extra kamer nodig.	дополнительный	Моей семье просто нужна дополнительная комната.	[sound:linkplus_t14_extra.mp3]	link::thema14::taak1::A2
+de voet	641	Mijn voet doet pijn na het lopen.	ступня	Моя ступня болит после ходьбы.	[sound:linkplus_t14_voet.mp3]	link::thema14::taak1::A2
+het hotel	644	Het hotel ligt best dicht bij het centrum.	гостиница; отель	Гостиница находится довольно близко к центру.	[sound:linkplus_t14_hotel.mp3]	link::thema14::taak1::A2
+de zee	706	Het strand ligt gewoon vlakbij de zee.	море	Пляж находится прямо у моря.	[sound:linkplus_t14_zee.mp3]	link::thema14::taak1::A2
+vliegen	835	Ik vlieg morgen naar Polen voor mijn werk.	лететь; летать	Завтра я лечу в Польшу по работе.	[sound:linkplus_t14_vliegen.mp3]	link::thema14::taak1::A2
+de oma	978	Mijn oma kookt echt heerlijk, hoor.	бабушка	Моя бабушка правда вкусно готовит.	[sound:linkplus_t14_oma.mp3]	link::thema14::taak1::A2
+de natuur	1188	Ik wandel echt graag in de natuur.	природа	Я правда люблю гулять на природе.	[sound:linkplus_t14_natuur.mp3]	link::thema14::taak1::A2
+het cadeau	1205	Ik geef mijn moeder dit cadeau morgen.	подарок	Я дарю маме этот подарок завтра.	[sound:linkplus_t14_cadeau.mp3]	link::thema14::taak1::A2
+meemaken	1244	Dit heb ik nog nooit meegemaakt, echt.	пережить (событие)	Такого я ещё никогда не переживала, правда.	[sound:linkplus_t14_meemaken.mp3]	link::thema14::taak1::A2
+tijdelijk	1375	Mijn baan hier is gewoon tijdelijk.	временный	Моя работа здесь просто временная.	[sound:linkplus_t14_tijdelijk.mp3]	link::thema14::taak1::A2
+uiteraard	1549	Uiteraard kom ik naar je verjaardag!	само собой; разумеется	Само собой, я приду на твой день рождения!	[sound:linkplus_t14_uiteraard.mp3]	link::thema14::taak1::A2
+schijnen	1550	In de zomer schijnt de zon lekker lang.	светить (о солнце)	Летом солнце приятно долго светит.	[sound:linkplus_t14_schijnen.mp3]	link::thema14::taak1::A2
+jaloers	1594	Mijn collega is jaloers op mijn nieuwe auto.	завидующий; ревнивый	Мой коллега завидует моей новой машине.	[sound:linkplus_t14_jaloers.mp3]	link::thema14::taak1::A2
+nul	2425	Mijn telefoon heeft echt nul procent, helaas.	ноль	У моего телефона правда ноль процентов, к сожалению.	[sound:linkplus_t14_nul.mp3]	link::thema14::taak1::A2
+jazeker	2657	Wil je ook thee? Jazeker, lekker!	ещё бы; безусловно	Хочешь тоже чаю? Ещё бы, с удовольствием!	[sound:linkplus_t14_jazeker.mp3]	link::thema14::taak1::A2
+het klimaat	3441	Het klimaat in Nederland is best nat.	климат	Климат в Нидерландах довольно влажный.	[sound:linkplus_t14_klimaat.mp3]	link::thema14::taak1::A2
+uitrusten	4415	Na het werk moet ik even uitrusten.	отдохнуть	После работы мне надо немного отдохнуть.	[sound:linkplus_t14_uitrusten.mp3]	link::thema14::taak1::A2
+vriezen	4441	Het vriest vanavond, trek je jas aan!	морозить (о погоде); замерзать	Сегодня вечером подморозит, надень куртку!	[sound:linkplus_t14_vriezen.mp3]	link::thema14::taak1::A2
+bloedheet	8000+	Het is vandaag echt bloedheet in de stad.	знойный; очень жаркий	Сегодня в городе правда знойно.	[sound:linkplus_t14_bloedheet.mp3]	link::thema14::taak1::A2
+de vliegticket	8000+	Mijn vliegticket kost best veel geld.	авиабилет	Мой авиабилет стоит довольно много денег.	[sound:linkplus_t14_vliegticket.mp3]	link::thema14::taak1::A2
+laten zien	8000+	Ik laat je morgen even mijn dorp zien.	показать	Завтра я покажу тебе свою деревню.	[sound:linkplus_t14_laten_zien.mp3]	link::thema14::taak1::A2
+uitgebreid	8000+	Zaterdag maak ik lekker een uitgebreid ontbijt.	обильный; подробный	В субботу я с удовольствием приготовлю обильный завтрак.	[sound:linkplus_t14_uitgebreid.mp3]	link::thema14::taak1::A2
+zich voelen	8000+	Ik voel me hier echt thuis.	чувствовать себя	Я здесь правда чувствую себя как дома.	[sound:linkplus_t14_zich_voelen.mp3]	link::thema14::taak1::A2
