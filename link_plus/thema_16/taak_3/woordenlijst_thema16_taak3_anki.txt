@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 16::taak_3
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+de dame	456	Die dame bij de deur is mijn buurvrouw.	дама; женщина	Та дама у двери — моя соседка.	[sound:linkplus_t16_dame.mp3]	link::thema16::taak3::A2
+persoonlijk	497	Dit is echt een persoonlijk bericht voor jou.	личный; лично	Это правда личное сообщение для тебя.	[sound:linkplus_t16_persoonlijk.mp3]	link::thema16::taak3::A2
+de brief	575	Ik krijg weer een brief van de gemeente.	письмо	Я опять получаю письмо из муниципалитета.	[sound:linkplus_t16_brief.mp3]	link::thema16::taak3::A2
+dom	695	Wat dom, ik ben mijn tas weer vergeten!	глупый	Как глупо, я опять забыла сумку!	[sound:linkplus_t16_dom.mp3]	link::thema16::taak3::A2
+de post	996	De post komt elke dag om twee uur.	почта	Почта приходит каждый день в два часа.	[sound:linkplus_t16_post.mp3]	link::thema16::taak3::A2
+de overheid	1032	De overheid betaalt een deel van de kosten.	государство; власти	Государство оплачивает часть расходов.	[sound:linkplus_t16_overheid.mp3]	link::thema16::taak3::A2
+de code	1037	Met deze code kun je gewoon betalen.	код	С этим кодом можно просто платить.	[sound:linkplus_t16_code.mp3]	link::thema16::taak3::A2
+uitstekend	1342	Je Nederlands is echt uitstekend, vind ik.	превосходный; отличный	Твой нидерландский правда превосходный, по-моему.	[sound:linkplus_t16_uitstekend.mp3]	link::thema16::taak3::A2
+onthouden	1410	Ik kan dat telefoonnummer echt niet onthouden.	запомнить	Я правда не могу запомнить этот номер телефона.	[sound:linkplus_t16_onthouden.mp3]	link::thema16::taak3::A2
+het pensioen	1721	Mijn opa krijgt al jaren pensioen.	пенсия	Мой дедушка уже много лет получает пенсию.	[sound:linkplus_t16_pensioen.mp3]	link::thema16::taak3::A2
+de belasting	2146	Ik betaal echt veel belasting in Nederland.	налог; налогообложение	Я правда плачу много налогов в Нидерландах.	[sound:linkplus_t16_belasting.mp3]	link::thema16::taak3::A2
+de verzekering	2624	Mijn verzekering betaalt de reparatie van de auto.	страховка; страхование	Моя страховка оплачивает ремонт машины.	[sound:linkplus_t16_verzekering.mp3]	link::thema16::taak3::A2
+de tandarts	3466	Bij de tandarts ben ik echt altijd bang.	стоматолог; зубной врач	У стоматолога мне правда всегда страшно.	[sound:linkplus_t16_tandarts.mp3]	link::thema16::taak3::A2
+de werkdag	5249	Mijn werkdag is vandaag best lang.	рабочий день	Мой рабочий день сегодня довольно длинный.	[sound:linkplus_t16_werkdag.mp3]	link::thema16::taak3::A2
+de DigiD	8000+	Met mijn DigiD log ik hier gewoon in.	цифровой идентификатор	С моим цифровым идентификатором я здесь просто вхожу в систему.	[sound:linkplus_t16_digid.mp3]	link::thema16::taak3::A2
+de gebruikersnaam	8000+	Mijn gebruikersnaam is mijn voornaam en achternaam.	имя пользователя; логин	Моё имя пользователя — это моё имя и фамилия.	[sound:linkplus_t16_gebruikersnaam.mp3]	link::thema16::taak3::A2
+de hoofdletter	8000+	Je wachtwoord moet echt een hoofdletter hebben.	заглавная буква	В твоём пароле правда должна быть заглавная буква.	[sound:linkplus_t16_hoofdletter.mp3]	link::thema16::taak3::A2
+de zorgverzekering	8000+	Elke maand betaal ik gewoon mijn zorgverzekering.	медицинская страховка	Каждый месяц я просто плачу за свою медицинскую страховку.	[sound:linkplus_t16_zorgverzekering.mp3]	link::thema16::taak3::A2
+het burgerservicenummer	8000+	Mijn burgerservicenummer staat op mijn paspoort, hoor.	личный номер гражданина; BSN	Мой личный номер гражданина указан в паспорте.	[sound:linkplus_t16_burgerservicenummer.mp3]	link::thema16::taak3::A2
+het leesteken	8000+	Dit leesteken gebruik je aan het einde.	знак препинания	Этот знак препинания используют в конце.	[sound:linkplus_t16_leesteken.mp3]	link::thema16::taak3::A2
+verbaasd	8000+	Mijn moeder was echt verbaasd over het nieuws.	удивлённый	Моя мама была правда удивлена новостями.	[sound:linkplus_t16_verbaasd.mp3]	link::thema16::taak3::A2
+verzekerd	8000+	Ben je eigenlijk verzekerd voor je nieuwe auto?	застрахованный	Ты вообще застрахован на свою новую машину?	[sound:linkplus_t16_verzekerd.mp3]	link::thema16::taak3::A2

@@ -1,0 +1,33 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 16::taak_2
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+de persoon	368	Voor één persoon is dat echt genoeg.	персона; человек	На одну персону этого правда достаточно.	[sound:linkplus_t16_persoon.mp3]	link::thema16::taak2::A2
+beide	414	Mijn beide ouders werken nog best hard.	оба	Оба моих родителя ещё довольно много работают.	[sound:linkplus_t16_beide.mp3]	link::thema16::taak2::A2
+het bewijs	636	Zonder bewijs geloof ik het gewoon niet.	доказательство; подтверждение	Без доказательства я просто в это не верю.	[sound:linkplus_t16_bewijs.mp3]	link::thema16::taak2::A2
+de arts	933	Mijn arts zegt dat ik meer moet bewegen.	врач	Мой врач говорит, что мне надо больше двигаться.	[sound:linkplus_t16_arts.mp3]	link::thema16::taak2::A2
+de verklaring	950	Voor de school heb ik een verklaring nodig.	справка; объяснение	Для школы мне нужна справка.	[sound:linkplus_t16_verklaring.mp3]	link::thema16::taak2::A2
+aanwezig	963	Is de manager vandaag eigenlijk aanwezig?	присутствующий; на месте	Менеджер сегодня вообще на месте?	[sound:linkplus_t16_aanwezig.mp3]	link::thema16::taak2::A2
+het document	1542	Ik heb dit document nog op mijn laptop.	документ	Этот документ у меня ещё на ноутбуке.	[sound:linkplus_t16_document.mp3]	link::thema16::taak2::A2
+mailen	1809	Ik mail je de lijst morgen nog.	отправить по e-mail; написать по e-mail	Я отправлю тебе список по e-mail завтра.	[sound:linkplus_t16_mailen.mp3]	link::thema16::taak2::A2
+de geboorte	2170	De geboorte van mijn zoon was echt bijzonder.	рождение	Рождение моего сына было по-настоящему особенным.	[sound:linkplus_t16_geboorte.mp3]	link::thema16::taak2::A2
+daarnaast	2248	Daarnaast heb ik ook nog een baan.	кроме того; а также	Кроме того, у меня есть ещё и работа.	[sound:linkplus_t16_daarnaast.mp3]	link::thema16::taak2::A2
+het paspoort	2263	Ik heb mijn paspoort nodig voor de reis.	заграничный паспорт	Мне нужен паспорт для поездки.	[sound:linkplus_t16_paspoort.mp3]	link::thema16::taak2::A2
+ondertekenen	2276	Wil je dit formulier even ondertekenen, alsjeblieft?	подписать	Подпишешь, пожалуйста, эту форму?	[sound:linkplus_t16_ondertekenen.mp3]	link::thema16::taak2::A2
+doorgeven	2296	Kun je dit morgen even aan mama doorgeven?	передать	Можешь завтра передать это маме?	[sound:linkplus_t16_doorgeven.mp3]	link::thema16::taak2::A2
+kwijtraken	2375	Ik wil mijn telefoon echt niet kwijtraken.	потерять	Я правда не хочу потерять свой телефон.	[sound:linkplus_t16_kwijtraken.mp3]	link::thema16::taak2::A2
+automatisch	2468	De deur van de winkel gaat automatisch open.	автоматически; автоматический	Дверь магазина открывается автоматически.	[sound:linkplus_t16_automatisch.mp3]	link::thema16::taak2::A2
+de betaling	2998	Ik doe de betaling vandaag via mijn bankrekening.	оплата; платёж	Я делаю оплату сегодня со своего банковского счёта.	[sound:linkplus_t16_betaling.mp3]	link::thema16::taak2::A2
+opschrijven	3388	Ik moet het adres even opschrijven.	записать	Мне надо записать адрес.	[sound:linkplus_t16_opschrijven.mp3]	link::thema16::taak2::A2
+de aangifte	3739	Ik moet echt aangifte doen bij de politie.	заявление в полицию; декларация	Мне правда надо подать заявление в полицию.	[sound:linkplus_t16_aangifte.mp3]	link::thema16::taak2::A2
+geldig	3820	Deze kaart is nog twee jaar geldig.	действительный	Эта карта действительна ещё два года.	[sound:linkplus_t16_geldig.mp3]	link::thema16::taak2::A2
+het familielid	4235	Een familielid van mij woont gewoon in Polen.	член семьи; родственник	Мой родственник просто живёт в Польше.	[sound:linkplus_t16_familielid.mp3]	link::thema16::taak2::A2
+de bevalling	4903	Na de bevalling blijft ze nog thuis.	роды	После родов она ещё остаётся дома.	[sound:linkplus_t16_bevalling.mp3]	link::thema16::taak2::A2
+opsturen	5627	Ik moet dit pakket nog even opsturen.	послать; отправить по почте	Мне ещё надо послать эту посылку.	[sound:linkplus_t16_opsturen.mp3]	link::thema16::taak2::A2
+aanvragen	5935	Ik wil een nieuw rijbewijs aanvragen.	подать заявку; запросить	Я хочу подать заявку на новые права.	[sound:linkplus_t16_aanvragen.mp3]	link::thema16::taak2::A2
+de identiteitskaart	8000+	Mijn identiteitskaart ligt nog thuis, helaas.	ID-карта; удостоверение личности	Моя ID-карта ещё лежит дома, к сожалению.	[sound:linkplus_t16_identiteitskaart.mp3]	link::thema16::taak2::A2
+de legitimatie	8000+	Vergeet je legitimatie echt niet mee te nemen!	удостоверение	Не забудь обязательно взять с собой удостоверение!	[sound:linkplus_t16_legitimatie.mp3]	link::thema16::taak2::A2
+de pasfoto	8000+	Ik laat morgen even een pasfoto maken.	фото на документы	Завтра я сделаю фото на документы.	[sound:linkplus_t16_pasfoto.mp3]	link::thema16::taak2::A2
+het legitimatiebewijs	8000+	Voor de bank heb je een legitimatiebewijs nodig.	ID-документ; документ личности	Для банка тебе нужен ID-документ.	[sound:linkplus_t16_legitimatiebewijs.mp3]	link::thema16::taak2::A2

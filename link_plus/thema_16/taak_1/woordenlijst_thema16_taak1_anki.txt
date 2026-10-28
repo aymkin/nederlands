@@ -1,0 +1,33 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 16::taak_1
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+het deel	199	Een groot deel van mijn werk is bellen.	доля; часть	Большая доля моей работы — это звонки.	[sound:linkplus_t16_deel.mp3]	link::thema16::taak1::A2
+gooien	509	Gooi je jas maar op de stoel.	бросить; кинуть	Брось куртку на стул.	[sound:linkplus_t16_gooien.mp3]	link::thema16::taak1::A2
+de helft	770	De helft van mijn kleren is best oud.	половина	Половина моей одежды довольно старая.	[sound:linkplus_t16_helft.mp3]	link::thema16::taak1::A2
+verzamelen	997	Mijn zoon wil stickers verzamelen, net als ik.	собирать	Мой сын хочет собирать наклейки, как и я.	[sound:linkplus_t16_verzamelen.mp3]	link::thema16::taak1::A2
+de stof	1185	Dit is echt een gevaarlijke stof, kijk uit!	вещество	Это правда опасное вещество, осторожно!	[sound:linkplus_t16_stof.mp3]	link::thema16::taak1::A2
+het blik	1286	Dit blik soep is nog best vol.	консервная банка; жесть	Эта банка супа ещё довольно полная.	[sound:linkplus_t16_blik.mp3]	link::thema16::taak1::A2
+de olie	1628	Doe even wat olie in de pan.	растительное масло; масло	Налей немного масла на сковороду.	[sound:linkplus_t16_olie.mp3]	link::thema16::taak1::A2
+het afval	2062	Wij hebben thuis best veel afval, helaas.	отходы	У нас дома, к сожалению, довольно много отходов.	[sound:linkplus_t16_afval.mp3]	link::thema16::taak1::A2
+het plastic	2335	Veel plastic is echt slecht voor het milieu.	пластик	Много пластика правда вредно для окружающей среды.	[sound:linkplus_t16_plastic.mp3]	link::thema16::taak1::A2
+chemisch	2638	Ik gebruik echt geen chemisch schoonmaakmiddel in huis.	химический	Я правда не использую химическое чистящее средство дома.	[sound:linkplus_t16_chemisch.mp3]	link::thema16::taak1::A2
+terugbrengen	2704	Ik moet mijn laptop terugbrengen naar de winkel.	отнести обратно; вернуть	Мне надо отнести ноутбук обратно в магазин.	[sound:linkplus_t16_terugbrengen.mp3]	link::thema16::taak1::A2
+de batterij	2710	Deze batterij is echt leeg, haal een nieuwe.	батарейка	Эта батарейка совсем села, возьми новую.	[sound:linkplus_t16_batterij.mp3]	link::thema16::taak1::A2
+de beker	2783	Mag ik nog een beker koffie, alsjeblieft?	стаканчик; кружка	Можно ещё стаканчик кофе, пожалуйста?	[sound:linkplus_t16_beker.mp3]	link::thema16::taak1::A2
+terechtkomen	3475	Waar komt dit pakket uiteindelijk terecht?	оказаться; попасть	Куда в итоге попадает эта посылка?	[sound:linkplus_t16_terechtkomen.mp3]	link::thema16::taak1::A2
+de container	3671	De container voor glas staat bij de supermarkt.	контейнер	Контейнер для стекла стоит у супермаркета.	[sound:linkplus_t16_container.mp3]	link::thema16::taak1::A2
+de pot	4182	In de kast staat nog een pot jam.	банка (стеклянная)	В шкафу стоит ещё одна банка джема.	[sound:linkplus_t16_pot.mp3]	link::thema16::taak1::A2
+schadelijk	4914	Veel suiker is echt schadelijk, vind ik.	вредный	Много сахара — это правда вредно, по-моему.	[sound:linkplus_t16_schadelijk.mp3]	link::thema16::taak1::A2
+weggooien	5045	Gooi dat oude brood niet weg, hoor!	выбросить	Не выбрасывай этот старый хлеб!	[sound:linkplus_t16_weggooien.mp3]	link::thema16::taak1::A2
+het vuilnis	5272	De vuilnis stinkt echt, doe de deur dicht.	бытовой мусор	Мусор правда воняет, закрой дверь.	[sound:linkplus_t16_vuilnis.mp3]	link::thema16::taak1::A2
+de matras	5785	Mijn matras is oud en best hard.	матрас	Мой матрас старый и довольно жёсткий.	[sound:linkplus_t16_matras.mp3]	link::thema16::taak1::A2
+het krat	6631	We kopen een krat bier voor het feestje.	ящик с бутылками	Мы покупаем ящик пива для вечеринки.	[sound:linkplus_t16_krat.mp3]	link::thema16::taak1::A2
+de bak	8000+	De bak in de keuken is bijna vol.	бак; ёмкость	Бак на кухне почти полный.	[sound:linkplus_t16_bak.mp3]	link::thema16::taak1::A2
+de schil	8000+	De schil van die appel is best dik.	кожура	Кожура у этого яблока довольно толстая.	[sound:linkplus_t16_schil.mp3]	link::thema16::taak1::A2
+het grofvuil	8000+	Grofvuil zet je gewoon op dinsdag buiten.	крупногабаритный мусор	Крупногабаритный мусор просто выставляют во вторник на улицу.	[sound:linkplus_t16_grofvuil.mp3]	link::thema16::taak1::A2
+het karton	8000+	Het pak melk is gewoon van karton.	картон	Пакет молока просто из картона.	[sound:linkplus_t16_karton.mp3]	link::thema16::taak1::A2
+het restje	8000+	In de koelkast ligt nog een restje pasta.	остаток (еды)	В холодильнике лежит ещё остаток пасты.	[sound:linkplus_t16_restje.mp3]	link::thema16::taak1::A2
+het statiegeld	8000+	Je krijgt echt statiegeld terug voor de fles.	залог за тару	За бутылку тебе правда вернут залог.	[sound:linkplus_t16_statiegeld.mp3]	link::thema16::taak1::A2

@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#notetype:LINK plus NL
+#deck:LINK plus::thema 16::taak_4
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+bepalen	430	Jij mag gewoon bepalen waar we gaan eten.	решать; определять	Ты можешь просто решать, где мы будем есть.	[sound:linkplus_t16_bepalen.mp3]	link::thema16::taak4::A2
+het bloed	625	Op mijn jas zit bloed, helaas.	кровь	На моей куртке кровь, к сожалению.	[sound:linkplus_t16_bloed.mp3]	link::thema16::taak4::A2
+het bezoek	679	Ik heb vanavond bezoek, dus ik ruim op.	гости; визит	У меня сегодня вечером гости, поэтому я убираюсь.	[sound:linkplus_t16_bezoek.mp3]	link::thema16::taak4::A2
+de basis	732	Voor taal is een goede basis belangrijk.	основа; база	Для языка важна хорошая основа.	[sound:linkplus_t16_basis.mp3]	link::thema16::taak4::A2
+de hoogte	756	De hoogte van deze kamer is best laag.	высота; уровень (суммы)	Высота этой комнаты довольно низкая.	[sound:linkplus_t16_hoogte.mp3]	link::thema16::taak4::A2
+medisch	891	Dit is een medisch probleem, geen grap.	медицинский	Это медицинская проблема, а не шутка.	[sound:linkplus_t16_medisch.mp3]	link::thema16::taak4::A2
+vergelijken	1199	Ik wil eerst even twee verzekeringen vergelijken.	сравнить	Я хочу сначала сравнить две страховки.	[sound:linkplus_t16_vergelijken.mp3]	link::thema16::taak4::A2
+de behandeling	1390	Mijn behandeling in het ziekenhuis duurt best lang.	лечение	Моё лечение в больнице длится довольно долго.	[sound:linkplus_t16_behandeling.mp3]	link::thema16::taak4::A2
+de opname	1418	Na de opname mag hij weer naar huis.	госпитализация	После госпитализации ему снова можно домой.	[sound:linkplus_t16_opname.mp3]	link::thema16::taak4::A2
+verzekeren	1557	Hij wil zijn nieuwe racefiets graag verzekeren.	страховать	Он хочет застраховать свой новый шоссейный велосипед.	[sound:linkplus_t16_verzekeren.mp3]	link::thema16::taak4::A2
+noodzakelijk	2536	Is de reis echt noodzakelijk voor je werk?	необходимый	Эта поездка правда необходима для твоей работы?	[sound:linkplus_t16_noodzakelijk.mp3]	link::thema16::taak4::A2
+het overzicht	2910	Ik maak even een overzicht van mijn kosten.	сводка; обзор	Я быстро составлю сводку своих расходов.	[sound:linkplus_t16_overzicht.mp3]	link::thema16::taak4::A2
+halverwege	3529	Halverwege de week ben ik echt moe.	в середине; на полпути	К середине недели я правда устала.	[sound:linkplus_t16_halverwege.mp3]	link::thema16::taak4::A2
+psychisch	4006	Stress kan ook psychische klachten geven.	психический	Стресс может вызывать и психические недуги.	[sound:linkplus_t16_psychisch.mp3]	link::thema16::taak4::A2
+variëren	5414	De prijs van een huis kan best variëren.	варьироваться	Цена дома может довольно сильно варьироваться.	[sound:linkplus_t16_varieren.mp3]	link::thema16::taak4::A2
+de premie	5471	De premie van mijn verzekering is best hoog.	страховой взнос	Страховой взнос по моей страховке довольно высокий.	[sound:linkplus_t16_premie.mp3]	link::thema16::taak4::A2
+vergoeden	6369	De verzekering vergoedt de kosten van de bril.	возместить	Страховка возмещает расходы на очки.	[sound:linkplus_t16_vergoeden.mp3]	link::thema16::taak4::A2
+opzeggen	6609	Ik wil mijn lidmaatschap echt graag opzeggen.	отказаться (от услуги); расторгнуть	Я правда хочу отказаться от своего членства.	[sound:linkplus_t16_opzeggen.mp3]	link::thema16::taak4::A2
+aanvullend	8000+	Een aanvullende verzekering is soms best duur.	добавочный; дополнительный	Добавочная страховка иногда довольно дорогая.	[sound:linkplus_t16_aanvullend.mp3]	link::thema16::taak4::A2
+de kraamzorg	8000+	Na de bevalling komt de kraamzorg thuis.	послеродовой патронаж	После родов послеродовой патронаж приходит на дом.	[sound:linkplus_t16_kraamzorg.mp3]	link::thema16::taak4::A2
+de polis	8000+	Ligt mijn polis eigenlijk nog thuis?	страховой полис	Мой полис, вообще-то, ещё лежит дома?	[sound:linkplus_t16_polis.mp3]	link::thema16::taak4::A2
+de zorgkosten	8000+	Mijn zorgkosten zijn dit jaar echt laag.	расходы на лечение	Мои расходы на лечение в этом году правда низкие.	[sound:linkplus_t16_zorgkosten.mp3]	link::thema16::taak4::A2
