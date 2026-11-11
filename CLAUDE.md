@@ -85,14 +85,14 @@ Roadmap overview: `daily/roadmap_maart_2026.md`
 > **Detailed docs:** `scripts/README.md`
 
 Six scripts share `anki_utils.py` — Anki profile detection and media copying,
-plus the AnkiConnect writers (`import`, `update`, `lint`, `herorden`) and the
-gates of note type «Frequentie NL»:
+plus the AnkiConnect writers (`import`, `update`), the checks (`lint`,
+`volgorde`) and the gates of note type «Frequentie NL»:
 
 ```
 audio_to_anki.py ──┐
 text_to_speech.py ─┤
 werk_woorden.py ───┼─→ anki_utils.py (profiles, media, import/update/lint/
-anki_vandaag.py ───┤                  herorden, gates keur())
+anki_vandaag.py ───┤                  volgorde, gates keur())
 daily_audio.py ────┤   (daily_audio uses only keur_mp3, duur, AudioFout)
 kern.py ───────────┘   kern.py also imports anki_vandaag (collection copy);
                        keur() imports kern for the i+1 gate of Kern
@@ -270,11 +270,13 @@ python3 scripts/kern.py check frequentie/kern_*_anki.txt  # примеры по 
 python3 scripts/kern.py rank FILE...                      # Rank := ранг в списке
 python3 scripts/kern.py audio FILE... [--droog]           # Audio := freq_{ключ}_{sha}.mp3, озвучка в media
 python3 scripts/anki_utils.py update FILE... [--droog]    # поля импортированных заметок := файл
-python3 scripts/anki_utils.py herorden [--droog]          # позиция новой Kern = Rank
+python3 scripts/anki_utils.py volgorde                   # новые Kern идут по Rank? (читает)
 ```
 
-`audio`, `update` и `herorden` без `--droog` пишут в Anki: перед каждым — бэкап
-и «да» Alex. `setDueDate` не трогать — он делает новую карточку повторением.
+`audio` и `update` без `--droog` пишут в Anki: перед каждым — бэкап и «да» Alex.
+`setDueDate` не трогать — он делает новую карточку повторением. Позицию новой
+карточки AnkiConnect с 2026-11-11 не пишет (`due` защищён), поэтому `volgorde`
+только сверяет порядок; переставляет человек или MCP `anki` `card_reposition`.
 Озвучка `audio` — через тот же `anki_utils.mp3_naar_media`, что у Werk: упал
 синтез или mp3 бракованный — код 1, в media ни нового mp3, ни `.part`, но
 колонка Audio в файлах уже переписана, поэтому `update` — только после удачного

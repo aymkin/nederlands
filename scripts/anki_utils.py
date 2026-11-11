@@ -9,9 +9,9 @@ an _anki.txt TSV straight into the running Anki via AnkiConnect.
     python3 scripts/anki_utils.py import FILE_anki.txt
     python3 scripts/anki_utils.py update FILE_anki.txt... [--droog]   # поля заметок := файл
     python3 scripts/anki_utils.py lint     # Twenty Rules по всей коллекции
-    python3 scripts/anki_utils.py herorden [--droog]   # позиция новой Kern = Rank
+    python3 scripts/anki_utils.py volgorde   # новые Kern идут по рангу? (только читает)
 
-После import и update партии Kern запускается herorden.
+После import и update партии Kern запускается volgorde.
 """
 
 import asyncio
@@ -471,22 +471,22 @@ def update(path: Path, profile: str = ANKI_PROFILE, droog: bool = False) -> dict
     return dict(per_veld)
 
 
-def herorden(profile: str = ANKI_PROFILE, droog: bool = False) -> tuple[int, int]:
-    """Позиция каждой новой карточки Kern = её Rank: пресет собирает новые по
-    колоде в порядке due, так Anki вводит слова строго по рангу (решение
-    2026-10-06). Пишет только due и только там, где он ≠ Rank, — повторный
-    запуск ничего не меняет. droog — посчитать, не записывая.
+def volgorde(profile: str = ANKI_PROFILE) -> tuple[int, list[str]]:
+    """Идут ли новые карточки Kern по рангу: пресет собирает новые по колоде в
+    порядке позиции (due), так Anki вводит слова по рангу (решение 2026-10-06).
+    Только читает. До 2026-11-11 здесь был herorden, писавший due := Rank через
+    setSpecificValueOfCard; AnkiConnect это закрыл («Use native scheduling commands
+    for protected state»), а перестановки новых в нём нет. Партии идут подряд по
+    рангу, и addNotes ставит их в конец в порядке файла — порядок верен и так;
+    сбивает его пересборка списка, тогда переставляет человек.
 
     `deck:` находит и карточки, временно лежащие в фильтрованной колоде; там
     due — место в ней, а не позиция, поэтому они пропускаются. Пропускаются и
-    заметки не «Frequentie NL»: Rank у них нет, а KeyError прошёл бы мимо
-    `except AnkiFout` в posities_kern уже после записи партии (2026-10-23 сессия
-    fluent положила в Kern через Anki MCP пять Basic). Их число — в предупреждении.
-    setSpecificValueOfCard при отказе не ставит error, а возвращает False —
-    поэтому результат сверяется с [True], а после записи позиции читаются
-    заново. Отмены у записи нет (skip_undo_entry): перед ней — бэкап.
+    заметки не «Frequentie NL»: Rank у них нет (2026-10-23 сессия fluent положила
+    в Kern через Anki MCP пять Basic). Их число — в предупреждении.
 
-    Возвращает (новых карточек Kern, позиций к записи или записано)."""
+    Возвращает (новых карточек Kern, Word тех, что не на месте): не на месте —
+    карточка, перед которой по позиции стоит карточка с большим рангом."""
     eis_profiel(profile)
     nieuw = [
         k for k in ankiconnect("cardsInfo", cards=ankiconnect(
@@ -498,54 +498,45 @@ def herorden(profile: str = ANKI_PROFILE, droog: bool = False) -> tuple[int, int
         print(f'⚠️  новых в Kern не «{FREQUENTIE}»: {vreemd} — пропущены, Rank у них нет. '
               f'Kern ведёт пайплайн, заметкам сессий fluent место в колоде Fluent; '
               f'найти в Anki: "deck:{KERN}" -"note:{FREQUENTIE}"')
-    scheef = []
     for k in kaarten:
-        rank = k["fields"]["Rank"]["value"].strip()
-        if not rank.isdigit():
-            word = k["fields"]["Word"]["value"]
-            raise AnkiFout(f"{word}: Rank «{rank}» — не число, позицию не поставить")
-        if k["due"] != int(rank):
-            scheef.append((k["cardId"], int(rank), k["fields"]["Word"]["value"]))
-    if droog or not scheef:
-        return len(kaarten), len(scheef)
-    for card, rank, word in scheef:
-        if ankiconnect("setSpecificValueOfCard", card=card, keys=["due"],
-                       newValues=[rank]) != [True]:
-            raise AnkiFout(f"{word}: позиция {rank} не записана")
-    ids = [card for card, _, _ in scheef]
-    blijft = [k["fields"]["Word"]["value"]
-              for k in ankiconnect("cardsInfo", cards=ids)
-              if k["due"] != int(k["fields"]["Rank"]["value"])]
-    if blijft:
-        raise AnkiFout(f"после записи due ≠ Rank: {', '.join(blijft)}")
-    return len(kaarten), len(scheef)
+        if not k["fields"]["Rank"]["value"].strip().isdigit():
+            raise AnkiFout(f'{k["fields"]["Word"]["value"]}: Rank '
+                           f'«{k["fields"]["Rank"]["value"].strip()}» — не число')
+    scheef, hoogste = [], 0
+    for k in sorted(kaarten, key=lambda k: k["due"]):
+        rank = int(k["fields"]["Rank"]["value"])
+        if rank < hoogste:
+            scheef.append(f'{k["fields"]["Word"]["value"]} {rank}')
+        hoogste = max(hoogste, rank)
+    return len(kaarten), scheef
 
 
 def posities_kern(paden: list[Path]) -> None:
-    """После записи партии Kern — herorden: новая карточка встаёт на свой Rank, а не
-    в конец очереди, куда её ставит addNotes."""
+    """После записи партии Kern — volgorde: встали ли новые карточки по рангу."""
     if KERN not in {lees_tsv(p)[0]["deck"] for p in paden}:
         return
     try:
-        nieuw, gezet = herorden()
+        nieuw, scheef = volgorde()
     except AnkiFout as e:
-        sys.exit(f"❌ заметки записаны, а позиции новых Kern — не все:\n{e}\n"
-                 f"повтор: python3 scripts/anki_utils.py herorden")
-    print(f"✅ новых Kern: {nieuw}, позиция = Rank выставлена у {gezet}")
+        sys.exit(f"❌ заметки записаны, порядок новых Kern не проверен:\n{e}\n"
+                 f"повтор: python3 scripts/anki_utils.py volgorde")
+    if scheef:
+        sys.exit(f"❌ заметки записаны, но {len(scheef)} новых Kern стоят не по рангу: "
+                 f"{', '.join(scheef[:8])}{', …' if len(scheef) > 8 else ''}\n"
+                 f"переставить: в сессии Claude — MCP anki card_reposition (id в порядке Rank), "
+                 f"или Anki Browse → Reposition; проверка: python3 scripts/anki_utils.py volgorde")
+    print(f"✅ новых Kern: {nieuw}, все по рангу")
 
 
 if __name__ == "__main__":
-    if sys.argv[1:2] == ["herorden"] and set(sys.argv[2:]) <= {"--droog"}:
-        droog = "--droog" in sys.argv
+    if sys.argv[1:] == ["volgorde"]:
         try:
-            nieuw, scheef = herorden(droog=droog)
+            nieuw, scheef = volgorde()
         except AnkiFout as e:
-            sys.exit(f"❌ Anki, позиции не тронуты или тронуты не все:\n{e}")
-        if droog:
-            print(f"новых Kern: {nieuw}, due ≠ Rank у {scheef} — запись без --droog")
-        else:
-            print(f"✅ новых Kern: {nieuw}, позиция = Rank выставлена у {scheef}")
-        sys.exit(0)
+            sys.exit(f"❌ Anki, порядок не проверен:\n{e}")
+        print(f"новых Kern: {nieuw}, не по рангу: {len(scheef)}"
+              + (f" — {', '.join(scheef[:8])}" if scheef else ""))
+        sys.exit(1 if scheef else 0)
     if sys.argv[1:] == ["lint"]:
         try:
             fouten = lint()
@@ -572,7 +563,7 @@ if __name__ == "__main__":
         sys.exit(0)
     if len(sys.argv) != 3 or sys.argv[1] != "import":
         sys.exit("usage: anki_utils.py import FILE_anki.txt | update FILE_anki.txt... [--droog]"
-                 " | lint | herorden [--droog]")
+                 " | lint | volgorde")
     try:
         added, skipped = import_tsv(Path(sys.argv[2]))
     except KaartFout as e:

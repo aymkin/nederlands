@@ -108,14 +108,13 @@ BASIC = {"cardId": 6, "deckName": au.KERN, "modelName": "Basic", "due": 6895,
 
 @contextmanager
 def nep_anki(profiel="alex", modellen=("Frequentie NL",), decks=("Frequentie::Werk",),
-             bestaand=None, kaarten=(), weiger=False, voorbeelden=None, velden=None,
+             bestaand=None, kaarten=(), voorbeelden=None, velden=None,
              blind=False):
     """AnkiConnect понарошку: журнал вызовов и порядок проверок createNote —
     note type, потом колода, потом дубль. bestaand — Word → Translation,
     voorbeelden — Word → Example, velden — Word → прочие поля (notesInfo, как
     настоящий, отдаёт все поля; noteId здесь — сам Word). kaarten — новые
-    карточки для herorden; weiger — setSpecificValueOfCard отвечает False, как
-    настоящий при отказе; blind — updateNoteFields не пишет, как настоящий, когда
+    карточки для volgorde; blind — updateNoteFields не пишет, как настоящий, когда
     заметка открыта в браузере Anki."""
     bestaand = bestaand or {}
     notities = {w: {"Word": w, "Translation": t, "Example": (voorbeelden or {}).get(w, ""),
@@ -159,12 +158,6 @@ def nep_anki(profiel="alex", modellen=("Frequentie NL",), decks=("Frequentie::We
             return list(kaarten)
         if action == "cardsInfo":
             return [dict(kaarten[c]) for c in params["cards"]]
-        if action == "setSpecificValueOfCard":
-            if weiger:
-                return False
-            assert params["keys"] == ["due"] and type(params["newValues"][0]) is int
-            kaarten[params["card"]]["due"] = params["newValues"][0]
-            return [True]
         raise AssertionError(f"неожиданный вызов {action}")
 
     echt, au.ankiconnect = au.ankiconnect, ankiconnect
@@ -429,90 +422,82 @@ def test_lint_leeg():
             assert "нет заметок" in str(e)
 
 
+# По позиции: verzoek (1275), serie (6828), kaart (6829) — serie и kaart стоят после
+# verzoek, хотя ранг у них меньше.
 RIJ = (kaart(1, "de serie", 1230, 6828), kaart(2, "de kaart", 740, 6829),
        kaart(3, "het verzoek", 1275, 1275))
+OP_RANG = (kaart(1, "tijdens", 258, 6889), kaart(2, "geleden", 259, 6890),
+           kaart(3, "het team", 373, 6988))
 
 
-def gezet(log):
-    return [(p["card"], p["newValues"]) for a, p in log if a == "setSpecificValueOfCard"]
-
-
-def test_herorden_rank_wordt_due():
-    """2026-10-06: позиции шли в порядке файла — 48 % пар против ранга."""
+def test_volgorde_scheef():
+    """2026-10-06: позиции шли в порядке файла — 48 % пар против ранга. Не на месте —
+    карточка, перед которой по позиции стоит карточка с большим рангом."""
     with nep_anki(kaarten=RIJ) as log:
-        assert au.herorden() == (3, 2)
-    assert gezet(log) == [(1, [1230]), (2, [740])]
+        assert au.volgorde() == (3, ["de serie 1230", "de kaart 740"])
     zoek = next(p for a, p in log if a == "findCards")
     assert zoek["query"] == '"deck:Frequentie::Kern" is:new'
 
 
-def test_herorden_tweede_keer_niets():
-    with nep_anki(kaarten=RIJ) as log:
-        au.herorden()
-        log.clear()
-        assert au.herorden() == (3, 0)
-    assert gezet(log) == []
+def test_volgorde_op_rang_schrijft_niets():
+    """2026-11-11: AnkiConnect закрыл запись due (setSpecificValueOfCard → «Use native
+    scheduling commands for protected state»). Проверка только читает: вызов записи
+    упал бы в nep_anki как неожиданный."""
+    with nep_anki(kaarten=OP_RANG) as log:
+        assert au.volgorde() == (3, [])
+    assert acties(log) == ["getActiveProfile", "findCards", "cardsInfo"]
 
 
-def test_herorden_droog():
-    with nep_anki(kaarten=RIJ) as log:
-        assert au.herorden(droog=True) == (3, 2)
-    assert gezet(log) == []
+def test_volgorde_gefilterd_overgeslagen():
+    """В фильтрованной колоде due — место в ней, не позиция: не считаем."""
+    rij = OP_RANG + (kaart(4, "de regio", 1248, 3, deck="Filtered Deck 1"),)
+    with nep_anki(kaarten=rij):
+        assert au.volgorde() == (3, [])
 
 
-def test_herorden_weigering():
-    """Отказ приходит как False без error — его надо поймать самим."""
-    with nep_anki(kaarten=RIJ, weiger=True):
-        try:
-            au.herorden()
-            assert False, "expected AnkiFout"
-        except au.AnkiFout as e:
-            assert "de serie" in str(e)
-
-
-def test_herorden_gefilterd_overgeslagen():
-    """В фильтрованной колоде due — место в ней, не позиция: не трогаем."""
-    rij = RIJ + (kaart(4, "de regio", 1248, 3, deck="Filtered Deck 1"),)
-    with nep_anki(kaarten=rij) as log:
-        assert au.herorden() == (3, 2)
-    assert 4 not in [c for c, _ in gezet(log)]
-
-
-def test_herorden_vreemd_type_overgeslagen():
+def test_volgorde_vreemd_type_overgeslagen():
     """2026-10-23: в Kern легли новые Basic из сессии fluent — без Rank, herorden падал
     с KeyError. Чужой тип пропускается, и предупреждение называет, сколько их."""
-    with nep_anki(kaarten=RIJ + (BASIC,)) as log, redirect_stdout(io.StringIO()) as out:
-        assert au.herorden() == (3, 2)
-    assert 6 not in [c for c, _ in gezet(log)]
+    with nep_anki(kaarten=OP_RANG + (BASIC,)), redirect_stdout(io.StringIO()) as out:
+        assert au.volgorde() == (3, [])
     assert "новых в Kern не «Frequentie NL»: 1" in out.getvalue()
 
 
-def test_posities_kern_vreemd_type():
-    """Импорт партии Kern при чужой новой заметке в колоде. До правки import записал бы
-    партию и упал бы в posities_kern: KeyError проходит мимо `except AnkiFout`."""
-    with tempfile.TemporaryDirectory() as d, nep_anki(kaarten=RIJ + (BASIC,)) as log, \
+def test_posities_kern_op_rang():
+    with tempfile.TemporaryDirectory() as d, nep_anki(kaarten=OP_RANG + (BASIC,)), \
             redirect_stdout(io.StringIO()) as out:
         p = Path(d) / "kern_a_anki.txt"
         p.write_text(partij(au.KERN), encoding="utf-8")
         au.posities_kern([p])
-    assert gezet(log) == [(1, [1230]), (2, [740])]
-    assert "✅ новых Kern: 3, позиция = Rank выставлена у 2" in out.getvalue()
+    assert "✅ новых Kern: 3, все по рангу" in out.getvalue()
 
 
-def test_herorden_rank_geen_getal():
-    with nep_anki(kaarten=RIJ + (kaart(5, "de jeugd", "", 7),)) as log:
+def test_posities_kern_scheef():
+    """Импорт записан, порядок нет — код 1 и что сделать руками, а не трейсбек."""
+    with tempfile.TemporaryDirectory() as d, nep_anki(kaarten=RIJ):
+        p = Path(d) / "kern_a_anki.txt"
+        p.write_text(partij(au.KERN), encoding="utf-8")
         try:
-            au.herorden()
+            au.posities_kern([p])
+            assert False, "expected SystemExit"
+        except SystemExit as e:
+            assert "заметки записаны" in str(e.code) and "de serie 1230" in str(e.code)
+            assert "card_reposition" in str(e.code)
+
+
+def test_volgorde_rank_geen_getal():
+    with nep_anki(kaarten=OP_RANG + (kaart(5, "de jeugd", "", 7),)):
+        try:
+            au.volgorde()
             assert False, "expected AnkiFout"
         except au.AnkiFout as e:
             assert "de jeugd" in str(e)
-    assert gezet(log) == []
 
 
-def test_herorden_verkeerd_profiel():
+def test_volgorde_verkeerd_profiel():
     with nep_anki(profiel="iuliia", kaarten=RIJ) as log:
         try:
-            au.herorden()
+            au.volgorde()
             assert False, "expected AnkiFout"
         except au.AnkiFout:
             pass
