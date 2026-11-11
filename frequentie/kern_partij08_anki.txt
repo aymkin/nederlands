@@ -1,0 +1,106 @@
+#separator:tab
+#html:true
+#notetype:Frequentie NL
+#deck:Frequentie::Kern
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+het onderzoek	374	De politie doet onderzoek.	расследование; исследование	Полиция ведёт расследование.	[sound:freq_onderzoek_0832f1.mp3]	frequentie::kern::partij08
+het hart	375	Hij heeft een goed hart.	сердце	У него доброе сердце.	[sound:freq_hart_13aea8.mp3]	frequentie::kern::partij08
+de persoon	376	Het is voor twee personen.	персона (человек при счёте)	Это на две персоны.	[sound:freq_persoon_3855b5.mp3]	frequentie::kern::partij08
+veilig	377	Is het hier veilig?	безопасный	Здесь безопасно?	[sound:freq_veilig_3609aa.mp3]	frequentie::kern::partij08
+fijn	378	Wat fijn dat je er bent!	приятный	Как приятно, что ты здесь!	[sound:freq_fijn_3b33e3.mp3]	frequentie::kern::partij08
+missen	380	Ik mis je.	скучать (по кому-то); пропускать	Я по тебе скучаю.	[sound:freq_missen_7873ff.mp3]	frequentie::kern::partij08
+voordat	383	Bel me voordat je komt.	прежде чем; до того как	Позвони мне, прежде чем придёшь.	[sound:freq_voordat_33f057.mp3]	frequentie::kern::partij08
+ver	384	Is het ver van hier?	далеко; далёкий	Это далеко отсюда?	[sound:freq_ver_575f97.mp3]	frequentie::kern::partij08
+het miljoen	385	Ik heb het je al een miljoen keer gezegd!	миллион	Я тебе это уже миллион раз говорил!	[sound:freq_miljoen_05610b.mp3]	frequentie::kern::partij08
+het gevoel	386	Ik heb een slecht gevoel.	чувство; ощущение	У меня плохое чувство.	[sound:freq_gevoel_39a771.mp3]	frequentie::kern::partij08
+de ouder	387	Mijn ouders komen morgen.	родитель	Мои родители приедут завтра.	[sound:freq_ouder_5aea74.mp3]	frequentie::kern::partij08
+enkele	389	Ik heb nog enkele vragen.	кое-какие (немного)	У меня есть ещё кое-какие вопросы.	[sound:freq_enkele_d1a114.mp3]	frequentie::kern::partij08
+bezig	391	Ik ben nog bezig.	занят (делом)	Я ещё занят.	[sound:freq_bezig_7e197e.mp3]	frequentie::kern::partij08
+prachtig	392	Wat een prachtige dag!	великолепный	Какой великолепный день!	[sound:freq_prachtig_04bd6a.mp3]	frequentie::kern::partij08
+de heer	393	De heer Jansen is er niet.	г-н (офиц., перед фамилией)	Г-на Янсена нет на месте.	[sound:freq_heer_c2a7e4.mp3]	frequentie::kern::partij08
+verwachten	394	Dat had ik niet verwacht!	ожидать	Этого я не ожидал!	[sound:freq_verwachten_703490.mp3]	frequentie::kern::partij08
+kloppen	395	Dat klopt niet.	сходиться (быть верным); стучать	Это не сходится.	[sound:freq_kloppen_2ac9e1.mp3]	frequentie::kern::partij08
+vanavond	396	Wat doe je vanavond?	сегодня вечером	Что ты делаешь сегодня вечером?	[sound:freq_vanavond_560c2c.mp3]	frequentie::kern::partij08
+rustig	397	Het is hier heel rustig.	спокойный; тихий	Здесь очень спокойно.	[sound:freq_rustig_d22928.mp3]	frequentie::kern::partij08
+zes	398	Ik sta om zes uur op.	шесть	Я встаю в шесть часов.	[sound:freq_zes_23c7f9.mp3]	frequentie::kern::partij08
+waarschijnlijk	399	Hij komt waarschijnlijk morgen.	вероятно	Он, вероятно, придёт завтра.	[sound:freq_waarschijnlijk_7a2633.mp3]	frequentie::kern::partij08
+de groep	400	De hele groep was er.	группа	Вся группа была там.	[sound:freq_groep_afe269.mp3]	frequentie::kern::partij08
+vooral	401	Het is hier mooi, vooral in de avond.	особенно	Здесь красиво, особенно вечером.	[sound:freq_vooral_90c443.mp3]	frequentie::kern::partij08
+heten	402	Hoe heet je?	зваться (называться)	Как тебя зовут?	[sound:freq_heten_fbd489.mp3]	frequentie::kern::partij08
+hetzelfde	403	Ik wil hetzelfde.	то же самое	Я хочу то же самое.	[sound:freq_hetzelfde_866ecc.mp3]	frequentie::kern::partij08
+het punt	404	Wat is het volgende punt?	пункт; точка	Какой следующий пункт?	[sound:freq_punt_214ea8.mp3]	frequentie::kern::partij08
+dezelfde	405	We wonen in dezelfde stad.	тот же (самый)	Мы живём в том же самом городе.	[sound:freq_dezelfde_453191.mp3]	frequentie::kern::partij08
+de informatie	406	Heb je meer informatie?	информация	У тебя есть больше информации?	[sound:freq_informatie_3ab43d.mp3]	frequentie::kern::partij08
+de fout	408	Het was mijn fout.	ошибка; вина	Это была моя ошибка.	[sound:freq_fout_4a0a02.mp3]	frequentie::kern::partij08
+verdienen	409	Hij verdient veel geld.	зарабатывать; заслуживать	Он зарабатывает много денег.	[sound:freq_verdienen_f6a0ac.mp3]	frequentie::kern::partij08
+passen	410	Dat past niet bij hem.	подходить (кому-то); помещаться	Это ему не подходит.	[sound:freq_passen_00d751.mp3]	frequentie::kern::partij08
+sommig	411	Sommige mensen werken nooit.	некоторые	Некоторые люди никогда не работают.	[sound:freq_sommig_9b7c66.mp3]	frequentie::kern::partij08
+drinken	412	Wil je iets drinken?	пить	Хочешь что-нибудь выпить?	[sound:freq_drinken_c77a46.mp3]	frequentie::kern::partij08
+hoeveel	413	Hoeveel kinderen heb je?	сколько	Сколько у тебя детей?	[sound:freq_hoeveel_23ff93.mp3]	frequentie::kern::partij08
+de oorlog	414	Na de oorlog was alles anders.	война	После войны всё было по-другому.	[sound:freq_oorlog_0d238b.mp3]	frequentie::kern::partij08
+daarna	415	Wat deed je daarna?	после этого	Что ты делал после этого?	[sound:freq_daarna_375662.mp3]	frequentie::kern::partij08
+tien	416	Ik ben over tien minuten thuis.	десять	Я буду дома через десять минут.	[sound:freq_tien_1a68e6.mp3]	frequentie::kern::partij08
+beide	417	Beide kinderen slapen.	оба	Оба ребёнка спят.	[sound:freq_beide_f10c81.mp3]	frequentie::kern::partij08
+het bedrijf	418	Ik werk bij een groot bedrijf.	компания (фирма)	Я работаю в большой компании.	[sound:freq_bedrijf_89deda.mp3]	frequentie::kern::partij08
+spijten	419	Het spijt me echt.	жаль (мне …); сожалеть	Мне правда жаль.	[sound:freq_spijten_2ee382.mp3]	frequentie::kern::partij08
+zwart	420	Ik draag graag zwart.	чёрный	Я люблю носить чёрное.	[sound:freq_zwart_29cb90.mp3]	frequentie::kern::partij08
+snappen	421	Ik snap het niet.	догонять (разг.: понимать)	Я не догоняю.	[sound:freq_snappen_d7b099.mp3]	frequentie::kern::partij08
+ervan	422	Wat vind je ervan?	об этом; от этого	Что ты об этом думаешь?	[sound:freq_ervan_84f05e.mp3]	frequentie::kern::partij08
+ontmoeten	423	Waar heb je haar ontmoet?	встречать; познакомиться	Где ты её встретил?	[sound:freq_ontmoeten_da3614.mp3]	frequentie::kern::partij08
+kort	424	Het was een korte nacht.	короткий	Это была короткая ночь.	[sound:freq_kort_b6c80c.mp3]	frequentie::kern::partij08
+langs	425	Hij liep langs me.	мимо; вдоль	Он прошёл мимо меня.	[sound:freq_langs_7c2570.mp3]	frequentie::kern::partij08
+verschillend	426	We zijn heel verschillend.	разный	Мы очень разные.	[sound:freq_verschillend_2dc994.mp3]	frequentie::kern::partij08
+druk	427	Het is hier erg druk.	людно (много народу); занятой	Здесь очень людно.	[sound:freq_druk_e0c14c.mp3]	frequentie::kern::partij08
+los	428	Je kunt ze ook los kopen.	по отдельности; незакреплённый	Ты можешь купить их и по отдельности.	[sound:freq_los_899323.mp3]	frequentie::kern::partij08
+het antwoord	429	Ik wacht op je antwoord.	ответ	Я жду твоего ответа.	[sound:freq_antwoord_760337.mp3]	frequentie::kern::partij08
+jezelf	430	Je moet in jezelf geloven.	самого себя (о тебе)	Ты должен верить в самого себя.	[sound:freq_jezelf_d7aa5b.mp3]	frequentie::kern::partij08
+de deur	431	Er is iemand aan de deur.	дверь	Кто-то у двери.	[sound:freq_deur_cd3c48.mp3]	frequentie::kern::partij08
+trouwen	432	Wanneer gaan jullie trouwen?	пожениться; выйти замуж	Когда вы поженитесь?	[sound:freq_trouwen_2a5361.mp3]	frequentie::kern::partij08
+de schat	433	Dank je, schat!	дорогой (обращение); сокровище	Спасибо, дорогой!	[sound:freq_schat_acb71e.mp3]	frequentie::kern::partij08
+prima	435	Prima, dan zie ik je morgen.	отлично; нормально	Отлично, тогда увидимся завтра.	[sound:freq_prima_57fca7.mp3]	frequentie::kern::partij08
+men	436	Men zegt dat hij weg is.	люди (безличное)	Люди говорят, что он уехал.	[sound:freq_men_1ad4c0.mp3]	frequentie::kern::partij08
+de pijn	437	Ik heb veel pijn.	боль	У меня сильная боль.	[sound:freq_pijn_cc6232.mp3]	frequentie::kern::partij08
+hallo	438	Hallo, hoe gaat het?	привет; алло	Привет, как дела?	[sound:freq_hallo_e74ecb.mp3]	frequentie::kern::partij08
+vorig	439	Vorige week heb ik veel gewerkt.	прошлый	На прошлой неделе я много работал.	[sound:freq_vorig_be8bb6.mp3]	frequentie::kern::partij08
+dicht	440	Is de deur dicht?	закрытый; близко	Дверь закрыта?	[sound:freq_dicht_77cfbf.mp3]	frequentie::kern::partij08
+bekijken	441	Mag ik het huis bekijken?	осмотреть (взглянуть, изучить)	Можно мне осмотреть дом?	[sound:freq_bekijken_1e501e.mp3]	frequentie::kern::partij08
+de vriendin	442	Mijn vriendin woont in Hilversum.	подруга; девушка (партнёр)	Моя подруга живёт в Хилверсюме.	[sound:freq_vriendin_97c507.mp3]	frequentie::kern::partij08
+het wapen	443	Hij heeft een wapen!	оружие	У него оружие!	[sound:freq_wapen_c6b0c1.mp3]	frequentie::kern::partij08
+het bed	444	Ik lig nog in bed.	кровать	Я ещё лежу в кровати.	[sound:freq_bed_ff6838.mp3]	frequentie::kern::partij08
+opnieuw	445	Probeer het opnieuw.	заново	Попробуй заново.	[sound:freq_opnieuw_d0e58b.mp3]	frequentie::kern::partij08
+verkeerd	446	Dit is het verkeerde nummer.	не тот; неправильный	Это не тот номер.	[sound:freq_verkeerd_041c77.mp3]	frequentie::kern::partij08
+ergens	447	Ik heb hem ergens gezien.	где-то; куда-то	Я его где-то видел.	[sound:freq_ergens_f0c43e.mp3]	frequentie::kern::partij08
+de rest	448	De rest doe ik morgen.	остальное; остаток	Остальное я сделаю завтра.	[sound:freq_rest_b3174d.mp3]	frequentie::kern::partij08
+de buurt	449	Woon je in deze buurt?	район; окрестности	Ты живёшь в этом районе?	[sound:freq_buurt_1e860f.mp3]	frequentie::kern::partij08
+vertrekken	450	We vertrekken om zes uur.	уезжать; отправляться	Мы уезжаем в шесть часов.	[sound:freq_vertrekken_3bc640.mp3]	frequentie::kern::partij08
+meteen	452	Ik kom meteen.	сразу	Я сразу приду.	[sound:freq_meteen_8ac64b.mp3]	frequentie::kern::partij08
+de moord	453	Hij zit vast voor moord.	убийство	Он сидит за убийство.	[sound:freq_moord_9b229b.mp3]	frequentie::kern::partij08
+de liefde	454	Liefde is alles.	любовь	Любовь — это всё.	[sound:freq_liefde_48c051.mp3]	frequentie::kern::partij08
+ongeveer	456	Ik ben er over ongeveer tien minuten.	примерно	Я буду там примерно через десять минут.	[sound:freq_ongeveer_4999c5.mp3]	frequentie::kern::partij08
+het spel	457	Het is maar een spel.	игра	Это всего лишь игра.	[sound:freq_spel_554f41.mp3]	frequentie::kern::partij08
+duren	459	Hoe lang duurt het?	длиться	Как долго это длится?	[sound:freq_duren_84c7fa.mp3]	frequentie::kern::partij08
+de baan	460	Ik heb een nieuwe baan!	место работы (должность)	У меня новое место работы!	[sound:freq_baan_e623f9.mp3]	frequentie::kern::partij08
+voorbij	461	Het is voorbij.	позади (прошло); мимо	Это позади.	[sound:freq_voorbij_411de2.mp3]	frequentie::kern::partij08
+het feest	462	Kom je ook naar het feest?	вечеринка; праздник	Ты тоже придёшь на вечеринку?	[sound:freq_feest_b62c8d.mp3]	frequentie::kern::partij08
+zwaar	463	Het was een zware week.	тяжёлый	Это была тяжёлая неделя.	[sound:freq_zwaar_c7628b.mp3]	frequentie::kern::partij08
+normaal	464	Is dat normaal?	нормальный; обычно	Это нормально?	[sound:freq_normaal_e11f9f.mp3]	frequentie::kern::partij08
+de prijs	465	Wat is de prijs?	цена; приз	Какая цена?	[sound:freq_prijs_74ab9e.mp3]	frequentie::kern::partij08
+aflopen	468	Hoe is het afgelopen?	закончиться (чем-то); истекать	Чем это закончилось?	[sound:freq_aflopen_285f84.mp3]	frequentie::kern::partij08
+de weg²	469	Ik weet de weg.	дорога; путь	Я знаю дорогу.	[sound:freq_weg-2_a0849c.mp3]	frequentie::kern::partij08
+klinken	470	Dat klinkt goed!	звучать	Звучит хорошо!	[sound:freq_klinken_6585da.mp3]	frequentie::kern::partij08
+half	471	Het is al half zes.	половина; пол-	Уже половина шестого.	[sound:freq_half_f0cde5.mp3]	frequentie::kern::partij08
+lukken	473	Het is me gelukt!	удаваться; получаться	Мне удалось!	[sound:freq_lukken_356566.mp3]	frequentie::kern::partij08
+het contact	474	Hebben jullie nog contact?	связь (общение); контакт	Вы ещё поддерживаете связь?	[sound:freq_contact_08f343.mp3]	frequentie::kern::partij08
+arm	476	Hij is arm, maar gelukkig.	бедный	Он беден, но счастлив.	[sound:freq_arm_7abf99.mp3]	frequentie::kern::partij08
+het gezicht	477	Ik zie het aan je gezicht.	лицо	Я вижу это по твоему лицу.	[sound:freq_gezicht_8c0f37.mp3]	frequentie::kern::partij08
+naast	478	Kom naast me zitten.	рядом с	Садись рядом со мной.	[sound:freq_naast_216b10.mp3]	frequentie::kern::partij08
+draaien	479	Alles draait om geld.	вертеться; крутить	Всё вертится вокруг денег.	[sound:freq_draaien_a50b99.mp3]	frequentie::kern::partij08
+eerlijk	480	Wees eerlijk!	честный; честно	Будь честным!	[sound:freq_eerlijk_f3ac89.mp3]	frequentie::kern::partij08
+de zin	481	Ik heb geen zin.	охота (… hebben — хотеться); предложение	У меня нет охоты.	[sound:freq_zin_671584.mp3]	frequentie::kern::partij08
+speciaal	482	Vandaag is een speciale dag.	особый; специальный	Сегодня особый день.	[sound:freq_speciaal_93287a.mp3]	frequentie::kern::partij08
+de kop	483	Ik heb pijn in mijn kop.	башка (разг.); чашка	У меня болит башка.	[sound:freq_kop_e1d4f3.mp3]	frequentie::kern::partij08
+de muziek	484	Ik luister graag naar muziek.	музыка	Я люблю слушать музыку.	[sound:freq_muziek_7290a5.mp3]	frequentie::kern::partij08
+de hond	485	Heb je een hond?	собака	У тебя есть собака?	[sound:freq_hond_071b25.mp3]	frequentie::kern::partij08
+nadat	486	Nadat ik gegeten had, ging ik slapen.	после того как	После того как я поел, я пошёл спать.	[sound:freq_nadat_cd5bf0.mp3]	frequentie::kern::partij08
+rood	487	Ik heb een rode auto.	красный	У меня красная машина.	[sound:freq_rood_f717d9.mp3]	frequentie::kern::partij08
