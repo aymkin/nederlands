@@ -1,0 +1,106 @@
+#separator:tab
+#html:true
+#notetype:Frequentie NL
+#deck:Frequentie::Kern
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+tijdens	258	Hij belt nooit tijdens het werk.	во время	Он никогда не звонит во время работы.	[sound:freq_tijdens_65bf38.mp3]	frequentie::kern::partij07
+geleden	259	Dat was twee jaar geleden.	тому назад	Это было два года тому назад.	[sound:freq_geleden_5a6c5a.mp3]	frequentie::kern::partij07
+het moment	260	Een moment, ik kom zo.	момент	Один момент, я сейчас приду.	[sound:freq_moment_186889.mp3]	frequentie::kern::partij07
+schrijven	261	Hoe schrijf je je naam?	писать	Как ты пишешь своё имя?	[sound:freq_schrijven_97d5f6.mp3]	frequentie::kern::partij07
+sturen	262	Ik stuur je de foto.	отправлять; посылать	Я отправлю тебе фото.	[sound:freq_sturen_dfa0d4.mp3]	frequentie::kern::partij07
+bijna	263	Ik ben bijna klaar!	почти	Я почти готов!	[sound:freq_bijna_43806a.mp3]	frequentie::kern::partij07
+de maand	264	Ik werk hier al een maand.	месяц	Я работаю здесь уже месяц.	[sound:freq_maand_ac153a.mp3]	frequentie::kern::partij07
+het deel	265	Een deel van het geld is weg.	часть	Часть денег пропала.	[sound:freq_deel_0fc0cd.mp3]	frequentie::kern::partij07
+hopen	266	Ik hoop dat je snel komt.	надеяться	Я надеюсь, что ты скоро придёшь.	[sound:freq_hopen_2fab7b.mp3]	frequentie::kern::partij07
+buiten	267	Het kind speelt buiten.	на улице; снаружи	Ребёнок играет на улице.	[sound:freq_buiten_9376cd.mp3]	frequentie::kern::partij07
+de politie	268	Bel de politie!	полиция	Звони в полицию!	[sound:freq_politie_8fb633.mp3]	frequentie::kern::partij07
+betalen	269	Ik betaal vandaag.	платить	Я сегодня плачу.	[sound:freq_betalen_a11b42.mp3]	frequentie::kern::partij07
+ooit	270	Heb je ooit zo'n auto gezien?	когда-нибудь	Ты когда-нибудь видел такую машину?	[sound:freq_ooit_d4e950.mp3]	frequentie::kern::partij07
+thuis	271	Ik blijf vandaag thuis.	дома	Я сегодня остаюсь дома.	[sound:freq_thuis_515c8a.mp3]	frequentie::kern::partij07
+geweldig	272	Dat is geweldig!	потрясающий; замечательный	Это потрясающе!	[sound:freq_geweldig_e42200.mp3]	frequentie::kern::partij07
+god	273	Mijn god, wat is er gebeurd?	бог	Боже мой, что случилось?	[sound:freq_god_8a5ef8.mp3]	frequentie::kern::partij07
+hen	274	Ik ga met hen mee.	ними, них (после предлога)	Я пойду с ними.	[sound:freq_hen_02c56b.mp3]	frequentie::kern::partij07
+de vraag	275	Mag ik een vraag stellen?	вопрос	Можно мне задать вопрос?	[sound:freq_vraag_98c6f5.mp3]	frequentie::kern::partij07
+veranderen	276	Alles is hier veranderd.	меняться; менять	Всё здесь изменилось.	[sound:freq_veranderen_d601e4.mp3]	frequentie::kern::partij07
+vaak	277	Hoe vaak bel je je moeder?	часто	Как часто ты звонишь своей маме?	[sound:freq_vaak_ddcfdc.mp3]	frequentie::kern::partij07
+vrij	279	Ben je vandaag vrij?	свободный; выходной	Ты сегодня свободен?	[sound:freq_vrij_bb8139.mp3]	frequentie::kern::partij07
+kopen	280	Ik wil een nieuwe auto kopen.	покупать	Я хочу купить новую машину.	[sound:freq_kopen_eef5b7.mp3]	frequentie::kern::partij07
+waar²	282	Dat is waar.	верно; правдивый	Это верно.	[sound:freq_waar-2_4eac1d.mp3]	frequentie::kern::partij07
+de school	283	Hij zit nog op school.	школа	Он ещё учится в школе.	[sound:freq_school_d3fcc5.mp3]	frequentie::kern::partij07
+jong	284	Je bent nog jong!	молодой	Ты ещё молод!	[sound:freq_jong_2e40f9.mp3]	frequentie::kern::partij07
+vergeten	286	Ik ben zijn naam vergeten.	забывать	Я забыл его имя.	[sound:freq_vergeten_c505e5.mp3]	frequentie::kern::partij07
+luisteren	287	Je luistert niet naar me!	слушать	Ты меня не слушаешь!	[sound:freq_luisteren_78771d.mp3]	frequentie::kern::partij07
+pakken	288	We gaan hem pakken!	поймать (схватить)	Мы его поймаем!	[sound:freq_pakken_51d749.mp3]	frequentie::kern::partij07
+eigenlijk	289	Eigenlijk heb ik geen tijd.	вообще-то; собственно	Вообще-то у меня нет времени.	[sound:freq_eigenlijk_8f4d51.mp3]	frequentie::kern::partij07
+het soort	290	Ik ken dat soort mensen.	тип; вид	Я знаю этот тип людей.	[sound:freq_soort_692186.mp3]	frequentie::kern::partij07
+betekenen	292	Wat betekent dat?	значить; означать	Что это значит?	[sound:freq_betekenen_81f8e8.mp3]	frequentie::kern::partij07
+hoog	294	Dat huis is erg hoog.	высокий	Этот дом очень высокий.	[sound:freq_hoog_6d4693.mp3]	frequentie::kern::partij07
+open	295	Is het daar nog open?	открыто; открытый	Там ещё открыто?	[sound:freq_open_383f68.mp3]	frequentie::kern::partij07
+het verhaal	297	Dat is een lang verhaal.	история; рассказ	Это долгая история.	[sound:freq_verhaal_c5305e.mp3]	frequentie::kern::partij07
+wonen	298	Ik woon in Hilversum.	проживать (жить где-то)	Я проживаю в Хилверсюме.	[sound:freq_wonen_4c72a4.mp3]	frequentie::kern::partij07
+mogelijk	300	Is dat mogelijk?	возможный	Это возможно?	[sound:freq_mogelijk_1db583.mp3]	frequentie::kern::partij07
+rijden	301	Ik rijd met de auto naar mijn werk.	ехать (за рулём); водить	Я еду на машине на работу.	[sound:freq_rijden_c9809c.mp3]	frequentie::kern::partij07
+het water	302	Wil je wat water?	вода	Хочешь немного воды?	[sound:freq_water_53d44a.mp3]	frequentie::kern::partij07
+sinds	303	Sinds ik hier woon, werk ik veel.	с тех пор как	С тех пор как я здесь живу, я много работаю.	[sound:freq_sinds_3ad0af.mp3]	frequentie::kern::partij07
+het oog	305	Hij heeft mooie ogen.	глаз	У него красивые глаза.	[sound:freq_oog_7f73e0.mp3]	frequentie::kern::partij07
+vijf	307	Ik heb vijf minuten.	пять	У меня есть пять минут.	[sound:freq_vijf_8003b3.mp3]	frequentie::kern::partij07
+per	308	Ik werk 8 uur per dag.	в день / в час (на каждый)	Я работаю 8 часов в день.	[sound:freq_per_6b1c8c.mp3]	frequentie::kern::partij07
+het woord	309	Ik ken dat woord niet.	слово	Я не знаю этого слова.	[sound:freq_woord_565357.mp3]	frequentie::kern::partij07
+daarom	310	Daarom ben ik hier.	поэтому	Поэтому я здесь.	[sound:freq_daarom_36ca36.mp3]	frequentie::kern::partij07
+het hoofd	312	Het zit allemaal in je hoofd.	голова	Это всё у тебя в голове.	[sound:freq_hoofd_fd8e82.mp3]	frequentie::kern::partij07
+precies	313	Ik kom precies om vijf uur.	ровно; точно	Я приду ровно в пять часов.	[sound:freq_precies_7191ad.mp3]	frequentie::kern::partij07
+gek	314	Ben je gek?	сумасшедший; странный	Ты сумасшедший?	[sound:freq_gek_bd9f9b.mp3]	frequentie::kern::partij07
+vanaf	315	Vanaf vandaag doe ik het anders.	начиная с	Начиная с сегодняшнего дня я делаю это по-другому.	[sound:freq_vanaf_8eb644.mp3]	frequentie::kern::partij07
+moeilijk	316	Dat is moeilijk te zeggen.	трудный; сложный	Это трудно сказать.	[sound:freq_moeilijk_64cb0e.mp3]	frequentie::kern::partij07
+vermoorden	317	Hij wil me vermoorden!	убить (человека)	Он хочет меня убить!	[sound:freq_vermoorden_74bc43.mp3]	frequentie::kern::partij07
+het boek	318	Wat voor boek lees je?	книга	Что за книгу ты читаешь?	[sound:freq_boek_f5781f.mp3]	frequentie::kern::partij07
+het nieuws	319	Heb je het nieuws gehoord?	новости	Ты слышал новости?	[sound:freq_nieuws_15b09a.mp3]	frequentie::kern::partij07
+via	320	Ik ken hem via mijn werk.	через; посредством	Я знаю его через работу.	[sound:freq_via_977e40.mp3]	frequentie::kern::partij07
+vier	321	Wij wonen hier al vier jaar.	четыре	Мы живём здесь уже четыре года.	[sound:freq_vier_ce2ee5.mp3]	frequentie::kern::partij07
+het plan	322	Heb je plannen voor vandaag?	план	У тебя есть планы на сегодня?	[sound:freq_plan_8dd521.mp3]	frequentie::kern::partij07
+morgen	323	Ik bel je morgen.	завтра	Я позвоню тебе завтра.	[sound:freq_morgen_44b5bb.mp3]	frequentie::kern::partij07
+de kant	324	Ik sta aan jouw kant.	сторона	Я на твоей стороне.	[sound:freq_kant_f2f9f5.mp3]	frequentie::kern::partij07
+lekker	325	Dat was heel lekker!	вкусный	Это было очень вкусно!	[sound:freq_lekker_d00eb0.mp3]	frequentie::kern::partij07
+de film	326	Zullen we een film kijken?	фильм	Давай посмотрим фильм?	[sound:freq_film_48757c.mp3]	frequentie::kern::partij07
+rond	327	We eten rond 6 uur.	около (о времени); вокруг	Мы едим около 6 часов.	[sound:freq_rond_bc0ac4.mp3]	frequentie::kern::partij07
+de plek	328	Dit is een mooie plek.	местечко (конкретное место)	Это красивое местечко.	[sound:freq_plek_9bc772.mp3]	frequentie::kern::partij07
+het stuk	329	Wil je nog een stuk?	кусок; штука	Хочешь ещё кусок?	[sound:freq_stuk_c02f87.mp3]	frequentie::kern::partij07
+blij	330	Ik ben zo blij voor je!	рад; радостный	Я так рад за тебя!	[sound:freq_blij_5c1deb.mp3]	frequentie::kern::partij07
+trekken	331	Hij trekt aan mijn hand.	тянуть	Он тянет меня за руку.	[sound:freq_trekken_2a740c.mp3]	frequentie::kern::partij07
+eerder	332	Kun je eerder komen?	раньше	Ты можешь прийти раньше?	[sound:freq_eerder_552abf.mp3]	frequentie::kern::partij07
+slapen	333	Ik heb slecht geslapen.	спать	Я плохо спал.	[sound:freq_slapen_ac1860.mp3]	frequentie::kern::partij07
+het nummer	334	Wat is je nummer?	номер	Какой у тебя номер?	[sound:freq_nummer_18c20b.mp3]	frequentie::kern::partij07
+lief	335	Hij is heel lief voor zijn moeder.	добрый; ласковый	Он очень добр к своей маме.	[sound:freq_lief_dae8cb.mp3]	frequentie::kern::partij07
+zodat	336	Ik had geen geld, zodat ik niets kon kopen.	так что; чтобы	У меня не было денег, так что я ничего не мог купить.	[sound:freq_zodat_01ad6b.mp3]	frequentie::kern::partij07
+leggen	337	Waar heb je mijn boek gelegd?	класть	Куда ты положил мою книгу?	[sound:freq_leggen_f93212.mp3]	frequentie::kern::partij07
+vol	338	Het huis was vol mensen.	полон (чего-то)	Дом был полон людей.	[sound:freq_vol_9f76d4.mp3]	frequentie::kern::partij07
+bang	339	Ben je bang?	страшно (кому-то); испуганный	Тебе страшно?	[sound:freq_bang_f50bf3.mp3]	frequentie::kern::partij07
+gelijk	340	Je hebt gelijk.	прав (… hebben); одинаковый	Ты прав.	[sound:freq_gelijk_ce32a9.mp3]	frequentie::kern::partij07
+kiezen	341	Je mag zelf kiezen.	выбирать	Ты можешь выбрать сам.	[sound:freq_kiezen_ea51da.mp3]	frequentie::kern::partij07
+de kamer	343	Mijn kamer is klein.	комната	Моя комната маленькая.	[sound:freq_kamer_473eaa.mp3]	frequentie::kern::partij07
+sorry	344	Sorry, ik ben te laat.	извини; прости	Извини, я опоздал.	[sound:freq_sorry_04e96d.mp3]	frequentie::kern::partij07
+boven	345	Hij is boven.	наверху; над	Он наверху.	[sound:freq_boven_0544dc.mp3]	frequentie::kern::partij07
+de zorg	346	Bedankt voor je zorg.	забота; беспокойство	Спасибо за твою заботу.	[sound:freq_zorg_8cbb71.mp3]	frequentie::kern::partij07
+heen	347	Ik ga er morgen heen.	туда	Я пойду туда завтра.	[sound:freq_heen_a2b8bd.mp3]	frequentie::kern::partij07
+duidelijk	348	Is dat duidelijk?	ясный; понятный	Это ясно?	[sound:freq_duidelijk_fd692b.mp3]	frequentie::kern::partij07
+ieder	350	Ieder kind wil spelen.	всякий (любой)	Всякий ребёнок хочет играть.	[sound:freq_ieder_427cd2.mp3]	frequentie::kern::partij07
+dragen	351	Zal ik het voor je dragen?	нести; носить	Мне понести это за тебя?	[sound:freq_dragen_ff5fde.mp3]	frequentie::kern::partij07
+terwijl	352	Hij belde terwijl ik sliep.	пока; в то время как	Он позвонил, пока я спал.	[sound:freq_terwijl_8fffab.mp3]	frequentie::kern::partij07
+de hulp	354	Heb je hulp nodig?	помощь	Тебе нужна помощь?	[sound:freq_hulp_0d2649.mp3]	frequentie::kern::partij07
+bekend	355	Hij is hier heel bekend.	известный; знакомый	Он здесь очень известный.	[sound:freq_bekend_bc57cc.mp3]	frequentie::kern::partij07
+hard	358	Je praat te hard.	громко; сильно	Ты говоришь слишком громко.	[sound:freq_hard_97d3d8.mp3]	frequentie::kern::partij07
+tweede	359	Dit is mijn tweede keer.	второй	Это мой второй раз.	[sound:freq_tweede_dfa0e5.mp3]	frequentie::kern::partij07
+redden	360	Hij heeft mijn leven gered.	спасать; справляться	Он спас мою жизнь.	[sound:freq_redden_f4f950.mp3]	frequentie::kern::partij07
+de broer	361	Mijn broer is twee jaar ouder.	брат	Мой брат на два года старше.	[sound:freq_broer_15d059.mp3]	frequentie::kern::partij07
+zoveel	362	Ik heb zoveel werk!	так много	У меня так много работы!	[sound:freq_zoveel_c55f71.mp3]	frequentie::kern::partij07
+de dochter	363	Hun dochter is vijf jaar.	дочь	Их дочери пять лет.	[sound:freq_dochter_1c0dd0.mp3]	frequentie::kern::partij07
+de avond	365	Bel me in de avond.	вечер	Позвони мне вечером.	[sound:freq_avond_851f36.mp3]	frequentie::kern::partij07
+doden	366	Ik lees om de tijd te doden.	убивать (тж. время)	Я читаю, чтобы убить время.	[sound:freq_doden_054812.mp3]	frequentie::kern::partij07
+zeer	367	Dat is zeer belangrijk.	весьма	Это весьма важно.	[sound:freq_zeer_b9a303.mp3]	frequentie::kern::partij07
+sluiten	368	Sluit je ogen.	закрывать	Закрой глаза.	[sound:freq_sluiten_b0f956.mp3]	frequentie::kern::partij07
+schieten	369	Niet schieten!	стрелять	Не стреляй!	[sound:freq_schieten_a55202.mp3]	frequentie::kern::partij07
+sterk	370	Je bent sterker dan je denkt.	сильный	Ты сильнее, чем думаешь.	[sound:freq_sterk_9a1286.mp3]	frequentie::kern::partij07
+gelukkig	371	Ik ben hier heel gelukkig.	счастливый; к счастью	Я здесь очень счастлив.	[sound:freq_gelukkig_1fc740.mp3]	frequentie::kern::partij07
+de nacht	372	Ik heb de hele nacht gewerkt.	ночь	Я работал всю ночь.	[sound:freq_nacht_ba2c73.mp3]	frequentie::kern::partij07
+het team	373	Ik werk in een klein team.	команда	Я работаю в маленькой команде.	[sound:freq_team_93c07d.mp3]	frequentie::kern::partij07
