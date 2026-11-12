@@ -1,0 +1,106 @@
+#separator:tab
+#html:true
+#notetype:Frequentie NL
+#deck:Frequentie::Kern
+#columns:Word	Rank	Example	Translation	TranslationExample	Audio	Tags
+#tags column:7
+de baby	491	Hoe oud is de baby?	малыш; младенец	Сколько лет малышу?	[sound:freq_baby_124818.mp3]	frequentie::kern::partij09
+herinneren	493	Herinner je je mij nog?	помнить (zich …); напоминать	Ты меня ещё помнишь?	[sound:freq_herinneren_2b760c.mp3]	frequentie::kern::partij09
+het bericht	495	Ik stuur je een bericht.	сообщение	Я пришлю тебе сообщение.	[sound:freq_bericht_c5df3f.mp3]	frequentie::kern::partij09
+wit	496	Mijn auto is wit.	белый	Моя машина белая.	[sound:freq_wit_291a1b.mp3]	frequentie::kern::partij09
+Amerikaans	498	Ik kijk graag Amerikaanse films.	американский	Я люблю смотреть американские фильмы.	[sound:freq_Amerikaans_d174dc.mp3]	frequentie::kern::partij09
+overal	500	Ik heb overal gezocht.	везде	Я везде искал.	[sound:freq_overal_b38612.mp3]	frequentie::kern::partij09
+erop	501	Wat staat erop?	на нём (на этом)	Что на нём написано?	[sound:freq_erop_871f43.mp3]	frequentie::kern::partij09
+alsjeblieft	502	Help me, alsjeblieft!	пожалуйста	Помоги мне, пожалуйста!	[sound:freq_alsjeblieft_873ec8.mp3]	frequentie::kern::partij09
+inderdaad	504	Dat is inderdaad waar.	в самом деле	Это в самом деле верно.	[sound:freq_inderdaad_d3aad8.mp3]	frequentie::kern::partij09
+persoonlijk	505	Ik wil hem persoonlijk spreken.	лично; личный	Я хочу поговорить с ним лично.	[sound:freq_persoonlijk_35adee.mp3]	frequentie::kern::partij09
+welkom	507	Welkom in Hilversum!	добро пожаловать; желанный	Добро пожаловать в Хилверсюм!	[sound:freq_welkom_11078f.mp3]	frequentie::kern::partij09
+wakker	508	Ben je al wakker?	проснувшийся	Ты уже проснулся?	[sound:freq_wakker_6460d6.mp3]	frequentie::kern::partij09
+makkelijk	509	Het is niet makkelijk.	лёгкий (нетрудный); просто	Это не легко.	[sound:freq_makkelijk_dcb9e2.mp3]	frequentie::kern::partij09
+vechten	510	Ze vechten weer.	драться; бороться	Они снова дерутся.	[sound:freq_vechten_c38d0b.mp3]	frequentie::kern::partij09
+hangen	514	De foto hangt in de kamer.	висеть; вешать	Фото висит в комнате.	[sound:freq_hangen_226867.mp3]	frequentie::kern::partij09
+regelen	515	Ik regel het wel.	улаживать; организовывать	Я это улажу.	[sound:freq_regelen_b9385a.mp3]	frequentie::kern::partij09
+hé	517	Hé, wat doe je hier?	эй!	Эй, что ты здесь делаешь?	[sound:freq_hé_a38046.mp3]	frequentie::kern::partij09
+eruit	518	Eruit!	вон (наружу)	Вон!	[sound:freq_eruit_f465f8.mp3]	frequentie::kern::partij09
+bouwen	519	Ze bouwen een nieuw huis.	строить	Они строят новый дом.	[sound:freq_bouwen_2fb1f0.mp3]	frequentie::kern::partij09
+gooien	520	Gooi het maar weg.	бросать; кидать	Выбрось это.	[sound:freq_gooien_2fa8c2.mp3]	frequentie::kern::partij09
+de president	521	De president spreekt vanavond.	президент	Президент выступает сегодня вечером.	[sound:freq_president_7b2583.mp3]	frequentie::kern::partij09
+bereiken	522	Ik kan hem niet bereiken.	дозвониться; достигать	Я не могу до него дозвониться.	[sound:freq_bereiken_abe600.mp3]	frequentie::kern::partij09
+steken	524	Hij heeft me gestoken!	уколоть; ужалить	Он меня уколол!	[sound:freq_steken_0a6a22.mp3]	frequentie::kern::partij09
+perfect	525	Het is perfect!	идеальный	Это идеально!	[sound:freq_perfect_4f65ff.mp3]	frequentie::kern::partij09
+bieden	528	Deze baan biedt veel kansen.	предоставлять (возможность)	Эта работа предоставляет много возможностей.	[sound:freq_bieden_3da119.mp3]	frequentie::kern::partij09
+ervoor	529	Wat krijg ik ervoor?	за это; для этого	Что я получу за это?	[sound:freq_ervoor_9c57ee.mp3]	frequentie::kern::partij09
+het slachtoffer	530	Wie is het slachtoffer?	жертва	Кто жертва?	[sound:freq_slachtoffer_a7729a.mp3]	frequentie::kern::partij09
+kosten	531	Hoeveel kost het?	стоить	Сколько это стоит?	[sound:freq_kosten_58c4a6.mp3]	frequentie::kern::partij09
+de staat	534	Hij woont in een andere staat.	штат; государство	Он живёт в другом штате.	[sound:freq_staat_2a773b.mp3]	frequentie::kern::partij09
+de grond	535	Het ligt op de grond.	пол (на полу, на земле); почва	Это лежит на полу.	[sound:freq_grond_3bcc4c.mp3]	frequentie::kern::partij09
+het doel	536	Wat is je doel?	цель	Какая у тебя цель?	[sound:freq_doel_480865.mp3]	frequentie::kern::partij09
+direct	537	Kom direct naar huis!	немедленно; прямой	Немедленно иди домой!	[sound:freq_direct_f59c9f.mp3]	frequentie::kern::partij09
+eraan	539	Ik werk eraan.	над этим; к этому	Я над этим работаю.	[sound:freq_eraan_39771f.mp3]	frequentie::kern::partij09
+vroeg	540	Het is nog vroeg.	рано; ранний	Ещё рано.	[sound:freq_vroeg_95d1d5.mp3]	frequentie::kern::partij09
+het begin	541	Dit is pas het begin.	начало	Это только начало.	[sound:freq_begin_a75554.mp3]	frequentie::kern::partij09
+genieten	542	Geniet ervan!	наслаждаться	Наслаждайся этим!	[sound:freq_genieten_d0d53b.mp3]	frequentie::kern::partij09
+enkel	543	Ik wil enkel de waarheid.	лишь; только	Я хочу лишь правды.	[sound:freq_enkel_90e6ae.mp3]	frequentie::kern::partij09
+het ziekenhuis	544	Hij ligt in het ziekenhuis.	больница	Он лежит в больнице.	[sound:freq_ziekenhuis_06e275.mp3]	frequentie::kern::partij09
+de toekomst	545	Wie weet wat de toekomst brengt?	будущее	Кто знает, что принесёт будущее?	[sound:freq_toekomst_fcb8d5.mp3]	frequentie::kern::partij09
+mis	546	Er gaat iets mis.	не так (… gaan — срываться)	Что-то идёт не так.	[sound:freq_mis_6858b7.mp3]	frequentie::kern::partij09
+vanwege	547	Vanwege het werk kan ik niet komen.	по причине (офиц.); из-за	По причине работы я не смогу прийти.	[sound:freq_vanwege_0acba9.mp3]	frequentie::kern::partij09
+de straat	548	In welke straat woon je?	улица	На какой улице ты живёшь?	[sound:freq_straat_82333d.mp3]	frequentie::kern::partij09
+hè	549	Leuk, hè?	не так ли (в конце фразы)	Классно, не так ли?	[sound:freq_hè_ac3335.mp3]	frequentie::kern::partij09
+de relatie	550	Heb je een relatie?	отношения (пара)	У тебя есть отношения?	[sound:freq_relatie_34762c.mp3]	frequentie::kern::partij09
+de wedstrijd	551	Wie heeft de wedstrijd gewonnen?	матч; соревнование	Кто выиграл матч?	[sound:freq_wedstrijd_96a07c.mp3]	frequentie::kern::partij09
+hoi	552	Hoi! Hoe is het met je?	приветик (разг.)	Приветик! Как у тебя дела?	[sound:freq_hoi_84927e.mp3]	frequentie::kern::partij09
+ontdekken	553	Wat heb je ontdekt?	обнаруживать; открывать	Что ты обнаружил?	[sound:freq_ontdekken_b3d4c0.mp3]	frequentie::kern::partij09
+het geheim	554	Het is een geheim.	секрет; тайна	Это секрет.	[sound:freq_geheim_d90e6a.mp3]	frequentie::kern::partij09
+de meid	555	Wat een leuke meid!	девчонка	Какая классная девчонка!	[sound:freq_meid_239c95.mp3]	frequentie::kern::partij09
+het schip	556	Het schip vertrekt om zes uur.	корабль	Корабль отправляется в шесть часов.	[sound:freq_schip_8f7535.mp3]	frequentie::kern::partij09
+laag	557	De prijs is laag.	низкий	Цена низкая.	[sound:freq_laag_d65641.mp3]	frequentie::kern::partij09
+vliegen	559	We vliegen morgen naar huis.	лететь; летать	Мы завтра летим домой.	[sound:freq_vliegen_8b13fa.mp3]	frequentie::kern::partij09
+lachen	560	Waarom lach je?	смеяться	Почему ты смеёшься?	[sound:freq_lachen_5617b7.mp3]	frequentie::kern::partij09
+daarmee	561	Wat bedoel je daarmee?	этим; с этим	Что ты этим хочешь сказать?	[sound:freq_daarmee_39b920.mp3]	frequentie::kern::partij09
+de koning	562	De koning woont in Den Haag.	король	Король живёт в Гааге.	[sound:freq_koning_acced9.mp3]	frequentie::kern::partij09
+boos	563	Ben je boos op me?	сердитый; злой	Ты на меня сердишься?	[sound:freq_boos_c5d962.mp3]	frequentie::kern::partij09
+beloven	564	Dat beloof ik je.	обещать	Это я тебе обещаю.	[sound:freq_beloven_a2cabd.mp3]	frequentie::kern::partij09
+overlijden	565	Zijn vader is vorig jaar overleden.	скончаться (офиц.)	Его отец скончался в прошлом году.	[sound:freq_overlijden_2abb4f.mp3]	frequentie::kern::partij09
+enorm	566	Het huis is enorm.	огромный; невероятно	Дом огромный.	[sound:freq_enorm_7b98ee.mp3]	frequentie::kern::partij09
+de dollar	567	Het kost tien dollar.	доллар	Это стоит десять долларов.	[sound:freq_dollar_36dd3a.mp3]	frequentie::kern::partij09
+het leger	568	Hij zit in het leger.	армия	Он в армии.	[sound:freq_leger_4ef0fa.mp3]	frequentie::kern::partij09
+liever	569	Ik blijf liever thuis.	лучше (предпочитаю); охотнее	Я лучше останусь дома.	[sound:freq_liever_dc2dd2.mp3]	frequentie::kern::partij09
+gisteren	571	Waar was je gisteren?	вчера	Где ты был вчера?	[sound:freq_gisteren_279f4a.mp3]	frequentie::kern::partij09
+stelen	572	Iemand heeft mijn auto gestolen!	красть	Кто-то украл мою машину!	[sound:freq_stelen_eb6b4d.mp3]	frequentie::kern::partij09
+de zus	573	Mijn zus belt me elke dag.	сестра	Моя сестра звонит мне каждый день.	[sound:freq_zus_5f6809.mp3]	frequentie::kern::partij09
+de tv	574	Wat is er op tv?	телевизор	Что по телевизору?	[sound:freq_tv_bffc83.mp3]	frequentie::kern::partij09
+het gebouw	575	In welk gebouw werk je?	здание	В каком здании ты работаешь?	[sound:freq_gebouw_0624fb.mp3]	frequentie::kern::partij09
+de seks	576	Hij denkt alleen aan seks.	секс	Он думает только о сексе.	[sound:freq_seks_b6c6b4.mp3]	frequentie::kern::partij09
+eindelijk	577	Eindelijk ben je er!	наконец	Наконец ты здесь!	[sound:freq_eindelijk_18b9c4.mp3]	frequentie::kern::partij09
+de bank	579	Ik moet naar de bank.	банк; диван	Мне надо в банк.	[sound:freq_bank_b5fc4a.mp3]	frequentie::kern::partij09
+de band	580	Hij speelt in een band.	музыкальная группа	Он играет в музыкальной группе.	[sound:freq_band_ff7f15.mp3]	frequentie::kern::partij09
+het succes	581	Succes morgen!	удачи! (пожелание); успех	Удачи завтра!	[sound:freq_succes_a430ad.mp3]	frequentie::kern::partij09
+het gesprek	583	Het was een goed gesprek.	разговор; беседа	Это был хороший разговор.	[sound:freq_gesprek_958803.mp3]	frequentie::kern::partij09
+stil	584	Wees stil!	тихо (молча)	Тихо!	[sound:freq_stil_96552e.mp3]	frequentie::kern::partij09
+de regel	585	Ken je de regels?	правило	Ты знаешь правила?	[sound:freq_regel_edd69a.mp3]	frequentie::kern::partij09
+trots	586	Ik ben trots op je.	гордый (… op — гордиться)	Я горд тобой.	[sound:freq_trots_942bc7.mp3]	frequentie::kern::partij09
+het geluk	587	Je hebt geluk!	удача; счастье	Тебе везёт!	[sound:freq_geluk_bdfb20.mp3]	frequentie::kern::partij09
+de lijst	588	Staat het op de lijst?	список	Это есть в списке?	[sound:freq_lijst_52db7b.mp3]	frequentie::kern::partij09
+aardig	590	Hij is erg aardig tegen me.	любезный; славный	Он очень любезен со мной.	[sound:freq_aardig_b83d60.mp3]	frequentie::kern::partij09
+mezelf	591	Ik doe het voor mezelf.	себя самого (я)	Я делаю это для себя самого.	[sound:freq_mezelf_e9aea0.mp3]	frequentie::kern::partij09
+de mama	592	Mama, waar ben je?	мама	Мама, где ты?	[sound:freq_mama_38743f.mp3]	frequentie::kern::partij09
+de video	594	Heb je die video gezien?	видео	Ты видел это видео?	[sound:freq_video_e5b241.mp3]	frequentie::kern::partij09
+de brief	595	Ik schrijf haar een brief.	письмо	Я пишу ей письмо.	[sound:freq_brief_ccde78.mp3]	frequentie::kern::partij09
+waarin	596	Het huis waarin ik woon is oud.	в котором	Дом, в котором я живу, старый.	[sound:freq_waarin_f9a37c.mp3]	frequentie::kern::partij09
+het licht	597	Doe het licht uit.	свет	Выключи свет.	[sound:freq_licht_41176e.mp3]	frequentie::kern::partij09
+de mond	598	Doe je mond open.	рот	Открой рот.	[sound:freq_mond_2ec683.mp3]	frequentie::kern::partij09
+slim	599	Dat is slim!	умный	Это умно!	[sound:freq_slim_9a399b.mp3]	frequentie::kern::partij09
+het haar²	601	Ze heeft lang haar.	волосы	У неё длинные волосы.	[sound:freq_haar-2_7c43e9.mp3]	frequentie::kern::partij09
+de gast	603	We hebben vanavond gasten.	гость	У нас сегодня вечером гости.	[sound:freq_gast_971891.mp3]	frequentie::kern::partij09
+de les	604	Ik heb morgen les.	урок	У меня завтра урок.	[sound:freq_les_e7fb31.mp3]	frequentie::kern::partij09
+de advocaat	605	Ik wil mijn advocaat spreken.	адвокат	Я хочу поговорить со своим адвокатом.	[sound:freq_advocaat_beb603.mp3]	frequentie::kern::partij09
+letten	606	Je moet beter op je geld letten.	следить (за); обращать внимание	Тебе надо лучше следить за своими деньгами.	[sound:freq_letten_f8759e.mp3]	frequentie::kern::partij09
+de meter	607	Het is maar tien meter.	метр	Это всего десять метров.	[sound:freq_meter_b4d06c.mp3]	frequentie::kern::partij09
+het gat	609	Er zit een gat in de deur.	дыра	В двери дыра.	[sound:freq_gat_a00bba.mp3]	frequentie::kern::partij09
+serieus	611	Ben je serieus?	серьёзный; серьёзно	Ты серьёзно?	[sound:freq_serieus_48840c.mp3]	frequentie::kern::partij09
+uiteindelijk	612	Uiteindelijk is het gelukt.	в конце концов	В конце концов это удалось.	[sound:freq_uiteindelijk_3c62b1.mp3]	frequentie::kern::partij09
+heerlijk	614	Het was een heerlijke avond.	чудесный; восхитительный	Это был чудесный вечер.	[sound:freq_heerlijk_35fb6a.mp3]	frequentie::kern::partij09
+liegen	616	Je liegt!	лгать; врать	Ты лжёшь!	[sound:freq_liegen_6df72c.mp3]	frequentie::kern::partij09
+het plezier	618	Ik doe het met plezier.	удовольствие	Я делаю это с удовольствием.	[sound:freq_plezier_b35b76.mp3]	frequentie::kern::partij09
+tonen	619	Kun je het me tonen?	показывать	Можешь мне это показать?	[sound:freq_tonen_2b629b.mp3]	frequentie::kern::partij09
